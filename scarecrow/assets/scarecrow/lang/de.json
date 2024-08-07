@@ -1,0 +1,32 @@
+{
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Vogelscheuche",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Vogelscheuche",
+	"scarecrow:itemdesc-scarecrow": "\n\n Sie vertreibt unliebsame Gäste aus deinem Garten. Hasen und Waschbären haben Angst vor Vogelscheuchen und nähern sich bis auf 16 Blöcke. (Voreinstellung)\n\n<font color=\"#99c9f9\"><i>Sie schaut schrecklich aus, aber der Kürbis ist lecker.</i></font>",
+
+	"scarecrow:item-handbooktext-scarecrow": "Eine auf dem Boden stehende Vogelscheuche kann mit <hk>ctrl</hk> + Rechtsklick aufgehoben werden.",
+
+	"scarecrow:item-creature-scarecrow": "Vogelscheuche",
+	"scarecrow:item-dead-creature-scarecrow": "zerstörte Vogelscheuche",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Kleine Vogelscheuche",
+	"scarecrow:itemdesc-little-scarecrow": "\n\n Sie vertreibt unliebsame Gäste aus deinem Garten. Hasen und Waschbären haben weniger Angst vor kleinen Vogelscheuchen und nähern sich bis auf 8 Blöcke. (Voreinstellung)",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Eine auf dem Boden stehende kleine Vogelscheuche kann mit <hk>ctrl</hk> + Rechtsklick aufgehoben werden.",
+
+	"scarecrow:item-creature-little-scarecrow": "Kleine Vogelscheuche",
+	"scarecrow:item-dead-creature-little-scarecrow": "zerstörte kleine Vogelscheuche",
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Platziere die kleine Vogelscheuche auf dem Boden.",
+	"scarecrow:heldhelp-place-sc": "Platziere die Vogelscheuche auf dem Boden.",
+
+	"scarecrow:entityhelp-pickup": "Aufheben"
+
+}

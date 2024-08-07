@@ -1,0 +1,245 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/10",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.55,
+      "movespeed": 0.04,
+      "animationSpeed": 1.8,
+      "seekingRange": 16,
+      "animation": "Run"
+    },
+    "file": "game:entities/land/hare-baby.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/11",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.54,
+      "movespeed": 0.04,
+      "animationSpeed": 1.8,
+      "seekingRange": 8,
+      "animation": "Run"
+    },
+    "file": "game:entities/land/hare-baby.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/12",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.54,
+      "movespeed": 0.04,
+      "animationSpeed": 1.8,
+      "seekingRange": 4,
+      "animation": "Run"
+    },
+    "file": "game:entities/land/hare-baby.json",
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/10/seekingRange",
+    "file": "game:entities/land/hare-baby.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Scarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/11/seekingRange",
+    "file": "game:entities/land/hare-baby.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_LittleScarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/12/seekingRange",
+    "file": "game:entities/land/hare-baby.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Strawdummy",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/10",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 2.1,
+      "movespeed": 0.06,
+      "seekingRange": 16,
+      "animation": "Run",
+      "animationSpeed": 2
+    },
+    "file": "game:entities/land/hare-female.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/11",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 2.0,
+      "movespeed": 0.06,
+      "seekingRange": 8,
+      "animation": "Run",
+      "animationSpeed": 2
+    },
+    "file": "game:entities/land/hare-female.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/12",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 2.0,
+      "movespeed": 0.06,
+      "seekingRange": 4,
+      "animation": "Run",
+      "animationSpeed": 2
+    },
+    "file": "game:entities/land/hare-female.json",
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/10/aitasks/10/seekingRange",
+    "file": "game:entities/land/hare-female.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Scarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/10/aitasks/11/seekingRange",
+    "file": "game:entities/land/hare-female.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_LittleScarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/10/aitasks/12/seekingRange",
+    "file": "game:entities/land/hare-female.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Strawdummy",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/11",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 2.1,
+      "movespeed": 0.06,
+      "seekingRange": 16,
+      "animation": "Run",
+      "animationSpeed": 2
+    },
+    "file": "game:entities/land/hare-male.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/12",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 2.0,
+      "movespeed": 0.06,
+      "seekingRange": 8,
+      "animation": "Run",
+      "animationSpeed": 2
+    },
+    "file": "game:entities/land/hare-male.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/13",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 2.0,
+      "movespeed": 0.06,
+      "seekingRange": 4,
+      "animation": "Run",
+      "animationSpeed": 2
+    },
+    "file": "game:entities/land/hare-male.json",
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/11/seekingRange",
+    "file": "game:entities/land/hare-male.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Scarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/12/seekingRange",
+    "file": "game:entities/land/hare-male.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_LittleScarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/13/seekingRange",
+    "file": "game:entities/land/hare-male.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Strawdummy",
+      "useValue": true
+    },
+    "side": "server"
+  }
+]

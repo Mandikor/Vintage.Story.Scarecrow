@@ -1,0 +1,81 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="VintagestoryAPI">
+      <HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="VSSurvivalMod">
+      <HintPath>$(VINTAGE_STORY)/Mods/VSSurvivalMod.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSEssentials">
+      <HintPath>$(VINTAGE_STORY)/Mods/VSEssentials.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSCreativeMod">
+      <HintPath>$(VINTAGE_STORY)/Mods/VSCreativeMod.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(VINTAGE_STORY)/Lib/Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(VINTAGE_STORY)/Lib/0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VintagestoryLib">
+      <HintPath>$(VINTAGE_STORY)/VintagestoryLib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>$(VINTAGE_STORY)/Lib/protobuf-net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="cairo-sharp">
+      <HintPath>$(VINTAGE_STORY)/Lib/cairo-sharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>$(VINTAGE_STORY)/Lib/System.Data.SQLite.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+<ItemGroup>
+  <Content Include="assets\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+  <Compile Remove="src\Patches\**" />
+  <Compile Remove="unused\**" />
+  <EmbeddedResource Remove="src\Patches\**" />
+  <EmbeddedResource Remove="unused\**" />
+  <None Remove="src\Patches\**" />
+  <None Remove="unused\**" />
+  <Compile Remove="src\Entities\EntityLittleScareCrow - Kopieren.cs" />
+  <Compile Remove="src\Entities\EntityScareCrow - Kopieren.cs" />
+  <Compile Remove="src\Item\ItemLittleScareCrow - Kopieren.cs" />
+  <Compile Remove="src\Item\ItemScareCrow - Kopieren.cs" />
+  <Content Remove="assets\scarecrow\lang\en - Kopieren.json" />
+  <None Remove="assets\scarecrow\lang\en - Kopieren.json" />
+  <None Remove="assets\scarecrow\patches\survival-entities-land-strawdummy.json" />
+  <Content Include="modinfo.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+  <Content Include="modicon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+</ItemGroup>
+
+<ItemGroup>
+  <Folder Include="assets\game\entities\land\" />
+</ItemGroup>
+
+</Project>

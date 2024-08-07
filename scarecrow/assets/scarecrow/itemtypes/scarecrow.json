@@ -1,0 +1,114 @@
+{
+  "code": "scarecrow",
+
+  "class": "ItemScareCrow",
+
+  "shape": {
+    "base": "scarecrow:entity/land/scarecrow"
+  },
+
+  "attributes": {
+
+    "handbook": {
+      "groupBy": [ "*-scarecrow-*" ],
+      "extraSections": [
+        {
+          "title": "",
+          "text": "scarecrow:item-handbooktext-scarecrow"
+        }
+      ]
+    }
+
+  },
+
+  "creativeinventory": {
+    "general": [ "*" ],
+    "items": [ "*" ],
+    "scarecrow": [ "*" ]
+  },
+
+  "heldTpIdleAnimation": "holdunderarm",
+
+  "maxstacksize": 4,
+
+  "combustibleProps": {
+    "burnTemperature": 600,
+    "burnDuration": 10
+  },
+
+  "guiTransform": {
+    "translation": {
+      "x": 3,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": -14,
+      "y": 32,
+      "z": 180
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 1.1,
+      "z": 0.5
+    },
+    "scale": 0.7
+  },
+
+  "fpHandTransform": {
+    "translation": {
+      "x": -0.25,
+      "y": 0.1,
+      "z": 1.07
+    },
+    "rotation": {
+      "x": 134,
+      "y": -120,
+      "z": -170
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.5,
+      "z": 0.4
+    }
+  },
+
+  "tpHandTransform": {
+    "translation": {
+      "x": -0.1,
+      "y": -0.4,
+      "z": -0.5
+    },
+    "rotation": {
+      "x": 150,
+      "y": 0,
+      "z": -80
+    },
+    "origin": {
+      "x": 0.4,
+      "y": 0.4,
+      "z": 0.5
+    },
+    "scale": 0.61
+  },
+
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 100,
+      "y": 18,
+      "z": 180
+    },
+    "origin": {
+      "x": 0.4,
+      "y": 0.4,
+      "z": 0.3
+    },
+    "scale": 2.6
+  }
+
+}

@@ -1,0 +1,71 @@
+[
+
+  {
+    "file": "scarecrow:recipes/grid/scarecrow.json",
+    "op": "add",
+    "path": "/0/enabled",
+    "value": false,
+    "condition": {
+      "when": "Scarecrow_Scarecrow_Enabled",
+      "isValue": "false"
+    },
+    "side": "server"
+  },
+  {
+    "file": "scarecrow:itemtypes/scarecrow.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {
+      "when": "Scarecrow_Scarecrow_Enabled",
+      "isValue": "false"
+    },
+    "side": "server"
+  },
+  {
+    "file": "scarecrow:entities/land/scarecrow.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {
+      "when": "Scarecrow_Scarecrow_Enabled",
+      "isValue": "false"
+    },
+    "side": "server"
+  },
+
+  {
+    "file": "scarecrow:recipes/grid/little-scarecrow.json",
+    "op": "add",
+    "path": "/0/enabled",
+    "value": false,
+    "condition": {
+      "when": "Scarecrow_LittleScarecrow_Enabled",
+      "isValue": "false"
+    },
+    "side": "server"
+  },
+  {
+    "file": "scarecrow:itemtypes/little-scarecrow.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {
+      "when": "Scarecrow_LittleScarecrow_Enabled",
+      "isValue": "false"
+    },
+    "side": "server"
+  },
+  {
+    "file": "scarecrow:entities/land/little-scarecrow.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {
+      "when": "Scarecrow_LittleScarecrow_Enabled",
+      "isValue": "false"
+    },
+    "side": "server"
+  }
+
+]

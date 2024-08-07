@@ -1,0 +1,36 @@
+{
+	// Japanese localization file for 'Scarecrow'.
+	// Mod Version: v1.2.1
+	// Translated By: Macoto Hino
+	// Machine translation using PCOT and DeepL.
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "案山子(かかし)",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "案山子(かかし)",
+	"scarecrow:itemdesc-scarecrow": "\n\n 不快な客人からお庭を守ります。ウサギやタヌキは案山子(かかし)を怖がりますが、最大16ブロックまでは近付いて来ます。（デフォルト）\n\n<font color=\"#99c9f9\"><i>酷い顔をしていますが、カボチャは美味しいです。</i></font>",
+
+	"scarecrow:item-handbooktext-scarecrow": "地面に立っている案山子(かかし)は、<hk>ctrl</hk> +右クリックで拾うことが出来ます。",
+
+	"scarecrow:item-creature-scarecrow": "案山子(かかし)",
+	"scarecrow:item-dead-creature-scarecrow": "壊れた案山子(かかし)",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "小さな案山子(かかし)",
+	"scarecrow:itemdesc-little-scarecrow": "\n\n 不快な客人からお庭を守ります。ウサギやアライグマは小さな案山子(かかし)をあまり怖がらず、最大8ブロックまでは近付いて来ます。（デフォルト）",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "地面に立っている小さな案山子(かかし)は、<hk>ctrl</hk> +右クリックを使用して拾うことが出来ます。",
+
+	"scarecrow:item-creature-little-scarecrow": "小さな案山子(かかし)",
+	"scarecrow:item-dead-creature-little-scarecrow": "壊れた小さな案山子(かかし)",
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "小さなかかしを地面に置く",
+	"scarecrow:heldhelp-place-sc": "かかしを地面に置く",
+
+	"scarecrow:entityhelp-pickup": "拾う"
+}

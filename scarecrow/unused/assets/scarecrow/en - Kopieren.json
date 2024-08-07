@@ -1,0 +1,40 @@
+{
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Scarecrow",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Scarecrow",
+	"scarecrow:itemdesc-scarecrow": "\n\n It sells unpleasant guests from your garden. Hares and raccoons are afraid of scarecrows and approach up to 16 blocks. (Default)\n\n<font color=\"#99c9f9\"><i>She looks terrible, but the pumpkin is delicious.</i></font>",
+
+	"scarecrow:item-handbooktext-scarecrow": "A Scarecrow standing in the ground can be picked up using <hk>ctrl</hk> + right click",
+
+	"scarecrow:item-creature-scarecrow": "Scarecrow",
+	"scarecrow:item-dead-creature-scarecrow": "Destroyed scarecrow",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Little Scarecrow",
+	"scarecrow:itemdesc-little-scarecrow": "\n\n It sells unpleasant guests from your garden. Hares and raccoons are afraid of little scarecrows and approach up to 8 blocks. (Default)",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "A little Scarecrow standing in the ground can be picked up using <hk>ctrl</hk> + right click",
+
+	"scarecrow:item-creature-little-scarecrow": "Little Scarecrow",
+	"scarecrow:item-dead-creature-little-scarecrow": "Destroyed little Scarecrow",
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Place the little scarecrow on the ground",
+	"scarecrow:heldhelp-place-sc": "Place the scarecrow on the ground",
+
+	"scarecrow:entityhelp-pickup": "Pick up",
+
+	"scarecrow:entityhelp-upgrade-sd": "Add straw hat to upgrade",
+	"scarecrow:entityhelp-upgrade-lsc": "Add pumpkin to upgrade",
+
+	"scarecrow:entityhelp-downgrade-sd": "Remove straw to downgrade",
+	"scarecrow:entityhelp-downgrade-lsc": "Remove straw hat to downgrade",
+	"scarecrow:entityhelp-downgrade-sc": "Remove pumpkin to downgrade"
+
+
+}

@@ -1,0 +1,46 @@
+[
+	{
+		"ingredientPattern": "H,P,S",
+		"ingredients": {
+			"H": {
+				"type": "item",
+				"code": "game:clothes-head-straw-hat"
+			},
+			"P": {
+				"type": "block",
+				"code": "game:pumpkin-fruit-4"
+			},
+			"S": {
+				"type": "item",
+				"code": "game:strawdummy"
+			}
+		},
+		"width": 1,
+		"height": 3,
+		"output": {
+			"type": "item",
+			"code": "scarecrow:scarecrow",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "P,S",
+		"ingredients": {
+			"P": {
+				"type": "block",
+				"code": "game:pumpkin-fruit-4"
+			},
+			"S": {
+				"type": "item",
+				"code": "scarecrow:little-scarecrow"
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": {
+			"type": "item",
+			"code": "scarecrow:scarecrow",
+			"quantity": 1
+		}
+	}
+]

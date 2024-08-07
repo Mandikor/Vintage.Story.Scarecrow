@@ -1,0 +1,62 @@
+{
+  "code": "strawdummy",
+  "class": "EntitySC_StrawDummy",
+  "hitboxSize": {
+    "x": 0.7,
+    "y": 2
+  },
+  "eyeHeight": 1.8,
+  "knockbackResistance": 1,
+  "attributes": {
+    "spawnDamageParticles": true
+  },
+  "client": {
+    "renderer": "Shape",
+    "shape": { "base": "scarecrow:entity/land/strawdummy_new" },
+    "behaviors": [
+      { "code": "repulseagents" },
+      {
+        "code": "controlledphysics",
+        "stepHeight": 1.1251
+      },
+      { "code": "interpolateposition" }
+    ],
+    "animations": [
+      {
+        "code": "hurt",
+        "animation": "bounce",
+        "animationSpeed": 1.5
+      },
+      {
+        "code": "die",
+        "animation": "death",
+        "animationSpeed": 1.25,
+        "weight": 10,
+        "blendMode": "average"
+      },
+      {
+        "code": "idle",
+        "animation": "idle",
+        "blendMode": "average",
+        "triggeredBy": { "defaultAnim": true }
+      }
+    ]
+  },
+  "server": {
+    "behaviors": [
+      { "code": "repulseagents" },
+      {
+        "code": "controlledphysics",
+        "stepHeight": 1.1251
+      },
+      {
+        "code": "health",
+        "currenthealth": 100,
+        "maxhealth": 100
+      }
+    ]
+  },
+  "sounds": {
+    "hurt": "game:creature/strawdummy-hit"
+  }
+}

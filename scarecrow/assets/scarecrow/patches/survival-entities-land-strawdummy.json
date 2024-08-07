@@ -1,0 +1,16 @@
+[
+  {
+    "op": "replace",
+    "path": "/class",
+    "value": "EntitySC_StrawDummy",
+    "file": "game:entities/land/strawdummy.json",
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/maxstacksize",
+    "value": 4,
+    "file": "game:itemtypes/strawdummy.json",
+    "side": "server"
+  }
+]

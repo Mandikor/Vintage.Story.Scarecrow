@@ -1,0 +1,245 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/8",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.6,
+      "movespeed": 0.02,
+      "animationSpeed": 2.2,
+      "seekingRange": 16,
+      "animation": "Run"
+    },
+    "file": "game:entities/land/raccoon-pup.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/9",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.5,
+      "movespeed": 0.02,
+      "animationSpeed": 2.2,
+      "seekingRange": 8,
+      "animation": "Run"
+    },
+    "file": "game:entities/land/raccoon-pup.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/10",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.5,
+      "movespeed": 0.02,
+      "animationSpeed": 2.2,
+      "seekingRange": 4,
+      "animation": "Run"
+    },
+    "file": "game:entities/land/raccoon-pup.json",
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/8/seekingRange",
+    "file": "game:entities/land/raccoon-pup.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Scarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/9/seekingRange",
+    "file": "game:entities/land/raccoon-pup.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_LittleScarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/10/seekingRange",
+    "file": "game:entities/land/raccoon-pup.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Strawdummy",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/11",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 2.1,
+      "movespeed": 0.035,
+      "animationSpeed": 3.5,
+      "seekingRange": 16,
+      "animation": "Run"
+    },
+    "file": "game:entities/land/raccoon-female.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/12",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 2.0,
+      "movespeed": 0.035,
+      "animationSpeed": 3.5,
+      "seekingRange": 8,
+      "animation": "Run"
+    },
+    "file": "game:entities/land/raccoon-female.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/13",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 2.0,
+      "movespeed": 0.035,
+      "animationSpeed": 3.5,
+      "seekingRange": 4,
+      "animation": "Run"
+    },
+    "file": "game:entities/land/raccoon-female.json",
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/11/seekingRange",
+    "file": "game:entities/land/raccoon-female.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Scarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/12/seekingRange",
+    "file": "game:entities/land/raccoon-female.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_LittleScarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/13/seekingRange",
+    "file": "game:entities/land/raccoon-female.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Strawdummy",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/11",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 2.1,
+      "movespeed": 0.035,
+      "animationSpeed": 3.5,
+      "seekingRange": 16,
+      "animation": "Run"
+    },
+    "file": "game:entities/land/raccoon-male.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/12",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 2.0,
+      "movespeed": 0.035,
+      "animationSpeed": 3.5,
+      "seekingRange": 8,
+      "animation": "Run"
+    },
+    "file": "game:entities/land/raccoon-male.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/13",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 2.0,
+      "movespeed": 0.035,
+      "animationSpeed": 3.5,
+      "seekingRange": 4,
+      "animation": "Run"
+    },
+    "file": "game:entities/land/raccoon-male.json",
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/11/seekingRange",
+    "file": "game:entities/land/raccoon-male.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Scarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/12/seekingRange",
+    "file": "game:entities/land/raccoon-male.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_LittleScarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/13/seekingRange",
+    "file": "game:entities/land/raccoon-male.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Strawdummy",
+      "useValue": true
+    },
+    "side": "server"
+  }
+]
