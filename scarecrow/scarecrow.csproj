@@ -74,8 +74,4 @@
   </Content>
 </ItemGroup>
 
-<ItemGroup>
-  <Folder Include="assets\game\entities\land\" />
-</ItemGroup>
-
 </Project>
