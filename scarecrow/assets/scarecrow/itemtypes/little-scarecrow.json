@@ -4,7 +4,7 @@
   "class": "ItemLittleScareCrow",
 
   "shape": {
-    "base": "scarecrow:entity/land/little-scarecrow_new"
+    "base": "scarecrow:entity/land/little-scarecrow"
   },
 
   "attributes": {

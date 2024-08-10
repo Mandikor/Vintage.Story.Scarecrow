@@ -18,7 +18,7 @@
 
   "client": {
     "renderer": "Shape",
-    "shape": { "base": "scarecrow:entity/land/little-scarecrow_new" },
+    "shape": { "base": "scarecrow:entity/land/little-scarecrow" },
     "behaviors": [
       { "code": "repulseagents" },
       {
