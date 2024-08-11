@@ -18,5 +18,30 @@
 			"code": "scarecrow:little-scarecrow",
 			"quantity": 1
 		}
+	},
+	{
+		"ingredientPattern": "_H_,WSW,_W_",
+		"ingredients": {
+			"H": {
+				"type": "item",
+				"code": "game:clothes-head-straw-hat"
+			},
+			"W": {
+				"type": "item",
+				"code": "game:stick"
+			},
+			"S": {
+				"type": "block",
+				"code": "game:hay-normal-ud",
+				"quantity": 2
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"output": {
+			"type": "item",
+			"code": "scarecrow:little-scarecrow",
+			"quantity": 1
+		}
 	}
 ]

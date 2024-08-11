@@ -33,7 +33,7 @@
 
   "combustibleProps": {
     "burnTemperature": 600,
-    "burnDuration": 14
+    "burnDuration": 20
   },
 
   "guiTransform": {
@@ -53,25 +53,6 @@
       "z": 0.5
     },
     "scale": 0.84
-  },
-
-  "fpHandTransform": {
-    "translation": {
-      "x": -0.25,
-      "y": 0.1,
-      "z": 1.07
-    },
-    "rotation": {
-      "x": 134,
-      "y": -120,
-      "z": -170
-    },
-    "origin": {
-      "x": 0.5,
-      "y": 0.5,
-      "z": 0.4
-    },
-    "scale": 1.22
   },
 
   "tpHandTransform": {
