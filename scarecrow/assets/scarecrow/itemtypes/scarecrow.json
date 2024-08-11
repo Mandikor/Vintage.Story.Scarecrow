@@ -33,7 +33,7 @@
 
   "combustibleProps": {
     "burnTemperature": 600,
-    "burnDuration": 12
+    "burnDuration": 14
   },
 
   "guiTransform": {
@@ -52,7 +52,7 @@
       "y": 1.1,
       "z": 0.5
     },
-    "scale": 0.7
+    "scale": 0.84
   },
 
   "fpHandTransform": {
@@ -70,7 +70,8 @@
       "x": 0.5,
       "y": 0.5,
       "z": 0.4
-    }
+    },
+    "scale": 1.22
   },
 
   "tpHandTransform": {
@@ -86,10 +87,10 @@
     },
     "origin": {
       "x": 0.4,
-      "y": 0.4,
+      "y": 0.5,
       "z": 0.5
     },
-    "scale": 0.61
+    "scale": 0.63
   },
 
   "groundTransform": {
@@ -104,11 +105,11 @@
       "z": 180
     },
     "origin": {
-      "x": 0.4,
-      "y": 0.4,
+      "x": 0.5,
+      "y": 0.5,
       "z": 0.3
     },
-    "scale": 2.6
+    "scale": 2.1
   }
 
 }

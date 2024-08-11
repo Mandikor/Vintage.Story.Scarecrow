@@ -8,7 +8,7 @@
     "y": 2
   },
 
-  "eyeHeight": 1.5,
+  "eyeHeight": 1.8,
 
   "knockbackResistance": 1,
 
@@ -58,8 +58,8 @@
       },
       {
         "code": "health",
-        "currenthealth": 200,
-        "maxhealth": 200
+        "currenthealth": 150,
+        "maxhealth": 150
       }
     ]
   },

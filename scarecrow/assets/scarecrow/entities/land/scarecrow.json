@@ -58,8 +58,8 @@
 			},
 			{
 				"code": "health",
-				"currenthealth": 400,
-				"maxhealth": 400
+				"currenthealth": 300,
+				"maxhealth": 300
 			}
 		]
 	},
