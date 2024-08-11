@@ -9,7 +9,7 @@
         public int BlockRadiusLittleScarecrow = 8;
         public int BlockRadiusStrawdummy = 4;
 
-        public bool DebugOutput = true;
+        public bool DebugOutput = false;
         
         public Config() { }
 
