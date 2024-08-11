@@ -9,8 +9,6 @@
         public int BlockRadiusLittleScarecrow = 8;
         public int BlockRadiusStrawdummy = 4;
 
-        public bool BlockRadiusAsSphere = true;
-
         public bool DebugOutput = true;
         
         public Config() { }
@@ -23,8 +21,6 @@
             BlockRadiusScarecrow = previousConfig.BlockRadiusScarecrow;
             BlockRadiusLittleScarecrow = previousConfig.BlockRadiusLittleScarecrow;
             BlockRadiusStrawdummy = previousConfig.BlockRadiusStrawdummy;
-
-            BlockRadiusAsSphere = previousConfig.BlockRadiusAsSphere;
 
             DebugOutput = previousConfig.DebugOutput;
         }
