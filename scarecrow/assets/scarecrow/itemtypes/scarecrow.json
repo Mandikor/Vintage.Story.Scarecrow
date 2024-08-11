@@ -33,7 +33,7 @@
 
   "combustibleProps": {
     "burnTemperature": 600,
-    "burnDuration": 10
+    "burnDuration": 12
   },
 
   "guiTransform": {
