@@ -1,13 +1,13 @@
 {
-  "type": "code",
-  "modid": "scarecrow",
-  "name": "Scarecrow",
-  "description": "With the scarecrow you get an effective solution to a plague of hares and racoons in your garden.",
-  "authors": [ "Mandikor" ],
-  "contributors": [],
-  "translators": [ "Macoto Hino" ],
-  "version": "1.5.0",
-  "dependencies": {
-    "game": "1.19.8"
-  }
+    "type": "code",
+    "modid": "scarecrow",
+    "name": "scarecrow",
+    "authors": [
+        "Unknown"
+    ],
+    "description": "To be added",
+    "version": "1.0.0",
+    "dependencies": {
+        "game": ""
+    }
 }

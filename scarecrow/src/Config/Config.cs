@@ -10,7 +10,7 @@
         public int BlockRadiusStrawdummy = 4;
 
         public bool DebugOutput = false;
-        
+
         public Config() { }
 
         public Config(Config previousConfig)

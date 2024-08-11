@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeBuild", "CakeBuild\CakeBuild.csproj", "{7770F4FB-3D40-45FE-83EA-7B9973B93278}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "scarecrow", "scarecrow\scarecrow.csproj", "{1DC5D5C2-DCD3-41F3-BE66-9AB7BBCED0A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7770F4FB-3D40-45FE-83EA-7B9973B93278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7770F4FB-3D40-45FE-83EA-7B9973B93278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7770F4FB-3D40-45FE-83EA-7B9973B93278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7770F4FB-3D40-45FE-83EA-7B9973B93278}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DC5D5C2-DCD3-41F3-BE66-9AB7BBCED0A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DC5D5C2-DCD3-41F3-BE66-9AB7BBCED0A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DC5D5C2-DCD3-41F3-BE66-9AB7BBCED0A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DC5D5C2-DCD3-41F3-BE66-9AB7BBCED0A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C61AB3F7-6FF2-4F19-931B-418B45F70210}
+	EndGlobalSection
+EndGlobal
