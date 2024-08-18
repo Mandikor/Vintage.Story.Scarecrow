@@ -31,6 +31,7 @@ namespace Scarecrow
             #region 
             api.World.Config.SetBool("Scarecrow_Scarecrow_Enabled", config.EnabledScarecrow);
             api.World.Config.SetBool("Scarecrow_LittleScarecrow_Enabled", config.EnabledLittleScarecrow);
+            api.World.Config.SetBool("Scarecrow_Strawdummy_Enabled", config.EnabledStrawdummy);
 
             api.World.Config.SetInt("Scarecrow_Blockingradius_Scarecrow", config.BlockRadiusScarecrow);
             api.World.Config.SetInt("Scarecrow_Blockingradius_LittleScarecrow", config.BlockRadiusLittleScarecrow);

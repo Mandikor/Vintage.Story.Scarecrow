@@ -4,6 +4,7 @@
     {
         public bool EnabledScarecrow = true;
         public bool EnabledLittleScarecrow = true;
+        public bool EnabledStrawdummy = true;
 
         public int BlockRadiusScarecrow = 16;
         public int BlockRadiusLittleScarecrow = 8;
@@ -17,6 +18,7 @@
         {
             EnabledScarecrow = previousConfig.EnabledScarecrow;
             EnabledLittleScarecrow = previousConfig.EnabledLittleScarecrow;
+            EnabledStrawdummy = previousConfig.EnabledStrawdummy;
 
             BlockRadiusScarecrow = previousConfig.BlockRadiusScarecrow;
             BlockRadiusLittleScarecrow = previousConfig.BlockRadiusLittleScarecrow;

@@ -34,6 +34,10 @@
 	"scarecrow:heldhelp-place-sc": "Place the scarecrow on the ground",
 	"scarecrow:heldhelp-place-sd": "Place the straw dummy on the ground",
 
-	"scarecrow:entityhelp-pickup": "Pick up"
+	"scarecrow:entityhelp-pickup": "Pick up",
+
+	"ScarecrowSettings": "Scarecrow Settings",
+	"EnabledScarecrow": "Enable Scarecrow",
+	"EnabledScarecrowComment": "Activate or deactivate the scarecrow"
 
 }

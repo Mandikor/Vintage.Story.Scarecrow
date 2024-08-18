@@ -186,7 +186,7 @@
       "entityCodes": [
         "little-scarecrow"
       ],
-      "priority": 2.0,
+      "priority": 2.1,
       "movespeed": 0.06,
       "seekingRange": 8,
       "animation": "Run",
@@ -203,7 +203,7 @@
       "entityCodes": [
         "strawdummy"
       ],
-      "priority": 2.0,
+      "priority": 2.1,
       "movespeed": 0.06,
       "seekingRange": 4,
       "animation": "Run",

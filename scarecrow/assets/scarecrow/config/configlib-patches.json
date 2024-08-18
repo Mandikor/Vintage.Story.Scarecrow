@@ -1,0 +1,76 @@
+{
+  "version": 0,
+  "file": "MandikorsMods/ScareCrowConfig.json",
+  "patches": {},
+  "settings": [
+    {
+      "type": "separator",
+      "title": "ScarecrowSettings"
+    },
+    {
+      "code": "EnabledScarecrow",
+      "comment": "EnabledScarecrowComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "EnabledLittleScarecrow",
+      "comment": "EnabledLittleScarecrowComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "code": "EnabledStrawdummy",
+      "comment": "EnabledStrawdummyComment",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "type": "separator",
+      "title": "ScarecrowBlockingSettings"
+    },
+    {
+      "code": "BlockRadiusScarecrow",
+      "comment": "BlockRadiusScarecrowComment",
+      "type": "integer",
+      "default": 16,
+      "range": {
+        "min": 4,
+        "max": 64,
+        "step": 4
+      }
+    },
+    {
+      "code": "BlockRadiusLittleScarecrow",
+      "comment": "BlockRadiusLittleScarecrowComment",
+      "type": "integer",
+      "default": 8,
+      "range": {
+        "min": 2,
+        "max": 32,
+        "step": 2
+      }
+    },
+    {
+      "code": "BlockRadiusStrawdummy",
+      "comment": "BlockRadiusStrawdummyComment",
+      "type": "integer",
+      "default": 4,
+      "range": {
+        "min": 1,
+        "max": 16,
+        "step": 1
+      }
+    },
+    {
+      "type": "separator",
+      "title": "ScarecrowDebugSettings"
+    },
+    {
+      "code": "DebugOutput",
+      "comment": "DebugOutputComment",
+      "type": "boolean",
+      "default": false
+    }
+  ]
+}
