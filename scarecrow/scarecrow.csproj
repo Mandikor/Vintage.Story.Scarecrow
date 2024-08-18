@@ -62,4 +62,12 @@
   </Content>
 </ItemGroup>
 
+<ItemGroup>
+  <EditorConfigFiles Remove="C:\Users\mandi\source\repos\scarecrow\scarecrow\.editorconfig" />
+</ItemGroup>
+
+<ItemGroup>
+  <None Include="C:\Users\mandi\source\repos\scarecrow\scarecrow\.editorconfig" />
+</ItemGroup>
+
 </Project>

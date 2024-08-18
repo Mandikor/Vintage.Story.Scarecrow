@@ -4,10 +4,6 @@
     "path": "/class",
     "value": "EntitySC_StrawDummy",
     "file": "game:entities/land/strawdummy.json",
-    "condition": {
-      "when": "Scarecrow_Strawdummy_Enabled",
-      "isValue": "true"
-    },
     "side": "server"
   },
   {
@@ -15,10 +11,6 @@
     "path": "/maxstacksize",
     "value": 4,
     "file": "game:itemtypes/strawdummy.json",
-    "condition": {
-      "when": "Scarecrow_Strawdummy_Enabled",
-      "isValue": "true"
-    },
     "side": "server"
   },
   {
@@ -30,10 +22,6 @@
       "scarecrow": [ "*" ]
     },
     "file": "game:itemtypes/strawdummy.json",
-    "condition": {
-      "when": "Scarecrow_Strawdummy_Enabled",
-      "isValue": "true"
-    },
     "side": "server"
   },
   {
@@ -58,10 +46,6 @@
       "scale": 0.84
     },
     "file": "game:itemtypes/strawdummy.json",
-    "condition": {
-      "when": "Scarecrow_Strawdummy_Enabled",
-      "isValue": "true"
-    },
     "side": "server"
   },
   {
@@ -86,10 +70,6 @@
       "scale": 0.63
     },
     "file": "game:itemtypes/strawdummy.json",
-    "condition": {
-      "when": "Scarecrow_Strawdummy_Enabled",
-      "isValue": "true"
-    },
     "side": "server"
   },
   {
@@ -114,10 +94,6 @@
       "scale": 2.1
     },
     "file": "game:itemtypes/strawdummy.json",
-    "condition": {
-      "when": "Scarecrow_Strawdummy_Enabled",
-      "isValue": "true"
-    },
     "side": "server"
   },
   {
@@ -125,10 +101,6 @@
     "path": "/ingredientPattern",
     "value": "_H_,SHS,_S_",
     "file": "game:recipes/grid/strawdummy.json",
-    "condition": {
-      "when": "Scarecrow_Strawdummy_Enabled",
-      "isValue": "true"
-    },
     "side": "Server"
   },
   {
@@ -136,10 +108,6 @@
     "path": "/width",
     "value": 3,
     "file": "game:recipes/grid/strawdummy.json",
-    "condition": {
-      "when": "Scarecrow_Strawdummy_Enabled",
-      "isValue": "true"
-    },
     "side": "Server"
   }
 ]
