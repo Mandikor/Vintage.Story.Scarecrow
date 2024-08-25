@@ -5,28 +5,6 @@
   "settings": [
     {
       "type": "separator",
-      "title": "ScarecrowSettings"
-    },
-    {
-      "code": "EnabledScarecrow",
-      "comment": "EnabledScarecrowComment",
-      "type": "boolean",
-      "default": true
-    },
-    {
-      "code": "EnabledLittleScarecrow",
-      "comment": "EnabledLittleScarecrowComment",
-      "type": "boolean",
-      "default": true
-    },
-    {
-      "code": "EnabledStrawdummy",
-      "comment": "EnabledStrawdummyComment",
-      "type": "boolean",
-      "default": true
-    },
-    {
-      "type": "separator",
       "title": "ScarecrowBlockingSettings"
     },
     {

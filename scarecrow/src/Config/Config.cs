@@ -12,10 +12,6 @@ namespace Scarecrow.Configuration;
 
 public class Config : IModConfig
 {
-    public bool EnabledScarecrow { get; set; } = true;
-    public bool EnabledLittleScarecrow { get; set; } = true;
-    public bool EnabledStrawdummy { get; set; } = true;
-
     public int BlockRadiusScarecrow { get; set; } = 16;
     public int BlockRadiusLittleScarecrow { get; set; } = 8;
     public int BlockRadiusStrawdummy { get; set; } = 4;
@@ -29,10 +25,6 @@ public class Config : IModConfig
         {
             return;
         }
-
-        EnabledScarecrow = previousConfig.EnabledScarecrow;
-        EnabledLittleScarecrow = previousConfig.EnabledLittleScarecrow;
-        EnabledStrawdummy = previousConfig.EnabledStrawdummy;
 
         BlockRadiusScarecrow = previousConfig.BlockRadiusScarecrow;
         BlockRadiusLittleScarecrow = previousConfig.BlockRadiusLittleScarecrow;

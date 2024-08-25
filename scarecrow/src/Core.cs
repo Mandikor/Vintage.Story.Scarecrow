@@ -20,23 +20,13 @@ public class Core : ModSystem
 
     public override void StartPre(ICoreAPI api)
     {
-        //if (api.Side.IsServer())
-        //{
             Config = ModConfig.ReadConfig<Config>(api, "MandikorsMods/ScareCrowConfig.json");
-            #region 
-            api.World.Config.SetBool("Scarecrow_Scarecrow_Enabled", Config.EnabledScarecrow);
-            api.World.Config.SetBool("Scarecrow_LittleScarecrow_Enabled", Config.EnabledLittleScarecrow);
-            api.World.Config.SetBool("Scarecrow_Strawdummy_Enabled", Config.EnabledStrawdummy);
 
+            #region 
             api.World.Config.SetInt("Scarecrow_Blockingradius_Scarecrow", Config.BlockRadiusScarecrow);
             api.World.Config.SetInt("Scarecrow_Blockingradius_LittleScarecrow", Config.BlockRadiusLittleScarecrow);
             api.World.Config.SetInt("Scarecrow_Blockingradius_Strawdummy", Config.BlockRadiusStrawdummy);
             #endregion
-        //}
-        //if (api.Side.IsClient())
-        //{
-        //    Config = ModConfig.ReadConfig<Config>(api, "MandikorsMods/ScareCrowConfig.json");
-        //}
     }
 
     public override void Start(ICoreAPI api)
@@ -50,10 +40,6 @@ public class Core : ModSystem
         api.RegisterEntity("EntityScareCrow", typeof(EntityScareCrow));
 
         api.RegisterEntity("EntitySC_StrawDummy", typeof(EntitySC_StrawDummy));
-    }
-
-    public override void StartServerSide(ICoreServerAPI api)
-    {
     }
 
     public override void AssetsFinalize(ICoreAPI api)

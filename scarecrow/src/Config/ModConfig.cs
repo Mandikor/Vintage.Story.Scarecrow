@@ -10,8 +10,6 @@ using Vintagestory.API.Util;
 
 namespace Scarecrow.Configuration;
 
-//private const string jsonConfig = "MandikorsMods/ScareCrowConfig.json";
-
 public static class ModConfig
 {
     public static T ReadConfig<T>(ICoreAPI api, string jsonConfig) where T : class, IModConfig

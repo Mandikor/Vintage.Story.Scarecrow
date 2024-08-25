@@ -53,6 +53,10 @@
   <Content Include="assets\**">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
+  <Compile Remove="assets\scarecrow\patches\disable_recipes\**" />
+  <Content Remove="assets\scarecrow\patches\disable_recipes\**" />
+  <EmbeddedResource Remove="assets\scarecrow\patches\disable_recipes\**" />
+  <None Remove="assets\scarecrow\patches\disable_recipes\**" />
   <None Remove="assets\scarecrow\config\configlib-patches.json" />
   <Content Include="modinfo.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -75,8 +75,8 @@
     "path": "/server/behaviors/9/aitasks/12/seekingRange",
     "file": "game:entities/land/hare-baby.json",
     "condition": {
-      "when": "Scarecrow_Blockingradius_Strawdummy",
-      "useValue": true
+        "when": "Scarecrow_Blockingradius_Strawdummy",
+        "useValue": true
     },
     "side": "server"
   },
