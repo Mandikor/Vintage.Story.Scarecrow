@@ -7,29 +7,41 @@ using Vintagestory.API.Common.Entities;
 using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
 using Vintagestory.API.Util;
+using Scarecrow.Configuration;
+using Microsoft.VisualBasic;
+using Vintagestory.GameContent;
 
 namespace Scarecrow;
 
 public class Core : ModSystem
 {
-    ICoreAPI api;
 
-    public Config SCConfig
+    public static Config Config { get; set; }
+
+    public override void StartPre(ICoreAPI api)
     {
-        get
-        {
-            return (Config)api.ObjectCache["MandikorsMods/ScareCrowConfig.json"];
-        }
-        set
-        {
-            api.ObjectCache.Add("MandikorsMods/ScareCrowConfig.json", value);
-        }
+        //if (api.Side.IsServer())
+        //{
+            Config = ModConfig.ReadConfig<Config>(api, "MandikorsMods/ScareCrowConfig.json");
+            #region 
+            api.World.Config.SetBool("Scarecrow_Scarecrow_Enabled", Config.EnabledScarecrow);
+            api.World.Config.SetBool("Scarecrow_LittleScarecrow_Enabled", Config.EnabledLittleScarecrow);
+            api.World.Config.SetBool("Scarecrow_Strawdummy_Enabled", Config.EnabledStrawdummy);
+
+            api.World.Config.SetInt("Scarecrow_Blockingradius_Scarecrow", Config.BlockRadiusScarecrow);
+            api.World.Config.SetInt("Scarecrow_Blockingradius_LittleScarecrow", Config.BlockRadiusLittleScarecrow);
+            api.World.Config.SetInt("Scarecrow_Blockingradius_Strawdummy", Config.BlockRadiusStrawdummy);
+            #endregion
+        //}
+        //if (api.Side.IsClient())
+        //{
+        //    Config = ModConfig.ReadConfig<Config>(api, "MandikorsMods/ScareCrowConfig.json");
+        //}
     }
 
     public override void Start(ICoreAPI api)
     {
         base.Start(api);
-        this.api = api;
 
         api.RegisterItemClass("ItemLittleScareCrow", typeof(ItemLittleScareCrow));
         api.RegisterEntity("EntityLittleScareCrow", typeof(EntityLittleScareCrow));
@@ -42,25 +54,6 @@ public class Core : ModSystem
 
     public override void StartServerSide(ICoreServerAPI api)
     {
-        Config scareConfig = null;
-
-        try
-        {
-            scareConfig = api.LoadModConfig<Config>("MandikorsMods/ScareCrowConfig.json");
-        }
-        catch (Exception)
-        {
-            api.Logger.Warning("Scarecrow: Config Exception! Config will be rebuilt.");
-        }
-
-        if (scareConfig == null)
-        {
-            api.Logger.Warning("Scarecrow: Config Error! A typo or a new config setting can cause this. Config will be rebuilt.");
-            Config scc = new();
-            api.StoreModConfig<Config>(scc, "MandikorsMods/ScareCrowConfig.json");
-            scareConfig = api.LoadModConfig<Config>("MandikorsMods/ScareCrowConfig.json");
-        }
-        SCConfig = scareConfig;
     }
 
     public override void AssetsFinalize(ICoreAPI api)

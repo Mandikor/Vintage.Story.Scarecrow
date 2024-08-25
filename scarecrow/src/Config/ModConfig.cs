@@ -8,63 +8,56 @@ using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
 using Vintagestory.API.Util;
 
-namespace Scarecrow;
+namespace Scarecrow.Configuration;
+
+//private const string jsonConfig = "MandikorsMods/ScareCrowConfig.json";
 
 public static class ModConfig
 {
-    private const string jsonConfig = "MandikorsMods/ScareCrowConfig.json";
-
-    public static Config ReadConfig(ICoreAPI api)
+    public static T ReadConfig<T>(ICoreAPI api, string jsonConfig) where T : class, IModConfig
     {
-        Config config;
+        T config;
 
         try
         {
-            config = LoadConfig(api);
+            config = LoadConfig<T>(api, jsonConfig);
 
             if (config == null)
             {
-                GenerateConfig(api);
-                config = LoadConfig(api);
+                GenerateConfig<T>(api, jsonConfig);
+                config = LoadConfig<T>(api, jsonConfig);
             }
             else
             {
-                GenerateConfig(api, config);
+                GenerateConfig(api, jsonConfig, config);
             }
         }
         catch
         {
-            GenerateConfig(api);
-            config = LoadConfig(api);
+            GenerateConfig<T>(api, jsonConfig);
+            config = LoadConfig<T>(api, jsonConfig);
         }
 
-        #region 
-        api.World.Config.SetBool("Scarecrow_Scarecrow_Enabled", config.EnabledScarecrow);
-        api.World.Config.SetBool("Scarecrow_LittleScarecrow_Enabled", config.EnabledLittleScarecrow);
-        api.World.Config.SetBool("Scarecrow_Strawdummy_Enabled", config.EnabledStrawdummy);
-
-        api.World.Config.SetInt("Scarecrow_Blockingradius_Scarecrow", config.BlockRadiusScarecrow);
-        api.World.Config.SetInt("Scarecrow_Blockingradius_LittleScarecrow", config.BlockRadiusLittleScarecrow);
-        api.World.Config.SetInt("Scarecrow_Blockingradius_Strawdummy", config.BlockRadiusStrawdummy);
-        #endregion
-
         return config;
-
-    }
-    private static Config LoadConfig(ICoreAPI api)
-    {
-        return api.LoadModConfig<Config>(jsonConfig);
     }
 
-    private static void GenerateConfig(ICoreAPI api)
+    public static void WriteConfig<T>(ICoreAPI api, string jsonConfig, T config) where T : class, IModConfig
     {
-        api.StoreModConfig(new Config(), jsonConfig);
+        GenerateConfig(api, jsonConfig, config);
     }
 
-    private static void GenerateConfig(ICoreAPI api, Config previousConfig)
+    private static T LoadConfig<T>(ICoreAPI api, string jsonConfig) where T : IModConfig
     {
-        api.StoreModConfig(new Config(previousConfig), jsonConfig);
+        return api.LoadModConfig<T>(jsonConfig);
+    }
+
+    private static void GenerateConfig<T>(ICoreAPI api, string jsonConfig, T previousConfig = null) where T : class, IModConfig
+    {
+        api.StoreModConfig(CloneConfig<T>(api, previousConfig), jsonConfig);
+    }
+
+    private static T CloneConfig<T>(ICoreAPI api, T config = null) where T : class, IModConfig
+    {
+        return (T)Activator.CreateInstance(typeof(T), new object[] { api, config });
     }
 }
-
-

@@ -7,13 +7,14 @@ using Vintagestory.API.Common.Entities;
 using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
 using Vintagestory.API.Util;
+using Scarecrow.Configuration;
 
 namespace Scarecrow;
 
 public class EntityScareCrow : EntityHumanoid
 {
     private ICoreServerAPI sapi;
-    private Config scconfig;
+    private readonly Config Config;
 
     public override void Initialize(EntityProperties properties, ICoreAPI api, long InChunkIndex3d)
     {
@@ -23,7 +24,7 @@ public class EntityScareCrow : EntityHumanoid
             sapi = api as ICoreServerAPI;
             sapi.Event.OnTrySpawnEntity += SpawnInterceptor;
             sapi.Event.OnEntitySpawn += Event_EntitySpawn;
-            scconfig = api.ModLoader.GetModSystem<Core>(true).SCConfig;
+            //scconfig = api.ModLoader.GetModSystem<Core>(true).SCConfig;
         }
         else
         {
@@ -36,9 +37,9 @@ public class EntityScareCrow : EntityHumanoid
         if (entity.Code.Path.StartsWith("hare") || entity.Code.Path.StartsWith("raccoon"))
         {
             double distance = this.ServerPos.DistanceTo(entity.ServerPos);
-            if (distance <= scconfig.BlockRadiusScarecrow)
+            if (distance <= Config.BlockRadiusScarecrow)
             {
-                if (scconfig.DebugOutput)
+                if (Config.DebugOutput)
                 {
                     sapi.Logger.Debug($"Scarecrow: EntitySpawn: Blocking {entity.Code} at {distance:N0} blocks away.");
                 }
@@ -60,9 +61,9 @@ public class EntityScareCrow : EntityHumanoid
         if (entityProperties.Code.Path.StartsWith("hare") || entityProperties.Code.Path.StartsWith("raccoon"))
         {
             double distance = this.ServerPos.DistanceTo(spawnPosition);
-            if (distance <= scconfig.BlockRadiusScarecrow)
+            if (distance <= Config.BlockRadiusScarecrow)
             {
-                if (scconfig.DebugOutput)
+                if (Config.DebugOutput)
                 {
                     sapi.Logger.Debug($"Scarecrow: Blocking {entityProperties.Code} at {distance:N0} blocks away.");
                 }

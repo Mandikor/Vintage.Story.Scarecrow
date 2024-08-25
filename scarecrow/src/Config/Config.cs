@@ -8,24 +8,28 @@ using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
 using Vintagestory.API.Util;
 
-namespace Scarecrow;
+namespace Scarecrow.Configuration;
 
-public class Config
+public class Config : IModConfig
 {
-    public bool EnabledScarecrow = true;
-    public bool EnabledLittleScarecrow = true;
-    public bool EnabledStrawdummy = true;
+    public bool EnabledScarecrow { get; set; } = true;
+    public bool EnabledLittleScarecrow { get; set; } = true;
+    public bool EnabledStrawdummy { get; set; } = true;
 
-    public int BlockRadiusScarecrow = 16;
-    public int BlockRadiusLittleScarecrow = 8;
-    public int BlockRadiusStrawdummy = 4;
+    public int BlockRadiusScarecrow { get; set; } = 16;
+    public int BlockRadiusLittleScarecrow { get; set; } = 8;
+    public int BlockRadiusStrawdummy { get; set; } = 4;
 
-    public bool DebugOutput = false;
+    public bool DebugOutput { get; set; } = false;
 
-    public Config() { }
 
-    public Config(Config previousConfig)
+    public Config(ICoreAPI api, Config previousConfig = null)
     {
+        if (previousConfig == null)
+        {
+            return;
+        }
+
         EnabledScarecrow = previousConfig.EnabledScarecrow;
         EnabledLittleScarecrow = previousConfig.EnabledLittleScarecrow;
         EnabledStrawdummy = previousConfig.EnabledStrawdummy;
