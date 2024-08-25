@@ -14,8 +14,7 @@ namespace Scarecrow;
 public class EntityLittleScareCrow : EntityHumanoid
 {
     private ICoreServerAPI sapi;
-    //public static Config Config { get; }
-    public Config Config { get; }
+    public Config scconfig;
 
     public override void Initialize(EntityProperties properties, ICoreAPI api, long InChunkIndex3d)
     {
@@ -25,8 +24,7 @@ public class EntityLittleScareCrow : EntityHumanoid
             sapi = api as ICoreServerAPI;
             sapi.Event.OnTrySpawnEntity += SpawnInterceptor;
             sapi.Event.OnEntitySpawn += Event_EntitySpawn;
-            var Config = api.ModLoader.GetModSystem<Core>(true).Config;
-            //Config Config = Config;
+            scconfig = api.ModLoader.GetModSystem<Core>(true).Config;
         }
         else
         {
@@ -39,9 +37,9 @@ public class EntityLittleScareCrow : EntityHumanoid
         if (entity.Code.Path.StartsWith("hare") || entity.Code.Path.StartsWith("raccoon"))
         {
             double distance = this.ServerPos.DistanceTo(entity.ServerPos);
-            if (distance <= Config.BlockRadiusLittleScarecrow)
+            if (distance <= scconfig.BlockRadiusLittleScarecrow)
             {
-                if (Config.DebugOutput)
+                if (scconfig.DebugOutput)
                 {
                     sapi.Logger.Debug($"Scarecrow: EntitySpawn: Blocking {entity.Code} at {distance:N0} blocks away.");
                 }
@@ -63,9 +61,9 @@ public class EntityLittleScareCrow : EntityHumanoid
         if (entityProperties.Code.Path.StartsWith("hare") || entityProperties.Code.Path.StartsWith("raccoon"))
         {
             double distance = this.ServerPos.DistanceTo(spawnPosition);
-            if (distance <= Config.BlockRadiusLittleScarecrow)
+            if (distance <= scconfig.BlockRadiusLittleScarecrow)
             {
-                if (Config.DebugOutput)
+                if (scconfig.DebugOutput)
                 {
                     sapi.Logger.Debug($"Scarecrow: Blocking {entityProperties.Code} at {distance:N0} blocks away.");
                 }

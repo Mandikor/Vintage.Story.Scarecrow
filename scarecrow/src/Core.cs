@@ -16,7 +16,7 @@ namespace Scarecrow;
 public class Core : ModSystem
 {
 
-    public static Config Config { get; set; }
+    public Config Config { get; set; }
 
     public override void StartPre(ICoreAPI api)
     {
