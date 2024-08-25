@@ -1,60 +1,69 @@
-namespace Scarecrow
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Vintagestory.API.Client;
+using Vintagestory.API.Common;
+using Vintagestory.API.Common.Entities;
+using Vintagestory.API.MathTools;
+using Vintagestory.API.Server;
+using Vintagestory.API.Util;
+
+namespace Scarecrow;
+
+public static class ModConfig
 {
-    public static class ModConfig
+    private const string jsonConfig = "MandikorsMods/ScareCrowConfig.json";
+
+    public static Config ReadConfig(ICoreAPI api)
     {
-        private const string jsonConfig = "MandikorsMods/ScareCrowConfig.json";
+        Config config;
 
-        public static Config ReadConfig(ICoreAPI api)
+        try
         {
-            Config config;
+            config = LoadConfig(api);
 
-            try
-            {
-                config = LoadConfig(api);
-
-                if (config == null)
-                {
-                    GenerateConfig(api);
-                    config = LoadConfig(api);
-                }
-                else
-                {
-                    GenerateConfig(api, config);
-                }
-            }
-            catch
+            if (config == null)
             {
                 GenerateConfig(api);
                 config = LoadConfig(api);
             }
-
-            #region 
-            api.World.Config.SetBool("Scarecrow_Scarecrow_Enabled", config.EnabledScarecrow);
-            api.World.Config.SetBool("Scarecrow_LittleScarecrow_Enabled", config.EnabledLittleScarecrow);
-            api.World.Config.SetBool("Scarecrow_Strawdummy_Enabled", config.EnabledStrawdummy);
-
-            api.World.Config.SetInt("Scarecrow_Blockingradius_Scarecrow", config.BlockRadiusScarecrow);
-            api.World.Config.SetInt("Scarecrow_Blockingradius_LittleScarecrow", config.BlockRadiusLittleScarecrow);
-            api.World.Config.SetInt("Scarecrow_Blockingradius_Strawdummy", config.BlockRadiusStrawdummy);
-            #endregion
-
-            return config;
-
+            else
+            {
+                GenerateConfig(api, config);
+            }
         }
-        private static Config LoadConfig(ICoreAPI api)
+        catch
         {
-            return api.LoadModConfig<Config>(jsonConfig);
+            GenerateConfig(api);
+            config = LoadConfig(api);
         }
 
-        private static void GenerateConfig(ICoreAPI api)
-        {
-            api.StoreModConfig(new Config(), jsonConfig);
-        }
+        #region 
+        api.World.Config.SetBool("Scarecrow_Scarecrow_Enabled", config.EnabledScarecrow);
+        api.World.Config.SetBool("Scarecrow_LittleScarecrow_Enabled", config.EnabledLittleScarecrow);
+        api.World.Config.SetBool("Scarecrow_Strawdummy_Enabled", config.EnabledStrawdummy);
 
-        private static void GenerateConfig(ICoreAPI api, Config previousConfig)
-        {
-            api.StoreModConfig(new Config(previousConfig), jsonConfig);
-        }
+        api.World.Config.SetInt("Scarecrow_Blockingradius_Scarecrow", config.BlockRadiusScarecrow);
+        api.World.Config.SetInt("Scarecrow_Blockingradius_LittleScarecrow", config.BlockRadiusLittleScarecrow);
+        api.World.Config.SetInt("Scarecrow_Blockingradius_Strawdummy", config.BlockRadiusStrawdummy);
+        #endregion
+
+        return config;
+
+    }
+    private static Config LoadConfig(ICoreAPI api)
+    {
+        return api.LoadModConfig<Config>(jsonConfig);
+    }
+
+    private static void GenerateConfig(ICoreAPI api)
+    {
+        api.StoreModConfig(new Config(), jsonConfig);
+    }
+
+    private static void GenerateConfig(ICoreAPI api, Config previousConfig)
+    {
+        api.StoreModConfig(new Config(previousConfig), jsonConfig);
     }
 }
 
