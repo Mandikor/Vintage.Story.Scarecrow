@@ -37,5 +37,19 @@
 	"scarecrow:heldhelp-place-lsc": "小さなかかしを地面に置く",
 	"scarecrow:heldhelp-place-sc": "かかしを地面に置く",
 
-	"scarecrow:entityhelp-pickup": "拾う"
+	"scarecrow:entityhelp-pickup": "拾う",
+
+
+	// Config lib by Maltiez text
+	"ScarecrowBlockingSettings": "Blocking Settings",
+	"BlockRadiusScarecrow": "Blocking radius for scarecrow",
+	"BlockRadiusScarecrowComment": "Set the radius for the scarecrow to block hares and raccoons",
+	"BlockRadiusLittleScarecrow": "Blocking radius for little scarecrow",
+	"BlockRadiusLittleScarecrowComment": "Set the radius for the little scarecrow to block hares and raccoons",
+	"BlockRadiusStrawdummy": "Blocking radius for strawdummy",
+	"BlockRadiusStrawdummyComment": "Set the radius for the strawdummy to block hares and raccoons",
+	"ScarecrowDebugSettings": "Debug Settings",
+	"DebugOutput": "Enable Debug Output",
+	"DebugOutputComment": "Activate or deactivate debug informations"
+
 }

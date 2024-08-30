@@ -36,6 +36,8 @@
 
 	"scarecrow:entityhelp-pickup": "Pick up",
 
+
+	// Config lib by Maltiez text
 	"ScarecrowBlockingSettings": "Blocking Settings",
 	"BlockRadiusScarecrow": "Blocking radius for scarecrow",
 	"BlockRadiusScarecrowComment": "Set the radius for the scarecrow to block hares and raccoons",
