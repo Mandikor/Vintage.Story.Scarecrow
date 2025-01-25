@@ -1,0 +1,53 @@
+{
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Épouvantail",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Épouvantail",
+	"scarecrow:itemdesc-scarecrow": "\n\nIl chasse les invités désagréables de votre jardin. Les lièvres et les ratons laveurs ont peur des épouvantails et les repoussent jusqu'à 16 blocs. (Défaut)\n\n<font color=\"#99c9f9\"><i>Elle a l'air horrible, mais la citrouille est délicieuse.</i></font>",
+
+	"scarecrow:item-handbooktext-scarecrow": "Un épouvantail debout dans le sol peut être récupéré en utilisant <hk>ctrl</hk> + <hk>rightmouse</hk> click",
+
+	"scarecrow:item-creature-scarecrow": "Épouvantail",
+	"scarecrow:item-dead-creature-scarecrow": "Épouvantail détruit",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Petit épouvantail",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nIl chasse les invités désagréables de votre jardin. Les lièvres et les ratons laveurs ont peur des petits épouvantails et les repoussent jusqu'à 8 blocs. (Défaut)",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Un petit épouvantail debout dans le sol peut être récupéré en utilisant <hk>ctrl</hk> + <hk>rightmouse</hk> click",
+
+	"scarecrow:item-creature-little-scarecrow": "Petit épouvantail",
+	"scarecrow:item-dead-creature-little-scarecrow": "Petit épouvantail détruit",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "Un mannequin de paille debout dans le sol peut être récupéré en utilisantg <hk>ctrl</hk> + <hk>rightmouse</hk> click",
+	"game:item-dead-creature-strawdummy": "Mannequin de paille détruit",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Placer le petit épouvantail sur le sol",
+	"scarecrow:heldhelp-place-sc": "Placer l'épouvantail sur le sol",
+	"scarecrow:heldhelp-place-sd": "Placer le mannequin de paille sur le sol",
+
+	"scarecrow:entityhelp-pickup": "Ramasser",
+
+
+	// Config lib by Maltiez text
+	"ScarecrowBlockingSettings": "Paramètres de blocage",
+	"BlockRadiusScarecrow": "Rayon de blocage pour l'épouvantail",
+	"BlockRadiusScarecrowComment": "Définir le rayon de l'épouvantail pour bloquer les lièvres et les ratons laveurs",
+	"BlockRadiusLittleScarecrow": "Rayon de blocage pour le petit épouvantail",
+	"BlockRadiusLittleScarecrowComment": "Définir le rayon du petit épouvantail pour bloquer les lièvres et les ratons laveurs",
+	"BlockRadiusStrawdummy": "Rayon de blocage pour le mannequin de paille",
+	"BlockRadiusStrawdummyComment": "Définir le rayon du mannequin de paille pour bloquer les lièvres et les ratons laveurs",
+	"ScarecrowDebugSettings": "Paramètres de debug",
+	"DebugOutput": "Activer sortie debug",
+	"DebugOutputComment": "Activer ou désactiver les informations de debug"
+
+
+}
