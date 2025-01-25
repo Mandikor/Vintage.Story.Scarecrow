@@ -5,7 +5,7 @@
 
 	// Description Scarecrow
 	"scarecrow:item-scarecrow": "Scarecrow",
-	"scarecrow:itemdesc-scarecrow": "\n\nIt sells unpleasant guests from your garden. Hares and raccoons are afraid of scarecrows and approach up to 16 blocks. (Default)\n\n<font color=\"#99c9f9\"><i>She looks terrible, but the pumpkin is delicious.</i></font>",
+	"scarecrow:itemdesc-scarecrow": "\n\nIt sells unpleasant guests from your garden. Hares and raccoons are afraid of scarecrows and approach up to 16 blocks. (Default)\n\n<font color=\"#99c9f9\"><i>She looks terrible, but the pumpkin is delicious.</i></font>\n\n",
 
 	"scarecrow:item-handbooktext-scarecrow": "A Scarecrow standing in the ground can be picked up using <hk>ctrl</hk> + <hk>rightmouse</hk> click",
 
@@ -15,7 +15,7 @@
 
 	// Description Little Scarecrow
 	"scarecrow:item-little-scarecrow": "Little scarecrow",
-	"scarecrow:itemdesc-little-scarecrow": "\n\nIt sells unpleasant guests from your garden. Hares and raccoons are afraid of little scarecrows and approach up to 8 blocks. (Default)",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nIt sells unpleasant guests from your garden. Hares and raccoons are afraid of little scarecrows and approach up to 8 blocks. (Default)\n\n",
 
 	"scarecrow:item-handbooktext-little-scarecrow": "A little scarecrow standing in the ground can be picked up using <hk>ctrl</hk> + <hk>rightmouse</hk> click",
 

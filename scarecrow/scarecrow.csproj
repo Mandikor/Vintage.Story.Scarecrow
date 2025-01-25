@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
   </PropertyGroup>
@@ -73,5 +74,11 @@
 <ItemGroup>
   <None Include="C:\Users\mandi\source\repos\scarecrow\scarecrow\.editorconfig" />
 </ItemGroup>
+
+<ItemGroup>
+  <PackageReference Include="Cake.Frosting" Version="4.2.0" />
+</ItemGroup>
+
+<ProjectExtensions><VisualStudio><UserProperties assets_4scarecrow_4lang_4en_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 
 </Project>

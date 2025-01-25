@@ -2,11 +2,12 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
     <RunWorkingDirectory>$(MSBuildProjectDirectory)</RunWorkingDirectory>
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="Cake.Frosting" Version="3.0.0" />
+    <PackageReference Include="Cake.Frosting" Version="4.2.0" />
     <PackageReference Include="Cake.Json" Version="7.0.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>

@@ -10,7 +10,7 @@
 
 	// Description Scarecrow
 	"scarecrow:item-scarecrow": "案山子(かかし)",
-	"scarecrow:itemdesc-scarecrow": "\n\n 不快な客人からお庭を守ります。ウサギやタヌキは案山子(かかし)を怖がりますが、最大16ブロックまでは近付いて来ます。（デフォルト）\n\n<font color=\"#99c9f9\"><i>酷い顔をしていますが、カボチャは美味しいです。<\/i><\/font>",
+	"scarecrow:itemdesc-scarecrow": "\n\n 不快な客人からお庭を守ります。ウサギやタヌキは案山子(かかし)を怖がりますが、最大16ブロックまでは近付いて来ます。（デフォルト）\n\n<font color=\"#99c9f9\"><i>酷い顔をしていますが、カボチャは美味しいです。<\/i><\/font>\n\n",
 
 	"scarecrow:item-handbooktext-scarecrow": "地面に立っている案山子(かかし)は、<hk>ctrl<\/hk> + <hk>右クリック<\/hk>で拾うことが出来ます。",
 
@@ -20,7 +20,7 @@
 
 	// Description Little Scarecrow
 	"scarecrow:item-little-scarecrow": "小さな案山子(かかし)",
-	"scarecrow:itemdesc-little-scarecrow": "\n\n 不快な客人からお庭を守ります。ウサギやアライグマは小さな案山子(かかし)をあまり怖がらず、最大8ブロックまでは近付いて来ます。（デフォルト）",
+	"scarecrow:itemdesc-little-scarecrow": "\n\n 不快な客人からお庭を守ります。ウサギやアライグマは小さな案山子(かかし)をあまり怖がらず、最大8ブロックまでは近付いて来ます。（デフォルト）\n\n",
 
 	"scarecrow:item-handbooktext-little-scarecrow": "地面に立っている小さな案山子(かかし)は、<hk>ctrl<\/hk> + <hk>右クリック<\/hk>を使用して拾うことが出来ます。",
 

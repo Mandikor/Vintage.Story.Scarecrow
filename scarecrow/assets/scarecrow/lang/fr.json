@@ -5,7 +5,7 @@
 
 	// Description Scarecrow
 	"scarecrow:item-scarecrow": "Épouvantail",
-	"scarecrow:itemdesc-scarecrow": "\n\nIl chasse les invités désagréables de votre jardin. Les lièvres et les ratons laveurs ont peur des épouvantails et les repoussent jusqu'à 16 blocs. (Défaut)\n\n<font color=\"#99c9f9\"><i>Elle a l'air horrible, mais la citrouille est délicieuse.</i></font>",
+	"scarecrow:itemdesc-scarecrow": "\n\nIl chasse les invités désagréables de votre jardin. Les lièvres et les ratons laveurs ont peur des épouvantails et les repoussent jusqu'à 16 blocs. (Défaut)\n\n<font color=\"#99c9f9\"><i>Elle a l'air horrible, mais la citrouille est délicieuse.</i></font>\n\n",
 
 	"scarecrow:item-handbooktext-scarecrow": "Un épouvantail debout dans le sol peut être récupéré en utilisant <hk>ctrl</hk> + <hk>rightmouse</hk> click",
 
@@ -15,7 +15,7 @@
 
 	// Description Little Scarecrow
 	"scarecrow:item-little-scarecrow": "Petit épouvantail",
-	"scarecrow:itemdesc-little-scarecrow": "\n\nIl chasse les invités désagréables de votre jardin. Les lièvres et les ratons laveurs ont peur des petits épouvantails et les repoussent jusqu'à 8 blocs. (Défaut)",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nIl chasse les invités désagréables de votre jardin. Les lièvres et les ratons laveurs ont peur des petits épouvantails et les repoussent jusqu'à 8 blocs. (Défaut)\n\n",
 
 	"scarecrow:item-handbooktext-little-scarecrow": "Un petit épouvantail debout dans le sol peut être récupéré en utilisant <hk>ctrl</hk> + <hk>rightmouse</hk> click",
 

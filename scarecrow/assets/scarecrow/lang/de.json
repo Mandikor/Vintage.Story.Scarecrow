@@ -5,7 +5,7 @@
 
 	// Description Scarecrow
 	"scarecrow:item-scarecrow": "Vogelscheuche",
-	"scarecrow:itemdesc-scarecrow": "\n\nSie vertreibt unliebsame Gäste aus deinem Garten. Hasen und Waschbären haben Angst vor Vogelscheuchen und nähern sich bis auf 16 Blöcke. (Voreinstellung)\n\n<font color=\"#99c9f9\"><i>Sie schaut schrecklich aus, aber der Kürbis ist lecker.</i></font>",
+	"scarecrow:itemdesc-scarecrow": "\n\nSie vertreibt unliebsame Gäste aus deinem Garten. Hasen und Waschbären haben Angst vor Vogelscheuchen und nähern sich bis auf 16 Blöcke. (Voreinstellung)\n\n<font color=\"#99c9f9\"><i>Sie schaut schrecklich aus, aber der Kürbis ist lecker.</i></font>\n\n",
 
 	"scarecrow:item-handbooktext-scarecrow": "Eine stehende Vogelscheuche kann mit <hk>ctrl</hk> und <hk>rightmouse</hk> aufgehoben werden.",
 
@@ -15,7 +15,7 @@
 
 	// Description Little Scarecrow
 	"scarecrow:item-little-scarecrow": "Kleine Vogelscheuche",
-	"scarecrow:itemdesc-little-scarecrow": "\n\nSie vertreibt unliebsame Gäste aus deinem Garten. Hasen und Waschbären haben weniger Angst vor kleinen Vogelscheuchen und nähern sich bis auf 8 Blöcke. (Voreinstellung)",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nSie vertreibt unliebsame Gäste aus deinem Garten. Hasen und Waschbären haben weniger Angst vor kleinen Vogelscheuchen und nähern sich bis auf 8 Blöcke. (Voreinstellung)\n\n",
 
 	"scarecrow:item-handbooktext-little-scarecrow": "Eine stehende kleine Vogelscheuche kann mit <hk>ctrl</hk> und <hk>rightmouse</hk> aufgehoben werden.",
 

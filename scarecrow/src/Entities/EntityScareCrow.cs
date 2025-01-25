@@ -99,6 +99,12 @@ public class EntityScareCrow : EntityHumanoid
                 sapi.Event.OnEntitySpawn -= Event_EntitySpawn;
             }
 
+            byEntity.World.Logger.Audit("{0} Took 1x {1} at {2}.",
+                byEntity.GetName(),
+                itemStack.Collectible.Code,
+                ServerPos.AsBlockPos
+            );
+
             Die(EnumDespawnReason.Death, null);
             return;
         }

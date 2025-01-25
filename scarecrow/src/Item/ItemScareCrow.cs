@@ -16,9 +16,7 @@ public class ItemScareCrow : Item
     {
         if (blockSel == null) return;
 
-        IWorldAccessor world = byEntity.World;
-        EntityPlayer entityPlayer = byEntity as EntityPlayer;
-        IPlayer player = world.PlayerByUid(entityPlayer?.PlayerUID);
+        IPlayer player = byEntity.World.PlayerByUid((byEntity as EntityPlayer)?.PlayerUID);
 
         if (!byEntity.World.Claims.TryAccess(player, blockSel.Position, EnumBlockAccessFlags.BuildOrBreak))
         {
@@ -40,15 +38,17 @@ public class ItemScareCrow : Item
             entity.ServerPos.X = blockSel.Position.X + (blockSel.DidOffset ? 0 : blockSel.Face.Normali.X) + 0.5f;
             entity.ServerPos.Y = blockSel.Position.Y + (blockSel.DidOffset ? 0 : blockSel.Face.Normali.Y);
             entity.ServerPos.Z = blockSel.Position.Z + (blockSel.DidOffset ? 0 : blockSel.Face.Normali.Z) + 0.5f;
-            entity.ServerPos.Yaw = byEntity.SidedPos.Yaw + GameMath.PI;
+            entity.ServerPos.Yaw = byEntity.SidedPos.Yaw + GameMath.PIHALF;
 
-            if (player != null && player.PlayerUID != null)
+            if (player?.PlayerUID != null)
             {
                 entity.WatchedAttributes.SetString("ownerUid", player.PlayerUID);
             }
 
             entity.Pos.SetFrom(entity.ServerPos);
+
             byEntity.World.PlaySoundAt(new AssetLocation("game:sounds/block/torch"), entity, player, true, 32f, 1f);
+
             byEntity.World.SpawnEntity(entity);
             handling = EnumHandHandling.PreventDefaultAction;
         }
