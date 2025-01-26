@@ -5,9 +5,9 @@
   "description": "With the scarecrow you get an effective solution to a plague of hares and racoons in your garden.",
   "authors": [ "Mandikor" ],
   "contributors": [  ],
-  "translators": [ "Macoto Hino", "Mokradin" ],
-  "version": "1.6.2",
+  "translators": [ "Macoto Hino", "Mokradin", "FNX" ],
+  "version": "1.6.3",
   "dependencies": {
-    "game": "1.20.0"
+    "game": "1.20.3"
   }
 }
