@@ -77,6 +77,7 @@
 
 <ItemGroup>
   <PackageReference Include="Cake.Frosting" Version="4.2.0" />
+  <PackageReference Include="System.Formats.Asn1" Version="8.0.1" />
 </ItemGroup>
 
 <ProjectExtensions><VisualStudio><UserProperties assets_4scarecrow_4lang_4en_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>

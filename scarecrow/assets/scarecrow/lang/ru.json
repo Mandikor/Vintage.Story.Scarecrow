@@ -1,0 +1,55 @@
+{
+	// Russian translation by FNX
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Пугало",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Пугало",
+	"scarecrow:itemdesc-scarecrow": "\n\nОно отпугивает неприятных гостей от вашего сада. Зайцы и еноты боятся пугала и подходят на расстояние до 16 блоков. (по умолчанию)\n\n<font color=\"#99c9f9\"><i>Она выглядит ужасно, но тыква очень вкусная.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "Пугало, стоящее на земле, можно поднять с помощью <hk>ctrl</hk> + <hk>rightmouse</hk> клик",
+
+	"scarecrow:item-creature-scarecrow": "Пугало",
+	"scarecrow:item-dead-creature-scarecrow": "Разрушенное Пугало",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Маленькое пугало",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nОно отпугивает неприятных гостей от вашего сада. Зайцы и еноты боятся пугала и подходят на расстояние до 8 блоков. (по умолчанию)\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Маленькое пугало, стоящее на земле, можно поднять с помощью <hk>ctrl</hk> + <hk>rightmouse</hk> клик",
+
+	"scarecrow:item-creature-little-scarecrow": "Маленькое пугало",
+	"scarecrow:item-dead-creature-little-scarecrow": "Разрушенное Маленькое пугало",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "Соломенный манекен, стоящий на земле, можно поднять с помощью <hk>ctrl</hk> + <hk>rightmouse</hk> клик",
+	"game:item-dead-creature-strawdummy": "Разрушенный соломенный манекен",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Поставьте маленькое пугало на землю.",
+	"scarecrow:heldhelp-place-sc": "Поставьте пугало на землю",
+	"scarecrow:heldhelp-place-sd": "Поставьте соломенный манекен на землю",
+
+	"scarecrow:entityhelp-pickup": "Поднять",
+
+
+	// Config lib by Maltiez text
+	"ScarecrowBlockingSettings": "Настройки блоков",
+	"BlockRadiusScarecrow": "Радиус блоков для пугала",
+	"BlockRadiusScarecrowComment": "Установите радиус действия пугала, чтобы оно отпугивало зайцев и енотов",
+	"BlockRadiusLittleScarecrow": "Радиус блоков для маленького пугала",
+	"BlockRadiusLittleScarecrowComment": "Установите радиус действия маленького пугала, чтобы оно отпугивало зайцев и енотов",
+	"BlockRadiusStrawdummy": "Радиус блоков для соломенного манекена",
+	"BlockRadiusStrawdummyComment": "Установите радиус действия соломенного чучела, чтобы оно отпугивало зайцев и енотов",
+	"ScarecrowDebugSettings": "Параметры отладки",
+	"DebugOutput": "Включить отладочный вывод",
+	"DebugOutputComment": "Активация или деактивация отладочной информации"
+
+
+}
