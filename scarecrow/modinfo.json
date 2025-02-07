@@ -6,7 +6,7 @@
   "authors": [ "Mandikor" ],
   "contributors": [  ],
   "translators": [ "Macoto Hino", "Mokradin", "FNX", "m1RAGE" ],
-  "version": "1.6.3",
+  "version": "1.6.4",
   "dependencies": {
     "game": "1.20.3"
   }

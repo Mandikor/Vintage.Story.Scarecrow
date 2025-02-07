@@ -7,7 +7,7 @@
 	"scarecrow:item-scarecrow": "Опудало",
 	"scarecrow:itemdesc-scarecrow": "\n\nВідганяє непроханих гостей з вашого саду. Зайці та єноти бояться опудала, тому підходять на відстань до 16 блоків. (Звичайний)\n\n<font color=\"#99c9f9\"><i>Виглядає воно жахливо, але гарбуз дуже смачний.</i></font>",
 
-	"scarecrow:item-handbooktext-scarecrow": "Опудало із землі можна підібрати за допомогою <hk>ctrl</hk> + <hk>rightmouse</hk>",
+	"scarecrow:item-handbooktext-scarecrow": "Опудало із землі можна підібрати за допомогою <hk>ctrl</hk> + <hk>rightmouse</hk> і порожньої правої руки.",
 
 	"scarecrow:item-creature-scarecrow": "Опудало",
 	"scarecrow:item-dead-creature-scarecrow": "Розтрощене опудало",
@@ -17,14 +17,14 @@
 	"scarecrow:item-little-scarecrow": "Мале опудало",
 	"scarecrow:itemdesc-little-scarecrow": "\n\nВідганяє непроханих гостей з вашого саду. Зайці та єноти бояться опудала, тому підходять на відстань до 16 блоків. (Звичайний)",
 
-	"scarecrow:item-handbooktext-little-scarecrow": "Мале опудало із землі можна підібрати за допомогою <hk>ctrl</hk> + <hk>rightmouse</hk>",
+	"scarecrow:item-handbooktext-little-scarecrow": "Мале опудало із землі можна підібрати за допомогою <hk>ctrl</hk> + <hk>rightmouse</hk> і порожньої правої руки.",
 
 	"scarecrow:item-creature-little-scarecrow": "Мале опудало",
 	"scarecrow:item-dead-creature-little-scarecrow": "Розтрощене мале опудало",
 
 
 	// Description Strawdummy
-	"game:item-handbooktext-strawdummy": "Солом'яне опудало із землі можна підібрати за допомогою <hk>ctrl</hk> + <hk>rightmouse</hk>",
+	"game:item-handbooktext-strawdummy": "Солом'яне опудало із землі можна підібрати за допомогою <hk>ctrl</hk> + <hk>rightmouse</hk> і порожньої правої руки.",
 	"game:item-dead-creature-strawdummy": "Розтрощене cолом'яне опудало",
 
 

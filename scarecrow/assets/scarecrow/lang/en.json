@@ -7,7 +7,7 @@
 	"scarecrow:item-scarecrow": "Scarecrow",
 	"scarecrow:itemdesc-scarecrow": "\n\nIt sells unpleasant guests from your garden. Hares and raccoons are afraid of scarecrows and approach up to 16 blocks. (Default)\n\n<font color=\"#99c9f9\"><i>She looks terrible, but the pumpkin is delicious.</i></font>\n\n",
 
-	"scarecrow:item-handbooktext-scarecrow": "A Scarecrow standing in the ground can be picked up using <hk>ctrl</hk> + <hk>rightmouse</hk> click",
+	"scarecrow:item-handbooktext-scarecrow": "A Scarecrow standing on the ground can be picked up using <hk>ctrl</hk> + <hk>rightmouse</hk> click and an empty right hand.",
 
 	"scarecrow:item-creature-scarecrow": "Scarecrow",
 	"scarecrow:item-dead-creature-scarecrow": "Destroyed scarecrow",
@@ -17,14 +17,14 @@
 	"scarecrow:item-little-scarecrow": "Little scarecrow",
 	"scarecrow:itemdesc-little-scarecrow": "\n\nIt sells unpleasant guests from your garden. Hares and raccoons are afraid of little scarecrows and approach up to 8 blocks. (Default)\n\n",
 
-	"scarecrow:item-handbooktext-little-scarecrow": "A little scarecrow standing in the ground can be picked up using <hk>ctrl</hk> + <hk>rightmouse</hk> click",
+	"scarecrow:item-handbooktext-little-scarecrow": "A little scarecrow standing on the ground can be picked up using <hk>ctrl</hk> + <hk>rightmouse</hk> click and an empty right hand.",
 
 	"scarecrow:item-creature-little-scarecrow": "Little scarecrow",
 	"scarecrow:item-dead-creature-little-scarecrow": "Destroyed little scarecrow",
 
 
 	// Description Strawdummy
-	"game:item-handbooktext-strawdummy": "A Straw dummy standing in the ground can be picked up using <hk>ctrl</hk> + <hk>rightmouse</hk> click",
+	"game:item-handbooktext-strawdummy": "A Straw dummy standing on the ground can be picked up using <hk>ctrl</hk> + <hk>rightmouse</hk> click and an empty right hand.",
 	"game:item-dead-creature-strawdummy": "Destroyed straw dummy",
 
 

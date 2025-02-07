@@ -84,7 +84,7 @@ public class EntityScareCrow : EntityHumanoid
         string owneruid = WatchedAttributes.GetString("ownerUid", null);
         string agentUid = (byEntity as EntityPlayer)?.PlayerUID;
 
-        if (agentUid != null && (owneruid == null || owneruid == "" || owneruid == agentUid) && byEntity.Controls.CtrlKey)
+        if (agentUid != null && (owneruid == null || owneruid == "" || owneruid == agentUid) && byEntity.Controls.CtrlKey && byEntity.RightHandItemSlot.Empty)
         {
             ItemStack itemStack = new(byEntity.World.GetItem(new AssetLocation("scarecrow:scarecrow")), 1);
 
@@ -132,7 +132,8 @@ public class EntityScareCrow : EntityHumanoid
                 {
                     ActionLangCode = "scarecrow:entityhelp-pickup",
                     MouseButton = EnumMouseButton.Right,
-                    HotKeyCode = "ctrl"
+                    HotKeyCode = "ctrl",
+                    RequireFreeHand = true
                 }
             };
         });

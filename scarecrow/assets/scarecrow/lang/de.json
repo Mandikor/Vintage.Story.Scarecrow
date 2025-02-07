@@ -7,7 +7,7 @@
 	"scarecrow:item-scarecrow": "Vogelscheuche",
 	"scarecrow:itemdesc-scarecrow": "\n\nSie vertreibt unliebsame Gäste aus deinem Garten. Hasen und Waschbären haben Angst vor Vogelscheuchen und nähern sich bis auf 16 Blöcke. (Voreinstellung)\n\n<font color=\"#99c9f9\"><i>Sie schaut schrecklich aus, aber der Kürbis ist lecker.</i></font>\n\n",
 
-	"scarecrow:item-handbooktext-scarecrow": "Eine stehende Vogelscheuche kann mit <hk>ctrl</hk> und <hk>rightmouse</hk> aufgehoben werden.",
+	"scarecrow:item-handbooktext-scarecrow": "Eine stehende Vogelscheuche kann mit <hk>ctrl</hk> + <hk>rightmouse</hk> und einer leeren rechten Hand aufgehoben werden.",
 
 	"scarecrow:item-creature-scarecrow": "Vogelscheuche",
 	"scarecrow:item-dead-creature-scarecrow": "zerstörte Vogelscheuche",
@@ -17,14 +17,14 @@
 	"scarecrow:item-little-scarecrow": "Kleine Vogelscheuche",
 	"scarecrow:itemdesc-little-scarecrow": "\n\nSie vertreibt unliebsame Gäste aus deinem Garten. Hasen und Waschbären haben weniger Angst vor kleinen Vogelscheuchen und nähern sich bis auf 8 Blöcke. (Voreinstellung)\n\n",
 
-	"scarecrow:item-handbooktext-little-scarecrow": "Eine stehende kleine Vogelscheuche kann mit <hk>ctrl</hk> und <hk>rightmouse</hk> aufgehoben werden.",
+	"scarecrow:item-handbooktext-little-scarecrow": "Eine stehende kleine Vogelscheuche kann mit <hk>ctrl</hk> + <hk>rightmouse</hk> und einer leeren rechten Hand aufgehoben werden.",
 
 	"scarecrow:item-creature-little-scarecrow": "Kleine Vogelscheuche",
 	"scarecrow:item-dead-creature-little-scarecrow": "zerstörte kleine Vogelscheuche",
 
 
 	// Description Strawdummy
-	"game:item-handbooktext-strawdummy": "Eine stehende Strohpuppe kann mit <hk>ctrl</hk> und <hk>rightmouse</hk> aufgehoben werden.",
+	"game:item-handbooktext-strawdummy": "Eine stehende Strohpuppe kann mit <hk>ctrl</hk> + <hk>rightmouse</hk> und einer leeren rechten Hand aufgehoben werden.",
 	"game:item-dead-creature-strawdummy": "zerstörte Strohpuppe",
 
 

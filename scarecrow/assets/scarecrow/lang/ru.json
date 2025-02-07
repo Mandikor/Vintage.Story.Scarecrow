@@ -9,7 +9,7 @@
 	"scarecrow:item-scarecrow": "Пугало",
 	"scarecrow:itemdesc-scarecrow": "\n\nОно отпугивает неприятных гостей от вашего сада. Зайцы и еноты боятся пугала и подходят на расстояние до 16 блоков. (по умолчанию)\n\n<font color=\"#99c9f9\"><i>Она выглядит ужасно, но тыква очень вкусная.</i></font>\n\n",
 
-	"scarecrow:item-handbooktext-scarecrow": "Пугало, стоящее на земле, можно поднять с помощью <hk>ctrl</hk> + <hk>rightmouse</hk> клик",
+	"scarecrow:item-handbooktext-scarecrow": "Пугало, стоящее на земле, можно поднять с помощью <hk>ctrl</hk> + <hk>rightmouse</hk> клик и пустую правую руку.",
 
 	"scarecrow:item-creature-scarecrow": "Пугало",
 	"scarecrow:item-dead-creature-scarecrow": "Разрушенное Пугало",
@@ -19,14 +19,14 @@
 	"scarecrow:item-little-scarecrow": "Маленькое пугало",
 	"scarecrow:itemdesc-little-scarecrow": "\n\nОно отпугивает неприятных гостей от вашего сада. Зайцы и еноты боятся пугала и подходят на расстояние до 8 блоков. (по умолчанию)\n\n",
 
-	"scarecrow:item-handbooktext-little-scarecrow": "Маленькое пугало, стоящее на земле, можно поднять с помощью <hk>ctrl</hk> + <hk>rightmouse</hk> клик",
+	"scarecrow:item-handbooktext-little-scarecrow": "Маленькое пугало, стоящее на земле, можно поднять с помощью <hk>ctrl</hk> + <hk>rightmouse</hk> клик и пустую правую руку.",
 
 	"scarecrow:item-creature-little-scarecrow": "Маленькое пугало",
 	"scarecrow:item-dead-creature-little-scarecrow": "Разрушенное Маленькое пугало",
 
 
 	// Description Strawdummy
-	"game:item-handbooktext-strawdummy": "Соломенный манекен, стоящий на земле, можно поднять с помощью <hk>ctrl</hk> + <hk>rightmouse</hk> клик",
+	"game:item-handbooktext-strawdummy": "Соломенный манекен, стоящий на земле, можно поднять с помощью <hk>ctrl</hk> + <hk>rightmouse</hk> клик и пустую правую руку.",
 	"game:item-dead-creature-strawdummy": "Разрушенный соломенный манекен",
 
 
