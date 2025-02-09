@@ -1,0 +1,44 @@
+[
+	{
+		"ingredientPattern": "_T_,STS,_S_",
+		"ingredients": {
+			"S": {
+				"type": "item",
+				"code": "game:stick"
+			},
+			"T": {
+				"type": "item",
+				"code": "game:thatch",
+				"quantity": 4
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"output": {
+			"type": "item",
+			"code": "game:strawdummy",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "_G_,SGS,_S_",
+		"ingredients": {
+			"S": {
+				"type": "item",
+				"code": "game:stick"
+			},
+			"G": {
+				"type": "item",
+				"code": "game:drygrass",
+				"quantity": 8
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"output": {
+			"type": "item",
+			"code": "game:strawdummy",
+			"quantity": 1
+		}
+	}
+]

@@ -80,6 +80,12 @@
   <PackageReference Include="System.Formats.Asn1" Version="8.0.1" />
 </ItemGroup>
 
+<ItemGroup>
+  <Content Update="assets\scarecrow\recipes\grid\sc-strawdummy.json">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+</ItemGroup>
+
 <ProjectExtensions><VisualStudio><UserProperties assets_4scarecrow_4lang_4en_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 
 </Project>
