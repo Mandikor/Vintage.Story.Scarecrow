@@ -1,7 +1,7 @@
 [
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/8",
+    "path": "/server/behaviors/10/aitasks/8",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
@@ -18,7 +18,7 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/9",
+    "path": "/server/behaviors/10/aitasks/9",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
@@ -35,7 +35,7 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/10",
+    "path": "/server/behaviors/10/aitasks/10",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
@@ -52,7 +52,7 @@
   },
   {
     "op": "replace",
-    "path": "/server/behaviors/9/aitasks/8/seekingRange",
+    "path": "/server/behaviors/10/aitasks/8/seekingRange",
     "file": "game:entities/land/raccoon-pup.json",
     "condition": {
       "when": "Scarecrow_Blockingradius_Scarecrow",
@@ -62,7 +62,7 @@
   },
   {
     "op": "replace",
-    "path": "/server/behaviors/9/aitasks/9/seekingRange",
+    "path": "/server/behaviors/10/aitasks/9/seekingRange",
     "file": "game:entities/land/raccoon-pup.json",
     "condition": {
       "when": "Scarecrow_Blockingradius_LittleScarecrow",
@@ -72,7 +72,7 @@
   },
   {
     "op": "replace",
-    "path": "/server/behaviors/9/aitasks/10/seekingRange",
+    "path": "/server/behaviors/10/aitasks/10/seekingRange",
     "file": "game:entities/land/raccoon-pup.json",
     "condition": {
       "when": "Scarecrow_Blockingradius_Strawdummy",
@@ -82,7 +82,7 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/11",
+    "path": "/server/behaviors/10/aitasks/11",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
@@ -99,7 +99,7 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/12",
+    "path": "/server/behaviors/10/aitasks/12",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
@@ -116,7 +116,7 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/13",
+    "path": "/server/behaviors/10/aitasks/13",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
@@ -133,7 +133,7 @@
   },
   {
     "op": "replace",
-    "path": "/server/behaviors/9/aitasks/11/seekingRange",
+    "path": "/server/behaviors/10/aitasks/11/seekingRange",
     "file": "game:entities/land/raccoon-female.json",
     "condition": {
       "when": "Scarecrow_Blockingradius_Scarecrow",
@@ -143,7 +143,7 @@
   },
   {
     "op": "replace",
-    "path": "/server/behaviors/9/aitasks/12/seekingRange",
+    "path": "/server/behaviors/10/aitasks/12/seekingRange",
     "file": "game:entities/land/raccoon-female.json",
     "condition": {
       "when": "Scarecrow_Blockingradius_LittleScarecrow",
@@ -153,7 +153,7 @@
   },
   {
     "op": "replace",
-    "path": "/server/behaviors/9/aitasks/13/seekingRange",
+    "path": "/server/behaviors/10/aitasks/13/seekingRange",
     "file": "game:entities/land/raccoon-female.json",
     "condition": {
       "when": "Scarecrow_Blockingradius_Strawdummy",
@@ -163,7 +163,7 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/11",
+    "path": "/server/behaviors/10/aitasks/11",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
@@ -180,7 +180,7 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/12",
+    "path": "/server/behaviors/10/aitasks/12",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
@@ -197,7 +197,7 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/13",
+    "path": "/server/behaviors/10/aitasks/13",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
@@ -214,7 +214,7 @@
   },
   {
     "op": "replace",
-    "path": "/server/behaviors/9/aitasks/11/seekingRange",
+    "path": "/server/behaviors/10/aitasks/11/seekingRange",
     "file": "game:entities/land/raccoon-male.json",
     "condition": {
       "when": "Scarecrow_Blockingradius_Scarecrow",
@@ -224,7 +224,7 @@
   },
   {
     "op": "replace",
-    "path": "/server/behaviors/9/aitasks/12/seekingRange",
+    "path": "/server/behaviors/10/aitasks/12/seekingRange",
     "file": "game:entities/land/raccoon-male.json",
     "condition": {
       "when": "Scarecrow_Blockingradius_LittleScarecrow",
@@ -234,7 +234,7 @@
   },
   {
     "op": "replace",
-    "path": "/server/behaviors/9/aitasks/13/seekingRange",
+    "path": "/server/behaviors/10/aitasks/13/seekingRange",
     "file": "game:entities/land/raccoon-male.json",
     "condition": {
       "when": "Scarecrow_Blockingradius_Strawdummy",
