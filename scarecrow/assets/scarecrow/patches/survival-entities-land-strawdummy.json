@@ -109,5 +109,12 @@
     "value": 3,
     "file": "game:recipes/grid/strawdummy.json",
     "side": "Server"
+  },
+  {
+    "op": "add",
+    "path": "/recipeGroup",
+    "value": 1,
+    "file": "game:recipes/grid/strawdummy.json",
+    "side": "Server"
   }
 ]

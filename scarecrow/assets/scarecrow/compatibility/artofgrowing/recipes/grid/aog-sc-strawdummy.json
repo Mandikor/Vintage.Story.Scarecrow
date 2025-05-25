@@ -1,15 +1,36 @@
 [
 	{
-		"ingredientPattern": "_T_,STS,_S_",
+		"ingredientPattern": "_H_,SHS,_S_",
 		"ingredients": {
 			"S": {
 				"type": "item",
 				"code": "game:stick"
 			},
-			"T": {
+			"H": {
+				"type": "block",
+				"code": "game:hay-aged-ud"
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"recipeGroup": 1,
+		"output": {
+			"type": "item",
+			"code": "game:strawdummy",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "_G_,SGS,_S_",
+		"ingredients": {
+			"S": {
 				"type": "item",
-				"code": "game:thatch",
-				"quantity": 4
+				"code": "game:stick"
+			},
+			"G": {
+				"type": "item",
+				"code": "artofgrowing:grass",
+				"quantity": 8
 			}
 		},
 		"width": 3,
@@ -30,7 +51,7 @@
 			},
 			"G": {
 				"type": "item",
-				"code": "game:drygrass",
+				"code": "artofgrowing:agedgrass",
 				"quantity": 8
 			}
 		},

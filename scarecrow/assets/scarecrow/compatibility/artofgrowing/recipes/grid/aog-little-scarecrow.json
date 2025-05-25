@@ -1,26 +1,5 @@
 [
 	{
-		"ingredientPattern": "H,S",
-		"ingredients": {
-			"H": {
-				"type": "item",
-				"code": "game:clothes-head-straw-hat"
-			},
-			"S": {
-				"type": "item",
-				"code": "game:strawdummy"
-			}
-		},
-		"width": 1,
-		"height": 2,
-		"recipeGroup": 1,
-		"output": {
-			"type": "item",
-			"code": "scarecrow:little-scarecrow",
-			"quantity": 1
-		}
-	},
-	{
 		"ingredientPattern": "_H_,WSW,_W_",
 		"ingredients": {
 			"H": {
@@ -33,7 +12,7 @@
 			},
 			"S": {
 				"type": "block",
-				"code": "game:hay-normal-ud",
+				"code": "artofgrowing:thatchhay-normal-ud",
 				"quantity": 2
 			}
 		},
@@ -47,33 +26,7 @@
 		}
 	},
 	{
-		"ingredientPattern": "_H_,WSW,_W_",
-		"ingredients": {
-			"H": {
-				"type": "item",
-				"code": "game:clothes-head-straw-hat"
-			},
-			"W": {
-				"type": "item",
-				"code": "game:stick"
-			},
-			"S": {
-				"type": "block",
-				"code": "game:hay-aged-ud",
-				"quantity": 2
-			}
-		},
-		"width": 3,
-		"height": 3,
-		"recipeGroup": 2,
-		"output": {
-			"type": "item",
-			"code": "scarecrow:little-scarecrow",
-			"quantity": 1
-		}
-	},
-	{
-		"ingredientPattern": "_H_,STS,_S_",
+		"ingredientPattern": "_H_,SGS,_S_",
 		"ingredients": {
 			"H": {
 				"type": "item",
@@ -83,10 +36,10 @@
 				"type": "item",
 				"code": "game:stick"
 			},
-			"T": {
+			"G": {
 				"type": "item",
-				"code": "game:thatch",
-				"quantity": 8
+				"code": "artofgrowing:grass",
+				"quantity": 16
 			}
 		},
 		"width": 3,
@@ -111,7 +64,7 @@
 			},
 			"G": {
 				"type": "item",
-				"code": "game:drygrass",
+				"code": "artofgrowing:agedgrass",
 				"quantity": 16
 			}
 		},
