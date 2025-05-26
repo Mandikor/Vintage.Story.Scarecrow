@@ -1,28 +1,6 @@
 [
 	{
 		"enabled": true,
-		"ingredientPattern": "_H_,SHS,_S_",
-		"ingredients": {
-			"S": {
-				"type": "item",
-				"code": "game:stick"
-			},
-			"H": {
-				"type": "block",
-				"code": "game:hay-aged-ud"
-			}
-		},
-		"width": 3,
-		"height": 3,
-		"recipeGroup": 1,
-		"output": {
-			"type": "item",
-			"code": "game:strawdummy",
-			"quantity": 1
-		}
-	},
-	{
-		"enabled": true,
 		"ingredientPattern": "_G_,SGS,_S_",
 		"ingredients": {
 			"S": {

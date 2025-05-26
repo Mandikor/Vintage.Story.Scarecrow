@@ -1,0 +1,44 @@
+[
+  {
+    "op": "replace",
+    "path": "/0/enabled",
+    "value": "false",
+    "file": "scarecrow:recipes/grid/scarecrow.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/1/enabled",
+    "value": "false",
+    "file": "scarecrow:recipes/grid/scarecrow.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/2/enabled",
+    "value": "false",
+    "file": "scarecrow:recipes/grid/scarecrow.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/3/enabled",
+    "value": "false",
+    "file": "scarecrow:recipes/grid/scarecrow.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/4/enabled",
+    "value": "false",
+    "file": "scarecrow:recipes/grid/scarecrow.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/5/enabled",
+    "value": "false",
+    "file": "scarecrow:recipes/grid/scarecrow.json",
+    "side": "Server"
+  }
+]

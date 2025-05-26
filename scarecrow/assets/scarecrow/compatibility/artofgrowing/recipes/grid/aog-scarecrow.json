@@ -1,6 +1,37 @@
 [
 	{
 		"enabled": true,
+		"ingredientPattern": "HP_,STS,_S_",
+		"ingredients": {
+			"H": {
+				"type": "item",
+				"code": "game:clothes-head-straw-hat"
+			},
+			"P": {
+				"type": "block",
+				"code": "game:pumpkin-fruit-4"
+			},
+			"S": {
+				"type": "item",
+				"code": "game:stick"
+			},
+			"T": {
+				"type": "block",
+				"code": "artofgrowing:thatchhay-normal-ud",
+				"quantity": 2
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"recipeGroup": 3,
+		"output": {
+			"type": "item",
+			"code": "scarecrow:scarecrow",
+			"quantity": 1
+		}
+	},
+	{
+		"enabled": true,
 		"ingredientPattern": "HP_,SGS,_S_",
 		"ingredients": {
 			"H": {
@@ -23,7 +54,7 @@
 		},
 		"width": 3,
 		"height": 3,
-		"recipeGroup": 3,
+		"recipeGroup": 4,
 		"output": {
 			"type": "item",
 			"code": "scarecrow:scarecrow",
@@ -54,7 +85,7 @@
 		},
 		"width": 3,
 		"height": 3,
-		"recipeGroup": 3,
+		"recipeGroup": 4,
 		"output": {
 			"type": "item",
 			"code": "scarecrow:scarecrow",

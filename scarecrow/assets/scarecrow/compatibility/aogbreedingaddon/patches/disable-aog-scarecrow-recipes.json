@@ -19,26 +19,5 @@
     "value": "false",
     "file": "scarecrow:compatibility/artofgrowing/recipes/grid/aog-scarecrow.json",
     "side": "Server"
-  },
-  {
-    "op": "replace",
-    "path": "/3/enabled",
-    "value": "false",
-    "file": "scarecrow:compatibility/artofgrowing/recipes/grid/aog-scarecrow.json",
-    "side": "Server"
-  },
-  {
-    "op": "replace",
-    "path": "/4/enabled",
-    "value": "false",
-    "file": "scarecrow:compatibility/artofgrowing/recipes/grid/aog-scarecrow.json",
-    "side": "Server"
-  },
-  {
-    "op": "replace",
-    "path": "/5/enabled",
-    "value": "false",
-    "file": "scarecrow:compatibility/artofgrowing/recipes/grid/aog-scarecrow.json",
-    "side": "Server"
   }
 ]
