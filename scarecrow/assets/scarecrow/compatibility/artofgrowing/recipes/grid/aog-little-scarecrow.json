@@ -1,5 +1,6 @@
 [
 	{
+		"enabled": true,
 		"ingredientPattern": "_H_,WSW,_W_",
 		"ingredients": {
 			"H": {
@@ -26,6 +27,7 @@
 		}
 	},
 	{
+		"enabled": true,
 		"ingredientPattern": "_H_,SGS,_S_",
 		"ingredients": {
 			"H": {
@@ -52,6 +54,7 @@
 		}
 	},
 	{
+		"enabled": true,
 		"ingredientPattern": "_H_,SGS,_S_",
 		"ingredients": {
 			"H": {

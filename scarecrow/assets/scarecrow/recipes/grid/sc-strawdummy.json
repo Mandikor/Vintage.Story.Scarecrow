@@ -1,5 +1,6 @@
 [
 	{
+		"enabled": true,
 		"ingredientPattern": "_T_,STS,_S_",
 		"ingredients": {
 			"S": {
@@ -22,6 +23,7 @@
 		}
 	},
 	{
+		"enabled": true,
 		"ingredientPattern": "_G_,SGS,_S_",
 		"ingredients": {
 			"S": {
