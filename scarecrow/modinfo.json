@@ -8,6 +8,6 @@
   "translators": [ "Macoto Hino", "Mokradin", "FNX", "m1RAGE5" ],
   "version": "1.6.8",
   "dependencies": {
-    "game": "1.20.0"
+    "game": "1.20.4"
   }
 }
