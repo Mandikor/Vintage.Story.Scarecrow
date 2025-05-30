@@ -1,0 +1,65 @@
+[
+  {
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/2/entityCodesByType/*/-",
+    "value": "scarecrow",
+    "file": "viverridae:entities/land/viverridae.json",
+    "side": "server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/2/entityCodesByType/*/-",
+    "value": "little-scarecrow",
+    "file": "viverridae:entities/land/viverridae.json",
+    "side": "server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/2/entityCodesByType/*/-",
+    "value": "strawdummy",
+    "file": "viverridae:entities/land/viverridae.json",
+    "side": "server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/3/entityCodesByType/*/-",
+    "value": "scarecrow",
+    "file": "viverridae:entities/land/viverridae.json",
+    "side": "server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/3/entityCodesByType/*/-",
+    "value": "little-scarecrow",
+    "file": "viverridae:entities/land/viverridae.json",
+    "side": "server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/3/entityCodesByType/*/-",
+    "value": "strawdummy",
+    "file": "viverridae:entities/land/viverridae.json",
+    "side": "server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/4/entityCodesByType/*/-",
+    "value": "scarecrow",
+    "file": "viverridae:entities/land/viverridae.json",
+    "side": "server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/4/entityCodesByType/*/-",
+    "value": "little-scarecrow",
+    "file": "viverridae:entities/land/viverridae.json",
+    "side": "server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/4/entityCodesByType/*/-",
+    "value": "strawdummy",
+    "file": "viverridae:entities/land/viverridae.json",
+    "side": "server"
+  }
+]
