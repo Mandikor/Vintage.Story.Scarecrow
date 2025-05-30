@@ -1,70 +1,64 @@
 [
   {
-    "op": "add",
-    "path": "/server/behaviors/11/aitasks/16",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Walk",
-      "entityCodes": [ "scarecrow" ],
-      "priority": 1.51,
-      "movespeedByType": {
-        "*-adult-*-nandiniabinotata": 0.0036,
-        "*-baby-*-nandiniabinotata": 0.0027
-      },
-      "animationSpeedByType": {
-        "*-adult-male-nandiniabinotata": 0.9,
-        "*-adult-female-nandiniabinotata": 1,
-        "*-baby-*-nandiniabinotata": 1.35,
-        "*": 1
-      },
-      "seekingRange": 25
-    },
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/2/entityCodesByType/*/-",
+    "value": "scarecrow",
     "file": "viverridae:entities/land/nandiniidae.json",
     "side": "server"
   },
   {
-    "op": "add",
-    "path": "/server/behaviors/11/aitasks/17",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Walk",
-      "entityCodes": [ "little-scarecrow" ],
-      "priority": 1.51,
-      "movespeedByType": {
-        "*-adult-*-nandiniabinotata": 0.0036,
-        "*-baby-*-nandiniabinotata": 0.0027
-      },
-      "animationSpeedByType": {
-        "*-adult-male-nandiniabinotata": 0.9,
-        "*-adult-female-nandiniabinotata": 1,
-        "*-baby-*-nandiniabinotata": 1.35,
-        "*": 1
-      },
-      "seekingRange": 13
-    },
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/2/entityCodesByType/*/-",
+    "value": "little-scarecrow",
     "file": "viverridae:entities/land/nandiniidae.json",
     "side": "server"
   },
   {
-    "op": "add",
-    "path": "/server/behaviors/11/aitasks/18",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Walk",
-      "entityCodes": [ "strawdummy" ],
-      "priority": 1.51,
-      "movespeedByType": {
-        "*-adult-*-nandiniabinotata": 0.0036,
-        "*-baby-*-nandiniabinotata": 0.0027
-      },
-      "animationSpeedByType": {
-        "*-adult-male-nandiniabinotata": 0.9,
-        "*-adult-female-nandiniabinotata": 1,
-        "*-baby-*-nandiniabinotata": 1.35,
-        "*": 1
-      },
-      "seekingRange": 7
-    },
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/2/entityCodesByType/*/-",
+    "value": "strawdummy",
+    "file": "viverridae:entities/land/nandiniidae.json",
+    "side": "server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/3/entityCodesByType/*/-",
+    "value": "scarecrow",
+    "file": "viverridae:entities/land/nandiniidae.json",
+    "side": "server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/3/entityCodesByType/*/-",
+    "value": "little-scarecrow",
+    "file": "viverridae:entities/land/nandiniidae.json",
+    "side": "server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/3/entityCodesByType/*/-",
+    "value": "strawdummy",
+    "file": "viverridae:entities/land/nandiniidae.json",
+    "side": "server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/4/entityCodesByType/*/-",
+    "value": "scarecrow",
+    "file": "viverridae:entities/land/nandiniidae.json",
+    "side": "server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/4/entityCodesByType/*/-",
+    "value": "little-scarecrow",
+    "file": "viverridae:entities/land/nandiniidae.json",
+    "side": "server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/4/entityCodesByType/*/-",
+    "value": "strawdummy",
     "file": "viverridae:entities/land/nandiniidae.json",
     "side": "server"
   }
