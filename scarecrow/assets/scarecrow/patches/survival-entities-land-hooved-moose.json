@@ -1,62 +1,71 @@
 [
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/9",
-    "file": "game:entities/land/gazelle.json",
+    "path": "/server/behaviors/10/aitasks/13",
+    "file": "game:entities/land/hooved/moose.json",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
         "scarecrow"
       ],
       "priority": 1.7,
-      "movespeed": 0.065,
+      "movespeedByType": {
+        "*-adult": 0.06,
+        "*-baby": 0.02
+      },
       "animationSpeed": 2,
       "seekingRange": 16,
       "animation": "Run",
-      "sound": "game:creature/sheep/hurt2"
+      "sound": "game:creature/hooved/generic/sniff*"
     },
     "side": "server"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/10",
-    "file": "game:entities/land/gazelle.json",
+    "path": "/server/behaviors/10/aitasks/14",
+    "file": "game:entities/land/hooved/moose.json",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
         "little-scarecrow"
       ],
       "priority": 1.6,
-      "movespeed": 0.065,
+      "movespeedByType": {
+        "*-adult": 0.06,
+        "*-baby": 0.02
+      },
       "animationSpeed": 2,
       "seekingRange": 8,
       "animation": "Run",
-      "sound": "game:creature/sheep/hurt2"
+      "sound": "game:creature/hooved/generic/sniff*"
     },
     "side": "server"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/11",
-    "file": "game:entities/land/gazelle.json",
+    "path": "/server/behaviors/10/aitasks/15",
+    "file": "game:entities/land/hooved/moose.json",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
         "strawdummy"
       ],
       "priority": 1.6,
-      "movespeed": 0.065,
+      "movespeedByType": {
+        "*-adult": 0.06,
+        "*-baby": 0.02
+      },
       "animationSpeed": 2,
       "seekingRange": 4,
       "animation": "Run",
-      "sound": "game:creature/sheep/hurt2"
+      "sound": "game:creature/hooved/generic/sniff*"
     },
     "side": "server"
   },
   {
     "op": "replace",
-    "path": "/server/behaviors/9/aitasks/9/seekingRange",
-    "file": "game:entities/land/gazelle.json",
+    "path": "/server/behaviors/10/aitasks/13/seekingRange",
+    "file": "game:entities/land/hooved/moose.json",
     "condition": {
       "when": "Scarecrow_Blockingradius_Scarecrow",
       "useValue": true
@@ -65,8 +74,8 @@
   },
   {
     "op": "replace",
-    "path": "/server/behaviors/9/aitasks/10/seekingRange",
-    "file": "game:entities/land/gazelle.json",
+    "path": "/server/behaviors/10/aitasks/14/seekingRange",
+    "file": "game:entities/land/hooved/moose.json",
     "condition": {
       "when": "Scarecrow_Blockingradius_LittleScarecrow",
       "useValue": true
@@ -75,8 +84,8 @@
   },
   {
     "op": "replace",
-    "path": "/server/behaviors/9/aitasks/11/seekingRange",
-    "file": "game:entities/land/gazelle.json",
+    "path": "/server/behaviors/10/aitasks/15/seekingRange",
+    "file": "game:entities/land/hooved/moose.json",
     "condition": {
       "when": "Scarecrow_Blockingradius_Strawdummy",
       "useValue": true

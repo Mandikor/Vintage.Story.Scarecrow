@@ -1,0 +1,161 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/13",
+    "file": "game:entities/land/hooved/deer.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.6,
+      "movespeedByType": {
+        "deer-whitetail-*-adult": 0.08,
+        "deer-whitetail-*-baby": 0.06,
+        "deer-redbrocket-*-adult": 0.06,
+        "deer-redbrocket-*-baby": 0.05,
+        "deer-marsh-*-adult": 0.08,
+        "deer-marsh-*-baby": 0.06,
+        "deer-caribou-*-adult": 0.08,
+        "deer-caribou-*-baby": 0.06,
+        "deer-water-*-adult": 0.06,
+        "deer-water-*-baby": 0.05,
+        "deer-pudu-*-adult": 0.06,
+        "deer-pudu-*-baby": 0.05,
+        "deer-elk-*-adult": 0.08,
+        "deer-elk-*-baby": 0.06,
+        "deer-taruca-*-adult": 0.08,
+        "deer-taruca-*-baby": 0.06,
+        "deer-chital-*-adult": 0.08,
+        "deer-chital-*-baby": 0.06,
+        "deer-guemal-*-adult": 0.08,
+        "deer-guemal-*-baby": 0.06,
+        "deer-pampas-*-adult": 0.06,
+        "deer-pampas-*-baby": 0.05,
+        "deer-fallow-*-adult": 0.08,
+        "deer-fallow-*-baby": 0.06
+      },
+      "animationSpeed": 2,
+      "seekingRange": 16,
+      "animation": "Run",
+      "sound": "game:creature/hooved/generic/call*"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/14",
+    "file": "game:entities/land/hooved/deer.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.55,
+      "movespeedByType": {
+        "deer-whitetail-*-adult": 0.08,
+        "deer-whitetail-*-baby": 0.06,
+        "deer-redbrocket-*-adult": 0.06,
+        "deer-redbrocket-*-baby": 0.05,
+        "deer-marsh-*-adult": 0.08,
+        "deer-marsh-*-baby": 0.06,
+        "deer-caribou-*-adult": 0.08,
+        "deer-caribou-*-baby": 0.06,
+        "deer-water-*-adult": 0.06,
+        "deer-water-*-baby": 0.05,
+        "deer-pudu-*-adult": 0.06,
+        "deer-pudu-*-baby": 0.05,
+        "deer-elk-*-adult": 0.08,
+        "deer-elk-*-baby": 0.06,
+        "deer-taruca-*-adult": 0.08,
+        "deer-taruca-*-baby": 0.06,
+        "deer-chital-*-adult": 0.08,
+        "deer-chital-*-baby": 0.06,
+        "deer-guemal-*-adult": 0.08,
+        "deer-guemal-*-baby": 0.06,
+        "deer-pampas-*-adult": 0.06,
+        "deer-pampas-*-baby": 0.05,
+        "deer-fallow-*-adult": 0.08,
+        "deer-fallow-*-baby": 0.06
+      },
+      "animationSpeed": 2,
+      "seekingRange": 8,
+      "animation": "Run",
+      "sound": "game:creature/hooved/generic/call*"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/15",
+    "file": "game:entities/land/hooved/deer.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.55,
+      "movespeedByType": {
+        "deer-whitetail-*-adult": 0.08,
+        "deer-whitetail-*-baby": 0.06,
+        "deer-redbrocket-*-adult": 0.06,
+        "deer-redbrocket-*-baby": 0.05,
+        "deer-marsh-*-adult": 0.08,
+        "deer-marsh-*-baby": 0.06,
+        "deer-caribou-*-adult": 0.08,
+        "deer-caribou-*-baby": 0.06,
+        "deer-water-*-adult": 0.06,
+        "deer-water-*-baby": 0.05,
+        "deer-pudu-*-adult": 0.06,
+        "deer-pudu-*-baby": 0.05,
+        "deer-elk-*-adult": 0.08,
+        "deer-elk-*-baby": 0.06,
+        "deer-taruca-*-adult": 0.08,
+        "deer-taruca-*-baby": 0.06,
+        "deer-chital-*-adult": 0.08,
+        "deer-chital-*-baby": 0.06,
+        "deer-guemal-*-adult": 0.08,
+        "deer-guemal-*-baby": 0.06,
+        "deer-pampas-*-adult": 0.06,
+        "deer-pampas-*-baby": 0.05,
+        "deer-fallow-*-adult": 0.08,
+        "deer-fallow-*-baby": 0.06
+      },
+      "animationSpeed": 2,
+      "seekingRange": 4,
+      "animation": "Run",
+      "sound": "game:creature/hooved/generic/call*"
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/11/aitasks/13/seekingRange",
+    "file": "game:entities/land/hooved/deer.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Scarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/11/aitasks/14/seekingRange",
+    "file": "game:entities/land/hooved/deer.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_LittleScarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/11/aitasks/15/seekingRange",
+    "file": "game:entities/land/hooved/deer.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Strawdummy",
+      "useValue": true
+    },
+    "side": "server"
+  }
+]

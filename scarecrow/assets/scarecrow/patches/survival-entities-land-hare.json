@@ -2,6 +2,7 @@
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/10",
+    "file": "game:entities/land/hare-baby.json",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
@@ -13,12 +14,12 @@
       "seekingRange": 16,
       "animation": "Run"
     },
-    "file": "game:entities/land/hare-baby.json",
     "side": "server"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/11",
+    "file": "game:entities/land/hare-baby.json",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
@@ -30,12 +31,12 @@
       "seekingRange": 8,
       "animation": "Run"
     },
-    "file": "game:entities/land/hare-baby.json",
     "side": "server"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/12",
+    "file": "game:entities/land/hare-baby.json",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
@@ -47,7 +48,6 @@
       "seekingRange": 4,
       "animation": "Run"
     },
-    "file": "game:entities/land/hare-baby.json",
     "side": "server"
   },
   {
@@ -83,6 +83,7 @@
   {
     "op": "add",
     "path": "/server/behaviors/11/aitasks/10",
+    "file": "game:entities/land/hare-female.json",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
@@ -94,12 +95,12 @@
       "animation": "Run",
       "animationSpeed": 2
     },
-    "file": "game:entities/land/hare-female.json",
     "side": "server"
   },
   {
     "op": "add",
     "path": "/server/behaviors/11/aitasks/11",
+    "file": "game:entities/land/hare-female.json",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
@@ -111,12 +112,12 @@
       "animation": "Run",
       "animationSpeed": 2
     },
-    "file": "game:entities/land/hare-female.json",
     "side": "server"
   },
   {
     "op": "add",
     "path": "/server/behaviors/11/aitasks/12",
+    "file": "game:entities/land/hare-female.json",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
@@ -128,7 +129,6 @@
       "animation": "Run",
       "animationSpeed": 2
     },
-    "file": "game:entities/land/hare-female.json",
     "side": "server"
   },
   {
@@ -164,6 +164,7 @@
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/11",
+    "file": "game:entities/land/hare-male.json",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
@@ -175,12 +176,12 @@
       "animation": "Run",
       "animationSpeed": 2
     },
-    "file": "game:entities/land/hare-male.json",
     "side": "server"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/12",
+    "file": "game:entities/land/hare-male.json",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
@@ -192,12 +193,12 @@
       "animation": "Run",
       "animationSpeed": 2
     },
-    "file": "game:entities/land/hare-male.json",
     "side": "server"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/13",
+    "file": "game:entities/land/hare-male.json",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
@@ -209,7 +210,6 @@
       "animation": "Run",
       "animationSpeed": 2
     },
-    "file": "game:entities/land/hare-male.json",
     "side": "server"
   },
   {

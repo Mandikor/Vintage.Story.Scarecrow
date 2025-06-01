@@ -1,146 +1,62 @@
 [
   {
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/8",
-    "file": "game:entities/land/raccoon-pup.json",
+    "path": "/server/behaviors/10/aitasks/10",
+    "file": "game:entities/land/sheep-bighorn-lamb.json",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
         "scarecrow"
       ],
       "priority": 1.7,
-      "movespeed": 0.02,
-      "animationSpeed": 2.2,
+      "movespeed": 0.025,
+      "animationSpeed": 4,
       "seekingRange": 16,
       "animation": "Run",
-      "sound": "game:creature/raccoon/pup-hurt"
+      "sound": "game:creature/sheep/lamb-hurt2"
     },
     "side": "server"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/9",
-    "file": "game:entities/land/raccoon-pup.json",
+    "path": "/server/behaviors/10/aitasks/11",
+    "file": "game:entities/land/sheep-bighorn-lamb.json",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
         "little-scarecrow"
       ],
       "priority": 1.6,
-      "movespeed": 0.02,
-      "animationSpeed": 2.2,
+      "movespeed": 0.025,
+      "animationSpeed": 4,
       "seekingRange": 8,
       "animation": "Run",
-      "sound": "game:creature/raccoon/pup-hurt"
+      "sound": "game:creature/sheep/lamb-hurt2"
     },
     "side": "server"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/10",
-    "file": "game:entities/land/raccoon-pup.json",
+    "path": "/server/behaviors/10/aitasks/12",
+    "file": "game:entities/land/sheep-bighorn-lamb.json",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
         "strawdummy"
       ],
       "priority": 1.6,
-      "movespeed": 0.02,
-      "animationSpeed": 2.2,
+      "movespeed": 0.025,
+      "animationSpeed": 4,
       "seekingRange": 4,
       "animation": "Run",
-      "sound": "game:creature/raccoon/pup-hurt"
-    },
-    "side": "server"
-  },
-  {
-    "op": "replace",
-    "path": "/server/behaviors/10/aitasks/8/seekingRange",
-    "file": "game:entities/land/raccoon-pup.json",
-    "condition": {
-      "when": "Scarecrow_Blockingradius_Scarecrow",
-      "useValue": true
-    },
-    "side": "server"
-  },
-  {
-    "op": "replace",
-    "path": "/server/behaviors/10/aitasks/9/seekingRange",
-    "file": "game:entities/land/raccoon-pup.json",
-    "condition": {
-      "when": "Scarecrow_Blockingradius_LittleScarecrow",
-      "useValue": true
+      "sound": "game:creature/sheep/lamb-hurt2"
     },
     "side": "server"
   },
   {
     "op": "replace",
     "path": "/server/behaviors/10/aitasks/10/seekingRange",
-    "file": "game:entities/land/raccoon-pup.json",
-    "condition": {
-      "when": "Scarecrow_Blockingradius_Strawdummy",
-      "useValue": true
-    },
-    "side": "server"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/11",
-    "file": "game:entities/land/raccoon-female.json",
-    "value": {
-      "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 2.2,
-      "movespeed": 0.035,
-      "animationSpeed": 3.5,
-      "seekingRange": 16,
-      "animation": "Run",
-      "sound": "game:creature/raccoon/hurt"
-    },
-    "side": "server"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/12",
-    "file": "game:entities/land/raccoon-female.json",
-    "value": {
-      "code": "fleeentity",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 2.1,
-      "movespeed": 0.035,
-      "animationSpeed": 3.5,
-      "seekingRange": 8,
-      "animation": "Run",
-      "sound": "game:creature/raccoon/hurt"
-    },
-    "side": "server"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/13",
-    "file": "game:entities/land/raccoon-female.json",
-    "value": {
-      "code": "fleeentity",
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 2.1,
-      "movespeed": 0.035,
-      "animationSpeed": 3.5,
-      "seekingRange": 4,
-      "animation": "Run",
-      "sound": "game:creature/raccoon/hurt"
-    },
-    "side": "server"
-  },
-  {
-    "op": "replace",
-    "path": "/server/behaviors/10/aitasks/11/seekingRange",
-    "file": "game:entities/land/raccoon-female.json",
+    "file": "game:entities/land/sheep-bighorn-lamb.json",
     "condition": {
       "when": "Scarecrow_Blockingradius_Scarecrow",
       "useValue": true
@@ -149,8 +65,8 @@
   },
   {
     "op": "replace",
-    "path": "/server/behaviors/10/aitasks/12/seekingRange",
-    "file": "game:entities/land/raccoon-female.json",
+    "path": "/server/behaviors/10/aitasks/11/seekingRange",
+    "file": "game:entities/land/sheep-bighorn-lamb.json",
     "condition": {
       "when": "Scarecrow_Blockingradius_LittleScarecrow",
       "useValue": true
@@ -159,8 +75,8 @@
   },
   {
     "op": "replace",
-    "path": "/server/behaviors/10/aitasks/13/seekingRange",
-    "file": "game:entities/land/raccoon-female.json",
+    "path": "/server/behaviors/10/aitasks/12/seekingRange",
+    "file": "game:entities/land/sheep-bighorn-lamb.json",
     "condition": {
       "when": "Scarecrow_Blockingradius_Strawdummy",
       "useValue": true
@@ -169,62 +85,62 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/11",
-    "file": "game:entities/land/raccoon-male.json",
+    "path": "/server/behaviors/10/aitasks/12",
+    "file": "game:entities/land/sheep-bighorn-female.json",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
         "scarecrow"
       ],
-      "priority": 2.2,
-      "movespeed": 0.035,
-      "animationSpeed": 3.5,
+      "priority": 1.7,
+      "movespeed": 0.052,
       "seekingRange": 16,
       "animation": "Run",
-      "sound": "game:creature/raccoon/hurt"
-    },
-    "side": "server"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/12",
-    "file": "game:entities/land/raccoon-male.json",
-    "value": {
-      "code": "fleeentity",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 2.1,
-      "movespeed": 0.035,
       "animationSpeed": 3.5,
-      "seekingRange": 8,
-      "animation": "Run",
-      "sound": "game:creature/raccoon/hurt"
+      "sound": "game:creature/sheep/hurt2"
     },
     "side": "server"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/13",
-    "file": "game:entities/land/raccoon-male.json",
+    "file": "game:entities/land/sheep-bighorn-female.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "movespeed": 0.052,
+      "seekingRange": 8,
+      "animation": "Run",
+      "animationSpeed": 3.5,
+      "sound": "game:creature/sheep/hurt2"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/14",
+    "file": "game:entities/land/sheep-bighorn-female.json",
     "value": {
       "code": "fleeentity",
       "entityCodes": [
         "strawdummy"
       ],
-      "priority": 2.1,
-      "movespeed": 0.035,
-      "animationSpeed": 3.5,
+      "priority": 1.6,
+      "movespeed": 0.052,
       "seekingRange": 4,
       "animation": "Run",
-      "sound": "game:creature/raccoon/hurt"
+      "animationSpeed": 3.5,
+      "sound": "game:creature/sheep/hurt2"
     },
     "side": "server"
   },
   {
     "op": "replace",
-    "path": "/server/behaviors/10/aitasks/11/seekingRange",
-    "file": "game:entities/land/raccoon-male.json",
+    "path": "/server/behaviors/10/aitasks/12/seekingRange",
+    "file": "game:entities/land/sheep-bighorn-female.json",
     "condition": {
       "when": "Scarecrow_Blockingradius_Scarecrow",
       "useValue": true
@@ -233,8 +149,8 @@
   },
   {
     "op": "replace",
-    "path": "/server/behaviors/10/aitasks/12/seekingRange",
-    "file": "game:entities/land/raccoon-male.json",
+    "path": "/server/behaviors/10/aitasks/13/seekingRange",
+    "file": "game:entities/land/sheep-bighorn-female.json",
     "condition": {
       "when": "Scarecrow_Blockingradius_LittleScarecrow",
       "useValue": true
@@ -243,8 +159,92 @@
   },
   {
     "op": "replace",
-    "path": "/server/behaviors/10/aitasks/13/seekingRange",
-    "file": "game:entities/land/raccoon-male.json",
+    "path": "/server/behaviors/10/aitasks/14/seekingRange",
+    "file": "game:entities/land/sheep-bighorn-female.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Strawdummy",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/13",
+    "file": "game:entities/land/sheep-bighorn-male.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.7,
+      "movespeed": 0.052,
+      "seekingRange": 16,
+      "animation": "Run",
+      "animationSpeed": 3.5,
+      "sound": "game:creature/sheep/hurt2"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/14",
+    "file": "game:entities/land/sheep-bighorn-male.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "movespeed": 0.052,
+      "seekingRange": 8,
+      "animation": "Run",
+      "animationSpeed": 3.5,
+      "sound": "game:creature/sheep/hurt2"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/15",
+    "file": "game:entities/land/sheep-bighorn-male.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "movespeed": 0.052,
+      "seekingRange": 4,
+      "animation": "Run",
+      "animationSpeed": 3.5,
+      "sound": "game:creature/sheep/hurt2"
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/13/seekingRange",
+    "file": "game:entities/land/sheep-bighorn-male.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Scarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/14/seekingRange",
+    "file": "game:entities/land/sheep-bighorn-male.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_LittleScarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/15/seekingRange",
+    "file": "game:entities/land/sheep-bighorn-male.json",
     "condition": {
       "when": "Scarecrow_Blockingradius_Strawdummy",
       "useValue": true

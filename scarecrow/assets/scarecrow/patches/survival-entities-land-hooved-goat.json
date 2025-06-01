@@ -1,0 +1,128 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/13/aitasks/13",
+    "file": "game:entities/land/hooved/goat.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 2,
+      "movespeedByType": {
+        "goat-angora-*-adult": 0.06,
+        "goat-ibexalp-*-adult": 0.06,
+        "goat-ibexnub-*-adult": 0.06,
+        "goat-markhor-*-adult": 0.06,
+        "goat-mountain-*-adult": 0.06,
+        "goat-muskox-*-adult": 0.065,
+        "goat-nubian-*-adult": 0.06,
+        "goat-sirohi-*-adult": 0.06,
+        "goat-takingold-*-adult": 0.065,
+        "goat-turdag-*-adult": 0.06,
+        "goat-valais-*-adult": 0.06,
+        "*-baby": 0.04,
+        "*": 0.06
+      },
+      "animationSpeed": 2,
+      "seekingRange": 16,
+      "animation": "Run",
+      "sound": "game:creature/goat/bleatweird"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/13/aitasks/14",
+    "file": "game:entities/land/hooved/goat.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.9,
+      "movespeedByType": {
+        "goat-angora-*-adult": 0.06,
+        "goat-ibexalp-*-adult": 0.06,
+        "goat-ibexnub-*-adult": 0.06,
+        "goat-markhor-*-adult": 0.06,
+        "goat-mountain-*-adult": 0.06,
+        "goat-muskox-*-adult": 0.065,
+        "goat-nubian-*-adult": 0.06,
+        "goat-sirohi-*-adult": 0.06,
+        "goat-takingold-*-adult": 0.065,
+        "goat-turdag-*-adult": 0.06,
+        "goat-valais-*-adult": 0.06,
+        "*-baby": 0.04,
+        "*": 0.06
+      },
+      "animationSpeed": 2,
+      "seekingRange": 8,
+      "animation": "Run",
+      "sound": "game:creature/goat/bleatweird"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/13/aitasks/15",
+    "file": "game:entities/land/hooved/goat.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.9,
+      "movespeedByType": {
+        "goat-angora-*-adult": 0.06,
+        "goat-ibexalp-*-adult": 0.06,
+        "goat-ibexnub-*-adult": 0.06,
+        "goat-markhor-*-adult": 0.06,
+        "goat-mountain-*-adult": 0.06,
+        "goat-muskox-*-adult": 0.065,
+        "goat-nubian-*-adult": 0.06,
+        "goat-sirohi-*-adult": 0.06,
+        "goat-takingold-*-adult": 0.065,
+        "goat-turdag-*-adult": 0.06,
+        "goat-valais-*-adult": 0.06,
+        "*-baby": 0.04,
+        "*": 0.06
+      },
+      "animationSpeed": 2,
+      "seekingRange": 4,
+      "animation": "Run",
+      "sound": "game:creature/goat/bleatweird"
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/13/aitasks/13/seekingRange",
+    "file": "game:entities/land/hooved/goat.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Scarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/13/aitasks/14/seekingRange",
+    "file": "game:entities/land/hooved/goat.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_LittleScarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/13/aitasks/15/seekingRange",
+    "file": "game:entities/land/hooved/goat.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Strawdummy",
+      "useValue": true
+    },
+    "side": "server"
+  }
+]
