@@ -1,65 +1,161 @@
 [
   {
-    "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/2/entityCodesByType/*/-",
-    "value": "scarecrow",
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/16",
     "file": "viverridae:entities/land/viverridae.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.6,
+      "movespeedByType": {
+        "*-adult-*": 0.04,
+        "*-baby-*": 0.03
+      },
+      "animationSpeedByType": {
+        "*-adult-male-arctictisbinturong": 1.8,
+        "*-adult-female-arctictisbinturong": 2,
+        "*-baby-*-arctictisbinturong": 2.64,
+        "*-adult-male-civettictiscivetta": 1.8,
+        "*-adult-female-civettictiscivetta": 2,
+        "*-baby-*-civettictiscivetta": 2.64,
+        "*-adult-male-macrogalidiamusschenbroekii": 1.8,
+        "*-adult-female-macrogalidiamusschenbroekii": 2,
+        "*-baby-*-macrogalidiamusschenbroekii": 2.64,
+        "*-adult-male-viverracivettina": 1.8,
+        "*-adult-female-viverracivettina": 2,
+        "*-baby-*-viverracivettina": 2.64,
+        "*-adult-male-viverramegaspila": 1.8,
+        "*-adult-female-viverramegaspila": 2,
+        "*-baby-*-viverramegaspila": 2.64,
+        "*-adult-male-viverrazibetha": 1.8,
+        "*-adult-female-viverrazibetha": 2,
+        "*-baby-*-viverrazibetha": 2.64,
+        "*-adult-male-*": 2.7,
+        "*-adult-female-*": 3,
+        "*-baby-*": 4,
+        "*": 1
+      },
+      "seekingRange": 16,
+      "animation": "Canter"
+    },
     "side": "server"
   },
   {
-    "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/2/entityCodesByType/*/-",
-    "value": "little-scarecrow",
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/17",
     "file": "viverridae:entities/land/viverridae.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.59,
+      "movespeedByType": {
+        "*-adult-*": 0.04,
+        "*-baby-*": 0.03
+      },
+      "animationSpeedByType": {
+        "*-adult-male-arctictisbinturong": 1.8,
+        "*-adult-female-arctictisbinturong": 2,
+        "*-baby-*-arctictisbinturong": 2.64,
+        "*-adult-male-civettictiscivetta": 1.8,
+        "*-adult-female-civettictiscivetta": 2,
+        "*-baby-*-civettictiscivetta": 2.64,
+        "*-adult-male-macrogalidiamusschenbroekii": 1.8,
+        "*-adult-female-macrogalidiamusschenbroekii": 2,
+        "*-baby-*-macrogalidiamusschenbroekii": 2.64,
+        "*-adult-male-viverracivettina": 1.8,
+        "*-adult-female-viverracivettina": 2,
+        "*-baby-*-viverracivettina": 2.64,
+        "*-adult-male-viverramegaspila": 1.8,
+        "*-adult-female-viverramegaspila": 2,
+        "*-baby-*-viverramegaspila": 2.64,
+        "*-adult-male-viverrazibetha": 1.8,
+        "*-adult-female-viverrazibetha": 2,
+        "*-baby-*-viverrazibetha": 2.64,
+        "*-adult-male-*": 2.7,
+        "*-adult-female-*": 3,
+        "*-baby-*": 4,
+        "*": 1
+      },
+      "seekingRange": 8,
+      "animation": "Canter"
+    },
     "side": "server"
   },
   {
-    "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/2/entityCodesByType/*/-",
-    "value": "strawdummy",
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/18",
     "file": "viverridae:entities/land/viverridae.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.59,
+      "movespeedByType": {
+        "*-adult-*": 0.04,
+        "*-baby-*": 0.03
+      },
+      "animationSpeedByType": {
+        "*-adult-male-arctictisbinturong": 1.8,
+        "*-adult-female-arctictisbinturong": 2,
+        "*-baby-*-arctictisbinturong": 2.64,
+        "*-adult-male-civettictiscivetta": 1.8,
+        "*-adult-female-civettictiscivetta": 2,
+        "*-baby-*-civettictiscivetta": 2.64,
+        "*-adult-male-macrogalidiamusschenbroekii": 1.8,
+        "*-adult-female-macrogalidiamusschenbroekii": 2,
+        "*-baby-*-macrogalidiamusschenbroekii": 2.64,
+        "*-adult-male-viverracivettina": 1.8,
+        "*-adult-female-viverracivettina": 2,
+        "*-baby-*-viverracivettina": 2.64,
+        "*-adult-male-viverramegaspila": 1.8,
+        "*-adult-female-viverramegaspila": 2,
+        "*-baby-*-viverramegaspila": 2.64,
+        "*-adult-male-viverrazibetha": 1.8,
+        "*-adult-female-viverrazibetha": 2,
+        "*-baby-*-viverrazibetha": 2.64,
+        "*-adult-male-*": 2.7,
+        "*-adult-female-*": 3,
+        "*-baby-*": 4,
+        "*": 1
+      },
+      "seekingRange": 4,
+      "animation": "Canter"
+    },
     "side": "server"
   },
   {
-    "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/3/entityCodesByType/*/-",
-    "value": "scarecrow",
+    "op": "replace",
+    "path": "/server/behaviors/11/aitasks/16/seekingRange",
     "file": "viverridae:entities/land/viverridae.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Scarecrow",
+      "useValue": true
+    },
     "side": "server"
   },
   {
-    "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/3/entityCodesByType/*/-",
-    "value": "little-scarecrow",
+    "op": "replace",
+    "path": "/server/behaviors/11/aitasks/17/seekingRange",
     "file": "viverridae:entities/land/viverridae.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_LittleScarecrow",
+      "useValue": true
+    },
     "side": "server"
   },
   {
-    "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/3/entityCodesByType/*/-",
-    "value": "strawdummy",
+    "op": "replace",
+    "path": "/server/behaviors/11/aitasks/18/seekingRange",
     "file": "viverridae:entities/land/viverridae.json",
-    "side": "server"
-  },
-  {
-    "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/4/entityCodesByType/*/-",
-    "value": "scarecrow",
-    "file": "viverridae:entities/land/viverridae.json",
-    "side": "server"
-  },
-  {
-    "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/4/entityCodesByType/*/-",
-    "value": "little-scarecrow",
-    "file": "viverridae:entities/land/viverridae.json",
-    "side": "server"
-  },
-  {
-    "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/4/entityCodesByType/*/-",
-    "value": "strawdummy",
-    "file": "viverridae:entities/land/viverridae.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Strawdummy",
+      "useValue": true
+    },
     "side": "server"
   }
 ]
