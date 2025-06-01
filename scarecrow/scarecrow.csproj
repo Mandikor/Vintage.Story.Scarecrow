@@ -82,7 +82,6 @@
 </ItemGroup>
 
 <ItemGroup>
-  <Folder Include="assets\scarecrow\compatibility\equus\patches\" />
   <Folder Include="assets\scarecrow\compatibility\thecritterpack\" />
 </ItemGroup>
 

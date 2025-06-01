@@ -1,12 +1,176 @@
 [
   {
-    "file": "monoceros:entities/monoceros-indicus-baby.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/10",
+    "op": "add",
+    "path": "/server/behaviors/13/aitasks/15",
+    "file": "monoceros:entities/monoceros.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [ "scarecrow" ],
-      "priority": 1.8,
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 2.0,
+      "movespeed": 0.05,
+      "animationSpeed": 2,
+      "seekingRange": 16,
+      "animation": "Gallop"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/13/aitasks/16",
+    "file": "monoceros:entities/monoceros.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.9,
+      "movespeed": 0.05,
+      "animationSpeed": 2,
+      "seekingRange": 8,
+      "animation": "Gallop"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/13/aitasks/17",
+    "file": "monoceros:entities/monoceros.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.9,
+      "movespeed": 0.05,
+      "animationSpeed": 2,
+      "seekingRange": 4,
+      "animation": "Gallop"
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/13/aitasks/15/seekingRange",
+    "file": "monoceros:entities/monoceros.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Scarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/13/aitasks/16/seekingRange",
+    "file": "monoceros:entities/monoceros.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_LittleScarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/13/aitasks/17/seekingRange",
+    "file": "monoceros:entities/monoceros.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Strawdummy",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/10",
+    "file": "monoceros:entities/monoceros-indicus-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.9,
+      "movespeed": 0.05,
+      "animationSpeed": 2,
+      "seekingRange": 16,
+      "animation": "Gallop"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/11",
+    "file": "monoceros:entities/monoceros-indicus-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.9,
+      "movespeed": 0.05,
+      "animationSpeed": 2,
+      "seekingRange": 8,
+      "animation": "Gallop"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/12",
+    "file": "monoceros:entities/monoceros-indicus-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.9,
+      "movespeed": 0.05,
+      "animationSpeed": 2,
+      "seekingRange": 4,
+      "animation": "Gallop"
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/10/aitasks/10/seekingRange",
+    "file": "monoceros:entities/monoceros-indicus-baby.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Scarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/10/aitasks/11/seekingRange",
+    "file": "monoceros:entities/monoceros-indicus-baby.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_LittleScarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/10/aitasks/12/seekingRange",
+    "file": "monoceros:entities/monoceros-indicus-baby.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Strawdummy",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/10",
+    "file": "monoceros:entities/monoceros-indicus-female.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.9,
       "movespeed": 0.05,
       "seekingRange": 16,
       "animation": "Gallop",
@@ -15,11 +179,146 @@
     "side": "server"
   },
   {
-    "file": "monoceros:entities/monoceros-indicus-baby.json",
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/11",
+    "file": "monoceros:entities/monoceros-indicus-female.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.9,
+      "movespeed": 0.05,
+      "seekingRange": 8,
+      "animation": "Gallop",
+      "animationSpeed": 2
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/12",
+    "file": "monoceros:entities/monoceros-indicus-female.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.9,
+      "movespeed": 0.05,
+      "seekingRange": 4,
+      "animation": "Gallop",
+      "animationSpeed": 2
+    },
+    "side": "server"
+  },
+  {
     "op": "replace",
     "path": "/server/behaviors/10/aitasks/10/seekingRange",
+    "file": "monoceros:entities/monoceros-indicus-female.json",
     "condition": {
       "when": "Scarecrow_Blockingradius_Scarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/10/aitasks/11/seekingRange",
+    "file": "monoceros:entities/monoceros-indicus-female.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_LittleScarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/10/aitasks/12/seekingRange",
+    "file": "monoceros:entities/monoceros-indicus-female.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Strawdummy",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/9",
+    "file": "monoceros:entities/monoceros-indicus-male.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.9,
+      "movespeed": 0.05,
+      "seekingRange": 16,
+      "animation": "Gallop",
+      "animationSpeed": 2
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/10",
+    "file": "monoceros:entities/monoceros-indicus-male.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.9,
+      "movespeed": 0.05,
+      "seekingRange": 8,
+      "animation": "Gallop",
+      "animationSpeed": 2
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/11",
+    "file": "monoceros:entities/monoceros-indicus-male.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.9,
+      "movespeed": 0.05,
+      "seekingRange": 4,
+      "animation": "Gallop",
+      "animationSpeed": 2
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/9/seekingRange",
+    "file": "monoceros:entities/monoceros-indicus-male.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Scarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/10/seekingRange",
+    "file": "monoceros:entities/monoceros-indicus-male.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_LittleScarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/11/seekingRange",
+    "file": "monoceros:entities/monoceros-indicus-male.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Strawdummy",
       "useValue": true
     },
     "side": "server"

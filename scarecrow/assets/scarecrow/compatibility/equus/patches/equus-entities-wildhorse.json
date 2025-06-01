@@ -1,0 +1,83 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/14/aitasks/14",
+    "file": "equus:entities/wildhorse.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.9,
+      "movespeed": 0.05,
+      "animationSpeed": 2,
+      "seekingRange": 16,
+      "animation": "Gallop"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/14/aitasks/15",
+    "file": "equus:entities/wildhorse.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.9,
+      "movespeed": 0.05,
+      "animationSpeed": 2,
+      "seekingRange": 8,
+      "animation": "Gallop"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/14/aitasks/16",
+    "file": "equus:entities/wildhorse.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.9,
+      "movespeed": 0.05,
+      "animationSpeed": 2,
+      "seekingRange": 4,
+      "animation": "Gallop"
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/14/aitasks/14/seekingRange",
+    "file": "equus:entities/wildhorse.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Scarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/14/aitasks/15/seekingRange",
+    "file": "equus:entities/wildhorse.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_LittleScarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/14/aitasks/16/seekingRange",
+    "file": "equus:entities/wildhorse.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Strawdummy",
+      "useValue": true
+    },
+    "side": "server"
+  }
+]
