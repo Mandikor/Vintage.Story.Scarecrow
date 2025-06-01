@@ -76,17 +76,13 @@
 </ItemGroup>
 
 <ItemGroup>
-  <PackageReference Include="Cake.Frosting" Version="4.2.0" />
-  <PackageReference Include="System.Formats.Asn1" Version="8.0.1" />
-</ItemGroup>
-
-<ItemGroup>
   <Content Update="assets\scarecrow\recipes\grid\sc-strawdummy.json">
     <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
 </ItemGroup>
 
 <ItemGroup>
+  <Folder Include="assets\scarecrow\compatibility\equus\patches\" />
   <Folder Include="assets\scarecrow\compatibility\thecritterpack\" />
 </ItemGroup>
 

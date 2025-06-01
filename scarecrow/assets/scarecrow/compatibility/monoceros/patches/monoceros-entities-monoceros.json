@@ -1,0 +1,27 @@
+[
+  {
+    "file": "monoceros:entities/monoceros-indicus-baby.json",
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks/10",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [ "scarecrow" ],
+      "priority": 1.8,
+      "movespeed": 0.05,
+      "seekingRange": 16,
+      "animation": "Gallop",
+      "animationSpeed": 2
+    },
+    "side": "server"
+  },
+  {
+    "file": "monoceros:entities/monoceros-indicus-baby.json",
+    "op": "replace",
+    "path": "/server/behaviors/10/aitasks/10/seekingRange",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Scarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  }
+]

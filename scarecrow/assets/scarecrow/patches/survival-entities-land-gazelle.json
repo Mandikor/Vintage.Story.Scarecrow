@@ -1,0 +1,83 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/9",
+    "file": "game:entities/land/gazelle.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.7,
+      "movespeed": 0.065,
+      "animationSpeed": 2,
+      "seekingRange": 16,
+      "animation": "Run"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/10",
+    "file": "game:entities/land/gazelle.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "movespeed": 0.065,
+      "animationSpeed": 2,
+      "seekingRange": 8,
+      "animation": "Run"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/11",
+    "file": "game:entities/land/gazelle.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "movespeed": 0.065,
+      "animationSpeed": 2,
+      "seekingRange": 4,
+      "animation": "Run"
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/9/seekingRange",
+    "file": "game:entities/land/gazelle.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Scarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/10/seekingRange",
+    "file": "game:entities/land/gazelle.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_LittleScarecrow",
+      "useValue": true
+    },
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/server/behaviors/9/aitasks/11/seekingRange",
+    "file": "game:entities/land/gazelle.json",
+    "condition": {
+      "when": "Scarecrow_Blockingradius_Strawdummy",
+      "useValue": true
+    },
+    "side": "server"
+  }
+]
