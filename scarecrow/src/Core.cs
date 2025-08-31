@@ -20,7 +20,7 @@ public class Core : ModSystem
 
     public override void StartPre(ICoreAPI api)
     {
-            Config = ModConfig.ReadConfig<Config>(api, "MandikorsMods/ScareCrowConfig.json");
+            Config = ModConfig.ReadConfig<Config>(api, "Scarecrow_Config.json");
 
             #region 
             api.World.Config.SetInt("Scarecrow_Blockingradius_Scarecrow", Config.BlockRadiusScarecrow);
