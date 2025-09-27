@@ -1,0 +1,110 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/gazelle-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.7,
+      "movespeed": 0.065,
+      "animationSpeed": 2,
+      "seekingRange": 16,
+      "animation": "Run",
+      "sound": "game:creature/sheep/hurt2"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/gazelle-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "movespeed": 0.065,
+      "animationSpeed": 2,
+      "seekingRange": 8,
+      "animation": "Run",
+      "sound": "game:creature/sheep/hurt2"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/gazelle-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "movespeed": 0.065,
+      "animationSpeed": 2,
+      "seekingRange": 4,
+      "animation": "Run",
+      "sound": "game:creature/sheep/hurt2"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/gazelle-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.7,
+      "movespeed": 0.065,
+      "animationSpeed": 2,
+      "seekingRange": 16,
+      "animation": "Run",
+      "sound": "game:creature/sheep/hurt2"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/gazelle-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "movespeed": 0.065,
+      "animationSpeed": 2,
+      "seekingRange": 8,
+      "animation": "Run",
+      "sound": "game:creature/sheep/hurt2"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/gazelle-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "movespeed": 0.065,
+      "animationSpeed": 2,
+      "seekingRange": 4,
+      "animation": "Run",
+      "sound": "game:creature/sheep/hurt2"
+    },
+    "side": "server"
+  }
+]

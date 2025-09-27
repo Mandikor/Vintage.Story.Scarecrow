@@ -1,0 +1,110 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/pig-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.7,
+      "movespeed": 0.015,
+      "animationSpeed": 7,
+      "seekingRange": 16,
+      "animation": "Run",
+      "sound": "game:creature/pig/piglet-hurt"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/pig-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "movespeed": 0.015,
+      "animationSpeed": 7,
+      "seekingRange": 8,
+      "animation": "Run",
+      "sound": "game:creature/pig/piglet-hurt"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/pig-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "movespeed": 0.015,
+      "animationSpeed": 7,
+      "seekingRange": 4,
+      "animation": "Run",
+      "sound": "game:creature/pig/piglet-hurt"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/pig-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 2.0,
+      "movespeed": 0.05,
+      "seekingRange": 16,
+      "animation": "Run",
+      "animationSpeed": 5.5,
+      "sound": "game:creature/pig/hurt"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/pig-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.9,
+      "movespeed": 0.05,
+      "seekingRange": 8,
+      "animation": "Run",
+      "animationSpeed": 5.5,
+      "sound": "game:creature/pig/hurt"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/pig-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.9,
+      "movespeed": 0.05,
+      "seekingRange": 4,
+      "animation": "Run",
+      "animationSpeed": 5.5,
+      "sound": "game:creature/pig/hurt"
+    },
+    "side": "server"
+  }
+]

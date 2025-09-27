@@ -3,7 +3,7 @@
     "op": "replace",
     "path": "/class",
     "value": "EntitySC_StrawDummy",
-    "file": "game:entities/land/strawdummy.json",
+    "file": "game:entities/nonliving/strawdummy.json",
     "side": "server"
   },
   {

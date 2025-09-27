@@ -1,7 +1,7 @@
 [
   {
     "op": "add",
-    "path": "/server/behaviors/11/aitasks/16",
+    "path": "/server/behaviors/11/aitasks/-",
     "file": "viverridae:entities/land/nandiniidae.json",
     "value": {
       "code": "fleeentity",
@@ -26,7 +26,7 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/11/aitasks/17",
+    "path": "/server/behaviors/11/aitasks/-",
     "file": "viverridae:entities/land/nandiniidae.json",
     "value": {
       "code": "fleeentity",
@@ -51,7 +51,7 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/11/aitasks/18",
+    "path": "/server/behaviors/11/aitasks/-",
     "file": "viverridae:entities/land/nandiniidae.json",
     "value": {
       "code": "fleeentity",
@@ -71,36 +71,6 @@
       },
       "seekingRange": 4,
       "animation": "Canter"
-    },
-    "side": "server"
-  },
-  {
-    "op": "replace",
-    "path": "/server/behaviors/11/aitasks/16/seekingRange",
-    "file": "viverridae:entities/land/nandiniidae.json",
-    "condition": {
-      "when": "Scarecrow_Blockingradius_Scarecrow",
-      "useValue": true
-    },
-    "side": "server"
-  },
-  {
-    "op": "replace",
-    "path": "/server/behaviors/11/aitasks/17/seekingRange",
-    "file": "viverridae:entities/land/nandiniidae.json",
-    "condition": {
-      "when": "Scarecrow_Blockingradius_LittleScarecrow",
-      "useValue": true
-    },
-    "side": "server"
-  },
-  {
-    "op": "replace",
-    "path": "/server/behaviors/11/aitasks/18/seekingRange",
-    "file": "viverridae:entities/land/nandiniidae.json",
-    "condition": {
-      "when": "Scarecrow_Blockingradius_Strawdummy",
-      "useValue": true
     },
     "side": "server"
   }

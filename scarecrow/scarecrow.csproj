@@ -58,7 +58,6 @@
   <Content Remove="assets\scarecrow\patches\disable_recipes\**" />
   <EmbeddedResource Remove="assets\scarecrow\patches\disable_recipes\**" />
   <None Remove="assets\scarecrow\patches\disable_recipes\**" />
-  <None Remove="assets\scarecrow\config\configlib-patches.json" />
   <Content Include="modinfo.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
@@ -79,10 +78,6 @@
   <Content Update="assets\scarecrow\recipes\grid\sc-strawdummy.json">
     <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
-</ItemGroup>
-
-<ItemGroup>
-  <Folder Include="assets\scarecrow\compatibility\thecritterpack\" />
 </ItemGroup>
 
 <ProjectExtensions><VisualStudio><UserProperties assets_4scarecrow_4lang_4en_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>

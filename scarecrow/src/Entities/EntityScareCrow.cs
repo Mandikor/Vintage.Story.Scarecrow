@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
@@ -7,14 +6,14 @@ using Vintagestory.API.Common.Entities;
 using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
 using Vintagestory.API.Util;
-using Scarecrow.Configuration;
 
 namespace Scarecrow;
 
 public class EntityScareCrow : EntityHumanoid
 {
     private ICoreServerAPI sapi;
-    public Config scconfig;
+    public bool DebugOutput { get; set; } = false;
+
 
     public override void Initialize(EntityProperties properties, ICoreAPI api, long InChunkIndex3d)
     {
@@ -24,7 +23,6 @@ public class EntityScareCrow : EntityHumanoid
             sapi = api as ICoreServerAPI;
             sapi.Event.OnTrySpawnEntity += SpawnInterceptor;
             sapi.Event.OnEntitySpawn += Event_EntitySpawn;
-            scconfig = api.ModLoader.GetModSystem<Core>(true).Config;
         }
         else
         {
@@ -37,9 +35,9 @@ public class EntityScareCrow : EntityHumanoid
         if (entity.Code.Path.StartsWith("hare") || entity.Code.Path.StartsWith("raccoon"))
         {
             double distance = this.ServerPos.DistanceTo(entity.ServerPos);
-            if (distance <= scconfig.BlockRadiusScarecrow)
+            if (distance <= 16)
             {
-                if (scconfig.DebugOutput)
+                if (DebugOutput)
                 {
                     sapi.Logger.Debug($"Scarecrow: EntitySpawn: Blocking {entity.Code} at {distance:N0} blocks away.");
                 }
@@ -61,9 +59,9 @@ public class EntityScareCrow : EntityHumanoid
         if (entityProperties.Code.Path.StartsWith("hare") || entityProperties.Code.Path.StartsWith("raccoon"))
         {
             double distance = this.ServerPos.DistanceTo(spawnPosition);
-            if (distance <= scconfig.BlockRadiusScarecrow)
+            if (distance <= 16)
             {
-                if (scconfig.DebugOutput)
+                if (DebugOutput)
                 {
                     sapi.Logger.Debug($"Scarecrow: Blocking {entityProperties.Code} at {distance:N0} blocks away.");
                 }

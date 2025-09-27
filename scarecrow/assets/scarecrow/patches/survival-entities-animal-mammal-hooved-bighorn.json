@@ -1,0 +1,110 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/sheep-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.7,
+      "movespeed": 0.025,
+      "animationSpeed": 4,
+      "seekingRange": 16,
+      "animation": "Run",
+      "sound": "game:creature/sheep/lamb-hurt2"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/sheep-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "movespeed": 0.025,
+      "animationSpeed": 4,
+      "seekingRange": 8,
+      "animation": "Run",
+      "sound": "game:creature/sheep/lamb-hurt2"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/sheep-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "movespeed": 0.025,
+      "animationSpeed": 4,
+      "seekingRange": 4,
+      "animation": "Run",
+      "sound": "game:creature/sheep/lamb-hurt2"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/sheep-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.7,
+      "movespeed": 0.052,
+      "seekingRange": 16,
+      "animation": "Run",
+      "animationSpeed": 3.5,
+      "sound": "game:creature/sheep/hurt2"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/sheep-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "movespeed": 0.052,
+      "seekingRange": 8,
+      "animation": "Run",
+      "animationSpeed": 3.5,
+      "sound": "game:creature/sheep/hurt2"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/sheep-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "movespeed": 0.052,
+      "seekingRange": 4,
+      "animation": "Run",
+      "animationSpeed": 3.5,
+      "sound": "game:creature/sheep/hurt2"
+    },
+    "side": "server"
+  }
+]

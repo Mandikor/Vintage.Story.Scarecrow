@@ -1,10 +1,14 @@
 [
   {
     "op": "add",
-    "path": "/server/behaviors/14/aitasks/14",
-    "file": "equus:entities/wildhorse.json",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equus:entities/wildwildhorse.json",
     "value": {
       "code": "fleeentity",
+      "enabledByType": {
+        "wildwildhorse*": true,
+        "*": false
+      },
       "entityCodes": [
         "scarecrow"
       ],
@@ -18,10 +22,14 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/14/aitasks/15",
-    "file": "equus:entities/wildhorse.json",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equus:entities/wildwildhorse.json",
     "value": {
       "code": "fleeentity",
+      "enabledByType": {
+        "wildwildhorse*": true,
+        "*": false
+      },
       "entityCodes": [
         "little-scarecrow"
       ],
@@ -35,10 +43,14 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/14/aitasks/16",
-    "file": "equus:entities/wildhorse.json",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equus:entities/wildwildhorse.json",
     "value": {
       "code": "fleeentity",
+      "enabledByType": {
+        "wildwildhorse*": true,
+        "*": false
+      },
       "entityCodes": [
         "strawdummy"
       ],
@@ -47,36 +59,6 @@
       "animationSpeed": 2,
       "seekingRange": 4,
       "animation": "Gallop"
-    },
-    "side": "server"
-  },
-  {
-    "op": "replace",
-    "path": "/server/behaviors/14/aitasks/14/seekingRange",
-    "file": "equus:entities/wildhorse.json",
-    "condition": {
-      "when": "Scarecrow_Blockingradius_Scarecrow",
-      "useValue": true
-    },
-    "side": "server"
-  },
-  {
-    "op": "replace",
-    "path": "/server/behaviors/14/aitasks/15/seekingRange",
-    "file": "equus:entities/wildhorse.json",
-    "condition": {
-      "when": "Scarecrow_Blockingradius_LittleScarecrow",
-      "useValue": true
-    },
-    "side": "server"
-  },
-  {
-    "op": "replace",
-    "path": "/server/behaviors/14/aitasks/16/seekingRange",
-    "file": "equus:entities/wildhorse.json",
-    "condition": {
-      "when": "Scarecrow_Blockingradius_Strawdummy",
-      "useValue": true
     },
     "side": "server"
   }

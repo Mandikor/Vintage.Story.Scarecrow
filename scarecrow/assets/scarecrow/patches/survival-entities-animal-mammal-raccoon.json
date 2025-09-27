@@ -1,0 +1,110 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/raccoon-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.7,
+      "movespeed": 0.02,
+      "animationSpeed": 2.2,
+      "seekingRange": 16,
+      "animation": "Run",
+      "sound": "game:creature/raccoon/pup-hurt"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/raccoon-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "movespeed": 0.02,
+      "animationSpeed": 2.2,
+      "seekingRange": 8,
+      "animation": "Run",
+      "sound": "game:creature/raccoon/pup-hurt"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/raccoon-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "movespeed": 0.02,
+      "animationSpeed": 2.2,
+      "seekingRange": 4,
+      "animation": "Run",
+      "sound": "game:creature/raccoon/pup-hurt"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/raccoon-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 2.2,
+      "movespeed": 0.035,
+      "animationSpeed": 3.5,
+      "seekingRange": 16,
+      "animation": "Run",
+      "sound": "game:creature/raccoon/hurt"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/raccoon-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 2.1,
+      "movespeed": 0.035,
+      "animationSpeed": 3.5,
+      "seekingRange": 8,
+      "animation": "Run",
+      "sound": "game:creature/raccoon/hurt"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/raccoon-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 2.1,
+      "movespeed": 0.035,
+      "animationSpeed": 3.5,
+      "seekingRange": 4,
+      "animation": "Run",
+      "sound": "game:creature/raccoon/hurt"
+    },
+    "side": "server"
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "game:entities/animal/mammal/hare-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.55,
+      "movespeed": 0.04,
+      "animationSpeed": 1.8,
+      "seekingRange": 16,
+      "animation": "Run"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "game:entities/animal/mammal/hare-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.54,
+      "movespeed": 0.04,
+      "animationSpeed": 1.8,
+      "seekingRange": 8,
+      "animation": "Run"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "game:entities/animal/mammal/hare-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.54,
+      "movespeed": 0.04,
+      "animationSpeed": 1.8,
+      "seekingRange": 4,
+      "animation": "Run"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "game:entities/animal/mammal/hare-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 2.2,
+      "movespeed": 0.06,
+      "seekingRange": 16,
+      "animation": "Run",
+      "animationSpeed": 2
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "game:entities/animal/mammal/hare-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 2.1,
+      "movespeed": 0.06,
+      "seekingRange": 8,
+      "animation": "Run",
+      "animationSpeed": 2
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "game:entities/animal/mammal/hare-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 2.1,
+      "movespeed": 0.06,
+      "seekingRange": 4,
+      "animation": "Run",
+      "animationSpeed": 2
+    },
+    "side": "server"
+  }
+]

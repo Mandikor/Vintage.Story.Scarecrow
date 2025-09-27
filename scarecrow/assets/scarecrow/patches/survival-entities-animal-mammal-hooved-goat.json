@@ -1,0 +1,155 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/goat-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 2,
+      "movespeedByType": {
+        "goat-ibexnub-*": 0.04,
+        "goat-muskox-*": 0.04,
+        "goat-nubian-*": 0.04,
+        "goat-sirohi-*": 0.04,
+        "goat-valais-*": 0.04,
+        "*": 0.04
+      },
+      "animationSpeed": 2,
+      "seekingRange": 16,
+      "animation": "Run",
+      "sound": "game:creature/goat/bleatweird"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/goat-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.9,
+      "movespeedByType": {
+        "goat-ibexnub-*": 0.04,
+        "goat-muskox-*": 0.04,
+        "goat-nubian-*": 0.04,
+        "goat-sirohi-*": 0.04,
+        "goat-valais-*": 0.04,
+        "*": 0.04
+      },
+      "animationSpeed": 2,
+      "seekingRange": 8,
+      "animation": "Run",
+      "sound": "game:creature/goat/bleatweird"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/goat-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.9,
+      "movespeedByType": {
+        "goat-ibexnub-*": 0.04,
+        "goat-muskox-*": 0.04,
+        "goat-nubian-*": 0.04,
+        "goat-sirohi-*": 0.04,
+        "goat-valais-*": 0.04,
+        "*": 0.04
+      },
+      "animationSpeed": 2,
+      "seekingRange": 4,
+      "animation": "Run",
+      "sound": "game:creature/goat/bleatweird"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/12/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/goat-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 2,
+      "movespeedByType": {
+        "goat-muskox-*": 0.065,
+        "goat-takingold-*": 0.065,
+        "*": 0.06
+      },
+      "animationSpeed": 2,
+      "seekingRange": 16,
+      "animation": "Run",
+      "soundByType": {
+        "goat-muskox-*": "creature/goat/large/{age}-hurt*",
+        "goat-takingold-*": "creature/goat/large/{age}-hurt*",
+        "*": "creature/goat/bleatweird"
+      }
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/12/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/goat-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.9,
+      "movespeedByType": {
+        "goat-muskox-*": 0.065,
+        "goat-takingold-*": 0.065,
+        "*": 0.06
+      },
+      "animationSpeed": 2,
+      "seekingRange": 8,
+      "animation": "Run",
+      "soundByType": {
+        "goat-muskox-*": "creature/goat/large/{age}-hurt*",
+        "goat-takingold-*": "creature/goat/large/{age}-hurt*",
+        "*": "creature/goat/bleatweird"
+      }
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/12/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/goat-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.9,
+      "movespeedByType": {
+        "goat-muskox-*": 0.065,
+        "goat-takingold-*": 0.065,
+        "*": 0.06
+      },
+      "animationSpeed": 2,
+      "seekingRange": 4,
+      "animation": "Run",
+      "soundByType": {
+        "goat-muskox-*": "creature/goat/large/{age}-hurt*",
+        "goat-takingold-*": "creature/goat/large/{age}-hurt*",
+        "*": "creature/goat/bleatweird"
+      }
+    },
+    "side": "server"
+  }
+]

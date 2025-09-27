@@ -1,0 +1,146 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/deer-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.6,
+      "movespeedByType": {
+        "deer-redbrocket-*": 0.05,
+        "deer-water-*": 0.05,
+        "deer-pudu-*": 0.05,
+        "deer-pampas-*": 0.05,
+        "*": 0.06
+      },
+      "animationSpeed": 2,
+      "seekingRange": 16,
+      "animation": "Run",
+      "sound": "game:creature/hooved/generic/call*"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/deer-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.55,
+      "movespeedByType": {
+        "deer-redbrocket-*": 0.05,
+        "deer-water-*": 0.05,
+        "deer-pudu-*": 0.05,
+        "deer-pampas-*": 0.05,
+        "*": 0.06
+      },
+      "animationSpeed": 2,
+      "seekingRange": 8,
+      "animation": "Run",
+      "sound": "game:creature/hooved/generic/call*"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/deer-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.55,
+      "movespeedByType": {
+        "deer-redbrocket-*": 0.05,
+        "deer-water-*": 0.05,
+        "deer-pudu-*": 0.05,
+        "deer-pampas-*": 0.05,
+        "*": 0.06
+      },
+      "animationSpeed": 2,
+      "seekingRange": 4,
+      "animation": "Run",
+      "sound": "game:creature/hooved/generic/call*"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/deer-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.6,
+      "movespeedByType": {
+        "deer-redbrocket-*": 0.06,
+        "deer-water-*": 0.06,
+        "deer-pudu-*": 0.06,
+        "deer-pampas-*": 0.06,
+        "*": 0.08
+      },
+      "animationSpeed": 2,
+      "seekingRange": 16,
+      "animation": "Run",
+      "sound": "game:creature/hooved/generic/call*"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/deer-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.55,
+      "movespeedByType": {
+        "deer-redbrocket-*": 0.06,
+        "deer-water-*": 0.06,
+        "deer-pudu-*": 0.06,
+        "deer-pampas-*": 0.06,
+        "*": 0.08
+      },
+      "animationSpeed": 2,
+      "seekingRange": 8,
+      "animation": "Run",
+      "sound": "game:creature/hooved/generic/call*"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/deer-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.55,
+      "movespeedByType": {
+        "deer-redbrocket-*": 0.06,
+        "deer-water-*": 0.06,
+        "deer-pudu-*": 0.06,
+        "deer-pampas-*": 0.06,
+        "*": 0.08
+      },
+      "animationSpeed": 2,
+      "seekingRange": 4,
+      "animation": "Run",
+      "sound": "game:creature/hooved/generic/call*"
+    },
+    "side": "server"
+  }
+]
