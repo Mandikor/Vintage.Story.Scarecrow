@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <CheckEolTargetFramework>false</CheckEolTargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
   </PropertyGroup>
@@ -12,52 +11,12 @@
       <HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
       <Private>false</Private>
     </Reference>
-    <Reference Include="VSSurvivalMod">
-      <HintPath>$(VINTAGE_STORY)/Mods/VSSurvivalMod.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="VSEssentials">
-      <HintPath>$(VINTAGE_STORY)/Mods/VSEssentials.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="VSCreativeMod">
-      <HintPath>$(VINTAGE_STORY)/Mods/VSCreativeMod.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>$(VINTAGE_STORY)/Lib/Newtonsoft.Json.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="0Harmony">
-      <HintPath>$(VINTAGE_STORY)/Lib/0Harmony.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="VintagestoryLib">
-      <HintPath>$(VINTAGE_STORY)/VintagestoryLib.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="protobuf-net">
-      <HintPath>$(VINTAGE_STORY)/Lib/protobuf-net.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="cairo-sharp">
-      <HintPath>$(VINTAGE_STORY)/Lib/cairo-sharp.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Microsoft.Data.Sqlite">
-      <HintPath>$(VINTAGE_STORY)/Lib/Microsoft.Data.Sqlite.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
   </ItemGroup>
 
 <ItemGroup>
   <Content Include="assets\**">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
-  <Compile Remove="assets\scarecrow\patches\disable_recipes\**" />
-  <Content Remove="assets\scarecrow\patches\disable_recipes\**" />
-  <EmbeddedResource Remove="assets\scarecrow\patches\disable_recipes\**" />
-  <None Remove="assets\scarecrow\patches\disable_recipes\**" />
   <Content Include="modinfo.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
@@ -65,21 +24,5 @@
 	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
 </ItemGroup>
-
-<ItemGroup>
-  <EditorConfigFiles Remove="C:\Users\mandi\source\repos\scarecrow\scarecrow\.editorconfig" />
-</ItemGroup>
-
-<ItemGroup>
-  <None Include="C:\Users\mandi\source\repos\scarecrow\scarecrow\.editorconfig" />
-</ItemGroup>
-
-<ItemGroup>
-  <Content Update="assets\scarecrow\recipes\grid\sc-strawdummy.json">
-    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-  </Content>
-</ItemGroup>
-
-<ProjectExtensions><VisualStudio><UserProperties assets_4scarecrow_4lang_4en_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 
 </Project>

@@ -22,3 +22,4 @@ public class Core : ModSystem
         api.World.Logger.Event("########## started '{0}' mod ##########", Mod.Info.Name);
     }
 }
+  

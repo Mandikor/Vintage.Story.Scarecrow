@@ -3,15 +3,15 @@
     "side": "server",
     "op": "replace",
     "path": "/client/shape/base",
-    "value": "scarecrow:entity/land/scarecrow-alt",
-    "file": "scarecrow:entities/land/scarecrow.json",
+    "value": "scarecrow:entity/nonliving/scarecrow-alt",
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
     "dependsOn": [ { "modid": "plumpkins" } ]
   },
   {
     "side": "server",
     "op": "replace",
     "path": "/shape/base",
-    "value": "scarecrow:entity/land/scarecrow-alt",
+    "value": "scarecrow:entity/nonliving/scarecrow-alt",
     "file": "scarecrow:itemtypes/scarecrow.json",
     "dependsOn": [ { "modid": "plumpkins" } ]
   }

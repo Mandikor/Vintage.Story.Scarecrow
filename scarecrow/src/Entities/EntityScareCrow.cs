@@ -114,17 +114,6 @@ public class EntityScareCrow : EntityHumanoid
     {
         var interactions = ObjectCacheUtil.GetOrCreate(world.Api, "scarecrowInteractions" + EntityId, () =>
         {
-            List<ItemStack> knifeStacklist = new();
-
-            foreach (Item item in world.Api.World.Items)
-            {
-                if (item.Code == null) continue;
-                if (item.Tool == EnumTool.Knife)
-                {
-                    knifeStacklist.Add(new ItemStack(item));
-                }
-            }
-
             return new WorldInteraction[] {
                 new()
                 {

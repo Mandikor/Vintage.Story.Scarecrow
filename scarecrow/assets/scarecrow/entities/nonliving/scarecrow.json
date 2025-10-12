@@ -3,6 +3,8 @@
 
 	"class": "EntityScareCrow",
 
+	"tags": [ "inanimate" ],
+
 	"hitboxSize": {
 		"x": 0.7,
 		"y": 2
@@ -18,7 +20,7 @@
 
 	"client": {
 		"renderer": "Shape",
-		"shape": { "base": "scarecrow:entity/land/scarecrow" },
+		"shape": { "base": "scarecrow:entity/nonliving/scarecrow" },
 		"behaviors": [
 			{ "code": "repulseagents" },
 			{
