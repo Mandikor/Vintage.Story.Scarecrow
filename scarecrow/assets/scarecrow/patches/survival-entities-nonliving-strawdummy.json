@@ -99,7 +99,40 @@
   {
     "op": "add",
     "path": "/enabled",
-    "value": false,
+    "value": true,
+    "file": "game:recipes/grid/strawdummy.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/ingredientPattern",
+    "value": "_H_,SHS,_S_",
+    "file": "game:recipes/grid/strawdummy.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/ingredients/H",
+    "value": {
+      "type": "block",
+      "code": "game:hay-*-ud",
+      "name": "age",
+      "allowedVariants": [ "normal", "aged" ]
+    },
+    "file": "game:recipes/grid/strawdummy.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/width",
+    "value": 3,
+    "file": "game:recipes/grid/strawdummy.json",
+    "side": "Server"
+  },
+  {
+    "op": "add",
+    "path": "/recipeGroup",
+    "value": 1,
     "file": "game:recipes/grid/strawdummy.json",
     "side": "Server"
   }
