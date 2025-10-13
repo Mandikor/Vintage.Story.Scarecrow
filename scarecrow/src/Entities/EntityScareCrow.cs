@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
@@ -7,13 +6,14 @@ using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
 using Vintagestory.API.Util;
 
+#nullable disable
+
 namespace Scarecrow;
 
 public class EntityScareCrow : EntityHumanoid
 {
     private ICoreServerAPI sapi;
     public bool DebugOutput { get; set; } = false;
-
 
     public override void Initialize(EntityProperties properties, ICoreAPI api, long InChunkIndex3d)
     {
@@ -73,7 +73,7 @@ public class EntityScareCrow : EntityHumanoid
 
     public override void OnInteract(EntityAgent byEntity, ItemSlot slot, Vec3d hitPosition, EnumInteractMode mode)
     {
-        if (!Alive || World.Side == EnumAppSide.Client || mode == EnumInteractMode.Attack)
+        if (!Api.World.Claims.TryAccess(((EntityPlayer)byEntity).Player, Pos.AsBlockPos, EnumBlockAccessFlags.Use) || !Alive || World.Side == EnumAppSide.Client || mode == 0)
         {
             base.OnInteract(byEntity, slot, hitPosition, mode);
             return;
@@ -84,11 +84,11 @@ public class EntityScareCrow : EntityHumanoid
 
         if (agentUid != null && (owneruid == null || owneruid == "" || owneruid == agentUid) && byEntity.Controls.CtrlKey && byEntity.RightHandItemSlot.Empty)
         {
-            ItemStack itemStack = new(byEntity.World.GetItem(new AssetLocation("scarecrow:scarecrow")), 1);
+            ItemStack itemStack = new(byEntity.World.GetItem(new AssetLocation("scarecrow:scarecrow")));
 
             if (!byEntity.TryGiveItemStack(itemStack))
             {
-                byEntity.World.SpawnItemEntity(itemStack, ServerPos.XYZ, null);
+                byEntity.World.SpawnItemEntity(itemStack, ServerPos.XYZ);
             }
 
             if (Api.Side == EnumAppSide.Server)
@@ -103,7 +103,7 @@ public class EntityScareCrow : EntityHumanoid
                 ServerPos.AsBlockPos
             );
 
-            Die(EnumDespawnReason.Death, null);
+            Die();
             return;
         }
 

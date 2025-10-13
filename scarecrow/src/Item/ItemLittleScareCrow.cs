@@ -5,6 +5,8 @@ using Vintagestory.API.Common.Entities;
 using Vintagestory.API.MathTools;
 using Vintagestory.API.Util;
 
+#nullable disable
+
 namespace Scarecrow;
 
 public class ItemLittleScareCrow : Item
@@ -44,7 +46,7 @@ public class ItemLittleScareCrow : Item
 
             entity.Pos.SetFrom(entity.ServerPos);
 
-            byEntity.World.PlaySoundAt(new AssetLocation("game:sounds/block/torch"), entity, player, true, 32f, 1f);
+            byEntity.World.PlaySoundAt(new AssetLocation("game:sounds/block/torch"), entity, player);
 
             byEntity.World.SpawnEntity(entity);
             handling = EnumHandHandling.PreventDefaultAction;
