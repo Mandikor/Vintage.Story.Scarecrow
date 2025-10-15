@@ -1,0 +1,23 @@
+[
+  {
+    "op": "replace",
+    "path": "/2/ingredientPattern",
+    "value": "_H_,SHS,_S_",
+    "file": "artofgrowing:recipes/grid/thatchhay.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/2/width",
+    "value": 3,
+    "file": "artofgrowing:recipes/grid/thatchhay.json",
+    "side": "Server"
+  },
+  {
+    "op": "add",
+    "path": "/2/recipeGroup",
+    "value": 1,
+    "file": "artofgrowing:recipes/grid/thatchhay.json",
+    "side": "Server"
+  }
+]

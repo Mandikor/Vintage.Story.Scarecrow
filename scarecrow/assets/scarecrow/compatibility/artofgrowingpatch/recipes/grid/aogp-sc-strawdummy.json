@@ -1,0 +1,48 @@
+[
+	{
+		"enabled": true,
+		"ingredientPattern": "_G_,SGS,_S_",
+		"ingredients": {
+			"S": {
+				"type": "item",
+				"code": "game:stick"
+			},
+			"G": {
+				"type": "item",
+				"code": "artofgrowing:grass",
+				"quantity": 8
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"recipeGroup": 2,
+		"output": {
+			"type": "item",
+			"code": "game:strawdummy",
+			"quantity": 1
+		}
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "_G_,SGS,_S_",
+		"ingredients": {
+			"S": {
+				"type": "item",
+				"code": "game:stick"
+			},
+			"G": {
+				"type": "item",
+				"code": "artofgrowing:agedgrass",
+				"quantity": 8
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"recipeGroup": 2,
+		"output": {
+			"type": "item",
+			"code": "game:strawdummy",
+			"quantity": 1
+		}
+	}
+]

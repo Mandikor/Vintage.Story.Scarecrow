@@ -28,21 +28,9 @@
     "op": "replace",
     "path": "/guiTransform",
     "value": {
-      "translation": {
-        "x": 3,
-        "y": 0,
-        "z": 0
-      },
-      "rotation": {
-        "x": -14,
-        "y": 32,
-        "z": 180
-      },
-      "origin": {
-        "x": 0.5,
-        "y": 1.1,
-        "z": 0.5
-      },
+      "translation": { "x": 3, "y": 0, "z": 0 },
+      "rotation": { "x": -14, "y": 32, "z": 180 },
+      "origin": { "x": 0.5, "y": 1.1, "z": 0.5 },
       "scale": 0.84
     },
     "file": "game:itemtypes/strawdummy.json",
@@ -52,21 +40,9 @@
     "op": "replace",
     "path": "/tpHandTransform",
     "value": {
-      "translation": {
-        "x": -0.1,
-        "y": -0.4,
-        "z": -0.5
-      },
-      "rotation": {
-        "x": 150,
-        "y": 0,
-        "z": -80
-      },
-      "origin": {
-        "x": 0.4,
-        "y": 0.5,
-        "z": 0.5
-      },
+      "translation": { "x": -0.1, "y": -0.4, "z": -0.5 },
+      "rotation": { "x": 150, "y": 0, "z": -80 },
+      "origin": { "x": 0.4, "y": 0.5, "z": 0.5 },
       "scale": 0.63
     },
     "file": "game:itemtypes/strawdummy.json",
@@ -76,21 +52,9 @@
     "op": "add",
     "path": "/groundTransform",
     "value": {
-      "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "rotation": {
-        "x": 100,
-        "y": 18,
-        "z": 180
-      },
-      "origin": {
-        "x": 0.5,
-        "y": 0.5,
-        "z": 0.3
-      },
+      "translation": { "x": 0, "y": 0, "z": 0 },
+      "rotation": { "x": 100, "y": 18, "z": 180 },
+      "origin": { "x": 0.5, "y": 0.5, "z": 0.3 },
       "scale": 2.1
     },
     "file": "game:itemtypes/strawdummy.json",

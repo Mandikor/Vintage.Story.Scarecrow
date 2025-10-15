@@ -3,14 +3,14 @@
     "op": "replace",
     "path": "/0/enabled",
     "value": "false",
-    "file": "scarecrow:compatibility/artofgrowing/recipes/grid/aog-scarecrow.json",
+    "file": "scarecrow:compatibility/artofgrowingpatch/recipes/grid/aogp-scarecrow.json",
     "side": "Server"
   },
   {
     "op": "replace",
     "path": "/1/enabled",
     "value": "false",
-    "file": "scarecrow:compatibility/artofgrowing/recipes/grid/aog-scarecrow.json",
+    "file": "scarecrow:compatibility/artofgrowingpatch/recipes/grid/aogp-scarecrow.json",
     "side": "Server"
   }
 ]
