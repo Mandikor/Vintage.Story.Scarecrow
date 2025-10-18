@@ -5,13 +5,14 @@
     "file": "viverridae:entities/land/nandiniidae.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 1.6,
+      "animation": "Run",
+      "entityCodesByType": {
+        "*": [ "scarecrow", "little-scarecrow", "strawdummy" ]
+      },
+      "priority": 1.53,
       "movespeedByType": {
-        "*-adult-*-nandiniabinotata": 0.04,
-        "*-baby-*-nandiniabinotata": 0.03
+        "*-adult-*-nandiniabinotata": 0.06,
+        "*-baby-*-nandiniabinotata": 0.045
       },
       "animationSpeedByType": {
         "*-adult-male-nandiniabinotata": 2.7,
@@ -19,8 +20,8 @@
         "*-baby-*-nandiniabinotata": 4,
         "*": 1
       },
-      "seekingRange": 16,
-      "animation": "Canter"
+      "seekingRange": 20,
+      "whenInEmotionState": "fleeondamage"
     },
     "side": "server"
   },
@@ -30,10 +31,11 @@
     "file": "viverridae:entities/land/nandiniidae.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 1.59,
+      "animation": "Canter",
+      "entityCodesByType": {
+        "*": [ "scarecrow" ]
+      },
+      "priority": 1.52,
       "movespeedByType": {
         "*-adult-*-nandiniabinotata": 0.04,
         "*-baby-*-nandiniabinotata": 0.03
@@ -44,8 +46,7 @@
         "*-baby-*-nandiniabinotata": 4,
         "*": 1
       },
-      "seekingRange": 8,
-      "animation": "Canter"
+      "seekingRange": 16
     },
     "side": "server"
   },
@@ -55,10 +56,11 @@
     "file": "viverridae:entities/land/nandiniidae.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 1.59,
+      "animation": "Canter",
+      "entityCodesByType": {
+        "*": [ "little-scarecrow" ]
+      },
+      "priority": 1.52,
       "movespeedByType": {
         "*-adult-*-nandiniabinotata": 0.04,
         "*-baby-*-nandiniabinotata": 0.03
@@ -69,8 +71,107 @@
         "*-baby-*-nandiniabinotata": 4,
         "*": 1
       },
-      "seekingRange": 4,
-      "animation": "Canter"
+      "seekingRange": 8
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "viverridae:entities/land/nandiniidae.json",
+    "value": {
+      "code": "fleeentity",
+      "animation": "Canter",
+      "entityCodesByType": {
+        "*": [ "strawdummy" ]
+      },
+      "priority": 1.52,
+      "movespeedByType": {
+        "*-adult-*-nandiniabinotata": 0.04,
+        "*-baby-*-nandiniabinotata": 0.03
+      },
+      "animationSpeedByType": {
+        "*-adult-male-nandiniabinotata": 2.7,
+        "*-adult-female-nandiniabinotata": 3,
+        "*-baby-*-nandiniabinotata": 4,
+        "*": 1
+      },
+      "seekingRange": 4
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "viverridae:entities/land/nandiniidae.json",
+    "value": {
+      "code": "fleeentity",
+      "animation": "Walk",
+      "entityCodesByType": {
+        "*": [ "scarecrow" ]
+      },
+      "priority": 1.51,
+      "movespeedByType": {
+        "*-adult-*-nandiniabinotata": 0.0036,
+        "*-baby-*-nandiniabinotata": 0.0027
+      },
+      "animationSpeedByType": {
+        "*-adult-male-nandiniabinotata": 0.9,
+        "*-adult-female-nandiniabinotata": 1,
+        "*-baby-*-nandiniabinotata": 1.35,
+        "*": 1
+      },
+      "seekingRange": 20
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "viverridae:entities/land/nandiniidae.json",
+    "value": {
+      "code": "fleeentity",
+      "animation": "Walk",
+      "entityCodesByType": {
+        "*": [ "little-scarecrow" ]
+      },
+      "priority": 1.51,
+      "movespeedByType": {
+        "*-adult-*-nandiniabinotata": 0.0036,
+        "*-baby-*-nandiniabinotata": 0.0027
+      },
+      "animationSpeedByType": {
+        "*-adult-male-nandiniabinotata": 0.9,
+        "*-adult-female-nandiniabinotata": 1,
+        "*-baby-*-nandiniabinotata": 1.35,
+        "*": 1
+      },
+      "seekingRange": 12
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "viverridae:entities/land/nandiniidae.json",
+    "value": {
+      "code": "fleeentity",
+      "animation": "Walk",
+      "entityCodesByType": {
+        "*": [ "strawdummy" ]
+      },
+      "priority": 1.51,
+      "movespeedByType": {
+        "*-adult-*-nandiniabinotata": 0.0036,
+        "*-baby-*-nandiniabinotata": 0.0027
+      },
+      "animationSpeedByType": {
+        "*-adult-male-nandiniabinotata": 0.9,
+        "*-adult-female-nandiniabinotata": 1,
+        "*-baby-*-nandiniabinotata": 1.35,
+        "*": 1
+      },
+      "seekingRange": 8
     },
     "side": "server"
   }
