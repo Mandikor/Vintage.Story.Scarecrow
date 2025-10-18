@@ -5,7 +5,7 @@
 
 	// Description Scarecrow
 	"scarecrow:item-scarecrow": "Опудало",
-	"scarecrow:itemdesc-scarecrow": "\n\nВідганяє непроханих гостей з вашого саду. Зайці та єноти бояться опудала, тому підходять на відстань до 16 блоків. (Звичайне)\n\n<font color=\"#99c9f9\"><i>Виглядає воно жахливо, але гарбуз дуже смачний.</i></font>",
+	"scarecrow:itemdesc-scarecrow": "\n\nВідганяє непроханих гостей з вашого саду. Зайці та єноти бояться опудала, тому підходять на відстань до 16 блоків.\n\n<font color=\"#99c9f9\"><i>Виглядає воно жахливо, але гарбуз дуже смачний.</i></font>",
 
 	"scarecrow:item-handbooktext-scarecrow": "Опудало із землі можна підібрати за допомогою <hk>ctrl</hk> + <hk>rightmouse</hk> і порожньої правої руки.",
 
@@ -15,7 +15,7 @@
 
 	// Description Little Scarecrow
 	"scarecrow:item-little-scarecrow": "Мале опудало",
-	"scarecrow:itemdesc-little-scarecrow": "\n\nВідганяє непроханих гостей з вашого саду. Зайці та єноти бояться опудала, тому підходять на відстань до 8 блоків. (Звичайне)",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nВідганяє непроханих гостей з вашого саду. Зайці та єноти бояться опудала, тому підходять на відстань до 8 блоків.",
 
 	"scarecrow:item-handbooktext-little-scarecrow": "Мале опудало із землі можна підібрати за допомогою <hk>ctrl</hk> + <hk>rightmouse</hk> і порожньої правої руки.",
 
@@ -34,20 +34,6 @@
 	"scarecrow:heldhelp-place-sc": "Поставити опудало на землю",
 	"scarecrow:heldhelp-place-sd": "Поставити солом'яне опудало на землю",
 
-	"scarecrow:entityhelp-pickup": "Підібрати",
-
-
-	// Config lib by Maltiez text
-	"ScarecrowBlockingSettings": "Радіус дії",
-	"BlockRadiusScarecrow": "Радіус опудала",
-	"BlockRadiusScarecrowComment": "Встановлює радіус для опудала, щоб блокувати зайців та єнотів",
-	"BlockRadiusLittleScarecrow": "Радіус малого опудала",
-	"BlockRadiusLittleScarecrowComment": "Встановлює радіус для малого опудала, щоб блокувати зайців та єнотів",
-	"BlockRadiusStrawdummy": "Радіус солом'яного опудала",
-	"BlockRadiusStrawdummyComment": "Встановлює радіус для солом'яного опудала, щоб блокувати зайців та єнотів",
-	"ScarecrowDebugSettings": "Debug",
-	"DebugOutput": "Вивід Debug повідомлень",
-	"DebugOutputComment": "Увімк. або вимк. Debug повідомлення"
-
+	"scarecrow:entityhelp-pickup": "Підібрати"
 
 }

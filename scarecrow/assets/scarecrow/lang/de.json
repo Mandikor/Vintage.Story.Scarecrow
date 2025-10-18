@@ -5,7 +5,7 @@
 
 	// Description Scarecrow
 	"scarecrow:item-scarecrow": "Vogelscheuche",
-	"scarecrow:itemdesc-scarecrow": "\n\nSie vertreibt unliebsame Gäste aus deinem Garten. Hasen und Waschbären haben Angst vor Vogelscheuchen und nähern sich bis auf 16 Blöcke. (Voreinstellung)\n\n<font color=\"#99c9f9\"><i>Sie schaut schrecklich aus, aber der Kürbis ist lecker.</i></font>\n\n",
+	"scarecrow:itemdesc-scarecrow": "\n\nSie vertreibt unliebsame Gäste aus deinem Garten. Hasen und Waschbären haben Angst vor Vogelscheuchen und nähern sich bis auf 16 Blöcke.\n\n<font color=\"#99c9f9\"><i>Sie schaut schrecklich aus, aber der Kürbis ist lecker.</i></font>\n\n",
 
 	"scarecrow:item-handbooktext-scarecrow": "Eine stehende Vogelscheuche kann mit <hk>ctrl</hk> + <hk>rightmouse</hk> und einer leeren rechten Hand aufgehoben werden.",
 
@@ -15,7 +15,7 @@
 
 	// Description Little Scarecrow
 	"scarecrow:item-little-scarecrow": "Kleine Vogelscheuche",
-	"scarecrow:itemdesc-little-scarecrow": "\n\nSie vertreibt unliebsame Gäste aus deinem Garten. Hasen und Waschbären haben weniger Angst vor kleinen Vogelscheuchen und nähern sich bis auf 8 Blöcke. (Voreinstellung)\n\n",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nSie vertreibt unliebsame Gäste aus deinem Garten. Hasen und Waschbären haben weniger Angst vor kleinen Vogelscheuchen und nähern sich bis auf 8 Blöcke.\n\n",
 
 	"scarecrow:item-handbooktext-little-scarecrow": "Eine stehende kleine Vogelscheuche kann mit <hk>ctrl</hk> + <hk>rightmouse</hk> und einer leeren rechten Hand aufgehoben werden.",
 
@@ -33,19 +33,6 @@
 	"scarecrow:heldhelp-place-sc": "Platziert die Vogelscheuche auf den Boden",
 	"scarecrow:heldhelp-place-sd": "Platziert die Strohpuppe auf den Boden",
 
-	"scarecrow:entityhelp-pickup": "Aufheben",
-
-
-	// Config lib by Maltiez text
-	"ScarecrowBlockingSettings": "Blocking Settings",
-	"BlockRadiusScarecrow": "Blocking radius for scarecrow",
-	"BlockRadiusScarecrowComment": "Set the radius for the scarecrow to block hares and raccoons",
-	"BlockRadiusLittleScarecrow": "Blocking radius for little scarecrow",
-	"BlockRadiusLittleScarecrowComment": "Set the radius for the little scarecrow to block hares and raccoons",
-	"BlockRadiusStrawdummy": "Blocking radius for strawdummy",
-	"BlockRadiusStrawdummyComment": "Set the radius for the strawdummy to block hares and raccoons",
-	"ScarecrowDebugSettings": "Debug Settings",
-	"DebugOutput": "Enable Debug Output",
-	"DebugOutputComment": "Activate or deactivate debug informations"
+	"scarecrow:entityhelp-pickup": "Aufheben"
 
 }

@@ -1,6 +1,6 @@
 {
 	// Japanese localization file for 'Scarecrow'.
-	// Mod Version: v1.2.1
+	// Mod Version: v1.7.1
 	// Translated By: Macoto Hino
 	// Machine translation using PCOT and DeepL.
 
@@ -10,7 +10,7 @@
 
 	// Description Scarecrow
 	"scarecrow:item-scarecrow": "案山子(かかし)",
-	"scarecrow:itemdesc-scarecrow": "\n\n 不快な客人からお庭を守ります。ウサギやタヌキは案山子(かかし)を怖がりますが、最大16ブロックまでは近付いて来ます。（デフォルト）\n\n<font color=\"#99c9f9\"><i>酷い顔をしていますが、カボチャは美味しいです。<\/i><\/font>\n\n",
+	"scarecrow:itemdesc-scarecrow": "\n\n 不快な客人からお庭を守ります。ウサギやタヌキは案山子(かかし)を怖がりますが、最大16ブロックまでは近付いて来ます。\n\n<font color=\"#99c9f9\"><i>酷い顔をしていますが、カボチャは美味しいです。<\/i><\/font>\n\n",
 
 	"scarecrow:item-handbooktext-scarecrow": "地面に立っている案山子(かかし)は、<hk>ctrl<\/hk> + <hk>rightmouse<\/hk>で拾うことが出来ます。",
 
@@ -20,7 +20,7 @@
 
 	// Description Little Scarecrow
 	"scarecrow:item-little-scarecrow": "小さな案山子(かかし)",
-	"scarecrow:itemdesc-little-scarecrow": "\n\n 不快な客人からお庭を守ります。ウサギやアライグマは小さな案山子(かかし)をあまり怖がらず、最大8ブロックまでは近付いて来ます。（デフォルト）\n\n",
+	"scarecrow:itemdesc-little-scarecrow": "\n\n 不快な客人からお庭を守ります。ウサギやアライグマは小さな案山子(かかし)をあまり怖がらず、最大8ブロックまでは近付いて来ます。\n\n",
 
 	"scarecrow:item-handbooktext-little-scarecrow": "地面に立っている小さな案山子(かかし)は、<hk>ctrl<\/hk> + <hk>rightmouse<\/hk>を使用して拾うことが出来ます。",
 
@@ -37,19 +37,6 @@
 	"scarecrow:heldhelp-place-lsc": "小さなかかしを地面に置く",
 	"scarecrow:heldhelp-place-sc": "かかしを地面に置く",
 
-	"scarecrow:entityhelp-pickup": "拾う",
-
-
-	// Config lib by Maltiez text
-	"ScarecrowBlockingSettings": "Blocking Settings",
-	"BlockRadiusScarecrow": "Blocking radius for scarecrow",
-	"BlockRadiusScarecrowComment": "Set the radius for the scarecrow to block hares and raccoons",
-	"BlockRadiusLittleScarecrow": "Blocking radius for little scarecrow",
-	"BlockRadiusLittleScarecrowComment": "Set the radius for the little scarecrow to block hares and raccoons",
-	"BlockRadiusStrawdummy": "Blocking radius for strawdummy",
-	"BlockRadiusStrawdummyComment": "Set the radius for the strawdummy to block hares and raccoons",
-	"ScarecrowDebugSettings": "Debug Settings",
-	"DebugOutput": "Enable Debug Output",
-	"DebugOutputComment": "Activate or deactivate debug informations"
+	"scarecrow:entityhelp-pickup": "拾う"
 
 }

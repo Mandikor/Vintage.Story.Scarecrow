@@ -5,7 +5,7 @@
 
 	// Description Scarecrow
 	"scarecrow:item-scarecrow": "Scarecrow",
-	"scarecrow:itemdesc-scarecrow": "\n\nIt sells unpleasant guests from your garden. Hares and raccoons are afraid of scarecrows and approach up to 16 blocks. (Default)\n\n<font color=\"#99c9f9\"><i>She looks terrible, but the pumpkin is delicious.</i></font>\n\n",
+	"scarecrow:itemdesc-scarecrow": "\n\nIt sells unpleasant guests from your garden. Hares and raccoons are afraid of scarecrows and approach up to 16 blocks.\n\n<font color=\"#99c9f9\"><i>She looks terrible, but the pumpkin is delicious.</i></font>\n\n",
 
 	"scarecrow:item-handbooktext-scarecrow": "A Scarecrow standing on the ground can be picked up using <hk>ctrl</hk> + <hk>rightmouse</hk> click and an empty right hand.",
 
@@ -15,7 +15,7 @@
 
 	// Description Little Scarecrow
 	"scarecrow:item-little-scarecrow": "Little scarecrow",
-	"scarecrow:itemdesc-little-scarecrow": "\n\nIt sells unpleasant guests from your garden. Hares and raccoons are afraid of little scarecrows and approach up to 8 blocks. (Default)\n\n",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nIt sells unpleasant guests from your garden. Hares and raccoons are afraid of little scarecrows and approach up to 8 blocks.\n\n",
 
 	"scarecrow:item-handbooktext-little-scarecrow": "A little scarecrow standing on the ground can be picked up using <hk>ctrl</hk> + <hk>rightmouse</hk> click and an empty right hand.",
 
@@ -32,22 +32,8 @@
 	// other text
 	"scarecrow:heldhelp-place-lsc": "Place the little scarecrow on the ground",
 	"scarecrow:heldhelp-place-sc": "Place the scarecrow on the ground",
-	"scarecrow:heldhelp-place-sd": "Place the straw dummy on the ground",
+	"scarecrow:heldhelp-place-sd": "Place the strawdummy on the ground",
 
-	"scarecrow:entityhelp-pickup": "Pick up",
-
-
-	// Config lib by Maltiez text
-	"ScarecrowBlockingSettings": "Blocking Settings",
-	"BlockRadiusScarecrow": "Blocking radius for scarecrow",
-	"BlockRadiusScarecrowComment": "Set the radius for the scarecrow to block hares and raccoons",
-	"BlockRadiusLittleScarecrow": "Blocking radius for little scarecrow",
-	"BlockRadiusLittleScarecrowComment": "Set the radius for the little scarecrow to block hares and raccoons",
-	"BlockRadiusStrawdummy": "Blocking radius for strawdummy",
-	"BlockRadiusStrawdummyComment": "Set the radius for the strawdummy to block hares and raccoons",
-	"ScarecrowDebugSettings": "Debug Settings",
-	"DebugOutput": "Enable Debug Output",
-	"DebugOutputComment": "Activate or deactivate debug informations"
-
+	"scarecrow:entityhelp-pickup": "Pick up"
 
 }
