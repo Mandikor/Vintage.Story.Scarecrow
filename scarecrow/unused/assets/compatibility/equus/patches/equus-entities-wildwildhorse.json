@@ -1,0 +1,97 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equus:entities/wildwildhorse.json",
+    "value": {
+      "code": "fleeentity",
+      "enabledByType": {
+        "wildwildhorse*": true,
+        "*": false
+      },
+      "entityCodes": [ "scarecrow" ],
+      "priority": 1.7,
+      "movespeed": 0.05,
+      "animationSpeed": 2,
+      "seekingRange": 16,
+      "animation": "Gallop"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equus:entities/wildwildhorse.json",
+    "value": {
+      "code": "fleeentity",
+      "enabledByType": {
+        "wildwildhorse*": true,
+        "*": false
+      },
+      "entityCodes": [ "little-scarecrow" ],
+      "priority": 1.7,
+      "movespeed": 0.05,
+      "animationSpeed": 2,
+      "seekingRange": 8,
+      "animation": "Gallop"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equus:entities/wildwildhorse.json",
+    "value": {
+      "code": "fleeentity",
+      "enabledByType": {
+        "wildwildhorse*": true,
+        "*": false
+      },
+      "entityCodes": [ "strawdummy" ],
+      "priority": 1.7,
+      "movespeed": 0.05,
+      "animationSpeed": 2,
+      "seekingRange": 4,
+      "animation": "Gallop"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equus:entities/wildwildhorse.json",
+    "value": {
+      "code": "fleeentity",
+      "enabledByType": {
+        "wildhorse*": true,
+        "*": false
+      },
+      "entityCodes": [ "scarecrow" ],
+      "priority": 1.7,
+      "movespeed": 0.0285,
+      "seekingRange": 6,
+      "animation": "trot",
+      "animationSpeed": 2
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equus:entities/wildwildhorse.json",
+    "value": {
+      "code": "fleeentity",
+      "enabledByType": {
+        "wildhorse*": true,
+        "*": false
+      },
+      "entityCodes": [ "little-scarecrow" ],
+      "priority": 1.7,
+      "movespeed": 0.0285,
+      "seekingRange": 3,
+      "animation": "trot",
+      "animationSpeed": 2
+    },
+    "side": "server"
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "op": "addeach",
+    "path": "/behaviorConfigs/taskai/aitasks/2/entityCodesByType/*-adult-*/-",
+    "file": "monoceros:entities/wildmonoceros.json",
+    "value": [ "scarecrow", "little-scarecrow" ],
+    "side": "server"
+  },
+  {
+    "op": "addeach",
+    "path": "/behaviorConfigs/taskai/aitasks/4/entityCodesByType/*-adult-*/-",
+    "file": "monoceros:entities/wildmonoceros.json",
+    "value": [ "scarecrow", "little-scarecrow" ],
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "monoceros:entities/wildmonoceros.json",
+    "value": {
+      "code": "fleeentity",
+      "enabledByType": {
+        "*": false,
+        "*-baby-*": true
+      },
+      "whenInEmotionState": "fleeondamage",
+      "entityCodes": [ "scarecrow" ],
+      "priority": 1.8,
+      "movespeed": 0.05,
+      "animationSpeed": 2,
+      "seekingRange": 16,
+      "animation": "Gallop"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "monoceros:entities/wildmonoceros.json",
+    "value": {
+      "code": "fleeentity",
+      "enabledByType": {
+        "*": false,
+        "*-baby-*": true
+      },
+      "whenInEmotionState": "fleeondamage",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.8,
+      "movespeed": 0.05,
+      "animationSpeed": 2,
+      "seekingRange": 8,
+      "animation": "Gallop"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "monoceros:entities/wildmonoceros.json",
+    "value": {
+      "code": "fleeentity",
+      "enabledByType": {
+        "*": false,
+        "*-baby-*": true
+      },
+      "whenInEmotionState": "fleeondamage",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.8,
+      "movespeed": 0.05,
+      "animationSpeed": 2,
+      "seekingRange": 4,
+      "animation": "Gallop"
+    },
+    "side": "server"
+  }
+]

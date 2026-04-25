@@ -20,6 +20,12 @@
 </ItemGroup>
 
 <ItemGroup>
+  <Compile Remove="unused\**" />
+  <EmbeddedResource Remove="unused\**" />
+  <None Remove="unused\**" />
+</ItemGroup>
+
+<ItemGroup>
 	<Content Include="modinfo.json">
 		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	</Content>
