@@ -23,7 +23,6 @@
         "*": false,
         "*-baby-*": true
       },
-      "whenInEmotionState": "fleeondamage",
       "entityCodes": [ "scarecrow" ],
       "priority": 1.8,
       "movespeed": 0.05,
@@ -43,10 +42,7 @@
         "*": false,
         "*-baby-*": true
       },
-      "whenInEmotionState": "fleeondamage",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
+      "entityCodes": [ "little-scarecrow" ],
       "priority": 1.8,
       "movespeed": 0.05,
       "animationSpeed": 2,
@@ -65,10 +61,7 @@
         "*": false,
         "*-baby-*": true
       },
-      "whenInEmotionState": "fleeondamage",
-      "entityCodes": [
-        "strawdummy"
-      ],
+      "entityCodes": [ "strawdummy" ],
       "priority": 1.8,
       "movespeed": 0.05,
       "animationSpeed": 2,
