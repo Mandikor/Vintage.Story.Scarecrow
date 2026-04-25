@@ -18,7 +18,7 @@
 		"1": "game:block/plant/pumpkin/fruit/stage4-side",
 		"2": "game:block/plant/pumpkin/fruit/stage4-top",
 		"straw-hat": "game:entity/humanoid/seraphclothes/head/straw-hat",
-		"string": "game:item/tool/material/string"
+		"string": "game:item/resource/string"
 	},
 	"elements": [
 		{

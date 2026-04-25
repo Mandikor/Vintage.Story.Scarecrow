@@ -10,7 +10,7 @@
     "op": "replace",
     "path": "/maxstacksize",
     "value": 4,
-    "file": "game:itemtypes/strawdummy.json",
+    "file": "game:itemtypes/creature/strawdummy.json",
     "side": "server"
   },
   {
@@ -21,7 +21,7 @@
       "items": [ "*" ],
       "scarecrow": [ "*" ]
     },
-    "file": "game:itemtypes/strawdummy.json",
+    "file": "game:itemtypes/creature/strawdummy.json",
     "side": "server"
   },
   {
@@ -33,7 +33,7 @@
       "origin": { "x": 0.5, "y": 1.1, "z": 0.5 },
       "scale": 0.84
     },
-    "file": "game:itemtypes/strawdummy.json",
+    "file": "game:itemtypes/creature/strawdummy.json",
     "side": "server"
   },
   {
@@ -45,7 +45,7 @@
       "origin": { "x": 0.4, "y": 0.5, "z": 0.5 },
       "scale": 0.63
     },
-    "file": "game:itemtypes/strawdummy.json",
+    "file": "game:itemtypes/creature/strawdummy.json",
     "side": "server"
   },
   {
@@ -57,7 +57,7 @@
       "origin": { "x": 0.5, "y": 0.5, "z": 0.3 },
       "scale": 2.1
     },
-    "file": "game:itemtypes/strawdummy.json",
+    "file": "game:itemtypes/creature/strawdummy.json",
     "side": "server"
   },
   {

@@ -2,7 +2,7 @@
   "type": "code",
   "name": "Scarecrow",
   "modid": "scarecrow",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "networkVersion": "",
   "textureSize": 32,
   "description": "With the scarecrow you get an effective solution to a plague of hares and racoons in your garden.",
@@ -14,6 +14,6 @@
   "requiredOnClient": true,
   "requiredOnServer": true,
   "dependencies": {
-    "game": "1.21.0"
+    "game": "1.22.0"
   }
 }
