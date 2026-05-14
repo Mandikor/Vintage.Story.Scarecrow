@@ -1,0 +1,25 @@
+[
+	{
+		"enabled": true,
+		"ingredientPattern": "_G_,SGS,_S_",
+		"ingredients": {
+			"S": {
+				"type": "item",
+				"code": "game:stick"
+			},
+			"G": {
+				"type": "item",
+				"code": "grasstoropes:grassbundle",
+				"quantity": 4
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"recipeGroup": 2,
+		"output": {
+			"type": "item",
+			"code": "game:strawdummy",
+			"quantity": 1
+		}
+	}
+]

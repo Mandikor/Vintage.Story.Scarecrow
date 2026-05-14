@@ -1,0 +1,29 @@
+[
+	{
+		"enabled": true,
+		"ingredientPattern": "_H_,SGS,_S_",
+		"ingredients": {
+			"H": {
+				"type": "item",
+				"code": "game:clothes-head-straw-hat"
+			},
+			"S": {
+				"type": "item",
+				"code": "game:stick"
+			},
+			"G": {
+				"type": "item",
+				"code": "grasstoropes:grassbundle",
+				"quantity": 8
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"recipeGroup": 3,
+		"output": {
+			"type": "item",
+			"code": "scarecrow:little-scarecrow",
+			"quantity": 1
+		}
+	}
+]
