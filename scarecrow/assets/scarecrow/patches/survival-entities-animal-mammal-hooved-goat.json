@@ -5,22 +5,21 @@
     "file": "game:entities/animal/mammal/hooved/goat-baby.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 2,
-      "movespeedByType": {
-        "goat-ibexnub-*": 0.04,
-        "goat-muskox-*": 0.04,
-        "goat-nubian-*": 0.04,
-        "goat-sirohi-*": 0.04,
-        "goat-valais-*": 0.04,
-        "*": 0.04
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "entityCodes": [ "scarecrow" ],
+      "priority": 1.6,
+      "movespeed": 0.04,
+      "seekingRangeByType": {
+        "goat-ibexnub-*": 18,
+        "goat-muskox-*": 18,
+        "goat-nubian-*": 18,
+        "goat-sirohi-*": 18,
+        "goat-valais-*": 18,
+        "*": 16
       },
       "animationSpeed": 2,
-      "seekingRange": 16,
-      "animation": "Run",
-      "sound": "game:creature/goat/bleatweird"
+      "sound": "creature/goat/bleatweird"
     },
     "side": "server"
   },
@@ -30,22 +29,21 @@
     "file": "game:entities/animal/mammal/hooved/goat-baby.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 1.9,
-      "movespeedByType": {
-        "goat-ibexnub-*": 0.04,
-        "goat-muskox-*": 0.04,
-        "goat-nubian-*": 0.04,
-        "goat-sirohi-*": 0.04,
-        "goat-valais-*": 0.04,
-        "*": 0.04
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "entityCodes": [ "little-scarecrow" ],
+      "priority": 1.6,
+      "movespeed": 0.04,
+      "seekingRangeByType": {
+        "goat-ibexnub-*": 10,
+        "goat-muskox-*": 10,
+        "goat-nubian-*": 10,
+        "goat-sirohi-*": 10,
+        "goat-valais-*": 10,
+        "*": 8
       },
       "animationSpeed": 2,
-      "seekingRange": 8,
-      "animation": "Run",
-      "sound": "game:creature/goat/bleatweird"
+      "sound": "creature/goat/bleatweird"
     },
     "side": "server"
   },
@@ -55,22 +53,21 @@
     "file": "game:entities/animal/mammal/hooved/goat-baby.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 1.9,
-      "movespeedByType": {
-        "goat-ibexnub-*": 0.04,
-        "goat-muskox-*": 0.04,
-        "goat-nubian-*": 0.04,
-        "goat-sirohi-*": 0.04,
-        "goat-valais-*": 0.04,
-        "*": 0.04
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "entityCodes": [ "strawdummy" ],
+      "priority": 1.6,
+      "movespeed": 0.04,
+      "seekingRangeByType": {
+        "goat-ibexnub-*": 6,
+        "goat-muskox-*": 6,
+        "goat-nubian-*": 6,
+        "goat-sirohi-*": 6,
+        "goat-valais-*": 6,
+        "*": 4
       },
       "animationSpeed": 2,
-      "seekingRange": 4,
-      "animation": "Run",
-      "sound": "game:creature/goat/bleatweird"
+      "sound": "creature/goat/bleatweird"
     },
     "side": "server"
   },
@@ -80,18 +77,24 @@
     "file": "game:entities/animal/mammal/hooved/goat-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 2,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "entityCodes": [ "scarecrow" ],
+      "priority": 1.6,
       "movespeedByType": {
         "goat-muskox-*": 0.065,
         "goat-takingold-*": 0.065,
         "*": 0.06
       },
+      "seekingRangeByType": {
+        "goat-ibexnub-*": 18,
+        "goat-muskox-*": 18,
+        "goat-nubian-*": 18,
+        "goat-sirohi-*": 18,
+        "goat-valais-*": 18,
+        "*": 16
+      },
       "animationSpeed": 2,
-      "seekingRange": 16,
-      "animation": "Run",
       "soundByType": {
         "goat-muskox-*": "creature/goat/large/{age}-hurt*",
         "goat-takingold-*": "creature/goat/large/{age}-hurt*",
@@ -106,18 +109,24 @@
     "file": "game:entities/animal/mammal/hooved/goat-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 1.9,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "entityCodes": [ "little-scarecrow" ],
+      "priority": 1.6,
       "movespeedByType": {
         "goat-muskox-*": 0.065,
         "goat-takingold-*": 0.065,
         "*": 0.06
       },
+      "seekingRangeByType": {
+        "goat-ibexnub-*": 10,
+        "goat-muskox-*": 10,
+        "goat-nubian-*": 10,
+        "goat-sirohi-*": 10,
+        "goat-valais-*": 10,
+        "*": 8
+      },
       "animationSpeed": 2,
-      "seekingRange": 8,
-      "animation": "Run",
       "soundByType": {
         "goat-muskox-*": "creature/goat/large/{age}-hurt*",
         "goat-takingold-*": "creature/goat/large/{age}-hurt*",
@@ -132,18 +141,24 @@
     "file": "game:entities/animal/mammal/hooved/goat-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 1.9,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "entityCodes": [ "strawdummy" ],
+      "priority": 1.6,
       "movespeedByType": {
         "goat-muskox-*": 0.065,
         "goat-takingold-*": 0.065,
         "*": 0.06
       },
+      "seekingRangeByType": {
+        "goat-ibexnub-*": 6,
+        "goat-muskox-*": 6,
+        "goat-nubian-*": 6,
+        "goat-sirohi-*": 6,
+        "goat-valais-*": 6,
+        "*": 4
+      },
       "animationSpeed": 2,
-      "seekingRange": 4,
-      "animation": "Run",
       "soundByType": {
         "goat-muskox-*": "creature/goat/large/{age}-hurt*",
         "goat-takingold-*": "creature/goat/large/{age}-hurt*",

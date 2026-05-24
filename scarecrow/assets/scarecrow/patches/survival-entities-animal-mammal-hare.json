@@ -5,13 +5,12 @@
     "file": "game:entities/animal/mammal/hare-baby.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 1.55,
+      "entityCodes": [ "scarecrow" ],
+      "priority": 1.6,
       "movespeed": 0.04,
       "animationSpeed": 1.8,
       "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
       "animation": "Run"
     },
     "side": "server"
@@ -22,13 +21,12 @@
     "file": "game:entities/animal/mammal/hare-baby.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 1.54,
+      "entityCodes": [ "little-scarecrow" ],
+      "priority": 1.6,
       "movespeed": 0.04,
       "animationSpeed": 1.8,
       "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
       "animation": "Run"
     },
     "side": "server"
@@ -39,13 +37,12 @@
     "file": "game:entities/animal/mammal/hare-baby.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 1.54,
+      "entityCodes": [ "strawdummy" ],
+      "priority": 1.6,
       "movespeed": 0.04,
       "animationSpeed": 1.8,
       "seekingRange": 4,
+      "instafleeOnDamageChance": 1,
       "animation": "Run"
     },
     "side": "server"
@@ -56,12 +53,11 @@
     "file": "game:entities/animal/mammal/hare-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 2.2,
+      "entityCodes": [ "scarecrow" ],
+      "priority": 2.1,
       "movespeed": 0.06,
       "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
       "animation": "Run",
       "animationSpeed": 2
     },
@@ -73,12 +69,11 @@
     "file": "game:entities/animal/mammal/hare-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
+      "entityCodes": [ "little-scarecrow" ],
       "priority": 2.1,
       "movespeed": 0.06,
       "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
       "animation": "Run",
       "animationSpeed": 2
     },
@@ -90,12 +85,11 @@
     "file": "game:entities/animal/mammal/hare-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "strawdummy"
-      ],
+      "entityCodes": [ "strawdummy" ],
       "priority": 2.1,
       "movespeed": 0.06,
       "seekingRange": 4,
+      "instafleeOnDamageChance": 1,
       "animation": "Run",
       "animationSpeed": 2
     },

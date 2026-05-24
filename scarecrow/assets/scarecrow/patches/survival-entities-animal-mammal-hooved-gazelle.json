@@ -5,15 +5,14 @@
     "file": "game:entities/animal/mammal/hooved/gazelle-baby.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 1.7,
+      "instafleeOnDamageChance": 1,
+      "entityCodes": [ "scarecrow" ],
+      "priority": 1.6,
       "movespeed": 0.065,
-      "animationSpeed": 2,
       "seekingRange": 16,
       "animation": "Run",
-      "sound": "game:creature/sheep/hurt2"
+      "animationSpeed": 2,
+      "sound": "creature/sheep/hurt2"
     },
     "side": "server"
   },
@@ -23,15 +22,14 @@
     "file": "game:entities/animal/mammal/hooved/gazelle-baby.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
+      "instafleeOnDamageChance": 1,
+      "entityCodes": [ "little-scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.065,
-      "animationSpeed": 2,
       "seekingRange": 8,
       "animation": "Run",
-      "sound": "game:creature/sheep/hurt2"
+      "animationSpeed": 2,
+      "sound": "creature/sheep/hurt2"
     },
     "side": "server"
   },
@@ -41,15 +39,14 @@
     "file": "game:entities/animal/mammal/hooved/gazelle-baby.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "strawdummy"
-      ],
+      "instafleeOnDamageChance": 1,
+      "entityCodes": [ "strawdummy" ],
       "priority": 1.6,
       "movespeed": 0.065,
-      "animationSpeed": 2,
       "seekingRange": 4,
       "animation": "Run",
-      "sound": "game:creature/sheep/hurt2"
+      "animationSpeed": 2,
+      "sound": "creature/sheep/hurt2"
     },
     "side": "server"
   },
@@ -59,15 +56,14 @@
     "file": "game:entities/animal/mammal/hooved/gazelle-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 1.7,
+      "instafleeOnDamageChance": 1,
+      "entityCodes": [ "scarecrow" ],
+      "priority": 1.5,
       "movespeed": 0.065,
-      "animationSpeed": 2,
       "seekingRange": 16,
       "animation": "Run",
-      "sound": "game:creature/sheep/hurt2"
+      "animationSpeed": 2,
+      "sound": "creature/sheep/hurt2"
     },
     "side": "server"
   },
@@ -77,15 +73,14 @@
     "file": "game:entities/animal/mammal/hooved/gazelle-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 1.6,
+      "instafleeOnDamageChance": 1,
+      "entityCodes": [ "little-scarecrow" ],
+      "priority": 1.5,
       "movespeed": 0.065,
-      "animationSpeed": 2,
       "seekingRange": 8,
       "animation": "Run",
-      "sound": "game:creature/sheep/hurt2"
+      "animationSpeed": 2,
+      "sound": "creature/sheep/hurt2"
     },
     "side": "server"
   },
@@ -95,15 +90,14 @@
     "file": "game:entities/animal/mammal/hooved/gazelle-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 1.6,
+      "instafleeOnDamageChance": 1,
+      "entityCodes": [ "strawdummy" ],
+      "priority": 1.5,
       "movespeed": 0.065,
-      "animationSpeed": 2,
       "seekingRange": 4,
       "animation": "Run",
-      "sound": "game:creature/sheep/hurt2"
+      "animationSpeed": 2,
+      "sound": "creature/sheep/hurt2"
     },
     "side": "server"
   }

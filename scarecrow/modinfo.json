@@ -2,18 +2,16 @@
   "type": "code",
   "name": "Scarecrow",
   "modid": "scarecrow",
-  "version": "1.8.1",
-  "networkVersion": "",
-  "textureSize": 32,
+  "version": "1.8.2",
   "description": "With the scarecrow you get an effective solution to a plague of hares and racoons in your garden.",
-  "iconPath": "",
-  "website": "https://www.vintagestory.at/forums/topic/10606-scarecrow/",
   "authors": [ "Mandikor" ],
   "contributors": [],
+  "website": "https://www.vintagestory.at/forums/topic/10606-scarecrow/",
   "side": "Universal",
   "requiredOnClient": true,
   "requiredOnServer": true,
   "dependencies": {
     "game": "1.22.0"
-  }
+  },
+  "iconPath": ""
 }

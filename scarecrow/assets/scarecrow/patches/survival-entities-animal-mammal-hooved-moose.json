@@ -5,15 +5,15 @@
     "file": "game:entities/animal/mammal/hooved/moose-baby.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 1.7,
-      "movespeed": 0.02,
-      "animationSpeed": 2,
-      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
       "animation": "Run",
-      "sound": "game:creature/hooved/generic/sniff*"
+      "entityCodes": [ "scarecrow" ],
+      "priority": 1.6,
+      "movespeed": 0.02,
+      "seekingRange": 16,
+      "animationSpeed": 2,
+      "sound": "creature/hooved/generic/sniff*",
+      "whenNotInEmotionState": "aggressiveondamage"
     },
     "side": "server"
   },
@@ -23,15 +23,15 @@
     "file": "game:entities/animal/mammal/hooved/moose-baby.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "entityCodes": [ "little-scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.02,
-      "animationSpeed": 2,
       "seekingRange": 8,
-      "animation": "Run",
-      "sound": "game:creature/hooved/generic/sniff*"
+      "animationSpeed": 2,
+      "sound": "creature/hooved/generic/sniff*",
+      "whenNotInEmotionState": "aggressiveondamage"
     },
     "side": "server"
   },
@@ -41,15 +41,15 @@
     "file": "game:entities/animal/mammal/hooved/moose-baby.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "strawdummy"
-      ],
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "entityCodes": [ "strawdummy" ],
       "priority": 1.6,
       "movespeed": 0.02,
+      "seekingRange": 4,
       "animationSpeed": 2,
-      "seekingRange": 4,
-      "animation": "Run",
-      "sound": "game:creature/hooved/generic/sniff*"
+      "sound": "creature/hooved/generic/sniff*",
+      "whenNotInEmotionState": "aggressiveondamage"
     },
     "side": "server"
   },
@@ -59,15 +59,15 @@
     "file": "game:entities/animal/mammal/hooved/moose-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 1.7,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "entityCodes": [ "scarecrow" ],
+      "priority": 1.6,
       "movespeed": 0.05,
-      "animationSpeed": 1.8,
       "seekingRange": 16,
-      "animation": "Run",
-      "sound": "game:creature/hooved/generic/sniff*"
+      "animationSpeed": 1.8,
+      "sound": "creature/hooved/generic/sniff*",
+      "whenNotInEmotionState": "aggressiveondamage"
     },
     "side": "server"
   },
@@ -77,15 +77,15 @@
     "file": "game:entities/animal/mammal/hooved/moose-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "entityCodes": [ "little-scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.05,
-      "animationSpeed": 1.8,
       "seekingRange": 8,
-      "animation": "Run",
-      "sound": "game:creature/hooved/generic/sniff*"
+      "animationSpeed": 1.8,
+      "sound": "creature/hooved/generic/sniff*",
+      "whenNotInEmotionState": "aggressiveondamage"
     },
     "side": "server"
   },
@@ -95,15 +95,15 @@
     "file": "game:entities/animal/mammal/hooved/moose-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "strawdummy"
-      ],
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "entityCodes": [ "strawdummy" ],
       "priority": 1.6,
       "movespeed": 0.05,
-      "animationSpeed": 1.8,
       "seekingRange": 4,
-      "animation": "Run",
-      "sound": "game:creature/hooved/generic/sniff*"
+      "animationSpeed": 1.8,
+      "sound": "creature/hooved/generic/sniff*",
+      "whenNotInEmotionState": "aggressiveondamage"
     },
     "side": "server"
   }
