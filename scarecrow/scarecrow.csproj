@@ -37,4 +37,8 @@
 	</Content>
 </ItemGroup>
 
+<ItemGroup>
+  <Folder Include="assets\scarecrow\compatibility\viverridae\patches\" />
+</ItemGroup>
+
 </Project>
