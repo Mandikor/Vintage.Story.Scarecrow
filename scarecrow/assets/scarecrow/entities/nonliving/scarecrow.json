@@ -3,7 +3,7 @@
 
 	"class": "EntityScareCrow",
 
-	"tags": [ "inanimate" ],
+	"tags": [ "inanimate", "humanoid", "scaring-high" ],
 
 	"hitboxSize": {
 		"x": 0.7,

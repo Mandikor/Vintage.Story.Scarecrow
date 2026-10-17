@@ -1,8 +1,8 @@
 [
   {
     "op": "add",
-    "path": "/server/behaviors/11/aitasks/-",
-    "file": "viverridae:entities/land/viverridae.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "viverridae:entities/animal/mammal/viverridae-baby.json",
     "value": {
       "code": "fleeentity",
       "animation": "Run",
@@ -45,7 +45,7 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/11/aitasks/-",
+    "path": "/server/behaviors/10/aitasks/-",
     "file": "viverridae:entities/land/viverridae.json",
     "value": {
       "code": "fleeentity",
@@ -88,7 +88,7 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/11/aitasks/-",
+    "path": "/server/behaviors/10/aitasks/-",
     "file": "viverridae:entities/land/viverridae.json",
     "value": {
       "code": "fleeentity",
@@ -131,7 +131,7 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/11/aitasks/-",
+    "path": "/server/behaviors/10/aitasks/-",
     "file": "viverridae:entities/land/viverridae.json",
     "value": {
       "code": "fleeentity",
@@ -174,7 +174,7 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/11/aitasks/-",
+    "path": "/server/behaviors/10/aitasks/-",
     "file": "viverridae:entities/land/viverridae.json",
     "value": {
       "code": "fleeentity",
@@ -217,7 +217,7 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/11/aitasks/-",
+    "path": "/server/behaviors/10/aitasks/-",
     "file": "viverridae:entities/land/viverridae.json",
     "value": {
       "code": "fleeentity",
@@ -260,7 +260,7 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/11/aitasks/-",
+    "path": "/server/behaviors/10/aitasks/-",
     "file": "viverridae:entities/land/viverridae.json",
     "value": {
       "code": "fleeentity",
