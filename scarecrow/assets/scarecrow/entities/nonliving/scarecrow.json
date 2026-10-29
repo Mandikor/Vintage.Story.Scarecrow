@@ -18,6 +18,50 @@
 		"spawnDamageParticles": true
 	},
 
+	"behaviorConfigs": {
+		"rideableaccessories": {
+			"dropContentsOnDeath": true,
+			"wearableSlots": [
+				{
+					"code": "sc-leftarm",
+					"forCategoryCodes": [ "scythe", "hoe" ],
+					"attachmentPointCode": "LArmAP",
+					"stepParentTo": {
+						"": { "elementName": "LArmStorage" }
+					}
+				},
+				{
+					"code": "sc-rightarm",
+					"forCategoryCodes": [ "scythe", "hoe" ],
+					"attachmentPointCode": "RArmAP",
+					"stepParentTo": {
+						"": { "elementName": "RArmStorage" }
+					}
+				},
+				{
+					"code": "sc-neck",
+					"forCategoryCodes": [ "lantern" ],
+					"attachmentPointCode": "LanternAP",
+					"stepParentTo": {
+						"": { "elementName": "LanternStorage" }
+					}
+				},
+				{
+					"code": "sc-foot",
+					"forCategoryCodes": [ "wateringcan" ],
+					"attachmentPointCode": "FootAP",
+					"stepParentTo": {
+						"": { "elementName": "FootStorage" }
+					}
+				}
+			],
+			"useShiftAttach": true
+		},
+		"selectionboxes": {
+			"selectionBoxes": [ "LArmAP", "RArmAP", "LanternAP", "FootAP" ]
+		}
+	},
+
 	"client": {
 		"renderer": "Shape",
 		"shape": { "base": "scarecrow:entity/nonliving/scarecrow" },
@@ -27,6 +71,8 @@
 				"code": "controlledphysics",
 				"stepHeight": 1.1251
 			},
+			{ "code": "selectionboxes" },
+			{ "code": "rideableaccessories" },
 			{ "code": "interpolateposition" }
 		],
 		"animations": [
@@ -34,19 +80,6 @@
 				"code": "hurt",
 				"animation": "bounce",
 				"animationSpeed": 1.5
-			},
-			{
-				"code": "die",
-				"animation": "death",
-				"animationSpeed": 1.25,
-				"weight": 10,
-				"blendMode": "average"
-			},
-			{
-				"code": "idle",
-				"animation": "idle",
-				"blendMode": "average",
-				"triggeredBy": { "defaultAnim": true }
 			}
 		]
 	},
@@ -57,6 +90,10 @@
 			{
 				"code": "controlledphysics",
 				"stepHeight": 1.1251
+			},
+			{ "code": "selectionboxes" },
+			{
+				"code": "rideableaccessories"
 			},
 			{
 				"code": "health",

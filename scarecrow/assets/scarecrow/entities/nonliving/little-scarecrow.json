@@ -18,6 +18,33 @@
     "spawnDamageParticles": true
   },
 
+	"behaviorConfigs": {
+		"rideableaccessories": {
+			"wearableSlots": [
+				{
+					"code": "sc-neck",
+					"forCategoryCodes": [ "lantern" ],
+					"attachmentPointCode": "LanternAP",
+					"stepParentTo": {
+						"": { "elementName": "LanternStorage" }
+					}
+				},
+				{
+					"code": "sc-foot",
+					"forCategoryCodes": [ "wateringcan" ],
+					"attachmentPointCode": "FootAP",
+					"stepParentTo": {
+						"": { "elementName": "FootStorage" }
+					}
+				}
+			],
+			"useShiftAttach": true
+		},
+		"selectionboxes": {
+			"selectionBoxes": [ "LanternAP", "FootAP" ]
+		}
+	},
+
   "client": {
     "renderer": "Shape",
     "shape": { "base": "scarecrow:entity/nonliving/little-scarecrow" },
@@ -27,6 +54,8 @@
         "code": "controlledphysics",
         "stepHeight": 1.1251
       },
+      { "code": "selectionboxes" },
+      { "code": "rideableaccessories" },
       { "code": "interpolateposition" }
     ],
     "animations": [
@@ -34,19 +63,6 @@
         "code": "hurt",
         "animation": "bounce",
         "animationSpeed": 1.5
-      },
-      {
-        "code": "die",
-        "animation": "death",
-        "animationSpeed": 1.25,
-        "weight": 10,
-        "blendMode": "average"
-      },
-      {
-        "code": "idle",
-        "animation": "idle",
-        "blendMode": "average",
-        "triggeredBy": { "defaultAnim": true }
       }
     ]
   },
@@ -58,6 +74,8 @@
         "code": "controlledphysics",
         "stepHeight": 1.1251
       },
+      { "code": "selectionboxes" },
+      { "code": "rideableaccessories" },
       {
         "code": "health",
         "currenthealth": 150,

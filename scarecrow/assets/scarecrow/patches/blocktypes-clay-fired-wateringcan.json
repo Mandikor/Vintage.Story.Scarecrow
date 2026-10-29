@@ -1,0 +1,17 @@
+  [
+    {
+        "file": "game:blocktypes/clay/fired/wateringcan.json",
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": {
+          "attachableToEntity": {
+              "categoryCode": "wateringcan",
+              "attachedShapeBySlotCode": {
+                "sc-foot": { "base": "scarecrow:item/wearable/wateringcan" }
+              },
+              "texturePrefixCode": "scarecrow-wateringcan-{state}-{color}"
+            }
+          },
+        "side": "server"
+    }
+  ]

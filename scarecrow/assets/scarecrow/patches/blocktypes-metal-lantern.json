@@ -1,0 +1,24 @@
+  [
+    {
+        "file": "game:blocktypes/metal/lantern.json",
+        "op": "addmerge",
+        "path": "/attributesByType/*-up/attachableToEntityByType/lantern-small-*/attachedShapeBySlotCode",
+        "value": {
+            "sc-neck": {
+                "base": "scarecrow:item/wearable/lantern-small"
+            }
+        },
+        "side": "server"
+    },
+    {
+      "file": "game:blocktypes/metal/lantern.json",
+      "op": "addmerge",
+      "path": "/attributesByType/*-up/attachableToEntityByType/lantern-large-*/attachedShapeBySlotCode",
+      "value": {
+        "sc-neck": {
+          "base": "scarecrow:item/wearable/lantern-large"
+        }
+      },
+      "side": "server"
+    }
+  ]

@@ -3,6 +3,7 @@ using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
 using Vintagestory.API.MathTools;
+using Vintagestory.API.Datastructures;
 using Vintagestory.API.Server;
 using Vintagestory.API.Util;
 
@@ -10,9 +11,12 @@ using Vintagestory.API.Util;
 
 namespace Scarecrow
 {
-    public class EntityScareCrow : EntityHumanoid
+    public class EntityScareCrow : EntityAgent
     {
+        // public override bool IsCreature => false;
+
         private ICoreServerAPI sapi;
+
         public bool DebugOutput { get; set; } = false;
 
         public override void Initialize(EntityProperties properties, ICoreAPI api, long InChunkIndex3d)

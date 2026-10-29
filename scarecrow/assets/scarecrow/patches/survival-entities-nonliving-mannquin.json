@@ -1,0 +1,30 @@
+[
+  {
+    "op": "addeach",
+    "path": "/behaviorConfigs/rideableaccessories/wearableSlots/3/forCategoryCodes/0",
+    "value": [ "scythe", "hoe" ],
+    "file": "game:entities/nonliving/mannequin.json",
+    "side": "server"
+  },
+  {
+    "op": "addeach",
+    "path": "/behaviorConfigs/rideableaccessories/wearableSlots/4/forCategoryCodes/0",
+    "value": [ "scythe", "hoe" ],
+    "file": "game:entities/nonliving/mannequin.json",
+    "side": "server"
+  },
+  {
+    "op": "addeach",
+    "path": "/behaviorConfigs/rideableaccessories/wearableSlots/3/forCategoryCodes/0",
+    "value": [ "scythe", "hoe" ],
+    "file": "game:entities/nonliving/mannequin-aged.json",
+    "side": "server"
+  },
+  {
+    "op": "addeach",
+    "path": "/behaviorConfigs/rideableaccessories/wearableSlots/4/forCategoryCodes/0",
+    "value": [ "scythe", "hoe" ],
+    "file": "game:entities/nonliving/mannequin-aged.json",
+    "side": "server"
+  }
+]
