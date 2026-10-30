@@ -19,27 +19,28 @@
   },
 
 	"behaviorConfigs": {
-		"rideableaccessories": {
-			"wearableSlots": [
-				{
-					"code": "sc-neck",
-					"forCategoryCodes": [ "lantern" ],
-					"attachmentPointCode": "LanternAP",
-					"stepParentTo": {
-						"": { "elementName": "LanternStorage" }
-					}
-				},
-				{
-					"code": "sc-foot",
-					"forCategoryCodes": [ "wateringcan" ],
-					"attachmentPointCode": "FootAP",
-					"stepParentTo": {
-						"": { "elementName": "FootStorage" }
-					}
-				}
-			],
-			"useShiftAttach": true
-		},
+    "rideableaccessories": {
+      "dropContentsOnDeath": true,
+      "wearableSlots": [
+        {
+          "code": "sc-neck",
+          "forCategoryCodes": [ "lantern" ],
+          "attachmentPointCode": "LanternAP",
+          "stepParentTo": {
+            "": { "elementName": "LanternStorage" }
+          }
+        },
+        {
+          "code": "sc-foot",
+          "forCategoryCodes": [ "wateringcan" ],
+          "attachmentPointCode": "FootAP",
+          "stepParentTo": {
+            "": { "elementName": "FootStorage" }
+          }
+        }
+      ],
+      "useShiftAttach": true
+    },
 		"selectionboxes": {
 			"selectionBoxes": [ "LanternAP", "FootAP" ]
 		}
