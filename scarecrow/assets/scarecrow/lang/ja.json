@@ -7,6 +7,11 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "案山子(かかし)",
 
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Place scythe or hoe on left arm",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Place scythe or hoe on right arm",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Place lantern on neck",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Place watering can on foot",
+
 
 	// Description Scarecrow
 	"scarecrow:item-scarecrow": "案山子(かかし)",
