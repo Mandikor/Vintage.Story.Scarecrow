@@ -24,7 +24,7 @@
 			"wearableSlots": [
 				{
 					"code": "sc-leftarm",
-					"forCategoryCodes": [ "scythe", "hoe" ],
+					"forCategoryCodes": [ "scythe", "hoe", "bugnet", "snowshovel" ],
 					"attachmentPointCode": "LArmAP",
 					"stepParentTo": {
 						"": { "elementName": "LArmStorage" }
@@ -32,7 +32,7 @@
 				},
 				{
 					"code": "sc-rightarm",
-					"forCategoryCodes": [ "scythe", "hoe" ],
+					"forCategoryCodes": [ "scythe", "hoe", "bugnet", "snowshovel" ],
 					"attachmentPointCode": "RArmAP",
 					"stepParentTo": {
 						"": { "elementName": "RArmStorage" }

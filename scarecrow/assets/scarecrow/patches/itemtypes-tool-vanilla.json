@@ -1,36 +1,66 @@
-  [
-    {
-      "file": "game:itemtypes/tool/scythe.json",
-      "op": "addmerge",
-      "path": "/attributes/attachableToEntity",
-      "value": {
-        "categoryCode": "scythe",
-        "attachedShapeBySlotCode": {
-          "sc-leftarm": { "base": "scarecrow:item/wearable/scythe-left" },
-          "sc-rightarm": { "base": "scarecrow:item/wearable/scythe-right" }
-        },
-        "texturePrefixCode": "scarecrow-scythe-{metal}"
+[
+  {
+    "file": "game:itemtypes/tool/scythe.json",
+    "op": "addmerge",
+    "path": "/attributes/attachableToEntity",
+    "value": {
+      "categoryCode": "scythe",
+      "attachedShapeBySlotCode": {
+        "sc-leftarm": { "base": "scarecrow:item/wearable/scythe-left" },
+        "sc-rightarm": { "base": "scarecrow:item/wearable/scythe-right" }
       },
-      "side": "server"
+      "texturePrefixCode": "scarecrow-scythe-{metal}"
     },
-    {
-      "file": "game:itemtypes/tool/hoe.json",
-      "op": "addmerge",
-      "path": "/attributes/attachableToEntity",
-      "value": {
-        "categoryCode": "hoe",
-        "texturePrefixCode": "scarecrow-hoe-{material}",
-        "attachedShapeBySlotCodeByType": {
-          "@hoe-(copper|tinbronze|bismuthbronze|blackbronze|gold|silver|iron|meteoriciron|steel)": {
-            "sc-leftarm": { "base": "scarecrow:item/wearable/hoe-left-metal" },
-            "sc-rightarm": { "base": "scarecrow:item/wearable/hoe-right-metal" }
-          },
-          "@hoe-(chert|granite|andesite|basalt|obsidian|peridotite|flint)": {
-            "sc-leftarm": { "base": "scarecrow:item/wearable/hoe-left-stone" },
-            "sc-rightarm": { "base": "scarecrow:item/wearable/hoe-right-stone" }
-          }
+    "side": "server"
+  },
+  {
+    "file": "game:itemtypes/tool/hoe.json",
+    "op": "addmerge",
+    "path": "/attributes/attachableToEntity",
+    "value": {
+      "categoryCode": "hoe",
+      "texturePrefixCode": "scarecrow-hoe-{material}",
+      "attachedShapeBySlotCodeByType": {
+        "@hoe-(copper|tinbronze|bismuthbronze|blackbronze|gold|silver|iron|meteoriciron|steel)": {
+          "sc-leftarm": { "base": "scarecrow:item/wearable/hoe-left-metal" },
+          "sc-rightarm": { "base": "scarecrow:item/wearable/hoe-right-metal" }
+        },
+        "@hoe-(chert|granite|andesite|basalt|obsidian|peridotite|flint)": {
+          "sc-leftarm": { "base": "scarecrow:item/wearable/hoe-left-stone" },
+          "sc-rightarm": { "base": "scarecrow:item/wearable/hoe-right-stone" }
         }
+      }
+    },
+    "side": "server"
+  },
+  {
+    "file": "game:itemtypes/tool/bugnet.json",
+    "op": "addmerge",
+    "path": "/attributes/attachableToEntity",
+    "value": {
+      "categoryCode": "bugnet",
+      "attachedShapeBySlotCode": {
+        "sc-leftarm": { "base": "scarecrow:item/wearable/bugnet-left" },
+        "sc-rightarm": { "base": "scarecrow:item/wearable/bugnet-right" }
       },
-      "side": "server"
-    }
-  ]
+      "texturePrefixCode": "scarecrow-bugnet-{type}"
+    },
+    "side": "server"
+  },
+  {
+    "file": "game:itemtypes/tool/snowshovel.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "value": {
+      "attachableToEntity": {
+        "categoryCode": "snowshovel",
+        "attachedShapeBySlotCode": {
+          "sc-leftarm": { "base": "scarecrow:item/wearable/snowshovel-left" },
+          "sc-rightarm": { "base": "scarecrow:item/wearable/snowshovel-right" }
+        },
+        "texturePrefixCode": "scarecrow-snowshovel-{material}"
+      }
+    },
+    "side": "server"
+  }
+]

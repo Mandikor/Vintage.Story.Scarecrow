@@ -2,10 +2,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Опудала",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Place scythe or hoe on left arm",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Place scythe or hoe on right arm",
-	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Place lantern on neck",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Place watering can on foot",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Place selected tools on the left arm",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Place selected tools on the right arm",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Hang a lantern on the neck",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Place a watering can at the foot",
 
 
 	// Description Scarecrow

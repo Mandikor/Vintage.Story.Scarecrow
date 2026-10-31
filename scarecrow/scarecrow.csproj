@@ -20,14 +20,13 @@
 </ItemGroup>
 
 <ItemGroup>
+  <Compile Remove="assets\scarecrow\compatibility\viverridae\**" />
   <Compile Remove="unused\**" />
+  <Content Remove="assets\scarecrow\compatibility\viverridae\**" />
+  <EmbeddedResource Remove="assets\scarecrow\compatibility\viverridae\**" />
   <EmbeddedResource Remove="unused\**" />
+  <None Remove="assets\scarecrow\compatibility\viverridae\**" />
   <None Remove="unused\**" />
-</ItemGroup>
-
-<ItemGroup>
-  <Content Remove="assets\scarecrow\compatibility\viverridae\patches\viverridae-entities-animal-mammal-nandiniidae.json" />
-  <Content Remove="assets\scarecrow\compatibility\viverridae\patches\viverridae-entities-animal-mammal-viverridae.json" />
 </ItemGroup>
 
 <ItemGroup>
