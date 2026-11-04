@@ -1,0 +1,22 @@
+[
+  {
+    "file": "artofgrowing:itemtypes/tool/hayfork.json",
+    "op": "addmerge",
+    "path": "/attributes/attachableToEntity",
+    "value": {
+      "categoryCode": "hayfork",
+      "texturePrefixCode": "scarecrow-hayfork-{material}",
+      "attachedShapeBySlotCodeByType": {
+        "hayfork-wooden": {
+          "sc-leftarm": { "base": "scarecrow:item/wearable/aog/hayfork-wood-left" },
+          "sc-rightarm": { "base": "scarecrow:item/wearable/aog/hayfork-wood-right" }
+        },
+        "*": {
+          "sc-leftarm": { "base": "scarecrow:item/wearable/aog/hayfork-metal-left" },
+          "sc-rightarm": { "base": "scarecrow:item/wearable/aog/hayfork-metal-right" }
+        }
+      }
+    },
+    "side": "server"
+  }
+]

@@ -7,7 +7,7 @@
           "attachableToEntity": {
               "categoryCode": "wateringcan",
               "attachedShapeBySlotCode": {
-                "sc-foot": { "base": "scarecrow:item/wearable/wateringcan" }
+                "sc-foot": { "base": "scarecrow:item/wearable/vanilla/wateringcan" }
               },
               "texturePrefixCode": "scarecrow-wateringcan-{state}-{color}"
             }

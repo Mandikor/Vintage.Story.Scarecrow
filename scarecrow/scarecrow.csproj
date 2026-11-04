@@ -41,8 +41,4 @@
 	</Content>
 </ItemGroup>
 
-<ItemGroup>
-  <Folder Include="assets\scarecrow\shapes\item\wearable\" />
-</ItemGroup>
-
 </Project>

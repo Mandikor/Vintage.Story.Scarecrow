@@ -5,7 +5,7 @@
         "path": "/attributesByType/*-up/attachableToEntityByType/lantern-small-*/attachedShapeBySlotCode",
         "value": {
             "sc-neck": {
-                "base": "scarecrow:item/wearable/lantern-small"
+                "base": "scarecrow:item/wearable/vanilla/lantern-small"
             }
         },
         "side": "server"
@@ -16,7 +16,7 @@
       "path": "/attributesByType/*-up/attachableToEntityByType/lantern-large-*/attachedShapeBySlotCode",
       "value": {
         "sc-neck": {
-          "base": "scarecrow:item/wearable/lantern-large"
+          "base": "scarecrow:item/wearable/vanilla/lantern-large"
         }
       },
       "side": "server"

@@ -21,10 +21,11 @@
 	"behaviorConfigs": {
 		"rideableaccessories": {
 			"dropContentsOnDeath": true,
+			"__comment": "These need to be in the same order as the selectionBoxes array further down",
 			"wearableSlots": [
 				{
 					"code": "sc-leftarm",
-					"forCategoryCodes": [ "scythe", "hoe", "bugnet", "snowshovel" ],
+					"forCategoryCodes": [ "scythe", "hoe", "bugnet", "snowshovel", "hayfork" ],
 					"attachmentPointCode": "LArmAP",
 					"stepParentTo": {
 						"": { "elementName": "LArmStorage" }
@@ -32,7 +33,7 @@
 				},
 				{
 					"code": "sc-rightarm",
-					"forCategoryCodes": [ "scythe", "hoe", "bugnet", "snowshovel" ],
+					"forCategoryCodes": [ "scythe", "hoe", "bugnet", "snowshovel", "hayfork" ],
 					"attachmentPointCode": "RArmAP",
 					"stepParentTo": {
 						"": { "elementName": "RArmStorage" }
@@ -58,6 +59,7 @@
 			"useShiftAttach": true
 		},
 		"selectionboxes": {
+			"__comment": "Modders, make sure the selectionBoxes are in the same order as the wearableSlots, or things can go haywire. Placed chest contents dont get synced properly for example, if wrongly ordered.",
 			"selectionBoxes": [ "LArmAP", "RArmAP", "LanternAP", "FootAP" ]
 		}
 	},

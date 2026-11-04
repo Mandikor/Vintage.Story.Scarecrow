@@ -6,8 +6,8 @@
     "value": {
       "categoryCode": "scythe",
       "attachedShapeBySlotCode": {
-        "sc-leftarm": { "base": "scarecrow:item/wearable/scythe-left" },
-        "sc-rightarm": { "base": "scarecrow:item/wearable/scythe-right" }
+        "sc-leftarm": { "base": "scarecrow:item/wearable/vanilla/scythe-left" },
+        "sc-rightarm": { "base": "scarecrow:item/wearable/vanilla/scythe-right" }
       },
       "texturePrefixCode": "scarecrow-scythe-{metal}"
     },
@@ -22,12 +22,12 @@
       "texturePrefixCode": "scarecrow-hoe-{material}",
       "attachedShapeBySlotCodeByType": {
         "@hoe-(copper|tinbronze|bismuthbronze|blackbronze|gold|silver|iron|meteoriciron|steel)": {
-          "sc-leftarm": { "base": "scarecrow:item/wearable/hoe-left-metal" },
-          "sc-rightarm": { "base": "scarecrow:item/wearable/hoe-right-metal" }
+          "sc-leftarm": { "base": "scarecrow:item/wearable/vanilla/hoe-left-metal" },
+          "sc-rightarm": { "base": "scarecrow:item/wearable/vanilla/hoe-right-metal" }
         },
         "@hoe-(chert|granite|andesite|basalt|obsidian|peridotite|flint)": {
-          "sc-leftarm": { "base": "scarecrow:item/wearable/hoe-left-stone" },
-          "sc-rightarm": { "base": "scarecrow:item/wearable/hoe-right-stone" }
+          "sc-leftarm": { "base": "scarecrow:item/wearable/vanilla/hoe-left-stone" },
+          "sc-rightarm": { "base": "scarecrow:item/wearable/vanilla/hoe-right-stone" }
         }
       }
     },
@@ -40,8 +40,8 @@
     "value": {
       "categoryCode": "bugnet",
       "attachedShapeBySlotCode": {
-        "sc-leftarm": { "base": "scarecrow:item/wearable/bugnet-left" },
-        "sc-rightarm": { "base": "scarecrow:item/wearable/bugnet-right" }
+        "sc-leftarm": { "base": "scarecrow:item/wearable/vanilla/bugnet-left" },
+        "sc-rightarm": { "base": "scarecrow:item/wearable/vanilla/bugnet-right" }
       },
       "texturePrefixCode": "scarecrow-bugnet-{type}"
     },
@@ -55,8 +55,8 @@
       "attachableToEntity": {
         "categoryCode": "snowshovel",
         "attachedShapeBySlotCode": {
-          "sc-leftarm": { "base": "scarecrow:item/wearable/snowshovel-left" },
-          "sc-rightarm": { "base": "scarecrow:item/wearable/snowshovel-right" }
+          "sc-leftarm": { "base": "scarecrow:item/wearable/vanilla/snowshovel-left" },
+          "sc-rightarm": { "base": "scarecrow:item/wearable/vanilla/snowshovel-right" }
         },
         "texturePrefixCode": "scarecrow-snowshovel-{material}"
       }
