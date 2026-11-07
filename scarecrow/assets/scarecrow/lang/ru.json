@@ -4,15 +4,15 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Пугало",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Place selected tools on the left arm",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Place selected tools on the right arm",
-	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Hang a lantern on the neck",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Place a watering can at the foot",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Разместить выбранные инструменты на левом плече",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Разместить выбранные инструменты на правом плече",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Подвесить фонарь на шее",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Разместить лейку у ног",
 
 
 	// Description Scarecrow
 	"scarecrow:item-scarecrow": "Пугало",
-	"scarecrow:itemdesc-scarecrow": "\n\nОно отпугивает неприятных гостей от вашего сада. Зайцы и еноты боятся пугала и подходят на расстояние до 16 блоков.\n\n<font color=\"#99c9f9\"><i>Она выглядит ужасно, но тыква очень вкусная.</i></font>\n\n",
+	"scarecrow:itemdesc-scarecrow": "\n\nОно отпугивает неприятных гостей от вашего сада. Зайцы, еноты и некоторые другие животные боятся пугал и подходят к ним на расстояние до 16 блоков.\n\n<font color=\"#99c9f9\"><i>Она выглядит ужасно, но тыква очень вкусная.</i></font>\n\n",
 
 	"scarecrow:item-handbooktext-scarecrow": "Пугало, стоящее на земле, можно поднять с помощью <hk>ctrl</hk> + <hk>rightmouse</hk> клик и пустую правую руку.",
 
@@ -22,7 +22,7 @@
 
 	// Description Little Scarecrow
 	"scarecrow:item-little-scarecrow": "Маленькое пугало",
-	"scarecrow:itemdesc-little-scarecrow": "\n\nОно отпугивает неприятных гостей от вашего сада. Зайцы и еноты боятся пугала и подходят на расстояние до 8 блоков.\n\n",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nОно отпугивает неприятных гостей от вашего сада. Зайцы, еноты и некоторые другие животные боятся маленьких пугал и подходят к ним на расстояние до 12 блоков.\n\n",
 
 	"scarecrow:item-handbooktext-little-scarecrow": "Маленькое пугало, стоящее на земле, можно поднять с помощью <hk>ctrl</hk> + <hk>rightmouse</hk> клик и пустую правую руку.",
 

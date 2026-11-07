@@ -1,0 +1,20 @@
+[
+  {
+    "op": "addmerge",
+    "path": "/entities/-",
+    "value": "scaring-high",
+    "file": "game:config/preloaded-tags.json"
+  },
+  {
+    "op": "addmerge",
+    "path": "/entities/-",
+    "value": "scaring-mid",
+    "file": "game:config/preloaded-tags.json"
+  },
+  {
+    "op": "addmerge",
+    "path": "/entities/-",
+    "value": "scaring-low",
+    "file": "game:config/preloaded-tags.json"
+  }
+]

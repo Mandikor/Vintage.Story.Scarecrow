@@ -20,12 +20,8 @@
 </ItemGroup>
 
 <ItemGroup>
-  <Compile Remove="assets\scarecrow\compatibility\viverridae\**" />
   <Compile Remove="unused\**" />
-  <Content Remove="assets\scarecrow\compatibility\viverridae\**" />
-  <EmbeddedResource Remove="assets\scarecrow\compatibility\viverridae\**" />
   <EmbeddedResource Remove="unused\**" />
-  <None Remove="assets\scarecrow\compatibility\viverridae\**" />
   <None Remove="unused\**" />
 </ItemGroup>
 

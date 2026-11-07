@@ -35,7 +35,7 @@ namespace Scarecrow
             if (entity.Code.Path.StartsWith("hare") || entity.Code.Path.StartsWith("raccoon"))
             {
                 double distance = this.Pos.DistanceTo(entity.Pos);
-                if (distance <= 8)
+                if (distance <= 12)
                 {
                     if (DebugOutput)
                     {
@@ -59,7 +59,7 @@ namespace Scarecrow
             if (entityProperties.Code.Path.StartsWith("hare") || entityProperties.Code.Path.StartsWith("raccoon"))
             {
                 double distance = this.Pos.DistanceTo(spawnPosition);
-                if (distance <= 8)
+                if (distance <= 12)
                 {
                     if (DebugOutput)
                     {

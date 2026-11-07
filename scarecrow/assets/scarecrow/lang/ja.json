@@ -7,15 +7,15 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "案山子(かかし)",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Place selected tools on the left arm",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Place selected tools on the right arm",
-	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Hang a lantern on the neck",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Place a watering can at the foot",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "選択したツールを左腕に置く",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "選択したツールを右腕に置く",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "首にランタンを吊り下げる",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "水差しを足元に置く",
 
 
 	// Description Scarecrow
 	"scarecrow:item-scarecrow": "案山子(かかし)",
-	"scarecrow:itemdesc-scarecrow": "\n\n 不快な客人からお庭を守ります。ウサギやタヌキは案山子(かかし)を怖がりますが、最大16ブロックまでは近付いて来ます。\n\n<font color=\"#99c9f9\"><i>酷い顔をしていますが、カボチャは美味しいです。<\/i><\/font>\n\n",
+	"scarecrow:itemdesc-scarecrow": "\n\n 不快な客人からお庭を守ります。ノウサギやアライグマ、その他いくつかの動物はかかしを怖がり、最大16ブロックまで近づいてきます。\n\n<font color=\"#99c9f9\"><i>酷い顔をしていますが、カボチャは美味しいです。<\/i><\/font>\n\n",
 
 	"scarecrow:item-handbooktext-scarecrow": "地面に立っている案山子(かかし)は、<hk>ctrl<\/hk> + <hk>rightmouse<\/hk>で拾うことが出来ます。",
 
@@ -25,7 +25,7 @@
 
 	// Description Little Scarecrow
 	"scarecrow:item-little-scarecrow": "小さな案山子(かかし)",
-	"scarecrow:itemdesc-little-scarecrow": "\n\n 不快な客人からお庭を守ります。ウサギやアライグマは小さな案山子(かかし)をあまり怖がらず、最大8ブロックまでは近付いて来ます。\n\n",
+	"scarecrow:itemdesc-little-scarecrow": "\n\n 不快な客人からお庭を守ります。ウサギやアライグマは小さな案山子(かかし)をあまり怖がらず、最大12ブロックまでは近付いて来ます。\n\n",
 
 	"scarecrow:item-handbooktext-little-scarecrow": "地面に立っている小さな案山子(かかし)は、<hk>ctrl<\/hk> + <hk>rightmouse<\/hk>を使用して拾うことが出来ます。",
 

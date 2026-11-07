@@ -2,15 +2,14 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Vogelscheuche",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Place selected tools on the left arm",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Place selected tools on the right arm",
-	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Hang a lantern on the neck",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Place a watering can at the foot",
-
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Platziere die ausgewählten Werkzeuge auf dem linken Arm",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Platziere die ausgewählten Werkzeuge auf dem rechten Arm",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Hänge eine Laterne um den Hals",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Platziere einen Gießkanne am Fuß",
 
 	// Description Scarecrow
 	"scarecrow:item-scarecrow": "Vogelscheuche",
-	"scarecrow:itemdesc-scarecrow": "\n\nSie vertreibt unliebsame Gäste aus deinem Garten. Hasen und Waschbären haben Angst vor Vogelscheuchen und nähern sich bis auf 16 Blöcke.\n\n<font color=\"#99c9f9\"><i>Sie schaut schrecklich aus, aber der Kürbis ist lecker.</i></font>\n\n",
+	"scarecrow:itemdesc-scarecrow": "\n\nSie vertreibt unliebsame Gäste aus deinem Garten. Hasen, Waschbären und einige andere Tiere haben Angst vor Vogelscheuchen und nähern sich bis auf 16 Blöcke.\n\n<font color=\"#99c9f9\"><i>Sie schaut schrecklich aus, aber der Kürbis ist lecker.</i></font>\n\n",
 
 	"scarecrow:item-handbooktext-scarecrow": "Eine stehende Vogelscheuche kann mit <hk>ctrl</hk> + <hk>rightmouse</hk> und einer leeren rechten Hand aufgehoben werden.",
 
@@ -20,7 +19,7 @@
 
 	// Description Little Scarecrow
 	"scarecrow:item-little-scarecrow": "Kleine Vogelscheuche",
-	"scarecrow:itemdesc-little-scarecrow": "\n\nSie vertreibt unliebsame Gäste aus deinem Garten. Hasen und Waschbären haben weniger Angst vor kleinen Vogelscheuchen und nähern sich bis auf 8 Blöcke.\n\n",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nSie vertreibt unliebsame Gäste aus deinem Garten. Hasen, Waschbären und einige andere Tiere haben weniger Angst vor kleinen Vogelscheuchen und nähern sich bis auf 12 Blöcke.\n\n",
 
 	"scarecrow:item-handbooktext-little-scarecrow": "Eine stehende kleine Vogelscheuche kann mit <hk>ctrl</hk> + <hk>rightmouse</hk> und einer leeren rechten Hand aufgehoben werden.",
 

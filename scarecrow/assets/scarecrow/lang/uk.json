@@ -2,15 +2,15 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Опудала",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Place selected tools on the left arm",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Place selected tools on the right arm",
-	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Hang a lantern on the neck",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Place a watering can at the foot",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Розмістити обрані інструменти на лівому плечі",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Розмістити обрані інструменти на правому плечі",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Підвісити фонар на шиї",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Розмістити лейку біля ног",
 
 
 	// Description Scarecrow
 	"scarecrow:item-scarecrow": "Опудало",
-	"scarecrow:itemdesc-scarecrow": "\n\nВідганяє непроханих гостей з вашого саду. Зайці та єноти бояться опудала, тому підходять на відстань до 16 блоків.\n\n<font color=\"#99c9f9\"><i>Виглядає воно жахливо, але гарбуз дуже смачний.</i></font>",
+	"scarecrow:itemdesc-scarecrow": "\n\nВідганяє непроханих гостей з вашого саду. Зайці, єноти та деякі інші тварини бояться лякал і підходять на відстань до 16 блоків.\n\n<font color=\"#99c9f9\"><i>Виглядає воно жахливо, але гарбуз дуже смачний.</i></font>",
 
 	"scarecrow:item-handbooktext-scarecrow": "Опудало із землі можна підібрати за допомогою <hk>ctrl</hk> + <hk>rightmouse</hk> і порожньої правої руки.",
 
@@ -20,7 +20,7 @@
 
 	// Description Little Scarecrow
 	"scarecrow:item-little-scarecrow": "Мале опудало",
-	"scarecrow:itemdesc-little-scarecrow": "\n\nВідганяє непроханих гостей з вашого саду. Зайці та єноти бояться опудала, тому підходять на відстань до 8 блоків.",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nВідганяє непроханих гостей з вашого саду. Зайці, єноти та деякі інші тварини бояться малого опудала, тому підходять на відстань до 12 блоків.",
 
 	"scarecrow:item-handbooktext-little-scarecrow": "Мале опудало із землі можна підібрати за допомогою <hk>ctrl</hk> + <hk>rightmouse</hk> і порожньої правої руки.",
 
