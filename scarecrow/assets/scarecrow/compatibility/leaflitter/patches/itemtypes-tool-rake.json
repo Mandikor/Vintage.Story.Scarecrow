@@ -1,5 +1,6 @@
 [
   {
+    "enabled": false,
     "file": "leaflitter:itemtypes/rake.json",
     "op": "addmerge",
     "path": "/attributes",

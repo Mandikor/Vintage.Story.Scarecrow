@@ -1,0 +1,112 @@
+[
+  {
+    "enabled": true,
+    "op": "addmerge",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equus:entities/wildwildhorse.json",
+    "value": {
+      "code": "meleeattack",
+      "animation": "Attack",
+      "enabledByType": {
+        "*-baby-*": false,
+        "*": true
+      },
+      "entityCodesByType": {
+        "*-adult-*": [ "little-scarecrow" ]
+      },
+      "priority": 3,
+      "slot": 1,
+      "damageByType": {
+        "*-adult-*-ferus": 7
+      },
+      "knockbackStrengthByType": { "*": 2 },
+      "damageTierByType": { "*": 3 },
+      "mincooldown": 500,
+      "maxcooldown": 1000,
+      "attackDurationMs": 500,
+      "damagePlayerAtMs": 250,
+      "animationSpeed": 1,
+      "whenInEmotionState": "aggressiveondamage"
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "addmerge",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equus:entities/wildwildhorse.json",
+    "value": {
+      "code": "seekentity",
+      "entityCodesByType": {
+        "*-adult-*": [ "little-scarecrow" ]
+      },
+      "priority": 2.5,
+      "mincooldown": 1000,
+      "maxcooldown": 1500,
+      "seekingRange": 20,
+      "movespeed": 0.037,
+      "animation": "Charge",
+      "animationSpeed": 1,
+      "sound": "game:creature/hooved/generic/sniff*",
+      "whenInEmotionState": "aggressiveondamage"
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "addmerge",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equus:entities/wildwildhorse.json",
+    "value": {
+      "code": "fleeentity",
+      "whenInEmotionState": "fleeondamage",
+      "entityCodes": [ "little-scarecrow" ],
+      "priority": 1.8,
+      "movespeed": 0.05,
+      "seekingRange": 12,
+      "animation": "Gallop",
+      "animationSpeed": 2
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "addmerge",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equus:entities/wildwildhorse.json",
+    "value": {
+      "code": "fleeentity",
+      "enabledByType": {
+        "wildwildhorse*": true,
+        "*": false
+      },
+      "entityCodes": [ "little-scarecrow" ],
+      "priority": 1.7,
+      "movespeed": 0.05,
+      "seekingRange": 12,
+      "animation": "Gallop",
+      "animationSpeed": 2
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "addmerge",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equus:entities/wildwildhorse.json",
+    "value": {
+      "code": "fleeentity",
+      "enabledByType": {
+        "wildhorse*": true,
+        "*": false
+      },
+      "entityCodes": [ "little-scarecrow" ],
+      "priority": 1.7,
+      "movespeed": 0.0285,
+      "seekingRange": 6,
+      "animation": "trot",
+      "animationSpeed": 2
+    },
+    "side": "server"
+  }
+]
