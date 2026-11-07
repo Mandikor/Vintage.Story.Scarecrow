@@ -1,0 +1,110 @@
+[
+  {
+    "enabled": true,
+    "op": "addmerge",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equusferus:entities/ferus/ferus-wild.json",
+    "value": {
+      "code": "meleeattack",
+      "animation": "Attack",
+      "enabledByType": {
+        "*-baby-*": false,
+        "*": true
+      },
+      "entityCodesByType": {
+        "*-adult-*": [ "strawdummy" ]
+      },
+      "priority": 3,
+      "slot": 1,
+      "damageByType": {
+        "*-adult-*-ferus": 7
+      },
+      "knockbackStrengthByType": { "*": 2 },
+      "damageTierByType": { "*": 3 },
+      "mincooldown": 500,
+      "maxcooldown": 1000,
+      "attackDurationMs": 500,
+      "damagePlayerAtMs": 250,
+      "animationSpeed": 1,
+      "whenInEmotionState": "aggressiveondamage"
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "addmerge",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equusferus:entities/ferus/ferus-wild.json",
+    "value": {
+      "code": "fleeentity",
+      "whenInEmotionState": "fleeondamage",
+      "entityCodes": [ "strawdummy" ],
+      "priority": 1.8,
+      "movespeed": 0.115,
+      "seekingRange": 8,
+      "animation": "Gallop",
+      "animationSpeed": 4.5
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "addmerge",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equusferus:entities/ferus/ferus-wild.json",
+    "value": {
+      "code": "fleeentity",
+      "enabledByType": {
+        "wildhorse*": true,
+        "*": false
+      },
+      "entityCodes": [ "strawdummy" ],
+      "priority": 1.72,
+      "movespeed": 0.115,
+      "seekingRange": 4,
+      "animation": "Gallop",
+      "animationSpeed": 4.5
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "addmerge",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equusferus:entities/ferus/ferus-wild.json",
+    "value": {
+      "code": "fleeentity",
+      "enabledByType": {
+        "wildhorse*": true,
+        "*": false
+      },
+      "entityCodes": [ "strawdummy" ],
+      "priority": 1.71,
+      "movespeed": 0.06,
+      "seekingRange": 8,
+      "animation": "canter",
+      "animationSpeed": 3.8
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "addmerge",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equusferus:entities/ferus/ferus-wild.json",
+    "value": {
+      "code": "fleeentity",
+      "enabledByType": {
+        "wildhorse*": true,
+        "*": false
+      },
+      "entityCodes": [ "strawdummy" ],
+      "priority": 1.7,
+      "movespeed": 0.03,
+      "seekingRange": 16,
+      "animation": "trot",
+      "animationSpeed": 3.1
+    },
+    "side": "server"
+  }
+]
