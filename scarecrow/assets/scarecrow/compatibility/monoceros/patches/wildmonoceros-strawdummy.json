@@ -1,0 +1,82 @@
+[
+	{
+		"enabled": true,
+		"op": "addmerge",
+		"path": "/behaviorConfigs/taskai/aitasks/-",
+		"file": "monoceros:entities/wildmonoceros.json",
+		"value": {
+			"code": "meleeattack",
+			"animation": "Attack",
+			"enabledByType": {
+				"*-adult-*": true,
+				"*": false
+			},
+			"entityCodesByType": {
+				"*-adult-*": [ "strawdummy" ]
+			},
+			"priority": 3,
+			"slot": 1,
+			"damageByType": {
+				"*-adult-female-indicus": 10,
+				"*-adult-male-indicus": 15,
+				"*-adult-*-caledonius": 20
+			},
+			"knockbackStrengthByType": { "*": 2 },
+			"damageTierByType": { "*": 3 },
+			"mincooldown": 500,
+			"maxcooldown": 1000,
+			"attackDurationMs": 500,
+			"damagePlayerAtMs": 250,
+			"animationSpeed": 1,
+			"whenInEmotionState": "aggressiveondamage|aggressivearoundentities"
+		},
+		"side": "server"
+	},
+	{
+		"enabled": true,
+		"op": "addmerge",
+		"path": "/behaviorConfigs/taskai/aitasks/-",
+		"file": "monoceros:entities/wildmonoceros.json",
+		"value": {
+			"code": "seekentity",
+			"enabledByType": {
+				"*-adult-*": true,
+				"*": false
+			},
+			"entityCodesByType": {
+				"*-adult-*": [ "strawdummy" ]
+			},
+			"priority": 2.5,
+			"mincooldown": 1000,
+			"maxcooldown": 1500,
+			"seekingRange": 20,
+			"movespeed": 0.037,
+			"animation": "Charge",
+			"animationSpeed": 1,
+			"sound": "game:creature/hooved/generic/sniff*",
+			"whenInEmotionState": "aggressiveondamage|aggressivearoundentities"
+		},
+		"side": "server"
+	},
+	{
+		"enabled": true,
+		"op": "addmerge",
+		"path": "/behaviorConfigs/taskai/aitasks/-",
+		"file": "monoceros:entities/wildmonoceros.json",
+		"value": {
+			"code": "fleeentity",
+			"enabledByType": {
+				"*": false,
+				"*-baby-*": true
+			},
+			"whenInEmotionState": "fleeondamage",
+			"entityCodes": [ "strawdummy" ],
+			"priority": 1.8,
+			"movespeed": 0.05,
+			"seekingRange": 8,
+			"animation": "Gallop",
+			"animationSpeed": 2
+		},
+		"side": "server"
+	}
+]
