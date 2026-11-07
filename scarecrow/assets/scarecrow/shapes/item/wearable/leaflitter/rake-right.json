@@ -1,0 +1,188 @@
+{
+  "editor": {
+    "editorVersion": "VSMC2v0.6.1",
+    "backDropShape": "scarecrow:entity/nonliving/scarecrow",
+    "additionalShapes": [
+      {
+        "shapeFilepath": "C:/Users/mandi/Desktop/scarecrow",
+        "rootShapeElementCode": "root",
+        "opacity": 1.0,
+        "enabled": true,
+        "origin": {},
+        "animationPlaybackMapping": []
+      }
+    ],
+    "rootElementOrigins": [
+      {
+        "rootElement": {
+          "shapePath": "C:/Users/mandi/Desktop/scarecrow",
+          "element": "RArmStorage"
+        }
+      }
+    ]
+  },
+  "textureWidth": 32,
+  "textureHeight": 32,
+  "textureSizes": {
+    "handle": [
+      32,
+      32
+    ]
+  },
+  "textures": {
+    "handle": "game:item/tool/handle"
+  },
+  "elements": [
+    {
+      "name": "handle",
+      "from":[-8.6,-12.0,9.7],
+      "to":[13.8,-10.8,10.9],
+      "faces": {
+        "north":{"texture": "#handle", "uv": [1.0, 8.0, 23.4, 9.6], "autoUv": false, "snapUV": false},
+        "east":{"texture": "#handle", "uv": [10.0, 20.0, 11.6, 21.6], "autoUv": false, "snapUV": false},
+        "south":{"texture": "#handle", "uv": [1.0, 12.0, 23.4, 13.6], "autoUv": false, "snapUV": false},
+        "west":{"texture": "#handle", "uv": [13.0, 20.0, 14.6, 21.6], "autoUv": false, "snapUV": false},
+        "up":{"texture": "#handle", "uv": [1.0, 4.0, 23.4, 5.6], "autoUv": false, "snapUV": false},
+        "down":{"texture": "#handle", "uv": [1.0, 16.0, 23.4, 17.6], "autoUv": false, "snapUV": false}
+      },
+      "rotationOrigin":[-3.0,-12.0,3.86],
+      "rotationX": -7.0,
+      "rotationY": 120.0,
+      "rotationZ": 98.0,
+      "stepParentName": "RArmStorage",
+      "uv":[0.0,0.0],
+      "children": [
+        {
+          "name": "headbar",
+          "from":[22.4,-0.4,-5.44],
+          "to":[24.4,1.6,6.56],
+          "faces": {
+            "north":{"texture": "#handle", "uv": [2.0, 0.0, 4.4, 2.4], "autoUv": false, "snapUV": false},
+            "east":{"texture": "#handle", "uv": [1.0, 22.0, 13.0, 24.4], "autoUv": false, "snapUV": false},
+            "south":{"texture": "#handle", "uv": [6.0, 0.0, 8.4, 2.4], "autoUv": false, "snapUV": false},
+            "west":{"texture": "#handle", "uv": [1.0, 26.0, 13.0, 28.4], "autoUv": false, "snapUV": false},
+            "up":{"texture": "#handle", "uv": [16.0, 22.0, 28.0, 24.4], "rotation": 90.0, "autoUv": false, "snapUV": false},
+            "down":{"texture": "#handle", "uv": [16.0, 26.0, 28.0, 28.4], "rotation": 90.0, "autoUv": false, "snapUV": false}
+          },
+          "rotationOrigin":[22.4,-0.4,-5.44],
+          "uv":[0.0,0.0],
+          "children": [
+            {
+              "name": "tine1",
+              "from":[1.76,0.4,0.56],
+              "to":[4.96,1.36,1.52],
+              "faces": {
+                "north":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "east":{"texture": "#handle", "uv": [20.0, 8.0, 20.8, 8.8]},
+                "south":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "west":{"texture": "#handle", "uv": [20.0, 8.0, 20.8, 8.8]},
+                "up":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "down":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]}
+              },
+              "rotationOrigin":[1.76,0.88,1.04],
+              "rotationZ": -25.0,
+              "uv":[0.0,0.0]
+            },
+            {
+              "name": "tine2",
+              "from":[1.76,0.4,2.24],
+              "to":[4.96,1.36,3.2],
+              "faces": {
+                "north":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "east":{"texture": "#handle", "uv": [20.0, 8.0, 20.8, 8.8]},
+                "south":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "west":{"texture": "#handle", "uv": [20.0, 8.0, 20.8, 8.8]},
+                "up":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "down":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]}
+              },
+              "rotationOrigin":[1.76,0.88,2.72],
+              "rotationZ": -25.0,
+              "uv":[0.0,0.0]
+            },
+            {
+              "name": "tine3",
+              "from":[1.76,0.4,3.84],
+              "to":[4.96,1.36,4.8],
+              "faces": {
+                "north":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "east":{"texture": "#handle", "uv": [20.0, 8.0, 20.8, 8.8]},
+                "south":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "west":{"texture": "#handle", "uv": [20.0, 8.0, 20.8, 8.8]},
+                "up":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "down":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]}
+              },
+              "rotationOrigin":[1.76,0.88,4.32],
+              "rotationZ": -25.0,
+              "uv":[0.0,0.0]
+            },
+            {
+              "name": "tine4",
+              "from":[1.76,0.4,5.52],
+              "to":[4.96,1.36,6.48],
+              "faces": {
+                "north":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "east":{"texture": "#handle", "uv": [20.0, 8.0, 20.8, 8.8]},
+                "south":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "west":{"texture": "#handle", "uv": [20.0, 8.0, 20.8, 8.8]},
+                "up":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "down":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]}
+              },
+              "rotationOrigin":[1.76,0.88,6.0],
+              "rotationZ": -25.0,
+              "uv":[0.0,0.0]
+            },
+            {
+              "name": "tine5",
+              "from":[1.76,0.4,7.12],
+              "to":[4.96,1.36,8.08],
+              "faces": {
+                "north":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "east":{"texture": "#handle", "uv": [20.0, 8.0, 20.8, 8.8]},
+                "south":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "west":{"texture": "#handle", "uv": [20.0, 8.0, 20.8, 8.8]},
+                "up":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "down":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]}
+              },
+              "rotationOrigin":[1.76,0.88,7.6],
+              "rotationZ": -25.0,
+              "uv":[0.0,0.0]
+            },
+            {
+              "name": "tine6",
+              "from":[1.76,0.4,8.8],
+              "to":[4.96,1.36,9.76],
+              "faces": {
+                "north":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "east":{"texture": "#handle", "uv": [20.0, 8.0, 20.8, 8.8]},
+                "south":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "west":{"texture": "#handle", "uv": [20.0, 8.0, 20.8, 8.8]},
+                "up":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "down":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]}
+              },
+              "rotationOrigin":[1.76,0.88,9.28],
+              "rotationZ": -25.0,
+              "uv":[0.0,0.0]
+            },
+            {
+              "name": "tine7",
+              "from":[1.76,0.4,10.4],
+              "to":[4.96,1.36,11.36],
+              "faces": {
+                "north":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "east":{"texture": "#handle", "uv": [20.0, 8.0, 20.8, 8.8]},
+                "south":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "west":{"texture": "#handle", "uv": [20.0, 8.0, 20.8, 8.8]},
+                "up":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]},
+                "down":{"texture": "#handle", "uv": [20.0, 8.0, 23.2, 8.8]}
+              },
+              "rotationOrigin":[1.76,0.88,10.88],
+              "rotationZ": -25.0,
+              "uv":[0.0,0.0]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "animations": []
+}
