@@ -43,7 +43,7 @@
 				"type": "block",
 				"code": "game:pumpkin-fruit-*-4",
 				"name": "size",
-				"allowedVariants": [ "decent", "large", "hefty", "gigantic" ]
+				"allowedVariants": [ "large", "hefty", "gigantic" ]
 			},
 			"S": {
 				"type": "item",
@@ -52,7 +52,7 @@
 			"G": {
 				"type": "item",
 				"code": "grasstoropes:grassbundle",
-				"quantity": 8
+				"quantity": 6
 			}
 		},
 		"width": 3,
