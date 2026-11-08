@@ -1,0 +1,20 @@
+[
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "moschidae:entities/animal/mammal/hooved/moschidae-adult.json",
+    "value": {
+    },
+    "side": "server"
+  },
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "moschidae:entities/animal/mammal/hooved/moschidae-baby.json",
+    "value": {
+    },
+    "side": "server"
+  }
+]

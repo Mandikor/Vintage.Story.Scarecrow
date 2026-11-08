@@ -1,6 +1,6 @@
 [
   {
-    "enabled": true,
+    "enabled": false,
     "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "viverridae:entities/animal/mammal/nandiniidae-adult.json",
@@ -9,7 +9,7 @@
     "side": "server"
   },
   {
-    "enabled": true,
+    "enabled": false,
     "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "viverridae:entities/animal/mammal/nandiniidae-baby.json",

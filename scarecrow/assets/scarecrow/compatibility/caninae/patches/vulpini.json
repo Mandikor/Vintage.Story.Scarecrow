@@ -1,0 +1,20 @@
+[
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "caninae:entities/animal/mammal/vulpini-adult.json",
+    "value": {
+    },
+    "side": "server"
+  },
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "caninae:entities/animal/mammal/vulpini-baby.json",
+    "value": {
+    },
+    "side": "server"
+  }
+]

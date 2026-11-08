@@ -1,0 +1,20 @@
+[
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "casuariidae:entities/animal/bird/casuariidae-adult.json",
+    "value": {
+    },
+    "side": "server"
+  },
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "casuariidae:entities/animal/bird/casuariidae-baby.json",
+    "value": {
+    },
+    "side": "server"
+  }
+]

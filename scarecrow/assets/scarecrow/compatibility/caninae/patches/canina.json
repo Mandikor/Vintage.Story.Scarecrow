@@ -1,0 +1,20 @@
+[
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "caninae:entities/animal/mammal/canina-adult.json",
+    "value": {
+    },
+    "side": "server"
+  },
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "caninae:entities/animal/mammal/canina-baby.json",
+    "value": {
+    },
+    "side": "server"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/strigopidae-adult.json",
+    "value": {
+    },
+    "side": "server"
+  },
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/mammal/strigopidae-baby.json",
+    "value": {
+    },
+    "side": "server"
+  }
+]

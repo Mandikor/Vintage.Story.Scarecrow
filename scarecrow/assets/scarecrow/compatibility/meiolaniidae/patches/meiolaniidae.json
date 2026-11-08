@@ -1,0 +1,20 @@
+[
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-adult.json",
+    "value": {
+    },
+    "side": "server"
+  },
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-baby.json",
+    "value": {
+    },
+    "side": "server"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "capreolinae:entities/animal/mammal/hooved/capreolini-adult.json",
+    "value": {
+    },
+    "side": "server"
+  },
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "capreolinae:entities/animal/mammal/hooved/capreolini-baby.json",
+    "value": {
+    },
+    "side": "server"
+  }
+]

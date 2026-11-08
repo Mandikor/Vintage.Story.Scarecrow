@@ -1,0 +1,20 @@
+[
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "machairodontinae:entities/animal/mammal/machairodontinae-adult.json",
+    "value": {
+    },
+    "side": "server"
+  },
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "machairodontinae:entities/animal/mammal/machairodontinae-baby.json",
+    "value": {
+    },
+    "side": "server"
+  }
+]

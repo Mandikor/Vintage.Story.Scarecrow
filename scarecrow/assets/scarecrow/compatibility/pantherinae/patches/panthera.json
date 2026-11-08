@@ -1,0 +1,20 @@
+[
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "pantherinae:entities/animal/mammal/pantherinae-panthera-adult.json",
+    "value": {
+    },
+    "side": "server"
+  },
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "pantherinae:entities/animal/mammal/pantherinae-panthera-baby.json",
+    "value": {
+    },
+    "side": "server"
+  }
+]

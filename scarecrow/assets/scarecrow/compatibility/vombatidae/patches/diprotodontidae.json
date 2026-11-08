@@ -1,0 +1,20 @@
+[
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "vombatidae:entities/animal/mammal/diprotodontidae-adult.json",
+    "value": {
+    },
+    "side": "server"
+  },
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "vombatidae:entities/animal/mammal/diprotodontidae-baby.json",
+    "value": {
+    },
+    "side": "server"
+  }
+]

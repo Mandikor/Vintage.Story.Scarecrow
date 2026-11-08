@@ -1,0 +1,20 @@
+[
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "cervinae:entities/animal/mammal/hooved/cervini-adult.json",
+    "value": {
+    },
+    "side": "server"
+  },
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "cervinae:entities/animal/mammal/hooved/cervini-baby.json",
+    "value": {
+    },
+    "side": "server"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/anatidae-adult.json",
+    "value": {
+    },
+    "side": "server"
+  },
+  {
+    "enabled": false,
+    "op": "addmerge",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "dinornithidae:entities/animal/mammal/anatidae-baby.json",
+    "value": {
+    },
+    "side": "server"
+  }
+]
