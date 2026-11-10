@@ -1,71 +1,11 @@
-﻿using System.Linq;
-using Vintagestory.API.Client;
-using Vintagestory.API.Common;
-using Vintagestory.API.Common.Entities;
-using Vintagestory.API.MathTools;
-using Vintagestory.API.Util;
-
-#nullable disable
+﻿#nullable disable
 
 namespace Scarecrow
 {
-    public class ItemLittleScareCrow : Item
+    public class ItemLittleScareCrow : ItemScarecrowBase
     {
-        public override void OnHeldInteractStart(ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, bool firstEvent, ref EnumHandHandling handling)
-        {
-            if (blockSel == null) return;
-            IPlayer player = byEntity.World.PlayerByUid((byEntity as EntityPlayer)?.PlayerUID);
+        protected override string EntityCode => "scarecrow:little-scarecrow";
 
-            var x = blockSel.FullPosition.X;
-            var y = blockSel.Position.Y + (blockSel.DidOffset ? 0 : blockSel.Face.Normali.Y);
-            var z = blockSel.FullPosition.Z;
-
-            var blockPos = new BlockPos((int)x, y, (int)z);
-            if (!byEntity.World.Claims.TryAccess(player, blockPos, EnumBlockAccessFlags.BuildOrBreak))
-            {
-                slot.MarkDirty();
-                return;
-            }
-
-            if (!(byEntity is EntityPlayer) || player.WorldData.CurrentGameMode != EnumGameMode.Creative)
-            {
-                slot.TakeOut(1);
-                slot.MarkDirty();
-            }
-
-            EntityProperties entityType = byEntity.World.GetEntityType(new AssetLocation("scarecrow:little-scarecrow"));
-            Entity entity = byEntity.World.ClassRegistry.CreateEntity(entityType);
-
-            if (entity != null)
-            {
-                entity.Pos.X = x;
-                entity.Pos.Y = y;
-                entity.Pos.Z = z;
-                entity.Pos.Yaw = byEntity.Pos.Yaw + GameMath.PIHALF;
-
-                if (player?.PlayerUID != null)
-                {
-                    entity.WatchedAttributes.SetString("ownerUid", player.PlayerUID);
-                }
-
-                byEntity.World.PlaySoundAt(new AssetLocation("game:sounds/block/torch"), entity, player);
-
-                byEntity.World.SpawnEntity(entity);
-                handling = EnumHandHandling.PreventDefaultAction;
-            }
-        }
-
-        public override WorldInteraction[] GetHeldInteractionHelp(ItemSlot inSlot)
-        {
-            return new WorldInteraction[]
-            {
-                new()
-                {
-                    ActionLangCode = "scarecrow:heldhelp-place-lsc",
-                    MouseButton = EnumMouseButton.Right
-                }
-            }.Append(base.GetHeldInteractionHelp(inSlot));
-        }
-
+        protected override string PlaceHelpLangCode => "scarecrow:heldhelp-place-lsc";
     }
 }

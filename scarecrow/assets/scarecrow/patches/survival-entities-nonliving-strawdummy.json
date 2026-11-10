@@ -2,23 +2,29 @@
   {
     "op": "replace",
     "path": "/class",
-    "value": "EntitySC_StrawDummy",
-    "file": "game:entities/nonliving/strawdummy.json",
-    "side": "server"
+    "value": "EntityScarecrow",
+    "file": "game:entities/nonliving/strawdummy.json"
   },
   {
     "op": "addmerge",
     "path": "/tags",
     "value": [ "humanoid", "scaring-low" ],
-    "file": "game:entities/nonliving/strawdummy.json",
-    "side": "server"
+    "file": "game:entities/nonliving/strawdummy.json"
+  },
+  {
+    "op": "addmerge",
+    "path": "/attributes",
+    "value": {
+      "scareRadius": 8,
+      "pickupItemCode": "game:strawdummy"
+    },
+    "file": "game:entities/nonliving/strawdummy.json"
   },
   {
     "op": "replace",
     "path": "/maxstacksize",
     "value": 4,
-    "file": "game:itemtypes/creature/strawdummy.json",
-    "side": "server"
+    "file": "game:itemtypes/creature/strawdummy.json"
   },
   {
     "op": "replace",
@@ -28,8 +34,7 @@
       "items": [ "*" ],
       "scarecrow": [ "*" ]
     },
-    "file": "game:itemtypes/creature/strawdummy.json",
-    "side": "server"
+    "file": "game:itemtypes/creature/strawdummy.json"
   },
   {
     "op": "replace",
@@ -52,8 +57,7 @@
       },
       "scale": 0.84
     },
-    "file": "game:itemtypes/creature/strawdummy.json",
-    "side": "server"
+    "file": "game:itemtypes/creature/strawdummy.json"
   },
   {
     "op": "replace",
@@ -76,8 +80,7 @@
       },
       "scale": 0.63
     },
-    "file": "game:itemtypes/creature/strawdummy.json",
-    "side": "server"
+    "file": "game:itemtypes/creature/strawdummy.json"
   },
   {
     "op": "add",
@@ -100,7 +103,6 @@
       },
       "scale": 2.1
     },
-    "file": "game:itemtypes/creature/strawdummy.json",
-    "side": "server"
+    "file": "game:itemtypes/creature/strawdummy.json"
   }
 ]

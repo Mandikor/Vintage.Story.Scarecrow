@@ -1,7 +1,7 @@
 {
   "code": "little-scarecrow",
 
-  "class": "EntityLittleScareCrow",
+  "class": "EntityScarecrow",
 
   "tags": [ "inanimate", "humanoid", "scaring-mid" ],
 
@@ -15,7 +15,9 @@
   "knockbackResistance": 1,
 
   "attributes": {
-    "spawnDamageParticles": true
+    "spawnDamageParticles": true,
+    "scareRadius": 12,
+    "pickupItemCode": "scarecrow:little-scarecrow"
   },
 
 	"behaviorConfigs": {
