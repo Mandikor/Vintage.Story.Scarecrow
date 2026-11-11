@@ -1,19 +1,196 @@
 [
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "rhinocerotidae:entities/animal/mammal/hooved/rhinocerotidae-adult.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Gallop",
+      "movespeedByType": {
+        "*-adult-*-ceratotheriumsimum": 0.1042,
+        "*-adult-*-coelodontaantiquitatis": 0.0938,
+        "*-adult-*-dicerorhinussumatrensis": 0.0833,
+        "*-adult-*-dicerosbicornis": 0.1146,
+        "*-adult-*-rhinocerossondaicus": 0.1,
+        "*-adult-*-rhinocerosunicornis": 0.1146
+      },
+      "animationSpeedByType": {
+        "*-female-*-ceratotheriumsimum": 7.64,
+        "*-adult-*-ceratotheriumsimum": 6.94,
+        "*-female-*-coelodontaantiquitatis": 6.88,
+        "*-adult-*-coelodontaantiquitatis": 6.25,
+        "*-female-*-dicerorhinussumatrensis": 6.11,
+        "*-adult-*-dicerorhinussumatrensis": 5.56,
+        "*-female-*-dicerosbicornis": 8.4,
+        "*-adult-*-dicerosbicornis": 7.64,
+        "*-female-*-rhinocerossondaicus": 7.33,
+        "*-adult-*-rhinocerossondaicus": 6.67,
+        "*-female-*-rhinocerosunicornis": 8.4,
+        "*-adult-*-rhinocerosunicornis": 7.64
+      }
     },
     "side": "server"
   },
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "rhinocerotidae:entities/animal/mammal/hooved/rhinocerotidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Gallop",
+      "movespeedByType": {
+        "*-adult-*-ceratotheriumsimum": 0.1042,
+        "*-adult-*-coelodontaantiquitatis": 0.0938,
+        "*-adult-*-dicerorhinussumatrensis": 0.0833,
+        "*-adult-*-dicerosbicornis": 0.1146,
+        "*-adult-*-rhinocerossondaicus": 0.1,
+        "*-adult-*-rhinocerosunicornis": 0.1146
+      },
+      "animationSpeedByType": {
+        "*-female-*-ceratotheriumsimum": 7.64,
+        "*-adult-*-ceratotheriumsimum": 6.94,
+        "*-female-*-coelodontaantiquitatis": 6.88,
+        "*-adult-*-coelodontaantiquitatis": 6.25,
+        "*-female-*-dicerorhinussumatrensis": 6.11,
+        "*-adult-*-dicerorhinussumatrensis": 5.56,
+        "*-female-*-dicerosbicornis": 8.4,
+        "*-adult-*-dicerosbicornis": 7.64,
+        "*-female-*-rhinocerossondaicus": 7.33,
+        "*-adult-*-rhinocerossondaicus": 6.67,
+        "*-female-*-rhinocerosunicornis": 8.4,
+        "*-adult-*-rhinocerosunicornis": 7.64
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "rhinocerotidae:entities/animal/mammal/hooved/rhinocerotidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Gallop",
+      "movespeedByType": {
+        "*-adult-*-ceratotheriumsimum": 0.1042,
+        "*-adult-*-coelodontaantiquitatis": 0.0938,
+        "*-adult-*-dicerorhinussumatrensis": 0.0833,
+        "*-adult-*-dicerosbicornis": 0.1146,
+        "*-adult-*-rhinocerossondaicus": 0.1,
+        "*-adult-*-rhinocerosunicornis": 0.1146
+      },
+      "animationSpeedByType": {
+        "*-female-*-ceratotheriumsimum": 7.64,
+        "*-adult-*-ceratotheriumsimum": 6.94,
+        "*-female-*-coelodontaantiquitatis": 6.88,
+        "*-adult-*-coelodontaantiquitatis": 6.25,
+        "*-female-*-dicerorhinussumatrensis": 6.11,
+        "*-adult-*-dicerorhinussumatrensis": 5.56,
+        "*-female-*-dicerosbicornis": 8.4,
+        "*-adult-*-dicerosbicornis": 7.64,
+        "*-female-*-rhinocerossondaicus": 7.33,
+        "*-adult-*-rhinocerossondaicus": 6.67,
+        "*-female-*-rhinocerosunicornis": 8.4,
+        "*-adult-*-rhinocerosunicornis": 7.64
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "rhinocerotidae:entities/animal/mammal/hooved/rhinocerotidae-baby.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Gallop",
+      "movespeedByType": {
+        "*-baby-*-ceratotheriumsimum": 0.077,
+        "*-baby-*-coelodontaantiquitatis": 0.065,
+        "*-baby-*-dicerorhinussumatrensis": 0.06,
+        "*-baby-*-dicerosbicornis": 0.065,
+        "*-baby-*-rhinocerossondaicus": 0.065,
+        "*-baby-*-rhinocerosunicornis": 0.077
+      },
+      "animationSpeed": 5
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "rhinocerotidae:entities/animal/mammal/hooved/rhinocerotidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Gallop",
+      "movespeedByType": {
+        "*-baby-*-ceratotheriumsimum": 0.077,
+        "*-baby-*-coelodontaantiquitatis": 0.065,
+        "*-baby-*-dicerorhinussumatrensis": 0.06,
+        "*-baby-*-dicerosbicornis": 0.065,
+        "*-baby-*-rhinocerossondaicus": 0.065,
+        "*-baby-*-rhinocerosunicornis": 0.077
+      },
+      "animationSpeed": 5
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "rhinocerotidae:entities/animal/mammal/hooved/rhinocerotidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Gallop",
+      "movespeedByType": {
+        "*-baby-*-ceratotheriumsimum": 0.077,
+        "*-baby-*-coelodontaantiquitatis": 0.065,
+        "*-baby-*-dicerorhinussumatrensis": 0.06,
+        "*-baby-*-dicerosbicornis": 0.065,
+        "*-baby-*-rhinocerossondaicus": 0.065,
+        "*-baby-*-rhinocerosunicornis": 0.077
+      },
+      "animationSpeed": 5
     },
     "side": "server"
   }
