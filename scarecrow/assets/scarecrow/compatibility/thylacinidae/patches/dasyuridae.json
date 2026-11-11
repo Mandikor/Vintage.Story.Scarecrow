@@ -1,19 +1,158 @@
 [
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "thylacinidae:entities/animal/mammal/dasyuridae-adult.json",
     "value": {
+      "code": "seekentity",
+      "priority": 7.2,
+      "priorityForCancel": 8.0,
+      "animation": "Run",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "maxFollowTime": 60,
+      "movespeedByType": {
+        "*-adult-male-sarcophilusharrisii": 0.0302,
+        "*-adult-female-sarcophilusharrisii": 0.0271,
+        "*-adult-male-sarcophiluslaniarius": 0.0323,
+        "*-adult-female-sarcophiluslaniarius": 0.0292
+      },
+      "animationSpeedByType": {
+        "*-adult-male-sarcophilusharrisii": 2.1,
+        "*-adult-female-sarcophilusharrisii": 2.3,
+        "*-adult-male-sarcophiluslaniarius": 1.9,
+        "*-adult-female-sarcophiluslaniarius": 2.2
+      },
+      "seekingRange": 20,
+      "leapAtTarget": true,
+      "leapHeightMul": 0.5,
+      "stopOnHurt": false,
+      "whenSwimming": false,
+      "tagsAppliedToEntity": [
+        "threatening",
+        "state-moving"
+      ]
     },
     "side": "server"
   },
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "thylacinidae:entities/animal/mammal/dasyuridae-adult.json",
+    "value": {
+      "code": "meleeattack",
+      "priority": 7.6,
+      "priorityForCancel": 8.0,
+      "animation": "Attack",
+      "slot": 1,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "animationSpeed": 1.5,
+      "damageByType": {
+        "*-adult-*-sarcophilusharrisii": 4,
+        "*-adult-*-sarcophiluslaniarius": 4
+      },
+      "damageType": "SlashingAttack",
+      "minDist": 0.75,
+      "damageTier": 1,
+      "MinCooldownMs": 500,
+      "MaxCooldownMs": 500,
+      "attackDurationMs": 1200,
+      "damagePlayerAtMs": 550,
+      "soundByType": {
+        "*-sarcophilusharrisii": "thylacinidae:creature/dasyuridae/sarcophilusharrisii/growl*",
+        "*-sarcophiluslaniarius": "thylacinidae:creature/dasyuridae/sarcophilusharrisii/growl*"
+      },
+      "stopOnHurt": true,
+      "tagsAppliedToEntity": [
+        "threatening"
+      ]
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "thylacinidae:entities/animal/mammal/dasyuridae-baby.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*-sarcophilusharrisii": 0.016,
+        "*-baby-*-sarcophiluslaniarius": 0.016
+      },
+      "animationSpeedByType": {
+        "*-baby-*-sarcophilusharrisii": 2,
+        "*-baby-*-sarcophiluslaniarius": 1.8,
+        "*": 1
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "thylacinidae:entities/animal/mammal/dasyuridae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*-sarcophilusharrisii": 0.016,
+        "*-baby-*-sarcophiluslaniarius": 0.016
+      },
+      "animationSpeedByType": {
+        "*-baby-*-sarcophilusharrisii": 2,
+        "*-baby-*-sarcophiluslaniarius": 1.8,
+        "*": 1
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "thylacinidae:entities/animal/mammal/dasyuridae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*-sarcophilusharrisii": 0.016,
+        "*-baby-*-sarcophiluslaniarius": 0.016
+      },
+      "animationSpeedByType": {
+        "*-baby-*-sarcophilusharrisii": 2,
+        "*-baby-*-sarcophiluslaniarius": 1.8,
+        "*": 1
+      }
     },
     "side": "server"
   }
