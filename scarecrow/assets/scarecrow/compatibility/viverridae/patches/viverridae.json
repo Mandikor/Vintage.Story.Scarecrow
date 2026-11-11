@@ -1,19 +1,205 @@
 [
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "viverridae:entities/animal/mammal/viverridae-adult.json",
     "value": {
+      "code": "seekentity",
+      "priority": 7.2,
+      "priorityForCancel": 8.0,
+      "animation": "Run",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "alarmHerd": true,
+      "maxFollowTime": 60,
+      "movespeedByType": {
+        "*-adult-*-genetta*": 0.09,
+        "*-adult-*-poiana*": 0.09,
+        "*-adult-*-viverriculaindica": 0.09,
+        "*-adult-*-civettictiscivetta": 0.07,
+        "*-adult-*-macrogalidiamusschenbroekii": 0.07,
+        "*-adult-*-viverra*": 0.07,
+        "*-adult-*-arctictisbinturong": 0.03,
+        "*-adult-*-cynogalebennettii": 0.03,
+        "*-adult-*-nandiniabinotata": 0.03,
+        "*-adult-*": 0.05
+      },
+      "animationSpeedByType": {
+        "*-adult-male-genetta*": 4.05,
+        "*-adult-female-genetta*": 4.5,
+        "*-adult-male-poiana*": 4.05,
+        "*-adult-female-poiana*": 4.5,
+        "*-adult-male-viverriculaindica": 4.05,
+        "*-adult-female-viverriculaindica": 4.5,
+        "*-adult-male-civettictiscivetta": 2.1,
+        "*-adult-female-civettictiscivetta": 2.3,
+        "*-adult-male-macrogalidiamusschenbroekii": 2.1,
+        "*-adult-female-macrogalidiamusschenbroekii": 2.3,
+        "*-adult-male-viverra*": 2.1,
+        "*-adult-female-viverra*": 2.3,
+        "*-adult-male-arctictisbinturong": 0.9,
+        "*-adult-female-arctictisbinturong": 1.0,
+        "*-adult-male-cynogalebennettii": 1.35,
+        "*-adult-female-cynogalebennettii": 1.5,
+        "*-adult-male-*": 2.25,
+        "*-adult-female-*": 2.5,
+        "*": 1
+      },
+      "seekingRange": 20,
+      "leapAtTarget": false,
+      "stopOnHurt": false,
+      "whenSwimming": false,
+      "tagsAppliedToEntity": [
+        "threatening",
+        "state-moving"
+      ]
     },
     "side": "server"
   },
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "viverridae:entities/animal/mammal/viverridae-adult.json",
+    "value": {
+      "code": "meleeattack",
+      "priority": 7.6,
+      "priorityForCancel": 8.0,
+      "animation": "Attack",
+      "slot": 1,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "animationSpeed": 2,
+      "damageByType": {
+        "*-adult-*-arctictisbinturong": 4,
+        "*-adult-*-civettictiscivetta": 4,
+        "*-adult-*-cynogalebennettii": 2,
+        "*-adult-*-genettacristata": 2,
+        "*-adult-*-genettapardina": 2,
+        "*-adult-*-genettavictoriae": 2,
+        "*-adult-*-macrogalidiamusschenbroekii": 3,
+        "*-adult-*-pagumalarvata": 2,
+        "*-adult-*-paradoxurushermaphroditus": 2,
+        "*-adult-*-paradoxurusjerdoni": 2,
+        "*-adult-*-paradoxuruszeylonensis": 2,
+        "*-adult-*-viverracivettina": 3,
+        "*-adult-*-viverramegaspila": 3,
+        "*-adult-*-viverratangalunga": 2,
+        "*-adult-*-viverrazibetha": 3,
+        "*-adult-*-viverriculaindica": 2,
+        "*-adult-*": 1
+      },
+      "damageType": "PiercingAttack",
+      "minDistByType": {
+        "*": 0.8
+      },
+      "damageTier": 1,
+      "MinCooldownMs": 500,
+      "MaxCooldownMs": 500,
+      "attackDurationMs": 800,
+      "damagePlayerAtMs": 250,
+      "alarmHerd": true,
+      "stopOnHurt": true,
+      "tagsAppliedToEntity": [
+        "threatening"
+      ]
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "viverridae:entities/animal/mammal/viverridae-baby.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*": 0.045
+      },
+      "animationSpeedByType": {
+        "*-baby-*-arctictisbinturong": 2.64,
+        "*-baby-*-civettictiscivetta": 2.64,
+        "*-baby-*-macrogalidiamusschenbroekii": 2.64,
+        "*-baby-*-viverracivettina": 2.64,
+        "*-baby-*-viverramegaspila": 2.64,
+        "*-baby-*-viverrazibetha": 2.64,
+        "*-baby-*": 4,
+        "*": 1
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "viverridae:entities/animal/mammal/viverridae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*": 0.045
+      },
+      "animationSpeedByType": {
+        "*-baby-*-arctictisbinturong": 2.64,
+        "*-baby-*-civettictiscivetta": 2.64,
+        "*-baby-*-macrogalidiamusschenbroekii": 2.64,
+        "*-baby-*-viverracivettina": 2.64,
+        "*-baby-*-viverramegaspila": 2.64,
+        "*-baby-*-viverrazibetha": 2.64,
+        "*-baby-*": 4,
+        "*": 1
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "viverridae:entities/animal/mammal/viverridae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*": 0.045
+      },
+      "animationSpeedByType": {
+        "*-baby-*-arctictisbinturong": 2.64,
+        "*-baby-*-civettictiscivetta": 2.64,
+        "*-baby-*-macrogalidiamusschenbroekii": 2.64,
+        "*-baby-*-viverracivettina": 2.64,
+        "*-baby-*-viverramegaspila": 2.64,
+        "*-baby-*-viverrazibetha": 2.64,
+        "*-baby-*": 4,
+        "*": 1
+      }
     },
     "side": "server"
   }
