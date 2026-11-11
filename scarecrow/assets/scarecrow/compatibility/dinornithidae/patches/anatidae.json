@@ -1,19 +1,196 @@
 [
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/9/aitasks/-",
     "file": "dinornithidae:entities/animal/bird/anatidae-adult.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-adult-*-anasaucklandica": 0.018,
+        "*-adult-*-anaschlorotis": 0.02,
+        "*-adult-*-anasnesiotis": 0.018,
+        "*-adult-chenonettafinschi": 0.025,
+        "*-adult-female-cnemiorniscalcitrans": 0.033,
+        "*-adult-male-cnemiorniscalcitrans": 0.031,
+        "*-adult-female-cnemiornisgracilis": 0.0345,
+        "*-adult-male-cnemiornisgracilis": 0.0325
+      },
+      "animationSpeedByType": {
+        "*-adult-*-anasaucklandica": 3.42,
+        "*-adult-*-anaschlorotis": 3.33,
+        "*-adult-*-anasnesiotis": 3.42,
+        "*-adult-chenonettafinschi": 2.5,
+        "*-adult-female-cnemiorniscalcitrans": 2.31,
+        "*-adult-male-cnemiorniscalcitrans": 2.07,
+        "*-adult-female-cnemiornisgracilis": 2.48,
+        "*-adult-male-cnemiornisgracilis": 2.23
+      }
     },
     "side": "server"
   },
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/9/aitasks/-",
-    "file": "dinornithidae:entities/animal/mammal/anatidae-baby.json",
+    "file": "dinornithidae:entities/animal/bird/anatidae-adult.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-adult-*-anasaucklandica": 0.018,
+        "*-adult-*-anaschlorotis": 0.02,
+        "*-adult-*-anasnesiotis": 0.018,
+        "*-adult-chenonettafinschi": 0.025,
+        "*-adult-female-cnemiorniscalcitrans": 0.033,
+        "*-adult-male-cnemiorniscalcitrans": 0.031,
+        "*-adult-female-cnemiornisgracilis": 0.0345,
+        "*-adult-male-cnemiornisgracilis": 0.0325
+      },
+      "animationSpeedByType": {
+        "*-adult-*-anasaucklandica": 3.42,
+        "*-adult-*-anaschlorotis": 3.33,
+        "*-adult-*-anasnesiotis": 3.42,
+        "*-adult-chenonettafinschi": 2.5,
+        "*-adult-female-cnemiorniscalcitrans": 2.31,
+        "*-adult-male-cnemiorniscalcitrans": 2.07,
+        "*-adult-female-cnemiornisgracilis": 2.48,
+        "*-adult-male-cnemiornisgracilis": 2.23
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/anatidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-adult-*-anasaucklandica": 0.018,
+        "*-adult-*-anaschlorotis": 0.02,
+        "*-adult-*-anasnesiotis": 0.018,
+        "*-adult-chenonettafinschi": 0.025,
+        "*-adult-female-cnemiorniscalcitrans": 0.033,
+        "*-adult-male-cnemiorniscalcitrans": 0.031,
+        "*-adult-female-cnemiornisgracilis": 0.0345,
+        "*-adult-male-cnemiornisgracilis": 0.0325
+      },
+      "animationSpeedByType": {
+        "*-adult-*-anasaucklandica": 3.42,
+        "*-adult-*-anaschlorotis": 3.33,
+        "*-adult-*-anasnesiotis": 3.42,
+        "*-adult-chenonettafinschi": 2.5,
+        "*-adult-female-cnemiorniscalcitrans": 2.31,
+        "*-adult-male-cnemiorniscalcitrans": 2.07,
+        "*-adult-female-cnemiornisgracilis": 2.48,
+        "*-adult-male-cnemiornisgracilis": 2.23
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/anatidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "anatidae-baby-*": 0.015
+      },
+      "animationSpeedByType": {
+        "*-baby-*-anasaucklandica": 5,
+        "*-baby-*-anaschlorotis": 5,
+        "*-baby-*-anasnesiotis": 5,
+        "*-baby-*-chenonettafinschi": 3.0,
+        "*-baby-*-cnemiorniscalcitrans": 2.0,
+        "*-baby-*-cnemiornisgracilis": 2.0
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/anatidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "anatidae-baby-*": 0.015
+      },
+      "animationSpeedByType": {
+        "*-baby-*-anasaucklandica": 5,
+        "*-baby-*-anaschlorotis": 5,
+        "*-baby-*-anasnesiotis": 5,
+        "*-baby-*-chenonettafinschi": 3.0,
+        "*-baby-*-cnemiorniscalcitrans": 2.0,
+        "*-baby-*-cnemiornisgracilis": 2.0
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/anatidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "anatidae-baby-*": 0.015
+      },
+      "animationSpeedByType": {
+        "*-baby-*-anasaucklandica": 5,
+        "*-baby-*-anaschlorotis": 5,
+        "*-baby-*-anasnesiotis": 5,
+        "*-baby-*-chenonettafinschi": 3.0,
+        "*-baby-*-cnemiorniscalcitrans": 2.0,
+        "*-baby-*-cnemiornisgracilis": 2.0
+      }
     },
     "side": "server"
   }

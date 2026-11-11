@@ -1,19 +1,187 @@
 [
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "dinornithidae:entities/animal/bird/emeidae-adult.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "emeidae-adult-*-anomalopteryxdidiformis": 0.04,
+        "emeidae-adult-*-emeuscrassus": 0.045,
+        "emeidae-adult-*-euryapteryxcurtus": 0.038,
+        "emeidae-adult-*-pachyornisaustralis": 0.038,
+        "emeidae-adult-*-pachyorniselephantopus": 0.03,
+        "emeidae-adult-*-pachyornisgeranoides": 0.048
+      },
+      "animationSpeedByType": {
+        "emeidae-adult-female-anomalopteryxdidiformis": 3.0,
+        "emeidae-adult-male-anomalopteryxdidiformis": 4.0,
+        "emeidae-adult-female-emeuscrassus": 2.7,
+        "emeidae-adult-male-emeuscrassus": 3.6,
+        "emeidae-adult-female-euryapteryxcurtus": 2.28,
+        "emeidae-adult-male-euryapteryxcurtus": 3.04,
+        "emeidae-adult-female-pachyornisaustralis": 2.28,
+        "emeidae-adult-male-pachyornisaustralis": 3.04,
+        "emeidae-adult-female-pachyorniselephantopus": 1.5,
+        "emeidae-adult-male-pachyorniselephantopus": 2.0,
+        "emeidae-adult-female-pachyornisgeranoides": 3.6,
+        "emeidae-adult-male-pachyornisgeranoides": 4.8
+      }
     },
     "side": "server"
   },
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
-    "file": "dinornithidae:entities/animal/mammal/emeidae-baby.json",
+    "file": "dinornithidae:entities/animal/bird/emeidae-adult.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "emeidae-adult-*-anomalopteryxdidiformis": 0.04,
+        "emeidae-adult-*-emeuscrassus": 0.045,
+        "emeidae-adult-*-euryapteryxcurtus": 0.038,
+        "emeidae-adult-*-pachyornisaustralis": 0.038,
+        "emeidae-adult-*-pachyorniselephantopus": 0.03,
+        "emeidae-adult-*-pachyornisgeranoides": 0.048
+      },
+      "animationSpeedByType": {
+        "emeidae-adult-female-anomalopteryxdidiformis": 3.0,
+        "emeidae-adult-male-anomalopteryxdidiformis": 4.0,
+        "emeidae-adult-female-emeuscrassus": 2.7,
+        "emeidae-adult-male-emeuscrassus": 3.6,
+        "emeidae-adult-female-euryapteryxcurtus": 2.28,
+        "emeidae-adult-male-euryapteryxcurtus": 3.04,
+        "emeidae-adult-female-pachyornisaustralis": 2.28,
+        "emeidae-adult-male-pachyornisaustralis": 3.04,
+        "emeidae-adult-female-pachyorniselephantopus": 1.5,
+        "emeidae-adult-male-pachyorniselephantopus": 2.0,
+        "emeidae-adult-female-pachyornisgeranoides": 3.6,
+        "emeidae-adult-male-pachyornisgeranoides": 4.8
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/emeidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "emeidae-adult-*-anomalopteryxdidiformis": 0.04,
+        "emeidae-adult-*-emeuscrassus": 0.045,
+        "emeidae-adult-*-euryapteryxcurtus": 0.038,
+        "emeidae-adult-*-pachyornisaustralis": 0.038,
+        "emeidae-adult-*-pachyorniselephantopus": 0.03,
+        "emeidae-adult-*-pachyornisgeranoides": 0.048
+      },
+      "animationSpeedByType": {
+        "emeidae-adult-female-anomalopteryxdidiformis": 3.0,
+        "emeidae-adult-male-anomalopteryxdidiformis": 4.0,
+        "emeidae-adult-female-emeuscrassus": 2.7,
+        "emeidae-adult-male-emeuscrassus": 3.6,
+        "emeidae-adult-female-euryapteryxcurtus": 2.28,
+        "emeidae-adult-male-euryapteryxcurtus": 3.04,
+        "emeidae-adult-female-pachyornisaustralis": 2.28,
+        "emeidae-adult-male-pachyornisaustralis": 3.04,
+        "emeidae-adult-female-pachyorniselephantopus": 1.5,
+        "emeidae-adult-male-pachyorniselephantopus": 2.0,
+        "emeidae-adult-female-pachyornisgeranoides": 3.6,
+        "emeidae-adult-male-pachyornisgeranoides": 4.8
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/emeidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "emeidae-baby-*": 0.0225
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 7.2
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/emeidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "emeidae-baby-*": 0.0225
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 7.2
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/emeidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "emeidae-baby-*": 0.0225
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 7.2
+      }
     },
     "side": "server"
   }

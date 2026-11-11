@@ -1,19 +1,70 @@
 [
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "dinornithidae:entities/animal/bird/strigopidae-adult.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "strigopidae-adult-*-strigopshabroptila": 0.012
+      },
+      "animationSpeedByType": {
+        "*-adult-*": 2.0
+      }
     },
     "side": "server"
   },
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
-    "file": "dinornithidae:entities/animal/mammal/strigopidae-baby.json",
+    "file": "dinornithidae:entities/animal/bird/strigopidae-adult.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "strigopidae-adult-*-strigopshabroptila": 0.012
+      },
+      "animationSpeedByType": {
+        "*-adult-*": 2.0
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/strigopidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "strigopidae-adult-*-strigopshabroptila": 0.012
+      },
+      "animationSpeedByType": {
+        "*-adult-*": 2.0
+      }
     },
     "side": "server"
   }

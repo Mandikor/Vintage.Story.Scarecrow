@@ -1,19 +1,181 @@
 [
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/9/aitasks/-",
     "file": "dinornithidae:entities/animal/bird/rallidae-adult.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-adult-*-cabalusmodestus": 0.025,
+        "*-adult-*-diaphorapteryxhawkinsi": 0.045,
+        "*-adult-*-gallirallusaustralis": 0.05,
+        "@.*-(hypotaenidiadieffenbachii|hypotaenidiaphilippensis|hypotaenidiasylvestris)": 0.048,
+        "*-adult-*-lewiniamuelleri": 0.03,
+        "@.*-(porphyrioalbus|porphyriohochstetteri)": 0.042,
+        "*-adult-*-porphyriomantelli": 0.0405,
+        "*-adult-*-tribonyxhodgenorum": 0.0675
+      },
+      "animationSpeedByType": {
+        "*-adult-*-cabalusmodestus": 7.5,
+        "*-adult-*-diaphorapteryxhawkinsi": 8.1,
+        "*-adult-*-gallirallusaustralis": 7.5,
+        "@.*-(hypotaenidiadieffenbachii|hypotaenidiaphilippensis|hypotaenidiasylvestris)": 18.24,
+        "*-adult-*-lewiniamuelleri": 13.5,
+        "@.*-(porphyrioalbus|porphyriohochstetteri)": 6.3,
+        "*-adult-*-porphyriomantelli": 5.67,
+        "*-adult-*-tribonyxhodgenorum": 19.125
+      }
     },
     "side": "server"
   },
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/9/aitasks/-",
-    "file": "dinornithidae:entities/animal/mammal/rallidae-baby.json",
+    "file": "dinornithidae:entities/animal/bird/rallidae-adult.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-adult-*-cabalusmodestus": 0.025,
+        "*-adult-*-diaphorapteryxhawkinsi": 0.045,
+        "*-adult-*-gallirallusaustralis": 0.05,
+        "@.*-(hypotaenidiadieffenbachii|hypotaenidiaphilippensis|hypotaenidiasylvestris)": 0.048,
+        "*-adult-*-lewiniamuelleri": 0.03,
+        "@.*-(porphyrioalbus|porphyriohochstetteri)": 0.042,
+        "*-adult-*-porphyriomantelli": 0.0405,
+        "*-adult-*-tribonyxhodgenorum": 0.0675
+      },
+      "animationSpeedByType": {
+        "*-adult-*-cabalusmodestus": 7.5,
+        "*-adult-*-diaphorapteryxhawkinsi": 8.1,
+        "*-adult-*-gallirallusaustralis": 7.5,
+        "@.*-(hypotaenidiadieffenbachii|hypotaenidiaphilippensis|hypotaenidiasylvestris)": 18.24,
+        "*-adult-*-lewiniamuelleri": 13.5,
+        "@.*-(porphyrioalbus|porphyriohochstetteri)": 6.3,
+        "*-adult-*-porphyriomantelli": 5.67,
+        "*-adult-*-tribonyxhodgenorum": 19.125
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/rallidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-adult-*-cabalusmodestus": 0.025,
+        "*-adult-*-diaphorapteryxhawkinsi": 0.045,
+        "*-adult-*-gallirallusaustralis": 0.05,
+        "@.*-(hypotaenidiadieffenbachii|hypotaenidiaphilippensis|hypotaenidiasylvestris)": 0.048,
+        "*-adult-*-lewiniamuelleri": 0.03,
+        "@.*-(porphyrioalbus|porphyriohochstetteri)": 0.042,
+        "*-adult-*-porphyriomantelli": 0.0405,
+        "*-adult-*-tribonyxhodgenorum": 0.0675
+      },
+      "animationSpeedByType": {
+        "*-adult-*-cabalusmodestus": 7.5,
+        "*-adult-*-diaphorapteryxhawkinsi": 8.1,
+        "*-adult-*-gallirallusaustralis": 7.5,
+        "@.*-(hypotaenidiadieffenbachii|hypotaenidiaphilippensis|hypotaenidiasylvestris)": 18.24,
+        "*-adult-*-lewiniamuelleri": 13.5,
+        "@.*-(porphyrioalbus|porphyriohochstetteri)": 6.3,
+        "*-adult-*-porphyriomantelli": 5.67,
+        "*-adult-*-tribonyxhodgenorum": 19.125
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/rallidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*": 0.015
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 7.5
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/rallidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*": 0.015
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 7.5
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/rallidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*": 0.015
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 7.5
+      }
     },
     "side": "server"
   }

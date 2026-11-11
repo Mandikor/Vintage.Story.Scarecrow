@@ -1,19 +1,148 @@
 [
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "dinornithidae:entities/animal/bird/dinornithidae-adult.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "dinornithidae-adult-*-dinornisnovaezealandiae": 0.0625,
+        "dinornithidae-adult-*-dinornisrobustus": 0.0625
+      },
+      "animationSpeedByType": {
+        "*-adult-female-*": 1.875,
+        "*-adult-male-*": 2.5
+      }
     },
     "side": "server"
   },
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
-    "file": "dinornithidae:entities/animal/mammal/dinornithidae-baby.json",
+    "file": "dinornithidae:entities/animal/bird/dinornithidae-adult.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "dinornithidae-adult-*-dinornisnovaezealandiae": 0.0625,
+        "dinornithidae-adult-*-dinornisrobustus": 0.0625
+      },
+      "animationSpeedByType": {
+        "*-adult-female-*": 1.875,
+        "*-adult-male-*": 2.5
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/dinornithidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "dinornithidae-adult-*-dinornisnovaezealandiae": 0.0625,
+        "dinornithidae-adult-*-dinornisrobustus": 0.0625
+      },
+      "animationSpeedByType": {
+        "*-adult-female-*": 1.875,
+        "*-adult-male-*": 2.5
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/dinornithidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "dinornithidae-baby-*-dinornisnovaezealandiae": 0.045,
+        "dinornithidae-baby-*-dinornisrobustus": 0.045
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 7.2
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/dinornithidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "dinornithidae-baby-*-dinornisnovaezealandiae": 0.045,
+        "dinornithidae-baby-*-dinornisrobustus": 0.045
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 7.2
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/dinornithidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "dinornithidae-baby-*-dinornisnovaezealandiae": 0.045,
+        "dinornithidae-baby-*-dinornisrobustus": 0.045
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 7.2
+      }
     },
     "side": "server"
   }

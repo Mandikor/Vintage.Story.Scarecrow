@@ -1,0 +1,89 @@
+[
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/acanthisittidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animationByType": {
+        "*-acanthisittachloris": "Fly",
+        "*-xenicusgilviventris": "Fly",
+        "*": "Run"
+      },
+      "movespeedByType": {
+        "acanthisittidae-adult-*-acanthisittachloris": 0.05,
+        "acanthisittidae-adult-*-xenicusgilviventris": 0.05,
+        "acanthisittidae-adult-*": 0.012
+      },
+      "animationSpeedByType": {
+        "acanthisittidae-adult-*": 2
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/acanthisittidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animationByType": {
+        "*-acanthisittachloris": "Fly",
+        "*-xenicusgilviventris": "Fly",
+        "*": "Run"
+      },
+      "movespeedByType": {
+        "acanthisittidae-adult-*-acanthisittachloris": 0.05,
+        "acanthisittidae-adult-*-xenicusgilviventris": 0.05,
+        "acanthisittidae-adult-*": 0.012
+      },
+      "animationSpeedByType": {
+        "acanthisittidae-adult-*": 2
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/acanthisittidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animationByType": {
+        "*-acanthisittachloris": "Fly",
+        "*-xenicusgilviventris": "Fly",
+        "*": "Run"
+      },
+      "movespeedByType": {
+        "acanthisittidae-adult-*-acanthisittachloris": 0.05,
+        "acanthisittidae-adult-*-xenicusgilviventris": 0.05,
+        "acanthisittidae-adult-*": 0.012
+      },
+      "animationSpeedByType": {
+        "acanthisittidae-adult-*": 2
+      }
+    },
+    "side": "server"
+  }
+]

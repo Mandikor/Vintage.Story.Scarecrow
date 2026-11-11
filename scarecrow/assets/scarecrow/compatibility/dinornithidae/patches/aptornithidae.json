@@ -1,0 +1,149 @@
+[
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/aptornithidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "aptornithidae-adult-*-aptornisdefossor": 0.0417,
+        "aptornithidae-adult-*-aptornisotidiformis": 0.05
+      },
+      "animationSpeedByType": {
+        "*-adult-*-aptornisdefossor": 5.56,
+        "*-adult-*-aptornisotidiformis": 8.33
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/aptornithidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "aptornithidae-adult-*-aptornisdefossor": 0.0417,
+        "aptornithidae-adult-*-aptornisotidiformis": 0.05
+      },
+      "animationSpeedByType": {
+        "*-adult-*-aptornisdefossor": 5.56,
+        "*-adult-*-aptornisotidiformis": 8.33
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/aptornithidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "aptornithidae-adult-*-aptornisdefossor": 0.0417,
+        "aptornithidae-adult-*-aptornisotidiformis": 0.05
+      },
+      "animationSpeedByType": {
+        "*-adult-*-aptornisdefossor": 5.56,
+        "*-adult-*-aptornisotidiformis": 8.33
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/aptornithidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "aptornithidae-baby-*-aptornisdefossor": 0.015,
+        "aptornithidae-baby-*-aptornisotidiformis": 0.015
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 4.0
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/aptornithidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "aptornithidae-baby-*-aptornisdefossor": 0.015,
+        "aptornithidae-baby-*-aptornisotidiformis": 0.015
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 4.0
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/aptornithidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "aptornithidae-baby-*-aptornisdefossor": 0.015,
+        "aptornithidae-baby-*-aptornisotidiformis": 0.015
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 4.0
+      }
+    },
+    "side": "server"
+  }
+]
