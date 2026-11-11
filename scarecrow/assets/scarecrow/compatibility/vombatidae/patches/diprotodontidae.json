@@ -1,19 +1,148 @@
 [
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "vombatidae:entities/animal/mammal/diprotodontidae-adult.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-adult-male-zygomaturustrilobus": 0.052,
+        "*-adult-female-zygomaturustrilobus": 0.048
+      },
+      "animationSpeedByType": {
+        "*-adult-male-zygomaturustrilobus": 2.0,
+        "*-adult-female-zygomaturustrilobus": 1.85
+      }
     },
     "side": "server"
   },
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "vombatidae:entities/animal/mammal/diprotodontidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-adult-male-zygomaturustrilobus": 0.052,
+        "*-adult-female-zygomaturustrilobus": 0.048
+      },
+      "animationSpeedByType": {
+        "*-adult-male-zygomaturustrilobus": 2.0,
+        "*-adult-female-zygomaturustrilobus": 1.85
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "vombatidae:entities/animal/mammal/diprotodontidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-adult-male-zygomaturustrilobus": 0.052,
+        "*-adult-female-zygomaturustrilobus": 0.048
+      },
+      "animationSpeedByType": {
+        "*-adult-male-zygomaturustrilobus": 2.0,
+        "*-adult-female-zygomaturustrilobus": 1.85
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "vombatidae:entities/animal/mammal/diprotodontidae-baby.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*-zygomaturustrilobus": 0.031,
+        "*-baby-*": 0.018
+      },
+      "animationSpeedByType": {
+        "*": 2.4
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "vombatidae:entities/animal/mammal/diprotodontidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*-zygomaturustrilobus": 0.031,
+        "*-baby-*": 0.018
+      },
+      "animationSpeedByType": {
+        "*": 2.4
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "vombatidae:entities/animal/mammal/diprotodontidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*-zygomaturustrilobus": 0.031,
+        "*-baby-*": 0.018
+      },
+      "animationSpeedByType": {
+        "*": 2.4
+      }
     },
     "side": "server"
   }

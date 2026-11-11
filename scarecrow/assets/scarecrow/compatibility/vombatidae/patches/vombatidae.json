@@ -1,19 +1,172 @@
 [
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "vombatidae:entities/animal/mammal/vombatidae-adult.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-adult-male-phascolonusgigas": 0.0521,
+        "*-adult-female-phascolonusgigas": 0.0521,
+        "*-adult-male-vombatushacketti": 0.0667,
+        "*-adult-female-vombatushacketti": 0.0667,
+        "*-adult-male-*": 0.0833,
+        "*-adult-female-*": 0.0833
+      },
+      "animationSpeedByType": {
+        "*-adult-male-phascolonusgigas": 3.05,
+        "*-adult-female-phascolonusgigas": 2.89,
+        "*-adult-male-vombatushacketti": 3.9,
+        "*-adult-female-vombatushacketti": 3.75,
+        "*-adult-male-*": 4.89,
+        "*-adult-female-*": 4.63
+      }
     },
     "side": "server"
   },
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "vombatidae:entities/animal/mammal/vombatidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-adult-male-phascolonusgigas": 0.0521,
+        "*-adult-female-phascolonusgigas": 0.0521,
+        "*-adult-male-vombatushacketti": 0.0667,
+        "*-adult-female-vombatushacketti": 0.0667,
+        "*-adult-male-*": 0.0833,
+        "*-adult-female-*": 0.0833
+      },
+      "animationSpeedByType": {
+        "*-adult-male-phascolonusgigas": 3.05,
+        "*-adult-female-phascolonusgigas": 2.89,
+        "*-adult-male-vombatushacketti": 3.9,
+        "*-adult-female-vombatushacketti": 3.75,
+        "*-adult-male-*": 4.89,
+        "*-adult-female-*": 4.63
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "vombatidae:entities/animal/mammal/vombatidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-adult-male-phascolonusgigas": 0.0521,
+        "*-adult-female-phascolonusgigas": 0.0521,
+        "*-adult-male-vombatushacketti": 0.0667,
+        "*-adult-female-vombatushacketti": 0.0667,
+        "*-adult-male-*": 0.0833,
+        "*-adult-female-*": 0.0833
+      },
+      "animationSpeedByType": {
+        "*-adult-male-phascolonusgigas": 3.05,
+        "*-adult-female-phascolonusgigas": 2.89,
+        "*-adult-male-vombatushacketti": 3.9,
+        "*-adult-female-vombatushacketti": 3.75,
+        "*-adult-male-*": 4.89,
+        "*-adult-female-*": 4.63
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "vombatidae:entities/animal/mammal/vombatidae-baby.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*-phascolonusgigas": 0.036,
+        "*-baby-*": 0.018
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 4
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "vombatidae:entities/animal/mammal/vombatidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*-phascolonusgigas": 0.036,
+        "*-baby-*": 0.018
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 4
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "vombatidae:entities/animal/mammal/vombatidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*-phascolonusgigas": 0.036,
+        "*-baby-*": 0.018
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 4
+      }
     },
     "side": "server"
   }
