@@ -1,19 +1,139 @@
 [
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "casuariidae:entities/animal/bird/dromornithidae-adult.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "dromornithidae-adult-*-genyornisnewtoni": 0.09
+      },
+      "animationSpeedByType": {
+        "*-adult-*-genyornisnewtoni": 2.7
+      }
     },
     "side": "server"
   },
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "casuariidae:entities/animal/bird/dromornithidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "dromornithidae-adult-*-genyornisnewtoni": 0.09
+      },
+      "animationSpeedByType": {
+        "*-adult-*-genyornisnewtoni": 2.7
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "casuariidae:entities/animal/bird/dromornithidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "dromornithidae-adult-*-genyornisnewtoni": 0.09
+      },
+      "animationSpeedByType": {
+        "*-adult-*-genyornisnewtoni": 2.7
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "casuariidae:entities/animal/bird/dromornithidae-baby.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "dromornithidae-baby-*-genyornisnewtoni": 0.045
+      },
+      "animationSpeedByType": {
+        "dromornithidae-baby-*-genyornisnewtoni": 7.2
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "casuariidae:entities/animal/bird/dromornithidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "dromornithidae-baby-*-genyornisnewtoni": 0.045
+      },
+      "animationSpeedByType": {
+        "dromornithidae-baby-*-genyornisnewtoni": 7.2
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "casuariidae:entities/animal/bird/dromornithidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "dromornithidae-baby-*-genyornisnewtoni": 0.045
+      },
+      "animationSpeedByType": {
+        "dromornithidae-baby-*-genyornisnewtoni": 7.2
+      }
     },
     "side": "server"
   }
