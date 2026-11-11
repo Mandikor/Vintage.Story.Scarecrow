@@ -43,6 +43,8 @@ namespace Scarecrow
         public override void AssetsFinalize(ICoreAPI api)
         {
             api.World.Logger.Event("########## started '{0}' mod ##########", Mod.Info.Name);
+
+            LeafLitterRakeAttachable.Apply(api);
         }
     }
 }
