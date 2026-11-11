@@ -1,19 +1,148 @@
 [
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "machairodontinae:entities/animal/mammal/machairodontinae-adult.json",
     "value": {
+      "code": "seekentity",
+      "priority": 7.2,
+      "priorityForCancel": 8.0,
+      "animation": "Run",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "maxFollowTime": 60,
+      "movespeedByType": {
+        "*-female-smilodon-fatalis": 0.09,
+        "*-male-smilodon-fatalis": 0.1,
+        "*-female-smilodon-populator": 0.105,
+        "*-male-smilodon-populator": 0.12,
+        "*-female-homotherium-serum": 0.0975,
+        "*-male-homotherium-serum": 0.105
+      },
+      "animationSpeed": 2,
+      "seekingRange": 20,
+      "leapAtTarget": true,
+      "leapSpeedFactor": 2,
+      "leapHeightMul": 0.5,
+      "stopOnHurt": false,
+      "whenSwimming": false,
+      "tagsAppliedToEntity": [
+        "threatening",
+        "state-moving"
+      ]
     },
     "side": "server"
   },
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "machairodontinae:entities/animal/mammal/machairodontinae-adult.json",
+    "value": {
+      "code": "meleeattack",
+      "priority": 7.6,
+      "priorityForCancel": 8.0,
+      "animation": "Attack",
+      "slot": 1,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "animationSpeed": 3,
+      "damageByType": {
+        "*-female-smilodon-fatalis": 20,
+        "*-male-smilodon-fatalis": 24,
+        "*-female-smilodon-populator": 24,
+        "*-male-smilodon-populator": 28,
+        "*-female-homotherium-serum": 20,
+        "*-male-homotherium-serum": 24
+      },
+      "damageType": "SlashingAttack",
+      "minDist": 3,
+      "damageTier": 2,
+      "MinCooldownMs": 500,
+      "MaxCooldownMs": 500,
+      "attackDurationMs": 600,
+      "damageWindowMs": [
+        100,
+        600
+      ],
+      "alarmHerd": true,
+      "soundByType": {
+        "*": "machairodontinae:creature/machairodontinae/populatorattack"
+      },
+      "stopOnHurt": true,
+      "tagsAppliedToEntity": [
+        "threatening"
+      ]
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "machairodontinae:entities/animal/mammal/machairodontinae-baby.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*": 0.033
+      },
+      "animationSpeed": 2.2
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "machairodontinae:entities/animal/mammal/machairodontinae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*": 0.033
+      },
+      "animationSpeed": 2.2
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "machairodontinae:entities/animal/mammal/machairodontinae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*": 0.033
+      },
+      "animationSpeed": 2.2
     },
     "side": "server"
   }
