@@ -1,19 +1,145 @@
 [
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/9/aitasks/-",
     "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-adult.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Walk",
+      "movespeedByType": {
+        "meiolaniidae-adult-*": 0.005
+      },
+      "animationSpeedByType": {
+        "meiolaniidae-adult-male-ninjemysoweni": 1,
+        "meiolaniidae-adult-female-ninjemysoweni": 1.1
+      }
     },
     "side": "server"
   },
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Walk",
+      "movespeedByType": {
+        "meiolaniidae-adult-*": 0.005
+      },
+      "animationSpeedByType": {
+        "meiolaniidae-adult-male-ninjemysoweni": 1,
+        "meiolaniidae-adult-female-ninjemysoweni": 1.1
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Walk",
+      "movespeedByType": {
+        "meiolaniidae-adult-*": 0.005
+      },
+      "animationSpeedByType": {
+        "meiolaniidae-adult-male-ninjemysoweni": 1,
+        "meiolaniidae-adult-female-ninjemysoweni": 1.1
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/9/aitasks/-",
     "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-baby.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Walk",
+      "movespeedByType": {
+        "meiolaniidae-baby-*-ninjemysoweni": 0.0025
+      },
+      "animationSpeedByType": {
+        "meiolaniidae-baby-*-ninjemysoweni": 2,
+        "*": 2
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Walk",
+      "movespeedByType": {
+        "meiolaniidae-baby-*-ninjemysoweni": 0.0025
+      },
+      "animationSpeedByType": {
+        "meiolaniidae-baby-*-ninjemysoweni": 2,
+        "*": 2
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Walk",
+      "movespeedByType": {
+        "meiolaniidae-baby-*-ninjemysoweni": 0.0025
+      },
+      "animationSpeedByType": {
+        "meiolaniidae-baby-*-ninjemysoweni": 2,
+        "*": 2
+      }
     },
     "side": "server"
   }
