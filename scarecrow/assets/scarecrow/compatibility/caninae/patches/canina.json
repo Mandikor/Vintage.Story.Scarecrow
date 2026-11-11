@@ -1,19 +1,246 @@
 [
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "caninae:entities/animal/mammal/canina-adult.json",
     "value": {
+      "code": "seekentity",
+      "priority": 7.2,
+      "priorityForCancel": 8.0,
+      "animation": "Gallop",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "maxFollowTime": 60,
+      "movespeedByType": {
+        "*-female-aenocyon-dirus": 0.128,
+        "*-male-aenocyon-dirus": 0.144,
+        "*-female-canis-aureus": 0.06,
+        "*-male-canis-aureus": 0.064,
+        "*-female-canis-familiaris": 0.12,
+        "*-male-canis-familiaris": 0.132,
+        "*-female-canis-latrans": 0.076,
+        "*-male-canis-latrans": 0.08,
+        "*-female-canis-lupastor": 0.048,
+        "*-male-canis-lupastor": 0.052,
+        "*-female-canis-lupus": 0.128,
+        "*-male-canis-lupus": 0.144,
+        "*-female-canis-lupusarctos": 0.124,
+        "*-male-canis-lupusarctos": 0.13,
+        "*-female-canis-lupusdingo": 0.076,
+        "*-male-canis-lupusdingo": 0.084,
+        "*-female-canis-lycaon": 0.11,
+        "*-male-canis-lycaon": 0.116,
+        "*-female-canis-rufus": 0.09,
+        "*-male-canis-rufus": 0.096,
+        "*-female-canis-simensis": 0.076,
+        "*-male-canis-simensis": 0.084,
+        "*-female-cuon-alpinus": 0.06,
+        "*-male-cuon-alpinus": 0.064,
+        "*-female-cynotherium-sardous": 0.048,
+        "*-male-cynotherium-sardous": 0.056,
+        "*-female-lupulella-adusta": 0.052,
+        "*-male-lupulella-adusta": 0.06,
+        "*-female-lupulella-mesomelas": 0.052,
+        "*-male-lupulella-mesomelas": 0.06,
+        "*-female-lycaon-pictus": 0.104,
+        "*-male-lycaon-pictus": 0.112
+      },
+      "animationSpeed": 2,
+      "seekingRange": 20,
+      "leapAtTarget": false,
+      "stopOnHurt": false,
+      "whenSwimming": false,
+      "tagsAppliedToEntity": [
+        "threatening",
+        "state-moving"
+      ]
     },
     "side": "server"
   },
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "caninae:entities/animal/mammal/canina-adult.json",
+    "value": {
+      "code": "meleeattack",
+      "priority": 7.6,
+      "priorityForCancel": 8.0,
+      "animation": "Attack",
+      "slot": 1,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "animationSpeed": 2,
+      "damageByType": {
+        "*-aenocyon-dirus": 7,
+        "*-canis-aureus": 3,
+        "*-canis-familiaris": 6,
+        "*-canis-latrans": 4,
+        "*-canis-lupastor": 3,
+        "*-canis-lupus": 6,
+        "*-canis-lupusarctos": 7,
+        "*-canis-lupusdingo": 4,
+        "*-female-canis-lycaon": 4,
+        "*-male-canis-lycaon": 5,
+        "*-female-canis-rufus": 4,
+        "*-male-canis-rufus": 5,
+        "*-canis-simensis": 4,
+        "*-cuon-alpinus": 4,
+        "*-cynotherium-sardous": 4,
+        "*-lupulella-adusta": 4,
+        "*-lupulella-mesomelas": 4,
+        "*-lycaon-pictus": 5
+      },
+      "damageType": "PiercingAttack",
+      "minDistByType": {
+        "*-dirus": 1.1,
+        "*-aureus": 0.8,
+        "*-familiaris": 1.1,
+        "*-lupastor": 0.65,
+        "*-lupus": 1.1,
+        "*-lupusdingo": 0.9,
+        "*-rufus": 0.9,
+        "*-simensis": 0.85,
+        "*-alpinus": 0.8,
+        "*-sardous": 0.75,
+        "*-adusta": 0.7,
+        "*-mesomelas": 0.7,
+        "*": 1
+      },
+      "damageTierByType": {
+        "*-aenocyon-dirus": 2,
+        "*-canis-lupusarctos": 2,
+        "*": 1
+      },
+      "MinCooldownMs": 500,
+      "MaxCooldownMs": 500,
+      "attackDurationMs": 800,
+      "damagePlayerAtMs": 250,
+      "alarmHerd": true,
+      "soundByType": {
+        "*-canis-latrans": "caninae:creature/canis/latrans-attack",
+        "*-lycaon-pictus": "caninae:creature/lycaon/pictus-idle",
+        "*": "game:creature/wolf/attack"
+      },
+      "stopOnHurt": true,
+      "tagsAppliedToEntity": [
+        "threatening"
+      ]
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "caninae:entities/animal/mammal/canina-baby.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Gallop",
+      "movespeedByType": {
+        "*-aenocyon-dirus": 0.03,
+        "*-canis-aureus": 0.015,
+        "*-canis-familiaris": 0.03,
+        "*-canis-latrans": 0.018,
+        "*-canis-lupastor": 0.015,
+        "*-canis-lupus": 0.032,
+        "*-canis-lupusarctos": 0.032,
+        "*-canis-lupusdingo": 0.018,
+        "*-canis-lycaon": 0.03,
+        "*-canis-rufus": 0.02,
+        "*-canis-simensis": 0.02,
+        "*-cuon-alpinus": 0.015,
+        "*-cynotherium-sardous": 0.015,
+        "*-lupulella-adusta": 0.015,
+        "*-lupulella-mesomelas": 0.015,
+        "*-lycaon-pictus": 0.024
+      },
+      "animationSpeed": 2
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "caninae:entities/animal/mammal/canina-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Gallop",
+      "movespeedByType": {
+        "*-aenocyon-dirus": 0.03,
+        "*-canis-aureus": 0.015,
+        "*-canis-familiaris": 0.03,
+        "*-canis-latrans": 0.018,
+        "*-canis-lupastor": 0.015,
+        "*-canis-lupus": 0.032,
+        "*-canis-lupusarctos": 0.032,
+        "*-canis-lupusdingo": 0.018,
+        "*-canis-lycaon": 0.03,
+        "*-canis-rufus": 0.02,
+        "*-canis-simensis": 0.02,
+        "*-cuon-alpinus": 0.015,
+        "*-cynotherium-sardous": 0.015,
+        "*-lupulella-adusta": 0.015,
+        "*-lupulella-mesomelas": 0.015,
+        "*-lycaon-pictus": 0.024
+      },
+      "animationSpeed": 2
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "caninae:entities/animal/mammal/canina-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Gallop",
+      "movespeedByType": {
+        "*-aenocyon-dirus": 0.03,
+        "*-canis-aureus": 0.015,
+        "*-canis-familiaris": 0.03,
+        "*-canis-latrans": 0.018,
+        "*-canis-lupastor": 0.015,
+        "*-canis-lupus": 0.032,
+        "*-canis-lupusarctos": 0.032,
+        "*-canis-lupusdingo": 0.018,
+        "*-canis-lycaon": 0.03,
+        "*-canis-rufus": 0.02,
+        "*-canis-simensis": 0.02,
+        "*-cuon-alpinus": 0.015,
+        "*-cynotherium-sardous": 0.015,
+        "*-lupulella-adusta": 0.015,
+        "*-lupulella-mesomelas": 0.015,
+        "*-lycaon-pictus": 0.024
+      },
+      "animationSpeed": 2
     },
     "side": "server"
   }

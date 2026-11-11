@@ -1,19 +1,139 @@
 [
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "caninae:entities/animal/mammal/urocyonini-adult.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Gallop",
+      "movespeedByType": {
+        "*-female-urocyon-cinereoargenteus": 0.104,
+        "*-male-urocyon-cinereoargenteus": 0.112,
+        "*-female-urocyon-littoralis": 0.082,
+        "*-male-urocyon-littoralis": 0.088
+      },
+      "animationSpeed": 4
     },
     "side": "server"
   },
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "caninae:entities/animal/mammal/urocyonini-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Gallop",
+      "movespeedByType": {
+        "*-female-urocyon-cinereoargenteus": 0.104,
+        "*-male-urocyon-cinereoargenteus": 0.112,
+        "*-female-urocyon-littoralis": 0.082,
+        "*-male-urocyon-littoralis": 0.088
+      },
+      "animationSpeed": 4
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "caninae:entities/animal/mammal/urocyonini-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Gallop",
+      "movespeedByType": {
+        "*-female-urocyon-cinereoargenteus": 0.104,
+        "*-male-urocyon-cinereoargenteus": 0.112,
+        "*-female-urocyon-littoralis": 0.082,
+        "*-male-urocyon-littoralis": 0.088
+      },
+      "animationSpeed": 4
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "caninae:entities/animal/mammal/urocyonini-baby.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Gallop",
+      "movespeedByType": {
+        "*-urocyon-cinereoargenteus": 0.024,
+        "*-urocyon-littoralis": 0.02
+      },
+      "animationSpeed": 4
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "caninae:entities/animal/mammal/urocyonini-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Gallop",
+      "movespeedByType": {
+        "*-urocyon-cinereoargenteus": 0.024,
+        "*-urocyon-littoralis": 0.02
+      },
+      "animationSpeed": 4
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "caninae:entities/animal/mammal/urocyonini-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Gallop",
+      "movespeedByType": {
+        "*-urocyon-cinereoargenteus": 0.024,
+        "*-urocyon-littoralis": 0.02
+      },
+      "animationSpeed": 4
     },
     "side": "server"
   }
