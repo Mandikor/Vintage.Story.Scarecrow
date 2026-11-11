@@ -28,7 +28,7 @@
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.02,
-      "seekingRange": 8,
+      "seekingRange": 12,
       "animationSpeed": 2,
       "sound": "creature/hooved/generic/sniff*",
       "whenNotInEmotionState": "aggressiveondamage"
@@ -46,7 +46,7 @@
       "entityCodes": [ "strawdummy" ],
       "priority": 1.6,
       "movespeed": 0.02,
-      "seekingRange": 4,
+      "seekingRange": 8,
       "animationSpeed": 2,
       "sound": "creature/hooved/generic/sniff*",
       "whenNotInEmotionState": "aggressiveondamage"
@@ -82,7 +82,7 @@
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.05,
-      "seekingRange": 8,
+      "seekingRange": 12,
       "animationSpeed": 1.8,
       "sound": "creature/hooved/generic/sniff*",
       "whenNotInEmotionState": "aggressiveondamage"
@@ -100,7 +100,7 @@
       "entityCodes": [ "strawdummy" ],
       "priority": 1.6,
       "movespeed": 0.05,
-      "seekingRange": 4,
+      "seekingRange": 8,
       "animationSpeed": 1.8,
       "sound": "creature/hooved/generic/sniff*",
       "whenNotInEmotionState": "aggressiveondamage"

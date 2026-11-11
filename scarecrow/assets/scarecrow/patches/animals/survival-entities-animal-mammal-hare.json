@@ -25,7 +25,7 @@
       "priority": 1.6,
       "movespeed": 0.04,
       "animationSpeed": 1.8,
-      "seekingRange": 8,
+      "seekingRange": 12,
       "instafleeOnDamageChance": 1,
       "animation": "Run"
     },
@@ -41,7 +41,7 @@
       "priority": 1.6,
       "movespeed": 0.04,
       "animationSpeed": 1.8,
-      "seekingRange": 4,
+      "seekingRange": 8,
       "instafleeOnDamageChance": 1,
       "animation": "Run"
     },
@@ -72,7 +72,7 @@
       "entityCodes": [ "little-scarecrow" ],
       "priority": 2.1,
       "movespeed": 0.06,
-      "seekingRange": 8,
+      "seekingRange": 12,
       "instafleeOnDamageChance": 1,
       "animation": "Run",
       "animationSpeed": 2
@@ -88,7 +88,7 @@
       "entityCodes": [ "strawdummy" ],
       "priority": 2.1,
       "movespeed": 0.06,
-      "seekingRange": 4,
+      "seekingRange": 8,
       "instafleeOnDamageChance": 1,
       "animation": "Run",
       "animationSpeed": 2

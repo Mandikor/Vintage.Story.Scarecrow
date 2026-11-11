@@ -38,7 +38,7 @@
         "deer-pampas-*": 0.05,
         "*": 0.06
       },
-      "seekingRange": 8,
+      "seekingRange": 12,
       "animationSpeed": 2,
       "instafleeOnDamageChance": 1,
       "sound": "creature/hooved/generic/call*"
@@ -61,7 +61,7 @@
         "deer-pampas-*": 0.05,
         "*": 0.06
       },
-      "seekingRange": 4,
+      "seekingRange": 8,
       "animationSpeed": 2,
       "instafleeOnDamageChance": 1,
       "sound": "creature/hooved/generic/call*"
@@ -107,7 +107,7 @@
         "deer-pampas-*": 0.06,
         "*": 0.08
       },
-      "seekingRange": 8,
+      "seekingRange": 12,
       "animationSpeed": 2,
       "instafleeOnDamageChance": 1,
       "sound": "creature/hooved/generic/call*"
@@ -130,7 +130,7 @@
         "deer-pampas-*": 0.06,
         "*": 0.08
       },
-      "seekingRange": 4,
+      "seekingRange": 8,
       "animationSpeed": 2,
       "instafleeOnDamageChance": 1,
       "sound": "creature/hooved/generic/call*"

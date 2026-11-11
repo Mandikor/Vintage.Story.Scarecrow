@@ -26,7 +26,7 @@
       "priority": 1.6,
       "movespeed": 0.02,
       "animationSpeed": 2.2,
-      "seekingRange": 8,
+      "seekingRange": 12,
       "animation": "Run"
     },
     "side": "server"
@@ -42,7 +42,7 @@
       "priority": 1.6,
       "movespeed": 0.02,
       "animationSpeed": 2.2,
-      "seekingRange": 4,
+      "seekingRange": 8,
       "animation": "Run"
     },
     "side": "server"
@@ -72,7 +72,7 @@
       "priority": 2.1,
       "movespeed": 0.035,
       "animationSpeed": 3.5,
-      "seekingRange": 8,
+      "seekingRange": 12,
       "animation": "Run"
     },
     "side": "server"
@@ -87,7 +87,7 @@
       "priority": 2.1,
       "movespeed": 0.035,
       "animationSpeed": 3.5,
-      "seekingRange": 4,
+      "seekingRange": 8,
       "animation": "Run"
     },
     "side": "server"

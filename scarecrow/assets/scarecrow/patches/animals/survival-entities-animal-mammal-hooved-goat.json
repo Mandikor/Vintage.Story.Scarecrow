@@ -35,12 +35,12 @@
       "priority": 1.6,
       "movespeed": 0.04,
       "seekingRangeByType": {
-        "goat-ibexnub-*": 10,
-        "goat-muskox-*": 10,
-        "goat-nubian-*": 10,
-        "goat-sirohi-*": 10,
-        "goat-valais-*": 10,
-        "*": 8
+        "goat-ibexnub-*": 14,
+        "goat-muskox-*": 14,
+        "goat-nubian-*": 14,
+        "goat-sirohi-*": 14,
+        "goat-valais-*": 14,
+        "*": 12
       },
       "animationSpeed": 2,
       "sound": "creature/goat/bleatweird"
@@ -59,12 +59,12 @@
       "priority": 1.6,
       "movespeed": 0.04,
       "seekingRangeByType": {
-        "goat-ibexnub-*": 6,
-        "goat-muskox-*": 6,
-        "goat-nubian-*": 6,
-        "goat-sirohi-*": 6,
-        "goat-valais-*": 6,
-        "*": 4
+        "goat-ibexnub-*": 10,
+        "goat-muskox-*": 10,
+        "goat-nubian-*": 10,
+        "goat-sirohi-*": 10,
+        "goat-valais-*": 10,
+        "*": 8
       },
       "animationSpeed": 2,
       "sound": "creature/goat/bleatweird"
@@ -119,12 +119,12 @@
         "*": 0.06
       },
       "seekingRangeByType": {
-        "goat-ibexnub-*": 10,
-        "goat-muskox-*": 10,
-        "goat-nubian-*": 10,
-        "goat-sirohi-*": 10,
-        "goat-valais-*": 10,
-        "*": 8
+        "goat-ibexnub-*": 14,
+        "goat-muskox-*": 14,
+        "goat-nubian-*": 14,
+        "goat-sirohi-*": 14,
+        "goat-valais-*": 14,
+        "*": 12
       },
       "animationSpeed": 2,
       "soundByType": {
@@ -151,12 +151,12 @@
         "*": 0.06
       },
       "seekingRangeByType": {
-        "goat-ibexnub-*": 6,
-        "goat-muskox-*": 6,
-        "goat-nubian-*": 6,
-        "goat-sirohi-*": 6,
-        "goat-valais-*": 6,
-        "*": 4
+        "goat-ibexnub-*": 10,
+        "goat-muskox-*": 10,
+        "goat-nubian-*": 10,
+        "goat-sirohi-*": 10,
+        "goat-valais-*": 10,
+        "*": 8
       },
       "animationSpeed": 2,
       "soundByType": {

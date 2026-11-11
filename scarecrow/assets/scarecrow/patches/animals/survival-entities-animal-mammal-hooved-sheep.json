@@ -26,7 +26,7 @@
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.025,
-      "seekingRange": 8,
+      "seekingRange": 12,
       "animationSpeed": 1.2,
       "animation": "Run",
       "sound": "creature/sheep/lamb-hurt2"
@@ -43,7 +43,7 @@
       "entityCodes": [ "strawdummy" ],
       "priority": 1.6,
       "movespeed": 0.025,
-      "seekingRange": 4,
+      "seekingRange": 8,
       "animationSpeed": 1.2,
       "animation": "Run",
       "sound": "creature/sheep/lamb-hurt2"
@@ -75,7 +75,7 @@
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.052,
-      "seekingRange": 8,
+      "seekingRange": 12,
       "animation": "Run",
       "animationSpeed": 1.2,
       "sound": "creature/sheep/hurt2"
@@ -91,7 +91,7 @@
       "entityCodes": [ "strawdummy" ],
       "priority": 1.6,
       "movespeed": 0.052,
-      "seekingRange": 4,
+      "seekingRange": 8,
       "animation": "Run",
       "animationSpeed": 1.2,
       "sound": "creature/sheep/hurt2"
