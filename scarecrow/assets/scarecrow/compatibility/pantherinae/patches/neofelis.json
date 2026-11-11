@@ -1,19 +1,137 @@
 [
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "pantherinae:entities/animal/mammal/pantherinae-neofelis-adult.json",
     "value": {
+      "code": "seekentity",
+      "priority": 7.2,
+      "priorityForCancel": 8.0,
+      "animation": "Run",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "maxFollowTime": 60,
+      "movespeedByType": {
+        "*-female-diardi-*": 0.04,
+        "*-male-diardi-*": 0.045,
+        "*-female-nebulosa-*": 0.04,
+        "*-male-nebulosa-*": 0.045,
+        "*": 0.005
+      },
+      "animationSpeed": 1.9,
+      "seekingRange": 20,
+      "leapAtTarget": true,
+      "stopOnHurt": false,
+      "whenSwimming": false,
+      "tagsAppliedToEntity": [
+        "threatening",
+        "state-moving"
+      ],
+      "leapHeightMul": 0.5
     },
     "side": "server"
   },
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "pantherinae:entities/animal/mammal/pantherinae-neofelis-adult.json",
+    "value": {
+      "code": "meleeattack",
+      "priority": 7.6,
+      "priorityForCancel": 8.0,
+      "animation": "Attack",
+      "slot": 1,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "animationSpeed": 3,
+      "damageByType": {
+        "*-diardi-*": 8,
+        "*-nebulosa-*": 8,
+        "*": 4
+      },
+      "damageType": "SlashingAttack",
+      "minDist": 1.5,
+      "MinCooldownMs": 500,
+      "MaxCooldownMs": 500,
+      "attackDurationMs": 600,
+      "stopOnHurt": true,
+      "tagsAppliedToEntity": [
+        "threatening"
+      ],
+      "damageTier": 1,
+      "damagePlayerAtMs": 550,
+      "sound": "pantherinae:creature/pantherinae/neofelisattack"
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "pantherinae:entities/animal/mammal/pantherinae-neofelis-baby.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*": 0.0176
+      },
+      "animationSpeed": 2.2
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "pantherinae:entities/animal/mammal/pantherinae-neofelis-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*": 0.0176
+      },
+      "animationSpeed": 2.2
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "pantherinae:entities/animal/mammal/pantherinae-neofelis-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*": 0.0176
+      },
+      "animationSpeed": 2.2
     },
     "side": "server"
   }

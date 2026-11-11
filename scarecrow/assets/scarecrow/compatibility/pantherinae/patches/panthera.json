@@ -1,19 +1,185 @@
 [
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "pantherinae:entities/animal/mammal/pantherinae-panthera-adult.json",
     "value": {
+      "code": "seekentity",
+      "priority": 7.2,
+      "priorityForCancel": 8.0,
+      "animation": "Run",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "maxFollowTime": 60,
+      "movespeedByType": {
+        "*-female-atrox-*": 0.085,
+        "*-male-atrox-*": 0.09,
+        "*-female-leo-*": 0.07,
+        "*-male-leo-*": 0.075,
+        "*-female-onca-*": 0.061,
+        "*-male-onca-*": 0.065,
+        "*-female-pardus-*": 0.049,
+        "*-male-pardus-*": 0.05,
+        "*-female-spelaea-*": 0.076,
+        "*-male-spelaea-*": 0.081,
+        "*-female-tigris-*": 0.09,
+        "*-male-tigris-*": 0.095,
+        "*-female-uncia-*": 0.04,
+        "*-male-uncia-*": 0.04,
+        "*": 0.005
+      },
+      "animationSpeed": 1.9,
+      "seekingRange": 20,
+      "leapAtTarget": true,
+      "stopOnHurt": false,
+      "whenSwimming": false,
+      "tagsAppliedToEntity": [
+        "threatening",
+        "state-moving"
+      ]
     },
     "side": "server"
   },
   {
-    "enabled": false,
-    "op": "addmerge",
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "pantherinae:entities/animal/mammal/pantherinae-panthera-adult.json",
+    "value": {
+      "code": "meleeattack",
+      "priority": 7.6,
+      "priorityForCancel": 8.0,
+      "animation": "Attack",
+      "slot": 1,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "animationSpeed": 3,
+      "damageByType": {
+        "*-female-atrox-*": 18,
+        "*-male-atrox-*": 22,
+        "*-female-leo-*": 16,
+        "*-male-leo-*": 18,
+        "*-female-onca-*": 12,
+        "*-male-onca-*": 14,
+        "*-female-pardus-*": 10,
+        "*-male-pardus-*": 10,
+        "*-female-spelaea-*": 16,
+        "*-male-spelaea-*": 20,
+        "*-female-tigris-*": 16,
+        "*-male-tigris-*": 18,
+        "*-female-uncia-*": 10,
+        "*-male-uncia-*": 10,
+        "*": 4
+      },
+      "damageType": "SlashingAttack",
+      "minDist": 3,
+      "MinCooldownMs": 500,
+      "MaxCooldownMs": 500,
+      "attackDurationMs": 600,
+      "stopOnHurt": true,
+      "tagsAppliedToEntity": [
+        "threatening"
+      ],
+      "damagePlayerAtMs": 550,
+      "soundByType": {
+        "*-atrox-*": "pantherinae:creature/pantherinae/atroxattack",
+        "*-leo-*": "pantherinae:creature/pantherinae/leoattack",
+        "*-onca-*": "pantherinae:creature/pantherinae/oncaattack",
+        "*-pardus-*": "pantherinae:creature/pantherinae/pardusattack",
+        "*-spelaea-*": "pantherinae:creature/pantherinae/spelaeaattack",
+        "*-tigris-*": "pantherinae:creature/pantherinae/tigrisattack"
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "pantherinae:entities/animal/mammal/pantherinae-panthera-baby.json",
     "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-atrox-*": 0.033,
+        "*-leo-*": 0.033,
+        "*-onca-*": 0.0222,
+        "*-pardus-*": 0.0222,
+        "*-spelaea-*": 0.033,
+        "*-tigris-*": 0.033,
+        "*-uncia-*": 0.022,
+        "*": 0.033
+      },
+      "animationSpeed": 2.2
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "pantherinae:entities/animal/mammal/pantherinae-panthera-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 5.5,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-atrox-*": 0.033,
+        "*-leo-*": 0.033,
+        "*-onca-*": 0.0222,
+        "*-pardus-*": 0.0222,
+        "*-spelaea-*": 0.033,
+        "*-tigris-*": 0.033,
+        "*-uncia-*": 0.022,
+        "*": 0.033
+      },
+      "animationSpeed": 2.2
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "pantherinae:entities/animal/mammal/pantherinae-panthera-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 5.5,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "movespeedByType": {
+        "*-atrox-*": 0.033,
+        "*-leo-*": 0.033,
+        "*-onca-*": 0.0222,
+        "*-pardus-*": 0.0222,
+        "*-spelaea-*": 0.033,
+        "*-tigris-*": 0.033,
+        "*-uncia-*": 0.022,
+        "*": 0.033
+      },
+      "animationSpeed": 2.2
     },
     "side": "server"
   }
