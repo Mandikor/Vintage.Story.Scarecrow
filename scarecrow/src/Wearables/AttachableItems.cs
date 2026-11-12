@@ -20,6 +20,14 @@ namespace Scarecrow
     {
         public const string BehaviorCode = "ScarecrowAttachable";
 
+        // Pattern rules, as evaluated by WildcardUtil.Match:
+        //   - The domain has to match exactly, unless it is "*".
+        //   - "*" is a wildcard: "scythe-*" matches "scythe-steel", but not "scythe".
+        //   - A leading "@" turns the path into a regular expression: "@hoe-(copper|steel)".
+        //   - The pattern is compared against the resolved variant code, so every material and
+        //     colour variant matches on its own. Blocks work the same way as items.
+        //   - The first matching entry wins, so put specific patterns above general ones.
+        //   - A pattern that matches nothing is not an error, it is simply skipped.
         private static readonly (AssetLocation Pattern, string CategoryCode)[] Entries =
         {
             (new AssetLocation("game", "scythe-*"), "scythe"),
