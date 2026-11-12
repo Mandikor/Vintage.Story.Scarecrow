@@ -4,7 +4,6 @@
     "op": "addmerge",
     "path": "/attributes/attachableToEntity",
     "value": {
-      "categoryCode": "scythe",
       "attachedShapeBySlotCode": {
         "sc-leftarm": { "base": "scarecrow:item/wearable/vanilla/scythe-left" },
         "sc-rightarm": { "base": "scarecrow:item/wearable/vanilla/scythe-right" }
@@ -18,7 +17,6 @@
     "op": "addmerge",
     "path": "/attributes/attachableToEntity",
     "value": {
-      "categoryCode": "hoe",
       "texturePrefixCode": "scarecrow-hoe-{material}",
       "attachedShapeBySlotCodeByType": {
         "@hoe-(copper|tinbronze|bismuthbronze|blackbronze|gold|silver|iron|meteoriciron|steel)": {
@@ -38,7 +36,6 @@
     "op": "addmerge",
     "path": "/attributes/attachableToEntity",
     "value": {
-      "categoryCode": "bugnet",
       "attachedShapeBySlotCode": {
         "sc-leftarm": { "base": "scarecrow:item/wearable/vanilla/bugnet-left" },
         "sc-rightarm": { "base": "scarecrow:item/wearable/vanilla/bugnet-right" }
@@ -53,7 +50,6 @@
     "path": "/attributes",
     "value": {
       "attachableToEntity": {
-        "categoryCode": "snowshovel",
         "attachedShapeBySlotCode": {
           "sc-leftarm": { "base": "scarecrow:item/wearable/vanilla/snowshovel-left" },
           "sc-rightarm": { "base": "scarecrow:item/wearable/vanilla/snowshovel-right" }

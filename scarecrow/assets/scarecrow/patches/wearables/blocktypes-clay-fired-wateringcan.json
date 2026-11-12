@@ -5,7 +5,6 @@
     "path": "/attributes",
     "value": {
       "attachableToEntity": {
-        "categoryCode": "wateringcan",
         "attachedShapeBySlotCode": {
           "sc-foot": { "base": "scarecrow:item/wearable/vanilla/wateringcan" }
         },

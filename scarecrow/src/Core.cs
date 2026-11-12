@@ -16,6 +16,9 @@ namespace Scarecrow
             api.RegisterItemClass("ItemLittleScareCrow", typeof(ItemLittleScareCrow));
             api.RegisterItemClass("ItemScareCrow", typeof(ItemScareCrow));
 
+            // Needed on both sides: the item type packet recreates the behavior by this name.
+            api.RegisterCollectibleBehaviorClass(AttachableItems.BehaviorCode, typeof(ScarecrowAttachableBehavior));
+
             api.RegisterEntity("EntityScarecrow", typeof(EntityScarecrow));
         }
 
@@ -45,6 +48,7 @@ namespace Scarecrow
             api.World.Logger.Event("########## started '{0}' mod ##########", Mod.Info.Name);
 
             LeafLitterRakeAttachable.Apply(api);
+            AttachableItems.Apply(api);
         }
     }
 }

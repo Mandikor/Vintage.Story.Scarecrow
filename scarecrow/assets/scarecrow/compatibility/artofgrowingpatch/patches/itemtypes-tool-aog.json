@@ -4,7 +4,6 @@
     "op": "addmerge",
     "path": "/attributes/attachableToEntity",
     "value": {
-      "categoryCode": "hayfork",
       "texturePrefixCode": "scarecrow-hayfork-{material}",
       "attachedShapeBySlotCodeByType": {
         "hayfork-wooden": {
