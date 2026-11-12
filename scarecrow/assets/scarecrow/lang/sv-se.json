@@ -1,0 +1,49 @@
+{
+	// Swedish translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Fågelskrämma",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Placera de valda verktygen på vänster arm",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Placera de valda verktygen på höger arm",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Häng en lykta runt halsen",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Placera en vattenkanna vid fötterna",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Fågelskrämma",
+	"scarecrow:itemdesc-scarecrow": "\n\nDen skrämmer bort oönskade gäster från din trädgård. Harar, tvättbjörnar och några andra djur är rädda för fågelskrämmor och närmar sig bara upp till 16 block.\n\n<font color=\"#99c9f9\"><i>Den ser förskräcklig ut, men pumpan är utsökt.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "En fågelskrämma som står på marken kan plockas upp med <hk>ctrl</hk> + <hk>rightmouse</hk> och en tom högerhand.",
+
+	"scarecrow:item-creature-scarecrow": "Fågelskrämma",
+	"scarecrow:item-dead-creature-scarecrow": "Förstörd fågelskrämma",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Liten fågelskrämma",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nDen skrämmer bort oönskade gäster från din trädgård. Harar, tvättbjörnar och några andra djur är rädda för små fågelskrämmor och närmar sig bara upp till 12 block.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "En liten fågelskrämma som står på marken kan plockas upp med <hk>ctrl</hk> + <hk>rightmouse</hk> och en tom högerhand.",
+
+	"scarecrow:item-creature-little-scarecrow": "Liten fågelskrämma",
+	"scarecrow:item-dead-creature-little-scarecrow": "Förstörd liten fågelskrämma",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "En halmdocka som står på marken kan plockas upp med <hk>ctrl</hk> + <hk>rightmouse</hk> och en tom högerhand.",
+	"game:item-dead-creature-strawdummy": "Förstörd halmdocka",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Placera den lilla fågelskrämman på marken",
+	"scarecrow:heldhelp-place-sc": "Placera fågelskrämman på marken",
+	"scarecrow:heldhelp-place-sd": "Placera halmdockan på marken",
+
+	"scarecrow:hotkey-showradius": "Visa fågelskrämmans radie",
+	"scarecrow:radius-none": "Ingen fågelskrämma inom 64 block",
+
+	"scarecrow:entityhelp-pickup": "Plocka upp"
+
+}

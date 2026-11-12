@@ -1,0 +1,49 @@
+{
+	// Esperanto translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Birdotimigilo",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Meti la elektitajn ilojn sur la maldekstran brakon",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Meti la elektitajn ilojn sur la dekstran brakon",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Pendigi lanternon sur la kolon",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Meti akvumilon ĉe la piedoj",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Birdotimigilo",
+	"scarecrow:itemdesc-scarecrow": "\n\nĜi forpelas nedeziratajn gastojn el via ĝardeno. Leporoj, lavursoj kaj kelkaj aliaj bestoj timas birdotimigilojn kaj alproksimiĝas nur ĝis 16 blokoj.\n\n<font color=\"#99c9f9\"><i>Ĝi aspektas terure, sed la kukurbo estas bongusta.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "Birdotimigilon starantan sur la tero eblas preni per <hk>ctrl</hk> + <hk>rightmouse</hk> kaj malplena dekstra mano.",
+
+	"scarecrow:item-creature-scarecrow": "Birdotimigilo",
+	"scarecrow:item-dead-creature-scarecrow": "Detruita birdotimigilo",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Malgranda birdotimigilo",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nĜi forpelas nedeziratajn gastojn el via ĝardeno. Leporoj, lavursoj kaj kelkaj aliaj bestoj timas malgrandajn birdotimigilojn kaj alproksimiĝas nur ĝis 12 blokoj.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Malgrandan birdotimigilon starantan sur la tero eblas preni per <hk>ctrl</hk> + <hk>rightmouse</hk> kaj malplena dekstra mano.",
+
+	"scarecrow:item-creature-little-scarecrow": "Malgranda birdotimigilo",
+	"scarecrow:item-dead-creature-little-scarecrow": "Detruita malgranda birdotimigilo",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "Pajlopupon starantan sur la tero eblas preni per <hk>ctrl</hk> + <hk>rightmouse</hk> kaj malplena dekstra mano.",
+	"game:item-dead-creature-strawdummy": "Detruita pajlopupo",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Meti la malgrandan birdotimigilon sur la teron",
+	"scarecrow:heldhelp-place-sc": "Meti la birdotimigilon sur la teron",
+	"scarecrow:heldhelp-place-sd": "Meti la pajlopupon sur la teron",
+
+	"scarecrow:hotkey-showradius": "Montri la radiuson de la birdotimigilo",
+	"scarecrow:radius-none": "Neniu birdotimigilo ene de 64 blokoj",
+
+	"scarecrow:entityhelp-pickup": "Preni"
+
+}

@@ -1,0 +1,49 @@
+{
+	// Brazilian Portuguese translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Espantalho",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Colocar as ferramentas selecionadas no braço esquerdo",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Colocar as ferramentas selecionadas no braço direito",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Pendurar uma lanterna no pescoço",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Colocar um regador aos pés",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Espantalho",
+	"scarecrow:itemdesc-scarecrow": "\n\nAfugenta os visitantes indesejados do seu jardim. Lebres, guaxinins e alguns outros animais têm medo de espantalhos e se aproximam até 16 blocos.\n\n<font color=\"#99c9f9\"><i>Ele parece terrível, mas a abóbora é deliciosa.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "Um espantalho em pé no chão pode ser pego com <hk>ctrl</hk> + <hk>rightmouse</hk> e a mão direita vazia.",
+
+	"scarecrow:item-creature-scarecrow": "Espantalho",
+	"scarecrow:item-dead-creature-scarecrow": "Espantalho destruído",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Espantalho pequeno",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nAfugenta os visitantes indesejados do seu jardim. Lebres, guaxinins e alguns outros animais têm medo de espantalhos pequenos e se aproximam até 12 blocos.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Um espantalho pequeno em pé no chão pode ser pego com <hk>ctrl</hk> + <hk>rightmouse</hk> e a mão direita vazia.",
+
+	"scarecrow:item-creature-little-scarecrow": "Espantalho pequeno",
+	"scarecrow:item-dead-creature-little-scarecrow": "Espantalho pequeno destruído",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "Um boneco de palha em pé no chão pode ser pego com <hk>ctrl</hk> + <hk>rightmouse</hk> e a mão direita vazia.",
+	"game:item-dead-creature-strawdummy": "Boneco de palha destruído",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Colocar o espantalho pequeno no chão",
+	"scarecrow:heldhelp-place-sc": "Colocar o espantalho no chão",
+	"scarecrow:heldhelp-place-sd": "Colocar o boneco de palha no chão",
+
+	"scarecrow:hotkey-showradius": "Mostrar o raio do espantalho",
+	"scarecrow:radius-none": "Nenhum espantalho num raio de 64 blocos",
+
+	"scarecrow:entityhelp-pickup": "Pegar"
+
+}

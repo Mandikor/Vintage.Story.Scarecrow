@@ -1,0 +1,49 @@
+{
+	// Turkish translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Korkuluk",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Seçili araçları sol kola yerleştir",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Seçili araçları sağ kola yerleştir",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Boyna fener as",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Ayağa sulama kabı koy",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Korkuluk",
+	"scarecrow:itemdesc-scarecrow": "\n\nBahçendeki istenmeyen misafirleri korkutur. Tavşanlar, rakunlar ve bazı diğer hayvanlar korkuluklardan korkar ve 16 bloğa kadar yaklaşır.\n\n<font color=\"#99c9f9\"><i>Korkunç görünüyor ama balkabağı lezzetli.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "Yerde duran bir korkuluk, <hk>ctrl</hk> + <hk>rightmouse</hk> tıklaması ve boş sağ el ile alınabilir.",
+
+	"scarecrow:item-creature-scarecrow": "Korkuluk",
+	"scarecrow:item-dead-creature-scarecrow": "Yıkılmış korkuluk",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Küçük korkuluk",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nBahçendeki istenmeyen misafirleri korkutur. Tavşanlar, rakunlar ve bazı diğer hayvanlar küçük korkuluklardan korkar ve 12 bloğa kadar yaklaşır.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Yerde duran küçük bir korkuluk, <hk>ctrl</hk> + <hk>rightmouse</hk> tıklaması ve boş sağ el ile alınabilir.",
+
+	"scarecrow:item-creature-little-scarecrow": "Küçük korkuluk",
+	"scarecrow:item-dead-creature-little-scarecrow": "Yıkılmış küçük korkuluk",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "Yerde duran bir talim kuklası, <hk>ctrl</hk> + <hk>rightmouse</hk> tıklaması ve boş sağ el ile alınabilir.",
+	"game:item-dead-creature-strawdummy": "Yıkılmış talim kuklası",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Küçük korkuluğu yere koy",
+	"scarecrow:heldhelp-place-sc": "Korkuluğu yere koy",
+	"scarecrow:heldhelp-place-sd": "Talim kuklasını yere koy",
+
+	"scarecrow:hotkey-showradius": "Korkuluk yarıçapını göster",
+	"scarecrow:radius-none": "64 blok içinde korkuluk yok",
+
+	"scarecrow:entityhelp-pickup": "Al"
+
+}

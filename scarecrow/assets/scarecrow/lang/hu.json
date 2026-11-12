@@ -1,0 +1,49 @@
+{
+	// Hungarian translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Madárijesztő",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "A kiválasztott eszközök elhelyezése a bal karon",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "A kiválasztott eszközök elhelyezése a jobb karon",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Lámpás akasztása a nyakra",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Öntözőkanna elhelyezése a lábnál",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Madárijesztő",
+	"scarecrow:itemdesc-scarecrow": "\n\nElűzi a kellemetlen vendégeket a kertedből. A nyulak, a mosómedvék és néhány más állat fél a madárijesztőktől, és legfeljebb 16 blokkig közelítik meg.\n\n<font color=\"#99c9f9\"><i>Szörnyen néz ki, de a sütőtök finom.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "A földön álló madárijesztő <hk>ctrl</hk> + <hk>rightmouse</hk> kattintással és üres jobb kézzel felvehető.",
+
+	"scarecrow:item-creature-scarecrow": "Madárijesztő",
+	"scarecrow:item-dead-creature-scarecrow": "Elpusztult madárijesztő",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Kis madárijesztő",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nElűzi a kellemetlen vendégeket a kertedből. A nyulak, a mosómedvék és néhány más állat fél a kis madárijesztőktől, és legfeljebb 12 blokkig közelítik meg.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "A földön álló kis madárijesztő <hk>ctrl</hk> + <hk>rightmouse</hk> kattintással és üres jobb kézzel felvehető.",
+
+	"scarecrow:item-creature-little-scarecrow": "Kis madárijesztő",
+	"scarecrow:item-dead-creature-little-scarecrow": "Elpusztult kis madárijesztő",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "A földön álló szalmabábu <hk>ctrl</hk> + <hk>rightmouse</hk> kattintással és üres jobb kézzel felvehető.",
+	"game:item-dead-creature-strawdummy": "Elpusztult szalmabábu",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Tedd a kis madárijesztőt a földre",
+	"scarecrow:heldhelp-place-sc": "Tedd a madárijesztőt a földre",
+	"scarecrow:heldhelp-place-sd": "Tedd a szalmabábut a földre",
+
+	"scarecrow:hotkey-showradius": "Madárijesztő hatósugarának megjelenítése",
+	"scarecrow:radius-none": "Nincs madárijesztő 64 blokkon belül",
+
+	"scarecrow:entityhelp-pickup": "Felvétel"
+
+}

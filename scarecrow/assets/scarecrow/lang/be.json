@@ -1,0 +1,49 @@
+{
+	// Belarusian translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Пудзіла",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Размясціць выбраныя інструменты на левай руцэ",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Размясціць выбраныя інструменты на правай руцэ",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Павесіць ліхтар на шыю",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Паставіць лейку ля ног",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Пудзіла",
+	"scarecrow:itemdesc-scarecrow": "\n\nЯно адганяе непажаданых гасцей з вашага саду. Зайцы, яноты і некаторыя іншыя жывёлы баяцца пудзіл і падыходзяць на адлегласць да 16 блокаў.\n\n<font color=\"#99c9f9\"><i>Яно выглядае жахліва, але гарбуз смачны.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "Пудзіла, якое стаіць на зямлі, можна падняць з дапамогай <hk>ctrl</hk> + <hk>rightmouse</hk> і пустой правай рукі.",
+
+	"scarecrow:item-creature-scarecrow": "Пудзіла",
+	"scarecrow:item-dead-creature-scarecrow": "Разбуранае пудзіла",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Малое пудзіла",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nЯно адганяе непажаданых гасцей з вашага саду. Зайцы, яноты і некаторыя іншыя жывёлы баяцца малых пудзіл і падыходзяць на адлегласць да 12 блокаў.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Малое пудзіла, якое стаіць на зямлі, можна падняць з дапамогай <hk>ctrl</hk> + <hk>rightmouse</hk> і пустой правай рукі.",
+
+	"scarecrow:item-creature-little-scarecrow": "Малое пудзіла",
+	"scarecrow:item-dead-creature-little-scarecrow": "Разбуранае малое пудзіла",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "Саламянае пудзіла, якое стаіць на зямлі, можна падняць з дапамогай <hk>ctrl</hk> + <hk>rightmouse</hk> і пустой правай рукі.",
+	"game:item-dead-creature-strawdummy": "Разбуранае саламянае пудзіла",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Паставіць малое пудзіла на зямлю",
+	"scarecrow:heldhelp-place-sc": "Паставіць пудзіла на зямлю",
+	"scarecrow:heldhelp-place-sd": "Паставіць саламянае пудзіла на зямлю",
+
+	"scarecrow:hotkey-showradius": "Паказаць радыус пудзіла",
+	"scarecrow:radius-none": "У радыусе 64 блокаў няма пудзіла",
+
+	"scarecrow:entityhelp-pickup": "Падняць"
+
+}

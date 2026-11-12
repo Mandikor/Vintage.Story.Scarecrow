@@ -1,0 +1,49 @@
+{
+	// Lithuanian translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Kaliausė",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Uždėti pasirinktus įrankius ant kairės rankos",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Uždėti pasirinktus įrankius ant dešinės rankos",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Pakabinti žibintą ant kaklo",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Padėti laistytuvą prie kojų",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Kaliausė",
+	"scarecrow:itemdesc-scarecrow": "\n\nJis baido nepageidaujamus svečius iš tavo sodo. Kiškiai, meškėnai ir kai kurie kiti gyvūnai bijo kaliausių ir priartėja tik iki 16 blokų.\n\n<font color=\"#99c9f9\"><i>Jis atrodo baisiai, bet moliūgas skanus.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "Ant žemės stovinčią kaliausę galima paimti paspaudus <hk>ctrl</hk> + <hk>rightmouse</hk> tuščia dešine ranka.",
+
+	"scarecrow:item-creature-scarecrow": "Kaliausė",
+	"scarecrow:item-dead-creature-scarecrow": "Sugadinta kaliausė",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Mažoji kaliausė",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nJis baido nepageidaujamus svečius iš tavo sodo. Kiškiai, meškėnai ir kai kurie kiti gyvūnai bijo mažųjų kaliausių ir priartėja tik iki 12 blokų.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Ant žemės stovinčią mažąją kaliausę galima paimti paspaudus <hk>ctrl</hk> + <hk>rightmouse</hk> tuščia dešine ranka.",
+
+	"scarecrow:item-creature-little-scarecrow": "Mažoji kaliausė",
+	"scarecrow:item-dead-creature-little-scarecrow": "Sugadinta mažoji kaliausė",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "Ant žemės stovinčią šiaudinę iškamšą galima paimti paspaudus <hk>ctrl</hk> + <hk>rightmouse</hk> tuščia dešine ranka.",
+	"game:item-dead-creature-strawdummy": "Sugadinta šiaudinė iškamša",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Padėti mažąją kaliausę ant žemės",
+	"scarecrow:heldhelp-place-sc": "Padėti kaliausę ant žemės",
+	"scarecrow:heldhelp-place-sd": "Padėti šiaudinę iškamšą ant žemės",
+
+	"scarecrow:hotkey-showradius": "Rodyti kaliausės spindulį",
+	"scarecrow:radius-none": "64 blokų atstumu nėra kaliausės",
+
+	"scarecrow:entityhelp-pickup": "Paimti"
+
+}

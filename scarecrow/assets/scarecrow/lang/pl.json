@@ -1,0 +1,49 @@
+{
+	// Polish translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Strach na wróble",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Umieść wybrane narzędzia na lewym ramieniu",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Umieść wybrane narzędzia na prawym ramieniu",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Zawieś latarnię na szyi",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Postaw konewkę u stóp",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Strach na wróble",
+	"scarecrow:itemdesc-scarecrow": "\n\nOdstrasza nieproszonych gości z twojego ogrodu. Zające, szopy i niektóre inne zwierzęta boją się strachów na wróble i zbliżają się na odległość do 16 bloków.\n\n<font color=\"#99c9f9\"><i>Wygląda okropnie, ale dynia jest pyszna.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "Stojącego na ziemi stracha na wróble można podnieść za pomocą <hk>ctrl</hk> + <hk>rightmouse</hk> i pustej prawej ręki.",
+
+	"scarecrow:item-creature-scarecrow": "Strach na wróble",
+	"scarecrow:item-dead-creature-scarecrow": "Zniszczony strach na wróble",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Mały strach na wróble",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nOdstrasza nieproszonych gości z twojego ogrodu. Zające, szopy i niektóre inne zwierzęta boją się małych strachów na wróble i zbliżają się na odległość do 12 bloków.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Stojącego na ziemi małego stracha na wróble można podnieść za pomocą <hk>ctrl</hk> + <hk>rightmouse</hk> i pustej prawej ręki.",
+
+	"scarecrow:item-creature-little-scarecrow": "Mały strach na wróble",
+	"scarecrow:item-dead-creature-little-scarecrow": "Zniszczony mały strach na wróble",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "Stojącą na ziemi słomianą kukłę można podnieść za pomocą <hk>ctrl</hk> + <hk>rightmouse</hk> i pustej prawej ręki.",
+	"game:item-dead-creature-strawdummy": "Zniszczona słomiana kukła",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Postaw małego stracha na wróble na ziemi",
+	"scarecrow:heldhelp-place-sc": "Postaw stracha na wróble na ziemi",
+	"scarecrow:heldhelp-place-sd": "Postaw słomianą kukłę na ziemi",
+
+	"scarecrow:hotkey-showradius": "Pokaż zasięg stracha na wróble",
+	"scarecrow:radius-none": "Brak stracha na wróble w promieniu 64 bloków",
+
+	"scarecrow:entityhelp-pickup": "Podnieś"
+
+}

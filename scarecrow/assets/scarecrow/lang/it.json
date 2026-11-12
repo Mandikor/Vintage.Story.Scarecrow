@@ -1,0 +1,49 @@
+{
+	// Italian translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Spaventapasseri",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Posiziona gli strumenti selezionati sul braccio sinistro",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Posiziona gli strumenti selezionati sul braccio destro",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Appendi una lanterna al collo",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Posiziona un annaffiatoio ai piedi",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Spaventapasseri",
+	"scarecrow:itemdesc-scarecrow": "\n\nAllontana gli ospiti indesiderati dal tuo giardino. Le lepri, i procioni e alcuni altri animali temono gli spaventapasseri e si avvicinano fino a 16 blocchi.\n\n<font color=\"#99c9f9\"><i>Ha un aspetto orribile, ma la zucca è deliziosa.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "Uno spaventapasseri in piedi sul terreno può essere raccolto con <hk>ctrl</hk> + <hk>rightmouse</hk> e la mano destra vuota.",
+
+	"scarecrow:item-creature-scarecrow": "Spaventapasseri",
+	"scarecrow:item-dead-creature-scarecrow": "Spaventapasseri distrutto",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Piccolo spaventapasseri",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nAllontana gli ospiti indesiderati dal tuo giardino. Le lepri, i procioni e alcuni altri animali temono i piccoli spaventapasseri e si avvicinano fino a 12 blocchi.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Un piccolo spaventapasseri in piedi sul terreno può essere raccolto con <hk>ctrl</hk> + <hk>rightmouse</hk> e la mano destra vuota.",
+
+	"scarecrow:item-creature-little-scarecrow": "Piccolo spaventapasseri",
+	"scarecrow:item-dead-creature-little-scarecrow": "Piccolo spaventapasseri distrutto",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "Uno spaventapasseri di paglia in piedi sul terreno può essere raccolto con <hk>ctrl</hk> + <hk>rightmouse</hk> e la mano destra vuota.",
+	"game:item-dead-creature-strawdummy": "Spaventapasseri di paglia distrutto",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Posiziona il piccolo spaventapasseri sul terreno",
+	"scarecrow:heldhelp-place-sc": "Posiziona lo spaventapasseri sul terreno",
+	"scarecrow:heldhelp-place-sd": "Posiziona lo spaventapasseri di paglia sul terreno",
+
+	"scarecrow:hotkey-showradius": "Mostra il raggio dello spaventapasseri",
+	"scarecrow:radius-none": "Nessuno spaventapasseri entro 64 blocchi",
+
+	"scarecrow:entityhelp-pickup": "Raccogli"
+
+}

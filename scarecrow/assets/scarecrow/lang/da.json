@@ -1,0 +1,49 @@
+{
+	// Danish translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Fugleskræmsel",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Anbring de valgte værktøjer på venstre arm",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Anbring de valgte værktøjer på højre arm",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Hæng en lygte om halsen",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Sæt en vandkande ved foden",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Fugleskræmsel",
+	"scarecrow:itemdesc-scarecrow": "\n\nDet skræmmer uvelkomne gæster væk fra din have. Harer, vaskebjørne og nogle andre dyr er bange for fugleskræmsler og nærmer sig kun op til 16 blokke.\n\n<font color=\"#99c9f9\"><i>Det ser forfærdeligt ud, men græskaret er lækkert.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "Et fugleskræmsel, der står på jorden, kan samles op med <hk>ctrl</hk> + <hk>rightmouse</hk> og en tom højre hånd.",
+
+	"scarecrow:item-creature-scarecrow": "Fugleskræmsel",
+	"scarecrow:item-dead-creature-scarecrow": "Ødelagt fugleskræmsel",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Lille fugleskræmsel",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nDet skræmmer uvelkomne gæster væk fra din have. Harer, vaskebjørne og nogle andre dyr er bange for små fugleskræmsler og nærmer sig kun op til 12 blokke.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Et lille fugleskræmsel, der står på jorden, kan samles op med <hk>ctrl</hk> + <hk>rightmouse</hk> og en tom højre hånd.",
+
+	"scarecrow:item-creature-little-scarecrow": "Lille fugleskræmsel",
+	"scarecrow:item-dead-creature-little-scarecrow": "Ødelagt lille fugleskræmsel",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "En hø-attrap, der står på jorden, kan samles op med <hk>ctrl</hk> + <hk>rightmouse</hk> og en tom højre hånd.",
+	"game:item-dead-creature-strawdummy": "Ødelagt hø-attrap",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Sæt det lille fugleskræmsel på jorden",
+	"scarecrow:heldhelp-place-sc": "Sæt fugleskræmslet på jorden",
+	"scarecrow:heldhelp-place-sd": "Sæt hø-attrappen på jorden",
+
+	"scarecrow:hotkey-showradius": "Vis fugleskræmslets radius",
+	"scarecrow:radius-none": "Ingen fugleskræmsler inden for 64 blokke",
+
+	"scarecrow:entityhelp-pickup": "Saml op"
+
+}

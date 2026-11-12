@@ -1,0 +1,49 @@
+{
+	// Norwegian translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Fugleskremsel",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Plasser de valgte verktøyene på venstre arm",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Plasser de valgte verktøyene på høyre arm",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Heng en lykt rundt halsen",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Sett en vannkanne ved foten",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Fugleskremsel",
+	"scarecrow:itemdesc-scarecrow": "\n\nDet skremmer bort uvelkomne gjester fra hagen din. Harer, vaskebjørner og noen andre dyr er redde for fugleskremsler og nærmer seg bare opptil 16 blokker.\n\n<font color=\"#99c9f9\"><i>Det ser forferdelig ut, men gresskaret er deilig.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "Et fugleskremsel som står på bakken, kan plukkes opp med <hk>ctrl</hk> + <hk>rightmouse</hk> og en tom høyre hånd.",
+
+	"scarecrow:item-creature-scarecrow": "Fugleskremsel",
+	"scarecrow:item-dead-creature-scarecrow": "Ødelagt fugleskremsel",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Lite fugleskremsel",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nDet skremmer bort uvelkomne gjester fra hagen din. Harer, vaskebjørner og noen andre dyr er redde for små fugleskremsler og nærmer seg bare opptil 12 blokker.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Et lite fugleskremsel som står på bakken, kan plukkes opp med <hk>ctrl</hk> + <hk>rightmouse</hk> og en tom høyre hånd.",
+
+	"scarecrow:item-creature-little-scarecrow": "Lite fugleskremsel",
+	"scarecrow:item-dead-creature-little-scarecrow": "Ødelagt lite fugleskremsel",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "En strådukke som står på bakken, kan plukkes opp med <hk>ctrl</hk> + <hk>rightmouse</hk> og en tom høyre hånd.",
+	"game:item-dead-creature-strawdummy": "Ødelagt strådukke",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Sett det lille fugleskremslet på bakken",
+	"scarecrow:heldhelp-place-sc": "Sett fugleskremslet på bakken",
+	"scarecrow:heldhelp-place-sd": "Sett strådukken på bakken",
+
+	"scarecrow:hotkey-showradius": "Vis fugleskremslets radius",
+	"scarecrow:radius-none": "Ingen fugleskremsel innen 64 blokker",
+
+	"scarecrow:entityhelp-pickup": "Plukk opp"
+
+}

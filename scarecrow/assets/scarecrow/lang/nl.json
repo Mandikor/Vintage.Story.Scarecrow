@@ -1,0 +1,49 @@
+{
+	// Dutch translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Vogelverschrikker",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Plaats de geselecteerde gereedschappen op de linkerarm",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Plaats de geselecteerde gereedschappen op de rechterarm",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Hang een lantaarn om de nek",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Plaats een gieter aan de voet",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Vogelverschrikker",
+	"scarecrow:itemdesc-scarecrow": "\n\nHij jaagt ongewenste gasten uit je tuin. Hazen, wasberen en enkele andere dieren zijn bang voor vogelverschrikkers en naderen tot 16 blokken.\n\n<font color=\"#99c9f9\"><i>Hij ziet er verschrikkelijk uit, maar de pompoen is heerlijk.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "Een vogelverschrikker die op de grond staat, kan worden opgepakt met <hk>ctrl</hk> + <hk>rightmouse</hk> en een lege rechterhand.",
+
+	"scarecrow:item-creature-scarecrow": "Vogelverschrikker",
+	"scarecrow:item-dead-creature-scarecrow": "Verwoeste vogelverschrikker",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Kleine vogelverschrikker",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nHij jaagt ongewenste gasten uit je tuin. Hazen, wasberen en enkele andere dieren zijn bang voor kleine vogelverschrikkers en naderen tot 12 blokken.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Een kleine vogelverschrikker die op de grond staat, kan worden opgepakt met <hk>ctrl</hk> + <hk>rightmouse</hk> en een lege rechterhand.",
+
+	"scarecrow:item-creature-little-scarecrow": "Kleine vogelverschrikker",
+	"scarecrow:item-dead-creature-little-scarecrow": "Verwoeste kleine vogelverschrikker",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "Een stropop die op de grond staat, kan worden opgepakt met <hk>ctrl</hk> + <hk>rightmouse</hk> en een lege rechterhand.",
+	"game:item-dead-creature-strawdummy": "Verwoeste stropop",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Plaats de kleine vogelverschrikker op de grond",
+	"scarecrow:heldhelp-place-sc": "Plaats de vogelverschrikker op de grond",
+	"scarecrow:heldhelp-place-sd": "Plaats de stropop op de grond",
+
+	"scarecrow:hotkey-showradius": "Bereik van de vogelverschrikker tonen",
+	"scarecrow:radius-none": "Geen vogelverschrikker binnen 64 blokken",
+
+	"scarecrow:entityhelp-pickup": "Oppakken"
+
+}

@@ -1,0 +1,49 @@
+{
+	// Serbian translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Плашило",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Поставите изабране алате на леву руку",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Поставите изабране алате на десну руку",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Окачити фењер око врата",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Поставити канту код стопала",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Плашило",
+	"scarecrow:itemdesc-scarecrow": "\n\nОтера непожељне госте из твоје баште. Зечеви, ракуни и неке друге животиње плаше се плашила и приближавају се до 16 блокова.\n\n<font color=\"#99c9f9\"><i>Изгледа страшно, али бундева је укусна.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "Плашило које стоји на земљи може се подићи помоћу <hk>ctrl</hk> + <hk>rightmouse</hk> и празне десне руке.",
+
+	"scarecrow:item-creature-scarecrow": "Плашило",
+	"scarecrow:item-dead-creature-scarecrow": "Уништено плашило",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Мало плашило",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nОтера непожељне госте из твоје баште. Зечеви, ракуни и неке друге животиње плаше се малих плашила и приближавају се до 12 блокова.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Мало плашило које стоји на земљи може се подићи помоћу <hk>ctrl</hk> + <hk>rightmouse</hk> и празне десне руке.",
+
+	"scarecrow:item-creature-little-scarecrow": "Мало плашило",
+	"scarecrow:item-dead-creature-little-scarecrow": "Уништено мало плашило",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "Лутка од сламе која стоји на земљи може се подићи помоћу <hk>ctrl</hk> + <hk>rightmouse</hk> и празне десне руке.",
+	"game:item-dead-creature-strawdummy": "Уништена лутка од сламе",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Постави мало плашило на земљу",
+	"scarecrow:heldhelp-place-sc": "Постави плашило на земљу",
+	"scarecrow:heldhelp-place-sd": "Постави лутку од сламе на земљу",
+
+	"scarecrow:hotkey-showradius": "Прикажи радијус плашила",
+	"scarecrow:radius-none": "Нема плашила у радијусу од 64 блока",
+
+	"scarecrow:entityhelp-pickup": "Подигни"
+
+}

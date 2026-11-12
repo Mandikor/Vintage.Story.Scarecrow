@@ -1,0 +1,49 @@
+{
+	// Vietnamese translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Bù nhìn",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Đặt công cụ đã chọn lên cánh tay trái",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Đặt công cụ đã chọn lên cánh tay phải",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Treo đèn lồng lên cổ",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Đặt bình tưới ở chân",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Bù nhìn",
+	"scarecrow:itemdesc-scarecrow": "\n\nNó xua đuổi những vị khách không mong muốn khỏi khu vườn của bạn. Thỏ, gấu mèo và một số động vật khác sợ bù nhìn và chỉ đến gần trong phạm vi 16 khối.\n\n<font color=\"#99c9f9\"><i>Trông thật đáng sợ, nhưng quả bí ngô rất ngon.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "Bù nhìn đứng trên mặt đất có thể được nhặt lên bằng <hk>ctrl</hk> + nhấp <hk>rightmouse</hk> và tay phải trống.",
+
+	"scarecrow:item-creature-scarecrow": "Bù nhìn",
+	"scarecrow:item-dead-creature-scarecrow": "Bù nhìn bị phá hủy",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Bù nhìn nhỏ",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nNó xua đuổi những vị khách không mong muốn khỏi khu vườn của bạn. Thỏ, gấu mèo và một số động vật khác sợ bù nhìn nhỏ và chỉ đến gần trong phạm vi 12 khối.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Bù nhìn nhỏ đứng trên mặt đất có thể được nhặt lên bằng <hk>ctrl</hk> + nhấp <hk>rightmouse</hk> và tay phải trống.",
+
+	"scarecrow:item-creature-little-scarecrow": "Bù nhìn nhỏ",
+	"scarecrow:item-dead-creature-little-scarecrow": "Bù nhìn nhỏ bị phá hủy",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "Bù nhìn rơm đứng trên mặt đất có thể được nhặt lên bằng <hk>ctrl</hk> + nhấp <hk>rightmouse</hk> và tay phải trống.",
+	"game:item-dead-creature-strawdummy": "Bù nhìn rơm bị phá hủy",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Đặt bù nhìn nhỏ lên mặt đất",
+	"scarecrow:heldhelp-place-sc": "Đặt bù nhìn lên mặt đất",
+	"scarecrow:heldhelp-place-sd": "Đặt bù nhìn rơm lên mặt đất",
+
+	"scarecrow:hotkey-showradius": "Hiển thị bán kính của bù nhìn",
+	"scarecrow:radius-none": "Không có bù nhìn trong phạm vi 64 khối",
+
+	"scarecrow:entityhelp-pickup": "Nhặt"
+
+}

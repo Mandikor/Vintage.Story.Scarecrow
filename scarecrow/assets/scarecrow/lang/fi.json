@@ -1,0 +1,49 @@
+{
+	// Finnish translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Linnunpelätin",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Aseta valitut työkalut vasempaan käteen",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Aseta valitut työkalut oikeaan käteen",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Ripusta lyhty kaulaan",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Aseta kastelukannu jalkojen juureen",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Linnunpelätin",
+	"scarecrow:itemdesc-scarecrow": "\n\nSe karkottaa ei-toivotut vieraat puutarhastasi. Jänikset, pesukarhut ja eräät muut eläimet pelkäävät linnunpelättimiä ja lähestyvät enintään 16 kuution päähän.\n\n<font color=\"#99c9f9\"><i>Se näyttää kamalalta, mutta kurpitsa on herkullinen.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "Maassa seisova linnunpelätin voidaan poimia <hk>ctrl</hk> + <hk>rightmouse</hk> -klikkauksella ja tyhjällä oikealla kädellä.",
+
+	"scarecrow:item-creature-scarecrow": "Linnunpelätin",
+	"scarecrow:item-dead-creature-scarecrow": "Tuhoutunut linnunpelätin",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Pieni linnunpelätin",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nSe karkottaa ei-toivotut vieraat puutarhastasi. Jänikset, pesukarhut ja eräät muut eläimet pelkäävät pieniä linnunpelättimiä ja lähestyvät enintään 12 kuution päähän.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Maassa seisova pieni linnunpelätin voidaan poimia <hk>ctrl</hk> + <hk>rightmouse</hk> -klikkauksella ja tyhjällä oikealla kädellä.",
+
+	"scarecrow:item-creature-little-scarecrow": "Pieni linnunpelätin",
+	"scarecrow:item-dead-creature-little-scarecrow": "Tuhoutunut pieni linnunpelätin",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "Maassa seisova olkinukke voidaan poimia <hk>ctrl</hk> + <hk>rightmouse</hk> -klikkauksella ja tyhjällä oikealla kädellä.",
+	"game:item-dead-creature-strawdummy": "Tuhoutunut olkinukke",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Aseta pieni linnunpelätin maahan",
+	"scarecrow:heldhelp-place-sc": "Aseta linnunpelätin maahan",
+	"scarecrow:heldhelp-place-sd": "Aseta olkinukke maahan",
+
+	"scarecrow:hotkey-showradius": "Näytä linnunpelättimen säde",
+	"scarecrow:radius-none": "Ei linnunpelätintä 64 kuution säteellä",
+
+	"scarecrow:entityhelp-pickup": "Poimi"
+
+}

@@ -1,0 +1,49 @@
+{
+	// Thai translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "หุ่นไล่กา",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "วางเครื่องมือที่เลือกบนแขนซ้าย",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "วางเครื่องมือที่เลือกบนแขนขวา",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "แขวนตะเกียงที่คอ",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "วางบัวรดน้ำที่เท้า",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "หุ่นไล่กา",
+	"scarecrow:itemdesc-scarecrow": "\n\nมันไล่แขกที่ไม่พึงประสงค์ออกจากสวนของคุณ กระต่าย แรคคูน และสัตว์อื่นๆ บางชนิดกลัวหุ่นไล่กาและเข้าใกล้ได้ถึง 16 บล็อค\n\n<font color=\"#99c9f9\"><i>มันดูน่ากลัว แต่ฟักทองอร่อย</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "หุ่นไล่กาที่ตั้งอยู่บนพื้นสามารถเก็บได้โดยใช้ <hk>ctrl</hk> + คลิก <hk>rightmouse</hk> และมือขวาว่าง",
+
+	"scarecrow:item-creature-scarecrow": "หุ่นไล่กา",
+	"scarecrow:item-dead-creature-scarecrow": "หุ่นไล่กาที่ถูกทำลาย",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "หุ่นไล่กาเล็ก",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nมันไล่แขกที่ไม่พึงประสงค์ออกจากสวนของคุณ กระต่าย แรคคูน และสัตว์อื่นๆ บางชนิดกลัวหุ่นไล่กาเล็กและเข้าใกล้ได้ถึง 12 บล็อค\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "หุ่นไล่กาเล็กที่ตั้งอยู่บนพื้นสามารถเก็บได้โดยใช้ <hk>ctrl</hk> + คลิก <hk>rightmouse</hk> และมือขวาว่าง",
+
+	"scarecrow:item-creature-little-scarecrow": "หุ่นไล่กาเล็ก",
+	"scarecrow:item-dead-creature-little-scarecrow": "หุ่นไล่กาเล็กที่ถูกทำลาย",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "หุ่นฟางที่ตั้งอยู่บนพื้นสามารถเก็บได้โดยใช้ <hk>ctrl</hk> + คลิก <hk>rightmouse</hk> และมือขวาว่าง",
+	"game:item-dead-creature-strawdummy": "หุ่นฟางที่ถูกทำลาย",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "วางหุ่นไล่กาเล็กบนพื้น",
+	"scarecrow:heldhelp-place-sc": "วางหุ่นไล่กาบนพื้น",
+	"scarecrow:heldhelp-place-sd": "วางหุ่นฟางบนพื้น",
+
+	"scarecrow:hotkey-showradius": "แสดงรัศมีของหุ่นไล่กา",
+	"scarecrow:radius-none": "ไม่มีหุ่นไล่กาภายใน 64 บล็อค",
+
+	"scarecrow:entityhelp-pickup": "เก็บ"
+
+}

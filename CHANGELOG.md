@@ -11,6 +11,11 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   the block grid instead of drawing a circle.
 - French, Japanese, Russian and Ukrainian translations completed and corrected against the
   English file, and a typo in the English item description fixed.
+- Added 27 more languages: Arabic, Belarusian, Bulgarian, Chinese (Simplified and Traditional),
+  Czech, Danish, Dutch, Esperanto, Finnish, Hungarian, Icelandic, Italian, Korean, Lithuanian,
+  Norwegian, Polish, Portuguese (Brazil and Portugal), Serbian, Slovak, Spanish (Spain and Latin
+  America), Swedish, Thai, Turkish and Vietnamese. These translations are a best effort, so
+  native review is welcome.
 
 ## 1.9.2 (2026-11-12)
 

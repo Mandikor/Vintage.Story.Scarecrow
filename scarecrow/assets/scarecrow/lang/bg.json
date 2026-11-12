@@ -1,0 +1,49 @@
+{
+	// Bulgarian translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Плашило",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Поставете избраните инструменти на лявата ръка",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Поставете избраните инструменти на дясната ръка",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Окачете фенер на врата",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Поставете лейка при краката",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Плашило",
+	"scarecrow:itemdesc-scarecrow": "\n\nПлаши неприятните гости от градината ви. Зайците, енотите и някои други животни се страхуват от плашила и се приближават на до 16 блока.\n\n<font color=\"#99c9f9\"><i>Изглежда ужасно, но тиквата е вкусна.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "Плашило, стоящо на земята, може да се вземе с <hk>ctrl</hk> + <hk>rightmouse</hk> и празна дясна ръка.",
+
+	"scarecrow:item-creature-scarecrow": "Плашило",
+	"scarecrow:item-dead-creature-scarecrow": "Унищожено плашило",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Малко плашило",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nПлаши неприятните гости от градината ви. Зайците, енотите и някои други животни се страхуват от малки плашила и се приближават на до 12 блока.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Малко плашило, стоящо на земята, може да се вземе с <hk>ctrl</hk> + <hk>rightmouse</hk> и празна дясна ръка.",
+
+	"scarecrow:item-creature-little-scarecrow": "Малко плашило",
+	"scarecrow:item-dead-creature-little-scarecrow": "Унищожено малко плашило",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "Сламено чучело, стоящо на земята, може да се вземе с <hk>ctrl</hk> + <hk>rightmouse</hk> и празна дясна ръка.",
+	"game:item-dead-creature-strawdummy": "Унищожено сламено чучело",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Поставете малкото плашило на земята",
+	"scarecrow:heldhelp-place-sc": "Поставете плашилото на земята",
+	"scarecrow:heldhelp-place-sd": "Поставете сламеното чучело на земята",
+
+	"scarecrow:hotkey-showradius": "Покажи радиуса на плашилото",
+	"scarecrow:radius-none": "Няма плашило в радиус от 64 блока",
+
+	"scarecrow:entityhelp-pickup": "Вземи"
+
+}

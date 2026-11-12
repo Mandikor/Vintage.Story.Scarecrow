@@ -1,0 +1,49 @@
+{
+	// Slovak translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Strašiak",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Umiestniť vybrané nástroje na ľavú ruku",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Umiestniť vybrané nástroje na pravú ruku",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Zavesiť lampáš na krk",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Postaviť krhlu k nohám",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Strašiak",
+	"scarecrow:itemdesc-scarecrow": "\n\nOdstrašuje nepríjemných hostí z tvojej záhrady. Zajace, medvedíky čistotné a niektoré ďalšie zvieratá sa boja strašiakov a približujú sa až na 16 blokov.\n\n<font color=\"#99c9f9\"><i>Vyzerá hrozne, ale tekvica je chutná.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "Strašiaka stojaceho na zemi možno zdvihnúť pomocou <hk>ctrl</hk> + <hk>rightmouse</hk> a prázdnej pravej ruky.",
+
+	"scarecrow:item-creature-scarecrow": "Strašiak",
+	"scarecrow:item-dead-creature-scarecrow": "Zničený strašiak",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Malý strašiak",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nOdstrašuje nepríjemných hostí z tvojej záhrady. Zajace, medvedíky čistotné a niektoré ďalšie zvieratá sa boja malých strašiakov a približujú sa až na 12 blokov.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Malého strašiaka stojaceho na zemi možno zdvihnúť pomocou <hk>ctrl</hk> + <hk>rightmouse</hk> a prázdnej pravej ruky.",
+
+	"scarecrow:item-creature-little-scarecrow": "Malý strašiak",
+	"scarecrow:item-dead-creature-little-scarecrow": "Zničený malý strašiak",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "Slameného panáka stojaceho na zemi možno zdvihnúť pomocou <hk>ctrl</hk> + <hk>rightmouse</hk> a prázdnej pravej ruky.",
+	"game:item-dead-creature-strawdummy": "Zničený slamený panák",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Postaviť malého strašiaka na zem",
+	"scarecrow:heldhelp-place-sc": "Postaviť strašiaka na zem",
+	"scarecrow:heldhelp-place-sd": "Postaviť slameného panáka na zem",
+
+	"scarecrow:hotkey-showradius": "Zobraziť dosah strašiaka",
+	"scarecrow:radius-none": "V okruhu 64 blokov nie je žiadny strašiak",
+
+	"scarecrow:entityhelp-pickup": "Zdvihnúť"
+
+}

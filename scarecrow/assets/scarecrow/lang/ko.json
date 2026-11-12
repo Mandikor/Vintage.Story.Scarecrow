@@ -1,0 +1,49 @@
+{
+	// Korean translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "허수아비",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "선택한 도구를 왼팔에 배치",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "선택한 도구를 오른팔에 배치",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "목에 랜턴 걸기",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "발치에 물뿌리개 놓기",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "허수아비",
+	"scarecrow:itemdesc-scarecrow": "\n\n정원에 오는 반갑지 않은 손님을 쫓아냅니다. 토끼, 라쿤 및 일부 다른 동물은 허수아비를 무서워하며 16블록까지 접근합니다.\n\n<font color=\"#99c9f9\"><i>끔찍하게 생겼지만 호박은 맛있습니다.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "땅에 서 있는 허수아비는 <hk>ctrl</hk> + <hk>rightmouse</hk> 클릭과 빈 오른손으로 줍을 수 있습니다.",
+
+	"scarecrow:item-creature-scarecrow": "허수아비",
+	"scarecrow:item-dead-creature-scarecrow": "파괴된 허수아비",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "작은 허수아비",
+	"scarecrow:itemdesc-little-scarecrow": "\n\n정원에 오는 반갑지 않은 손님을 쫓아냅니다. 토끼, 라쿤 및 일부 다른 동물은 작은 허수아비를 무서워하며 12블록까지 접근합니다.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "땅에 서 있는 작은 허수아비는 <hk>ctrl</hk> + <hk>rightmouse</hk> 클릭과 빈 오른손으로 줍을 수 있습니다.",
+
+	"scarecrow:item-creature-little-scarecrow": "작은 허수아비",
+	"scarecrow:item-dead-creature-little-scarecrow": "파괴된 작은 허수아비",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "땅에 서 있는 밀짚 표적 인형은 <hk>ctrl</hk> + <hk>rightmouse</hk> 클릭과 빈 오른손으로 줍을 수 있습니다.",
+	"game:item-dead-creature-strawdummy": "파괴된 밀짚 표적 인형",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "작은 허수아비를 땅에 놓기",
+	"scarecrow:heldhelp-place-sc": "허수아비를 땅에 놓기",
+	"scarecrow:heldhelp-place-sd": "밀짚 표적 인형을 땅에 놓기",
+
+	"scarecrow:hotkey-showradius": "허수아비 반경 표시",
+	"scarecrow:radius-none": "64블록 이내에 허수아비 없음",
+
+	"scarecrow:entityhelp-pickup": "줍기"
+
+}

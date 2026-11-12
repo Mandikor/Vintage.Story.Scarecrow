@@ -1,0 +1,49 @@
+{
+	// Traditional Chinese translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "稻草人",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "將選取的工具放在左臂上",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "將選取的工具放在右臂上",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "在脖子上掛一盞提燈",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "在腳邊放一個澆水壺",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "稻草人",
+	"scarecrow:itemdesc-scarecrow": "\n\n它能趕走花園裡的不速之客。野兔、浣熊和其他一些動物害怕稻草人，只會靠近到 16 格的距離。\n\n<font color=\"#99c9f9\"><i>它看起來很可怕，但南瓜很好吃。</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "放置在地上的稻草人可以用 <hk>ctrl</hk> + <hk>rightmouse</hk> 點擊並保持右手為空來拾取。",
+
+	"scarecrow:item-creature-scarecrow": "稻草人",
+	"scarecrow:item-dead-creature-scarecrow": "被摧毀的稻草人",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "小稻草人",
+	"scarecrow:itemdesc-little-scarecrow": "\n\n它能趕走花園裡的不速之客。野兔、浣熊和其他一些動物害怕小稻草人，只會靠近到 12 格的距離。\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "放置在地上的小稻草人可以用 <hk>ctrl</hk> + <hk>rightmouse</hk> 點擊並保持右手為空來拾取。",
+
+	"scarecrow:item-creature-little-scarecrow": "小稻草人",
+	"scarecrow:item-dead-creature-little-scarecrow": "被摧毀的小稻草人",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "放置在地上的稻草假人可以用 <hk>ctrl</hk> + <hk>rightmouse</hk> 點擊並保持右手為空來拾取。",
+	"game:item-dead-creature-strawdummy": "被摧毀的稻草假人",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "將小稻草人放在地上",
+	"scarecrow:heldhelp-place-sc": "將稻草人放在地上",
+	"scarecrow:heldhelp-place-sd": "將稻草假人放在地上",
+
+	"scarecrow:hotkey-showradius": "顯示稻草人的範圍",
+	"scarecrow:radius-none": "64 格內沒有稻草人",
+
+	"scarecrow:entityhelp-pickup": "拾取"
+
+}

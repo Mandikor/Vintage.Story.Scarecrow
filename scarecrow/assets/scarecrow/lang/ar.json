@@ -1,0 +1,49 @@
+{
+	// Arabic translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "فزاعة",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "ضع الأدوات المحددة على الذراع اليسرى",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "ضع الأدوات المحددة على الذراع اليمنى",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "علّق فانوسًا على الرقبة",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "ضع مرشة مياه عند القدم",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "فزاعة",
+	"scarecrow:itemdesc-scarecrow": "\n\nتطرد الضيوف غير المرغوب فيهم من حديقتك. الأرانب والراكون وبعض الحيوانات الأخرى تخاف من الفزاعات وتقترب حتى 16 كتلة.\n\n<font color=\"#99c9f9\"><i>تبدو مرعبة، لكن اليقطين لذيذ.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "يمكن التقاط فزاعة واقفة على الأرض باستخدام <hk>ctrl</hk> + النقر بـ <hk>rightmouse</hk> ويد يمنى فارغة.",
+
+	"scarecrow:item-creature-scarecrow": "فزاعة",
+	"scarecrow:item-dead-creature-scarecrow": "فزاعة مدمرة",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "فزاعة صغيرة",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nتطرد الضيوف غير المرغوب فيهم من حديقتك. الأرانب والراكون وبعض الحيوانات الأخرى تخاف من الفزاعات الصغيرة وتقترب حتى 12 كتلة.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "يمكن التقاط فزاعة صغيرة واقفة على الأرض باستخدام <hk>ctrl</hk> + النقر بـ <hk>rightmouse</hk> ويد يمنى فارغة.",
+
+	"scarecrow:item-creature-little-scarecrow": "فزاعة صغيرة",
+	"scarecrow:item-dead-creature-little-scarecrow": "فزاعة صغيرة مدمرة",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "يمكن التقاط دمية قش واقفة على الأرض باستخدام <hk>ctrl</hk> + النقر بـ <hk>rightmouse</hk> ويد يمنى فارغة.",
+	"game:item-dead-creature-strawdummy": "دمية قش مدمرة",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "ضع الفزاعة الصغيرة على الأرض",
+	"scarecrow:heldhelp-place-sc": "ضع الفزاعة على الأرض",
+	"scarecrow:heldhelp-place-sd": "ضع دمية القش على الأرض",
+
+	"scarecrow:hotkey-showradius": "إظهار نطاق الفزاعة",
+	"scarecrow:radius-none": "لا توجد فزاعة ضمن 64 كتلة",
+
+	"scarecrow:entityhelp-pickup": "التقاط"
+
+}

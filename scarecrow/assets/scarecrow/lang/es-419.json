@@ -1,0 +1,49 @@
+{
+	// Latin American Spanish translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Espantapájaros",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Colocar las herramientas seleccionadas en el brazo izquierdo",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Colocar las herramientas seleccionadas en el brazo derecho",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Colgar una linterna en el cuello",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Colocar una regadera a los pies",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Espantapájaros",
+	"scarecrow:itemdesc-scarecrow": "\n\nAhuyenta a los visitantes indeseados de tu jardín. Las liebres, los mapaches y algunos otros animales temen a los espantapájaros y se acercan hasta 16 bloques.\n\n<font color=\"#99c9f9\"><i>Se ve terrible, pero la calabaza está deliciosa.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "Un espantapájaros de pie en el suelo se puede recoger con <hk>ctrl</hk> + <hk>rightmouse</hk> y la mano derecha vacía.",
+
+	"scarecrow:item-creature-scarecrow": "Espantapájaros",
+	"scarecrow:item-dead-creature-scarecrow": "Espantapájaros destruido",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Espantapájaros pequeño",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nAhuyenta a los visitantes indeseados de tu jardín. Las liebres, los mapaches y algunos otros animales temen a los espantapájaros pequeños y se acercan hasta 12 bloques.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Un espantapájaros pequeño de pie en el suelo se puede recoger con <hk>ctrl</hk> + <hk>rightmouse</hk> y la mano derecha vacía.",
+
+	"scarecrow:item-creature-little-scarecrow": "Espantapájaros pequeño",
+	"scarecrow:item-dead-creature-little-scarecrow": "Espantapájaros pequeño destruido",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "Un muñeco de paja de pie en el suelo se puede recoger con <hk>ctrl</hk> + <hk>rightmouse</hk> y la mano derecha vacía.",
+	"game:item-dead-creature-strawdummy": "Muñeco de paja destruido",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Colocar el espantapájaros pequeño en el suelo",
+	"scarecrow:heldhelp-place-sc": "Colocar el espantapájaros en el suelo",
+	"scarecrow:heldhelp-place-sd": "Colocar el muñeco de paja en el suelo",
+
+	"scarecrow:hotkey-showradius": "Mostrar el radio del espantapájaros",
+	"scarecrow:radius-none": "No hay ningún espantapájaros en 64 bloques",
+
+	"scarecrow:entityhelp-pickup": "Recoger"
+
+}

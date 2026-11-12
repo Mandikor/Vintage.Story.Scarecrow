@@ -1,0 +1,49 @@
+{
+	// Icelandic translation
+
+	// Tab Name for Creative Mode
+	"game:tabname-scarecrow": "Fuglahræða",
+
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Setja valin verkfæri á vinstri handlegg",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Setja valin verkfæri á hægri handlegg",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Hengja lukt á hálsinn",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Setja vatnskönnu við fæturna",
+
+
+	// Description Scarecrow
+	"scarecrow:item-scarecrow": "Fuglahræða",
+	"scarecrow:itemdesc-scarecrow": "\n\nHún hræðir óvelkomna gesti frá garðinum þínum. Hérar, þvottabirnir og nokkrar aðrar dýrategundir óttast fuglahræður og nálgast ekki nær en 16 kubba.\n\n<font color=\"#99c9f9\"><i>Hún lítur hræðilega út, en graskerið er gott.</i></font>\n\n",
+
+	"scarecrow:item-handbooktext-scarecrow": "Hægt er að taka upp fuglahræðu sem stendur á jörðinni með <hk>ctrl</hk> + <hk>rightmouse</hk> og tómri hægri hendi.",
+
+	"scarecrow:item-creature-scarecrow": "Fuglahræða",
+	"scarecrow:item-dead-creature-scarecrow": "Eyðilögð fuglahræða",
+
+
+	// Description Little Scarecrow
+	"scarecrow:item-little-scarecrow": "Lítil fuglahræða",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nHún hræðir óvelkomna gesti frá garðinum þínum. Hérar, þvottabirnir og nokkrar aðrar dýrategundir óttast litlar fuglahræður og nálgast ekki nær en 12 kubba.\n\n",
+
+	"scarecrow:item-handbooktext-little-scarecrow": "Hægt er að taka upp litla fuglahræðu sem stendur á jörðinni með <hk>ctrl</hk> + <hk>rightmouse</hk> og tómri hægri hendi.",
+
+	"scarecrow:item-creature-little-scarecrow": "Lítil fuglahræða",
+	"scarecrow:item-dead-creature-little-scarecrow": "Eyðilögð lítil fuglahræða",
+
+
+	// Description Strawdummy
+	"game:item-handbooktext-strawdummy": "Hægt er að taka upp strádúkku sem stendur á jörðinni með <hk>ctrl</hk> + <hk>rightmouse</hk> og tómri hægri hendi.",
+	"game:item-dead-creature-strawdummy": "Eyðilögð strádúkka",
+
+
+
+	// other text
+	"scarecrow:heldhelp-place-lsc": "Setja litlu fuglahræðuna á jörðina",
+	"scarecrow:heldhelp-place-sc": "Setja fuglahræðuna á jörðina",
+	"scarecrow:heldhelp-place-sd": "Setja strádúkkuna á jörðina",
+
+	"scarecrow:hotkey-showradius": "Sýna radíus fuglahræðunnar",
+	"scarecrow:radius-none": "Engin fuglahræða innan 64 kubba",
+
+	"scarecrow:entityhelp-pickup": "Taka upp"
+
+}
