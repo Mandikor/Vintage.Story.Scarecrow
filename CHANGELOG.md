@@ -6,6 +6,9 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 ## Unreleased
 
 - Documented the pattern rules for the attachable item list in the source code.
+- Ctrl+H (rebindable) toggles an outline on the ground that shows the area a scarecrow keeps
+  animals away from. All scarecrows within 64 blocks are shown at once, and the outline follows
+  the block grid instead of drawing a circle.
 
 ## 1.9.2 (2026-11-12)
 

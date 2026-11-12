@@ -37,6 +37,9 @@
 	"scarecrow:heldhelp-place-sc": "Platziert die Vogelscheuche auf den Boden",
 	"scarecrow:heldhelp-place-sd": "Platziert die Strohpuppe auf den Boden",
 
+	"scarecrow:hotkey-showradius": "Vogelscheuchen-Radius anzeigen",
+	"scarecrow:radius-none": "Keine Vogelscheuche im Umkreis von 64 Blöcken",
+
 	"scarecrow:entityhelp-pickup": "Aufheben"
 
 }

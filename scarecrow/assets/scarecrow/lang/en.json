@@ -39,6 +39,9 @@
 	"scarecrow:heldhelp-place-sc": "Place the scarecrow on the ground",
 	"scarecrow:heldhelp-place-sd": "Place the strawdummy on the ground",
 
+	"scarecrow:hotkey-showradius": "Show scarecrow radius",
+	"scarecrow:radius-none": "No scarecrow within 64 blocks",
+
 	"scarecrow:entityhelp-pickup": "Pick up"
 
 }
