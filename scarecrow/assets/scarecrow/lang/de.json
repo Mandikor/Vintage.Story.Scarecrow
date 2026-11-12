@@ -5,7 +5,7 @@
 	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Platziere die ausgewählten Werkzeuge auf dem linken Arm",
 	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Platziere die ausgewählten Werkzeuge auf dem rechten Arm",
 	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Hänge eine Laterne um den Hals",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Platziere einen Gießkanne am Fuß",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Platziere eine Gießkanne am Fuß",
 
 	// Description Scarecrow
 	"scarecrow:item-scarecrow": "Vogelscheuche",
@@ -19,7 +19,7 @@
 
 	// Description Little Scarecrow
 	"scarecrow:item-little-scarecrow": "Kleine Vogelscheuche",
-	"scarecrow:itemdesc-little-scarecrow": "\n\nSie vertreibt unliebsame Gäste aus deinem Garten. Hasen, Waschbären und einige andere Tiere haben weniger Angst vor kleinen Vogelscheuchen und nähern sich bis auf 12 Blöcke.\n\n",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nSie vertreibt unliebsame Gäste aus deinem Garten. Hasen, Waschbären und einige andere Tiere haben Angst vor kleinen Vogelscheuchen und nähern sich bis auf 12 Blöcke.\n\n",
 
 	"scarecrow:item-handbooktext-little-scarecrow": "Eine stehende kleine Vogelscheuche kann mit <hk>ctrl</hk> + <hk>rightmouse</hk> und einer leeren rechten Hand aufgehoben werden.",
 
@@ -33,9 +33,9 @@
 
 
 	// other text
-	"scarecrow:heldhelp-place-lsc": "Platziert die kleine Vogelscheuche auf den Boden",
-	"scarecrow:heldhelp-place-sc": "Platziert die Vogelscheuche auf den Boden",
-	"scarecrow:heldhelp-place-sd": "Platziert die Strohpuppe auf den Boden",
+	"scarecrow:heldhelp-place-lsc": "Platziere die kleine Vogelscheuche auf den Boden",
+	"scarecrow:heldhelp-place-sc": "Platziere die Vogelscheuche auf den Boden",
+	"scarecrow:heldhelp-place-sd": "Platziere die Strohpuppe auf den Boden",
 
 	"scarecrow:hotkey-showradius": "Vogelscheuchen-Radius anzeigen",
 	"scarecrow:radius-none": "Keine Vogelscheuche im Umkreis von 64 Blöcken",

@@ -14,32 +14,35 @@
 	"scarecrow:item-scarecrow": "Пугало",
 	"scarecrow:itemdesc-scarecrow": "\n\nОно отпугивает неприятных гостей от вашего сада. Зайцы, еноты и некоторые другие животные боятся пугал и подходят к ним на расстояние до 16 блоков.\n\n<font color=\"#99c9f9\"><i>Она выглядит ужасно, но тыква очень вкусная.</i></font>\n\n",
 
-	"scarecrow:item-handbooktext-scarecrow": "Пугало, стоящее на земле, можно поднять с помощью <hk>ctrl</hk> + <hk>rightmouse</hk> клик и пустую правую руку.",
+	"scarecrow:item-handbooktext-scarecrow": "Пугало, стоящее на земле, можно поднять с помощью <hk>ctrl</hk> + <hk>rightmouse</hk> и пустой правой руки.",
 
 	"scarecrow:item-creature-scarecrow": "Пугало",
-	"scarecrow:item-dead-creature-scarecrow": "Разрушенное Пугало",
+	"scarecrow:item-dead-creature-scarecrow": "Разрушенное пугало",
 
 
 	// Description Little Scarecrow
 	"scarecrow:item-little-scarecrow": "Маленькое пугало",
 	"scarecrow:itemdesc-little-scarecrow": "\n\nОно отпугивает неприятных гостей от вашего сада. Зайцы, еноты и некоторые другие животные боятся маленьких пугал и подходят к ним на расстояние до 12 блоков.\n\n",
 
-	"scarecrow:item-handbooktext-little-scarecrow": "Маленькое пугало, стоящее на земле, можно поднять с помощью <hk>ctrl</hk> + <hk>rightmouse</hk> клик и пустую правую руку.",
+	"scarecrow:item-handbooktext-little-scarecrow": "Маленькое пугало, стоящее на земле, можно поднять с помощью <hk>ctrl</hk> + <hk>rightmouse</hk> и пустой правой руки.",
 
 	"scarecrow:item-creature-little-scarecrow": "Маленькое пугало",
-	"scarecrow:item-dead-creature-little-scarecrow": "Разрушенное Маленькое пугало",
+	"scarecrow:item-dead-creature-little-scarecrow": "Разрушенное маленькое пугало",
 
 
 	// Description Strawdummy
-	"game:item-handbooktext-strawdummy": "Соломенный манекен, стоящий на земле, можно поднять с помощью <hk>ctrl</hk> + <hk>rightmouse</hk> клик и пустую правую руку.",
+	"game:item-handbooktext-strawdummy": "Соломенный манекен, стоящий на земле, можно поднять с помощью <hk>ctrl</hk> + <hk>rightmouse</hk> и пустой правой руки.",
 	"game:item-dead-creature-strawdummy": "Разрушенный соломенный манекен",
 
 
 
 	// other text
-	"scarecrow:heldhelp-place-lsc": "Поставьте маленькое пугало на землю.",
+	"scarecrow:heldhelp-place-lsc": "Поставьте маленькое пугало на землю",
 	"scarecrow:heldhelp-place-sc": "Поставьте пугало на землю",
 	"scarecrow:heldhelp-place-sd": "Поставьте соломенный манекен на землю",
+
+	"scarecrow:hotkey-showradius": "Показать радиус пугала",
+	"scarecrow:radius-none": "В радиусе 64 блоков нет пугала",
 
 	"scarecrow:entityhelp-pickup": "Поднять"
 

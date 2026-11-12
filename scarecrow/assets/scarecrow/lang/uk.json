@@ -1,16 +1,16 @@
 {
 	// Tab Name for Creative Mode
-	"game:tabname-scarecrow": "Опудала",
+	"game:tabname-scarecrow": "Опудало",
 
 	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Розмістити обрані інструменти на лівому плечі",
 	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Розмістити обрані інструменти на правому плечі",
-	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Підвісити фонар на шиї",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Розмістити лейку біля ног",
+	"creature-scarecrow:*scarecrow-selectionbox-LanternAP": "Підвісити ліхтар на шиї",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Розмістити лейку біля ніг",
 
 
 	// Description Scarecrow
 	"scarecrow:item-scarecrow": "Опудало",
-	"scarecrow:itemdesc-scarecrow": "\n\nВідганяє непроханих гостей з вашого саду. Зайці, єноти та деякі інші тварини бояться лякал і підходять на відстань до 16 блоків.\n\n<font color=\"#99c9f9\"><i>Виглядає воно жахливо, але гарбуз дуже смачний.</i></font>",
+	"scarecrow:itemdesc-scarecrow": "\n\nВідганяє непроханих гостей з вашого саду. Зайці, єноти та деякі інші тварини бояться опудал і підходять на відстань до 16 блоків.\n\n<font color=\"#99c9f9\"><i>Виглядає воно жахливо, але гарбуз дуже смачний.</i></font>\n\n",
 
 	"scarecrow:item-handbooktext-scarecrow": "Опудало із землі можна підібрати за допомогою <hk>ctrl</hk> + <hk>rightmouse</hk> і порожньої правої руки.",
 
@@ -20,7 +20,7 @@
 
 	// Description Little Scarecrow
 	"scarecrow:item-little-scarecrow": "Мале опудало",
-	"scarecrow:itemdesc-little-scarecrow": "\n\nВідганяє непроханих гостей з вашого саду. Зайці, єноти та деякі інші тварини бояться малого опудала, тому підходять на відстань до 12 блоків.",
+	"scarecrow:itemdesc-little-scarecrow": "\n\nВідганяє непроханих гостей з вашого саду. Зайці, єноти та деякі інші тварини бояться малого опудала і підходять на відстань до 12 блоків.",
 
 	"scarecrow:item-handbooktext-little-scarecrow": "Мале опудало із землі можна підібрати за допомогою <hk>ctrl</hk> + <hk>rightmouse</hk> і порожньої правої руки.",
 
@@ -30,7 +30,7 @@
 
 	// Description Strawdummy
 	"game:item-handbooktext-strawdummy": "Солом'яне опудало із землі можна підібрати за допомогою <hk>ctrl</hk> + <hk>rightmouse</hk> і порожньої правої руки.",
-	"game:item-dead-creature-strawdummy": "Розтрощене cолом'яне опудало",
+	"game:item-dead-creature-strawdummy": "Розтрощене солом'яне опудало",
 
 
 
@@ -38,6 +38,9 @@
 	"scarecrow:heldhelp-place-lsc": "Поставити мале опудало на землю",
 	"scarecrow:heldhelp-place-sc": "Поставити опудало на землю",
 	"scarecrow:heldhelp-place-sd": "Поставити солом'яне опудало на землю",
+
+	"scarecrow:hotkey-showradius": "Показати радіус опудала",
+	"scarecrow:radius-none": "У радіусі 64 блоків немає опудала",
 
 	"scarecrow:entityhelp-pickup": "Підібрати"
 

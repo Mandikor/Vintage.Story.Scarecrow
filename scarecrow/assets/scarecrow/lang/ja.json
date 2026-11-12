@@ -25,7 +25,7 @@
 
 	// Description Little Scarecrow
 	"scarecrow:item-little-scarecrow": "小さな案山子(かかし)",
-	"scarecrow:itemdesc-little-scarecrow": "\n\n 不快な客人からお庭を守ります。ウサギやアライグマは小さな案山子(かかし)をあまり怖がらず、最大12ブロックまでは近付いて来ます。\n\n",
+	"scarecrow:itemdesc-little-scarecrow": "\n\n 不快な客人からお庭を守ります。ノウサギやアライグマ、その他いくつかの動物は小さな案山子(かかし)を怖がり、最大12ブロックまで近づいてきます。\n\n",
 
 	"scarecrow:item-handbooktext-little-scarecrow": "地面に立っている小さな案山子(かかし)は、<hk>ctrl<\/hk> + <hk>rightmouse<\/hk>を使用して拾うことが出来ます。",
 
@@ -35,12 +35,16 @@
 
 	// Description Strawdummy
 	"game:item-handbooktext-strawdummy": "地面に立っている藁人形は<hk>ctrl<\/hk>＋<hk>rightmouse<\/hk>で拾うことができます。",
-	"game:item-dead-creature-strawdummy": "死んだワラ人形",
+	"game:item-dead-creature-strawdummy": "壊れた藁人形",
 
 
 	// other text
 	"scarecrow:heldhelp-place-lsc": "小さなかかしを地面に置く",
 	"scarecrow:heldhelp-place-sc": "かかしを地面に置く",
+	"scarecrow:heldhelp-place-sd": "藁人形を地面に置く",
+
+	"scarecrow:hotkey-showradius": "案山子の範囲を表示",
+	"scarecrow:radius-none": "64ブロック以内に案山子がいません",
 
 	"scarecrow:entityhelp-pickup": "拾う"
 

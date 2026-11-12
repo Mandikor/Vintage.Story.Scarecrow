@@ -41,6 +41,9 @@
 	"scarecrow:heldhelp-place-sc": "Placer l'épouvantail sur le sol",
 	"scarecrow:heldhelp-place-sd": "Placer le mannequin de paille sur le sol",
 
+	"scarecrow:hotkey-showradius": "Afficher le rayon de l'épouvantail",
+	"scarecrow:radius-none": "Aucun épouvantail dans un rayon de 64 blocs",
+
 	"scarecrow:entityhelp-pickup": "Ramasser"
 
 }
