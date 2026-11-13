@@ -5,6 +5,9 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+- Scarecrows no longer remove animals that are born nearby or released from a cage. The spawn
+  protection now only affects natural spawns, while newborn and player-placed animals simply
+  flee from the scarecrow.
 - Vanilla chickens, bears, foxes, hyenas and wolves now flee from scarecrows, little
   scarecrows and straw dummies. Flight distances and priorities were aligned with the
   existing animal patches, and the gazelle, sheep, pig and raccoon patches were corrected.

@@ -9,8 +9,9 @@
         public bool DebugOutput { get; set; } = false;
 
         /// <summary>
-        /// Entity code prefixes that scarecrows keep away. The prefix is matched against
-        /// the entity path, so "hare" covers hare-adult and hare-baby.
+        /// Entity code prefixes that scarecrows keep away from natural spawns. The prefix
+        /// is matched against the entity path, so "hare" covers hare-adult and hare-baby.
+        /// Animals born nearby or placed by players are not affected.
         /// </summary>
         public string[] ScaredAnimalPrefixes { get; set; } = { "hare", "raccoon" };
     }

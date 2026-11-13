@@ -72,9 +72,20 @@ namespace Scarecrow
             spawnHooksAttached = false;
         }
 
+        /// <summary>
+        /// Removes animals that the natural world spawner placed inside the radius.
+        /// Newborn animals and animals spawned by players (for example when released
+        /// from a cage) are left alone, they are not part of the natural spawn cycle
+        /// and simply flee from the scarecrow.
+        /// </summary>
         private void Event_EntitySpawn(Entity entity)
         {
             if (!IsScaredAnimal(entity.Code)) return;
+
+            // The natural entity spawner marks its entities with this origin. Births
+            // carry "reproduction" and player placements usually have no origin at all.
+            string origin = entity.Attributes?.GetString("origin", null);
+            if (origin != "entityspawner") return;
 
             double distance = Pos.DistanceTo(entity.Pos);
             if (distance > scareRadius) return;
