@@ -3,7 +3,7 @@
 All notable changes to the Scarecrow mod, newest first. The version numbers match
 `scarecrow/modinfo.json`, the dates are the dates of the release commits.
 
-## Unreleased
+## 1.9.3 (2026-11-13)
 
 - Scarecrows no longer remove animals that are born nearby or released from a cage. The spawn
   protection now only affects natural spawns, while newborn and player-placed animals simply
