@@ -5,6 +5,9 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+- Vanilla chickens, bears, foxes, hyenas and wolves now flee from scarecrows, little
+  scarecrows and straw dummies. Flight distances and priorities were aligned with the
+  existing animal patches, and the gazelle, sheep, pig and raccoon patches were corrected.
 - Documented the pattern rules for the attachable item list in the source code.
 - Ctrl+H (rebindable) toggles an outline on the ground that shows the area a scarecrow keeps
   animals away from. All scarecrows within 64 blocks are shown at once, and the outline follows
