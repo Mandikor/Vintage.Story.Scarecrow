@@ -1,0 +1,104 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "game:entities/animal/mammal/hyena-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [ "scarecrow" ],
+      "priority": 1.6,
+      "movespeed": 0.02,
+      "animationSpeed": 2.2,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "sound": "creature/wolf/pup-bark"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "game:entities/animal/mammal/hyena-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [ "little-scarecrow" ],
+      "priority": 1.6,
+      "movespeed": 0.02,
+      "animationSpeed": 2.2,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "sound": "creature/wolf/pup-bark"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "game:entities/animal/mammal/hyena-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [ "strawdummy" ],
+      "priority": 1.6,
+      "movespeed": 0.02,
+      "animationSpeed": 2.2,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "sound": "creature/wolf/pup-bark"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "game:entities/animal/mammal/hyena-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [ "scarecrow" ],
+      "priority": 2.6,
+      "movespeed": 0.04,
+      "animationSpeed": 2,
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "sound": "creature/hyena/laugh"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "game:entities/animal/mammal/hyena-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [ "little-scarecrow" ],
+      "priority": 2.6,
+      "movespeed": 0.04,
+      "animationSpeed": 2,
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "sound": "creature/hyena/laugh"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "game:entities/animal/mammal/hyena-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [ "strawdummy" ],
+      "priority": 2.6,
+      "movespeed": 0.04,
+      "animationSpeed": 2,
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "sound": "creature/hyena/laugh"
+    },
+    "side": "server"
+  }
+]

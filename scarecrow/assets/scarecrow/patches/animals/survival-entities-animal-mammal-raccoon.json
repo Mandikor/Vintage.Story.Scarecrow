@@ -53,6 +53,7 @@
     "file": "game:entities/animal/mammal/raccoon-adult.json",
     "value": {
       "code": "fleeentity",
+      "instafleeOnDamageChance": 1,
       "entityCodes": [ "scarecrow" ],
       "priority": 2.1,
       "movespeed": 0.035,
@@ -68,6 +69,7 @@
     "file": "game:entities/animal/mammal/raccoon-adult.json",
     "value": {
       "code": "fleeentity",
+      "instafleeOnDamageChance": 1,
       "entityCodes": [ "little-scarecrow" ],
       "priority": 2.1,
       "movespeed": 0.035,
@@ -83,6 +85,7 @@
     "file": "game:entities/animal/mammal/raccoon-adult.json",
     "value": {
       "code": "fleeentity",
+      "instafleeOnDamageChance": 1,
       "entityCodes": [ "strawdummy" ],
       "priority": 2.1,
       "movespeed": 0.035,

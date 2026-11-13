@@ -1,0 +1,89 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "game:entities/animal/mammal/bear-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [ "scarecrow" ],
+      "priority": 1.8,
+      "movespeedByType": {
+        "bear-sun-*": 0.025,
+        "bear-panda-*": 0.025,
+        "bear-black-*": 0.04,
+        "bear-brown-*": 0.055,
+        "bear-polar-*": 0.06
+      },
+      "seekingRange": 16,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "animationSpeedByType": {
+        "bear-sun-*": 2.3,
+        "bear-panda-*": 1.9,
+        "bear-polar-*": 1.8,
+        "bear-brown-*": 2,
+        "bear-black-*": 2
+      },
+      "sound": "creature/bear/flee"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "game:entities/animal/mammal/bear-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [ "little-scarecrow" ],
+      "priority": 1.8,
+      "movespeedByType": {
+        "bear-sun-*": 0.025,
+        "bear-panda-*": 0.025,
+        "bear-black-*": 0.04,
+        "bear-brown-*": 0.055,
+        "bear-polar-*": 0.06
+      },
+      "seekingRange": 12,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "animationSpeedByType": {
+        "bear-sun-*": 2.3,
+        "bear-panda-*": 1.9,
+        "bear-polar-*": 1.8,
+        "bear-brown-*": 2,
+        "bear-black-*": 2
+      },
+      "sound": "creature/bear/flee"
+    },
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "game:entities/animal/mammal/bear-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [ "strawdummy" ],
+      "priority": 1.8,
+      "movespeedByType": {
+        "bear-sun-*": 0.025,
+        "bear-panda-*": 0.025,
+        "bear-black-*": 0.04,
+        "bear-brown-*": 0.055,
+        "bear-polar-*": 0.06
+      },
+      "seekingRange": 8,
+      "instafleeOnDamageChance": 1,
+      "animation": "Run",
+      "animationSpeedByType": {
+        "bear-sun-*": 2.3,
+        "bear-panda-*": 1.9,
+        "bear-polar-*": 1.8,
+        "bear-brown-*": 2,
+        "bear-black-*": 2
+      },
+      "sound": "creature/bear/flee"
+    },
+    "side": "server"
+  }
+]
