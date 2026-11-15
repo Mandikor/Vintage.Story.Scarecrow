@@ -21,12 +21,12 @@
   },
 
 	"behaviorConfigs": {
-    "rideableaccessories": {
+    "scarecrowattachments": {
       "dropContentsOnDeath": true,
       "wearableSlots": [
         {
           "code": "sc-neck",
-          "forCategoryCodes": [ "lantern" ],
+          "allowedCodes": [ "game:lantern-*-up" ],
           "attachmentPointCode": "LanternAP",
           "stepParentTo": {
             "": { "elementName": "LanternStorage" }
@@ -34,7 +34,7 @@
         },
         {
           "code": "sc-foot",
-          "forCategoryCodes": [ "wateringcan" ],
+          "allowedCodes": [ "game:wateringcan-*-fired" ],
           "attachmentPointCode": "FootAP",
           "stepParentTo": {
             "": { "elementName": "FootStorage" }
@@ -58,7 +58,7 @@
         "stepHeight": 1.1251
       },
       { "code": "selectionboxes" },
-      { "code": "rideableaccessories" },
+      { "code": "scarecrowattachments" },
       { "code": "interpolateposition" }
     ],
     "animations": [
@@ -78,7 +78,7 @@
         "stepHeight": 1.1251
       },
       { "code": "selectionboxes" },
-      { "code": "rideableaccessories" },
+      { "code": "scarecrowattachments" },
       {
         "code": "health",
         "currenthealth": 150,

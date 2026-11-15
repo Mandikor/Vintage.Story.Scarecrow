@@ -1,5 +1,6 @@
 [
   {
+    "enabled": true,
     "file": "artofgrowing:itemtypes/tool/hayfork.json",
     "op": "addmerge",
     "path": "/attributes/attachableToEntity",

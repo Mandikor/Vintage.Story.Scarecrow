@@ -1,0 +1,113 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Newtonsoft.Json.Linq;
+using Vintagestory.API.Client;
+using Vintagestory.API.Common;
+using Vintagestory.API.Common.Entities;
+using Vintagestory.API.Datastructures;
+using Vintagestory.API.MathTools;
+using Vintagestory.API.Util;
+using Vintagestory.GameContent;
+
+namespace Scarecrow
+{
+    /// <summary>Vanilla attachment handling with an additional item-code filter per slot.</summary>
+    public class ScarecrowAttachments : EntityBehaviorRideableAccessories
+    {
+        private string[][] allowedCodes = Array.Empty<string[]>();
+        private string[][] categories = Array.Empty<string[]>();
+
+        public ScarecrowAttachments(Entity entity) : base(entity) { }
+
+        private JsonObject PrepareConfig(JsonObject config, IWorldAccessor world)
+        {
+            // Respect the actual categories of permitted collectibles, including other mods.
+            JsonObject copy = new JsonObject(config.Token.DeepClone());
+            JArray slots = (JArray)copy["wearableSlots"].Token;
+            allowedCodes = new string[slots.Count][];
+            categories = new string[slots.Count][];
+            for (int i = 0; i < slots.Count; i++)
+            {
+                allowedCodes[i] = slots[i]["allowedCodes"]?.ToObject<string[]>() ?? Array.Empty<string>();
+                AssetLocation[] patterns = allowedCodes[i].Select(code => new AssetLocation(code)).ToArray();
+                HashSet<string> accepted = new();
+                foreach (CollectibleObject collectible in world.Collectibles)
+                {
+                    if (collectible?.Code == null || !patterns.Any(pattern => WildcardUtil.Match(pattern, collectible.Code))) continue;
+                    string category = IAttachableToEntity.FromCollectible(collectible)?.GetCategoryCode(new ItemStack(collectible));
+                    if (category != null) accepted.Add(category);
+                }
+                categories[i] = accepted.ToArray();
+                slots[i]["forCategoryCodes"] = JArray.FromObject(categories[i]);
+            }
+            return copy;
+        }
+
+        public override void Initialize(EntityProperties properties, JsonObject attributes)
+        {
+            base.Initialize(properties, PrepareConfig(attributes, entity.World));
+        }
+
+        public override bool TryEarlyLoadCollectibleMappings(IWorldAccessor world,
+            Dictionary<int, AssetLocation> oldBlockIdMapping, Dictionary<int, AssetLocation> oldItemIdMapping,
+            bool resolveImports, EntityProperties entityProperties, JsonObject behaviorConfig)
+        {
+            return base.TryEarlyLoadCollectibleMappings(world, oldBlockIdMapping, oldItemIdMapping,
+                resolveImports, entityProperties, PrepareConfig(behaviorConfig, world));
+        }
+
+        protected override void loadInv()
+        {
+            base.loadInv();
+            if (inv == null) return;
+            for (int i = 0; i < inv.Count && i < allowedCodes.Length; i++)
+            {
+                if (inv[i] is ScarecrowAttachmentSlot) continue;
+                // Loading is not insertion: keep saved contents removable after rule changes.
+                ItemStack stack = inv[i].Itemstack;
+                inv[i] = new ScarecrowAttachmentSlot(inv, categories[i], allowedCodes[i]) { Itemstack = stack };
+            }
+        }
+
+        public override void OnInteract(EntityAgent byEntity, ItemSlot itemslot, Vec3d hitPosition,
+            EnumInteractMode mode, ref EnumHandling handled)
+        {
+            // Vanilla only transfers the item on the server. Check the whitelist here as well
+            // so the client cannot predict a successful attachment for a forbidden tool.
+            EntityControls controls = byEntity.MountedOn?.Controls ?? byEntity.Controls;
+            int boxIndex = (byEntity as EntityPlayer)?.EntitySelection?.SelectionBoxIndex ?? -1;
+            if (mode == EnumInteractMode.Interact && !itemslot.Empty && boxIndex > 0
+                && (UseShiftAttach ? controls.ShiftKey : controls.CtrlKey)
+                && GetSlotFromSelectionBoxIndex(boxIndex - 1) is ScarecrowAttachmentSlot slot
+                && slot.Empty && !slot.Allows(itemslot.Itemstack))
+            {
+                handled = EnumHandling.PreventSubsequent;
+                return;
+            }
+            base.OnInteract(byEntity, itemslot, hitPosition, mode, ref handled);
+        }
+
+        public override WorldInteraction[] GetInteractionHelp(IClientWorldAccessor world, EntitySelection selection,
+            IClientPlayer player, ref EnumHandling handled)
+        {
+            WorldInteraction[] help = base.GetInteractionHelp(world, selection, player, ref handled);
+            if (help == null || selection.SelectionBoxIndex <= 0) return help;
+            if (GetSlotFromSelectionBoxIndex(selection.SelectionBoxIndex - 1) is not ScarecrowAttachmentSlot slot) return help;
+
+            // Vanilla caches these objects. Filter copies, never the shared cache.
+            return help.Select(interaction => new WorldInteraction
+            {
+                ActionLangCode = interaction.ActionLangCode,
+                MouseButton = interaction.MouseButton,
+                HotKeyCode = interaction.HotKeyCode,
+                HotKeyCodes = interaction.HotKeyCodes,
+                RequireFreeHand = interaction.RequireFreeHand,
+                JsonItemStacks = interaction.JsonItemStacks,
+                GetMatchingStacks = interaction.GetMatchingStacks,
+                ShouldApply = interaction.ShouldApply,
+                Itemstacks = interaction.Itemstacks?.Where(slot.Allows).ToArray()
+            }).Where(interaction => interaction.Itemstacks == null || interaction.Itemstacks.Length > 0).ToArray();
+        }
+    }
+}

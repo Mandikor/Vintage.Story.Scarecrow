@@ -6,7 +6,6 @@
     "path": "/attributes",
     "value": {
       "attachableToEntity": {
-        "categoryCode": "rake",
         "attachedShapeBySlotCode": {
           "sc-leftarm": { "base": "scarecrow:item/wearable/leaflitter/rake-left" },
           "sc-rightarm": { "base": "scarecrow:item/wearable/leaflitter/rake-right" }

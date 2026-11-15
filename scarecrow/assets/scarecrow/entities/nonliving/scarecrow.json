@@ -21,13 +21,13 @@
 	},
 
 	"behaviorConfigs": {
-		"rideableaccessories": {
+		"scarecrowattachments": {
 			"dropContentsOnDeath": true,
 			"__comment": "These need to be in the same order as the selectionBoxes array further down",
 			"wearableSlots": [
 				{
 					"code": "sc-leftarm",
-					"forCategoryCodes": [ "scythe", "hoe", "bugnet", "snowshovel", "hayfork", "rake" ],
+					"allowedCodes": [ "game:scythe-*", "game:hoe-*", "game:bugnet-*", "game:snowshovel-*", "artofgrowing:hayfork-*", "leaflitter:rake" ],
 					"attachmentPointCode": "LArmAP",
 					"stepParentTo": {
 						"": { "elementName": "LArmStorage" }
@@ -35,7 +35,7 @@
 				},
 				{
 					"code": "sc-rightarm",
-					"forCategoryCodes": [ "scythe", "hoe", "bugnet", "snowshovel", "hayfork", "rake" ],
+					"allowedCodes": [ "game:scythe-*", "game:hoe-*", "game:bugnet-*", "game:snowshovel-*", "artofgrowing:hayfork-*", "leaflitter:rake" ],
 					"attachmentPointCode": "RArmAP",
 					"stepParentTo": {
 						"": { "elementName": "RArmStorage" }
@@ -43,7 +43,7 @@
 				},
 				{
 					"code": "sc-neck",
-					"forCategoryCodes": [ "lantern" ],
+					"allowedCodes": [ "game:lantern-*-up" ],
 					"attachmentPointCode": "LanternAP",
 					"stepParentTo": {
 						"": { "elementName": "LanternStorage" }
@@ -51,7 +51,7 @@
 				},
 				{
 					"code": "sc-foot",
-					"forCategoryCodes": [ "wateringcan" ],
+					"allowedCodes": [ "game:wateringcan-*-fired" ],
 					"attachmentPointCode": "FootAP",
 					"stepParentTo": {
 						"": { "elementName": "FootStorage" }
@@ -76,7 +76,7 @@
 				"stepHeight": 1.1251
 			},
 			{ "code": "selectionboxes" },
-			{ "code": "rideableaccessories" },
+			{ "code": "scarecrowattachments" },
 			{ "code": "interpolateposition" }
 		],
 		"animations": [
@@ -97,7 +97,7 @@
 			},
 			{ "code": "selectionboxes" },
 			{
-				"code": "rideableaccessories"
+				"code": "scarecrowattachments"
 			},
 			{
 				"code": "health",
