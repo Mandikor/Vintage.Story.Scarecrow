@@ -12,6 +12,3 @@ Attachment rules are defined per slot in the entity JSON files under
 list supports domain-qualified wildcard patterns such as `game:hoe-*`.
 The original collectible categories are preserved, so vanilla stands keep accepting
 their tools. Existing attached items remain removable after changing a whitelist.
-
-Run the attachment regression checks with `dotnet run --project tests/Scarecrow.Tests.csproj`.
-The `VINTAGE_STORY` environment variable must point to the local game installation.
