@@ -1,97 +1,133 @@
 [
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/9/aitasks/-",
     "file": "game:entities/animal/mammal/hare-baby.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [ "scarecrow" ],
-      "priority": 1.6,
       "movespeed": 0.04,
       "animationSpeed": 1.8,
+      "animation": "Run",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run"
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/9/aitasks/-",
     "file": "game:entities/animal/mammal/hare-baby.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [ "little-scarecrow" ],
-      "priority": 1.6,
       "movespeed": 0.04,
       "animationSpeed": 1.8,
+      "animation": "Run",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run"
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/9/aitasks/-",
     "file": "game:entities/animal/mammal/hare-baby.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [ "strawdummy" ],
-      "priority": 1.6,
       "movespeed": 0.04,
       "animationSpeed": 1.8,
+      "animation": "Run",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run"
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/11/aitasks/-",
     "file": "game:entities/animal/mammal/hare-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [ "scarecrow" ],
-      "priority": 2.1,
       "movespeed": 0.06,
+      "animation": "Run",
+      "animationSpeed": 2,
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 2
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/11/aitasks/-",
     "file": "game:entities/animal/mammal/hare-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [ "little-scarecrow" ],
-      "priority": 2.1,
       "movespeed": 0.06,
+      "animation": "Run",
+      "animationSpeed": 2,
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 2
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/11/aitasks/-",
     "file": "game:entities/animal/mammal/hare-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [ "strawdummy" ],
-      "priority": 2.1,
       "movespeed": 0.06,
-      "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
       "animation": "Run",
-      "animationSpeed": 2
+      "animationSpeed": 2,
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   }

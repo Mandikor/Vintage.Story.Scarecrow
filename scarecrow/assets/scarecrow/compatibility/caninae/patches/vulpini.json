@@ -6,12 +6,6 @@
     "file": "caninae:entities/animal/mammal/vulpini-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 5.5,
-      "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
       "animation": "Gallop",
       "movespeedByType": {
         "*-female-nyctereutes-procyonoides": 0.104,
@@ -45,7 +39,16 @@
         "*-female-vulpes-zerda": 0.056,
         "*-male-vulpes-zerda": 0.06
       },
-      "animationSpeed": 4
+      "animationSpeed": 4,
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -56,12 +59,6 @@
     "file": "caninae:entities/animal/mammal/vulpini-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 5.5,
-      "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
       "animation": "Gallop",
       "movespeedByType": {
         "*-female-nyctereutes-procyonoides": 0.104,
@@ -95,7 +92,16 @@
         "*-female-vulpes-zerda": 0.056,
         "*-male-vulpes-zerda": 0.06
       },
-      "animationSpeed": 4
+      "animationSpeed": 4,
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -106,12 +112,6 @@
     "file": "caninae:entities/animal/mammal/vulpini-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 5.5,
-      "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
       "animation": "Gallop",
       "movespeedByType": {
         "*-female-nyctereutes-procyonoides": 0.104,
@@ -145,93 +145,26 @@
         "*-female-vulpes-zerda": 0.056,
         "*-male-vulpes-zerda": 0.06
       },
-      "animationSpeed": 4
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "caninae:entities/animal/mammal/vulpini-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 5.5,
-      "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
-      "animation": "Gallop",
-      "movespeedByType": {
-        "*-nyctereutes-procyonoides": 0.024,
-        "*-nyctereutes-viverrinus": 0.02,
-        "*-otocyon-megalotis": 0.024,
-        "*-vulpes-bengalensis": 0.024,
-        "*-vulpes-cana": 0.02,
-        "*-vulpes-chama": 0.024,
-        "*-vulpes-corsac": 0.024,
-        "*-vulpes-ferrilata": 0.024,
-        "*-vulpes-lagopus": 0.02,
-        "*-vulpes-macrotis": 0.02,
-        "*-vulpes-pallida": 0.02,
-        "*-vulpes-rueppellii": 0.016,
-        "*-vulpes-velox": 0.02,
-        "*-vulpes-vulpes": 0.032,
-        "*-vulpes-zerda": 0.016
-      },
-      "animationSpeed": 4
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "caninae:entities/animal/mammal/vulpini-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 5.5,
-      "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
-      "animation": "Gallop",
-      "movespeedByType": {
-        "*-nyctereutes-procyonoides": 0.024,
-        "*-nyctereutes-viverrinus": 0.02,
-        "*-otocyon-megalotis": 0.024,
-        "*-vulpes-bengalensis": 0.024,
-        "*-vulpes-cana": 0.02,
-        "*-vulpes-chama": 0.024,
-        "*-vulpes-corsac": 0.024,
-        "*-vulpes-ferrilata": 0.024,
-        "*-vulpes-lagopus": 0.02,
-        "*-vulpes-macrotis": 0.02,
-        "*-vulpes-pallida": 0.02,
-        "*-vulpes-rueppellii": 0.016,
-        "*-vulpes-velox": 0.02,
-        "*-vulpes-vulpes": 0.032,
-        "*-vulpes-zerda": 0.016
-      },
-      "animationSpeed": 4
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "caninae:entities/animal/mammal/vulpini-baby.json",
-    "value": {
-      "code": "fleeentity",
+      "animationSpeed": 4,
       "entityCodes": [
         "strawdummy"
       ],
-      "priority": 5.5,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "caninae:entities/animal/mammal/vulpini-baby.json",
+    "value": {
+      "code": "fleeentity",
       "animation": "Gallop",
       "movespeedByType": {
         "*-nyctereutes-procyonoides": 0.024,
@@ -250,7 +183,92 @@
         "*-vulpes-vulpes": 0.032,
         "*-vulpes-zerda": 0.016
       },
-      "animationSpeed": 4
+      "animationSpeed": 4,
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "caninae:entities/animal/mammal/vulpini-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "animation": "Gallop",
+      "movespeedByType": {
+        "*-nyctereutes-procyonoides": 0.024,
+        "*-nyctereutes-viverrinus": 0.02,
+        "*-otocyon-megalotis": 0.024,
+        "*-vulpes-bengalensis": 0.024,
+        "*-vulpes-cana": 0.02,
+        "*-vulpes-chama": 0.024,
+        "*-vulpes-corsac": 0.024,
+        "*-vulpes-ferrilata": 0.024,
+        "*-vulpes-lagopus": 0.02,
+        "*-vulpes-macrotis": 0.02,
+        "*-vulpes-pallida": 0.02,
+        "*-vulpes-rueppellii": 0.016,
+        "*-vulpes-velox": 0.02,
+        "*-vulpes-vulpes": 0.032,
+        "*-vulpes-zerda": 0.016
+      },
+      "animationSpeed": 4,
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "caninae:entities/animal/mammal/vulpini-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "animation": "Gallop",
+      "movespeedByType": {
+        "*-nyctereutes-procyonoides": 0.024,
+        "*-nyctereutes-viverrinus": 0.02,
+        "*-otocyon-megalotis": 0.024,
+        "*-vulpes-bengalensis": 0.024,
+        "*-vulpes-cana": 0.02,
+        "*-vulpes-chama": 0.024,
+        "*-vulpes-corsac": 0.024,
+        "*-vulpes-ferrilata": 0.024,
+        "*-vulpes-lagopus": 0.02,
+        "*-vulpes-macrotis": 0.02,
+        "*-vulpes-pallida": 0.02,
+        "*-vulpes-rueppellii": 0.016,
+        "*-vulpes-velox": 0.02,
+        "*-vulpes-vulpes": 0.032,
+        "*-vulpes-zerda": 0.016
+      },
+      "animationSpeed": 4,
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   }

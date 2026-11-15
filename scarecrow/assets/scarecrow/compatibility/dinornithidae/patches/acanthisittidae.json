@@ -6,12 +6,38 @@
     "file": "dinornithidae:entities/animal/bird/acanthisittidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "animationByType": {
+        "*-acanthisittachloris": "Fly",
+        "*-xenicusgilviventris": "Fly",
+        "*": "Run"
+      },
+      "movespeedByType": {
+        "acanthisittidae-adult-*-acanthisittachloris": 0.05,
+        "acanthisittidae-adult-*-xenicusgilviventris": 0.05,
+        "acanthisittidae-adult-*": 0.012
+      },
+      "animationSpeedByType": {
+        "acanthisittidae-adult-*": 2
+      },
       "entityCodes": [
         "scarecrow"
       ],
-      "priority": 5.5,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/acanthisittidae-adult.json",
+    "value": {
+      "code": "fleeentity",
       "animationByType": {
         "*-acanthisittachloris": "Fly",
         "*-xenicusgilviventris": "Fly",
@@ -24,36 +50,16 @@
       },
       "animationSpeedByType": {
         "acanthisittidae-adult-*": 2
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "dinornithidae:entities/animal/bird/acanthisittidae-adult.json",
-    "value": {
-      "code": "fleeentity",
+      },
       "entityCodes": [
         "little-scarecrow"
       ],
-      "priority": 5.5,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
-      "animationByType": {
-        "*-acanthisittachloris": "Fly",
-        "*-xenicusgilviventris": "Fly",
-        "*": "Run"
-      },
-      "movespeedByType": {
-        "acanthisittidae-adult-*-acanthisittachloris": 0.05,
-        "acanthisittidae-adult-*-xenicusgilviventris": 0.05,
-        "acanthisittidae-adult-*": 0.012
-      },
-      "animationSpeedByType": {
-        "acanthisittidae-adult-*": 2
-      }
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -64,12 +70,6 @@
     "file": "dinornithidae:entities/animal/bird/acanthisittidae-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 5.5,
-      "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
       "animationByType": {
         "*-acanthisittachloris": "Fly",
         "*-xenicusgilviventris": "Fly",
@@ -82,7 +82,16 @@
       },
       "animationSpeedByType": {
         "acanthisittidae-adult-*": 2
-      }
+      },
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   }

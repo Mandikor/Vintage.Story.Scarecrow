@@ -6,15 +6,48 @@
     "file": "elephantidae:entities/animal/mammal/elephantidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-adult-*-elephasmaximus": 0.0521,
+        "*-adult-*-elephasmaximusborneensis": 0.0417,
+        "*-adult-*-loxodontaafricana": 0.0833,
+        "*-adult-*-loxodontacyclotis": 0.05,
+        "*-adult-*-mammuthuscolumbi": 0.0875,
+        "*-adult-*-mammuthusexilis": 0.0417,
+        "*-adult-*-mammuthusprimigenius": 0.0521,
+        "*-adult-*-palaeoloxodoncypriotes": 0.0313
+      },
+      "animationSpeedByType": {
+        "*-adult-female-elephasmaximus": 4.47,
+        "*-adult-male-elephasmaximus": 3.72,
+        "*-adult-female-elephasmaximusborneensis": 4.04,
+        "*-adult-male-elephasmaximusborneensis": 3.53,
+        "*-adult-female-loxodontaafricana": 6.42,
+        "*-adult-male-loxodontaafricana": 5.07,
+        "*-adult-female-loxodontacyclotis": 6,
+        "*-adult-male-loxodontacyclotis": 5.25,
+        "*-adult-female-mammuthuscolumbi": 5.69,
+        "*-adult-male-mammuthuscolumbi": 5.03,
+        "*-adult-female-mammuthusexilis": 5.07,
+        "*-adult-male-mammuthusexilis": 4.66,
+        "*-adult-female-mammuthusprimigenius": 4.54,
+        "*-adult-male-mammuthusprimigenius": 3.8,
+        "*-adult-female-palaeoloxodoncypriotes": 10.43,
+        "*-adult-male-palaeoloxodoncypriotes": 8.35,
+        "*": 6.5
+      },
       "entityCodes": [
         "scarecrow"
       ],
-      "priority": 5.5,
-      "movespeed": 0.055,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 5.0
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -25,15 +58,48 @@
     "file": "elephantidae:entities/animal/mammal/elephantidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-adult-*-elephasmaximus": 0.0521,
+        "*-adult-*-elephasmaximusborneensis": 0.0417,
+        "*-adult-*-loxodontaafricana": 0.0833,
+        "*-adult-*-loxodontacyclotis": 0.05,
+        "*-adult-*-mammuthuscolumbi": 0.0875,
+        "*-adult-*-mammuthusexilis": 0.0417,
+        "*-adult-*-mammuthusprimigenius": 0.0521,
+        "*-adult-*-palaeoloxodoncypriotes": 0.0313
+      },
+      "animationSpeedByType": {
+        "*-adult-female-elephasmaximus": 4.47,
+        "*-adult-male-elephasmaximus": 3.72,
+        "*-adult-female-elephasmaximusborneensis": 4.04,
+        "*-adult-male-elephasmaximusborneensis": 3.53,
+        "*-adult-female-loxodontaafricana": 6.42,
+        "*-adult-male-loxodontaafricana": 5.07,
+        "*-adult-female-loxodontacyclotis": 6,
+        "*-adult-male-loxodontacyclotis": 5.25,
+        "*-adult-female-mammuthuscolumbi": 5.69,
+        "*-adult-male-mammuthuscolumbi": 5.03,
+        "*-adult-female-mammuthusexilis": 5.07,
+        "*-adult-male-mammuthusexilis": 4.66,
+        "*-adult-female-mammuthusprimigenius": 4.54,
+        "*-adult-male-mammuthusprimigenius": 3.8,
+        "*-adult-female-palaeoloxodoncypriotes": 10.43,
+        "*-adult-male-palaeoloxodoncypriotes": 8.35,
+        "*": 6.5
+      },
       "entityCodes": [
         "little-scarecrow"
       ],
-      "priority": 5.5,
-      "movespeed": 0.055,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 5.0
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -44,15 +110,191 @@
     "file": "elephantidae:entities/animal/mammal/elephantidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-adult-*-elephasmaximus": 0.0521,
+        "*-adult-*-elephasmaximusborneensis": 0.0417,
+        "*-adult-*-loxodontaafricana": 0.0833,
+        "*-adult-*-loxodontacyclotis": 0.05,
+        "*-adult-*-mammuthuscolumbi": 0.0875,
+        "*-adult-*-mammuthusexilis": 0.0417,
+        "*-adult-*-mammuthusprimigenius": 0.0521,
+        "*-adult-*-palaeoloxodoncypriotes": 0.0313
+      },
+      "animationSpeedByType": {
+        "*-adult-female-elephasmaximus": 4.47,
+        "*-adult-male-elephasmaximus": 3.72,
+        "*-adult-female-elephasmaximusborneensis": 4.04,
+        "*-adult-male-elephasmaximusborneensis": 3.53,
+        "*-adult-female-loxodontaafricana": 6.42,
+        "*-adult-male-loxodontaafricana": 5.07,
+        "*-adult-female-loxodontacyclotis": 6,
+        "*-adult-male-loxodontacyclotis": 5.25,
+        "*-adult-female-mammuthuscolumbi": 5.69,
+        "*-adult-male-mammuthuscolumbi": 5.03,
+        "*-adult-female-mammuthusexilis": 5.07,
+        "*-adult-male-mammuthusexilis": 4.66,
+        "*-adult-female-mammuthusprimigenius": 4.54,
+        "*-adult-male-mammuthusprimigenius": 3.8,
+        "*-adult-female-palaeoloxodoncypriotes": 10.43,
+        "*-adult-male-palaeoloxodoncypriotes": 8.35,
+        "*": 6.5
+      },
       "entityCodes": [
         "strawdummy"
       ],
-      "priority": 5.5,
-      "movespeed": 0.055,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 5.0
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "elephantidae:entities/animal/mammal/elephantidae-adult.json",
+    "value": {
+      "code": "seekentity",
+      "animation": "Charge",
+      "movespeedByType": {
+        "*-adult-*-elephasmaximus": 0.0389,
+        "*-adult-*-elephasmaximusborneensis": 0.0319,
+        "*-adult-*-loxodontaafricana": 0.0583,
+        "*-adult-*-loxodontacyclotis": 0.0361,
+        "*-adult-*-mammuthuscolumbi": 0.0625,
+        "*-adult-*-mammuthusexilis": 0.0319,
+        "*-adult-*-mammuthusprimigenius": 0.0389,
+        "*-adult-*-palaeoloxodoncypriotes": 0.0236
+      },
+      "animationSpeedByType": {
+        "*-adult-female-elephasmaximus": 3.33,
+        "*-adult-male-elephasmaximus": 2.78,
+        "*-adult-female-elephasmaximusborneensis": 3.09,
+        "*-adult-male-elephasmaximusborneensis": 2.7,
+        "*-adult-female-loxodontaafricana": 4.49,
+        "*-adult-male-loxodontaafricana": 3.55,
+        "*-adult-female-loxodontacyclotis": 4.33,
+        "*-adult-male-loxodontacyclotis": 3.79,
+        "*-adult-female-mammuthuscolumbi": 4.06,
+        "*-adult-male-mammuthuscolumbi": 3.59,
+        "*-adult-female-mammuthusexilis": 3.88,
+        "*-adult-male-mammuthusexilis": 3.56,
+        "*-adult-female-mammuthusprimigenius": 3.39,
+        "*-adult-male-mammuthusprimigenius": 2.83,
+        "*-adult-female-palaeoloxodoncypriotes": 7.87,
+        "*-adult-male-palaeoloxodoncypriotes": 6.29,
+        "*": 4.5
+      },
+      "soundByType": {
+        "*-adult-*": "elephantidae:creature/elephantidae/trumpet*"
+      },
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 8.7,
+      "priorityForCancel": 8.7,
+      "slot": 0,
+      "seekingRange": 16,
+      "minCooldownMs": 500,
+      "maxCooldownMs": 1000,
+      "maxFollowTime": 15,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "file": "elephantidae:entities/animal/mammal/elephantidae-adult.json",
+    "value": {
+      "code": "meleeattack",
+      "animation": "Attack",
+      "animationSpeed": 1.25,
+      "damageByType": {
+        "*-adult-female-elephasmaximus": 24,
+        "*-adult-male-elephasmaximus": 29,
+        "*-adult-female-elephasmaximusborneensis": 22,
+        "*-adult-male-elephasmaximusborneensis": 27,
+        "*-adult-female-loxodontaafricana": 25,
+        "*-adult-male-loxodontaafricana": 37,
+        "*-adult-female-loxodontacyclotis": 17,
+        "*-adult-male-loxodontacyclotis": 21,
+        "*-adult-female-mammuthuscolumbi": 33,
+        "*-adult-male-mammuthuscolumbi": 51,
+        "*-adult-female-mammuthusexilis": 16,
+        "*-adult-male-mammuthusexilis": 19,
+        "*-adult-female-mammuthusprimigenius": 29,
+        "*-adult-male-mammuthusprimigenius": 37,
+        "*-adult-female-palaeoloxodoncypriotes": 9,
+        "*-adult-male-palaeoloxodoncypriotes": 12
+      },
+      "knockbackStrengthByType": {
+        "*-palaeoloxodoncypriotes": 0.5,
+        "*-mammuthusexilis": 1,
+        "*-loxodontacyclotis": 2,
+        "*": 4
+      },
+      "damageType": "SlashingAttack",
+      "minDistByType": {
+        "*-male-loxodontaafricana": 4,
+        "*-mammuthuscolumbi": 4,
+        "*-female-mammuthusexilis": 2,
+        "*-male-mammuthusprimigenius": 4,
+        "*-palaeoloxodoncypriotes": 1.5,
+        "*": 3
+      },
+      "minVerDistByType": {
+        "*-male-loxodontaafricana": 4,
+        "*-mammuthuscolumbi": 4,
+        "*-female-mammuthusexilis": 2,
+        "*-male-mammuthusprimigenius": 4,
+        "*-palaeoloxodoncypriotes": 1.5,
+        "*": 3
+      },
+      "damageTierByType": {
+        "*-male-loxodontaafricana": 4,
+        "*-mammuthuscolumbi": 4,
+        "*-female-mammuthusexilis": 2,
+        "*-male-mammuthusprimigenius": 4,
+        "*-palaeoloxodoncypriotes": 2,
+        "*": 3
+      },
+      "attackDurationMs": 1250,
+      "damagePlayerAtMs": 400,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 8.8,
+      "priorityForCancel": 8.8,
+      "slot": 1,
+      "minCooldownMs": 500,
+      "maxCooldownMs": 1500,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -63,15 +305,30 @@
     "file": "elephantidae:entities/animal/mammal/elephantidae-baby.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*-elephasmaximus": 0.038,
+        "*-baby-*-elephasmaximusborneensis": 0.036,
+        "*-baby-*-loxodontaafricana": 0.038,
+        "*-baby-*-loxodontacyclotis": 0.032,
+        "*-baby-*-mammuthuscolumbi": 0.04,
+        "*-baby-*-mammuthusexilis": 0.032,
+        "*-baby-*-mammuthusprimigenius": 0.038,
+        "*-baby-*-palaeoloxodoncypriotes": 0.0144
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 8,
+        "*": 6
+      },
       "entityCodes": [
         "scarecrow"
       ],
-      "priority": 5.5,
-      "movespeed": 0.034,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 6.0
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -82,15 +339,30 @@
     "file": "elephantidae:entities/animal/mammal/elephantidae-baby.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*-elephasmaximus": 0.038,
+        "*-baby-*-elephasmaximusborneensis": 0.036,
+        "*-baby-*-loxodontaafricana": 0.038,
+        "*-baby-*-loxodontacyclotis": 0.032,
+        "*-baby-*-mammuthuscolumbi": 0.04,
+        "*-baby-*-mammuthusexilis": 0.032,
+        "*-baby-*-mammuthusprimigenius": 0.038,
+        "*-baby-*-palaeoloxodoncypriotes": 0.0144
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 8,
+        "*": 6
+      },
       "entityCodes": [
         "little-scarecrow"
       ],
-      "priority": 5.5,
-      "movespeed": 0.034,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 6.0
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -101,15 +373,30 @@
     "file": "elephantidae:entities/animal/mammal/elephantidae-baby.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*-elephasmaximus": 0.038,
+        "*-baby-*-elephasmaximusborneensis": 0.036,
+        "*-baby-*-loxodontaafricana": 0.038,
+        "*-baby-*-loxodontacyclotis": 0.032,
+        "*-baby-*-mammuthuscolumbi": 0.04,
+        "*-baby-*-mammuthusexilis": 0.032,
+        "*-baby-*-mammuthusprimigenius": 0.038,
+        "*-baby-*-palaeoloxodoncypriotes": 0.0144
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 8,
+        "*": 6
+      },
       "entityCodes": [
         "strawdummy"
       ],
-      "priority": 5.5,
-      "movespeed": 0.034,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 6.0
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   }

@@ -6,12 +6,6 @@
     "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 5.5,
-      "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
       "animation": "Walk",
       "movespeedByType": {
         "meiolaniidae-adult-*": 0.005
@@ -19,7 +13,19 @@
       "animationSpeedByType": {
         "meiolaniidae-adult-male-ninjemysoweni": 1,
         "meiolaniidae-adult-female-ninjemysoweni": 1.1
-      }
+      },
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -30,12 +36,6 @@
     "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 5.5,
-      "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
       "animation": "Walk",
       "movespeedByType": {
         "meiolaniidae-adult-*": 0.005
@@ -43,7 +43,19 @@
       "animationSpeedByType": {
         "meiolaniidae-adult-male-ninjemysoweni": 1,
         "meiolaniidae-adult-female-ninjemysoweni": 1.1
-      }
+      },
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -54,12 +66,6 @@
     "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 5.5,
-      "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
       "animation": "Walk",
       "movespeedByType": {
         "meiolaniidae-adult-*": 0.005
@@ -67,71 +73,105 @@
       "animationSpeedByType": {
         "meiolaniidae-adult-male-ninjemysoweni": 1,
         "meiolaniidae-adult-female-ninjemysoweni": 1.1
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 5.5,
-      "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
-      "animation": "Walk",
-      "movespeedByType": {
-        "meiolaniidae-baby-*-ninjemysoweni": 0.0025
       },
-      "animationSpeedByType": {
-        "meiolaniidae-baby-*-ninjemysoweni": 2,
-        "*": 2
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 5.5,
-      "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
-      "animation": "Walk",
-      "movespeedByType": {
-        "meiolaniidae-baby-*-ninjemysoweni": 0.0025
-      },
-      "animationSpeedByType": {
-        "meiolaniidae-baby-*-ninjemysoweni": 2,
-        "*": 2
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-baby.json",
-    "value": {
-      "code": "fleeentity",
       "entityCodes": [
         "strawdummy"
       ],
-      "priority": 5.5,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-adult.json",
+    "value": {
+      "code": "seekentity",
+      "animation": "Walk",
+      "movespeedByType": {
+        "meiolaniidae-adult-*": 0.005
+      },
+      "animationSpeedByType": {
+        "meiolaniidae-adult-male-ninjemysoweni": 1,
+        "meiolaniidae-adult-female-ninjemysoweni": 1.1
+      },
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 8.7,
+      "priorityForCancel": 8.7,
+      "slot": 0,
+      "seekingRange": 16,
+      "minCooldownMs": 500,
+      "maxCooldownMs": 1000,
+      "maxFollowTime": 15,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-adult.json",
+    "value": {
+      "code": "meleeattack",
+      "animation": "Attack",
+      "animationSpeed": 1.5,
+      "damageByType": {
+        "meiolaniidae-adult-male-ninjemysoweni": 1.8,
+        "meiolaniidae-adult-female-ninjemysoweni": 1.6
+      },
+      "damageType": "SlashingAttack",
+      "minDist": 1.25,
+      "damageTier": 2,
+      "attackDurationMs": 1250,
+      "damagePlayerAtMs": 500,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 8.8,
+      "priorityForCancel": 8.8,
+      "slot": 1,
+      "minCooldownMs": 500,
+      "maxCooldownMs": 1500,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-baby.json",
+    "value": {
+      "code": "fleeentity",
       "animation": "Walk",
       "movespeedByType": {
         "meiolaniidae-baby-*-ninjemysoweni": 0.0025
@@ -139,7 +179,70 @@
       "animationSpeedByType": {
         "meiolaniidae-baby-*-ninjemysoweni": 2,
         "*": 2
-      }
+      },
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "animation": "Walk",
+      "movespeedByType": {
+        "meiolaniidae-baby-*-ninjemysoweni": 0.0025
+      },
+      "animationSpeedByType": {
+        "meiolaniidae-baby-*-ninjemysoweni": 2,
+        "*": 2
+      },
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "animation": "Walk",
+      "movespeedByType": {
+        "meiolaniidae-baby-*-ninjemysoweni": 0.0025
+      },
+      "animationSpeedByType": {
+        "meiolaniidae-baby-*-ninjemysoweni": 2,
+        "*": 2
+      },
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   }

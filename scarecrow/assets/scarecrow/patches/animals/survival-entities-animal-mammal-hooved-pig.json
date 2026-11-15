@@ -1,112 +1,242 @@
 [
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/pig-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "scarecrow" ],
-      "priority": 1.6,
       "movespeed": 0.015,
+      "animationSpeed": 1.5,
+      "animation": "Run",
+      "sound": "creature/pig/piglet-hurt",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
       "seekingRange": 16,
-      "animationSpeed": 1.5,
-      "animation": "Run",
-      "sound": "creature/pig/piglet-hurt"
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/pig-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "little-scarecrow" ],
-      "priority": 1.6,
       "movespeed": 0.015,
+      "animationSpeed": 1.5,
+      "animation": "Run",
+      "sound": "creature/pig/piglet-hurt",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
       "seekingRange": 12,
-      "animationSpeed": 1.5,
-      "animation": "Run",
-      "sound": "creature/pig/piglet-hurt"
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/pig-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "strawdummy" ],
-      "priority": 1.6,
       "movespeed": 0.015,
-      "seekingRange": 8,
       "animationSpeed": 1.5,
       "animation": "Run",
-      "sound": "creature/pig/piglet-hurt"
+      "sound": "creature/pig/piglet-hurt",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/pig-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "scarecrow" ],
-      "priority": 1.9,
+      "animation": "Run",
+      "animationSpeed": 1.2,
+      "movespeedByType": {
+        "*-adult-*": 0.05,
+        "*-elder-*": 0.055
+      },
+      "sound": "creature/pig/hurt",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 2.2,
+      "priorityForCancel": 2.2,
       "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/pig-adult.json",
+    "value": {
+      "code": "fleeentity",
       "animation": "Run",
       "animationSpeed": 1.2,
       "movespeedByType": {
         "*-adult-*": 0.05,
         "*-elder-*": 0.055
       },
-      "sound": "creature/pig/hurt"
-    },
-    "side": "server"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "game:entities/animal/mammal/hooved/pig-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "little-scarecrow" ],
-      "priority": 1.9,
+      "sound": "creature/pig/hurt",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 2.2,
+      "priorityForCancel": 2.2,
       "seekingRange": 12,
-      "animation": "Run",
-      "animationSpeed": 1.2,
-      "movespeedByType": {
-        "*-adult-*": 0.05,
-        "*-elder-*": 0.055
-      },
-      "sound": "creature/pig/hurt"
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/pig-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "strawdummy" ],
-      "priority": 1.9,
-      "seekingRange": 8,
       "animation": "Run",
       "animationSpeed": 1.2,
       "movespeedByType": {
         "*-adult-*": 0.05,
         "*-elder-*": 0.055
       },
-      "sound": "creature/pig/hurt"
+      "sound": "creature/pig/hurt",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 2.2,
+      "priorityForCancel": 2.2,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/pig-adult.json",
+    "value": {
+      "code": "seekentity",
+      "movespeedByType": {
+        "*-adult-*": 0.042,
+        "*-elder-*": 0.055
+      },
+      "animation": "Canter",
+      "animationSpeed": 1.2,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.3,
+      "priorityForCancel": 2.3,
+      "slot": 0,
+      "seekingRange": 16,
+      "minCooldownMs": 1000,
+      "maxCooldownMs": 1500,
+      "maxFollowTime": 15,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/pig-adult.json",
+    "value": {
+      "code": "meleeattack",
+      "damageByType": {
+        "*-eurasian-elder-male": 10,
+        "*-eurasian-elder-female": 8,
+        "*-female": 4,
+        "*": 5
+      },
+      "damageTierByType": {
+        "pig-eurasian-elder-male": 2,
+        "*": 1
+      },
+      "attackDurationMs": 900,
+      "damagePlayerAtMs": 300,
+      "animation": "Attack",
+      "animationSpeed": 1.2,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.4,
+      "priorityForCancel": 2.4,
+      "slot": 1,
+      "minCooldownMs": 500,
+      "maxCooldownMs": 1500,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "minCooldownMsByType": {
+        "*-female": 1000,
+        "*": 1500
+      },
+      "maxCooldownMsByType": {
+        "*-female": 1500,
+        "*": 2500
+      },
+      "retaliateAttacks": false
     },
     "side": "server"
   }

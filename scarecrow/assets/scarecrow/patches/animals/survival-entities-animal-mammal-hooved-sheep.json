@@ -1,103 +1,221 @@
 [
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/sheep-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "scarecrow" ],
-      "priority": 1.6,
       "movespeed": 0.025,
+      "animationSpeed": 1.2,
+      "animation": "Run",
+      "sound": "creature/sheep/lamb-hurt2",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
       "seekingRange": 16,
-      "animationSpeed": 1.2,
-      "animation": "Run",
-      "sound": "creature/sheep/lamb-hurt2"
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/sheep-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "little-scarecrow" ],
-      "priority": 1.6,
       "movespeed": 0.025,
+      "animationSpeed": 1.2,
+      "animation": "Run",
+      "sound": "creature/sheep/lamb-hurt2",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
       "seekingRange": 12,
-      "animationSpeed": 1.2,
-      "animation": "Run",
-      "sound": "creature/sheep/lamb-hurt2"
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/sheep-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "strawdummy" ],
-      "priority": 1.6,
       "movespeed": 0.025,
-      "seekingRange": 8,
       "animationSpeed": 1.2,
       "animation": "Run",
-      "sound": "creature/sheep/lamb-hurt2"
+      "sound": "creature/sheep/lamb-hurt2",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/sheep-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "scarecrow" ],
-      "priority": 1.9,
+      "animation": "Run",
+      "animationSpeed": 1.2,
       "movespeed": 0.052,
+      "sound": "creature/sheep/hurt2",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 2.2,
+      "priorityForCancel": 2.2,
       "seekingRange": 16,
-      "animation": "Run",
-      "animationSpeed": 1.2,
-      "sound": "creature/sheep/hurt2"
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/sheep-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "little-scarecrow" ],
-      "priority": 1.9,
+      "animation": "Run",
+      "animationSpeed": 1.2,
       "movespeed": 0.052,
+      "sound": "creature/sheep/hurt2",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 2.2,
+      "priorityForCancel": 2.2,
       "seekingRange": 12,
-      "animation": "Run",
-      "animationSpeed": 1.2,
-      "sound": "creature/sheep/hurt2"
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/sheep-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "strawdummy" ],
-      "priority": 1.9,
-      "movespeed": 0.052,
-      "seekingRange": 8,
       "animation": "Run",
       "animationSpeed": 1.2,
-      "sound": "creature/sheep/hurt2"
+      "movespeed": 0.052,
+      "sound": "creature/sheep/hurt2",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 2.2,
+      "priorityForCancel": 2.2,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/sheep-adult.json",
+    "value": {
+      "code": "seekentity",
+      "movespeed": 0.05,
+      "animation": "Canter",
+      "animationSpeed": 1.2,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.3,
+      "priorityForCancel": 2.3,
+      "slot": 0,
+      "seekingRange": 16,
+      "minCooldownMs": 1000,
+      "maxCooldownMs": 1500,
+      "maxFollowTime": 15,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/sheep-adult.json",
+    "value": {
+      "code": "meleeattack",
+      "knockbackStrengthByType": {
+        "*-female": 2,
+        "*": 2.65
+      },
+      "damageByType": {
+        "*-female": 6,
+        "*": 7.5
+      },
+      "damageTier": 2,
+      "attackDurationMs": 1250,
+      "damagePlayerAtMs": 800,
+      "animation": "Attack",
+      "animationSpeed": 1,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.4,
+      "priorityForCancel": 2.4,
+      "slot": 1,
+      "minCooldownMs": 1500,
+      "maxCooldownMs": 2500,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
     },
     "side": "server"
   }

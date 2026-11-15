@@ -1,97 +1,133 @@
 [
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/raccoon-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "scarecrow" ],
-      "priority": 1.6,
       "movespeed": 0.02,
       "animationSpeed": 2.2,
+      "animation": "Run",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
       "seekingRange": 16,
-      "animation": "Run"
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/raccoon-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "little-scarecrow" ],
-      "priority": 1.6,
       "movespeed": 0.02,
       "animationSpeed": 2.2,
+      "animation": "Run",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
       "seekingRange": 12,
-      "animation": "Run"
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/raccoon-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "strawdummy" ],
-      "priority": 1.6,
       "movespeed": 0.02,
       "animationSpeed": 2.2,
+      "animation": "Run",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
       "seekingRange": 8,
-      "animation": "Run"
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/raccoon-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "scarecrow" ],
-      "priority": 2.1,
       "movespeed": 0.035,
       "animationSpeed": 3.5,
+      "animation": "Run",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
       "seekingRange": 16,
-      "animation": "Run"
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/raccoon-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "little-scarecrow" ],
-      "priority": 2.1,
       "movespeed": 0.035,
       "animationSpeed": 3.5,
+      "animation": "Run",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
       "seekingRange": 12,
-      "animation": "Run"
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/raccoon-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "strawdummy" ],
-      "priority": 2.1,
       "movespeed": 0.035,
       "animationSpeed": 3.5,
+      "animation": "Run",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
       "seekingRange": 8,
-      "animation": "Run"
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   }

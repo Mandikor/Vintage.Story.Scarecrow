@@ -6,15 +6,50 @@
     "file": "bovinae:entities/animal/mammal/hooved/bovinae-baby.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*-bosprimigeniusprimigenius": 0.048,
+        "*-baby-*-bospriscus": 0.048,
+        "*-baby-*-bostaurustaurus": 0.048,
+        "*-baby-*-boselaphustragocamelus": 0.06,
+        "*-baby-*-bubalusarnee": 0.048,
+        "*-baby-*-bubalusbrevicornis": 0.048,
+        "*-baby-*-bubalusbubalis": 0.048,
+        "*-baby-*-bubaluscebuensis": 0.02,
+        "*-baby-*-bubalusdepressicornis": 0.04,
+        "*-baby-*-bubalusgrovesi": 0.04,
+        "*-baby-*-bubalusmephistopheles": 0.048,
+        "*-baby-*-bubalusmindorensis": 0.04,
+        "*-baby-*-bubalusmurrensis": 0.048,
+        "*-baby-*-bubalusquarlesi": 0.02,
+        "*-baby-*-pseudoryxnghetinhensis": 0.04,
+        "*-baby-*-syncerusantiquus": 0.048,
+        "*-baby-*-synceruscaffer": 0.048,
+        "*-baby-*-syncerusnanus": 0.04,
+        "*-baby-*-taurotragusderbianus": 0.06,
+        "*-baby-*-taurotragusoryx": 0.06,
+        "*-baby-*-tetracerusquadricornis": 0.02,
+        "*-baby-*-tragelaphusangasii": 0.04,
+        "*-baby-*-tragelaphusbuxtoni": 0.04,
+        "*-baby-*-tragelaphuseurycerus": 0.048,
+        "*-baby-*-tragelaphusimberbis": 0.06,
+        "*-baby-*-tragelaphusscriptus": 0.04,
+        "*-baby-*-tragelaphusspekii": 0.04,
+        "*-baby-*-tragelaphusstrepsiceros": 0.06,
+        "*-baby-*-tragelaphussylvaticus": 0.04
+      },
+      "animationSpeedByType": {
+        "*": 4
+      },
       "entityCodes": [
         "scarecrow"
       ],
-      "priority": 5.5,
-      "movespeed": 0.04,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 2
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -25,15 +60,50 @@
     "file": "bovinae:entities/animal/mammal/hooved/bovinae-baby.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*-bosprimigeniusprimigenius": 0.048,
+        "*-baby-*-bospriscus": 0.048,
+        "*-baby-*-bostaurustaurus": 0.048,
+        "*-baby-*-boselaphustragocamelus": 0.06,
+        "*-baby-*-bubalusarnee": 0.048,
+        "*-baby-*-bubalusbrevicornis": 0.048,
+        "*-baby-*-bubalusbubalis": 0.048,
+        "*-baby-*-bubaluscebuensis": 0.02,
+        "*-baby-*-bubalusdepressicornis": 0.04,
+        "*-baby-*-bubalusgrovesi": 0.04,
+        "*-baby-*-bubalusmephistopheles": 0.048,
+        "*-baby-*-bubalusmindorensis": 0.04,
+        "*-baby-*-bubalusmurrensis": 0.048,
+        "*-baby-*-bubalusquarlesi": 0.02,
+        "*-baby-*-pseudoryxnghetinhensis": 0.04,
+        "*-baby-*-syncerusantiquus": 0.048,
+        "*-baby-*-synceruscaffer": 0.048,
+        "*-baby-*-syncerusnanus": 0.04,
+        "*-baby-*-taurotragusderbianus": 0.06,
+        "*-baby-*-taurotragusoryx": 0.06,
+        "*-baby-*-tetracerusquadricornis": 0.02,
+        "*-baby-*-tragelaphusangasii": 0.04,
+        "*-baby-*-tragelaphusbuxtoni": 0.04,
+        "*-baby-*-tragelaphuseurycerus": 0.048,
+        "*-baby-*-tragelaphusimberbis": 0.06,
+        "*-baby-*-tragelaphusscriptus": 0.04,
+        "*-baby-*-tragelaphusspekii": 0.04,
+        "*-baby-*-tragelaphusstrepsiceros": 0.06,
+        "*-baby-*-tragelaphussylvaticus": 0.04
+      },
+      "animationSpeedByType": {
+        "*": 4
+      },
       "entityCodes": [
         "little-scarecrow"
       ],
-      "priority": 5.5,
-      "movespeed": 0.04,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 2
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -44,15 +114,50 @@
     "file": "bovinae:entities/animal/mammal/hooved/bovinae-baby.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*-bosprimigeniusprimigenius": 0.048,
+        "*-baby-*-bospriscus": 0.048,
+        "*-baby-*-bostaurustaurus": 0.048,
+        "*-baby-*-boselaphustragocamelus": 0.06,
+        "*-baby-*-bubalusarnee": 0.048,
+        "*-baby-*-bubalusbrevicornis": 0.048,
+        "*-baby-*-bubalusbubalis": 0.048,
+        "*-baby-*-bubaluscebuensis": 0.02,
+        "*-baby-*-bubalusdepressicornis": 0.04,
+        "*-baby-*-bubalusgrovesi": 0.04,
+        "*-baby-*-bubalusmephistopheles": 0.048,
+        "*-baby-*-bubalusmindorensis": 0.04,
+        "*-baby-*-bubalusmurrensis": 0.048,
+        "*-baby-*-bubalusquarlesi": 0.02,
+        "*-baby-*-pseudoryxnghetinhensis": 0.04,
+        "*-baby-*-syncerusantiquus": 0.048,
+        "*-baby-*-synceruscaffer": 0.048,
+        "*-baby-*-syncerusnanus": 0.04,
+        "*-baby-*-taurotragusderbianus": 0.06,
+        "*-baby-*-taurotragusoryx": 0.06,
+        "*-baby-*-tetracerusquadricornis": 0.02,
+        "*-baby-*-tragelaphusangasii": 0.04,
+        "*-baby-*-tragelaphusbuxtoni": 0.04,
+        "*-baby-*-tragelaphuseurycerus": 0.048,
+        "*-baby-*-tragelaphusimberbis": 0.06,
+        "*-baby-*-tragelaphusscriptus": 0.04,
+        "*-baby-*-tragelaphusspekii": 0.04,
+        "*-baby-*-tragelaphusstrepsiceros": 0.06,
+        "*-baby-*-tragelaphussylvaticus": 0.04
+      },
+      "animationSpeedByType": {
+        "*": 4
+      },
       "entityCodes": [
         "strawdummy"
       ],
-      "priority": 5.5,
-      "movespeed": 0.04,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 2
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   }

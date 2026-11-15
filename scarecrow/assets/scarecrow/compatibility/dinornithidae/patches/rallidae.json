@@ -6,12 +6,6 @@
     "file": "dinornithidae:entities/animal/bird/rallidae-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 5.5,
-      "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
       "animation": "Run",
       "movespeedByType": {
         "*-adult-*-cabalusmodestus": 0.025,
@@ -32,7 +26,16 @@
         "@.*-(porphyrioalbus|porphyriohochstetteri)": 6.3,
         "*-adult-*-porphyriomantelli": 5.67,
         "*-adult-*-tribonyxhodgenorum": 19.125
-      }
+      },
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -43,12 +46,6 @@
     "file": "dinornithidae:entities/animal/bird/rallidae-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 5.5,
-      "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
       "animation": "Run",
       "movespeedByType": {
         "*-adult-*-cabalusmodestus": 0.025,
@@ -69,7 +66,16 @@
         "@.*-(porphyrioalbus|porphyriohochstetteri)": 6.3,
         "*-adult-*-porphyriomantelli": 5.67,
         "*-adult-*-tribonyxhodgenorum": 19.125
-      }
+      },
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -80,12 +86,6 @@
     "file": "dinornithidae:entities/animal/bird/rallidae-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 5.5,
-      "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
       "animation": "Run",
       "movespeedByType": {
         "*-adult-*-cabalusmodestus": 0.025,
@@ -106,76 +106,94 @@
         "@.*-(porphyrioalbus|porphyriohochstetteri)": 6.3,
         "*-adult-*-porphyriomantelli": 5.67,
         "*-adult-*-tribonyxhodgenorum": 19.125
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "file": "dinornithidae:entities/animal/bird/rallidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 5.5,
-      "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "movespeedByType": {
-        "*-baby-*": 0.015
       },
-      "animationSpeedByType": {
-        "*-baby-*": 7.5
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "file": "dinornithidae:entities/animal/bird/rallidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 5.5,
-      "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "movespeedByType": {
-        "*-baby-*": 0.015
-      },
-      "animationSpeedByType": {
-        "*-baby-*": 7.5
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "file": "dinornithidae:entities/animal/bird/rallidae-baby.json",
-    "value": {
-      "code": "fleeentity",
       "entityCodes": [
         "strawdummy"
       ],
-      "priority": 5.5,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/rallidae-baby.json",
+    "value": {
+      "code": "fleeentity",
       "animation": "Run",
       "movespeedByType": {
         "*-baby-*": 0.015
       },
       "animationSpeedByType": {
         "*-baby-*": 7.5
-      }
+      },
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/rallidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*": 0.015
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 7.5
+      },
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "dinornithidae:entities/animal/bird/rallidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-baby-*": 0.015
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 7.5
+      },
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   }

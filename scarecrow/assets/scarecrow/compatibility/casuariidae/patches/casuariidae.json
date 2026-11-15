@@ -6,23 +6,26 @@
     "file": "casuariidae:entities/animal/bird/casuariidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "casuariidae-adult-*-bennetti": 0.08
+      },
+      "animationSpeedByType": {
+        "*-adult-*": 4
+      },
       "entityCodes": [
         "scarecrow"
       ],
-      "priority": 5.5,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "movespeedByType": {
-        "casuariidae-adult-*-bennetti": 0.08,
-        "casuariidae-adult-*-casuarius": 0.1,
-        "casuariidae-adult-*-novaehollandiae": 0.1,
-        "casuariidae-adult-*-novaehollandiaediemenensis": 0.1,
-        "casuariidae-adult-*-unappendiculatus": 0.1
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "enabledByType": {
+        "casuariidae-adult-*-bennetti": true,
+        "*": false
       },
-      "animationSpeedByType": {
-        "*-adult-*": 4.0
-      }
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -33,23 +36,26 @@
     "file": "casuariidae:entities/animal/bird/casuariidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "casuariidae-adult-*-bennetti": 0.08
+      },
+      "animationSpeedByType": {
+        "*-adult-*": 4
+      },
       "entityCodes": [
         "little-scarecrow"
       ],
-      "priority": 5.5,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "movespeedByType": {
-        "casuariidae-adult-*-bennetti": 0.08,
-        "casuariidae-adult-*-casuarius": 0.1,
-        "casuariidae-adult-*-novaehollandiae": 0.1,
-        "casuariidae-adult-*-novaehollandiaediemenensis": 0.1,
-        "casuariidae-adult-*-unappendiculatus": 0.1
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "enabledByType": {
+        "casuariidae-adult-*-bennetti": true,
+        "*": false
       },
-      "animationSpeedByType": {
-        "*-adult-*": 4.0
-      }
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -60,50 +66,65 @@
     "file": "casuariidae:entities/animal/bird/casuariidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "casuariidae-adult-*-bennetti": 0.08
+      },
+      "animationSpeedByType": {
+        "*-adult-*": 4
+      },
       "entityCodes": [
         "strawdummy"
       ],
-      "priority": 5.5,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "enabledByType": {
+        "casuariidae-adult-*-bennetti": true,
+        "*": false
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "casuariidae:entities/animal/bird/casuariidae-adult.json",
+    "value": {
+      "code": "fleeentity",
       "animation": "Run",
       "movespeedByType": {
-        "casuariidae-adult-*-bennetti": 0.08,
         "casuariidae-adult-*-casuarius": 0.1,
         "casuariidae-adult-*-novaehollandiae": 0.1,
         "casuariidae-adult-*-novaehollandiaediemenensis": 0.1,
         "casuariidae-adult-*-unappendiculatus": 0.1
       },
       "animationSpeedByType": {
-        "*-adult-*": 4.0
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "casuariidae:entities/animal/bird/casuariidae-baby.json",
-    "value": {
-      "code": "fleeentity",
+        "*-adult-*": 4
+      },
       "entityCodes": [
         "scarecrow"
       ],
-      "priority": 5.5,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "movespeedByType": {
-        "casuariidae-baby-*-bennetti": 0.08,
-        "casuariidae-baby-*-casuarius": 0.1,
-        "casuariidae-baby-*-novaehollandiae": 0.1,
-        "casuariidae-baby-*-novaehollandiaediemenensis": 0.1,
-        "casuariidae-baby-*-unappendiculatus": 0.1
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "enabledByType": {
+        "casuariidae-adult-*-casuarius": true,
+        "casuariidae-adult-*-novaehollandiae": true,
+        "casuariidae-adult-*-novaehollandiaediemenensis": true,
+        "casuariidae-adult-*-unappendiculatus": true,
+        "*": false
       },
-      "animationSpeedByType": {
-        "*-baby-*": 6.0
-      }
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -111,26 +132,178 @@
     "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
-    "file": "casuariidae:entities/animal/bird/casuariidae-baby.json",
+    "file": "casuariidae:entities/animal/bird/casuariidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "casuariidae-adult-*-casuarius": 0.1,
+        "casuariidae-adult-*-novaehollandiae": 0.1,
+        "casuariidae-adult-*-novaehollandiaediemenensis": 0.1,
+        "casuariidae-adult-*-unappendiculatus": 0.1
+      },
+      "animationSpeedByType": {
+        "*-adult-*": 4
+      },
       "entityCodes": [
         "little-scarecrow"
       ],
-      "priority": 5.5,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "enabledByType": {
+        "casuariidae-adult-*-casuarius": true,
+        "casuariidae-adult-*-novaehollandiae": true,
+        "casuariidae-adult-*-novaehollandiaediemenensis": true,
+        "casuariidae-adult-*-unappendiculatus": true,
+        "*": false
+      },
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "casuariidae:entities/animal/bird/casuariidae-adult.json",
+    "value": {
+      "code": "fleeentity",
       "animation": "Run",
       "movespeedByType": {
-        "casuariidae-baby-*-bennetti": 0.08,
-        "casuariidae-baby-*-casuarius": 0.1,
-        "casuariidae-baby-*-novaehollandiae": 0.1,
-        "casuariidae-baby-*-novaehollandiaediemenensis": 0.1,
-        "casuariidae-baby-*-unappendiculatus": 0.1
+        "casuariidae-adult-*-casuarius": 0.1,
+        "casuariidae-adult-*-novaehollandiae": 0.1,
+        "casuariidae-adult-*-novaehollandiaediemenensis": 0.1,
+        "casuariidae-adult-*-unappendiculatus": 0.1
       },
       "animationSpeedByType": {
-        "*-baby-*": 6.0
-      }
+        "*-adult-*": 4
+      },
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "enabledByType": {
+        "casuariidae-adult-*-casuarius": true,
+        "casuariidae-adult-*-novaehollandiae": true,
+        "casuariidae-adult-*-novaehollandiaediemenensis": true,
+        "casuariidae-adult-*-unappendiculatus": true,
+        "*": false
+      },
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "casuariidae:entities/animal/bird/casuariidae-adult.json",
+    "value": {
+      "code": "seekentity",
+      "animation": "Charge",
+      "movespeedByType": {
+        "casuariidae-adult-*-casuarius": 0.05,
+        "casuariidae-adult-*-novaehollandiae": 0.05,
+        "casuariidae-adult-*-novaehollandiaediemenensis": 0.05,
+        "casuariidae-adult-*-unappendiculatus": 0.05
+      },
+      "animationSpeedByType": {
+        "*-adult-*": 2
+      },
+      "soundByType": {
+        "*-adult-*": "creature/casuariidae/hiss"
+      },
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 8.7,
+      "priorityForCancel": 8.7,
+      "slot": 0,
+      "seekingRange": 16,
+      "minCooldownMs": 500,
+      "maxCooldownMs": 1000,
+      "maxFollowTime": 15,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "enabledByType": {
+        "casuariidae-adult-*-casuarius": true,
+        "casuariidae-adult-*-novaehollandiae": true,
+        "casuariidae-adult-*-novaehollandiaediemenensis": true,
+        "casuariidae-adult-*-unappendiculatus": true,
+        "*": false
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "casuariidae:entities/animal/bird/casuariidae-adult.json",
+    "value": {
+      "code": "meleeattack",
+      "animation": "Attack",
+      "animationSpeed": 1.5,
+      "damageByType": {
+        "casuariidae-adult-female-casuarius": 6,
+        "casuariidae-adult-male-casuarius": 5,
+        "casuariidae-adult-female-novaehollandiae": 6,
+        "casuariidae-adult-male-novaehollandiae": 5,
+        "casuariidae-adult-female-novaehollandiaediemenensis": 6,
+        "casuariidae-adult-male-novaehollandiaediemenensis": 5,
+        "casuariidae-adult-female-unappendiculatus": 5,
+        "casuariidae-adult-male-unappendiculatus": 5
+      },
+      "damageType": "SlashingAttack",
+      "minDist": 1,
+      "damageTier": 1,
+      "attackDurationMs": 800,
+      "damagePlayerAtMs": 500,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 8.8,
+      "priorityForCancel": 8.8,
+      "slot": 1,
+      "minCooldownMs": 500,
+      "maxCooldownMs": 500,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "enabledByType": {
+        "casuariidae-adult-*-casuarius": true,
+        "casuariidae-adult-*-novaehollandiae": true,
+        "casuariidae-adult-*-novaehollandiaediemenensis": true,
+        "casuariidae-adult-*-unappendiculatus": true,
+        "*": false
+      },
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -141,12 +314,6 @@
     "file": "casuariidae:entities/animal/bird/casuariidae-baby.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 5.5,
-      "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
       "animation": "Run",
       "movespeedByType": {
         "casuariidae-baby-*-bennetti": 0.08,
@@ -156,8 +323,77 @@
         "casuariidae-baby-*-unappendiculatus": 0.1
       },
       "animationSpeedByType": {
-        "*-baby-*": 6.0
-      }
+        "*-baby-*": 6
+      },
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "casuariidae:entities/animal/bird/casuariidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "casuariidae-baby-*-bennetti": 0.08,
+        "casuariidae-baby-*-casuarius": 0.1,
+        "casuariidae-baby-*-novaehollandiae": 0.1,
+        "casuariidae-baby-*-novaehollandiaediemenensis": 0.1,
+        "casuariidae-baby-*-unappendiculatus": 0.1
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 6
+      },
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "casuariidae:entities/animal/bird/casuariidae-baby.json",
+    "value": {
+      "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "casuariidae-baby-*-bennetti": 0.08,
+        "casuariidae-baby-*-casuarius": 0.1,
+        "casuariidae-baby-*-novaehollandiae": 0.1,
+        "casuariidae-baby-*-novaehollandiaediemenensis": 0.1,
+        "casuariidae-baby-*-unappendiculatus": 0.1
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 6
+      },
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   }

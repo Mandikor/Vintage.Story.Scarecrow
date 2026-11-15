@@ -14,7 +14,7 @@ pumpkin. It also gives the vanilla straw dummy a role in protecting your garden.
 ## Features
 
 - Three protection levels: scarecrow, little scarecrow and vanilla straw dummy.
-- Flee behavior for supported vanilla animals and animals from compatible mods.
+- Flee and attack behavior for supported vanilla animals and animals from compatible mods.
 - Natural-spawn protection against hares and raccoons by default.
 - Tool holders on the full-size scarecrow, plus lantern and watering-can holders on
   both scarecrow variants.
@@ -50,18 +50,22 @@ distance in three dimensions, so its actual area is a sphere.
 
 Scarecrow uses two complementary mechanisms:
 
-**Flee behavior:** animal patches make supported animals move away from scarecrows.
+**Animal reactions:** small animals and young animals flee from scarecrows. Large
+herbivores can defend themselves when injury triggers aggression. Large predators,
+including adult black, brown, polar and sun bears, wolves and hyenas, can approach
+and attack a scarecrow. Pandas use the defensive herbivore rule.
+
 Vanilla patches cover hares, raccoons, chickens, foxes, bears, hyenas, wolves, deer,
-gazelles, goats, moose, pigs and sheep. Behavior depends on the animal's AI tasks,
-priorities and emotional state; a scarecrow is not a physical barrier or a guarantee
-of safety from every animal.
+gazelles, goats, moose, pigs and sheep, with species-specific rules inside mixed
+groups. Behavior depends on the animal's AI tasks, priorities and emotional state;
+a scarecrow is not a physical barrier or a guarantee of safety from every animal.
 
 **Natural-spawn protection:** the mod blocks natural spawns of configured animal
 types within the radius. The default list contains hares and raccoons. Animals born
 nearby or placed by players, such as animals released from cages, are not removed by
-this protection. They can still react to the flee behavior.
+this protection. They can still react according to their species' AI rules.
 
-Changing the spawn-protection list does not add flee behavior to an animal. Those
+Changing the spawn-protection list does not add flee or attack behavior to an animal. Those
 behaviors are defined separately in the animal patches.
 
 ## Crafting
@@ -192,6 +196,9 @@ The repository includes compatibility assets for the following mods and families
 
 Compatibility depends on the installed versions and the asset definitions supplied
 by those mods. Include the relevant mod versions when reporting a compatibility issue.
+
+See [animal compatibility details](docs/animal-compatibility.md) for the current
+size and age rules, injury-triggered defense and the mod versions used for the audit.
 
 ## Feedback and contributions
 

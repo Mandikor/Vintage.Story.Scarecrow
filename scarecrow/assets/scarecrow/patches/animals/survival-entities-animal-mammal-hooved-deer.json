@@ -1,13 +1,12 @@
 [
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/11/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/deer-baby.json",
     "value": {
       "code": "fleeentity",
       "animation": "Run",
-      "entityCodes": [ "scarecrow" ],
-      "priority": 1.6,
       "movespeedByType": {
         "deer-redbrocket-*": 0.05,
         "deer-water-*": 0.05,
@@ -15,22 +14,28 @@
         "deer-pampas-*": 0.05,
         "*": 0.06
       },
+      "animationSpeed": 2,
+      "sound": "creature/hooved/generic/call*",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
       "seekingRange": 16,
-      "animationSpeed": 2,
-      "instafleeOnDamageChance": 1,
-      "sound": "creature/hooved/generic/call*"
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/11/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/deer-baby.json",
     "value": {
       "code": "fleeentity",
       "animation": "Run",
-      "entityCodes": [ "little-scarecrow" ],
-      "priority": 1.6,
       "movespeedByType": {
         "deer-redbrocket-*": 0.05,
         "deer-water-*": 0.05,
@@ -38,22 +43,28 @@
         "deer-pampas-*": 0.05,
         "*": 0.06
       },
+      "animationSpeed": 2,
+      "sound": "creature/hooved/generic/call*",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
       "seekingRange": 12,
-      "animationSpeed": 2,
-      "instafleeOnDamageChance": 1,
-      "sound": "creature/hooved/generic/call*"
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/11/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/deer-baby.json",
     "value": {
       "code": "fleeentity",
       "animation": "Run",
-      "entityCodes": [ "strawdummy" ],
-      "priority": 1.6,
       "movespeedByType": {
         "deer-redbrocket-*": 0.05,
         "deer-water-*": 0.05,
@@ -61,22 +72,28 @@
         "deer-pampas-*": 0.05,
         "*": 0.06
       },
-      "seekingRange": 8,
       "animationSpeed": 2,
-      "instafleeOnDamageChance": 1,
-      "sound": "creature/hooved/generic/call*"
+      "sound": "creature/hooved/generic/call*",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/deer-adult.json",
     "value": {
       "code": "fleeentity",
       "animation": "Run",
-      "entityCodes": [ "scarecrow" ],
-      "priority": 1.6,
       "movespeedByType": {
         "deer-redbrocket-*": 0.06,
         "deer-water-*": 0.06,
@@ -84,22 +101,37 @@
         "deer-pampas-*": 0.06,
         "*": 0.08
       },
+      "animationSpeed": 2,
+      "sound": "creature/hooved/generic/call*",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
       "seekingRange": 16,
-      "animationSpeed": 2,
-      "instafleeOnDamageChance": 1,
-      "sound": "creature/hooved/generic/call*"
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "enabledByType": {
+        "deer-redbrocket-adult-*": true,
+        "deer-water-adult-*": true,
+        "deer-pudu-adult-*": true,
+        "deer-taruca-adult-*": true,
+        "deer-guemal-adult-*": true,
+        "deer-pampas-adult-*": true,
+        "*": false
+      },
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/deer-adult.json",
     "value": {
       "code": "fleeentity",
       "animation": "Run",
-      "entityCodes": [ "little-scarecrow" ],
-      "priority": 1.6,
       "movespeedByType": {
         "deer-redbrocket-*": 0.06,
         "deer-water-*": 0.06,
@@ -107,22 +139,37 @@
         "deer-pampas-*": 0.06,
         "*": 0.08
       },
+      "animationSpeed": 2,
+      "sound": "creature/hooved/generic/call*",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
       "seekingRange": 12,
-      "animationSpeed": 2,
-      "instafleeOnDamageChance": 1,
-      "sound": "creature/hooved/generic/call*"
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "enabledByType": {
+        "deer-redbrocket-adult-*": true,
+        "deer-water-adult-*": true,
+        "deer-pudu-adult-*": true,
+        "deer-taruca-adult-*": true,
+        "deer-guemal-adult-*": true,
+        "deer-pampas-adult-*": true,
+        "*": false
+      },
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/deer-adult.json",
     "value": {
       "code": "fleeentity",
       "animation": "Run",
-      "entityCodes": [ "strawdummy" ],
-      "priority": 1.6,
       "movespeedByType": {
         "deer-redbrocket-*": 0.06,
         "deer-water-*": 0.06,
@@ -130,10 +177,234 @@
         "deer-pampas-*": 0.06,
         "*": 0.08
       },
-      "seekingRange": 8,
       "animationSpeed": 2,
-      "instafleeOnDamageChance": 1,
-      "sound": "creature/hooved/generic/call*"
+      "sound": "creature/hooved/generic/call*",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "enabledByType": {
+        "deer-redbrocket-adult-*": true,
+        "deer-water-adult-*": true,
+        "deer-pudu-adult-*": true,
+        "deer-taruca-adult-*": true,
+        "deer-guemal-adult-*": true,
+        "deer-pampas-adult-*": true,
+        "*": false
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/deer-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*": 0.08
+      },
+      "animationSpeed": 2,
+      "sound": "creature/hooved/generic/call*",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "enabledByType": {
+        "deer-whitetail-adult-*": true,
+        "deer-marsh-adult-*": true,
+        "deer-caribou-adult-*": true,
+        "deer-elk-adult-*": true,
+        "deer-chital-adult-*": true,
+        "deer-fallow-adult-*": true,
+        "*": false
+      },
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/deer-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*": 0.08
+      },
+      "animationSpeed": 2,
+      "sound": "creature/hooved/generic/call*",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "enabledByType": {
+        "deer-whitetail-adult-*": true,
+        "deer-marsh-adult-*": true,
+        "deer-caribou-adult-*": true,
+        "deer-elk-adult-*": true,
+        "deer-chital-adult-*": true,
+        "deer-fallow-adult-*": true,
+        "*": false
+      },
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/deer-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*": 0.08
+      },
+      "animationSpeed": 2,
+      "sound": "creature/hooved/generic/call*",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "enabledByType": {
+        "deer-whitetail-adult-*": true,
+        "deer-marsh-adult-*": true,
+        "deer-caribou-adult-*": true,
+        "deer-elk-adult-*": true,
+        "deer-chital-adult-*": true,
+        "deer-fallow-adult-*": true,
+        "*": false
+      },
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/deer-adult.json",
+    "value": {
+      "code": "seekentity",
+      "animation": "Charge",
+      "movespeed": 0.05,
+      "animationSpeed": 1,
+      "sound": "creature/hooved/generic/sniff*",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 3.2,
+      "priorityForCancel": 3.2,
+      "slot": 0,
+      "seekingRange": 16,
+      "minCooldownMs": 600,
+      "maxCooldownMs": 650,
+      "maxFollowTime": 15,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "enabledByType": {
+        "deer-whitetail-adult-*": true,
+        "deer-marsh-adult-*": true,
+        "deer-caribou-adult-*": true,
+        "deer-elk-adult-*": true,
+        "deer-chital-adult-*": true,
+        "deer-fallow-adult-*": true,
+        "*": false
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/deer-adult.json",
+    "value": {
+      "code": "meleeattack",
+      "animation": "Attack",
+      "damageByType": {
+        "deer-whitetail-adult-male": 8,
+        "deer-marsh-adult-male": 7,
+        "deer-marsh-adult-female": 5,
+        "deer-caribou-adult-male": 10,
+        "deer-caribou-adult-female": 8,
+        "deer-elk-adult-male": 12,
+        "deer-elk-adult-female": 9,
+        "deer-chital-adult-male": 8,
+        "deer-fallow-adult-male": 8,
+        "*": 6
+      },
+      "damageTier": 2,
+      "damageType": "SlashingAttack",
+      "attackDurationMs": 1250,
+      "damagePlayerAtMs": 500,
+      "animationSpeed": 2.5,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 3.3,
+      "priorityForCancel": 3.3,
+      "slot": 1,
+      "minCooldownMs": 1500,
+      "maxCooldownMs": 2500,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "enabledByType": {
+        "deer-whitetail-adult-*": true,
+        "deer-marsh-adult-*": true,
+        "deer-caribou-adult-*": true,
+        "deer-elk-adult-*": true,
+        "deer-chital-adult-*": true,
+        "deer-fallow-adult-*": true,
+        "*": false
+      },
+      "retaliateAttacks": false
     },
     "side": "server"
   }

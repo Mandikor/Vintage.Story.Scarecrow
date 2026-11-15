@@ -1,103 +1,139 @@
 [
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/gazelle-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "scarecrow" ],
-      "priority": 1.6,
       "movespeed": 0.065,
+      "animation": "Run",
+      "animationSpeed": 2,
+      "sound": "creature/sheep/hurt2",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
       "seekingRange": 16,
-      "animation": "Run",
-      "animationSpeed": 2,
-      "sound": "creature/sheep/hurt2"
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/gazelle-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "little-scarecrow" ],
-      "priority": 1.6,
       "movespeed": 0.065,
+      "animation": "Run",
+      "animationSpeed": 2,
+      "sound": "creature/sheep/hurt2",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
       "seekingRange": 12,
-      "animation": "Run",
-      "animationSpeed": 2,
-      "sound": "creature/sheep/hurt2"
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/gazelle-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "strawdummy" ],
-      "priority": 1.6,
       "movespeed": 0.065,
-      "seekingRange": 8,
       "animation": "Run",
       "animationSpeed": 2,
-      "sound": "creature/sheep/hurt2"
+      "sound": "creature/sheep/hurt2",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/9/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/gazelle-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "scarecrow" ],
-      "priority": 1.6,
       "movespeed": 0.065,
+      "animation": "Run",
+      "animationSpeed": 2,
+      "sound": "creature/sheep/hurt2",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
       "seekingRange": 16,
-      "animation": "Run",
-      "animationSpeed": 2,
-      "sound": "creature/sheep/hurt2"
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/9/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/gazelle-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "little-scarecrow" ],
-      "priority": 1.6,
       "movespeed": 0.065,
+      "animation": "Run",
+      "animationSpeed": 2,
+      "sound": "creature/sheep/hurt2",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
       "seekingRange": 12,
-      "animation": "Run",
-      "animationSpeed": 2,
-      "sound": "creature/sheep/hurt2"
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/9/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/gazelle-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
-      "entityCodes": [ "strawdummy" ],
-      "priority": 1.6,
       "movespeed": 0.065,
-      "seekingRange": 8,
       "animation": "Run",
       "animationSpeed": 2,
-      "sound": "creature/sheep/hurt2"
+      "sound": "creature/sheep/hurt2",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   }

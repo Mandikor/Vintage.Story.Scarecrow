@@ -1,88 +1,287 @@
 [
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/9/aitasks/-",
     "file": "game:entities/animal/mammal/bear-adult.json",
     "value": {
-      "code": "fleeentity",
-      "entityCodes": [ "scarecrow" ],
-      "priority": 1.8,
+      "code": "seekentity",
+      "animation": "Run",
+      "sound": "creature/bear/aggro",
+      "animationSpeedByType": {
+        "bear-sun-*": 2.3,
+        "bear-polar-*": 1.8,
+        "bear-brown-*": 2,
+        "bear-black-*": 2
+      },
       "movespeedByType": {
         "bear-sun-*": 0.025,
-        "bear-panda-*": 0.025,
         "bear-black-*": 0.04,
         "bear-brown-*": 0.055,
         "bear-polar-*": 0.06
       },
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.2,
+      "priorityForCancel": 2.2,
+      "slot": 0,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeedByType": {
-        "bear-sun-*": 2.3,
-        "bear-panda-*": 1.9,
-        "bear-polar-*": 1.8,
-        "bear-brown-*": 2,
-        "bear-black-*": 2
+      "minCooldownMs": 500,
+      "maxCooldownMs": 1000,
+      "maxFollowTime": 15,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "enabledByType": {
+        "bear-black-adult-*": true,
+        "bear-brown-adult-*": true,
+        "bear-sun-adult-*": true,
+        "bear-polar-adult-*": true,
+        "*": false
       },
-      "sound": "creature/bear/flee"
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "game:entities/animal/mammal/bear-adult.json",
+    "value": {
+      "code": "meleeattack",
+      "damageTier": 2,
+      "damageByType": {
+        "bear-black-*": 10,
+        "bear-brown-*": 12,
+        "bear-sun-*": 4,
+        "bear-polar-*": 16
+      },
+      "damageType": "SlashingAttack",
+      "minDistByType": {
+        "bear-black-*": 1.7,
+        "bear-brown-*": 2,
+        "bear-polar-*": 2.3,
+        "*": 1.2
+      },
+      "minVerDist": 1.5,
+      "attackDurationMs": 800,
+      "damagePlayerAtMs": 500,
+      "animation": "Attack",
+      "animationSpeed": 1,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.3,
+      "priorityForCancel": 2.3,
+      "slot": 1,
+      "minCooldownMs": 1500,
+      "maxCooldownMs": 1500,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "enabledByType": {
+        "bear-black-adult-*": true,
+        "bear-brown-adult-*": true,
+        "bear-sun-adult-*": true,
+        "bear-polar-adult-*": true,
+        "*": false
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/9/aitasks/-",
     "file": "game:entities/animal/mammal/bear-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [ "little-scarecrow" ],
-      "priority": 1.8,
-      "movespeedByType": {
-        "bear-sun-*": 0.025,
-        "bear-panda-*": 0.025,
-        "bear-black-*": 0.04,
-        "bear-brown-*": 0.055,
-        "bear-polar-*": 0.06
+      "animation": "Run",
+      "sound": "creature/bear/flee",
+      "animationSpeedByType": {
+        "bear-panda-*": 1.9
       },
+      "movespeedByType": {
+        "bear-panda-*": 0.025
+      },
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 2.1,
+      "priorityForCancel": 2.1,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "enabledByType": {
+        "bear-panda-adult-*": true,
+        "*": false
+      },
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "game:entities/animal/mammal/bear-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "animation": "Run",
+      "sound": "creature/bear/flee",
+      "animationSpeedByType": {
+        "bear-panda-*": 1.9
+      },
+      "movespeedByType": {
+        "bear-panda-*": 0.025
+      },
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 2.1,
+      "priorityForCancel": 2.1,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeedByType": {
-        "bear-sun-*": 2.3,
-        "bear-panda-*": 1.9,
-        "bear-polar-*": 1.8,
-        "bear-brown-*": 2,
-        "bear-black-*": 2
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "enabledByType": {
+        "bear-panda-adult-*": true,
+        "*": false
       },
-      "sound": "creature/bear/flee"
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/9/aitasks/-",
     "file": "game:entities/animal/mammal/bear-adult.json",
     "value": {
       "code": "fleeentity",
-      "entityCodes": [ "strawdummy" ],
-      "priority": 1.8,
-      "movespeedByType": {
-        "bear-sun-*": 0.025,
-        "bear-panda-*": 0.025,
-        "bear-black-*": 0.04,
-        "bear-brown-*": 0.055,
-        "bear-polar-*": 0.06
-      },
-      "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
       "animation": "Run",
+      "sound": "creature/bear/flee",
       "animationSpeedByType": {
-        "bear-sun-*": 2.3,
-        "bear-panda-*": 1.9,
-        "bear-polar-*": 1.8,
-        "bear-brown-*": 2,
-        "bear-black-*": 2
+        "bear-panda-*": 1.9
       },
-      "sound": "creature/bear/flee"
+      "movespeedByType": {
+        "bear-panda-*": 0.025
+      },
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 2.1,
+      "priorityForCancel": 2.1,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "enabledByType": {
+        "bear-panda-adult-*": true,
+        "*": false
+      },
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "game:entities/animal/mammal/bear-adult.json",
+    "value": {
+      "code": "seekentity",
+      "animation": "Run",
+      "sound": "creature/bear/aggro",
+      "animationSpeedByType": {
+        "bear-panda-*": 1.9
+      },
+      "movespeedByType": {
+        "bear-panda-*": 0.025
+      },
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.2,
+      "priorityForCancel": 2.2,
+      "slot": 0,
+      "seekingRange": 16,
+      "minCooldownMs": 500,
+      "maxCooldownMs": 1000,
+      "maxFollowTime": 15,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "enabledByType": {
+        "bear-panda-adult-*": true,
+        "*": false
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "game:entities/animal/mammal/bear-adult.json",
+    "value": {
+      "code": "meleeattack",
+      "damageTier": 2,
+      "damageByType": {
+        "bear-panda-*": 8
+      },
+      "damageType": "SlashingAttack",
+      "minDistByType": {
+        "*": 1.2
+      },
+      "minVerDist": 1.5,
+      "attackDurationMs": 800,
+      "damagePlayerAtMs": 500,
+      "animation": "Attack",
+      "animationSpeed": 1,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.3,
+      "priorityForCancel": 2.3,
+      "slot": 1,
+      "minCooldownMs": 1500,
+      "maxCooldownMs": 1500,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "enabledByType": {
+        "bear-panda-adult-*": true,
+        "*": false
+      },
+      "retaliateAttacks": false
     },
     "side": "server"
   }

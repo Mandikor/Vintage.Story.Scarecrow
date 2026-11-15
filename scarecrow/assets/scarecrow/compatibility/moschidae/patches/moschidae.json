@@ -6,15 +6,25 @@
     "file": "moschidae:entities/animal/mammal/hooved/moschidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-moschusanhuiensis": 0.0897,
+        "*-moschusberezovskii": 0.0897,
+        "*-moschuscupreus": 0.1036,
+        "*-moschusfuscus": 0.0933,
+        "*-moschusmoschiferus": 0.1036,
+        "*": 0.0933
+      },
+      "animationSpeed": 2.1,
       "entityCodes": [
         "scarecrow"
       ],
-      "priority": 5.5,
-      "movespeed": 0.095,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 2
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -25,15 +35,25 @@
     "file": "moschidae:entities/animal/mammal/hooved/moschidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-moschusanhuiensis": 0.0897,
+        "*-moschusberezovskii": 0.0897,
+        "*-moschuscupreus": 0.1036,
+        "*-moschusfuscus": 0.0933,
+        "*-moschusmoschiferus": 0.1036,
+        "*": 0.0933
+      },
+      "animationSpeed": 2.1,
       "entityCodes": [
         "little-scarecrow"
       ],
-      "priority": 5.5,
-      "movespeed": 0.095,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 2
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -44,15 +64,25 @@
     "file": "moschidae:entities/animal/mammal/hooved/moschidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-moschusanhuiensis": 0.0897,
+        "*-moschusberezovskii": 0.0897,
+        "*-moschuscupreus": 0.1036,
+        "*-moschusfuscus": 0.0933,
+        "*-moschusmoschiferus": 0.1036,
+        "*": 0.0933
+      },
+      "animationSpeed": 2.1,
       "entityCodes": [
         "strawdummy"
       ],
-      "priority": 5.5,
-      "movespeed": 0.095,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 2
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -63,15 +93,20 @@
     "file": "moschidae:entities/animal/mammal/hooved/moschidae-baby.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*": 0.04
+      },
+      "animationSpeed": 2.5,
       "entityCodes": [
         "scarecrow"
       ],
-      "priority": 5.5,
-      "movespeed": 0.04,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 2
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -82,15 +117,20 @@
     "file": "moschidae:entities/animal/mammal/hooved/moschidae-baby.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*": 0.04
+      },
+      "animationSpeed": 2.5,
       "entityCodes": [
         "little-scarecrow"
       ],
-      "priority": 5.5,
-      "movespeed": 0.04,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 2
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -101,15 +141,20 @@
     "file": "moschidae:entities/animal/mammal/hooved/moschidae-baby.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*": 0.04
+      },
+      "animationSpeed": 2.5,
       "entityCodes": [
         "strawdummy"
       ],
-      "priority": 5.5,
-      "movespeed": 0.04,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 2
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   }

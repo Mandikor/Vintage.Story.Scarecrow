@@ -1,169 +1,403 @@
 [
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/11/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/goat-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
       "animation": "Run",
-      "entityCodes": [ "scarecrow" ],
-      "priority": 1.6,
       "movespeed": 0.04,
-      "seekingRangeByType": {
-        "goat-ibexnub-*": 18,
-        "goat-muskox-*": 18,
-        "goat-nubian-*": 18,
-        "goat-sirohi-*": 18,
-        "goat-valais-*": 18,
-        "*": 16
-      },
       "animationSpeed": 2,
-      "sound": "creature/goat/bleatweird"
+      "sound": "creature/goat/bleatweird",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/11/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/goat-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
       "animation": "Run",
-      "entityCodes": [ "little-scarecrow" ],
-      "priority": 1.6,
       "movespeed": 0.04,
-      "seekingRangeByType": {
-        "goat-ibexnub-*": 14,
-        "goat-muskox-*": 14,
-        "goat-nubian-*": 14,
-        "goat-sirohi-*": 14,
-        "goat-valais-*": 14,
-        "*": 12
-      },
       "animationSpeed": 2,
-      "sound": "creature/goat/bleatweird"
+      "sound": "creature/goat/bleatweird",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/11/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/goat-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
       "animation": "Run",
-      "entityCodes": [ "strawdummy" ],
-      "priority": 1.6,
       "movespeed": 0.04,
-      "seekingRangeByType": {
-        "goat-ibexnub-*": 10,
-        "goat-muskox-*": 10,
-        "goat-nubian-*": 10,
-        "goat-sirohi-*": 10,
-        "goat-valais-*": 10,
-        "*": 8
-      },
       "animationSpeed": 2,
-      "sound": "creature/goat/bleatweird"
+      "sound": "creature/goat/bleatweird",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/12/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/goat-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
       "animation": "Run",
-      "entityCodes": [ "scarecrow" ],
-      "priority": 1.6,
+      "movespeedByType": {
+        "*": 0.06
+      },
+      "animationSpeed": 2,
+      "soundByType": {
+        "*": "creature/goat/bleatweird"
+      },
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "enabledByType": {
+        "goat-angora-adult-*": true,
+        "goat-ibexnub-adult-*": true,
+        "goat-mountain-adult-*": true,
+        "goat-sirohi-adult-*": true,
+        "goat-valais-adult-*": true,
+        "*": false
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/12/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/goat-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*": 0.06
+      },
+      "animationSpeed": 2,
+      "soundByType": {
+        "*": "creature/goat/bleatweird"
+      },
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "enabledByType": {
+        "goat-angora-adult-*": true,
+        "goat-ibexnub-adult-*": true,
+        "goat-mountain-adult-*": true,
+        "goat-sirohi-adult-*": true,
+        "goat-valais-adult-*": true,
+        "*": false
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/12/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/goat-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*": 0.06
+      },
+      "animationSpeed": 2,
+      "soundByType": {
+        "*": "creature/goat/bleatweird"
+      },
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "enabledByType": {
+        "goat-angora-adult-*": true,
+        "goat-ibexnub-adult-*": true,
+        "goat-mountain-adult-*": true,
+        "goat-sirohi-adult-*": true,
+        "goat-valais-adult-*": true,
+        "*": false
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/12/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/goat-adult.json",
+    "value": {
+      "code": "fleeentity",
+      "animation": "Run",
       "movespeedByType": {
         "goat-muskox-*": 0.065,
         "goat-takingold-*": 0.065,
         "*": 0.06
-      },
-      "seekingRangeByType": {
-        "goat-ibexnub-*": 18,
-        "goat-muskox-*": 18,
-        "goat-nubian-*": 18,
-        "goat-sirohi-*": 18,
-        "goat-valais-*": 18,
-        "*": 16
       },
       "animationSpeed": 2,
       "soundByType": {
         "goat-muskox-*": "creature/goat/large/{age}-hurt*",
         "goat-takingold-*": "creature/goat/large/{age}-hurt*",
         "*": "creature/goat/bleatweird"
-      }
+      },
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "enabledByType": {
+        "goat-ibexalp-adult-*": true,
+        "goat-markhor-adult-*": true,
+        "goat-muskox-adult-*": true,
+        "goat-nubian-adult-*": true,
+        "goat-takingold-adult-*": true,
+        "goat-turdag-adult-*": true,
+        "*": false
+      },
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/12/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/goat-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
       "animation": "Run",
-      "entityCodes": [ "little-scarecrow" ],
-      "priority": 1.6,
       "movespeedByType": {
         "goat-muskox-*": 0.065,
         "goat-takingold-*": 0.065,
         "*": 0.06
-      },
-      "seekingRangeByType": {
-        "goat-ibexnub-*": 14,
-        "goat-muskox-*": 14,
-        "goat-nubian-*": 14,
-        "goat-sirohi-*": 14,
-        "goat-valais-*": 14,
-        "*": 12
       },
       "animationSpeed": 2,
       "soundByType": {
         "goat-muskox-*": "creature/goat/large/{age}-hurt*",
         "goat-takingold-*": "creature/goat/large/{age}-hurt*",
         "*": "creature/goat/bleatweird"
-      }
+      },
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "enabledByType": {
+        "goat-ibexalp-adult-*": true,
+        "goat-markhor-adult-*": true,
+        "goat-muskox-adult-*": true,
+        "goat-nubian-adult-*": true,
+        "goat-takingold-adult-*": true,
+        "goat-turdag-adult-*": true,
+        "*": false
+      },
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
     },
     "side": "server"
   },
   {
+    "enabled": true,
     "op": "add",
     "path": "/server/behaviors/12/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/goat-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
       "animation": "Run",
-      "entityCodes": [ "strawdummy" ],
-      "priority": 1.6,
       "movespeedByType": {
         "goat-muskox-*": 0.065,
         "goat-takingold-*": 0.065,
         "*": 0.06
-      },
-      "seekingRangeByType": {
-        "goat-ibexnub-*": 10,
-        "goat-muskox-*": 10,
-        "goat-nubian-*": 10,
-        "goat-sirohi-*": 10,
-        "goat-valais-*": 10,
-        "*": 8
       },
       "animationSpeed": 2,
       "soundByType": {
         "goat-muskox-*": "creature/goat/large/{age}-hurt*",
         "goat-takingold-*": "creature/goat/large/{age}-hurt*",
         "*": "creature/goat/bleatweird"
-      }
+      },
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "enabledByType": {
+        "goat-ibexalp-adult-*": true,
+        "goat-markhor-adult-*": true,
+        "goat-muskox-adult-*": true,
+        "goat-nubian-adult-*": true,
+        "goat-takingold-adult-*": true,
+        "goat-turdag-adult-*": true,
+        "*": false
+      },
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/12/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/goat-adult.json",
+    "value": {
+      "code": "seekentity",
+      "animation": "Charge",
+      "movespeed": 0.05,
+      "animationSpeed": 1,
+      "soundByType": {
+        "goat-muskox-*": "creature/goat/large/{age}-attack*",
+        "goat-takingold-*": "creature/goat/large/{age}-attack*",
+        "*": "creature/hooved/generic/sniff*"
+      },
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 3.2,
+      "priorityForCancel": 3.2,
+      "slot": 0,
+      "seekingRange": 16,
+      "minCooldownMs": 600,
+      "maxCooldownMs": 650,
+      "maxFollowTime": 15,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "enabledByType": {
+        "goat-ibexalp-adult-*": true,
+        "goat-markhor-adult-*": true,
+        "goat-muskox-adult-*": true,
+        "goat-nubian-adult-*": true,
+        "goat-takingold-adult-*": true,
+        "goat-turdag-adult-*": true,
+        "*": false
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/server/behaviors/12/aitasks/-",
+    "file": "game:entities/animal/mammal/hooved/goat-adult.json",
+    "value": {
+      "code": "meleeattack",
+      "animation": "Attack",
+      "damageByType": {
+        "goat-ibexalp-adult-male": 7.5,
+        "goat-markhor-adult-male": 8,
+        "goat-muskox-adult-male": 9.5,
+        "goat-nubian-adult-male": 6,
+        "goat-takingold-adult-male": 9,
+        "goat-turdag-adult-male": 7.5,
+        "*-female": 6,
+        "*": 7.5
+      },
+      "damageTier": 2,
+      "damageType": "SlashingAttack",
+      "attackDurationMs": 1250,
+      "damagePlayerAtMs": 500,
+      "animationSpeed": 2.5,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 3.3,
+      "priorityForCancel": 3.3,
+      "slot": 1,
+      "minCooldownMs": 1500,
+      "maxCooldownMs": 2500,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "enabledByType": {
+        "goat-ibexalp-adult-*": true,
+        "goat-markhor-adult-*": true,
+        "goat-muskox-adult-*": true,
+        "goat-nubian-adult-*": true,
+        "goat-takingold-adult-*": true,
+        "goat-turdag-adult-*": true,
+        "*": false
+      },
+      "retaliateAttacks": false
     },
     "side": "server"
   }

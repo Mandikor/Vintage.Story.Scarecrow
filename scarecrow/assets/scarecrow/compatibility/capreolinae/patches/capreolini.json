@@ -6,15 +6,26 @@
     "file": "capreolinae:entities/animal/mammal/hooved/capreolini-adult.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-female-capreoluscapreolus": 0.0675,
+        "*-male-capreoluscapreolus": 0.077,
+        "*-female-capreoluspygargus": 0.077,
+        "*-male-capreoluspygargus": 0.08,
+        "*-female-hydropotesinermis": 0.05,
+        "*-male-hydropotesinermis": 0.05,
+        "*": 0.005
+      },
+      "animationSpeed": 2,
       "entityCodes": [
         "scarecrow"
       ],
-      "priority": 5.5,
-      "movespeed": 0.07,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 2
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -25,15 +36,26 @@
     "file": "capreolinae:entities/animal/mammal/hooved/capreolini-adult.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-female-capreoluscapreolus": 0.0675,
+        "*-male-capreoluscapreolus": 0.077,
+        "*-female-capreoluspygargus": 0.077,
+        "*-male-capreoluspygargus": 0.08,
+        "*-female-hydropotesinermis": 0.05,
+        "*-male-hydropotesinermis": 0.05,
+        "*": 0.005
+      },
+      "animationSpeed": 2,
       "entityCodes": [
         "little-scarecrow"
       ],
-      "priority": 5.5,
-      "movespeed": 0.07,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 2
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -44,15 +66,26 @@
     "file": "capreolinae:entities/animal/mammal/hooved/capreolini-adult.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-female-capreoluscapreolus": 0.0675,
+        "*-male-capreoluscapreolus": 0.077,
+        "*-female-capreoluspygargus": 0.077,
+        "*-male-capreoluspygargus": 0.08,
+        "*-female-hydropotesinermis": 0.05,
+        "*-male-hydropotesinermis": 0.05,
+        "*": 0.005
+      },
+      "animationSpeed": 2,
       "entityCodes": [
         "strawdummy"
       ],
-      "priority": 5.5,
-      "movespeed": 0.07,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 2
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -63,15 +96,23 @@
     "file": "capreolinae:entities/animal/mammal/hooved/capreolini-baby.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-capreoluscapreolus": 0.037,
+        "*-capreoluspygargus": 0.04,
+        "*-hydropotesinermis": 0.034,
+        "*": 0.005
+      },
+      "animationSpeed": 2.5,
       "entityCodes": [
         "scarecrow"
       ],
-      "priority": 5.5,
-      "movespeed": 0.04,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 2
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -82,15 +123,23 @@
     "file": "capreolinae:entities/animal/mammal/hooved/capreolini-baby.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-capreoluscapreolus": 0.037,
+        "*-capreoluspygargus": 0.04,
+        "*-hydropotesinermis": 0.034,
+        "*": 0.005
+      },
+      "animationSpeed": 2.5,
       "entityCodes": [
         "little-scarecrow"
       ],
-      "priority": 5.5,
-      "movespeed": 0.04,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 2
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   },
@@ -101,15 +150,23 @@
     "file": "capreolinae:entities/animal/mammal/hooved/capreolini-baby.json",
     "value": {
       "code": "fleeentity",
+      "animation": "Run",
+      "movespeedByType": {
+        "*-capreoluscapreolus": 0.037,
+        "*-capreoluspygargus": 0.04,
+        "*-hydropotesinermis": 0.034,
+        "*": 0.005
+      },
+      "animationSpeed": 2.5,
       "entityCodes": [
         "strawdummy"
       ],
-      "priority": 5.5,
-      "movespeed": 0.04,
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
-      "animation": "Run",
-      "animationSpeed": 2
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
     },
     "side": "server"
   }

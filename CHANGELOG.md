@@ -7,6 +7,16 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ### Fixed
 
+- Removed blanket scarecrow fleeing from adult vanilla black, brown, polar and sun
+  bears, wolves and hyenas. They now approach and attack scarecrow targets while
+  respecting their native injury-fear state; pandas use injury-triggered defense.
+- Corrected vanilla age and species selection so elder boars use mature-animal
+  rules, smaller deer and goats flee, and young animals cannot inherit adult attacks.
+- Corrected animal-mod scarecrow reactions that made small predators attack or left
+  large herbivores without injury-triggered defensive attacks. Young animals remain
+  on flee-only rules.
+- Corrected the extinct duck `chenonettafinschi` movement pattern and selected an
+  available charge animation for young elephants in the compatibility patches.
 - Scarecrow and little scarecrow placement now checks the full collision box against
   solid blocks and overlapping living entities before consuming the item. Empty
   entity-intersection results correctly allow placement.
@@ -17,6 +27,21 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ### Changed
 
+- Audited all 36 installed vanilla animal entity files and revised the 13 existing
+  vanilla animal patch files, covering 25 definitions and 181 variants. Applied the
+  same size, diet and injury-state rules as the animal-mod compatibility patches.
+- Preserved vanilla attack damage, animations, timing and variant-specific cooldowns.
+  Vanilla task priorities are scaled to each animal's original combat priorities;
+  added tasks remain restricted to scarecrow targets. Fish, invertebrates, separate
+  tamed elk definitions and debug bots retain their original specialized behavior.
+- Audited and revised 46 animal compatibility patch files against the supplied assets
+  of the 18 already supported animal mods. Reactions are selected by species size,
+  diet and age: herbivores flee, large herbivores can defend themselves while in
+  `aggressiveondamage`, small predators flee, and large predators approach and attack.
+- Preserved native movement, attack damage and timing where applicable, aligned flee
+  ranges to 16/12/8 blocks, and separated species masks so smaller animals and juveniles
+  cannot inherit adult attack tasks. Documented the classification and audited mod
+  versions in `docs/animal-compatibility.md`.
 - Scarecrow attachments now extend the vanilla attachment system with an item-code
   whitelist per slot. The `allowedCodes` lists are defined in the entity JSON files
   and support domain-qualified wildcard patterns.

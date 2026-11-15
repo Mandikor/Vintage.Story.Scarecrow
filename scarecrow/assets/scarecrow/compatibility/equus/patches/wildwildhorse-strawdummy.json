@@ -1,111 +1,134 @@
 [
   {
     "enabled": true,
-    "op": "addmerge",
+    "op": "add",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equus:entities/wildwildhorse.json",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.05,
+      "animation": "Gallop",
+      "animationSpeed": 2,
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "enabledByType": {
+        "wildwildhorse-baby-*-ferus": true,
+        "*": false
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equus:entities/wildwildhorse.json",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.05,
+      "animation": "Gallop",
+      "animationSpeed": 2,
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 8.5,
+      "priorityForCancel": 8.5,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "enabledByType": {
+        "*-adult-*": true,
+        "*": false
+      },
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "file": "equus:entities/wildwildhorse.json",
+    "value": {
+      "code": "seekentity",
+      "movespeed": 0.037,
+      "animation": "Charge",
+      "animationSpeed": 1,
+      "sound": "game:creature/hooved/generic/sniff*",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 8.7,
+      "priorityForCancel": 8.7,
+      "slot": 0,
+      "seekingRange": 8,
+      "minCooldownMs": 1000,
+      "maxCooldownMs": 1500,
+      "maxFollowTime": 15,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "enabledByType": {
+        "*-adult-*": true,
+        "*": false
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
     "path": "/behaviorConfigs/taskai/aitasks/-",
     "file": "equus:entities/wildwildhorse.json",
     "value": {
       "code": "meleeattack",
       "animation": "Attack",
-      "enabledByType": {
-        "*-baby-*": false,
-        "*": true
-      },
-      "entityCodesByType": {
-        "*-adult-*": [ "strawdummy" ]
-      },
-      "priority": 3,
-      "slot": 1,
       "damageByType": {
         "*-adult-*-ferus": 7
       },
-      "knockbackStrengthByType": { "*": 2 },
-      "damageTierByType": { "*": 3 },
-      "mincooldown": 500,
-      "maxcooldown": 1000,
+      "knockbackStrengthByType": {
+        "*": 2
+      },
+      "damageTierByType": {
+        "*": 3
+      },
       "attackDurationMs": 500,
       "damagePlayerAtMs": 250,
       "animationSpeed": 1,
-      "whenInEmotionState": "aggressiveondamage"
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/behaviorConfigs/taskai/aitasks/-",
-    "file": "equus:entities/wildwildhorse.json",
-    "value": {
-      "code": "seekentity",
-      "entityCodesByType": {
-        "*-adult-*": [ "strawdummy" ]
-      },
-      "priority": 2.5,
-      "mincooldown": 1000,
-      "maxcooldown": 1500,
-      "seekingRange": 20,
-      "movespeed": 0.037,
-      "animation": "Charge",
-      "animationSpeed": 1,
-      "sound": "game:creature/hooved/generic/sniff*",
-      "whenInEmotionState": "aggressiveondamage"
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/behaviorConfigs/taskai/aitasks/-",
-    "file": "equus:entities/wildwildhorse.json",
-    "value": {
-      "code": "fleeentity",
-      "whenInEmotionState": "fleeondamage",
-      "entityCodes": [ "strawdummy" ],
-      "priority": 1.8,
-      "movespeed": 0.05,
-      "seekingRange": 8,
-      "animation": "Gallop",
-      "animationSpeed": 2
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/behaviorConfigs/taskai/aitasks/-",
-    "file": "equus:entities/wildwildhorse.json",
-    "value": {
-      "code": "fleeentity",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 8.8,
+      "priorityForCancel": 8.8,
+      "slot": 1,
+      "minCooldownMs": 500,
+      "maxCooldownMs": 1000,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
       "enabledByType": {
-        "wildwildhorse*": true,
+        "*-adult-*": true,
         "*": false
       },
-      "entityCodes": [ "strawdummy" ],
-      "priority": 1.7,
-      "movespeed": 0.05,
-      "seekingRange": 8,
-      "animation": "Gallop",
-      "animationSpeed": 2
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/behaviorConfigs/taskai/aitasks/-",
-    "file": "equus:entities/wildwildhorse.json",
-    "value": {
-      "code": "fleeentity",
-      "enabledByType": {
-        "wildhorse*": true,
-        "*": false
-      },
-      "entityCodes": [ "strawdummy" ],
-      "priority": 1.7,
-      "movespeed": 0.0285,
-      "seekingRange": 4,
-      "animation": "trot",
-      "animationSpeed": 2
+      "retaliateAttacks": false
     },
     "side": "server"
   }
