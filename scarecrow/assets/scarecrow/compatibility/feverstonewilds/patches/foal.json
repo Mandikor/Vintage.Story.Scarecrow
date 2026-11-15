@@ -1,0 +1,107 @@
+[
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/foal.json",
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.042,
+      "animation": "gallop",
+      "animationSpeed": 2.2,
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "enabledByType": {
+        "foal-wild-percheron": true,
+        "foal-wild-arabian": true,
+        "foal-wild-donkey": true,
+        "foal-wild-shire": true,
+        "foal-wild-quarter": true,
+        "*": false
+      },
+      "retaliateAttacks": false,
+      "animationByType": {
+        "foal-wild-percheron": "run",
+        "foal-wild-arabian": "run",
+        "*": "gallop"
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/foal.json",
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.042,
+      "animation": "gallop",
+      "animationSpeed": 2.2,
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "enabledByType": {
+        "foal-wild-percheron": true,
+        "foal-wild-arabian": true,
+        "foal-wild-donkey": true,
+        "foal-wild-shire": true,
+        "foal-wild-quarter": true,
+        "*": false
+      },
+      "retaliateAttacks": false,
+      "animationByType": {
+        "foal-wild-percheron": "run",
+        "foal-wild-arabian": "run",
+        "*": "gallop"
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/foal.json",
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.042,
+      "animation": "gallop",
+      "animationSpeed": 2.2,
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "enabledByType": {
+        "foal-wild-percheron": true,
+        "foal-wild-arabian": true,
+        "foal-wild-donkey": true,
+        "foal-wild-shire": true,
+        "foal-wild-quarter": true,
+        "*": false
+      },
+      "retaliateAttacks": false,
+      "animationByType": {
+        "foal-wild-percheron": "run",
+        "foal-wild-arabian": "run",
+        "*": "gallop"
+      }
+    },
+    "side": "server"
+  }
+]

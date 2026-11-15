@@ -1,0 +1,64 @@
+[
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/direwolf.json",
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "seekentity",
+      "movespeed": 0.052,
+      "animation": "Run",
+      "animationSpeed": 1.1,
+      "sound": "direwolf/direwolf-growl",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 3.2,
+      "priorityForCancel": 3.2,
+      "slot": 0,
+      "seekingRange": 16,
+      "minCooldownMs": 500,
+      "maxCooldownMs": 1000,
+      "maxFollowTime": 15,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/direwolf.json",
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "meleeattack",
+      "damage": 9.5,
+      "damageTier": 2,
+      "damageType": "SlashingAttack",
+      "attackDurationMs": 800,
+      "damagePlayerAtMs": 500,
+      "animation": "Attack",
+      "animationSpeed": 1.5,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 3.3,
+      "priorityForCancel": 3.3,
+      "slot": 1,
+      "minCooldownMs": 750,
+      "maxCooldownMs": 1500,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

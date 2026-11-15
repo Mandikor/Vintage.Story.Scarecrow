@@ -192,6 +192,14 @@ The repository includes compatibility assets for the following mods and families
 | Grass to Ropes | Alternative crafting recipes |
 | Leaf Litter | Rake attachment shapes |
 | Equus, Equus Ferus and Monoceros | Animal behavior patches |
+| Equus: Shared Ancestry and Equus: Expanded | Wild donkey reactions and inherited pony reactions |
+| Vara's Arctic Wolves | Adult attack and young-animal flee rules |
+| Feverstone's Horses and Feverstone Wilds | Wild land-animal reactions, including native griffon flight attacks |
+| Sonya's Quality Fowl and More Animals | Flee rules for ducks and other small birds |
+| Teapot's Giant Boar, Giant Redriver and Great Bighorn | Fleeing, injury-triggered adult defense and young-animal protection |
+| The Critters Pack coral fork | Wild-animal reactions and updated native scarecrow targets |
+| Bats | Native feeding deterrents at the three protection radii |
+| Truth and Beauty: Detailed Animals | Generated chicks inherit vanilla chicken flee rules |
 | FotSA family | Animal behavior patches for Bovinae, Caninae, Capreolinae, Casuariidae, Cervinae, Dinornithidae, Elephantidae, Machairodontinae, Meiolaniidae, Moschidae, Pantherinae, Rhinocerotidae, Thylacinidae, Viverridae and Vombatidae |
 
 Compatibility depends on the installed versions and the asset definitions supplied

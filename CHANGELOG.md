@@ -5,6 +5,23 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Added
+
+- Added animal compatibility for Vara's Arctic Wolves, Bats, Equus: Shared Ancestry,
+  Equus: Expanded, Feverstone's Horses, Feverstone Wilds, Sonya's Quality Fowl,
+  More Animals, Teapot's Giant Boar, Giant Redriver and Great Bighorn, The Critters
+  Pack coral fork, and Truth and Beauty: Detailed Animals.
+- Added optional rules for 84 animal definitions and native feeding-deterrent
+  settings for two bat definitions. Small and young animals flee; large herbivores
+  defend during injury aggression; large predators approach and attack. Separate
+  tame, aquatic and non-animal definitions retain their original behavior.
+- Added regular JSON patches in separate mod-ID folders under `compatibility`,
+  following the existing optional-mod asset structure. Existing mixed-target AI
+  tasks retain their other targets. Generated ponies and chicks inherit existing
+  rules; no additional C# loader or hard mod dependencies are required.
+- Preserved native griffon flight attacks and bat feeding AI, with bat deterrent
+  ranges aligned to 16/12/8 blocks. Documented supplied versions and exclusions.
+
 ### Fixed
 
 - Removed blanket scarecrow fleeing from adult vanilla black, brown, polar and sun

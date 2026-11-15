@@ -1,0 +1,168 @@
+[
+  {
+    "enabled": true,
+    "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
+    "op": "replace",
+    "path": "/server/behaviors/13/aitasks/3/entityCodes",
+    "value": [
+      "chicken-*",
+      "chicken-baby",
+      "hare-*",
+      "fox-*",
+      "raccoon-*",
+      "goat-*",
+      "sheep-*",
+      "deer-*",
+      "gazelle-*",
+      "pig-*"
+    ],
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
+    "op": "add",
+    "path": "/server/behaviors/13/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.045,
+      "animation": "Trot",
+      "animationSpeed": 1.2,
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 2.6,
+      "priorityForCancel": 2.6,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
+    "op": "add",
+    "path": "/server/behaviors/13/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.045,
+      "animation": "Trot",
+      "animationSpeed": 1.2,
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 2.6,
+      "priorityForCancel": 2.6,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
+    "op": "add",
+    "path": "/server/behaviors/13/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.045,
+      "animation": "Trot",
+      "animationSpeed": 1.2,
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 2.6,
+      "priorityForCancel": 2.6,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
+    "op": "add",
+    "path": "/server/behaviors/13/aitasks/-",
+    "value": {
+      "code": "seekentity",
+      "movespeed": 0.055,
+      "animation": "Run",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.7,
+      "priorityForCancel": 2.7,
+      "slot": 0,
+      "seekingRange": 16,
+      "minCooldownMs": 500,
+      "maxCooldownMs": 1000,
+      "maxFollowTime": 15,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
+    "op": "add",
+    "path": "/server/behaviors/13/aitasks/-",
+    "value": {
+      "code": "meleeattack",
+      "damageByType": {
+        "*-male": 12,
+        "*-female": 10
+      },
+      "damageTier": 2,
+      "damageType": "PiercingAttack",
+      "minDist": 3.5,
+      "minVerDist": 1.5,
+      "animation": "Attack",
+      "animationSpeed": 1.5,
+      "attackDurationMs": 900,
+      "damagePlayerAtMs": 500,
+      "knockbackStrength": 2,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.8,
+      "priorityForCancel": 2.8,
+      "slot": 1,
+      "minCooldownMs": 1200,
+      "maxCooldownMs": 1500,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

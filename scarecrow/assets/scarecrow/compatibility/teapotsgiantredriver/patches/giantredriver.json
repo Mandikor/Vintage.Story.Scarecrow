@@ -1,0 +1,177 @@
+[
+  {
+    "enabled": true,
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
+    "op": "replace",
+    "path": "/server/behaviors/11/aitasks/2/entityCodes",
+    "value": [
+      "chicken-*",
+      "chicken-baby",
+      "hare-*",
+      "fox-*",
+      "raccoon-*",
+      "goat-*",
+      "sheep-*",
+      "deer-*",
+      "gazelle-*",
+      "pig-*"
+    ],
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.075,
+      "animation": "Run",
+      "animationSpeed": 1.2,
+      "sound": "game:creature/pig/hurt",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 2.55,
+      "priorityForCancel": 2.55,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.075,
+      "animation": "Run",
+      "animationSpeed": 1.2,
+      "sound": "game:creature/pig/hurt",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 2.55,
+      "priorityForCancel": 2.55,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.075,
+      "animation": "Run",
+      "animationSpeed": 1.2,
+      "sound": "game:creature/pig/hurt",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 2.55,
+      "priorityForCancel": 2.55,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "seekentity",
+      "movespeed": 0.063,
+      "animation": "Canter",
+      "animationSpeed": 1.2,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.65,
+      "priorityForCancel": 2.65,
+      "slot": 0,
+      "seekingRange": 16,
+      "minCooldownMs": 1000,
+      "maxCooldownMs": 1500,
+      "maxFollowTime": 15,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "meleeattack",
+      "damageByType": {
+        "*-female": 6,
+        "*": 8
+      },
+      "damageTier": 2,
+      "attackDurationMs": 900,
+      "damagePlayerAtMs": 300,
+      "animation": "Attack",
+      "animationSpeed": 1.2,
+      "damageType": "BluntAttack",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.75,
+      "priorityForCancel": 2.75,
+      "slot": 1,
+      "minCooldownMs": 500,
+      "maxCooldownMs": 1500,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "minCooldownMsByType": {
+        "*-female": 1000,
+        "*": 1500
+      },
+      "maxCooldownMsByType": {
+        "*-female": 1500,
+        "*": 2500
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

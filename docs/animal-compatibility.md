@@ -27,7 +27,7 @@ Being injured does not guarantee an attack: the animal may enter a native fear
 state instead. Immediate survival tasks, such as native panic responses with
 higher priorities, can still interrupt the added reactions.
 
-For the audited animal mods, added task priorities are 8.5 for fleeing, 8.7 for approaching and 8.8 for
+For the original 18 audited animal mods, added task priorities are 8.5 for fleeing, 8.7 for approaching and 8.8 for
 melee attacks. This prevents lower-priority native attack tasks from defeating the
 small-animal flee rule while leaving higher-priority emergency behavior available.
 Retaliation is disabled for the added tasks so their scarecrow target lists cannot
@@ -88,8 +88,61 @@ The audit covers the existing wild adult and mobile-young patch targets. Separat
 tamed and semi-tamed entity definitions, carcasses, nests and immobile nestlings
 remain unchanged. In particular, the Acanthisittidae, Aegothelidae and Strigopidae
 nestling definitions deliberately have zero movement speed in the original mod.
-Additional animal mods present in the supplied directory were not added to the
-compatibility list by this change.
+
+## Additional animal mods
+
+The additional compatibility rules cover the following supplied packages. Versions
+come from their manifests, rather than the names of their extracted directories.
+
+| Mod ID | Supplied version |
+| --- | --- |
+| `varasarcticwolves` | 1.5.0 |
+| `bats` | 1.3.2 |
+| `detailedanimals` | 0.8.4 |
+| `equusponies` | 0.5.0 |
+| `equussharedancestry` | 1.6.0 |
+| `feverstonehorses` | 2.4.2 |
+| `feverstonewilds` | 3.1.1 |
+| `fowlmod` | 1.0.1 |
+| `moreanimals` | 1.7.1 |
+| `teapotsgiantboar` | 1.1.1 |
+| `teapotsgiantredriver` | 1.0.2 |
+| `teapotsgreatbighorn` | 1.0.5 (directory labeled 1.1.0) |
+| `thecritterpackcontinued` | 1.4.5 |
+
+Small wildlife, small birds and young animals flee. Adult wild donkeys and horses,
+bison, giraffes, ostriches, yaks and Teapot's large herbivores use injury-triggered
+defense. Giant boars follow the defensive omnivore rule used for vanilla pigs.
+Adult Arctic wolves and the larger Feverstone predators attack; their young flee.
+Feverstone's meat-eating hellboar follows the predator rule. The Critter Pack's
+waxwing remains a small fleeing bird despite its unusually high configured weight.
+
+Separate tamed definitions and tame variants in mixed definitions are excluded.
+Aquatic animals, humanoid fantasy creatures, carcasses and objects are unchanged.
+The Critter Pack's isopods and woodlice retain their specialized AI without added
+ground flee tasks. Scarecrow targets in the original entity task lists are updated;
+other targets remain intact. Lower-priority flee tasks added by Critter Pack's own
+compatibility patches can coexist with these rules.
+
+Griffons retain their native flight approach and attack tasks alongside ground
+reactions. Bats retain their native flight and feeding AI: existing scarecrow food
+deterrents use 16/12/8-block ranges and retain the mod's radius scaling. Little brown
+bats have no such feeding deterrents and remain unchanged. This is feeding
+protection, not a general flight-flee task.
+
+The 86 JSON patch files in eleven mod-ID folders under
+`assets/scarecrow/compatibility/<modId>/patches` supply rules for 84 animal
+definitions and feeding settings for two bat definitions. They use the game's
+existing optional-mod compatibility mechanism, just like the earlier patches;
+there is no additional C# loader. Patch paths refer to task-list locations in the
+audited assets. New task priorities are adapted to native combat priorities in
+the same way as the vanilla rules. Native damage, timing and animations are kept.
+
+Equus: Expanded generates ponies from the already patched Ferus templates, and
+Detailed Animals generates chicks from the patched vanilla chicken template.
+They inherit the existing rules without separate duplicate tasks. None of these
+additions changes natural-spawn protection: its default list remains hares and
+raccoons.
 
 ## Vanilla animals
 
@@ -146,6 +199,14 @@ The vanilla audit additionally checks **13 patch files**, **25 entity definition
 and **181 variants**, including 611 enabled task configurations. It also verifies
 the panda/predatory-bear split, elder-boar exclusions and coverage of every wild
 vanilla mammal and chicken definition.
+
+The additional rules are checked against raw mod assets and the game's variant
+resolver: 219 variant/file combinations, including 34 excluded tame cases, and
+639 enabled task configurations. Checks include applying the shipped JSON patch
+operations to the original assets, animation availability and injury gates.
+The actual Equus: Expanded builder was exercised for nine wild
+definitions and 64 age/gender variants; the actual Detailed Animals clone routine
+was checked for both generated chick variants.
 
 These checks do not simulate pathfinding, task scheduling or a complete running
 mod set. In-game testing should include a small herbivore, a large herbivore before

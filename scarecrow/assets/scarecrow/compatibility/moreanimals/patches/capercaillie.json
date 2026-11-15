@@ -1,0 +1,80 @@
+[
+  {
+    "enabled": true,
+    "file": "moreanimals:entities/capercaillie.json",
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeedByType": {
+        "*-cock": 0.041,
+        "*": 0.037
+      },
+      "animationSpeed": 2.4,
+      "animation": "Run",
+      "sound": "capercaillie/capercailliecock1",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 2.1,
+      "priorityForCancel": 2.1,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "moreanimals:entities/capercaillie.json",
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeedByType": {
+        "*-cock": 0.041,
+        "*": 0.037
+      },
+      "animationSpeed": 2.4,
+      "animation": "Run",
+      "sound": "capercaillie/capercailliecock1",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 2.1,
+      "priorityForCancel": 2.1,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "moreanimals:entities/capercaillie.json",
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeedByType": {
+        "*-cock": 0.041,
+        "*": 0.037
+      },
+      "animationSpeed": 2.4,
+      "animation": "Run",
+      "sound": "capercaillie/capercailliecock1",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 2.1,
+      "priorityForCancel": 2.1,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

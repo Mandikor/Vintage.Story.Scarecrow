@@ -1,0 +1,68 @@
+[
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/spider.json",
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.01,
+      "animation": "skitter",
+      "animationSpeed": 2.5,
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/spider.json",
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.01,
+      "animation": "skitter",
+      "animationSpeed": 2.5,
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/spider.json",
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.01,
+      "animation": "skitter",
+      "animationSpeed": 2.5,
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

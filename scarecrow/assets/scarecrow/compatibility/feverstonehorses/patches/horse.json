@@ -1,0 +1,177 @@
+[
+  {
+    "enabled": true,
+    "file": "feverstonehorses:entities/land/horse.json",
+    "op": "add",
+    "path": "/server/behaviors/14/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.058,
+      "animation": "gallop",
+      "animationSpeed": 2.2,
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 2.1,
+      "priorityForCancel": 2.1,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "enabledByType": {
+        "horse-wild-*-donkey": true,
+        "horse-wild-*-shire": true,
+        "horse-wild-*-quarter": true,
+        "*": false
+      },
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonehorses:entities/land/horse.json",
+    "op": "add",
+    "path": "/server/behaviors/14/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.058,
+      "animation": "gallop",
+      "animationSpeed": 2.2,
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 2.1,
+      "priorityForCancel": 2.1,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "enabledByType": {
+        "horse-wild-*-donkey": true,
+        "horse-wild-*-shire": true,
+        "horse-wild-*-quarter": true,
+        "*": false
+      },
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonehorses:entities/land/horse.json",
+    "op": "add",
+    "path": "/server/behaviors/14/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.058,
+      "animation": "gallop",
+      "animationSpeed": 2.2,
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 2.1,
+      "priorityForCancel": 2.1,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "enabledByType": {
+        "horse-wild-*-donkey": true,
+        "horse-wild-*-shire": true,
+        "horse-wild-*-quarter": true,
+        "*": false
+      },
+      "whenNotInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonehorses:entities/land/horse.json",
+    "op": "add",
+    "path": "/server/behaviors/14/aitasks/-",
+    "value": {
+      "code": "seekentity",
+      "movespeed": 0.058,
+      "animation": "gallop",
+      "animationSpeed": 2.2,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.2,
+      "priorityForCancel": 2.2,
+      "slot": 0,
+      "seekingRange": 16,
+      "minCooldownMs": 500,
+      "maxCooldownMs": 1000,
+      "maxFollowTime": 15,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "enabledByType": {
+        "horse-wild-*-donkey": true,
+        "horse-wild-*-shire": true,
+        "horse-wild-*-quarter": true,
+        "*": false
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonehorses:entities/land/horse.json",
+    "op": "add",
+    "path": "/server/behaviors/14/aitasks/-",
+    "value": {
+      "code": "meleeattack",
+      "damageByType": {
+        "*-shire": 3.6,
+        "*-quarter": 2.8,
+        "*-donkey": 2
+      },
+      "damageTier": 2,
+      "attackDurationMs": 750,
+      "damagePlayerAtMs": 500,
+      "animation": "attack",
+      "animationSpeed": 1.4,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.3,
+      "priorityForCancel": 2.3,
+      "slot": 1,
+      "minCooldownMs": 1500,
+      "maxCooldownMs": 2500,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "whenInEmotionStates": [
+        "aggressiveondamage"
+      ],
+      "enabledByType": {
+        "horse-wild-*-donkey": true,
+        "horse-wild-*-shire": true,
+        "horse-wild-*-quarter": true,
+        "*": false
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

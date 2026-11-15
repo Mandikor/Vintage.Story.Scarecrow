@@ -1,0 +1,87 @@
+[
+  {
+    "enabled": true,
+    "file": "thecritterpack:entities/animal/bird/crow/crow-flying.json",
+    "op": "replace",
+    "path": "/server/behaviors/8/aitasks/0/entityCodes",
+    "value": [
+      "player",
+      "wolf-male",
+      "wolf-female",
+      "fox-*",
+      "bear-*",
+      "bear-*",
+      "fresh-scarecrow-entity"
+    ],
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "thecritterpack:entities/animal/bird/crow/crow-flying.json",
+    "op": "add",
+    "path": "/server/behaviors/8/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.0412,
+      "animationSpeed": 2.4,
+      "animation": "fly",
+      "sound": "creature/crow/crow1-0*",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "thecritterpack:entities/animal/bird/crow/crow-flying.json",
+    "op": "add",
+    "path": "/server/behaviors/8/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.0412,
+      "animationSpeed": 2.4,
+      "animation": "fly",
+      "sound": "creature/crow/crow1-0*",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "thecritterpack:entities/animal/bird/crow/crow-flying.json",
+    "op": "add",
+    "path": "/server/behaviors/8/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.0412,
+      "animationSpeed": 2.4,
+      "animation": "fly",
+      "sound": "creature/crow/crow1-0*",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/bison-calf.json",
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.025,
+      "animationSpeed": 4,
+      "animation": "Run",
+      "sound": "game:creature/sheep/lamb-hurt2",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "enabledByType": {
+        "bison-calf-wild": true,
+        "*": false
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/bison-calf.json",
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.025,
+      "animationSpeed": 4,
+      "animation": "Run",
+      "sound": "game:creature/sheep/lamb-hurt2",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "enabledByType": {
+        "bison-calf-wild": true,
+        "*": false
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/bison-calf.json",
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.025,
+      "animationSpeed": 4,
+      "animation": "Run",
+      "sound": "game:creature/sheep/lamb-hurt2",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "enabledByType": {
+        "bison-calf-wild": true,
+        "*": false
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "enabled": true,
+    "file": "thecritterpack:entities/animal/bird/owl/brown-owl-f.json",
+    "op": "remove",
+    "path": "/server/behaviors/6/aitasks/2",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "thecritterpack:entities/animal/bird/owl/brown-owl-f.json",
+    "op": "remove",
+    "path": "/server/behaviors/6/aitasks/1",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "thecritterpack:entities/animal/bird/owl/brown-owl-f.json",
+    "op": "replace",
+    "path": "/server/behaviors/6/aitasks/0/entityCodes",
+    "value": [
+      "player",
+      "wolf-male",
+      "wolf-female",
+      "fox-*",
+      "bear-*"
+    ],
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "thecritterpack:entities/animal/bird/owl/brown-owl-f.json",
+    "op": "add",
+    "path": "/server/behaviors/6/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.0512,
+      "animationSpeed": 0.85,
+      "animation": "fly",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 2.2,
+      "priorityForCancel": 2.2,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "thecritterpack:entities/animal/bird/owl/brown-owl-f.json",
+    "op": "add",
+    "path": "/server/behaviors/6/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.0512,
+      "animationSpeed": 0.85,
+      "animation": "fly",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 2.2,
+      "priorityForCancel": 2.2,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "thecritterpack:entities/animal/bird/owl/brown-owl-f.json",
+    "op": "add",
+    "path": "/server/behaviors/6/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.0512,
+      "animationSpeed": 0.85,
+      "animation": "fly",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 2.2,
+      "priorityForCancel": 2.2,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

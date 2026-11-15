@@ -1,0 +1,64 @@
+[
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/hellboar.json",
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "seekentity",
+      "movespeed": 0.045,
+      "animation": "Run",
+      "animationSpeed": 1,
+      "sound": "game:creature/pig/attack",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.2,
+      "priorityForCancel": 2.2,
+      "slot": 0,
+      "seekingRange": 16,
+      "minCooldownMs": 500,
+      "maxCooldownMs": 1000,
+      "maxFollowTime": 15,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/hellboar.json",
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "meleeattack",
+      "damage": 6.5,
+      "damageTier": 2,
+      "damageType": "SlashingAttack",
+      "attackDurationMs": 800,
+      "damagePlayerAtMs": 500,
+      "animation": "Attack",
+      "animationSpeed": 1.5,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.3,
+      "priorityForCancel": 2.3,
+      "slot": 1,
+      "minCooldownMs": 1000,
+      "maxCooldownMs": 1500,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

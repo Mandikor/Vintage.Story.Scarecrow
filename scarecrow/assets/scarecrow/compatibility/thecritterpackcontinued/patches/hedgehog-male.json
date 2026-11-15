@@ -1,0 +1,68 @@
+[
+  {
+    "enabled": true,
+    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.007,
+      "animationSpeed": 2.1,
+      "animation": "Walk",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 6.47,
+      "priorityForCancel": 6.47,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.007,
+      "animationSpeed": 2.1,
+      "animation": "Walk",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 6.47,
+      "priorityForCancel": 6.47,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.007,
+      "animationSpeed": 2.1,
+      "animation": "Walk",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 6.47,
+      "priorityForCancel": 6.47,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

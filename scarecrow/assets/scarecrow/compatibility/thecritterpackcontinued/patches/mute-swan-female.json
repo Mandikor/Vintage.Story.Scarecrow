@@ -1,0 +1,68 @@
+[
+  {
+    "enabled": true,
+    "file": "thecritterpack:entities/animal/bird/swan/mute/mute-swan-female.json",
+    "op": "add",
+    "path": "/server/behaviors/8/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.022,
+      "animationSpeed": 1.6,
+      "animation": "walk",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "thecritterpack:entities/animal/bird/swan/mute/mute-swan-female.json",
+    "op": "add",
+    "path": "/server/behaviors/8/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.022,
+      "animationSpeed": 1.6,
+      "animation": "walk",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "thecritterpack:entities/animal/bird/swan/mute/mute-swan-female.json",
+    "op": "add",
+    "path": "/server/behaviors/8/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.022,
+      "animationSpeed": 1.6,
+      "animation": "walk",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 3.1,
+      "priorityForCancel": 3.1,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

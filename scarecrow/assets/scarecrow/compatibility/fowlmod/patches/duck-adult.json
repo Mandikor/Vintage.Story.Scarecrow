@@ -1,0 +1,71 @@
+[
+  {
+    "enabled": true,
+    "file": "fowlmod:entities/animal/bird/duck-adult.json",
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.04,
+      "animationSpeed": 2,
+      "animation": "Run",
+      "sound": "fowlmod:creature/duck/wingnoise1",
+      "entityCodes": [
+        "scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 16,
+      "fleeingDistance": 20,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "fowlmod:entities/animal/bird/duck-adult.json",
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.04,
+      "animationSpeed": 2,
+      "animation": "Run",
+      "sound": "fowlmod:creature/duck/wingnoise1",
+      "entityCodes": [
+        "little-scarecrow"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 12,
+      "fleeingDistance": 16,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "fowlmod:entities/animal/bird/duck-adult.json",
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "movespeed": 0.04,
+      "animationSpeed": 2,
+      "animation": "Run",
+      "sound": "fowlmod:creature/duck/wingnoise1",
+      "entityCodes": [
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "priorityForCancel": 1.6,
+      "seekingRange": 8,
+      "fleeingDistance": 12,
+      "whenSwimming": false,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

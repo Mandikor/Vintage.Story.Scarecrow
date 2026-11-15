@@ -1,0 +1,138 @@
+[
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/griffon.json",
+    "op": "add",
+    "path": "/server/behaviors/15/aitasks/-",
+    "value": {
+      "code": "seekentity",
+      "movespeed": 0.052,
+      "animation": "Run",
+      "animationSpeed": 1,
+      "sound": " ",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 3.2,
+      "priorityForCancel": 3.2,
+      "slot": 0,
+      "seekingRange": 16,
+      "minCooldownMs": 500,
+      "maxCooldownMs": 1000,
+      "maxFollowTime": 15,
+      "whenSwimming": false,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "enabledByType": {
+        "griffon-wild-*": true,
+        "*": false
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/griffon.json",
+    "op": "add",
+    "path": "/server/behaviors/15/aitasks/-",
+    "value": {
+      "code": "meleeattack",
+      "damage": 9.5,
+      "damageTier": 2,
+      "damageType": "SlashingAttack",
+      "attackDurationMs": 800,
+      "damagePlayerAtMs": 500,
+      "animation": "Attack",
+      "animationSpeed": 1.5,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 3.3,
+      "priorityForCancel": 3.3,
+      "slot": 1,
+      "minCooldownMs": 750,
+      "maxCooldownMs": 1500,
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "enabledByType": {
+        "griffon-wild-*": true,
+        "*": false
+      },
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/griffon.json",
+    "op": "add",
+    "path": "/server/behaviors/15/aitasks/-",
+    "value": {
+      "code": "flightseekentity",
+      "slot": 0,
+      "priority": 4.2,
+      "seekingRange": 16,
+      "preferredAltitude": 3,
+      "animation": "speedfly",
+      "animationSpeed": 1,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "enabledByType": {
+        "griffon-wild-*": true,
+        "*": false
+      },
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "retaliateAttacks": false,
+      "priorityForCancel": 4.2
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/griffon.json",
+    "op": "add",
+    "path": "/server/behaviors/15/aitasks/-",
+    "value": {
+      "code": "flightmeleeattack",
+      "slot": 1,
+      "priority": 4.3,
+      "attackRange": 2.5,
+      "damage": 7.5,
+      "damageTier": 2,
+      "damageType": "SlashingAttack",
+      "mincooldown": 750,
+      "maxcooldown": 1500,
+      "attackDurationMs": 800,
+      "damageAtMs": 500,
+      "animation": "airattack",
+      "animationSpeed": 1,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "enabledByType": {
+        "griffon-wild-*": true,
+        "*": false
+      },
+      "whenNotInEmotionStates": [
+        "fleeondamage"
+      ],
+      "retaliateAttacks": false,
+      "priorityForCancel": 4.3
+    },
+    "side": "server"
+  }
+]

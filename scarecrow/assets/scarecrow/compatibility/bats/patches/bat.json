@@ -1,0 +1,27 @@
+[
+  {
+    "enabled": true,
+    "file": "bats:entities/bat.json",
+    "op": "add",
+    "path": "/server/behaviors/6/aitasks/0/feedDeterrents",
+    "value": [
+      {
+        "code": "scarecrow:scarecrow",
+        "range": 16
+      },
+      {
+        "code": "scarecrow:little-scarecrow",
+        "range": 12
+      },
+      {
+        "code": "game:strawdummy",
+        "range": 8
+      },
+      {
+        "code": "game:armorstand*",
+        "range": 6
+      }
+    ],
+    "side": "server"
+  }
+]
