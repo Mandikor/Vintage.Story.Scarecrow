@@ -36,6 +36,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ### Documentation
 
+- Updated the MIT copyright notice to cover 2023-2026; the license terms are unchanged.
 - Expanded the README with installation instructions, protection radii, animal behavior,
   crafting, controls, equipment, configuration, attachment rules, optional mod
   compatibility, contribution guidance and license information.
