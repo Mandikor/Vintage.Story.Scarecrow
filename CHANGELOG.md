@@ -3,6 +3,47 @@
 All notable changes to the Scarecrow mod, newest first. The version numbers match
 `scarecrow/modinfo.json`, the dates are the dates of the release commits.
 
+## Unreleased
+
+### Fixed
+
+- Scarecrow and little scarecrow placement now checks the full collision box against
+  solid blocks and overlapping living entities before consuming the item. Empty
+  entity-intersection results correctly allow placement.
+- Restored compatibility with vanilla stands by removing the global attachment-category
+  overrides. Tools retain their original game or mod categories.
+- Forbidden tools are rejected on both the client and server, and attachment hints
+  only show items allowed at the selected attachment point.
+
+### Changed
+
+- Scarecrow attachments now extend the vanilla attachment system with an item-code
+  whitelist per slot. The `allowedCodes` lists are defined in the entity JSON files
+  and support domain-qualified wildcard patterns.
+- Slot categories are derived from the permitted collectibles without replacing their
+  original categories or attachment interfaces. A fallback category is supplied only
+  for previously uncategorized items with scarecrow-specific attachment shapes.
+- Existing attachments are preserved when loading a world and remain removable after
+  a whitelist changes.
+- Leaf Litter rake attachment shapes and textures now come from a compatibility JSON
+  patch instead of the previous dedicated C# registration. The patch no longer
+  overwrites the rake's category.
+- Explicitly enabled the Art of Growing hayfork attachment patch.
+- Added a reference to the game's survival assembly for the vanilla attachment classes.
+- Added attachment regression checks covering vanilla stand compatibility, whitelist
+  enforcement and category preservation. The `tests` directory is kept local and
+  excluded from version control and distribution.
+
+### Documentation
+
+- Expanded the README with installation instructions, protection radii, animal behavior,
+  crafting, controls, equipment, configuration, attachment rules, optional mod
+  compatibility, contribution guidance and license information.
+- Corrected the little scarecrow's documented protection radius to 12 blocks and
+  clarified the difference between natural-spawn protection and animal flee behavior.
+- Removed the build-from-source instructions and the local regression-test command
+  from the public README.
+
 ## 1.9.3 (2026-11-13)
 
 - Scarecrows no longer remove animals that are born nearby or released from a cage. The spawn

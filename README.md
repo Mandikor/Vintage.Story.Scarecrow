@@ -193,27 +193,6 @@ The repository includes compatibility assets for the following mods and families
 Compatibility depends on the installed versions and the asset definitions supplied
 by those mods. Include the relevant mod versions when reporting a compatibility issue.
 
-## Building from source
-
-Install the **.NET 10 SDK** and a matching local **Vintage Story 1.22.0** installation.
-The project references the game's own assemblies; they are not included in this
-repository.
-
-Set `VINTAGE_STORY` to your game installation directory. For example, in PowerShell:
-
-```powershell
-$env:VINTAGE_STORY = "C:\Path\To\Vintagestory"
-dotnet build scarecrow/scarecrow.csproj -c Release
-```
-
-The build output is written to `scarecrow/bin/Release/Mods/mod/`, including the mod
-assembly, assets and metadata. The project does not copy the referenced game
-assemblies into the mod output.
-
-The repository also includes a Cake packaging script, `build.ps1`, which validates
-the asset JSON, publishes the mod and creates a ZIP in `Releases`. Its packaging
-step clears the existing contents of that directory before creating the output.
-
 ## Feedback and contributions
 
 Bug reports, compatibility fixes and translation improvements are welcome.
