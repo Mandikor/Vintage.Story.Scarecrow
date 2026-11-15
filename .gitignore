@@ -676,3 +676,6 @@ fabric.properties
 
 # Local regression checks
 /tests/
+
+# Local unused files
+/scarecrow/unused/
