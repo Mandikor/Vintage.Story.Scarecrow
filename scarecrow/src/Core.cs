@@ -47,7 +47,7 @@ namespace Scarecrow
         {
             api.World.Logger.Event("########## started '{0}' mod ##########", Mod.Info.Name);
 
-            LeafLitterRakeAttachable.Apply(api);
+            //LeafLitterRakeAttachable.Apply(api);
             AttachableItems.Apply(api);
         }
     }
