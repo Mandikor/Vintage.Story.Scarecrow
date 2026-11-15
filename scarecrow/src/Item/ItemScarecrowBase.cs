@@ -56,7 +56,27 @@ namespace Scarecrow
             entity.Pos.Yaw = byEntity.Pos.Yaw + GameMath.PIHALF;
             entity.WatchedAttributes.SetString("ownerUid", player.PlayerUID);
 
-            // Only consume the item once the entity was created successfully.
+            // The entity has not been initialized yet, so use the type's spawn box.
+            Cuboidf collisionBox = entityType.SpawnCollisionBox;
+            if (byEntity.World.CollisionTester.IsColliding(byEntity.World.BlockAccessor,
+                collisionBox, entity.Pos.XYZ, false))
+            {
+                handling = EnumHandHandling.PreventDefaultAction;
+                return;
+            }
+
+            // This helper expects boxes relative to the block, rather than the entity centre.
+            Cuboidf blockRelativeBox = collisionBox.Clone().Translate(0.5f, 0, 0.5f);
+            Entity[] intersectingEntities = byEntity.World.GetIntersectingEntities(targetPos,
+                new[] { blockRelativeBox }, other => other is EntityAgent && other.Alive);
+            // No intersections are returned as an empty array, not null.
+            if (intersectingEntities.Length > 0)
+            {
+                handling = EnumHandHandling.PreventDefaultAction;
+                return;
+            }
+
+            // Only consume the item once the entity was created and the space is clear.
             if (player.WorldData.CurrentGameMode != EnumGameMode.Creative)
             {
                 slot.TakeOut(1);
