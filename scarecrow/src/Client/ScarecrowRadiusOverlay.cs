@@ -29,10 +29,12 @@ namespace Scarecrow
         private const string HotkeyCode = "scarecrow:showradius";
         private const int HighlightSlotId = 4173;
         private const int ScanRange = 64;
-        private const int DefaultScareRadius = 8;
+        private const int RefreshIntervalMs = 500;
 
         private ICoreClientAPI capi;
         private bool visible;
+        private long refreshListenerId;
+        private HashSet<BlockPos> highlightedBlocks = new();
 
         public override bool ShouldLoad(EnumAppSide forSide)
         {
@@ -50,7 +52,7 @@ namespace Scarecrow
 
         public override void Dispose()
         {
-            if (visible && capi?.World?.Player != null) Hide();
+            if (visible) Hide();
             base.Dispose();
         }
 
@@ -68,28 +70,45 @@ namespace Scarecrow
                 return;
             }
 
-            HashSet<BlockPos> ring = CollectRingBlocks();
-            if (ring.Count == 0)
+            visible = true;
+            Refresh(0);
+            refreshListenerId = capi.Event.RegisterGameTickListener(Refresh, RefreshIntervalMs);
+            if (highlightedBlocks.Count == 0)
             {
                 capi.ShowChatMessage(Lang.Get("scarecrow:radius-none"));
-                return;
             }
+        }
+
+        private void Refresh(float deltaTime)
+        {
+            if (!visible || capi?.World?.Player?.Entity == null) return;
+
+            HashSet<BlockPos> ring = CollectRingBlocks();
+            if (highlightedBlocks.SetEquals(ring)) return;
 
             capi.World.HighlightBlocks(capi.World.Player, HighlightSlotId,
                 new List<BlockPos>(ring),
                 new List<int> { ColorUtil.ToRgba(96, 255, 200, 80) },
                 EnumHighlightBlocksMode.Absolute, EnumHighlightShape.Arbitrary);
 
-            visible = true;
+            highlightedBlocks = ring;
         }
 
         private void Hide()
         {
-            capi.World.HighlightBlocks(capi.World.Player, HighlightSlotId,
-                new List<BlockPos>(), new List<int>(),
-                EnumHighlightBlocksMode.Absolute, EnumHighlightShape.Arbitrary);
-
             visible = false;
+            if (refreshListenerId != 0)
+            {
+                capi.Event.UnregisterGameTickListener(refreshListenerId);
+                refreshListenerId = 0;
+            }
+            if (capi?.World?.Player != null)
+            {
+                capi.World.HighlightBlocks(capi.World.Player, HighlightSlotId,
+                    new List<BlockPos>(), new List<int>(),
+                    EnumHighlightBlocksMode.Absolute, EnumHighlightShape.Arbitrary);
+            }
+            highlightedBlocks.Clear();
         }
 
         /// <summary>
@@ -102,12 +121,9 @@ namespace Scarecrow
             Entity[] scarecrows = capi.World.GetEntitiesAround(capi.World.Player.Entity.Pos.XYZ,
                 ScanRange, ScanRange, entity => entity is EntityScarecrow && entity.Alive);
 
-            foreach (Entity entity in scarecrows)
+            foreach (EntityScarecrow entity in scarecrows)
             {
-                int radius = entity.Properties.Attributes?["scareRadius"]?.AsInt(DefaultScareRadius)
-                    ?? DefaultScareRadius;
-
-                AddRing(ring, entity.Pos.X, entity.Pos.Y, entity.Pos.Z, radius);
+                AddRing(ring, entity.Pos.X, entity.Pos.Y, entity.Pos.Z, entity.ScareRadius);
             }
 
             return ring;

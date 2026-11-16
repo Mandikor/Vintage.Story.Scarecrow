@@ -27,6 +27,9 @@ namespace Scarecrow
         private int scareRadius = DefaultScareRadius;
         private string pickupItemCode = DefaultPickupItemCode;
 
+        /// <summary>Natural-spawn protection, including the currently attached lantern.</summary>
+        public int ScareRadius => scareRadius + (GetBehavior<ScarecrowAttachments>()?.LanternRadiusBonus ?? 0);
+
         public override void Initialize(EntityProperties properties, ICoreAPI api, long InChunkIndex3d)
         {
             base.Initialize(properties, api, InChunkIndex3d);
@@ -88,7 +91,7 @@ namespace Scarecrow
             if (origin != "entityspawner") return;
 
             double distance = Pos.DistanceTo(entity.Pos);
-            if (distance > scareRadius) return;
+            if (distance > ScareRadius) return;
 
             if (config?.DebugOutput == true)
             {
@@ -111,7 +114,7 @@ namespace Scarecrow
             if (!IsScaredAnimal(entityProperties.Code)) return true;
 
             double distance = Pos.DistanceTo(spawnPosition);
-            if (distance > scareRadius) return true;
+            if (distance > ScareRadius) return true;
 
             if (config?.DebugOutput == true)
             {

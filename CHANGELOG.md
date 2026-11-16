@@ -7,6 +7,10 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ### Added
 
+- Attached small vanilla lanterns now increase natural-spawn protection by two
+  blocks; large lanterns add four. Both scarecrow sizes and the radius overlay use
+  the current attachment bonus, which disappears when the lantern is removed.
+  Animal flee and attack distances are unchanged.
 - Added animal compatibility for Vara's Arctic Wolves, Bats, Equus: Shared Ancestry,
   Equus: Expanded, Feverstone's Horses, Feverstone Wilds, Sonya's Quality Fowl,
   More Animals, Teapot's Giant Boar, Giant Redriver and Great Bighorn, The Critters
@@ -44,6 +48,10 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ### Changed
 
+- The enabled radius overlay now refreshes automatically every half second after
+  placement, movement, removal or changes to nearby loaded scarecrows. It stays
+  enabled when no scarecrow is nearby, updates highlights only when the outline
+  changes, and stops refreshing when switched off.
 - Audited all 36 installed vanilla animal entity files and revised the 13 existing
   vanilla animal patch files, covering 25 definitions and 181 variants. Applied the
   same size, diet and injury-state rules as the animal-mod compatibility patches.

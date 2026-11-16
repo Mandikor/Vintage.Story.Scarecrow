@@ -46,6 +46,13 @@ The optional mods listed below are not required to use Scarecrow.
 These radii come from the entity definitions. Natural-spawn protection measures
 distance in three dimensions, so its actual area is a sphere.
 
+An attached **small vanilla lantern adds 2 blocks** to natural-spawn protection;
+a **large vanilla lantern adds 4 blocks**. This gives the scarecrow a radius of
+18 or 20 blocks, and the little scarecrow 14 or 16 blocks. Removing the lantern
+removes the bonus. The radius outline updates automatically while enabled.
+The bonus applies whenever the lantern is attached, during both day and night.
+Animal flee and attack distances remain unchanged.
+
 ### How animal protection works
 
 Scarecrow uses two complementary mechanisms:
@@ -111,8 +118,10 @@ The overlay shows ground outlines for loaded scarecrows and straw dummies within
 block grid at the entity's feet. It is a horizontal guide to the protection radius,
 not a visualization of the entire sphere or every animal's AI behavior.
 
-If you move or remove a scarecrow while the outline is visible, toggle the overlay
-off and on to refresh it.
+While enabled, the overlay checks nearby scarecrows every half second and updates
+when they are placed, moved, removed or loaded as you travel. It remains enabled
+when no scarecrow is nearby, so newly encountered scarecrows appear automatically.
+Press **Ctrl + H** again to turn it off.
 
 ## Equipment
 
