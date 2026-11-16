@@ -68,5 +68,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "Lantaarnvak: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "Vak bij de voeten: {0}",
 	"scarecrow:tooltip-inventory-empty": "Leeg",
-	"scarecrow:tooltip-inventory-unavailable": "Niet beschikbaar voorwerp"
+	"scarecrow:tooltip-inventory-unavailable": "Niet beschikbaar voorwerp",
+
+	"scarecrow:interaction-error-placement-blocked": "Hier is niet genoeg ruimte voor de vogelverschrikker.",
+	"scarecrow:interaction-error-placement-entity": "Een levend wezen blokkeert de plaatsing.",
+	"scarecrow:interaction-error-equipment": "Dit voorwerp past niet op dit bevestigingspunt.",
+	"scarecrow:interaction-error-occupied": "Dit bevestigingspunt is al bezet.",
+	"scarecrow:interaction-error-owner": "Alleen de eigenaar kan deze vogelverschrikker aanpassen.",
+	"scarecrow:interaction-error-claim": "Je hebt geen toegangsrechten voor dit gebied."
 }

@@ -68,5 +68,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "Slot pro lucernu: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "Slot u nohou: {0}",
 	"scarecrow:tooltip-inventory-empty": "Prázdné",
-	"scarecrow:tooltip-inventory-unavailable": "Nedostupný předmět"
+	"scarecrow:tooltip-inventory-unavailable": "Nedostupný předmět",
+
+	"scarecrow:interaction-error-placement-blocked": "Zde není dost místa pro strašáka.",
+	"scarecrow:interaction-error-placement-entity": "Umístění blokuje živý tvor.",
+	"scarecrow:interaction-error-equipment": "Tento předmět nepatří na tento úchyt.",
+	"scarecrow:interaction-error-occupied": "Tento úchyt je již obsazený.",
+	"scarecrow:interaction-error-owner": "Tohoto strašáka může upravovat pouze vlastník.",
+	"scarecrow:interaction-error-claim": "Nemáte oprávnění k přístupu na toto území."
 }

@@ -68,5 +68,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "Espaço da lanterna: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "Espaço aos pés: {0}",
 	"scarecrow:tooltip-inventory-empty": "Vazio",
-	"scarecrow:tooltip-inventory-unavailable": "Item indisponível"
+	"scarecrow:tooltip-inventory-unavailable": "Item indisponível",
+
+	"scarecrow:interaction-error-placement-blocked": "Não há espaço suficiente para o espantalho aqui.",
+	"scarecrow:interaction-error-placement-entity": "Um ser vivo está bloqueando a colocação.",
+	"scarecrow:interaction-error-equipment": "Este item não serve neste ponto de fixação.",
+	"scarecrow:interaction-error-occupied": "Este ponto de fixação já está ocupado.",
+	"scarecrow:interaction-error-owner": "Somente o proprietário pode modificar este espantalho.",
+	"scarecrow:interaction-error-claim": "Você não tem permissão para acessar esta área."
 }

@@ -41,6 +41,8 @@ namespace Scarecrow
 
             if (!byEntity.World.Claims.TryAccess(player, targetPos, EnumBlockAccessFlags.BuildOrBreak))
             {
+                InteractionFeedback.Show(player, "claim");
+                handling = EnumHandHandling.PreventDefaultAction;
                 slot.MarkDirty();
                 return;
             }
@@ -67,6 +69,7 @@ namespace Scarecrow
             if (byEntity.World.CollisionTester.IsColliding(byEntity.World.BlockAccessor,
                 collisionBox, entity.Pos.XYZ, false))
             {
+                InteractionFeedback.Show(player, "placement-blocked");
                 handling = EnumHandHandling.PreventDefaultAction;
                 return;
             }
@@ -78,6 +81,7 @@ namespace Scarecrow
             // No intersections are returned as an empty array, not null.
             if (intersectingEntities.Length > 0)
             {
+                InteractionFeedback.Show(player, "placement-entity");
                 handling = EnumHandHandling.PreventDefaultAction;
                 return;
             }

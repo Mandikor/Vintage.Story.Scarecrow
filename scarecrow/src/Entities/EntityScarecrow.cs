@@ -87,11 +87,20 @@ namespace Scarecrow
         }
 
         internal bool CanManage(IPlayer player)
+            => CheckManagementAccess(player, false);
+
+        internal bool TryManage(IPlayer player)
+            => CheckManagementAccess(player, true);
+
+        private bool CheckManagementAccess(IPlayer player, bool reportFailure)
         {
             if (!Alive || player == null) return false;
             string ownerUid = WatchedAttributes.GetString("ownerUid");
-            return (string.IsNullOrEmpty(ownerUid) || ownerUid == player.PlayerUID)
-                && World.Claims.TryAccess(player, Pos.AsBlockPos, EnumBlockAccessFlags.Use);
+            string reason = !string.IsNullOrEmpty(ownerUid) && ownerUid != player.PlayerUID ? "owner"
+                : !World.Claims.TryAccess(player, Pos.AsBlockPos, EnumBlockAccessFlags.Use) ? "claim" : null;
+            if (reason == null) return true;
+            if (reportFailure) InteractionFeedback.Show(player, reason);
+            return false;
         }
 
         public override string GetInfoText()
@@ -242,7 +251,7 @@ namespace Scarecrow
         public override void OnInteract(EntityAgent byEntity, ItemSlot slot, Vec3d hitPosition, EnumInteractMode mode)
         {
             // A denied interaction must never reach attachment handling in the base class.
-            if (mode == EnumInteractMode.Interact && !CanManage((byEntity as EntityPlayer)?.Player)) return;
+            if (mode == EnumInteractMode.Interact && !TryManage((byEntity as EntityPlayer)?.Player)) return;
 
             if (!Alive || World.Side == EnumAppSide.Client || mode != EnumInteractMode.Interact)
             {

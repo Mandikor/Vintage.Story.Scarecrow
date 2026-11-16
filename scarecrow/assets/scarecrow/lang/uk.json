@@ -66,5 +66,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "Слот ліхтаря: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "Слот біля ніг: {0}",
 	"scarecrow:tooltip-inventory-empty": "Порожньо",
-	"scarecrow:tooltip-inventory-unavailable": "Недоступний предмет"
+	"scarecrow:tooltip-inventory-unavailable": "Недоступний предмет",
+
+	"scarecrow:interaction-error-placement-blocked": "Тут недостатньо місця для опудала.",
+	"scarecrow:interaction-error-placement-entity": "Жива істота заважає розміщенню.",
+	"scarecrow:interaction-error-equipment": "Цей предмет не підходить для цієї точки кріплення.",
+	"scarecrow:interaction-error-occupied": "Ця точка кріплення вже зайнята.",
+	"scarecrow:interaction-error-owner": "Лише власник може змінювати це опудало.",
+	"scarecrow:interaction-error-claim": "У вас немає прав доступу до цієї території."
 }

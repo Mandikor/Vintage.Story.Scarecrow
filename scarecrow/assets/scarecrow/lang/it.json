@@ -68,5 +68,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "Scomparto lanterna: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "Scomparto ai piedi: {0}",
 	"scarecrow:tooltip-inventory-empty": "Vuoto",
-	"scarecrow:tooltip-inventory-unavailable": "Oggetto non disponibile"
+	"scarecrow:tooltip-inventory-unavailable": "Oggetto non disponibile",
+
+	"scarecrow:interaction-error-placement-blocked": "Qui non c’è abbastanza spazio per lo spaventapasseri.",
+	"scarecrow:interaction-error-placement-entity": "Un essere vivente impedisce il posizionamento.",
+	"scarecrow:interaction-error-equipment": "Questo oggetto non è adatto a questo punto di fissaggio.",
+	"scarecrow:interaction-error-occupied": "Questo punto di fissaggio è già occupato.",
+	"scarecrow:interaction-error-owner": "Solo il proprietario può modificare questo spaventapasseri.",
+	"scarecrow:interaction-error-claim": "Non hai il permesso di accedere a questa zona."
 }

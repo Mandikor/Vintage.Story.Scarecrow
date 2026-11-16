@@ -68,5 +68,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "Miejsce na latarnię: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "Miejsce przy stopach: {0}",
 	"scarecrow:tooltip-inventory-empty": "Puste",
-	"scarecrow:tooltip-inventory-unavailable": "Niedostępny przedmiot"
+	"scarecrow:tooltip-inventory-unavailable": "Niedostępny przedmiot",
+
+	"scarecrow:interaction-error-placement-blocked": "Nie ma tu wystarczająco dużo miejsca na stracha na wróble.",
+	"scarecrow:interaction-error-placement-entity": "Żywa istota blokuje umieszczenie.",
+	"scarecrow:interaction-error-equipment": "Ten przedmiot nie pasuje do tego punktu mocowania.",
+	"scarecrow:interaction-error-occupied": "Ten punkt mocowania jest już zajęty.",
+	"scarecrow:interaction-error-owner": "Tylko właściciel może modyfikować tego stracha na wróble.",
+	"scarecrow:interaction-error-claim": "Nie masz uprawnień dostępu do tego obszaru."
 }

@@ -68,5 +68,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "Lámpás helye: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "Lábnál lévő hely: {0}",
 	"scarecrow:tooltip-inventory-empty": "Üres",
-	"scarecrow:tooltip-inventory-unavailable": "Nem elérhető tárgy"
+	"scarecrow:tooltip-inventory-unavailable": "Nem elérhető tárgy",
+
+	"scarecrow:interaction-error-placement-blocked": "Itt nincs elég hely a madárijesztőnek.",
+	"scarecrow:interaction-error-placement-entity": "Egy élőlény akadályozza az elhelyezést.",
+	"scarecrow:interaction-error-equipment": "Ez a tárgy nem illik ehhez a rögzítési ponthoz.",
+	"scarecrow:interaction-error-occupied": "Ez a rögzítési pont már foglalt.",
+	"scarecrow:interaction-error-owner": "Csak a tulajdonos módosíthatja ezt a madárijesztőt.",
+	"scarecrow:interaction-error-claim": "Nincs hozzáférési jogosultságod ehhez a területhez."
 }

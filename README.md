@@ -113,6 +113,12 @@ Placement checks the space needed by the entire scarecrow. Solid blocks or
 overlapping living entities prevent placement without consuming the item.
 Land-claim permissions also apply.
 
+Failed actions show a short, localized in-game error rather than a chat message:
+blocked placement distinguishes solid blocks from living entities, and equipment
+errors distinguish unsuitable items from occupied attachment points. Ownership
+and claim failures also explain why access was denied. Holding the interaction
+key does not repeatedly flash the same failure; successful actions stay silent.
+
 A placed scarecrow records its owner. Only that owner can pick it up, attach
 equipment or remove attachments, and claim permissions must also allow access.
 These checks run on the server, including attachment packets. Old scarecrows with

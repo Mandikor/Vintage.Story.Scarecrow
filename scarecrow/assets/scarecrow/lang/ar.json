@@ -68,5 +68,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "خانة الفانوس: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "خانة القدم: {0}",
 	"scarecrow:tooltip-inventory-empty": "فارغ",
-	"scarecrow:tooltip-inventory-unavailable": "عنصر غير متاح"
+	"scarecrow:tooltip-inventory-unavailable": "عنصر غير متاح",
+
+	"scarecrow:interaction-error-placement-blocked": "لا توجد مساحة كافية لفزاعة الطيور هنا.",
+	"scarecrow:interaction-error-placement-entity": "كائن حي يمنع الوضع.",
+	"scarecrow:interaction-error-equipment": "هذا العنصر لا يناسب نقطة التثبيت هذه.",
+	"scarecrow:interaction-error-occupied": "نقطة التثبيت هذه مشغولة بالفعل.",
+	"scarecrow:interaction-error-owner": "المالك وحده يستطيع تعديل فزاعة الطيور هذه.",
+	"scarecrow:interaction-error-claim": "ليس لديك إذن بالوصول إلى هذه المنطقة."
 }

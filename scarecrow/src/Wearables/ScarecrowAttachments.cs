@@ -221,7 +221,7 @@ namespace Scarecrow
             EnumInteractMode mode, ref EnumHandling handled)
         {
             if (mode == EnumInteractMode.Interact && entity is EntityScarecrow scarecrow
-                && !scarecrow.CanManage((byEntity as EntityPlayer)?.Player))
+                && !scarecrow.TryManage((byEntity as EntityPlayer)?.Player))
             {
                 handled = EnumHandling.PreventSubsequent;
                 return;
@@ -232,18 +232,25 @@ namespace Scarecrow
             int boxIndex = (byEntity as EntityPlayer)?.EntitySelection?.SelectionBoxIndex ?? -1;
             if (mode == EnumInteractMode.Interact && !itemslot.Empty && boxIndex > 0
                 && (UseShiftAttach ? controls.ShiftKey : controls.CtrlKey)
-                && GetSlotFromSelectionBoxIndex(boxIndex - 1) is ScarecrowAttachmentSlot slot
-                && slot.Empty && !slot.Allows(itemslot.Itemstack))
+                && GetSlotFromSelectionBoxIndex(boxIndex - 1) is ScarecrowAttachmentSlot slot)
             {
-                handled = EnumHandling.PreventSubsequent;
-                return;
+                string reason = !slot.Empty ? "occupied"
+                    : !slot.CanHold(itemslot)
+                        || IAttachableToEntity.FromCollectible(itemslot.Itemstack.Collectible)?.IsAttachable(entity, itemslot.Itemstack) != true
+                        ? "equipment" : null;
+                if (reason != null)
+                {
+                    InteractionFeedback.Show((byEntity as EntityPlayer)?.Player, reason);
+                    handled = EnumHandling.PreventSubsequent;
+                    return;
+                }
             }
             base.OnInteract(byEntity, itemslot, hitPosition, mode, ref handled);
         }
 
         public override void OnReceivedClientPacket(IServerPlayer player, int packetid, byte[] data, ref EnumHandling handled)
         {
-            if (entity is EntityScarecrow scarecrow && !scarecrow.CanManage(player))
+            if (entity is EntityScarecrow scarecrow && !scarecrow.TryManage(player))
             {
                 handled = EnumHandling.PreventSubsequent;
                 return;

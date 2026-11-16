@@ -68,5 +68,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "Emplacement de lanterne : {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "Emplacement aux pieds : {0}",
 	"scarecrow:tooltip-inventory-empty": "Vide",
-	"scarecrow:tooltip-inventory-unavailable": "Objet indisponible"
+	"scarecrow:tooltip-inventory-unavailable": "Objet indisponible",
+
+	"scarecrow:interaction-error-placement-blocked": "Il manque de la place pour cet épouvantail ici.",
+	"scarecrow:interaction-error-placement-entity": "Un être vivant bloque le placement.",
+	"scarecrow:interaction-error-equipment": "Cet objet ne convient pas à ce point de fixation.",
+	"scarecrow:interaction-error-occupied": "Ce point de fixation est déjà occupé.",
+	"scarecrow:interaction-error-owner": "Seul le propriétaire peut modifier cet épouvantail.",
+	"scarecrow:interaction-error-claim": "Vous ne disposez pas des droits nécessaires sur ce terrain."
 }

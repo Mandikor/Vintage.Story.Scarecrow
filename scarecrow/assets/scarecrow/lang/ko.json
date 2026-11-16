@@ -68,5 +68,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "랜턴 슬롯: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "발 슬롯: {0}",
 	"scarecrow:tooltip-inventory-empty": "비어 있음",
-	"scarecrow:tooltip-inventory-unavailable": "사용할 수 없는 아이템"
+	"scarecrow:tooltip-inventory-unavailable": "사용할 수 없는 아이템",
+
+	"scarecrow:interaction-error-placement-blocked": "여기에는 허수아비를 놓을 공간이 부족합니다.",
+	"scarecrow:interaction-error-placement-entity": "생물이 배치를 막고 있습니다.",
+	"scarecrow:interaction-error-equipment": "이 아이템은 이 부착 지점에 맞지 않습니다.",
+	"scarecrow:interaction-error-occupied": "이 부착 지점은 이미 사용 중입니다.",
+	"scarecrow:interaction-error-owner": "소유자만 이 허수아비를 변경할 수 있습니다.",
+	"scarecrow:interaction-error-claim": "이 구역에 접근할 권한이 없습니다."
 }

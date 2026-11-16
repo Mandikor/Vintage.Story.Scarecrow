@@ -5,6 +5,17 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Interaction failure feedback
+
+- Added short in-game error messages for placement blocked by solid blocks or
+  living entities, unsuitable equipment, occupied attachment points, owner-only
+  access and denied claim access. Messages use the requesting player's language;
+  all 33 existing language files include the six new messages.
+- Server-authoritative feedback avoids duplicate client-prediction messages and
+  never writes to chat. Repeated attempts at the same failure remain suppressed
+  until a 2.5-second gap; a different failure is shown immediately. Successful
+  actions remain silent, and failed placement or attachment preserves the items.
+
 ### Environment-dependent wind chime audio
 
 - Attached wind chimes now remain silent in calm weather and play their original

@@ -68,5 +68,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "Lygteplads: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "Plads ved fødderne: {0}",
 	"scarecrow:tooltip-inventory-empty": "Tom",
-	"scarecrow:tooltip-inventory-unavailable": "Utilgængelig genstand"
+	"scarecrow:tooltip-inventory-unavailable": "Utilgængelig genstand",
+
+	"scarecrow:interaction-error-placement-blocked": "Der er ikke plads nok til fugleskræmslet her.",
+	"scarecrow:interaction-error-placement-entity": "Et levende væsen blokerer placeringen.",
+	"scarecrow:interaction-error-equipment": "Denne genstand passer ikke til dette fastgørelsespunkt.",
+	"scarecrow:interaction-error-occupied": "Dette fastgørelsespunkt er allerede optaget.",
+	"scarecrow:interaction-error-owner": "Kun ejeren kan ændre dette fugleskræmsel.",
+	"scarecrow:interaction-error-claim": "Du har ikke tilladelse til at tilgå dette område."
 }

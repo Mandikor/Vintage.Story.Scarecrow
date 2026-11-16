@@ -68,5 +68,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "灯笼槽位：{0}",
 	"scarecrow:tooltip-inventory-sc-foot": "脚部槽位：{0}",
 	"scarecrow:tooltip-inventory-empty": "空",
-	"scarecrow:tooltip-inventory-unavailable": "物品不可用"
+	"scarecrow:tooltip-inventory-unavailable": "物品不可用",
+
+	"scarecrow:interaction-error-placement-blocked": "这里没有足够的空间放置稻草人。",
+	"scarecrow:interaction-error-placement-entity": "有生物挡住了放置位置。",
+	"scarecrow:interaction-error-equipment": "此物品不适合这个安装点。",
+	"scarecrow:interaction-error-occupied": "这个安装点已被占用。",
+	"scarecrow:interaction-error-owner": "只有所有者才能修改这个稻草人。",
+	"scarecrow:interaction-error-claim": "你没有此区域的访问权限。"
 }

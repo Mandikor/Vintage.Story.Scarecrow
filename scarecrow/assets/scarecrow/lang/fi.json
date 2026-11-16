@@ -68,5 +68,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "Lyhtypaikka: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "Paikka jalkojen juuressa: {0}",
 	"scarecrow:tooltip-inventory-empty": "Tyhjä",
-	"scarecrow:tooltip-inventory-unavailable": "Esine ei ole saatavilla"
+	"scarecrow:tooltip-inventory-unavailable": "Esine ei ole saatavilla",
+
+	"scarecrow:interaction-error-placement-blocked": "Tässä ei ole tarpeeksi tilaa linnunpelättimelle.",
+	"scarecrow:interaction-error-placement-entity": "Elävä olento estää sijoittamisen.",
+	"scarecrow:interaction-error-equipment": "Tämä esine ei sovi tähän kiinnityskohtaan.",
+	"scarecrow:interaction-error-occupied": "Tämä kiinnityskohta on jo varattu.",
+	"scarecrow:interaction-error-owner": "Vain omistaja voi muokata tätä linnunpelätintä.",
+	"scarecrow:interaction-error-claim": "Sinulla ei ole käyttöoikeutta tähän alueeseen."
 }

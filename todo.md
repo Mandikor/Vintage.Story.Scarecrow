@@ -38,5 +38,9 @@ Remaining items are proposals for discussion, not approved implementation work.
    wood variants suitable for gardens and farms.
 6. [ ] **Add optional wear and repair.** Animal attacks could cause visible damage;
    straw and sticks could repair it. Make maintenance optional.
-7. [ ] **Improve interaction feedback.** Explain failed placement due to blocks or
-   creatures and identify permitted equipment when an attachment is rejected.
+7. [x] **Improve interaction feedback.** Short in-game errors distinguish placement
+   blocked by solid blocks or living entities, unsuitable equipment, occupied
+   attachment points, owner-only access and denied claim access. Existing allowed-
+   item interaction hints remain available. All 33 languages are covered; feedback
+   is server-authoritative, does not write to chat and suppresses repeated failures.
+   Implemented; automated checks and in-game validation passed.

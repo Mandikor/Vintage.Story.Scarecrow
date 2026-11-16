@@ -66,5 +66,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "Lantern slot: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "Foot slot: {0}",
 	"scarecrow:tooltip-inventory-empty": "Empty",
-	"scarecrow:tooltip-inventory-unavailable": "Unavailable item"
+	"scarecrow:tooltip-inventory-unavailable": "Unavailable item",
+
+	"scarecrow:interaction-error-placement-blocked": "There is not enough room for the scarecrow here.",
+	"scarecrow:interaction-error-placement-entity": "A creature is blocking placement.",
+	"scarecrow:interaction-error-equipment": "This item does not fit this attachment point.",
+	"scarecrow:interaction-error-occupied": "This attachment point is already occupied.",
+	"scarecrow:interaction-error-owner": "Only the owner can modify this scarecrow.",
+	"scarecrow:interaction-error-claim": "You do not have permission to access this area."
 }

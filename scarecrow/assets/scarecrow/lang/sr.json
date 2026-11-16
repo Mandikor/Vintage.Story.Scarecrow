@@ -68,5 +68,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "Место за фењер: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "Место код ногу: {0}",
 	"scarecrow:tooltip-inventory-empty": "Празно",
-	"scarecrow:tooltip-inventory-unavailable": "Недоступан предмет"
+	"scarecrow:tooltip-inventory-unavailable": "Недоступан предмет",
+
+	"scarecrow:interaction-error-placement-blocked": "Овде нема довољно места за страшило.",
+	"scarecrow:interaction-error-placement-entity": "Живо биће спречава постављање.",
+	"scarecrow:interaction-error-equipment": "Овај предмет не одговара овом месту за причвршћивање.",
+	"scarecrow:interaction-error-occupied": "Ово место за причвршћивање је већ заузето.",
+	"scarecrow:interaction-error-owner": "Само власник може да мења ово страшило.",
+	"scarecrow:interaction-error-claim": "Немате дозволу за приступ овој територији."
 }

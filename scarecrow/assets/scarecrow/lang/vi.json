@@ -68,5 +68,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "Ô đèn lồng: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "Ô ở chân: {0}",
 	"scarecrow:tooltip-inventory-empty": "Trống",
-	"scarecrow:tooltip-inventory-unavailable": "Vật phẩm không khả dụng"
+	"scarecrow:tooltip-inventory-unavailable": "Vật phẩm không khả dụng",
+
+	"scarecrow:interaction-error-placement-blocked": "Không đủ chỗ để đặt bù nhìn ở đây.",
+	"scarecrow:interaction-error-placement-entity": "Một sinh vật đang cản trở việc đặt.",
+	"scarecrow:interaction-error-equipment": "Vật phẩm này không phù hợp với vị trí gắn này.",
+	"scarecrow:interaction-error-occupied": "Vị trí gắn này đã có vật phẩm.",
+	"scarecrow:interaction-error-owner": "Chỉ chủ sở hữu mới có thể thay đổi bù nhìn này.",
+	"scarecrow:interaction-error-claim": "Bạn không có quyền truy cập khu vực này."
 }

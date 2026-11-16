@@ -68,5 +68,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "ช่องโคมไฟ: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "ช่องที่เท้า: {0}",
 	"scarecrow:tooltip-inventory-empty": "ว่าง",
-	"scarecrow:tooltip-inventory-unavailable": "ไอเทมไม่พร้อมใช้งาน"
+	"scarecrow:tooltip-inventory-unavailable": "ไอเทมไม่พร้อมใช้งาน",
+
+	"scarecrow:interaction-error-placement-blocked": "ที่นี่มีพื้นที่ไม่พอสำหรับหุ่นไล่กา",
+	"scarecrow:interaction-error-placement-entity": "มีสิ่งมีชีวิตขวางการวางอยู่",
+	"scarecrow:interaction-error-equipment": "ไอเทมนี้ไม่เหมาะกับจุดติดตั้งนี้",
+	"scarecrow:interaction-error-occupied": "จุดติดตั้งนี้ถูกใช้งานอยู่แล้ว",
+	"scarecrow:interaction-error-owner": "เฉพาะเจ้าของเท่านั้นที่แก้ไขหุ่นไล่กานี้ได้",
+	"scarecrow:interaction-error-claim": "คุณไม่มีสิทธิ์เข้าถึงพื้นที่นี้"
 }

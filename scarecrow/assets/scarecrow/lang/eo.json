@@ -68,5 +68,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "Lanterna loko: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "Loko ĉe la piedoj: {0}",
 	"scarecrow:tooltip-inventory-empty": "Malplena",
-	"scarecrow:tooltip-inventory-unavailable": "Neatingebla objekto"
+	"scarecrow:tooltip-inventory-unavailable": "Neatingebla objekto",
+
+	"scarecrow:interaction-error-placement-blocked": "Ĉi tie ne estas sufiĉe da spaco por la birdotimigilo.",
+	"scarecrow:interaction-error-placement-entity": "Vivulo malhelpas la lokadon.",
+	"scarecrow:interaction-error-equipment": "Ĉi tiu objekto ne taŭgas por ĉi tiu fikspunkto.",
+	"scarecrow:interaction-error-occupied": "Ĉi tiu fikspunkto jam estas okupita.",
+	"scarecrow:interaction-error-owner": "Nur la posedanto povas modifi ĉi tiun birdotimigilon.",
+	"scarecrow:interaction-error-claim": "Vi ne havas permeson aliri ĉi tiun teritorion."
 }

@@ -68,5 +68,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "Slot na lampáš: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "Slot pri nohách: {0}",
 	"scarecrow:tooltip-inventory-empty": "Prázdne",
-	"scarecrow:tooltip-inventory-unavailable": "Nedostupný predmet"
+	"scarecrow:tooltip-inventory-unavailable": "Nedostupný predmet",
+
+	"scarecrow:interaction-error-placement-blocked": "Tu nie je dosť miesta pre strašiaka.",
+	"scarecrow:interaction-error-placement-entity": "Umiestnenie blokuje živý tvor.",
+	"scarecrow:interaction-error-equipment": "Tento predmet nepatrí na tento úchyt.",
+	"scarecrow:interaction-error-occupied": "Tento úchyt je už obsadený.",
+	"scarecrow:interaction-error-owner": "Tohto strašiaka môže upravovať iba vlastník.",
+	"scarecrow:interaction-error-claim": "Nemáte oprávnenie na prístup na toto územie."
 }

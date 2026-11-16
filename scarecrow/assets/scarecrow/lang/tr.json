@@ -68,5 +68,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "Fener yuvası: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "Ayak yuvası: {0}",
 	"scarecrow:tooltip-inventory-empty": "Boş",
-	"scarecrow:tooltip-inventory-unavailable": "Kullanılamayan eşya"
+	"scarecrow:tooltip-inventory-unavailable": "Kullanılamayan eşya",
+
+	"scarecrow:interaction-error-placement-blocked": "Burada korkuluk için yeterli alan yok.",
+	"scarecrow:interaction-error-placement-entity": "Canlı bir varlık yerleştirmeyi engelliyor.",
+	"scarecrow:interaction-error-equipment": "Bu eşya bu bağlantı noktasına uygun değil.",
+	"scarecrow:interaction-error-occupied": "Bu bağlantı noktası zaten dolu.",
+	"scarecrow:interaction-error-owner": "Bu korkuluğu yalnızca sahibi değiştirebilir.",
+	"scarecrow:interaction-error-claim": "Bu alana erişim iznin yok."
 }

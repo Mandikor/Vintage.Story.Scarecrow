@@ -70,5 +70,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "ランタンスロット：{0}",
 	"scarecrow:tooltip-inventory-sc-foot": "足元スロット：{0}",
 	"scarecrow:tooltip-inventory-empty": "空",
-	"scarecrow:tooltip-inventory-unavailable": "利用できないアイテム"
+	"scarecrow:tooltip-inventory-unavailable": "利用できないアイテム",
+
+	"scarecrow:interaction-error-placement-blocked": "ここにはかかしを置く十分なスペースがありません。",
+	"scarecrow:interaction-error-placement-entity": "生き物が配置を妨げています。",
+	"scarecrow:interaction-error-equipment": "このアイテムはこの取り付け箇所には付けられません。",
+	"scarecrow:interaction-error-occupied": "この取り付け箇所はすでに使用中です。",
+	"scarecrow:interaction-error-owner": "このかかしを変更できるのは所有者だけです。",
+	"scarecrow:interaction-error-claim": "この領域へのアクセス権限がありません。"
 }

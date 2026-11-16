@@ -68,5 +68,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "Слот ліхтара: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "Слот ля ног: {0}",
 	"scarecrow:tooltip-inventory-empty": "Пуста",
-	"scarecrow:tooltip-inventory-unavailable": "Недаступны прадмет"
+	"scarecrow:tooltip-inventory-unavailable": "Недаступны прадмет",
+
+	"scarecrow:interaction-error-placement-blocked": "Тут недастаткова месца для пудзіла.",
+	"scarecrow:interaction-error-placement-entity": "Жывая істота перашкаджае размяшчэнню.",
+	"scarecrow:interaction-error-equipment": "Гэты прадмет не падыходзіць да гэтага мацавання.",
+	"scarecrow:interaction-error-occupied": "Гэтае мацаванне ўжо занятае.",
+	"scarecrow:interaction-error-owner": "Толькі ўладальнік можа змяняць гэтае пудзіла.",
+	"scarecrow:interaction-error-claim": "У вас няма дазволу на доступ да гэтай тэрыторыі."
 }

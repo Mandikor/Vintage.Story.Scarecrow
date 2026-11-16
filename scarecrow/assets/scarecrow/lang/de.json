@@ -64,5 +64,12 @@
 	"scarecrow:tooltip-inventory-sc-neck": "Laternenslot: {0}",
 	"scarecrow:tooltip-inventory-sc-foot": "Fußslot: {0}",
 	"scarecrow:tooltip-inventory-empty": "Leer",
-	"scarecrow:tooltip-inventory-unavailable": "Nicht verfügbarer Gegenstand"
+	"scarecrow:tooltip-inventory-unavailable": "Nicht verfügbarer Gegenstand",
+
+	"scarecrow:interaction-error-placement-blocked": "Hier ist nicht genügend Platz für die Vogelscheuche.",
+	"scarecrow:interaction-error-placement-entity": "Ein Lebewesen blockiert die Platzierung.",
+	"scarecrow:interaction-error-equipment": "Dieser Gegenstand passt nicht an diesen Befestigungspunkt.",
+	"scarecrow:interaction-error-occupied": "Dieser Befestigungspunkt ist bereits belegt.",
+	"scarecrow:interaction-error-owner": "Nur der Eigentümer darf diese Vogelscheuche verändern.",
+	"scarecrow:interaction-error-claim": "Du hast hier keine Zugriffsberechtigung."
 }
