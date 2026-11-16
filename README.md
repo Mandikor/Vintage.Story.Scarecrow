@@ -56,7 +56,7 @@ Animal flee and attack distances remain unchanged.
 With **More Lanterns** installed, supported paper lanterns add **2 blocks** and
 metal lanterns add **4 blocks** to the same natural-spawn protection. Floating
 lanterns, stone lanterns and lantern parts are excluded. See
-[lantern compatibility](docs/lantern-compatibility.md) for supported models.
+[More Lanterns support](#more-lanterns-by-ape) below for supported models and slots.
 The full-size scarecrow can also hold these lanterns in either arm instead of a
 tool. With several lanterns attached, only the strongest radius bonus applies.
 
@@ -147,6 +147,40 @@ selected point.
 The mod preserves the original attachment categories of tools and other equipment.
 For example, hoes and scythes remain compatible with vanilla stands. The scarecrow
 uses its own item-code whitelist to decide which of those tools it accepts.
+
+### More Lanterns by Ape
+
+Optional support for **More Lanterns 1.4.4** includes all eleven paper and metal
+models that can be placed on walls or ceilings:
+
+| Family | Supported models | Natural-spawn radius bonus |
+| --- | --- | --- |
+| Paper | Basic, Chinese, Decorated Chinese, Medieval 1 Small | +2 blocks |
+| Metal | Modern 1, Modern 2, Gothic 1, Medieval 2, Medieval 3, Medieval 4, Medieval 6 | +4 blocks |
+
+Attach their normal **upright inventory variants** with **Shift + right-click**.
+Both scarecrow sizes accept a lantern at the neck. The full-size scarecrow can also
+hold one in each arm instead of a tool, for up to three lanterns. Floating lanterns,
+stone lanterns and unfinished lantern parts are not accepted.
+
+The original hanging models and available colors, on/off states and brightness
+variants are retained, covering 128 inventory variants. Each slot keeps its own
+textures, so differently colored lanterns can be equipped together. Chinese paper
+and metal lanterns have been enlarged by 50% from the initial attachment scale;
+Basic and Medieval 1 Small paper lanterns retain their size. The arm mounts correct
+the arms' angles so lanterns hang straight down in the resting pose.
+
+Only the **strongest attached lantern's bonus** applies, up to **+4 blocks**;
+bonuses do not stack. Removing a lantern uses the strongest remaining bonus or
+restores the base radius. The outline updates automatically, and **Ctrl + H** still
+switches it on and off. The bonus applies day and night, including on/off and
+brightness variants, and changes only natural-spawn protection. Animal flee and
+attack distances remain unchanged.
+
+All compatibility JSON patches are under `compatibility/apelanterns/patches`.
+Existing tool categories and world-block geometry are preserved. See the
+[lantern compatibility guide](docs/lantern-compatibility.md) for asset and validation
+details.
 
 ## Configuration
 

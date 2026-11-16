@@ -41,6 +41,8 @@ The attachment uses the model's hanging shape and original variant textures.
 Chinese paper lanterns and metal lanterns use larger mounts than the Basic and
 Medieval 1 Small paper models. Arm mounts preserve the existing tool attachment
 points and keep each lantern's textures separate when several are equipped.
+Their rotations compensate for the arms' built-in angles so the lanterns hang
+vertically in the resting pose, with their hanging points and sizes preserved.
 Floating lanterns, stone lanterns and unfinished lantern parts are not accepted.
 
 The four JSON patch files live in
@@ -56,7 +58,8 @@ inventory variants, using the game's variant resolver. They check attachment
 acceptance and exclusions for both scarecrow sizes and the full-size arm slots,
 radius bonuses, removal and non-stacking,
 preservation of handbook and texture settings, and attachment of all eleven native
-models at their expected scales. In-game testing also confirmed the neck
-attachments, adjusted model sizes and new arm mounts.
+models at their expected scales. Matrix checks verify vertical arm alignment and
+unchanged hanging points at both scales. In-game testing also confirmed the neck
+attachments, adjusted model sizes, arm mounts and corrected vertical rotation.
 
 [More Lanterns source repository](https://github.com/Monkeybrain73/morelanterns)

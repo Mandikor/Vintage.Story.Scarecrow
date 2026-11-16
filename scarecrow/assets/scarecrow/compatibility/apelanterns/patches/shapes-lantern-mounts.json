@@ -266,23 +266,26 @@
     "value": {
       "name": "ScarecrowMoreLanternsLeftMount",
       "from": [
-        -0.5,
-        -13.5,
-        -5.5
+        -5,
+        -15,
+        -7
       ],
       "to": [
-        -0.5,
-        -13.5,
-        -5.5
+        -5,
+        -15,
+        -7
       ],
       "rotationOrigin": [
-        0,
-        0,
-        0
+        3,
+        1,
+        1
       ],
       "scaleX": 0.4,
       "scaleY": 0.4,
-      "scaleZ": 0.4
+      "scaleZ": 0.4,
+      "rotationX": 0.349186,
+      "rotationY": 3.984754,
+      "rotationZ": -5.012147
     },
     "side": "client"
   },
@@ -294,23 +297,26 @@
     "value": {
       "name": "ScarecrowMoreLanternsLeftLargeMount",
       "from": [
-        -3,
-        -14.333333,
-        -6.333333
+        -5,
+        -15,
+        -7
       ],
       "to": [
-        -3,
-        -14.333333,
-        -6.333333
+        -5,
+        -15,
+        -7
       ],
       "rotationOrigin": [
-        0,
-        0,
-        0
+        3,
+        1,
+        1
       ],
       "scaleX": 0.6,
       "scaleY": 0.6,
-      "scaleZ": 0.6
+      "scaleZ": 0.6,
+      "rotationX": 0.349186,
+      "rotationY": 3.984754,
+      "rotationZ": -5.012147
     },
     "side": "client"
   },
@@ -322,23 +328,26 @@
     "value": {
       "name": "ScarecrowMoreLanternsRightMount",
       "from": [
-        -0.5,
-        -13.5,
-        -5.5
+        -5,
+        -15,
+        -7
       ],
       "to": [
-        -0.5,
-        -13.5,
-        -5.5
+        -5,
+        -15,
+        -7
       ],
       "rotationOrigin": [
-        0,
-        0,
-        0
+        3,
+        1,
+        1
       ],
       "scaleX": 0.4,
       "scaleY": 0.4,
-      "scaleZ": 0.4
+      "scaleZ": 0.4,
+      "rotationX": 179.650814,
+      "rotationY": 3.984754,
+      "rotationZ": -174.987853
     },
     "side": "client"
   },
@@ -350,23 +359,26 @@
     "value": {
       "name": "ScarecrowMoreLanternsRightLargeMount",
       "from": [
-        -3,
-        -14.333333,
-        -6.333333
+        -5,
+        -15,
+        -7
       ],
       "to": [
-        -3,
-        -14.333333,
-        -6.333333
+        -5,
+        -15,
+        -7
       ],
       "rotationOrigin": [
-        0,
-        0,
-        0
+        3,
+        1,
+        1
       ],
       "scaleX": 0.6,
       "scaleY": 0.6,
-      "scaleZ": 0.6
+      "scaleZ": 0.6,
+      "rotationX": 179.650814,
+      "rotationY": 3.984754,
+      "rotationZ": -174.987853
     },
     "side": "client"
   }
