@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "显示稻草人的范围",
 	"scarecrow:radius-none": "64 个方块内没有稻草人",
 
-	"scarecrow:entityhelp-pickup": "拾取"
+	"scarecrow:entityhelp-pickup": "拾取",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "自然生成阻止范围：{0}格",
+	"scarecrow:tooltip-radius-breakdown": "基础半径：{0} · {1}：+{2}",
+	"scarecrow:tooltip-equipment": "装备",
+	"scarecrow:tooltip-affected-animals": "受影响的动物：{0}",
+	"scarecrow:tooltip-spawn-disabled": "自然生成阻止：已禁用",
+	"scarecrow:tooltip-spawn-loading": "自然生成阻止：正在等待服务器数据",
+	"scarecrow:tooltip-animal-hare": "野兔",
+	"scarecrow:tooltip-animal-raccoon": "浣熊",
+	"scarecrow:tooltip-code-prefix": "以{0}开头的代码",
+	"scarecrow:tooltip-list-separator": "、"
 }

@@ -33,6 +33,15 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ### Added
 
+- Added a localized protection tooltip for placed scarecrows, little scarecrows
+  and straw dummies. It shows the effective natural-spawn radius, base radius,
+  strongest equipped bonus and configured animal groups, or an explicit disabled
+  state. Server settings are synchronized through entity attributes so multiplayer
+  tooltips do not use a client's local spawn list.
+- Added tooltip translations to all 33 existing language files. The new section
+  starts with a blank line; fixed labels are bold in the radius ring's gold color,
+  while numbers and translated equipment/animal names retain normal formatting.
+  Equipment changes update the display without chat messages.
 - Added optional Wind Chimes by Ape (`windchimes` 1.5.3 and 1.5.4) support for both arm slots
   of the full-size scarecrow: bamboo, wood, bone, brass, copper and crystal models,
   covering all eleven variants in 1.5.4 and the ten variants in 1.5.3.

@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Паказаць радыус пудзіла",
 	"scarecrow:radius-none": "У радыусе 64 блокаў няма пудзіла",
 
-	"scarecrow:entityhelp-pickup": "Падняць"
+	"scarecrow:entityhelp-pickup": "Падняць",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Блакіроўка натуральнага з’яўлення: {0} бл.",
+	"scarecrow:tooltip-radius-breakdown": "Базавы радыус: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Рыштунак",
+	"scarecrow:tooltip-affected-animals": "Закранутыя жывёлы: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Блакіроўка натуральнага з’яўлення: выключана",
+	"scarecrow:tooltip-spawn-loading": "Блакіроўка натуральнага з’яўлення: чаканне даных сервера",
+	"scarecrow:tooltip-animal-hare": "Зайцы",
+	"scarecrow:tooltip-animal-raccoon": "Яноты",
+	"scarecrow:tooltip-code-prefix": "Коды, якія пачынаюцца з {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

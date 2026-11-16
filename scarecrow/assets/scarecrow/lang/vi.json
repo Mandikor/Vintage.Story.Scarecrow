@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Hiển thị bán kính của bù nhìn",
 	"scarecrow:radius-none": "Không có bù nhìn trong phạm vi 64 khối",
 
-	"scarecrow:entityhelp-pickup": "Nhặt"
+	"scarecrow:entityhelp-pickup": "Nhặt",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Ngăn xuất hiện tự nhiên: {0} khối",
+	"scarecrow:tooltip-radius-breakdown": "Bán kính cơ bản: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Trang bị",
+	"scarecrow:tooltip-affected-animals": "Động vật bị ảnh hưởng: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Ngăn xuất hiện tự nhiên: đã tắt",
+	"scarecrow:tooltip-spawn-loading": "Ngăn xuất hiện tự nhiên: đang chờ dữ liệu máy chủ",
+	"scarecrow:tooltip-animal-hare": "Thỏ rừng",
+	"scarecrow:tooltip-animal-raccoon": "Gấu mèo",
+	"scarecrow:tooltip-code-prefix": "Mã bắt đầu bằng {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

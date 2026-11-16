@@ -30,6 +30,9 @@ namespace Scarecrow
         private const int HighlightSlotId = 4173;
         private const int ScanRange = 64;
         private const int RefreshIntervalMs = 500;
+        internal const int RingColorRgb = 0xFFC850;
+        private static readonly int RingColor = ColorUtil.ToRgba(96,
+            RingColorRgb >> 16, (RingColorRgb >> 8) & 255, RingColorRgb & 255);
 
         private ICoreClientAPI capi;
         private bool visible;
@@ -88,7 +91,7 @@ namespace Scarecrow
 
             capi.World.HighlightBlocks(capi.World.Player, HighlightSlotId,
                 new List<BlockPos>(ring),
-                new List<int> { ColorUtil.ToRgba(96, 255, 200, 80) },
+                new List<int> { RingColor },
                 EnumHighlightBlocksMode.Absolute, EnumHighlightShape.Arbitrary);
 
             highlightedBlocks = ring;

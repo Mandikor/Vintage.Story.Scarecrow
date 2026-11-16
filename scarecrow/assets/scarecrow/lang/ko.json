@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "허수아비 반경 표시",
 	"scarecrow:radius-none": "64블록 이내에 허수아비 없음",
 
-	"scarecrow:entityhelp-pickup": "줍기"
+	"scarecrow:entityhelp-pickup": "줍기",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "자연 생성 방지 범위: {0}블록",
+	"scarecrow:tooltip-radius-breakdown": "기본 반경: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "장비",
+	"scarecrow:tooltip-affected-animals": "대상 동물: {0}",
+	"scarecrow:tooltip-spawn-disabled": "자연 생성 방지: 비활성화",
+	"scarecrow:tooltip-spawn-loading": "자연 생성 방지: 서버 데이터 대기 중",
+	"scarecrow:tooltip-animal-hare": "산토끼",
+	"scarecrow:tooltip-animal-raccoon": "라쿤",
+	"scarecrow:tooltip-code-prefix": "{0}(으)로 시작하는 코드",
+	"scarecrow:tooltip-list-separator": ", "
 }

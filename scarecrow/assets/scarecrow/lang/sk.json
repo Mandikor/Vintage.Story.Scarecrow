@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Zobraziť dosah strašiaka",
 	"scarecrow:radius-none": "V okruhu 64 blokov nie je žiadny strašiak",
 
-	"scarecrow:entityhelp-pickup": "Zdvihnúť"
+	"scarecrow:entityhelp-pickup": "Zdvihnúť",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Ochrana pred prirodzeným výskytom: {0} blokov",
+	"scarecrow:tooltip-radius-breakdown": "Základný dosah: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Výbava",
+	"scarecrow:tooltip-affected-animals": "Dotknuté zvieratá: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Ochrana pred prirodzeným výskytom: vypnutá",
+	"scarecrow:tooltip-spawn-loading": "Ochrana pred prirodzeným výskytom: čaká sa na údaje servera",
+	"scarecrow:tooltip-animal-hare": "Zajace",
+	"scarecrow:tooltip-animal-raccoon": "Medvedíky čistotné",
+	"scarecrow:tooltip-code-prefix": "Kódy začínajúce na {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

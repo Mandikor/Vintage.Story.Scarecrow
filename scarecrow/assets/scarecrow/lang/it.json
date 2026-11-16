@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Mostra il raggio dello spaventapasseri",
 	"scarecrow:radius-none": "Nessuno spaventapasseri entro 64 blocchi",
 
-	"scarecrow:entityhelp-pickup": "Raccogli"
+	"scarecrow:entityhelp-pickup": "Raccogli",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Protezione dalla comparsa naturale: {0} blocchi",
+	"scarecrow:tooltip-radius-breakdown": "Raggio base: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Equipaggiamento",
+	"scarecrow:tooltip-affected-animals": "Animali interessati: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Protezione dalla comparsa naturale: disattivata",
+	"scarecrow:tooltip-spawn-loading": "Protezione dalla comparsa naturale: in attesa dei dati del server",
+	"scarecrow:tooltip-animal-hare": "Lepri",
+	"scarecrow:tooltip-animal-raccoon": "Procioni",
+	"scarecrow:tooltip-code-prefix": "Codici che iniziano con {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

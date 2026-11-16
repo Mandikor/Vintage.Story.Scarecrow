@@ -28,18 +28,28 @@ namespace Scarecrow
         {
             get
             {
-                if (inv == null) return 0;
-                int bonus = 0;
-                foreach (int index in lanternSlotIndices)
-                {
-                    if (index >= inv.Count) continue;
-                    ItemStack stack = inv[index].Itemstack;
-                    AssetLocation code = stack?.Collectible?.Code;
-                    if (code == null || !allowedCodes[index].Any(pattern => WildcardUtil.Match(pattern, code.ToString()))) continue;
-                    bonus = Math.Max(bonus, GetEquipmentRadiusBonus(stack));
-                }
+                GetStrongestRadiusEquipment(out int bonus);
                 return bonus;
             }
+        }
+
+        public ItemStack GetStrongestRadiusEquipment(out int bonus)
+        {
+            bonus = 0;
+            ItemStack strongest = null;
+            if (inv == null) return null;
+            foreach (int index in lanternSlotIndices)
+            {
+                if (index >= inv.Count) continue;
+                ItemStack stack = inv[index].Itemstack;
+                AssetLocation code = stack?.Collectible?.Code;
+                if (code == null || !allowedCodes[index].Any(pattern => WildcardUtil.Match(pattern, code.ToString()))) continue;
+                int candidate = GetEquipmentRadiusBonus(stack);
+                if (candidate <= bonus) continue;
+                bonus = candidate;
+                strongest = stack;
+            }
+            return strongest;
         }
 
         private static int GetEquipmentRadiusBonus(ItemStack stack)

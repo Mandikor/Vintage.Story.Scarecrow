@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Mostrar o raio do espantalho",
 	"scarecrow:radius-none": "Nenhum espantalho num raio de 64 blocos",
 
-	"scarecrow:entityhelp-pickup": "Apanhar"
+	"scarecrow:entityhelp-pickup": "Apanhar",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Proteção contra aparecimento natural: {0} blocos",
+	"scarecrow:tooltip-radius-breakdown": "Raio base: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Equipamento",
+	"scarecrow:tooltip-affected-animals": "Animais afetados: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Proteção contra aparecimento natural: desativada",
+	"scarecrow:tooltip-spawn-loading": "Proteção contra aparecimento natural: a aguardar dados do servidor",
+	"scarecrow:tooltip-animal-hare": "Lebres",
+	"scarecrow:tooltip-animal-raccoon": "Guaxinins",
+	"scarecrow:tooltip-code-prefix": "Códigos que começam por {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

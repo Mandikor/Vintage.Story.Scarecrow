@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Bereik van de vogelverschrikker tonen",
 	"scarecrow:radius-none": "Geen vogelverschrikker binnen 64 blokken",
 
-	"scarecrow:entityhelp-pickup": "Oppakken"
+	"scarecrow:entityhelp-pickup": "Oppakken",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Bescherming tegen natuurlijk verschijnen: {0} blokken",
+	"scarecrow:tooltip-radius-breakdown": "Basisstraal: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Uitrusting",
+	"scarecrow:tooltip-affected-animals": "Betrokken dieren: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Bescherming tegen natuurlijk verschijnen: uitgeschakeld",
+	"scarecrow:tooltip-spawn-loading": "Bescherming tegen natuurlijk verschijnen: wachten op servergegevens",
+	"scarecrow:tooltip-animal-hare": "Hazen",
+	"scarecrow:tooltip-animal-raccoon": "Wasberen",
+	"scarecrow:tooltip-code-prefix": "Codes die beginnen met {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

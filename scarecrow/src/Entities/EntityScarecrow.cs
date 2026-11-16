@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Text;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
+using Vintagestory.API.Config;
 using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
 using Vintagestory.API.Util;
@@ -20,12 +24,14 @@ namespace Scarecrow
     {
         private const int DefaultScareRadius = 8;
         private const string DefaultPickupItemCode = "game:strawdummy";
+        private const string SpawnPrefixesAttribute = "scarecrowSpawnPrefixes";
 
         private ICoreServerAPI sapi;
         private ScarecrowConfig config;
         private bool spawnHooksAttached;
         private int scareRadius = DefaultScareRadius;
         private string pickupItemCode = DefaultPickupItemCode;
+        private readonly Dictionary<string, string> animalGroupNames = new();
 
         /// <summary>Natural-spawn protection, including the strongest attached equipment bonus.</summary>
         public int ScareRadius => scareRadius + (GetBehavior<ScarecrowAttachments>()?.EquipmentRadiusBonus ?? 0);
@@ -41,6 +47,7 @@ namespace Scarecrow
             if (api.Side == EnumAppSide.Server)
             {
                 sapi = api as ICoreServerAPI;
+                SynchronizeProtectionSettings();
                 AttachSpawnHooks();
             }
         }
@@ -49,6 +56,76 @@ namespace Scarecrow
         {
             DetachSpawnHooks();
             base.OnEntityDespawn(despawnData);
+        }
+
+        private void SynchronizeProtectionSettings()
+        {
+            WatchedAttributes.SetStringArray(SpawnPrefixesAttribute,
+                config?.ScaredAnimalPrefixes ?? Array.Empty<string>());
+        }
+
+        public override string GetInfoText()
+        {
+            StringBuilder text = new(base.GetInfoText());
+            if (!Alive) return text.ToString();
+            if (text.Length > 0 && text[text.Length - 1] != '\n') text.AppendLine();
+            text.AppendLine();
+
+            // The server owns spawn protection. Never substitute a client's local config.
+            string[] prefixes = WatchedAttributes.GetStringArray(SpawnPrefixesAttribute, null);
+            if (prefixes == null)
+            {
+                return text.AppendLine(FormatProtectionLine("scarecrow:tooltip-spawn-loading")).ToString();
+            }
+            prefixes = prefixes.Where(prefix => !string.IsNullOrEmpty(prefix))
+                .Distinct(StringComparer.OrdinalIgnoreCase).ToArray();
+            if (prefixes.Length == 0)
+            {
+                return text.AppendLine(FormatProtectionLine("scarecrow:tooltip-spawn-disabled")).ToString();
+            }
+
+            int bonus = 0;
+            ItemStack equipment = GetBehavior<ScarecrowAttachments>()?.GetStrongestRadiusEquipment(out bonus);
+            CultureInfo culture;
+            try { culture = CultureInfo.GetCultureInfo(Lang.CurrentLocale); }
+            catch (CultureNotFoundException) { culture = CultureInfo.InvariantCulture; }
+
+            text.AppendLine(FormatProtectionLine("scarecrow:tooltip-spawn-radius", (scareRadius + bonus).ToString("N0", culture)));
+            text.AppendLine(FormatProtectionLine("scarecrow:tooltip-radius-breakdown", scareRadius.ToString("N0", culture),
+                equipment == null ? FormatProtectionLine("scarecrow:tooltip-equipment") : EscapeTooltipText(equipment.GetName()),
+                bonus.ToString("N0", culture)));
+            text.AppendLine(FormatProtectionLine("scarecrow:tooltip-affected-animals",
+                string.Join(Lang.Get("scarecrow:tooltip-list-separator"), prefixes.Select(GetAnimalGroupName).Distinct())));
+            return text.ToString();
+        }
+
+        private string GetAnimalGroupName(string prefix)
+        {
+            string cacheKey = Lang.CurrentLocale + ":" + prefix;
+            if (animalGroupNames.TryGetValue(cacheKey, out string cached)) return cached;
+            string name = Lang.GetMatchingIfExists("scarecrow:tooltip-animal-" + prefix.ToLowerInvariant());
+            if (name == null)
+            {
+                // Full entity codes can use the installed game/mod's creature translation.
+                string[] names = World.EntityTypes.Where(type => type.Code?.Path.Equals(prefix, StringComparison.OrdinalIgnoreCase) == true)
+                    .Select(type => Lang.GetMatchingIfExists(type.Code.Domain + ":item-creature-" + type.Code.Path))
+                    .Where(value => value != null).Select(EscapeTooltipText).Distinct().ToArray();
+                name = names.Length > 0 ? string.Join(Lang.Get("scarecrow:tooltip-list-separator"), names)
+                    : Lang.Get("scarecrow:tooltip-code-prefix", EscapeTooltipText(prefix));
+            }
+            animalGroupNames[cacheKey] = name;
+            return name;
+        }
+
+        private static string EscapeTooltipText(string value) => value.Replace("&", "&amp;")
+            .Replace("<", "&lt;").Replace(">", "&gt;");
+
+        private static string FormatProtectionLine(string key, params string[] values)
+        {
+            string begin = "<font color=\"#" + ScarecrowRadiusOverlay.RingColorRgb.ToString("X6", CultureInfo.InvariantCulture) + "\"><strong>";
+            const string end = "</strong></font>";
+            // Only translated fixed text is styled; substituted numbers and names keep normal formatting.
+            return begin + Lang.Get(key, values.Select(value => end + value + begin).ToArray()) + end;
         }
 
         /// <summary>

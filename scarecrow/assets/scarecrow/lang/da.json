@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Vis fugleskræmslets radius",
 	"scarecrow:radius-none": "Ingen fugleskræmsler inden for 64 blokke",
 
-	"scarecrow:entityhelp-pickup": "Saml op"
+	"scarecrow:entityhelp-pickup": "Saml op",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Beskyttelse mod naturlig fremkomst: {0} blokke",
+	"scarecrow:tooltip-radius-breakdown": "Grundradius: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Udstyr",
+	"scarecrow:tooltip-affected-animals": "Berørte dyr: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Beskyttelse mod naturlig fremkomst: deaktiveret",
+	"scarecrow:tooltip-spawn-loading": "Beskyttelse mod naturlig fremkomst: afventer serverdata",
+	"scarecrow:tooltip-animal-hare": "Harer",
+	"scarecrow:tooltip-animal-raccoon": "Vaskebjørne",
+	"scarecrow:tooltip-code-prefix": "Koder, der begynder med {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

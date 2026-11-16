@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Показать радиус пугала",
 	"scarecrow:radius-none": "В радиусе 64 блоков нет пугала",
 
-	"scarecrow:entityhelp-pickup": "Поднять"
+	"scarecrow:entityhelp-pickup": "Поднять",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Блокировка естественного появления: {0} бл.",
+	"scarecrow:tooltip-radius-breakdown": "Базовый радиус: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Снаряжение",
+	"scarecrow:tooltip-affected-animals": "Затронутые животные: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Блокировка естественного появления: отключена",
+	"scarecrow:tooltip-spawn-loading": "Блокировка естественного появления: ожидание данных сервера",
+	"scarecrow:tooltip-animal-hare": "Зайцы",
+	"scarecrow:tooltip-animal-raccoon": "Еноты",
+	"scarecrow:tooltip-code-prefix": "Коды, начинающиеся с {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Afficher le rayon de l'épouvantail",
 	"scarecrow:radius-none": "Aucun épouvantail dans un rayon de 64 blocs",
 
-	"scarecrow:entityhelp-pickup": "Ramasser"
+	"scarecrow:entityhelp-pickup": "Ramasser",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Protection contre les apparitions naturelles : {0} blocs",
+	"scarecrow:tooltip-radius-breakdown": "Rayon de base : {0} · {1} : +{2}",
+	"scarecrow:tooltip-equipment": "Équipement",
+	"scarecrow:tooltip-affected-animals": "Animaux concernés : {0}",
+	"scarecrow:tooltip-spawn-disabled": "Protection contre les apparitions naturelles : désactivée",
+	"scarecrow:tooltip-spawn-loading": "Protection contre les apparitions naturelles : attente des données du serveur",
+	"scarecrow:tooltip-animal-hare": "Lièvres",
+	"scarecrow:tooltip-animal-raccoon": "Ratons laveurs",
+	"scarecrow:tooltip-code-prefix": "Codes commençant par {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

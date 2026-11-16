@@ -42,6 +42,17 @@
 	"scarecrow:hotkey-showradius": "Показати радіус опудала",
 	"scarecrow:radius-none": "У радіусі 64 блоків немає опудала",
 
-	"scarecrow:entityhelp-pickup": "Підібрати"
+	"scarecrow:entityhelp-pickup": "Підібрати",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Блокування природної появи: {0} бл.",
+	"scarecrow:tooltip-radius-breakdown": "Базовий радіус: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Спорядження",
+	"scarecrow:tooltip-affected-animals": "Охоплені тварини: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Блокування природної появи: вимкнено",
+	"scarecrow:tooltip-spawn-loading": "Блокування природної появи: очікування даних сервера",
+	"scarecrow:tooltip-animal-hare": "Зайці",
+	"scarecrow:tooltip-animal-raccoon": "Єноти",
+	"scarecrow:tooltip-code-prefix": "Коди, що починаються з {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

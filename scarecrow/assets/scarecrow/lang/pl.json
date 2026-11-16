@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Pokaż zasięg stracha na wróble",
 	"scarecrow:radius-none": "Brak stracha na wróble w promieniu 64 bloków",
 
-	"scarecrow:entityhelp-pickup": "Podnieś"
+	"scarecrow:entityhelp-pickup": "Podnieś",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Blokowanie naturalnego pojawiania się: {0} bl.",
+	"scarecrow:tooltip-radius-breakdown": "Promień podstawowy: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Wyposażenie",
+	"scarecrow:tooltip-affected-animals": "Objęte zwierzęta: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Blokowanie naturalnego pojawiania się: wyłączone",
+	"scarecrow:tooltip-spawn-loading": "Blokowanie naturalnego pojawiania się: oczekiwanie na dane serwera",
+	"scarecrow:tooltip-animal-hare": "Zające",
+	"scarecrow:tooltip-animal-raccoon": "Szopy",
+	"scarecrow:tooltip-code-prefix": "Kody zaczynające się od {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Mostrar el radio del espantapájaros",
 	"scarecrow:radius-none": "No hay ningún espantapájaros en 64 bloques",
 
-	"scarecrow:entityhelp-pickup": "Recoger"
+	"scarecrow:entityhelp-pickup": "Recoger",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Protección contra la aparición natural: {0} bloques",
+	"scarecrow:tooltip-radius-breakdown": "Radio base: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Equipamiento",
+	"scarecrow:tooltip-affected-animals": "Animales afectados: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Protección contra la aparición natural: desactivada",
+	"scarecrow:tooltip-spawn-loading": "Protección contra la aparición natural: esperando datos del servidor",
+	"scarecrow:tooltip-animal-hare": "Liebres",
+	"scarecrow:tooltip-animal-raccoon": "Mapaches",
+	"scarecrow:tooltip-code-prefix": "Códigos que empiezan con {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

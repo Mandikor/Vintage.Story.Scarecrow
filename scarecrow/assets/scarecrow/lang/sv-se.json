@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Visa fågelskrämmans radie",
 	"scarecrow:radius-none": "Ingen fågelskrämma inom 64 block",
 
-	"scarecrow:entityhelp-pickup": "Plocka upp"
+	"scarecrow:entityhelp-pickup": "Plocka upp",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Skydd mot naturlig uppkomst: {0} block",
+	"scarecrow:tooltip-radius-breakdown": "Grundradie: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Utrustning",
+	"scarecrow:tooltip-affected-animals": "Berörda djur: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Skydd mot naturlig uppkomst: avaktiverat",
+	"scarecrow:tooltip-spawn-loading": "Skydd mot naturlig uppkomst: väntar på serverdata",
+	"scarecrow:tooltip-animal-hare": "Harar",
+	"scarecrow:tooltip-animal-raccoon": "Tvättbjörnar",
+	"scarecrow:tooltip-code-prefix": "Koder som börjar med {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

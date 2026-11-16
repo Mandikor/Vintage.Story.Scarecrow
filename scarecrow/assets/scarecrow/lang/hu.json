@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Madárijesztő hatósugarának megjelenítése",
 	"scarecrow:radius-none": "Nincs madárijesztő 64 blokkon belül",
 
-	"scarecrow:entityhelp-pickup": "Felvétel"
+	"scarecrow:entityhelp-pickup": "Felvétel",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Természetes megjelenés elleni védelem: {0} blokk",
+	"scarecrow:tooltip-radius-breakdown": "Alapsugár: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Felszerelés",
+	"scarecrow:tooltip-affected-animals": "Érintett állatok: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Természetes megjelenés elleni védelem: kikapcsolva",
+	"scarecrow:tooltip-spawn-loading": "Természetes megjelenés elleni védelem: várakozás a szerver adataira",
+	"scarecrow:tooltip-animal-hare": "Nyulak",
+	"scarecrow:tooltip-animal-raccoon": "Mosómedvék",
+	"scarecrow:tooltip-code-prefix": "{0} kezdetű kódok",
+	"scarecrow:tooltip-list-separator": ", "
 }

@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Näytä linnunpelättimen säde",
 	"scarecrow:radius-none": "Ei linnunpelätintä 64 kuution säteellä",
 
-	"scarecrow:entityhelp-pickup": "Poimi"
+	"scarecrow:entityhelp-pickup": "Poimi",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Luonnollisen ilmestymisen esto: {0} lohkoa",
+	"scarecrow:tooltip-radius-breakdown": "Perussäde: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Varusteet",
+	"scarecrow:tooltip-affected-animals": "Vaikutuksen alaiset eläimet: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Luonnollisen ilmestymisen esto: pois käytöstä",
+	"scarecrow:tooltip-spawn-loading": "Luonnollisen ilmestymisen esto: odotetaan palvelimen tietoja",
+	"scarecrow:tooltip-animal-hare": "Jänikset",
+	"scarecrow:tooltip-animal-raccoon": "Pesukarhut",
+	"scarecrow:tooltip-code-prefix": "Koodit, joiden alku on {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

@@ -42,6 +42,17 @@
 	"scarecrow:hotkey-showradius": "Show scarecrow radius",
 	"scarecrow:radius-none": "No scarecrow within 64 blocks",
 
-	"scarecrow:entityhelp-pickup": "Pick up"
+	"scarecrow:entityhelp-pickup": "Pick up",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Natural-spawn protection: {0} blocks",
+	"scarecrow:tooltip-radius-breakdown": "Base: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Equipment",
+	"scarecrow:tooltip-affected-animals": "Affected animals: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Natural-spawn protection: disabled",
+	"scarecrow:tooltip-spawn-loading": "Natural-spawn protection: waiting for server data",
+	"scarecrow:tooltip-animal-hare": "Hares",
+	"scarecrow:tooltip-animal-raccoon": "Raccoons",
+	"scarecrow:tooltip-code-prefix": "Codes starting with {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

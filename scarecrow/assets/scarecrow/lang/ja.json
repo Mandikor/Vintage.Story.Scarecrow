@@ -46,6 +46,17 @@
 	"scarecrow:hotkey-showradius": "案山子の範囲を表示",
 	"scarecrow:radius-none": "64ブロック以内に案山子がいません",
 
-	"scarecrow:entityhelp-pickup": "拾う"
+	"scarecrow:entityhelp-pickup": "拾う",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "自然出現の抑制範囲：{0}ブロック",
+	"scarecrow:tooltip-radius-breakdown": "基本範囲：{0}・{1}：+{2}",
+	"scarecrow:tooltip-equipment": "装備",
+	"scarecrow:tooltip-affected-animals": "対象の動物：{0}",
+	"scarecrow:tooltip-spawn-disabled": "自然出現の抑制：無効",
+	"scarecrow:tooltip-spawn-loading": "自然出現の抑制：サーバーのデータを待っています",
+	"scarecrow:tooltip-animal-hare": "ノウサギ",
+	"scarecrow:tooltip-animal-raccoon": "アライグマ",
+	"scarecrow:tooltip-code-prefix": "{0}で始まるコード",
+	"scarecrow:tooltip-list-separator": "、"
 }

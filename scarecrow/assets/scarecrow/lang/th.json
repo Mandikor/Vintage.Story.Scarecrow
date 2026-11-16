@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "แสดงรัศมีของหุ่นไล่กา",
 	"scarecrow:radius-none": "ไม่มีหุ่นไล่กาภายใน 64 บล็อค",
 
-	"scarecrow:entityhelp-pickup": "เก็บ"
+	"scarecrow:entityhelp-pickup": "เก็บ",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "ป้องกันการเกิดตามธรรมชาติ: {0} บล็อก",
+	"scarecrow:tooltip-radius-breakdown": "รัศมีพื้นฐาน: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "อุปกรณ์",
+	"scarecrow:tooltip-affected-animals": "สัตว์ที่ได้รับผล: {0}",
+	"scarecrow:tooltip-spawn-disabled": "ป้องกันการเกิดตามธรรมชาติ: ปิดใช้งาน",
+	"scarecrow:tooltip-spawn-loading": "ป้องกันการเกิดตามธรรมชาติ: กำลังรอข้อมูลจากเซิร์ฟเวอร์",
+	"scarecrow:tooltip-animal-hare": "กระต่ายป่า",
+	"scarecrow:tooltip-animal-raccoon": "แร็กคูน",
+	"scarecrow:tooltip-code-prefix": "รหัสที่ขึ้นต้นด้วย {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

@@ -40,6 +40,17 @@
 	"scarecrow:hotkey-showradius": "Vogelscheuchen-Radius anzeigen",
 	"scarecrow:radius-none": "Keine Vogelscheuche im Umkreis von 64 Blöcken",
 
-	"scarecrow:entityhelp-pickup": "Aufheben"
+	"scarecrow:entityhelp-pickup": "Aufheben",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Natürliche Spawn-Sperre: {0} Blöcke",
+	"scarecrow:tooltip-radius-breakdown": "Grundradius: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Ausrüstung",
+	"scarecrow:tooltip-affected-animals": "Betroffene Tiere: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Natürliche Spawn-Sperre: deaktiviert",
+	"scarecrow:tooltip-spawn-loading": "Natürliche Spawn-Sperre: Serverdaten werden geladen",
+	"scarecrow:tooltip-animal-hare": "Hasen",
+	"scarecrow:tooltip-animal-raccoon": "Waschbären",
+	"scarecrow:tooltip-code-prefix": "Codes beginnend mit {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

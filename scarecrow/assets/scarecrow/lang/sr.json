@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Прикажи радијус плашила",
 	"scarecrow:radius-none": "Нема плашила у радијусу од 64 блока",
 
-	"scarecrow:entityhelp-pickup": "Подигни"
+	"scarecrow:entityhelp-pickup": "Подигни",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Спречавање природног појављивања: {0} бл.",
+	"scarecrow:tooltip-radius-breakdown": "Основни полупречник: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Опрема",
+	"scarecrow:tooltip-affected-animals": "Обухваћене животиње: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Спречавање природног појављивања: искључено",
+	"scarecrow:tooltip-spawn-loading": "Спречавање природног појављивања: чекање података сервера",
+	"scarecrow:tooltip-animal-hare": "Зечеви",
+	"scarecrow:tooltip-animal-raccoon": "Ракуни",
+	"scarecrow:tooltip-code-prefix": "Кодови који почињу са {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

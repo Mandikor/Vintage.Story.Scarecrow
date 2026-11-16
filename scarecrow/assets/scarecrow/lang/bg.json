@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Покажи радиуса на плашилото",
 	"scarecrow:radius-none": "Няма плашило в радиус от 64 блока",
 
-	"scarecrow:entityhelp-pickup": "Вземи"
+	"scarecrow:entityhelp-pickup": "Вземи",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Блокиране на естествената поява: {0} блока",
+	"scarecrow:tooltip-radius-breakdown": "Основен радиус: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Екипировка",
+	"scarecrow:tooltip-affected-animals": "Засегнати животни: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Блокиране на естествената поява: изключено",
+	"scarecrow:tooltip-spawn-loading": "Блокиране на естествената поява: изчакване на данни от сървъра",
+	"scarecrow:tooltip-animal-hare": "Зайци",
+	"scarecrow:tooltip-animal-raccoon": "Еноти",
+	"scarecrow:tooltip-code-prefix": "Кодове, започващи с {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

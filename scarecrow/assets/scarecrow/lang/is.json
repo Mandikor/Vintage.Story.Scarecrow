@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Sýna radíus fuglahræðunnar",
 	"scarecrow:radius-none": "Engin fuglahræða innan 64 kubba",
 
-	"scarecrow:entityhelp-pickup": "Taka upp"
+	"scarecrow:entityhelp-pickup": "Taka upp",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Vörn gegn náttúrulegri myndun dýra: {0} blokkir",
+	"scarecrow:tooltip-radius-breakdown": "Grunnradíus: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Búnaður",
+	"scarecrow:tooltip-affected-animals": "Dýr sem vörnin nær til: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Vörn gegn náttúrulegri myndun dýra: óvirk",
+	"scarecrow:tooltip-spawn-loading": "Vörn gegn náttúrulegri myndun dýra: bíður eftir gögnum þjónsins",
+	"scarecrow:tooltip-animal-hare": "Hérar",
+	"scarecrow:tooltip-animal-raccoon": "Þvottabirnir",
+	"scarecrow:tooltip-code-prefix": "Kóðar sem byrja á {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

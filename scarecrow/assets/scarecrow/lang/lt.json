@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Rodyti kaliausės spindulį",
 	"scarecrow:radius-none": "64 blokų atstumu nėra kaliausės",
 
-	"scarecrow:entityhelp-pickup": "Paimti"
+	"scarecrow:entityhelp-pickup": "Paimti",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Apsauga nuo natūralaus atsiradimo: {0} blok.",
+	"scarecrow:tooltip-radius-breakdown": "Pagrindinis spindulys: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Įranga",
+	"scarecrow:tooltip-affected-animals": "Paveikiami gyvūnai: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Apsauga nuo natūralaus atsiradimo: išjungta",
+	"scarecrow:tooltip-spawn-loading": "Apsauga nuo natūralaus atsiradimo: laukiama serverio duomenų",
+	"scarecrow:tooltip-animal-hare": "Kiškiai",
+	"scarecrow:tooltip-animal-raccoon": "Meškėnai",
+	"scarecrow:tooltip-code-prefix": "Kodai, prasidedantys {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }

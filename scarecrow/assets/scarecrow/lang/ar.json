@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "إظهار نطاق الفزاعة",
 	"scarecrow:radius-none": "لا توجد فزاعة ضمن 64 كتلة",
 
-	"scarecrow:entityhelp-pickup": "التقاط"
+	"scarecrow:entityhelp-pickup": "التقاط",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "منع الظهور الطبيعي: {0} كتلة",
+	"scarecrow:tooltip-radius-breakdown": "النطاق الأساسي: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "التجهيزات",
+	"scarecrow:tooltip-affected-animals": "الحيوانات المتأثرة: {0}",
+	"scarecrow:tooltip-spawn-disabled": "منع الظهور الطبيعي: معطّل",
+	"scarecrow:tooltip-spawn-loading": "منع الظهور الطبيعي: جارٍ انتظار بيانات الخادم",
+	"scarecrow:tooltip-animal-hare": "الأرانب البرية",
+	"scarecrow:tooltip-animal-raccoon": "حيوانات الراكون",
+	"scarecrow:tooltip-code-prefix": "الرموز التي تبدأ بـ {0}",
+	"scarecrow:tooltip-list-separator": "، "
 }

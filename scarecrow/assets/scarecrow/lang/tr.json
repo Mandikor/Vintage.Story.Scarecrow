@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Korkuluk yarıçapını göster",
 	"scarecrow:radius-none": "64 blok içinde korkuluk yok",
 
-	"scarecrow:entityhelp-pickup": "Al"
+	"scarecrow:entityhelp-pickup": "Al",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Doğal oluşma engeli: {0} blok",
+	"scarecrow:tooltip-radius-breakdown": "Temel yarıçap: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Ekipman",
+	"scarecrow:tooltip-affected-animals": "Etkilenen hayvanlar: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Doğal oluşma engeli: devre dışı",
+	"scarecrow:tooltip-spawn-loading": "Doğal oluşma engeli: sunucu verileri bekleniyor",
+	"scarecrow:tooltip-animal-hare": "Yaban tavşanları",
+	"scarecrow:tooltip-animal-raccoon": "Rakunlar",
+	"scarecrow:tooltip-code-prefix": "{0} ile başlayan kodlar",
+	"scarecrow:tooltip-list-separator": ", "
 }

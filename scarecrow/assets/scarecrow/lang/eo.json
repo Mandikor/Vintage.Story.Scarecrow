@@ -44,6 +44,17 @@
 	"scarecrow:hotkey-showradius": "Montri la radiuson de la birdotimigilo",
 	"scarecrow:radius-none": "Neniu birdotimigilo ene de 64 blokoj",
 
-	"scarecrow:entityhelp-pickup": "Preni"
+	"scarecrow:entityhelp-pickup": "Preni",
 
+	// Placed-entity protection tooltip
+	"scarecrow:tooltip-spawn-radius": "Protekto kontraŭ natura apero: {0} blokoj",
+	"scarecrow:tooltip-radius-breakdown": "Baza radiuso: {0} · {1}: +{2}",
+	"scarecrow:tooltip-equipment": "Ekipaĵo",
+	"scarecrow:tooltip-affected-animals": "Koncernaj bestoj: {0}",
+	"scarecrow:tooltip-spawn-disabled": "Protekto kontraŭ natura apero: malŝaltita",
+	"scarecrow:tooltip-spawn-loading": "Protekto kontraŭ natura apero: atendante servilajn datumojn",
+	"scarecrow:tooltip-animal-hare": "Leporoj",
+	"scarecrow:tooltip-animal-raccoon": "Lavursoj",
+	"scarecrow:tooltip-code-prefix": "Kodoj komenciĝantaj per {0}",
+	"scarecrow:tooltip-list-separator": ", "
 }
