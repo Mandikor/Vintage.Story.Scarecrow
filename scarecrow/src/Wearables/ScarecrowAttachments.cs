@@ -18,8 +18,13 @@ namespace Scarecrow
         private string[][] allowedCodes = Array.Empty<string[]>();
         private string[][] categories = Array.Empty<string[]>();
         private int[] lanternSlotIndices = Array.Empty<int>();
+        private WindChimeAttachmentSounds windChimeSounds;
+        private bool windChimesEnabled;
+        private float soundUpdateElapsed;
 
-        public int LanternRadiusBonus
+        public int LanternRadiusBonus => EquipmentRadiusBonus;
+
+        public int EquipmentRadiusBonus
         {
             get
             {
@@ -31,13 +36,13 @@ namespace Scarecrow
                     ItemStack stack = inv[index].Itemstack;
                     AssetLocation code = stack?.Collectible?.Code;
                     if (code == null || !allowedCodes[index].Any(pattern => WildcardUtil.Match(pattern, code.ToString()))) continue;
-                    bonus = Math.Max(bonus, GetLanternBonus(stack));
+                    bonus = Math.Max(bonus, GetEquipmentRadiusBonus(stack));
                 }
                 return bonus;
             }
         }
 
-        private static int GetLanternBonus(ItemStack stack)
+        private static int GetEquipmentRadiusBonus(ItemStack stack)
         {
             AssetLocation code = stack.Collectible.Code;
             if (code.Domain == "game" && code.Path.EndsWith("-up", StringComparison.Ordinal))
@@ -46,7 +51,7 @@ namespace Scarecrow
                 if (code.Path.StartsWith("lantern-large-", StringComparison.Ordinal)) return 4;
             }
             // Optional compatibility patches supply their bonus without hard-coded mod IDs.
-            return Math.Clamp(stack.ItemAttributes?["scarecrowRadiusBonus"].AsInt(0) ?? 0, 0, 4);
+            return Math.Clamp(stack.ItemAttributes?["scarecrowRadiusBonus"].AsInt(0) ?? 0, 0, 6);
         }
 
         public ScarecrowAttachments(Entity entity) : base(entity) { }
@@ -81,7 +86,16 @@ namespace Scarecrow
 
         public override void Initialize(EntityProperties properties, JsonObject attributes)
         {
+            InitializeWindChimeSounds();
             base.Initialize(properties, PrepareConfig(attributes, entity.World));
+        }
+
+        private void InitializeWindChimeSounds()
+        {
+            windChimeSounds?.Dispose();
+            windChimeSounds = null;
+            soundUpdateElapsed = 0;
+            windChimesEnabled = entity.Api is ICoreClientAPI api && api.ModLoader.IsModEnabled("windchimes");
         }
 
         public override bool TryEarlyLoadCollectibleMappings(IWorldAccessor world,
@@ -103,6 +117,50 @@ namespace Scarecrow
                 ItemStack stack = inv[i].Itemstack;
                 inv[i] = new ScarecrowAttachmentSlot(inv, categories[i], allowedCodes[i]) { Itemstack = stack };
             }
+            windChimeSounds?.Update(inv);
+        }
+
+        public override void OnGameTick(float deltaTime)
+        {
+            base.OnGameTick(deltaTime);
+            if (!windChimesEnabled || entity.Api is not ICoreClientAPI api) return;
+            if (!entity.Alive)
+            {
+                windChimeSounds?.Update(inv);
+                return;
+            }
+            soundUpdateElapsed += deltaTime;
+            if (soundUpdateElapsed < 0.25f) return;
+            soundUpdateElapsed = 0;
+            if (windChimeSounds == null && (inv == null || !inv.Any(slot =>
+                slot.Itemstack?.ItemAttributes?["scarecrowWindChime"].AsBool(false) == true))) return;
+            windChimeSounds ??= new WindChimeAttachmentSounds(api, entity);
+            windChimeSounds.Update(inv);
+        }
+
+        public override void OnEntityDespawn(EntityDespawnData despawn)
+        {
+            windChimeSounds?.Dispose();
+            base.OnEntityDespawn(despawn);
+        }
+
+        public override void OnEntityDeath(DamageSource damageSourceForDeath)
+        {
+            windChimeSounds?.Dispose();
+            base.OnEntityDeath(damageSourceForDeath);
+        }
+
+        protected override Shape addGearToShape(Shape entityShape, ItemSlot gearslot, string slotCode,
+            string shapePathForLogging, ref bool shapeIsCloned, ref string[] willDeleteElements,
+            Dictionary<string, StepParentElementTo> overrideStepParent = null)
+        {
+            // The entity shader treats wind mode 9 as a frost flag and changes its movement.
+            // The optional renderer draws these blocks separately with their original wind flags.
+            if (windChimesEnabled && entity.Properties?.Client?.Renderer is WindChimeScarecrowRenderer
+                && gearslot.Itemstack?.ItemAttributes?["scarecrowWindChime"].AsBool(false) == true)
+                return entityShape;
+            return base.addGearToShape(entityShape, gearslot, slotCode, shapePathForLogging,
+                ref shapeIsCloned, ref willDeleteElements, overrideStepParent);
         }
 
         public override void OnInteract(EntityAgent byEntity, ItemSlot itemslot, Vec3d hitPosition,

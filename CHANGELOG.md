@@ -33,6 +33,25 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ### Added
 
+- Added optional Wind Chimes by Ape (`windchimes` 1.5.3 and 1.5.4) support for both arm slots
+  of the full-size scarecrow: bamboo, wood, bone, brass, copper and crystal models,
+  covering all eleven variants in 1.5.4 and the ten variants in 1.5.3.
+  Original shapes and textures are reused with upright
+  arm mounts, independent of More Lanterns; both compatibility packs can coexist.
+- Attached wind chimes play their original material recordings as spatial ambient
+  sound, using Wind Chimes' held volume and hearing-distance settings. Sounds follow
+  the scarecrow and stop on removal, death, despawn or leaving hearing range.
+  Wind chimes add six blocks to natural-spawn protection, taking precedence over
+  lanterns without stacking. Removing one uses the strongest remaining equipment
+  bonus; the radius outline updates automatically. All compatibility
+  JSON patches are kept under `compatibility/windchimes`.
+- Check Wind Chimes availability once during attachment initialization. Clients
+  without the mod skip periodic audio inventory scans and sound processing entirely;
+  servers never enable the sound path.
+- Included the bone wind chime from the supplied 1.5.4 package, which is absent
+  from the upstream 1.5.3 assets. It retains the original bone textures and the
+  wood recording selected by that version's held-sound definition. Older versions
+  without the bone model remain supported.
 - Attached small vanilla lanterns now increase natural-spawn protection by two
   blocks; large lanterns add four. Both scarecrow sizes and the radius overlay use
   the current attachment bonus, which disappears when the lantern is removed.
@@ -54,6 +73,14 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ### Fixed
 
+- Corrected Wind Chimes renderer selection to patch server-loaded entity types,
+  rather than only the client asset copy. Only remove wind chimes from the normal
+  entity mesh when the separate renderer is actually active, preventing invisible
+  attachments if that renderer is unavailable.
+- Render attached wind chimes separately with the normal block shader so their
+  authored wind modes and moving shape regions match the ceiling variants. The
+  entity shader otherwise reinterprets their wind flags. Original block models
+  remain unchanged; arm alignment, scale and shadows are retained.
 - Removed blanket scarecrow fleeing from adult vanilla black, brown, polar and sun
   bears, wolves and hyenas. They now approach and attack scarecrow targets while
   respecting their native injury-fear state; pandas use injury-triggered defense.
@@ -74,6 +101,8 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ### Changed
 
+- Increased attached wind chime sound volume by 10% relative to the configured
+  held-item volume, capped at full volume. A zero volume remains silent.
 - The enabled radius overlay now refreshes automatically every half second after
   placement, movement, removal or changes to nearby loaded scarecrows. It stays
   enabled when no scarecrow is nearby, updates highlights only when the outline

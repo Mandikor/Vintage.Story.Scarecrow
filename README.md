@@ -139,6 +139,7 @@ Press **Ctrl + H** again to turn it off.
 | Neck, both scarecrow variants | Small and large upright vanilla lanterns |
 | Neck with More Lanterns | Upright paper and metal lanterns; floating and stone lanterns are excluded |
 | Arms with More Lanterns, full-size scarecrow only | The same paper and metal lanterns, instead of tools |
+| Arms with Wind Chimes, full-size scarecrow only | Bamboo, wood, bone, brass, copper and crystal wind chimes, instead of tools |
 | Foot, both scarecrow variants | Fired vanilla watering cans |
 
 Each point holds one item. The interaction hints show the items allowed at the
@@ -181,6 +182,34 @@ All compatibility JSON patches are under `compatibility/apelanterns/patches`.
 Existing tool categories and world-block geometry are preserved. See the
 [lantern compatibility guide](docs/lantern-compatibility.md) for asset and validation
 details.
+
+### Wind Chimes by Ape
+
+With **Wind Chimes 1.5.3 or 1.5.4**, the full-size scarecrow can hold a wind chime in either
+arm slot instead of a tool or lantern. Use **Shift + right-click** to attach one;
+use an empty hand with the same control to remove it. Bamboo, wood, brass, copper
+and crystal models are supported, plus the bone wind chime added in 1.5.4, for
+eleven material variants in the newer version.
+
+Wind chimes hang upright and use the original ceiling models' wind movement.
+They play their original material sounds spatially from
+the scarecrow. Each arm can hold a different chime. Sounds follow the scarecrow
+and stop when the chime is removed, the scarecrow dies or despawns, or the listener
+leaves hearing range. They use the game's ambient sound channel and Wind Chimes'
+held-volume and hearing-distance settings, with a 10% volume increase for attached
+wind chimes. Muting remains effective.
+
+An attached wind chime adds **6 blocks** to natural-spawn protection, increasing
+the full-size scarecrow's radius from **16 to 22 blocks**. Only the strongest
+equipment bonus applies: two wind chimes or a wind chime together with lanterns
+still give +6 blocks. Removing the last wind chime restores the strongest remaining
+lantern bonus, or the base radius. The radius outline follows automatically;
+animal flee and attack distances remain unchanged.
+
+This support works independently of More Lanterns and can be used alongside it.
+All JSON patches are under `compatibility/windchimes/patches`; original models,
+textures and recordings are referenced directly. See the
+[wind chime compatibility guide](docs/windchime-compatibility.md) for details.
 
 ## Configuration
 
@@ -244,6 +273,7 @@ The repository includes compatibility assets for the following mods and families
 | Grass to Ropes | Alternative crafting recipes |
 | Leaf Litter | Rake attachment shapes |
 | More Lanterns by Ape | Paper and metal lantern attachments with natural-spawn radius bonuses |
+| Wind Chimes by Ape | Upright arm attachments with original spatial chime sounds |
 | Equus, Equus Ferus and Monoceros | Animal behavior patches |
 | Equus: Shared Ancestry and Equus: Expanded | Wild donkey reactions and inherited pony reactions |
 | Vara's Arctic Wolves | Adult attack and young-animal flee rules |

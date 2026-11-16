@@ -1,0 +1,24 @@
+[
+  {
+    "enabled": true,
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "add",
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
+    "value": "windchimes:windchime-*"
+  },
+  {
+    "enabled": true,
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "add",
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
+    "value": "windchimes:windchime-*"
+  },
+  {
+    "enabled": true,
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "replace",
+    "path": "/client/renderer",
+    "value": "ScarecrowWindChimeShape",
+    "side": "server"
+  }
+]

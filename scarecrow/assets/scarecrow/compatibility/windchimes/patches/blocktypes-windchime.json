@@ -1,0 +1,100 @@
+[
+  {
+    "enabled": true,
+    "file": "windchimes:blocktypes/windchime.json",
+    "op": "addmerge",
+    "path": "/attributesByType",
+    "value": {
+      "*-bamboo-*": {
+        "attachableToEntity": {
+          "attachedShapeBySlotCode": {
+            "sc-leftarm": {
+              "base": "windchimes:block/{model}"
+            },
+            "sc-rightarm": {
+              "base": "windchimes:block/{model}"
+            }
+          },
+          "texturePrefixCode": "scarecrow-windchimes"
+        },
+        "scarecrowWindChime": true,
+        "scarecrowRadiusBonus": 6
+      },
+      "*-wood": {
+        "attachableToEntity": {
+          "attachedShapeBySlotCode": {
+            "sc-leftarm": {
+              "base": "windchimes:block/{model}"
+            },
+            "sc-rightarm": {
+              "base": "windchimes:block/{model}"
+            }
+          },
+          "texturePrefixCode": "scarecrow-windchimes"
+        },
+        "scarecrowWindChime": true,
+        "scarecrowRadiusBonus": 6
+      },
+      "*-brass": {
+        "attachableToEntity": {
+          "attachedShapeBySlotCode": {
+            "sc-leftarm": {
+              "base": "windchimes:block/{model}"
+            },
+            "sc-rightarm": {
+              "base": "windchimes:block/{model}"
+            }
+          },
+          "texturePrefixCode": "scarecrow-windchimes"
+        },
+        "scarecrowWindChime": true,
+        "scarecrowRadiusBonus": 6
+      },
+      "*-copper": {
+        "attachableToEntity": {
+          "attachedShapeBySlotCode": {
+            "sc-leftarm": {
+              "base": "windchimes:block/{model}"
+            },
+            "sc-rightarm": {
+              "base": "windchimes:block/{model}"
+            }
+          },
+          "texturePrefixCode": "scarecrow-windchimes"
+        },
+        "scarecrowWindChime": true,
+        "scarecrowRadiusBonus": 6
+      },
+      "*-crystal-*": {
+        "attachableToEntity": {
+          "attachedShapeBySlotCode": {
+            "sc-leftarm": {
+              "base": "windchimes:block/{model}"
+            },
+            "sc-rightarm": {
+              "base": "windchimes:block/{model}"
+            }
+          },
+          "texturePrefixCode": "scarecrow-windchimes"
+        },
+        "scarecrowWindChime": true,
+        "scarecrowRadiusBonus": 6
+      },
+      "*-bone": {
+        "attachableToEntity": {
+          "attachedShapeBySlotCode": {
+            "sc-leftarm": {
+              "base": "windchimes:block/{model}"
+            },
+            "sc-rightarm": {
+              "base": "windchimes:block/{model}"
+            }
+          },
+          "texturePrefixCode": "scarecrow-windchimes"
+        },
+        "scarecrowWindChime": true,
+        "scarecrowRadiusBonus": 6
+      }
+    }
+  }
+]

@@ -22,6 +22,9 @@ the current bonus automatically; **Ctrl + H** continues to switch the outline on
 and off. Flee and attack distances are unchanged. The bonus affects the configured
 natural-spawn protection list, which contains hares and raccoons by default.
 
+With Wind Chimes installed, an attached wind chime's **+6-block** bonus takes
+precedence over lanterns. Equipment bonuses still do not stack.
+
 ## More Lanterns by Ape
 
 Compatibility was checked against the supplied **More Lanterns 1.4.4** package

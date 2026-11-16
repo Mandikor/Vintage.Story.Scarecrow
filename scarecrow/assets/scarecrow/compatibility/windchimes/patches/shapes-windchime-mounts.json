@@ -1,0 +1,86 @@
+[
+  {
+    "enabled": true,
+    "file": "scarecrow:shapes/entity/nonliving/scarecrow.json",
+    "op": "add",
+    "path": "/elements/0/children/0/children/0/children/1/children/1/children/0/children/-",
+    "value": {
+      "name": "ScarecrowWindChimeLeftMount",
+      "from": [
+        -5,
+        -15,
+        -7
+      ],
+      "to": [
+        -5,
+        -15,
+        -7
+      ],
+      "rotationOrigin": [
+        3,
+        1,
+        1
+      ],
+      "scaleX": 0.6,
+      "scaleY": 0.6,
+      "scaleZ": 0.6,
+      "rotationX": 0.349186,
+      "rotationY": 3.984754,
+      "rotationZ": -5.012147,
+      "attachmentpoints": [
+        {
+          "code": "ScarecrowWindChimeLeftAP",
+          "posX": 0,
+          "posY": 0,
+          "posZ": 0,
+          "rotationX": 0,
+          "rotationY": 0,
+          "rotationZ": 0
+        }
+      ]
+    },
+    "side": "client"
+  },
+  {
+    "enabled": true,
+    "file": "scarecrow:shapes/entity/nonliving/scarecrow.json",
+    "op": "add",
+    "path": "/elements/0/children/0/children/0/children/2/children/1/children/0/children/-",
+    "value": {
+      "name": "ScarecrowWindChimeRightMount",
+      "from": [
+        -5,
+        -15,
+        -7
+      ],
+      "to": [
+        -5,
+        -15,
+        -7
+      ],
+      "rotationOrigin": [
+        3,
+        1,
+        1
+      ],
+      "scaleX": 0.6,
+      "scaleY": 0.6,
+      "scaleZ": 0.6,
+      "rotationX": 179.650814,
+      "rotationY": 3.984754,
+      "rotationZ": -174.987853,
+      "attachmentpoints": [
+        {
+          "code": "ScarecrowWindChimeRightAP",
+          "posX": 0,
+          "posY": 0,
+          "posZ": 0,
+          "rotationX": 0,
+          "rotationY": 0,
+          "rotationZ": 0
+        }
+      ]
+    },
+    "side": "client"
+  }
+]

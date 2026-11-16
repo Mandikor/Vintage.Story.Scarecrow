@@ -27,8 +27,8 @@ namespace Scarecrow
         private int scareRadius = DefaultScareRadius;
         private string pickupItemCode = DefaultPickupItemCode;
 
-        /// <summary>Natural-spawn protection, including the currently attached lantern.</summary>
-        public int ScareRadius => scareRadius + (GetBehavior<ScarecrowAttachments>()?.LanternRadiusBonus ?? 0);
+        /// <summary>Natural-spawn protection, including the strongest attached equipment bonus.</summary>
+        public int ScareRadius => scareRadius + (GetBehavior<ScarecrowAttachments>()?.EquipmentRadiusBonus ?? 0);
 
         public override void Initialize(EntityProperties properties, ICoreAPI api, long InChunkIndex3d)
         {

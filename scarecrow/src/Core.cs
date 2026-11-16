@@ -48,5 +48,14 @@ namespace Scarecrow
 
             AttachableItems.Apply(api);
         }
+
+        public override void StartClientSide(Vintagestory.API.Client.ICoreClientAPI api)
+        {
+            base.StartClientSide(api);
+            if (api.ModLoader.IsModEnabled("windchimes"))
+            {
+                api.RegisterEntityRendererClass("ScarecrowWindChimeShape", typeof(WindChimeScarecrowRenderer));
+            }
+        }
     }
 }
