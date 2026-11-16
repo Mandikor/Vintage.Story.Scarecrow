@@ -17,19 +17,36 @@ namespace Scarecrow
     {
         private string[][] allowedCodes = Array.Empty<string[]>();
         private string[][] categories = Array.Empty<string[]>();
-        private int lanternSlotIndex = -1;
+        private int[] lanternSlotIndices = Array.Empty<int>();
 
         public int LanternRadiusBonus
         {
             get
             {
-                if (inv == null || lanternSlotIndex < 0 || lanternSlotIndex >= inv.Count) return 0;
-                AssetLocation code = inv[lanternSlotIndex].Itemstack?.Collectible?.Code;
-                if (code?.Domain != "game" || !code.Path.EndsWith("-up", StringComparison.Ordinal)) return 0;
+                if (inv == null) return 0;
+                int bonus = 0;
+                foreach (int index in lanternSlotIndices)
+                {
+                    if (index >= inv.Count) continue;
+                    ItemStack stack = inv[index].Itemstack;
+                    AssetLocation code = stack?.Collectible?.Code;
+                    if (code == null || !allowedCodes[index].Any(pattern => WildcardUtil.Match(pattern, code.ToString()))) continue;
+                    bonus = Math.Max(bonus, GetLanternBonus(stack));
+                }
+                return bonus;
+            }
+        }
+
+        private static int GetLanternBonus(ItemStack stack)
+        {
+            AssetLocation code = stack.Collectible.Code;
+            if (code.Domain == "game" && code.Path.EndsWith("-up", StringComparison.Ordinal))
+            {
                 if (code.Path.StartsWith("lantern-small-", StringComparison.Ordinal)) return 2;
                 if (code.Path.StartsWith("lantern-large-", StringComparison.Ordinal)) return 4;
-                return 0;
             }
+            // Optional compatibility patches supply their bonus without hard-coded mod IDs.
+            return Math.Clamp(stack.ItemAttributes?["scarecrowRadiusBonus"].AsInt(0) ?? 0, 0, 4);
         }
 
         public ScarecrowAttachments(Entity entity) : base(entity) { }
@@ -41,10 +58,11 @@ namespace Scarecrow
             JArray slots = (JArray)copy["wearableSlots"].Token;
             allowedCodes = new string[slots.Count][];
             categories = new string[slots.Count][];
-            lanternSlotIndex = -1;
+            List<int> lanternSlots = new();
             for (int i = 0; i < slots.Count; i++)
             {
-                if (slots[i].Value<string>("code") == "sc-neck") lanternSlotIndex = i;
+                string slotCode = slots[i].Value<string>("code");
+                if (slotCode is "sc-neck" or "sc-leftarm" or "sc-rightarm") lanternSlots.Add(i);
                 allowedCodes[i] = slots[i]["allowedCodes"]?.ToObject<string[]>() ?? Array.Empty<string>();
                 AssetLocation[] patterns = allowedCodes[i].Select(code => new AssetLocation(code)).ToArray();
                 HashSet<string> accepted = new();
@@ -57,6 +75,7 @@ namespace Scarecrow
                 categories[i] = accepted.ToArray();
                 slots[i]["forCategoryCodes"] = JArray.FromObject(categories[i]);
             }
+            lanternSlotIndices = lanternSlots.ToArray();
             return copy;
         }
 

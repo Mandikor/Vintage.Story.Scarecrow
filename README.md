@@ -53,6 +53,13 @@ removes the bonus. The radius outline updates automatically while enabled.
 The bonus applies whenever the lantern is attached, during both day and night.
 Animal flee and attack distances remain unchanged.
 
+With **More Lanterns** installed, supported paper lanterns add **2 blocks** and
+metal lanterns add **4 blocks** to the same natural-spawn protection. Floating
+lanterns, stone lanterns and lantern parts are excluded. See
+[lantern compatibility](docs/lantern-compatibility.md) for supported models.
+The full-size scarecrow can also hold these lanterns in either arm instead of a
+tool. With several lanterns attached, only the strongest radius bonus applies.
+
 ### How animal protection works
 
 Scarecrow uses two complementary mechanisms:
@@ -130,6 +137,8 @@ Press **Ctrl + H** again to turn it off.
 | Left and right arms, full-size scarecrow only | Scythes, hoes, bug nets and snow shovels |
 | Left and right arms with optional mods | Art of Growing hayforks and the Leaf Litter rake |
 | Neck, both scarecrow variants | Small and large upright vanilla lanterns |
+| Neck with More Lanterns | Upright paper and metal lanterns; floating and stone lanterns are excluded |
+| Arms with More Lanterns, full-size scarecrow only | The same paper and metal lanterns, instead of tools |
 | Foot, both scarecrow variants | Fired vanilla watering cans |
 
 Each point holds one item. The interaction hints show the items allowed at the
@@ -200,6 +209,7 @@ The repository includes compatibility assets for the following mods and families
 | Plumpkins | Alternative pumpkin shape for the scarecrow and its item |
 | Grass to Ropes | Alternative crafting recipes |
 | Leaf Litter | Rake attachment shapes |
+| More Lanterns by Ape | Paper and metal lantern attachments with natural-spawn radius bonuses |
 | Equus, Equus Ferus and Monoceros | Animal behavior patches |
 | Equus: Shared Ancestry and Equus: Expanded | Wild donkey reactions and inherited pony reactions |
 | Vara's Arctic Wolves | Adult attack and young-animal flee rules |

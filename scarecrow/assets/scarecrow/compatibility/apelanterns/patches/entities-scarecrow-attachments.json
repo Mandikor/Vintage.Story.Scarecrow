@@ -1,0 +1,93 @@
+[
+  {
+    "enabled": true,
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "add",
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/2/allowedCodes/-",
+    "value": "apelanterns:apemetallantern-*-up"
+  },
+  {
+    "enabled": true,
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "add",
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/2/allowedCodes/-",
+    "value": "apelanterns:apepaperlantern-*-up"
+  },
+  {
+    "enabled": true,
+    "file": "scarecrow:entities/nonliving/little-scarecrow.json",
+    "op": "add",
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
+    "value": "apelanterns:apemetallantern-*-up"
+  },
+  {
+    "enabled": true,
+    "file": "scarecrow:entities/nonliving/little-scarecrow.json",
+    "op": "add",
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
+    "value": "apelanterns:apepaperlantern-*-up"
+  },
+  {
+    "enabled": true,
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "add",
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
+    "value": "apelanterns:apemetallantern-*-up"
+  },
+  {
+    "enabled": true,
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "add",
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
+    "value": "apelanterns:apepaperlantern-*-up"
+  },
+  {
+    "enabled": true,
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "addmerge",
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/stepParentTo",
+    "value": {
+      "ScarecrowMoreLanternsMount": {
+        "elementName": "ScarecrowMoreLanternsLeftMount"
+      },
+      "ScarecrowMoreLanternsLargeMount": {
+        "elementName": "ScarecrowMoreLanternsLeftLargeMount"
+      }
+    }
+  },
+  {
+    "enabled": true,
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "add",
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
+    "value": "apelanterns:apemetallantern-*-up"
+  },
+  {
+    "enabled": true,
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "add",
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
+    "value": "apelanterns:apepaperlantern-*-up"
+  },
+  {
+    "enabled": true,
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "addmerge",
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/stepParentTo",
+    "value": {
+      "ScarecrowMoreLanternsMount": {
+        "elementName": "ScarecrowMoreLanternsRightMount"
+      },
+      "ScarecrowMoreLanternsLargeMount": {
+        "elementName": "ScarecrowMoreLanternsRightLargeMount"
+      }
+    }
+  },
+  {
+    "enabled": true,
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "add",
+    "path": "/attributes/useSlotPrefix",
+    "value": true
+  }
+]

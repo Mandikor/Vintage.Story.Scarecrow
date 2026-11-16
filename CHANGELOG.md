@@ -7,6 +7,17 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ### Added
 
+- Added optional More Lanterns (`apelanterns` 1.4.4) compatibility for all eleven
+  wall/ceiling-capable metal and paper lantern models. Their upright inventory
+  variants can be attached to either scarecrow's neck or the full-size scarecrow's
+  left and right arm slots, retaining native models
+  and variant textures. Paper lanterns add two blocks to natural-spawn protection;
+  metal lanterns add four. Floating lanterns, stone lanterns and parts are excluded.
+  All compatibility JSON patches live under `compatibility/apelanterns`.
+- Increased attached Chinese paper and metal lantern sizes while preserving the
+  Basic and Medieval 1 Small paper sizes. Separate arm mounts and texture prefixes
+  allow several differently colored lanterns without replacing tool attachment
+  points. Only the strongest equipped lantern's radius bonus applies.
 - Attached small vanilla lanterns now increase natural-spawn protection by two
   blocks; large lanterns add four. Both scarecrow sizes and the radius overlay use
   the current attachment bonus, which disappears when the lantern is removed.

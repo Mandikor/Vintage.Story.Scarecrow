@@ -1,0 +1,54 @@
+[
+  {
+    "enabled": true,
+    "file": "apelanterns:blocktypes/apemetallantern.json",
+    "op": "addmerge",
+    "path": "/attributesByType",
+    "value": {
+      "*-on-*-plain-l1-up": {
+        "attachableToEntityByType": {
+          "*-up": {
+            "attachedShapeBySlotCode": {
+              "sc-neck": {
+                "base": "apelanterns:block/apemetallantern/{model}-ceiling"
+              },
+              "sc-leftarm": {
+                "base": "apelanterns:block/apemetallantern/{model}-ceiling"
+              },
+              "sc-rightarm": {
+                "base": "apelanterns:block/apemetallantern/{model}-ceiling"
+              }
+            },
+            "texturePrefixCode": "scarecrow-apelanterns"
+          }
+        },
+        "scarecrowRadiusBonusByType": {
+          "*-up": 4,
+          "*": 0
+        }
+      },
+      "*": {
+        "attachableToEntityByType": {
+          "*-up": {
+            "attachedShapeBySlotCode": {
+              "sc-neck": {
+                "base": "apelanterns:block/apemetallantern/{model}-ceiling"
+              },
+              "sc-leftarm": {
+                "base": "apelanterns:block/apemetallantern/{model}-ceiling"
+              },
+              "sc-rightarm": {
+                "base": "apelanterns:block/apemetallantern/{model}-ceiling"
+              }
+            },
+            "texturePrefixCode": "scarecrow-apelanterns"
+          }
+        },
+        "scarecrowRadiusBonusByType": {
+          "*-up": 4,
+          "*": 0
+        }
+      }
+    }
+  }
+]
