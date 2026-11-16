@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "Hérar",
 	"scarecrow:tooltip-animal-raccoon": "Þvottabirnir",
 	"scarecrow:tooltip-code-prefix": "Kóðar sem byrja á {0}",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "Eigandi: {0}",
+	"scarecrow:tooltip-owner-none": "Enginn eigandi",
+	"scarecrow:tooltip-owner-unknown": "Óþekktur",
+
+	"scarecrow:tooltip-inventory": "Birgðir:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "Vinstri handleggur: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "Hægri handleggur: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Luktarstæði: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Stæði við fæturna: {0}",
+	"scarecrow:tooltip-inventory-empty": "Tómt",
+	"scarecrow:tooltip-inventory-unavailable": "Hlutur ekki tiltækur"
 }

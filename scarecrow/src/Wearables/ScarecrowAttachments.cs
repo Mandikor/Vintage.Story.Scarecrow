@@ -7,6 +7,7 @@ using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
+using Vintagestory.API.Server;
 using Vintagestory.API.Util;
 using Vintagestory.GameContent;
 
@@ -18,6 +19,7 @@ namespace Scarecrow
         private string[][] allowedCodes = Array.Empty<string[]>();
         private string[][] categories = Array.Empty<string[]>();
         private int[] lanternSlotIndices = Array.Empty<int>();
+        private string[] slotCodes = Array.Empty<string>();
         private WindChimeAttachmentSounds windChimeSounds;
         private bool windChimesEnabled;
         private float soundUpdateElapsed;
@@ -73,10 +75,12 @@ namespace Scarecrow
             JArray slots = (JArray)copy["wearableSlots"].Token;
             allowedCodes = new string[slots.Count][];
             categories = new string[slots.Count][];
+            slotCodes = new string[slots.Count];
             List<int> lanternSlots = new();
             for (int i = 0; i < slots.Count; i++)
             {
                 string slotCode = slots[i].Value<string>("code");
+                slotCodes[i] = slotCode;
                 if (slotCode is "sc-neck" or "sc-leftarm" or "sc-rightarm") lanternSlots.Add(i);
                 allowedCodes[i] = slots[i]["allowedCodes"]?.ToObject<string[]>() ?? Array.Empty<string>();
                 AssetLocation[] patterns = allowedCodes[i].Select(code => new AssetLocation(code)).ToArray();
@@ -98,6 +102,46 @@ namespace Scarecrow
         {
             InitializeWindChimeSounds();
             base.Initialize(properties, PrepareConfig(attributes, entity.World));
+            RestoreCarriedEquipment();
+        }
+
+        public const string StoredEquipmentAttribute = "scarecrowEquipment";
+
+        public static bool HasStoredEquipment(ItemStack stack) =>
+            stack?.Attributes?.GetTreeAttribute(StoredEquipmentAttribute)?.Any(entry =>
+                entry.Value is ItemstackAttribute { value: not null }) == true;
+
+        public void StoreEquipment(ItemStack stack)
+        {
+            if (inv == null || inv.Empty) return;
+            TreeAttribute equipment = new();
+            for (int i = 0; i < inv.Count && i < slotCodes.Length; i++)
+            {
+                if (!inv[i].Empty) equipment.SetItemstack(slotCodes[i], inv[i].Itemstack.Clone());
+            }
+            stack.Attributes[StoredEquipmentAttribute] = equipment;
+        }
+
+        public void ClearEquipmentAfterPickup()
+        {
+            if (inv == null || inv.Empty) return;
+            foreach (ItemSlot slot in inv) slot.Itemstack = null;
+            storeInv();
+        }
+
+        private void RestoreCarriedEquipment()
+        {
+            ITreeAttribute equipment = entity.Attributes.GetTreeAttribute(StoredEquipmentAttribute);
+            if (equipment == null) return;
+            for (int i = 0; i < inv.Count && i < slotCodes.Length; i++)
+            {
+                ItemStack stack = equipment.GetItemstack(slotCodes[i])?.Clone();
+                if (stack == null) continue;
+                if (stack.ResolveBlockOrItem(entity.World)) inv[i].Itemstack = stack;
+                else entity.World.Logger.Warning("Scarecrow: could not restore missing equipment in slot {0}.", slotCodes[i]);
+            }
+            entity.Attributes.RemoveAttribute(StoredEquipmentAttribute);
+            storeInv();
         }
 
         private void InitializeWindChimeSounds()
@@ -176,6 +220,12 @@ namespace Scarecrow
         public override void OnInteract(EntityAgent byEntity, ItemSlot itemslot, Vec3d hitPosition,
             EnumInteractMode mode, ref EnumHandling handled)
         {
+            if (mode == EnumInteractMode.Interact && entity is EntityScarecrow scarecrow
+                && !scarecrow.CanManage((byEntity as EntityPlayer)?.Player))
+            {
+                handled = EnumHandling.PreventSubsequent;
+                return;
+            }
             // Vanilla only transfers the item on the server. Check the whitelist here as well
             // so the client cannot predict a successful attachment for a forbidden tool.
             EntityControls controls = byEntity.MountedOn?.Controls ?? byEntity.Controls;
@@ -189,6 +239,16 @@ namespace Scarecrow
                 return;
             }
             base.OnInteract(byEntity, itemslot, hitPosition, mode, ref handled);
+        }
+
+        public override void OnReceivedClientPacket(IServerPlayer player, int packetid, byte[] data, ref EnumHandling handled)
+        {
+            if (entity is EntityScarecrow scarecrow && !scarecrow.CanManage(player))
+            {
+                handled = EnumHandling.PreventSubsequent;
+                return;
+            }
+            base.OnReceivedClientPacket(player, packetid, data, ref handled);
         }
 
         public override WorldInteraction[] GetInteractionHelp(IClientWorldAccessor world, EntitySelection selection,

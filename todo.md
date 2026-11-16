@@ -13,8 +13,19 @@ Remaining items are proposals for discussion, not approved implementation work.
    Begin the section with a blank line and show fixed text in bold using the radius
    ring's color; keep numbers and names normally formatted.
    Implemented; automated checks and in-game validation passed.
-2. [ ] **Keep equipment when picking up and relocating a scarecrow.** Store tools,
+2. [x] **Keep equipment when picking up and relocating a scarecrow.** Store tools,
    lanterns and wind chimes in the returned item and restore their slots on placement.
+   Only empty scarecrows stack; equipped ones use individual slots, filling the
+   hotbar before the backpack. Damage drops attachments separately and Shift + an
+   empty hand removes individual attachments as before. These pickup and removal
+   rules also apply in Creative mode; no custom middle-click feature is needed.
+   Implemented; automated checks and in-game validation passed.
+   Server interaction protection uses the owner UID plus claim access for pickup,
+   attaching and removing equipment. Legacy ownerless entities retain claim-based
+   access. The tooltip shows the owner with a bold light-blue label and normal name.
+   Packed item tooltips list stored equipment in left-arm, right-arm, lantern and
+   foot order; the little scarecrow lists only its two existing slots. All labels
+   are localized, and empty slots are identified explicitly.
 3. [ ] **Give tools distinct benefits.** Consider small natural-spawn radius bonuses
    or improved durability, with a clear rule for combining equipment effects.
 4. [ ] **Make attached wind chime audio respond to the environment.** Consider

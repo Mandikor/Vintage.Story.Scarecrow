@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "الأرانب البرية",
 	"scarecrow:tooltip-animal-raccoon": "حيوانات الراكون",
 	"scarecrow:tooltip-code-prefix": "الرموز التي تبدأ بـ {0}",
-	"scarecrow:tooltip-list-separator": "، "
+	"scarecrow:tooltip-list-separator": "، ",
+
+	"scarecrow:tooltip-owner": "المالك: {0}",
+	"scarecrow:tooltip-owner-none": "بلا مالك",
+	"scarecrow:tooltip-owner-unknown": "غير معروف",
+
+	"scarecrow:tooltip-inventory": "المخزون:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "الذراع اليسرى: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "الذراع اليمنى: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "خانة الفانوس: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "خانة القدم: {0}",
+	"scarecrow:tooltip-inventory-empty": "فارغ",
+	"scarecrow:tooltip-inventory-unavailable": "عنصر غير متاح"
 }

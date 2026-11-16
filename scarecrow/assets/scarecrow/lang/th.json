@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "กระต่ายป่า",
 	"scarecrow:tooltip-animal-raccoon": "แร็กคูน",
 	"scarecrow:tooltip-code-prefix": "รหัสที่ขึ้นต้นด้วย {0}",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "เจ้าของ: {0}",
+	"scarecrow:tooltip-owner-none": "ไม่มีเจ้าของ",
+	"scarecrow:tooltip-owner-unknown": "ไม่ทราบ",
+
+	"scarecrow:tooltip-inventory": "ช่องเก็บของ:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "แขนซ้าย: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "แขนขวา: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "ช่องโคมไฟ: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "ช่องที่เท้า: {0}",
+	"scarecrow:tooltip-inventory-empty": "ว่าง",
+	"scarecrow:tooltip-inventory-unavailable": "ไอเทมไม่พร้อมใช้งาน"
 }

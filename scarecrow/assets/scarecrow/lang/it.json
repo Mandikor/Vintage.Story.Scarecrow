@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "Lepri",
 	"scarecrow:tooltip-animal-raccoon": "Procioni",
 	"scarecrow:tooltip-code-prefix": "Codici che iniziano con {0}",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "Proprietario: {0}",
+	"scarecrow:tooltip-owner-none": "Nessun proprietario",
+	"scarecrow:tooltip-owner-unknown": "Sconosciuto",
+
+	"scarecrow:tooltip-inventory": "Inventario:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "Braccio sinistro: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "Braccio destro: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Scomparto lanterna: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Scomparto ai piedi: {0}",
+	"scarecrow:tooltip-inventory-empty": "Vuoto",
+	"scarecrow:tooltip-inventory-unavailable": "Oggetto non disponibile"
 }

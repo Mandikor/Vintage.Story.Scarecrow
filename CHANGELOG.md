@@ -5,6 +5,34 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Ownership and server interaction protection
+
+- Applied the same owner-UID and claim-access checks to targeted pickup, attaching
+  equipment and removing equipment, including attachment client packets. Denied
+  interactions no longer fall through to vanilla attachment handling. Existing
+  ownerless scarecrows retain claim-based access; damage handling is unchanged.
+- Added an owner tooltip line with a bold light-blue label and a normally formatted
+  player name. Names are synchronized by the server and resolved for offline owners
+  from saved player data. Added owner, ownerless and unknown-name text to all 33
+  language files. Existing spawn-protection labels retain the radius ring's color.
+
+### Equipment preservation when relocating
+
+- Added a stored-equipment section to the inventory tooltip of packed scarecrow
+  items: left arm, right arm, lantern slot and foot slot, in that order. Little
+  scarecrows list only their existing lantern and foot slots. Uses native item/mod
+  names, marks empty slots and safely handles unavailable items without changing
+  saved equipment. Added all labels to the 33 existing language files.
+
+- Targeted pickup with Ctrl + an empty hand now packs attached equipment into the
+  scarecrow item. Placement restores attachments to their original slots with
+  durability and custom item attributes intact, including supported mod equipment.
+- Only empty scarecrows can stack. Equipped scarecrows occupy individual slots,
+  even with identical equipment. Pickup fills the hotbar before the backpack;
+  if both are full, the packed item drops at the original position.
+- Separated targeted pickup from death through damage: damage still drops equipped
+  items separately. Shift + empty-hand removal of individual attachments is unchanged.
+
 ### More Lanterns compatibility
 
 - Added optional support for More Lanterns by Ape (`apelanterns` 1.4.4): all eleven

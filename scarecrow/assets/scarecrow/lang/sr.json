@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "Зечеви",
 	"scarecrow:tooltip-animal-raccoon": "Ракуни",
 	"scarecrow:tooltip-code-prefix": "Кодови који почињу са {0}",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "Власник: {0}",
+	"scarecrow:tooltip-owner-none": "Без власника",
+	"scarecrow:tooltip-owner-unknown": "Непознат",
+
+	"scarecrow:tooltip-inventory": "Инвентар:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "Лева рука: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "Десна рука: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Место за фењер: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Место код ногу: {0}",
+	"scarecrow:tooltip-inventory-empty": "Празно",
+	"scarecrow:tooltip-inventory-unavailable": "Недоступан предмет"
 }

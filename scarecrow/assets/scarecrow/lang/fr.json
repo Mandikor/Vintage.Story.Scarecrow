@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "Lièvres",
 	"scarecrow:tooltip-animal-raccoon": "Ratons laveurs",
 	"scarecrow:tooltip-code-prefix": "Codes commençant par {0}",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "Propriétaire : {0}",
+	"scarecrow:tooltip-owner-none": "Aucun propriétaire",
+	"scarecrow:tooltip-owner-unknown": "Inconnu",
+
+	"scarecrow:tooltip-inventory": "Inventaire :",
+	"scarecrow:tooltip-inventory-sc-leftarm": "Bras gauche : {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "Bras droit : {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Emplacement de lanterne : {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Emplacement aux pieds : {0}",
+	"scarecrow:tooltip-inventory-empty": "Vide",
+	"scarecrow:tooltip-inventory-unavailable": "Objet indisponible"
 }

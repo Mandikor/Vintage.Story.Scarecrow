@@ -54,5 +54,17 @@
 	"scarecrow:tooltip-animal-hare": "Hares",
 	"scarecrow:tooltip-animal-raccoon": "Raccoons",
 	"scarecrow:tooltip-code-prefix": "Codes starting with {0}",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "Owner: {0}",
+	"scarecrow:tooltip-owner-none": "No owner",
+	"scarecrow:tooltip-owner-unknown": "Unknown",
+
+	"scarecrow:tooltip-inventory": "Inventory:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "Left arm: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "Right arm: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Lantern slot: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Foot slot: {0}",
+	"scarecrow:tooltip-inventory-empty": "Empty",
+	"scarecrow:tooltip-inventory-unavailable": "Unavailable item"
 }

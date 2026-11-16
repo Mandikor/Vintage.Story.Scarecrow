@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "Harer",
 	"scarecrow:tooltip-animal-raccoon": "Vaskebjørner",
 	"scarecrow:tooltip-code-prefix": "Koder som begynner med {0}",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "Eier: {0}",
+	"scarecrow:tooltip-owner-none": "Ingen eier",
+	"scarecrow:tooltip-owner-unknown": "Ukjent",
+
+	"scarecrow:tooltip-inventory": "Inventar:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "Venstre arm: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "Høyre arm: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Lyktplass: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Plass ved føttene: {0}",
+	"scarecrow:tooltip-inventory-empty": "Tom",
+	"scarecrow:tooltip-inventory-unavailable": "Utilgjengelig gjenstand"
 }

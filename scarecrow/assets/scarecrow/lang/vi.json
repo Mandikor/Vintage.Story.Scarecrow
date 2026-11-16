@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "Thỏ rừng",
 	"scarecrow:tooltip-animal-raccoon": "Gấu mèo",
 	"scarecrow:tooltip-code-prefix": "Mã bắt đầu bằng {0}",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "Chủ sở hữu: {0}",
+	"scarecrow:tooltip-owner-none": "Không có chủ sở hữu",
+	"scarecrow:tooltip-owner-unknown": "Không rõ",
+
+	"scarecrow:tooltip-inventory": "Túi đồ:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "Tay trái: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "Tay phải: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Ô đèn lồng: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Ô ở chân: {0}",
+	"scarecrow:tooltip-inventory-empty": "Trống",
+	"scarecrow:tooltip-inventory-unavailable": "Vật phẩm không khả dụng"
 }

@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "Jänikset",
 	"scarecrow:tooltip-animal-raccoon": "Pesukarhut",
 	"scarecrow:tooltip-code-prefix": "Koodit, joiden alku on {0}",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "Omistaja: {0}",
+	"scarecrow:tooltip-owner-none": "Ei omistajaa",
+	"scarecrow:tooltip-owner-unknown": "Tuntematon",
+
+	"scarecrow:tooltip-inventory": "Tavaraluettelo:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "Vasen käsivarsi: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "Oikea käsivarsi: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Lyhtypaikka: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Paikka jalkojen juuressa: {0}",
+	"scarecrow:tooltip-inventory-empty": "Tyhjä",
+	"scarecrow:tooltip-inventory-unavailable": "Esine ei ole saatavilla"
 }

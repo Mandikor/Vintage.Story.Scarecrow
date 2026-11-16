@@ -25,6 +25,7 @@ namespace Scarecrow
         private const int DefaultScareRadius = 8;
         private const string DefaultPickupItemCode = "game:strawdummy";
         private const string SpawnPrefixesAttribute = "scarecrowSpawnPrefixes";
+        private const string OwnerNameAttribute = "scarecrowOwnerName";
 
         private ICoreServerAPI sapi;
         private ScarecrowConfig config;
@@ -47,6 +48,7 @@ namespace Scarecrow
             if (api.Side == EnumAppSide.Server)
             {
                 sapi = api as ICoreServerAPI;
+                SynchronizeOwnerName();
                 SynchronizeProtectionSettings();
                 AttachSpawnHooks();
             }
@@ -64,12 +66,45 @@ namespace Scarecrow
                 config?.ScaredAnimalPrefixes ?? Array.Empty<string>());
         }
 
+        public void AssignOwner(IPlayer player)
+        {
+            WatchedAttributes.SetString("ownerUid", player.PlayerUID);
+            if (!string.IsNullOrEmpty(player.PlayerName))
+                WatchedAttributes.SetString(OwnerNameAttribute, player.PlayerName);
+        }
+
+        private void SynchronizeOwnerName()
+        {
+            string uid = WatchedAttributes.GetString("ownerUid");
+            if (string.IsNullOrEmpty(uid))
+            {
+                WatchedAttributes.RemoveAttribute(OwnerNameAttribute);
+                return;
+            }
+            string name = World.PlayerByUid(uid)?.PlayerName
+                ?? sapi?.PlayerData.GetPlayerDataByUid(uid)?.LastKnownPlayername;
+            if (!string.IsNullOrEmpty(name)) WatchedAttributes.SetString(OwnerNameAttribute, name);
+        }
+
+        internal bool CanManage(IPlayer player)
+        {
+            if (!Alive || player == null) return false;
+            string ownerUid = WatchedAttributes.GetString("ownerUid");
+            return (string.IsNullOrEmpty(ownerUid) || ownerUid == player.PlayerUID)
+                && World.Claims.TryAccess(player, Pos.AsBlockPos, EnumBlockAccessFlags.Use);
+        }
+
         public override string GetInfoText()
         {
             StringBuilder text = new(base.GetInfoText());
             if (!Alive) return text.ToString();
             if (text.Length > 0 && text[text.Length - 1] != '\n') text.AppendLine();
             text.AppendLine();
+
+            string owner = string.IsNullOrEmpty(WatchedAttributes.GetString("ownerUid"))
+                ? Lang.Get("scarecrow:tooltip-owner-none")
+                : WatchedAttributes.GetString(OwnerNameAttribute, Lang.Get("scarecrow:tooltip-owner-unknown"));
+            text.AppendLine(FormatTooltipLine(0xADD8E6, "scarecrow:tooltip-owner", EscapeTooltipText(owner)));
 
             // The server owns spawn protection. Never substitute a client's local config.
             string[] prefixes = WatchedAttributes.GetStringArray(SpawnPrefixesAttribute, null);
@@ -121,8 +156,11 @@ namespace Scarecrow
             .Replace("<", "&lt;").Replace(">", "&gt;");
 
         private static string FormatProtectionLine(string key, params string[] values)
+            => FormatTooltipLine(ScarecrowRadiusOverlay.RingColorRgb, key, values);
+
+        private static string FormatTooltipLine(int color, string key, params string[] values)
         {
-            string begin = "<font color=\"#" + ScarecrowRadiusOverlay.RingColorRgb.ToString("X6", CultureInfo.InvariantCulture) + "\"><strong>";
+            string begin = "<font color=\"#" + color.ToString("X6", CultureInfo.InvariantCulture) + "\"><strong>";
             const string end = "</strong></font>";
             // Only translated fixed text is styled; substituted numbers and names keep normal formatting.
             return begin + Lang.Get(key, values.Select(value => end + value + begin).ToArray()) + end;
@@ -203,16 +241,16 @@ namespace Scarecrow
 
         public override void OnInteract(EntityAgent byEntity, ItemSlot slot, Vec3d hitPosition, EnumInteractMode mode)
         {
-            if (!Api.World.Claims.TryAccess(((EntityPlayer)byEntity).Player, Pos.AsBlockPos, EnumBlockAccessFlags.Use) || !Alive || World.Side == EnumAppSide.Client || mode == 0)
+            // A denied interaction must never reach attachment handling in the base class.
+            if (mode == EnumInteractMode.Interact && !CanManage((byEntity as EntityPlayer)?.Player)) return;
+
+            if (!Alive || World.Side == EnumAppSide.Client || mode != EnumInteractMode.Interact)
             {
                 base.OnInteract(byEntity, slot, hitPosition, mode);
                 return;
             }
 
-            string owneruid = WatchedAttributes.GetString("ownerUid", null);
-            string agentUid = (byEntity as EntityPlayer)?.PlayerUID;
-
-            if (agentUid != null && (owneruid == null || owneruid == "" || owneruid == agentUid) && byEntity.Controls.CtrlKey && byEntity.RightHandItemSlot.Empty)
+            if (byEntity.Controls.CtrlKey && byEntity.RightHandItemSlot.Empty)
             {
                 Item item = byEntity.World.GetItem(new AssetLocation(pickupItemCode));
                 if (item == null)
@@ -222,13 +260,14 @@ namespace Scarecrow
                     return;
                 }
 
-                ItemStack itemStack = new(item);
+                ItemStack itemStack = CreatePickupStack(item);
 
-                if (!byEntity.TryGiveItemStack(itemStack))
+                if (!ScarecrowPickup.TryGive(((EntityPlayer)byEntity).Player, itemStack))
                 {
                     byEntity.World.SpawnItemEntity(itemStack, Pos.XYZ);
                 }
 
+                GetBehavior<ScarecrowAttachments>()?.ClearEquipmentAfterPickup();
                 DetachSpawnHooks();
 
                 byEntity.World.Logger.Audit("{0} Took 1x {1} at {2}.",
@@ -237,11 +276,18 @@ namespace Scarecrow
                     Pos.AsBlockPos
                 );
 
-                Die();
+                Die(EnumDespawnReason.PickedUp);
                 return;
             }
 
             base.OnInteract(byEntity, slot, hitPosition, mode);
+        }
+
+        private ItemStack CreatePickupStack(Item item)
+        {
+            ItemStack stack = new(item);
+            GetBehavior<ScarecrowAttachments>()?.StoreEquipment(stack);
+            return stack;
         }
 
         public override WorldInteraction[] GetInteractionHelp(IClientWorldAccessor world, EntitySelection es, IClientPlayer player)

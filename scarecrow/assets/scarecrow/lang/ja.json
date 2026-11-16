@@ -58,5 +58,17 @@
 	"scarecrow:tooltip-animal-hare": "ノウサギ",
 	"scarecrow:tooltip-animal-raccoon": "アライグマ",
 	"scarecrow:tooltip-code-prefix": "{0}で始まるコード",
-	"scarecrow:tooltip-list-separator": "、"
+	"scarecrow:tooltip-list-separator": "、",
+
+	"scarecrow:tooltip-owner": "所有者: {0}",
+	"scarecrow:tooltip-owner-none": "所有者なし",
+	"scarecrow:tooltip-owner-unknown": "不明",
+
+	"scarecrow:tooltip-inventory": "インベントリ：",
+	"scarecrow:tooltip-inventory-sc-leftarm": "左腕：{0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "右腕：{0}",
+	"scarecrow:tooltip-inventory-sc-neck": "ランタンスロット：{0}",
+	"scarecrow:tooltip-inventory-sc-foot": "足元スロット：{0}",
+	"scarecrow:tooltip-inventory-empty": "空",
+	"scarecrow:tooltip-inventory-unavailable": "利用できないアイテム"
 }

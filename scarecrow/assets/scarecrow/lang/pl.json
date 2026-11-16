@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "Zające",
 	"scarecrow:tooltip-animal-raccoon": "Szopy",
 	"scarecrow:tooltip-code-prefix": "Kody zaczynające się od {0}",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "Właściciel: {0}",
+	"scarecrow:tooltip-owner-none": "Brak właściciela",
+	"scarecrow:tooltip-owner-unknown": "Nieznany",
+
+	"scarecrow:tooltip-inventory": "Ekwipunek:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "Lewe ramię: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "Prawe ramię: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Miejsce na latarnię: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Miejsce przy stopach: {0}",
+	"scarecrow:tooltip-inventory-empty": "Puste",
+	"scarecrow:tooltip-inventory-unavailable": "Niedostępny przedmiot"
 }

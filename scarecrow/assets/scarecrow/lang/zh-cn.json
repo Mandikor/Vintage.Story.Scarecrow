@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "野兔",
 	"scarecrow:tooltip-animal-raccoon": "浣熊",
 	"scarecrow:tooltip-code-prefix": "以{0}开头的代码",
-	"scarecrow:tooltip-list-separator": "、"
+	"scarecrow:tooltip-list-separator": "、",
+
+	"scarecrow:tooltip-owner": "所有者：{0}",
+	"scarecrow:tooltip-owner-none": "无所有者",
+	"scarecrow:tooltip-owner-unknown": "未知",
+
+	"scarecrow:tooltip-inventory": "物品栏：",
+	"scarecrow:tooltip-inventory-sc-leftarm": "左臂：{0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "右臂：{0}",
+	"scarecrow:tooltip-inventory-sc-neck": "灯笼槽位：{0}",
+	"scarecrow:tooltip-inventory-sc-foot": "脚部槽位：{0}",
+	"scarecrow:tooltip-inventory-empty": "空",
+	"scarecrow:tooltip-inventory-unavailable": "物品不可用"
 }

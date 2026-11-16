@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "Nyulak",
 	"scarecrow:tooltip-animal-raccoon": "Mosómedvék",
 	"scarecrow:tooltip-code-prefix": "{0} kezdetű kódok",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "Tulajdonos: {0}",
+	"scarecrow:tooltip-owner-none": "Nincs tulajdonos",
+	"scarecrow:tooltip-owner-unknown": "Ismeretlen",
+
+	"scarecrow:tooltip-inventory": "Leltár:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "Bal kar: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "Jobb kar: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Lámpás helye: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Lábnál lévő hely: {0}",
+	"scarecrow:tooltip-inventory-empty": "Üres",
+	"scarecrow:tooltip-inventory-unavailable": "Nem elérhető tárgy"
 }

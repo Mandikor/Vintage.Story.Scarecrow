@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "Harar",
 	"scarecrow:tooltip-animal-raccoon": "Tvättbjörnar",
 	"scarecrow:tooltip-code-prefix": "Koder som börjar med {0}",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "Ägare: {0}",
+	"scarecrow:tooltip-owner-none": "Ingen ägare",
+	"scarecrow:tooltip-owner-unknown": "Okänd",
+
+	"scarecrow:tooltip-inventory": "Inventarie:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "Vänster arm: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "Höger arm: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Lyktplats: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Plats vid fötterna: {0}",
+	"scarecrow:tooltip-inventory-empty": "Tom",
+	"scarecrow:tooltip-inventory-unavailable": "Otillgängligt föremål"
 }

@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "Leporoj",
 	"scarecrow:tooltip-animal-raccoon": "Lavursoj",
 	"scarecrow:tooltip-code-prefix": "Kodoj komenciĝantaj per {0}",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "Posedanto: {0}",
+	"scarecrow:tooltip-owner-none": "Sen posedanto",
+	"scarecrow:tooltip-owner-unknown": "Nekonata",
+
+	"scarecrow:tooltip-inventory": "Inventaro:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "Maldekstra brako: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "Dekstra brako: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Lanterna loko: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Loko ĉe la piedoj: {0}",
+	"scarecrow:tooltip-inventory-empty": "Malplena",
+	"scarecrow:tooltip-inventory-unavailable": "Neatingebla objekto"
 }

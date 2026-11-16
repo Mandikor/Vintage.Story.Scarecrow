@@ -1,7 +1,9 @@
 ﻿using System.Linq;
+using System.Text;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
+using Vintagestory.API.Config;
 using Vintagestory.API.MathTools;
 using Vintagestory.API.Util;
 
@@ -14,6 +16,10 @@ namespace Scarecrow
     /// </summary>
     public abstract class ItemScarecrowBase : Item
     {
+        private static readonly string[] EquipmentSlotOrder = { "sc-leftarm", "sc-rightarm", "sc-neck", "sc-foot" };
+
+        protected virtual bool HasArmSlots => true;
+
         /// <summary>Entity spawned when this item is placed.</summary>
         protected abstract string EntityCode { get; }
 
@@ -54,7 +60,7 @@ namespace Scarecrow
             entity.Pos.Y = targetPos.Y;
             entity.Pos.Z = targetPos.Z + 0.5;
             entity.Pos.Yaw = byEntity.Pos.Yaw + GameMath.PIHALF;
-            entity.WatchedAttributes.SetString("ownerUid", player.PlayerUID);
+            if (entity is EntityScarecrow scarecrow) scarecrow.AssignOwner(player);
 
             // The entity has not been initialized yet, so use the type's spawn box.
             Cuboidf collisionBox = entityType.SpawnCollisionBox;
@@ -77,6 +83,10 @@ namespace Scarecrow
             }
 
             // Only consume the item once the entity was created and the space is clear.
+            var equipment = slot.Itemstack.Attributes.GetTreeAttribute(ScarecrowAttachments.StoredEquipmentAttribute);
+            if (equipment != null)
+                entity.Attributes[ScarecrowAttachments.StoredEquipmentAttribute] = equipment.Clone();
+
             if (player.WorldData.CurrentGameMode != EnumGameMode.Creative)
             {
                 slot.TakeOut(1);
@@ -87,6 +97,34 @@ namespace Scarecrow
             byEntity.World.SpawnEntity(entity);
 
             handling = EnumHandHandling.PreventDefaultAction;
+        }
+
+        public override int GetMergableQuantity(ItemStack sinkStack, ItemStack sourceStack, EnumMergePriority priority)
+        {
+            if (ScarecrowAttachments.HasStoredEquipment(sinkStack) || ScarecrowAttachments.HasStoredEquipment(sourceStack))
+                return 0;
+            return base.GetMergableQuantity(sinkStack, sourceStack, priority);
+        }
+
+        public override void GetHeldItemInfo(ItemSlot inSlot, StringBuilder dsc, IWorldAccessor world, bool withDebugInfo)
+        {
+            base.GetHeldItemInfo(inSlot, dsc, world, withDebugInfo);
+            if (!ScarecrowAttachments.HasStoredEquipment(inSlot.Itemstack)) return;
+
+            var equipment = inSlot.Itemstack.Attributes.GetTreeAttribute(ScarecrowAttachments.StoredEquipmentAttribute);
+            if (dsc.Length > 0 && dsc[dsc.Length - 1] != '\n') dsc.AppendLine();
+            dsc.AppendLine();
+            dsc.AppendLine("<strong>" + Lang.Get("scarecrow:tooltip-inventory") + "</strong>");
+            foreach (string code in EquipmentSlotOrder)
+            {
+                if (!HasArmSlots && (code == "sc-leftarm" || code == "sc-rightarm")) continue;
+                // Tooltip rendering must not resolve or otherwise modify the stored inventory itself.
+                ItemStack stack = equipment.GetItemstack(code)?.Clone();
+                string name = stack == null ? Lang.Get("scarecrow:tooltip-inventory-empty")
+                    : stack.ResolveBlockOrItem(world) ? stack.GetName() : Lang.Get("scarecrow:tooltip-inventory-unavailable");
+                name = name.Replace("&", "&amp;").Replace("<", "&lt;").Replace(">", "&gt;");
+                dsc.AppendLine(Lang.Get("scarecrow:tooltip-inventory-" + code, name));
+            }
         }
 
         public override WorldInteraction[] GetHeldInteractionHelp(ItemSlot inSlot)

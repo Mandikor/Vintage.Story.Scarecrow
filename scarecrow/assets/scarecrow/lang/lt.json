@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "Kiškiai",
 	"scarecrow:tooltip-animal-raccoon": "Meškėnai",
 	"scarecrow:tooltip-code-prefix": "Kodai, prasidedantys {0}",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "Savininkas: {0}",
+	"scarecrow:tooltip-owner-none": "Be savininko",
+	"scarecrow:tooltip-owner-unknown": "Nežinomas",
+
+	"scarecrow:tooltip-inventory": "Inventorius:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "Kairė ranka: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "Dešinė ranka: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Žibinto vieta: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Vieta prie kojų: {0}",
+	"scarecrow:tooltip-inventory-empty": "Tuščia",
+	"scarecrow:tooltip-inventory-unavailable": "Neprieinamas daiktas"
 }

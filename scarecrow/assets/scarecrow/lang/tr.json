@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "Yaban tavşanları",
 	"scarecrow:tooltip-animal-raccoon": "Rakunlar",
 	"scarecrow:tooltip-code-prefix": "{0} ile başlayan kodlar",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "Sahibi: {0}",
+	"scarecrow:tooltip-owner-none": "Sahipsiz",
+	"scarecrow:tooltip-owner-unknown": "Bilinmiyor",
+
+	"scarecrow:tooltip-inventory": "Envanter:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "Sol kol: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "Sağ kol: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Fener yuvası: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Ayak yuvası: {0}",
+	"scarecrow:tooltip-inventory-empty": "Boş",
+	"scarecrow:tooltip-inventory-unavailable": "Kullanılamayan eşya"
 }

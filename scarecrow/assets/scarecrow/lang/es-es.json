@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "Liebres",
 	"scarecrow:tooltip-animal-raccoon": "Mapaches",
 	"scarecrow:tooltip-code-prefix": "Códigos que empiezan por {0}",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "Propietario: {0}",
+	"scarecrow:tooltip-owner-none": "Sin propietario",
+	"scarecrow:tooltip-owner-unknown": "Desconocido",
+
+	"scarecrow:tooltip-inventory": "Inventario:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "Brazo izquierdo: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "Brazo derecho: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Espacio para farol: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Espacio a los pies: {0}",
+	"scarecrow:tooltip-inventory-empty": "Vacío",
+	"scarecrow:tooltip-inventory-unavailable": "Objeto no disponible"
 }

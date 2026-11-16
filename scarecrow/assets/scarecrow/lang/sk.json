@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "Zajace",
 	"scarecrow:tooltip-animal-raccoon": "Medvedíky čistotné",
 	"scarecrow:tooltip-code-prefix": "Kódy začínajúce na {0}",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "Vlastník: {0}",
+	"scarecrow:tooltip-owner-none": "Bez vlastníka",
+	"scarecrow:tooltip-owner-unknown": "Neznámy",
+
+	"scarecrow:tooltip-inventory": "Inventár:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "Ľavá ruka: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "Pravá ruka: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Slot na lampáš: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Slot pri nohách: {0}",
+	"scarecrow:tooltip-inventory-empty": "Prázdne",
+	"scarecrow:tooltip-inventory-unavailable": "Nedostupný predmet"
 }

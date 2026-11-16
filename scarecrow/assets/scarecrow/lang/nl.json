@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "Hazen",
 	"scarecrow:tooltip-animal-raccoon": "Wasberen",
 	"scarecrow:tooltip-code-prefix": "Codes die beginnen met {0}",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "Eigenaar: {0}",
+	"scarecrow:tooltip-owner-none": "Geen eigenaar",
+	"scarecrow:tooltip-owner-unknown": "Onbekend",
+
+	"scarecrow:tooltip-inventory": "Inventaris:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "Linkerarm: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "Rechterarm: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Lantaarnvak: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Vak bij de voeten: {0}",
+	"scarecrow:tooltip-inventory-empty": "Leeg",
+	"scarecrow:tooltip-inventory-unavailable": "Niet beschikbaar voorwerp"
 }

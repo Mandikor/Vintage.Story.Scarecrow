@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "Lebres",
 	"scarecrow:tooltip-animal-raccoon": "Guaxinins",
 	"scarecrow:tooltip-code-prefix": "Códigos que começam com {0}",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "Proprietário: {0}",
+	"scarecrow:tooltip-owner-none": "Sem proprietário",
+	"scarecrow:tooltip-owner-unknown": "Desconhecido",
+
+	"scarecrow:tooltip-inventory": "Inventário:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "Braço esquerdo: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "Braço direito: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Espaço da lanterna: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Espaço aos pés: {0}",
+	"scarecrow:tooltip-inventory-empty": "Vazio",
+	"scarecrow:tooltip-inventory-unavailable": "Item indisponível"
 }

@@ -56,5 +56,17 @@
 	"scarecrow:tooltip-animal-hare": "Зайцы",
 	"scarecrow:tooltip-animal-raccoon": "Еноты",
 	"scarecrow:tooltip-code-prefix": "Коды, начинающиеся с {0}",
-	"scarecrow:tooltip-list-separator": ", "
+	"scarecrow:tooltip-list-separator": ", ",
+
+	"scarecrow:tooltip-owner": "Владелец: {0}",
+	"scarecrow:tooltip-owner-none": "Без владельца",
+	"scarecrow:tooltip-owner-unknown": "Неизвестен",
+
+	"scarecrow:tooltip-inventory": "Инвентарь:",
+	"scarecrow:tooltip-inventory-sc-leftarm": "Левая рука: {0}",
+	"scarecrow:tooltip-inventory-sc-rightarm": "Правая рука: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Слот фонаря: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Слот у ног: {0}",
+	"scarecrow:tooltip-inventory-empty": "Пусто",
+	"scarecrow:tooltip-inventory-unavailable": "Недоступный предмет"
 }
