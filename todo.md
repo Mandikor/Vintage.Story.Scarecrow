@@ -28,9 +28,12 @@ Remaining items are proposals for discussion, not approved implementation work.
    are localized, and empty slots are identified explicitly.
 3. [ ] **Give tools distinct benefits.** Consider small natural-spawn radius bonuses
    or improved durability, with a clear rule for combining equipment effects.
-4. [ ] **Make attached wind chime audio respond to the environment.** Consider
-   silence in calm weather, occasional sounds in light wind, more frequent sounds
-   in stronger wind, and reduced volume under cover.
+4. [x] **Make attached wind chime audio respond to the environment.** Silent in
+   calm weather; original recordings play once with longer pauses in light wind
+   and shorter pauses in stronger wind. Cover at the scarecrow or listener reduces
+   volume using Wind Chimes' existing indoor settings. The outdoor volume boost is
+   now 50%; optional-mod gating, animation and spawn bonus are preserved.
+   Implemented; automated checks and in-game validation passed.
 5. [ ] **Add visual customization.** Explore additional hats, heads, clothing and
    wood variants suitable for gardens and farms.
 6. [ ] **Add optional wear and repair.** Animal attacks could cause visible damage;

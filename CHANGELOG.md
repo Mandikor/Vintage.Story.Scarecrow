@@ -5,6 +5,22 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Environment-dependent wind chime audio
+
+- Attached wind chimes now remain silent in calm weather and play their original
+  recordings once with randomized pauses instead of continuously looping. Light
+  wind creates longer pauses; strong wind shortens them, including existing pauses.
+- Added cover-based sound attenuation for the scarecrow and listener, respecting
+  Wind Chimes' `WindChimeIndoorVolume` and `DisableIndoorMuffle` settings. Active
+  sounds update their volume as cover changes. Increased the outdoor volume boost
+  from 10% to 50% of the configured held-item volume, capped at full volume.
+  Hearing range, ambient channel and mute behavior are preserved.
+- Kept environmental audio client-only and optional, with no weather queries when
+  Wind Chimes is absent or no chime is attached. Weather queries and spatial sound
+  positions preserve dimensions. Rendering, wind animation and spawn protection
+  are unchanged.
+- In-game testing confirmed environmental playback and the adjusted volume.
+
 ### Ownership and server interaction protection
 
 - Applied the same owner-UID and claim-access checks to targeted pickup, attaching

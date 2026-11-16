@@ -238,8 +238,20 @@ They play their original material sounds spatially from
 the scarecrow. Each arm can hold a different chime. Sounds follow the scarecrow
 and stop when the chime is removed, the scarecrow dies or despawns, or the listener
 leaves hearing range. They use the game's ambient sound channel and Wind Chimes'
-held-volume and hearing-distance settings, with a 10% volume increase for attached
+held-volume and hearing-distance settings, with a 50% volume increase for attached
 wind chimes. Muting remains effective.
+
+Attached wind chimes are silent in calm weather. When wind picks up, each arm plays
+its original recording once, followed by a randomized pause. Light wind produces
+longer pauses; stronger wind shortens them, including pauses already in progress.
+The pause ranges from roughly 8–20 seconds in very light wind to 0.5–3 seconds in
+strong wind, in addition to the recording's duration.
+
+Sounds become quieter when the scarecrow or listener is under cover. This uses
+Wind Chimes' `WindChimeIndoorVolume` setting (default: 10% of outdoor volume) and
+respects `DisableIndoorMuffle`. Scarecrow only reads these settings; it does not
+change the Wind Chimes configuration file. Wind-dependent playback does not change
+the wind animation or the six-block protection bonus.
 
 An attached wind chime adds **6 blocks** to natural-spawn protection, increasing
 the full-size scarecrow's radius from **16 to 22 blocks**. Only the strongest
