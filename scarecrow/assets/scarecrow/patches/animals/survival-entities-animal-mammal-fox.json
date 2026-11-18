@@ -5,12 +5,13 @@
     "file": "game:entities/animal/mammal/fox-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "scarecrow" ],
       "priority": 2.1,
       "movespeed": 0.03,
       "animationSpeed": 2.5,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run"
     },
     "side": "server"
@@ -21,12 +22,13 @@
     "file": "game:entities/animal/mammal/fox-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "little-scarecrow" ],
       "priority": 2.1,
       "movespeed": 0.03,
       "animationSpeed": 2.5,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run"
     },
     "side": "server"
@@ -37,12 +39,13 @@
     "file": "game:entities/animal/mammal/fox-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "strawdummy" ],
       "priority": 2.1,
       "movespeed": 0.03,
       "animationSpeed": 2.5,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run"
     },
     "side": "server"
@@ -53,12 +56,13 @@
     "file": "game:entities/animal/mammal/fox-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "scarecrow" ],
       "priority": 2.1,
       "movespeed": 0.045,
       "animationSpeed": 2.5,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run"
     },
     "side": "server"
@@ -69,12 +73,13 @@
     "file": "game:entities/animal/mammal/fox-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "little-scarecrow" ],
       "priority": 2.1,
       "movespeed": 0.045,
       "animationSpeed": 2.5,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run"
     },
     "side": "server"
@@ -85,12 +90,13 @@
     "file": "game:entities/animal/mammal/fox-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "strawdummy" ],
       "priority": 2.1,
       "movespeed": 0.045,
       "animationSpeed": 2.5,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run"
     },
     "side": "server"

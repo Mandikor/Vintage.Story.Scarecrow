@@ -6,12 +6,13 @@
     "file": "dinornithidae:entities/animal/bird/emeidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "scarecrow"
       ],
       "priority": 5.5,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "movespeedByType": {
         "emeidae-adult-*-anomalopteryxdidiformis": 0.04,
@@ -45,12 +46,13 @@
     "file": "dinornithidae:entities/animal/bird/emeidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "little-scarecrow"
       ],
       "priority": 5.5,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "movespeedByType": {
         "emeidae-adult-*-anomalopteryxdidiformis": 0.04,
@@ -84,12 +86,13 @@
     "file": "dinornithidae:entities/animal/bird/emeidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "strawdummy"
       ],
       "priority": 5.5,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "movespeedByType": {
         "emeidae-adult-*-anomalopteryxdidiformis": 0.04,
@@ -123,12 +126,13 @@
     "file": "dinornithidae:entities/animal/bird/emeidae-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "scarecrow"
       ],
       "priority": 5.5,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "movespeedByType": {
         "emeidae-baby-*": 0.0225
@@ -146,12 +150,13 @@
     "file": "dinornithidae:entities/animal/bird/emeidae-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "little-scarecrow"
       ],
       "priority": 5.5,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "movespeedByType": {
         "emeidae-baby-*": 0.0225
@@ -169,12 +174,13 @@
     "file": "dinornithidae:entities/animal/bird/emeidae-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "strawdummy"
       ],
       "priority": 5.5,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "movespeedByType": {
         "emeidae-baby-*": 0.0225

@@ -6,13 +6,14 @@
     "file": "elephantidae:entities/animal/mammal/elephantidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "scarecrow"
       ],
       "priority": 5.5,
       "movespeed": 0.055,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "animationSpeed": 5.0
     },
@@ -25,13 +26,14 @@
     "file": "elephantidae:entities/animal/mammal/elephantidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "little-scarecrow"
       ],
       "priority": 5.5,
       "movespeed": 0.055,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "animationSpeed": 5.0
     },
@@ -44,13 +46,14 @@
     "file": "elephantidae:entities/animal/mammal/elephantidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "strawdummy"
       ],
       "priority": 5.5,
       "movespeed": 0.055,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "animationSpeed": 5.0
     },
@@ -63,13 +66,14 @@
     "file": "elephantidae:entities/animal/mammal/elephantidae-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "scarecrow"
       ],
       "priority": 5.5,
       "movespeed": 0.034,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "animationSpeed": 6.0
     },
@@ -82,13 +86,14 @@
     "file": "elephantidae:entities/animal/mammal/elephantidae-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "little-scarecrow"
       ],
       "priority": 5.5,
       "movespeed": 0.034,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "animationSpeed": 6.0
     },
@@ -101,13 +106,14 @@
     "file": "elephantidae:entities/animal/mammal/elephantidae-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "strawdummy"
       ],
       "priority": 5.5,
       "movespeed": 0.034,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "animationSpeed": 6.0
     },

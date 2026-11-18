@@ -59,6 +59,7 @@
 		"file": "equus:entities/wildwildhorse.json",
 		"value": {
 			"code": "fleeentity",
+			"retaliateAttacks": false,
 			"whenInEmotionState": "fleeondamage",
 			"entityCodes": [ "scarecrow" ],
 			"priority": 1.8,
@@ -76,6 +77,7 @@
 		"file": "equus:entities/wildwildhorse.json",
 		"value": {
 			"code": "fleeentity",
+			"retaliateAttacks": false,
 			"enabledByType": {
 				"wildwildhorse*": true,
 				"*": false
@@ -96,6 +98,7 @@
 		"file": "equus:entities/wildwildhorse.json",
 		"value": {
 			"code": "fleeentity",
+			"retaliateAttacks": false,
 			"enabledByType": {
 				"wildhorse*": true,
 				"*": false

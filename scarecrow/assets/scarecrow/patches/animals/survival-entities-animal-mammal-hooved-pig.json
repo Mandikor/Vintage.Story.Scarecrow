@@ -5,7 +5,8 @@
     "file": "game:entities/animal/mammal/hooved/pig-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.015,
@@ -22,7 +23,8 @@
     "file": "game:entities/animal/mammal/hooved/pig-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.015,
@@ -39,7 +41,8 @@
     "file": "game:entities/animal/mammal/hooved/pig-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "strawdummy" ],
       "priority": 1.6,
       "movespeed": 0.015,
@@ -56,7 +59,8 @@
     "file": "game:entities/animal/mammal/hooved/pig-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "scarecrow" ],
       "priority": 1.9,
       "seekingRange": 16,
@@ -76,7 +80,8 @@
     "file": "game:entities/animal/mammal/hooved/pig-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.9,
       "seekingRange": 12,
@@ -96,7 +101,8 @@
     "file": "game:entities/animal/mammal/hooved/pig-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "strawdummy" ],
       "priority": 1.9,
       "seekingRange": 8,

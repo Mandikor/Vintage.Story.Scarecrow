@@ -37,6 +37,7 @@
     "file": "equusferus:entities/ferus/ferus-wild.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "whenInEmotionState": "fleeondamage",
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.8,
@@ -54,6 +55,7 @@
     "file": "equusferus:entities/ferus/ferus-wild.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "enabledByType": {
         "wildhorse*": true,
         "*": false
@@ -74,6 +76,7 @@
     "file": "equusferus:entities/ferus/ferus-wild.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "enabledByType": {
         "wildhorse*": true,
         "*": false
@@ -94,6 +97,7 @@
     "file": "equusferus:entities/ferus/ferus-wild.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "enabledByType": {
         "wildhorse*": true,
         "*": false

@@ -5,6 +5,7 @@
     "file": "game:entities/animal/mammal/hooved/deer-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "animation": "Run",
       "entityCodes": [ "scarecrow" ],
       "priority": 1.6,
@@ -17,7 +18,7 @@
       },
       "seekingRange": 16,
       "animationSpeed": 2,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "sound": "creature/hooved/generic/call*"
     },
     "side": "server"
@@ -28,6 +29,7 @@
     "file": "game:entities/animal/mammal/hooved/deer-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "animation": "Run",
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.6,
@@ -40,7 +42,7 @@
       },
       "seekingRange": 12,
       "animationSpeed": 2,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "sound": "creature/hooved/generic/call*"
     },
     "side": "server"
@@ -51,6 +53,7 @@
     "file": "game:entities/animal/mammal/hooved/deer-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "animation": "Run",
       "entityCodes": [ "strawdummy" ],
       "priority": 1.6,
@@ -63,7 +66,7 @@
       },
       "seekingRange": 8,
       "animationSpeed": 2,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "sound": "creature/hooved/generic/call*"
     },
     "side": "server"
@@ -74,6 +77,7 @@
     "file": "game:entities/animal/mammal/hooved/deer-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "animation": "Run",
       "entityCodes": [ "scarecrow" ],
       "priority": 1.6,
@@ -86,7 +90,7 @@
       },
       "seekingRange": 16,
       "animationSpeed": 2,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "sound": "creature/hooved/generic/call*"
     },
     "side": "server"
@@ -97,6 +101,7 @@
     "file": "game:entities/animal/mammal/hooved/deer-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "animation": "Run",
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.6,
@@ -109,7 +114,7 @@
       },
       "seekingRange": 12,
       "animationSpeed": 2,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "sound": "creature/hooved/generic/call*"
     },
     "side": "server"
@@ -120,6 +125,7 @@
     "file": "game:entities/animal/mammal/hooved/deer-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "animation": "Run",
       "entityCodes": [ "strawdummy" ],
       "priority": 1.6,
@@ -132,7 +138,7 @@
       },
       "seekingRange": 8,
       "animationSpeed": 2,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "sound": "creature/hooved/generic/call*"
     },
     "side": "server"

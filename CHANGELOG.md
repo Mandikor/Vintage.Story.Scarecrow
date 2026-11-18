@@ -3,6 +3,15 @@
 All notable changes to the Scarecrow mod, newest first. The version numbers match
 `scarecrow/modinfo.json`, the dates are the dates of the release commits.
 
+## 1.9.4 (2026-11-19)
+
+- Fixed animals fleeing from players after taking damage, including bears.
+  Scarecrow-specific flee tasks no longer trigger instant flight when an animal
+  is hurt and do not react to attackers outside their configured scarecrow targets.
+- Applied the correction to vanilla animals and all existing animal-mod patches.
+  Existing scarecrow detection ranges, movement settings and natural-spawn
+  protection remain unchanged.
+
 ## 1.9.3 (2026-11-13)
 
 - Scarecrows no longer remove animals that are born nearby or released from a cage. The spawn

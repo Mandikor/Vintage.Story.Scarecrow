@@ -5,12 +5,13 @@
     "file": "game:entities/animal/mammal/hyena-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.02,
       "animationSpeed": 2.2,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "sound": "creature/wolf/pup-bark"
     },
@@ -22,12 +23,13 @@
     "file": "game:entities/animal/mammal/hyena-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.02,
       "animationSpeed": 2.2,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "sound": "creature/wolf/pup-bark"
     },
@@ -39,12 +41,13 @@
     "file": "game:entities/animal/mammal/hyena-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "strawdummy" ],
       "priority": 1.6,
       "movespeed": 0.02,
       "animationSpeed": 2.2,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "sound": "creature/wolf/pup-bark"
     },
@@ -56,12 +59,13 @@
     "file": "game:entities/animal/mammal/hyena-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "scarecrow" ],
       "priority": 2.6,
       "movespeed": 0.04,
       "animationSpeed": 2,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "sound": "creature/hyena/laugh"
     },
@@ -73,12 +77,13 @@
     "file": "game:entities/animal/mammal/hyena-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "little-scarecrow" ],
       "priority": 2.6,
       "movespeed": 0.04,
       "animationSpeed": 2,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "sound": "creature/hyena/laugh"
     },
@@ -90,12 +95,13 @@
     "file": "game:entities/animal/mammal/hyena-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "strawdummy" ],
       "priority": 2.6,
       "movespeed": 0.04,
       "animationSpeed": 2,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "sound": "creature/hyena/laugh"
     },

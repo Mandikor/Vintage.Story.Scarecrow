@@ -5,12 +5,13 @@
     "file": "game:entities/animal/bird/chicken-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.03,
       "animationSpeed": 1.4,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run"
     },
     "side": "server"
@@ -21,12 +22,13 @@
     "file": "game:entities/animal/bird/chicken-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.03,
       "animationSpeed": 1.4,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run"
     },
     "side": "server"
@@ -37,12 +39,13 @@
     "file": "game:entities/animal/bird/chicken-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "strawdummy" ],
       "priority": 1.6,
       "movespeed": 0.03,
       "animationSpeed": 1.4,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run"
     },
     "side": "server"
@@ -53,12 +56,13 @@
     "file": "game:entities/animal/bird/chicken-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "scarecrow" ],
       "priority": 1.9,
       "movespeed": 0.037,
       "animationSpeed": 2,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "sound": "creature/chicken/hen-flee"
     },
@@ -70,12 +74,13 @@
     "file": "game:entities/animal/bird/chicken-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.9,
       "movespeed": 0.037,
       "animationSpeed": 2,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "sound": "creature/chicken/hen-flee"
     },
@@ -87,12 +92,13 @@
     "file": "game:entities/animal/bird/chicken-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "strawdummy" ],
       "priority": 1.9,
       "movespeed": 0.037,
       "animationSpeed": 2,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "sound": "creature/chicken/hen-flee"
     },
