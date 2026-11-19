@@ -26,6 +26,7 @@ namespace Scarecrow
         /// <summary>Lang key of the "place" interaction help.</summary>
         protected abstract string PlaceHelpLangCode { get; }
 
+        // Placement: validate claims and the full entity collision box before consuming an item.
         public override void OnHeldInteractStart(ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, bool firstEvent, ref EnumHandHandling handling)
         {
             if (blockSel == null || !(byEntity is EntityPlayer entityPlayer)) return;
@@ -103,6 +104,7 @@ namespace Scarecrow
             handling = EnumHandHandling.PreventDefaultAction;
         }
 
+        // Equipped scarecrows remain individual items; empty scarecrows may share a stack.
         public override int GetMergableQuantity(ItemStack sinkStack, ItemStack sourceStack, EnumMergePriority priority)
         {
             if (ScarecrowAttachments.HasStoredEquipment(sinkStack) || ScarecrowAttachments.HasStoredEquipment(sourceStack))
@@ -110,6 +112,7 @@ namespace Scarecrow
             return base.GetMergableQuantity(sinkStack, sourceStack, priority);
         }
 
+        // Stored equipment is displayed in a stable slot order using localized names.
         public override void GetHeldItemInfo(ItemSlot inSlot, StringBuilder dsc, IWorldAccessor world, bool withDebugInfo)
         {
             base.GetHeldItemInfo(inSlot, dsc, world, withDebugInfo);

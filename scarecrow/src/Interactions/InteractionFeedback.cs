@@ -5,6 +5,7 @@ using Vintagestory.API.Server;
 
 namespace Scarecrow
 {
+    /// <summary>Sends localized server-side interaction errors and suppresses repeated failures per player.</summary>
     internal static class InteractionFeedback
     {
         private sealed class RecentFailure

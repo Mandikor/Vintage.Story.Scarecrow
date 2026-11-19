@@ -14,16 +14,14 @@ using Vintagestory.GameContent;
 namespace Scarecrow
 {
     /// <summary>Vanilla attachment handling with an additional item-code filter per slot.</summary>
-    public class ScarecrowAttachments : EntityBehaviorRideableAccessories
+    public partial class ScarecrowAttachments : EntityBehaviorRideableAccessories
     {
         private string[][] allowedCodes = Array.Empty<string[]>();
         private string[][] categories = Array.Empty<string[]>();
         private int[] lanternSlotIndices = Array.Empty<int>();
         private string[] slotCodes = Array.Empty<string>();
-        private WindChimeAttachmentSounds windChimeSounds;
-        private bool windChimesEnabled;
-        private float soundUpdateElapsed;
 
+        // Radius bonuses use the strongest permitted attachment, never a sum.
         public int LanternRadiusBonus => EquipmentRadiusBonus;
 
         public int EquipmentRadiusBonus
@@ -68,6 +66,7 @@ namespace Scarecrow
 
         public ScarecrowAttachments(Entity entity) : base(entity) { }
 
+        // Build a per-entity config from resolved collectible categories; never alter shared assets.
         private JsonObject PrepareConfig(JsonObject config, IWorldAccessor world)
         {
             // Respect the actual categories of permitted collectibles, including other mods.
@@ -105,6 +104,7 @@ namespace Scarecrow
             RestoreCarriedEquipment();
         }
 
+        // Stable slot codes allow equipment to round-trip through a picked-up item.
         public const string StoredEquipmentAttribute = "scarecrowEquipment";
 
         public static bool HasStoredEquipment(ItemStack stack) =>
@@ -144,14 +144,7 @@ namespace Scarecrow
             storeInv();
         }
 
-        private void InitializeWindChimeSounds()
-        {
-            windChimeSounds?.Dispose();
-            windChimeSounds = null;
-            soundUpdateElapsed = 0;
-            windChimesEnabled = entity.Api is ICoreClientAPI api && api.ModLoader.IsModEnabled("windchimes");
-        }
-
+        // Saved inventories need the same slot filters during import and normal loading.
         public override bool TryEarlyLoadCollectibleMappings(IWorldAccessor world,
             Dictionary<int, AssetLocation> oldBlockIdMapping, Dictionary<int, AssetLocation> oldItemIdMapping,
             bool resolveImports, EntityProperties entityProperties, JsonObject behaviorConfig)
@@ -171,36 +164,13 @@ namespace Scarecrow
                 ItemStack stack = inv[i].Itemstack;
                 inv[i] = new ScarecrowAttachmentSlot(inv, categories[i], allowedCodes[i]) { Itemstack = stack };
             }
-            windChimeSounds?.Update(inv);
+            RefreshCompatibilitySounds();
         }
 
-        public override void OnGameTick(float deltaTime)
-        {
-            base.OnGameTick(deltaTime);
-            if (!windChimesEnabled || entity.Api is not ICoreClientAPI api) return;
-            if (!entity.Alive)
-            {
-                windChimeSounds?.Update(inv);
-                return;
-            }
-            soundUpdateElapsed += deltaTime;
-            if (soundUpdateElapsed < 0.25f) return;
-            soundUpdateElapsed = 0;
-            if (windChimeSounds == null && (inv == null || !inv.Any(slot =>
-                slot.Itemstack?.ItemAttributes?["scarecrowWindChime"].AsBool(false) == true))) return;
-            windChimeSounds ??= new WindChimeAttachmentSounds(api, entity);
-            windChimeSounds.Update(inv);
-        }
-
-        public override void OnEntityDespawn(EntityDespawnData despawn)
-        {
-            windChimeSounds?.Dispose();
-            base.OnEntityDespawn(despawn);
-        }
-
+        // Death uses vanilla drops, then publishes the emptied inventory to connected clients.
         public override void OnEntityDeath(DamageSource damageSourceForDeath)
         {
-            windChimeSounds?.Dispose();
+            DisposeCompatibilitySounds();
             base.OnEntityDeath(damageSourceForDeath);
             // Vanilla DropAll empties the inventory, but only marks the mesh dirty.
             // Publish the final empty snapshot while the corpse remains in the world.
@@ -215,19 +185,7 @@ namespace Scarecrow
             base.OnTesselation(ref entityShape, shapePathForLogging, ref shapeIsCloned, ref willDeleteElements);
         }
 
-        protected override Shape addGearToShape(Shape entityShape, ItemSlot gearslot, string slotCode,
-            string shapePathForLogging, ref bool shapeIsCloned, ref string[] willDeleteElements,
-            Dictionary<string, StepParentElementTo> overrideStepParent = null)
-        {
-            // The entity shader treats wind mode 9 as a frost flag and changes its movement.
-            // The optional renderer draws these blocks separately with their original wind flags.
-            if (windChimesEnabled && entity.Properties?.Client?.Renderer is WindChimeScarecrowRenderer
-                && gearslot.Itemstack?.ItemAttributes?["scarecrowWindChime"].AsBool(false) == true)
-                return entityShape;
-            return base.addGearToShape(entityShape, gearslot, slotCode, shapePathForLogging,
-                ref shapeIsCloned, ref willDeleteElements, overrideStepParent);
-        }
-
+        // Enforce ownership and the whitelist before vanilla predicts or transfers equipment.
         public override void OnInteract(EntityAgent byEntity, ItemSlot itemslot, Vec3d hitPosition,
             EnumInteractMode mode, ref EnumHandling handled)
         {

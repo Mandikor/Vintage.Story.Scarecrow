@@ -5,6 +5,7 @@ using Vintagestory.API.Datastructures;
 
 namespace Scarecrow
 {
+    /// <summary>Migrates raw JSON defaults while retaining user values and backing up files before writes.</summary>
     internal static class ScarecrowConfigLoader
     {
         private const string FileName = "scarecrow.json";

@@ -2,6 +2,7 @@
 
 namespace Scarecrow
 {
+    /// <summary>Selects the little entity and omits arm slots from its stored-equipment tooltip.</summary>
     public class ItemLittleScareCrow : ItemScarecrowBase
     {
         protected override bool HasArmSlots => false;

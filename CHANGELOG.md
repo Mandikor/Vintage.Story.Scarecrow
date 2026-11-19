@@ -5,6 +5,15 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Source organization and contributor documentation
+
+- Grouped optional-mod C# adapters under `src/combat`, including Wind Chimes
+  rendering, spatial sound and attachment hooks. Shared inventory rules remain
+  in `Wearables`; JSON patches retain their per-mod compatibility directories.
+- Moved interaction feedback to `Interactions`, documented important code
+  sections and added a source structure and extension guide. Registered names,
+  namespaces, save formats and gameplay behavior are preserved.
+
 ### Versioned configuration migration
 
 - Added `ConfigVersion` schema 2. Existing 1.9.3 configs without a version are

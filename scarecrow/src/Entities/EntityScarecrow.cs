@@ -37,6 +37,7 @@ namespace Scarecrow
         /// <summary>Natural-spawn protection, including the strongest attached equipment bonus.</summary>
         public int ScareRadius => scareRadius + (GetBehavior<ScarecrowAttachments>()?.EquipmentRadiusBonus ?? 0);
 
+        // Lifecycle: load data-driven settings and subscribe only while protection is active.
         public override void Initialize(EntityProperties properties, ICoreAPI api, long InChunkIndex3d)
         {
             base.Initialize(properties, api, InChunkIndex3d);
@@ -72,6 +73,7 @@ namespace Scarecrow
                 config?.ScaredAnimalPrefixes ?? Array.Empty<string>());
         }
 
+        // Ownership is persisted by UID; display names are synchronized separately for tooltips.
         public void AssignOwner(IPlayer player)
         {
             WatchedAttributes.SetString("ownerUid", player.PlayerUID);
@@ -109,6 +111,7 @@ namespace Scarecrow
             return false;
         }
 
+        // Tooltips consume synchronized settings so clients show the server's actual protection.
         public override string GetInfoText()
         {
             StringBuilder text = new(base.GetInfoText());
@@ -184,6 +187,7 @@ namespace Scarecrow
         /// <summary>
         /// Subscribes to the server spawn events. Safe to call more than once.
         /// </summary>
+        // Server spawn hooks distinguish natural spawning from cages and newborn animals.
         private void AttachSpawnHooks()
         {
             if (spawnHooksAttached || sapi == null) return;
@@ -254,6 +258,7 @@ namespace Scarecrow
             return false;
         }
 
+        // Pickup is server-authoritative; preserve gear only after ownership and claim checks.
         public override void OnInteract(EntityAgent byEntity, ItemSlot slot, Vec3d hitPosition, EnumInteractMode mode)
         {
             // A denied interaction must never reach attachment handling in the base class.

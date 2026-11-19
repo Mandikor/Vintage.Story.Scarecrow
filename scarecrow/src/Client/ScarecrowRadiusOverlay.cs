@@ -39,6 +39,7 @@ namespace Scarecrow
         private long refreshListenerId;
         private HashSet<BlockPos> highlightedBlocks = new();
 
+        // Client-only lifecycle; the hotkey controls both highlighting and periodic updates.
         public override bool ShouldLoad(EnumAppSide forSide)
         {
             return forSide == EnumAppSide.Client;
@@ -82,6 +83,7 @@ namespace Scarecrow
             }
         }
 
+        // Refresh only while visible and replace highlights only when the block set changes.
         private void Refresh(float deltaTime)
         {
             if (!visible || capi?.World?.Player?.Entity == null) return;
@@ -117,6 +119,7 @@ namespace Scarecrow
         /// <summary>
         /// Perimeter blocks of the protected ground area of every scarecrow around the player.
         /// </summary>
+        // The display uses each nearby entity's effective radius, including equipment bonuses.
         private HashSet<BlockPos> CollectRingBlocks()
         {
             HashSet<BlockPos> ring = new();

@@ -3,6 +3,7 @@ using Vintagestory.API.Config;
 
 namespace Scarecrow
 {
+    /// <summary>Transfers pickup items to the hotbar first, then the backpack, respecting normal slot rules.</summary>
     internal static class ScarecrowPickup
     {
         public static bool TryGive(IPlayer player, ItemStack stack)

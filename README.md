@@ -379,3 +379,8 @@ See the [changelog](CHANGELOG.md) for release history and the
 ## License
 
 Scarecrow is distributed under the [MIT License](LICENSE.txt).
+
+## Source code
+
+See the [source structure and extension guide](docs/source-structure.md) for code
+responsibilities, optional-mod adapters and inventory/synchronization rules.

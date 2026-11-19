@@ -6,6 +6,7 @@ using Vintagestory.GameContent;
 
 namespace Scarecrow
 {
+    /// <summary>Adds a domain-aware item whitelist to vanilla wearable-category validation.</summary>
     public class ScarecrowAttachmentSlot : ItemSlotWearable
     {
         private readonly AssetLocation[] allowedCodes;

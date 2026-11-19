@@ -7,6 +7,7 @@ using Vintagestory.GameContent;
 
 namespace Scarecrow
 {
+    /// <summary>Fills missing attachment categories after asset patches without replacing vanilla or mod interfaces.</summary>
     public static class AttachableItems
     {
         // Supply missing metadata only; never replace a category or collectible interface.

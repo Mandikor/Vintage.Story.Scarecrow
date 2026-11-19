@@ -28,6 +28,7 @@ namespace Scarecrow
             RenderWindChimes(isShadowPass);
         }
 
+        // Reuse meshes per arm; apply the animated mount transform in both opaque and shadow passes.
         private void RenderWindChimes(bool isShadowPass)
         {
             if (!entity.Alive)
@@ -88,6 +89,7 @@ namespace Scarecrow
             }
         }
 
+        // Meshes belong to this renderer and must be released on retessellation and disposal.
         private void ClearMeshes()
         {
             for (int index = 0; index < meshes.Length; index++)

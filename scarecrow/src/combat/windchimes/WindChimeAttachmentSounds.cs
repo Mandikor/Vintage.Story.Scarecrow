@@ -49,6 +49,7 @@ namespace Scarecrow
                 ? Math.Clamp(value, min, max) : fallback;
         }
 
+        // Validate listener, inventory and weather before starting or advancing one-shot recordings.
         public void Update(InventoryBase inventory)
         {
             if (disposed) return;
@@ -131,6 +132,7 @@ namespace Scarecrow
             foreach (int index in waiting.Keys.Where(index => !active.Contains(index)).ToArray()) waiting.Remove(index);
         }
 
+        // Interpolate quiet/strong-wind pauses and retain random spacing between recordings.
         private static double PauseSeconds(float windStrength, double jitter)
             => (8 + 12 * jitter) * (1 - windStrength) + (0.5 + 2.5 * jitter) * windStrength;
 
@@ -142,6 +144,7 @@ namespace Scarecrow
             return api.World.BlockAccessor.GetRainMapHeightAt(blockPos) > height;
         }
 
+        // Every removal path disposes loaded sounds; waiting entries own no audio resources.
         private void Stop(int index)
         {
             if (!playing.Remove(index, out var current)) return;
