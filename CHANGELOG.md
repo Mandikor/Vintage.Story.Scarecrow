@@ -5,6 +5,18 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Flocks 0.22.1 compatibility
+
+- Verify built-in recognition of both scarecrow sizes and the straw dummy for
+  corvid avoidance and resident-crow spawn exclusion. Retain Flocks' independent
+  `ScarecrowRadius` (15 blocks by default).
+- Add a native mouse flee-task copy and extend its sleeping wake list. Preserve
+  original player/predator tasks; disable damage-triggered flight and retaliation
+  only in the copy. No new spawn prefixes or C# adapter.
+- Other custom bird behaviors retain native player-only reactions; see
+  [scope and settings](docs/flocks-compatibility.md). Build and automated checks
+  pass; the author completed the in-game test successfully.
+
 ### Additional relevant FotSA families
 
 - Add JSON-only support for Felinae 0.2.16, Manidae 1.0.24 and Spheniscidae 1.0.20:

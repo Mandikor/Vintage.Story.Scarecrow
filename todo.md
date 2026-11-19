@@ -63,9 +63,9 @@ The [local mod audit](docs/mod-library-audit-2026-11-19.md) inventories 81 mod I
 38 already supported directly or through inheritance, and 43 not explicitly
 integrated. This is a review backlog, not approval to implement every candidate.
 Previously deferred cosmetics and aging remain deferred.
-After Crows and the additional FotSA batch, 42 IDs are supported and 39 have no
+After Crows, the additional FotSA batch and Flocks, 43 IDs are supported and 38 have no
 explicit integration. Two of those are reviewed/deferred fully aquatic mods;
-37 remain review candidates. The audit retains the original inventory.
+36 remain review candidates. The audit retains the original inventory.
 
 - [x] Inventory ZIP/unpacked duplicates, manifest versions and current support.
 - [x] Audit existing patch paths and native player-code/player-tag AI tasks.
@@ -111,7 +111,12 @@ explicit integration. Two of those are reviewed/deferred fully aquatic mods;
 - [x] **Additional FotSA game test:** the author completed the in-game test
   successfully. Automated checks cover 132 variants and 414 enabled task
   configurations.
-- [ ] **P2 — Flocks** (`flocks`, 0.22.1): Review all bird entities and custom flock AI; distinguish wild birds from domesticated forms.
+- [x] **P2 — Flocks review and scoped integration** (`flocks`, 0.22.1): retain
+  built-in corvid protection; add native mouse flee/wake patches. Seven custom
+  bird definitions reviewed; no separate domesticated forms found. Other birds
+  retain native player-only reactions; see [scope](docs/flocks-compatibility.md).
+  Automated checks passed.
+- [x] **Flocks game test:** the author completed the in-game test successfully.
 - [ ] **P2 — Fantasy Creatures Mod** (`fantasycreaturesupdate`, 0.8.3): Review each species and humanoid separately; copy only relevant player reactions.
 - [ ] **P2 — Pegasus: Winged horses** (`pegasus`, 1.1.0-rc.1): Review generated wild versus owned/mount variants and flight AI.
 - [ ] **P2 — Talonborne** (`talonborne`, 1.2.0): Mostly mount AI: inspect custom proximity/bed-down hooks and ownership before adding reactions.

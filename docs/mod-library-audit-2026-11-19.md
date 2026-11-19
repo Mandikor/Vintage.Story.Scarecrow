@@ -1,5 +1,12 @@
 # Local mod compatibility audit — 2026-11-19
 
+Latest follow-up: [Flocks 0.22.1](flocks-compatibility.md) retains native crow
+protection and adds mouse flee/wake patches. Other custom bird behaviors remain
+unchanged. Build and automated checks pass; the author's game test passed. Totals are
+now **43 supported IDs**, **38 without explicit integration**, including two
+deliberately deferred aquatic mods and **36 review candidates**. These totals
+supersede earlier follow-ups below; historical inventory tables remain intact.
+
 Audit baseline: Scarecrow `dev` at `381f5b3`. Sources are the supplied local
 `Mods_Scarecrow` library, not ModDB's live release catalogue.
 

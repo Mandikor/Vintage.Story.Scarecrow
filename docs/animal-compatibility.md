@@ -1,5 +1,9 @@
 # Animal compatibility behavior
 
+The [Flocks integration](flocks-compatibility.md) retains built-in corvid
+protection and adds mouse flee/wake patches. Other custom Flocks birds retain
+their native player-only reactions.
+
 The vanilla and compatibility patches add reactions to the scarecrow, little
 scarecrow and vanilla straw dummy. They extend the animals' existing AI task lists.
 The [Crows integration](crows-compatibility.md) instead extends that mod's own
