@@ -2,120 +2,36 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/11/aitasks/-",
     "file": "cervinae:entities/animal/mammal/hooved/cervini-adult.json",
+    "path": "/server/behaviors/11/aitasks/-",
     "value": {
       "code": "fleeentity",
-      "animation": "Run",
+      "priority": 9.41,
+      "priorityForCancel": 9.42,
+      "animation": "Jump",
+      "skipEntityCodes": [
+        "cervidae-*"
+      ],
       "movespeedByType": {
-        "*-female-megalocerosgiganteus": 0.093,
-        "*-male-megalocerosgiganteus": 0.098
-      },
-      "animationSpeed": 1.8,
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/11/aitasks/-",
-    "file": "cervinae:entities/animal/mammal/hooved/cervini-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-female-megalocerosgiganteus": 0.093,
-        "*-male-megalocerosgiganteus": 0.098
-      },
-      "animationSpeed": 1.8,
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/11/aitasks/-",
-    "file": "cervinae:entities/animal/mammal/hooved/cervini-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-female-megalocerosgiganteus": 0.093,
-        "*-male-megalocerosgiganteus": 0.098
-      },
-      "animationSpeed": 1.8,
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/11/aitasks/-",
-    "file": "cervinae:entities/animal/mammal/hooved/cervini-adult.json",
-    "value": {
-      "code": "seekentity",
-      "animation": "Charge",
-      "movespeedByType": {
-        "*": 0.005
+        "*-female-megalocerosgiganteus": 0.095,
+        "*-male-megalocerosgiganteus": 0.0998
       },
       "animationSpeed": 1.5,
-      "soundByType": {
-        "*-megalocerosgiganteus": "cervinae:creature/megalocerosgiganteus/grunt*"
-      },
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "fleeDurationMs": 20000,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
-      ],
-      "priority": 8.7,
-      "priorityForCancel": 8.7,
-      "slot": 0,
-      "seekingRange": 16,
-      "minCooldownMs": 500,
-      "maxCooldownMs": 1000,
-      "maxFollowTime": 15,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
-      ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
       ],
       "retaliateAttacks": false
     },
@@ -124,112 +40,187 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/11/aitasks/-",
     "file": "cervinae:entities/animal/mammal/hooved/cervini-adult.json",
+    "path": "/server/behaviors/11/aitasks/-",
     "value": {
-      "code": "meleeattack",
-      "animation": "Attack",
-      "animationSpeed": 2.5,
-      "damageByType": {
-        "*-adult-female-megalocerosgiganteus": 14,
-        "*-adult-male-megalocerosgiganteus": 15,
-        "*": 4
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.42,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "cervidae-*"
+      ],
+      "movespeedByType": {
+        "*-adult-*-megalocerosgiganteus": 0.0675
       },
-      "damageType": "SlashingAttack",
-      "minDist": 3.5,
-      "damageTierByType": {
-        "*": 2
-      },
-      "attackDurationMs": 1250,
-      "damagePlayerAtMs": 500,
+      "animationSpeed": 1.0,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "fleeDurationMs": 60000,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.8,
-      "priorityForCancel": 8.8,
-      "slot": 1,
-      "minCooldownMs": 500,
-      "maxCooldownMs": 1500,
-      "whenNotInEmotionStates": [
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "cervinae:entities/animal/mammal/hooved/cervini-adult.json",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.41,
+      "animation": "Canter",
+      "skipEntityCodes": [
+        "cervidae-*"
+      ],
+      "movespeedByType": {
+        "*-female-megalocerosgiganteus": 0.065,
+        "*-male-megalocerosgiganteus": 0.0682
+      },
+      "animationSpeed": 1.4,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "fleeDurationMs": 60000,
+      "whenSwimming": false,
+      "whenInEmotionStates": [
         "fleeondamage"
       ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
       ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "cervinae:entities/animal/mammal/hooved/cervini-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-megalocerosgiganteus": 0.0712
-      },
-      "animationSpeed": 1.8,
       "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "cervinae:entities/animal/mammal/hooved/cervini-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-megalocerosgiganteus": 0.0712
-      },
-      "animationSpeed": 1.8,
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "cervinae:entities/animal/mammal/hooved/cervini-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-megalocerosgiganteus": 0.0712
-      },
-      "animationSpeed": 1.8,
-      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "cervinae:entities/animal/mammal/hooved/cervini-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.42,
+      "animation": "Jump",
+      "skipEntityCodes": [
+        "cervidae-*"
+      ],
+      "movespeedByType": {
+        "*-megalocerosgiganteus": 0.0712
+      },
+      "animationSpeed": 1.5,
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "fleeDurationMs": 20000,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "cervinae:entities/animal/mammal/hooved/cervini-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.42,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "cervidae-*"
+      ],
+      "movespeedByType": {
+        "*-baby-*-megalocerosgiganteus": 0.055
+      },
+      "animationSpeed": 1.0,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "fleeDurationMs": 60000,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "cervinae:entities/animal/mammal/hooved/cervini-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.41,
+      "animation": "Canter",
+      "skipEntityCodes": [
+        "cervidae-*"
+      ],
+      "movespeedByType": {
+        "*-megalocerosgiganteus": 0.035
+      },
+      "animationSpeed": 1.4,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "fleeDurationMs": 60000,
+      "whenSwimming": false,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
       "retaliateAttacks": false
     },
     "side": "server"

@@ -2,11 +2,19 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
     "file": "machairodontinae:entities/animal/mammal/machairodontinae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
     "value": {
-      "code": "seekentity",
+      "code": "fleeentity",
+      "priority": 9.42,
+      "priorityForCancel": 9.43,
       "animation": "Run",
+      "skipEntityCodes": [
+        "machairodontinae-adult-female-{genus}-{species}",
+        "machairodontinae-adult-male-{genus}-{species}",
+        "machairodontinae-baby-female-{genus}-{species}",
+        "machairodontinae-baby-male-{genus}-{species}"
+      ],
       "movespeedByType": {
         "*-female-smilodon-fatalis": 0.09,
         "*-male-smilodon-fatalis": 0.1,
@@ -15,22 +23,22 @@
         "*-female-homotherium-serum": 0.0975,
         "*-male-homotherium-serum": 0.105
       },
-      "animationSpeed": 2,
+      "animationSpeed": 2.0,
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "threatening",
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
-      ],
-      "priority": 8.7,
-      "priorityForCancel": 8.7,
-      "slot": 0,
-      "seekingRange": 16,
-      "minCooldownMs": 500,
-      "maxCooldownMs": 1000,
-      "maxFollowTime": 15,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
       ],
       "retaliateAttacks": false
     },
@@ -39,110 +47,204 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
     "file": "machairodontinae:entities/animal/mammal/machairodontinae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
     "value": {
-      "code": "meleeattack",
-      "animation": "Attack",
-      "animationSpeed": 1.5,
-      "damageByType": {
-        "*-female-smilodon-fatalis": 10,
-        "*-male-smilodon-fatalis": 12,
-        "*-female-smilodon-populator": 12,
-        "*-male-smilodon-populator": 14,
-        "*-female-homotherium-serum": 10,
-        "*-male-homotherium-serum": 12
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.42,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "machairodontinae-adult-female-{genus}-{species}",
+        "machairodontinae-adult-male-{genus}-{species}",
+        "machairodontinae-baby-female-{genus}-{species}",
+        "machairodontinae-baby-male-{genus}-{species}"
+      ],
+      "movespeedByType": {
+        "*": 0.04
       },
-      "damageType": "SlashingAttack",
-      "minDist": 3,
-      "damageTier": 2,
-      "attackDurationMs": 1200,
-      "damagePlayerAtMs": 550,
+      "animationSpeed": 1,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.8,
-      "priorityForCancel": 8.8,
-      "slot": 1,
-      "minCooldownMs": 500,
-      "maxCooldownMs": 500,
-      "whenNotInEmotionStates": [
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "machairodontinae:entities/animal/mammal/machairodontinae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.41,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "machairodontinae-adult-female-{genus}-{species}",
+        "machairodontinae-adult-male-{genus}-{species}",
+        "machairodontinae-baby-female-{genus}-{species}",
+        "machairodontinae-baby-male-{genus}-{species}"
+      ],
+      "movespeedByType": {
+        "*-female-smilodon-fatalis": 0.006,
+        "*-male-smilodon-fatalis": 0.0067,
+        "*-female-smilodon-populator": 0.007,
+        "*-male-smilodon-populator": 0.008,
+        "*-female-homotherium-serum": 0.0065,
+        "*-male-homotherium-serum": 0.007
+      },
+      "animationSpeed": 1,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
         "fleeondamage"
       ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "machairodontinae:entities/animal/mammal/machairodontinae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*": 0.033
-      },
-      "animationSpeed": 2.2,
-      "entityCodes": [
-        "scarecrow"
+      "tagsAppliedToEntity": [
+        "threatening",
+        "state-moving",
+        "state-sprinting"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
       "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "machairodontinae:entities/animal/mammal/machairodontinae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*": 0.033
-      },
-      "animationSpeed": 2.2,
       "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "machairodontinae:entities/animal/mammal/machairodontinae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*": 0.033
-      },
-      "animationSpeed": 2.2,
-      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "machairodontinae:entities/animal/mammal/machairodontinae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Run",
+      "skipEntityCodes": [
+        "machairodontinae-adult-female-{genus}-{species}",
+        "machairodontinae-adult-male-{genus}-{species}",
+        "machairodontinae-baby-female-{genus}-{species}",
+        "machairodontinae-baby-male-{genus}-{species}"
+      ],
+      "movespeedByType": {
+        "*": 0.033
+      },
+      "animationSpeed": 2.2,
+      "seekingRange": 10,
+      "fleeingDistance": 40,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "threatening",
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "machairodontinae:entities/animal/mammal/machairodontinae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "machairodontinae-adult-female-{genus}-{species}",
+        "machairodontinae-adult-male-{genus}-{species}",
+        "machairodontinae-baby-female-{genus}-{species}",
+        "machairodontinae-baby-male-{genus}-{species}"
+      ],
+      "movespeedByType": {
+        "movespeed": 0.01
+      },
+      "animationSpeed": 1.5,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "machairodontinae:entities/animal/mammal/machairodontinae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.4,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "machairodontinae-adult-female-{genus}-{species}",
+        "machairodontinae-adult-male-{genus}-{species}",
+        "machairodontinae-baby-female-{genus}-{species}",
+        "machairodontinae-baby-male-{genus}-{species}"
+      ],
+      "movespeedByType": {
+        "*": 0.003
+      },
+      "animationSpeed": 1,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "threatening",
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
       "retaliateAttacks": false
     },
     "side": "server"

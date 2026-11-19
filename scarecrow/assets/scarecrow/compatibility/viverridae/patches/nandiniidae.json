@@ -2,39 +2,19 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
     "file": "viverridae:entities/animal/mammal/nandiniidae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
       "animation": "Run",
-      "movespeedByType": {
-        "*-adult-*-nandiniabinotata": 0.03
-      },
-      "animationSpeedByType": {
-        "*-adult-male-nandiniabinotata": 1.35,
-        "*-adult-female-nandiniabinotata": 1.5,
-        "*": 1
-      },
-      "entityCodes": [
-        "scarecrow"
+      "skipEntityCodes": [
+        "nandiniidae-adult-female-{type}",
+        "nandiniidae-adult-male-{type}",
+        "nandiniidae-baby-female-{type}",
+        "nandiniidae-baby-male-{type}"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "viverridae:entities/animal/mammal/nandiniidae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
       "movespeedByType": {
         "*-adult-*-nandiniabinotata": 0.03
       },
@@ -43,42 +23,21 @@
         "*-adult-female-nandiniabinotata": 1.5,
         "*": 1
       },
-      "entityCodes": [
-        "little-scarecrow"
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "viverridae:entities/animal/mammal/nandiniidae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-adult-*-nandiniabinotata": 0.03
-      },
-      "animationSpeedByType": {
-        "*-adult-male-nandiniabinotata": 1.35,
-        "*-adult-female-nandiniabinotata": 1.5,
-        "*": 1
-      },
       "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
       "retaliateAttacks": false
     },
     "side": "server"
@@ -86,80 +45,206 @@
   {
     "enabled": true,
     "op": "add",
+    "file": "viverridae:entities/animal/mammal/nandiniidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
-    "file": "viverridae:entities/animal/mammal/nandiniidae-baby.json",
     "value": {
       "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-baby-*-nandiniabinotata": 0.045
-      },
-      "animationSpeedByType": {
-        "*-baby-*-nandiniabinotata": 4,
-        "*": 1
-      },
-      "entityCodes": [
-        "scarecrow"
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "nandiniidae-adult-female-{type}",
+        "nandiniidae-adult-male-{type}",
+        "nandiniidae-baby-female-{type}",
+        "nandiniidae-baby-male-{type}"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "viverridae:entities/animal/mammal/nandiniidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
       "movespeedByType": {
-        "*-baby-*-nandiniabinotata": 0.045
+        "*-adult-*": 0.02
       },
-      "animationSpeedByType": {
-        "*-baby-*-nandiniabinotata": 4,
-        "*": 1
-      },
-      "entityCodes": [
-        "little-scarecrow"
+      "animationSpeed": 1.5,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "viverridae:entities/animal/mammal/nandiniidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-baby-*-nandiniabinotata": 0.045
-      },
-      "animationSpeedByType": {
-        "*-baby-*-nandiniabinotata": 4,
-        "*": 1
-      },
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
       "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "viverridae:entities/animal/mammal/nandiniidae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.4,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "nandiniidae-adult-female-{type}",
+        "nandiniidae-adult-male-{type}",
+        "nandiniidae-baby-female-{type}",
+        "nandiniidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*-adult-*-nandiniabinotata": 0.0036
+      },
+      "animationSpeedByType": {
+        "*-adult-male-nandiniabinotata": 0.9,
+        "*-adult-female-nandiniabinotata": 1,
+        "*": 1
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "viverridae:entities/animal/mammal/nandiniidae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Run",
+      "skipEntityCodes": [
+        "nandiniidae-adult-female-{type}",
+        "nandiniidae-adult-male-{type}",
+        "nandiniidae-baby-female-{type}",
+        "nandiniidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*-baby-*-nandiniabinotata": 0.045
+      },
+      "animationSpeedByType": {
+        "*-baby-*-nandiniabinotata": 4,
+        "*": 1
+      },
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "viverridae:entities/animal/mammal/nandiniidae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "nandiniidae-adult-female-{type}",
+        "nandiniidae-adult-male-{type}",
+        "nandiniidae-baby-female-{type}",
+        "nandiniidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*-baby-*": 0.01
+      },
+      "animationSpeed": 1.5,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "viverridae:entities/animal/mammal/nandiniidae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.4,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "nandiniidae-adult-female-{type}",
+        "nandiniidae-adult-male-{type}",
+        "nandiniidae-baby-female-{type}",
+        "nandiniidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*-baby-*-nandiniabinotata": 0.0027
+      },
+      "animationSpeedByType": {
+        "*-baby-*-nandiniabinotata": 1.35,
+        "*": 1
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
       "retaliateAttacks": false
     },
     "side": "server"

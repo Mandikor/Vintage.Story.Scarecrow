@@ -1,68 +1,72 @@
 [
   {
     "enabled": true,
-    "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-baby.json",
     "op": "add",
+    "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-baby.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
       "code": "fleeentity",
+      "priority": 1.7,
       "movespeed": 0.018,
       "animationSpeed": 1.6,
+      "seekingRange": 9,
       "animation": "walk",
       "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-baby.json",
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.018,
-      "animationSpeed": 1.6,
-      "animation": "walk",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-baby.json",
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.018,
-      "animationSpeed": 1.6,
-      "animation": "walk",
-      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "retaliateAttacks": false
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0
     },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-baby.json",
+    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-baby.json",
+    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-baby.json",
+    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-baby.json",
+    "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-baby.json",
+    "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-baby.json",
+    "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
     "side": "server"
   }
 ]

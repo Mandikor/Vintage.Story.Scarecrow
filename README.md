@@ -64,7 +64,13 @@ tool. With several lanterns attached, only the strongest radius bonus applies.
 
 Scarecrow uses two complementary mechanisms:
 
-**Animal reactions:** small animals and young animals flee from scarecrows. Large
+**Animal reactions:** supported creature mods use their native player-target AI
+as the basis for scarecrow reactions. This includes player tags, variant rules,
+injury/hunger states and sleep interruption; see the
+[native creature guide](docs/native-creature-compatibility.md), including the
+runtime-generator and Bats exceptions.
+
+The remaining vanilla rules generally make small animals and young animals flee. Large
 herbivores can defend themselves when injury triggers aggression. Large predators,
 including adult black, brown, polar and sun bears, wolves and hyenas, can approach
 and attack a scarecrow. Pandas use the defensive herbivore rule.
@@ -387,8 +393,9 @@ The [local mod compatibility audit](docs/mod-library-audit-2026-11-19.md) lists
 checked versions, known issues and proposed integrations. Its six Feverstone Wilds
 path failures are now corrected for **3.2.1**, with native player AI replacing
 the older generic rules. **3.1.1 is no longer the supported baseline.** See the
-[Feverstone guide](docs/feverstonewilds-compatibility.md) and [to-do list](todo.md)
-for testing and the remaining native-player-AI migration.
+[Feverstone guide](docs/feverstonewilds-compatibility.md),
+[native creature migration](docs/native-creature-compatibility.md) and
+[to-do list](todo.md) for the implementation and pending batch game test.
 
 See the [source structure and extension guide](docs/source-structure.md) for code
 responsibilities, optional-mod adapters and inventory/synchronization rules.

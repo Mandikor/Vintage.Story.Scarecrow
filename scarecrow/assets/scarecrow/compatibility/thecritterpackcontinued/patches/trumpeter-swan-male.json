@@ -1,68 +1,113 @@
 [
   {
     "enabled": true,
-    "file": "thecritterpack:entities/animal/bird/swan/trumpeter/trumpeter-swan-male.json",
     "op": "add",
+    "file": "thecritterpack:entities/animal/bird/swan/trumpeter/trumpeter-swan-male.json",
     "path": "/server/behaviors/8/aitasks/-",
     "value": {
-      "code": "fleeentity",
-      "movespeed": 0.022,
-      "animationSpeed": 1.6,
-      "animation": "walk",
+      "code": "seekentity",
+      "enabledByType": {
+        "*-adult": true,
+        "*": false
+      },
+      "priority": 2.4,
+      "movespeed": 0.0,
+      "seekingRange": 5,
+      "animation": "idle",
+      "animationSpeed": 1.5,
+      "sound": "creature/swan/swan-hiss",
+      "whenInEmotionState": "aggressivearoundentities",
       "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 3.1,
-      "priorityForCancel": 3.1,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "thecritterpack:entities/animal/bird/swan/trumpeter/trumpeter-swan-male.json",
-    "op": "add",
-    "path": "/server/behaviors/8/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.022,
-      "animationSpeed": 1.6,
-      "animation": "walk",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 3.1,
-      "priorityForCancel": 3.1,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "thecritterpack:entities/animal/bird/swan/trumpeter/trumpeter-swan-male.json",
-    "op": "add",
-    "path": "/server/behaviors/8/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.022,
-      "animationSpeed": 1.6,
-      "animation": "walk",
-      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 3.1,
-      "priorityForCancel": 3.1,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
       "retaliateAttacks": false
     },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/bird/swan/trumpeter/trumpeter-swan-male.json",
+    "path": "/server/behaviors/8/aitasks/-",
+    "value": {
+      "code": "meleeattack",
+      "enabledByType": {
+        "*-adult": true,
+        "*": false
+      },
+      "animation": "attack",
+      "priority": 3,
+      "damage": 2.1,
+      "minDist": 2.7,
+      "damageType": "PiercingAttack",
+      "slot": 1,
+      "mincooldown": 1500,
+      "maxcooldown": 1500,
+      "attackDurationMs": 800,
+      "damagePlayerAtMs": 500,
+      "whenInEmotionState": "aggressiveondamage|aggressivearoundentities",
+      "sound": "creature/swan/swan-hiss",
+      "animationSpeed": 0.8,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/bird/swan/trumpeter/trumpeter-swan-male.json",
+    "path": "/server/behaviors/8/aitasks/-",
+    "value": {
+      "code": "seekentity",
+      "enabledByType": {
+        "*-adult": true,
+        "*": false
+      },
+      "priority": 2.5,
+      "movespeed": 0.03,
+      "seekingRange": 3,
+      "animation": "Run",
+      "animationSpeed": 1.5,
+      "sound": "creature/swan/swan-hiss",
+      "whenInEmotionState": "aggressiveondamage|aggressivearoundentities",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/bird/swan/trumpeter/trumpeter-swan-male.json",
+    "path": "/server/behaviors/8/aitasks/4/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/bird/swan/trumpeter/trumpeter-swan-male.json",
+    "path": "/server/behaviors/8/aitasks/4/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/bird/swan/trumpeter/trumpeter-swan-male.json",
+    "path": "/server/behaviors/8/aitasks/4/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
     "side": "server"
   }
 ]

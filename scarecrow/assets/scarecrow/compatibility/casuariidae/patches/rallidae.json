@@ -2,77 +2,40 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
     "file": "casuariidae:entities/animal/bird/rallidae-adult.json",
+    "path": "/server/behaviors/9/aitasks/-",
     "value": {
       "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
       "animation": "Run",
-      "movespeedByType": {
-        "*-adult-*-tribonyxmortierii": 0.03
-      },
-      "animationSpeedByType": {
-        "*-adult-*-tribonyxmortierii": 8.5
-      },
-      "entityCodes": [
-        "scarecrow"
+      "skipEntityCodes": [
+        "rallidae-adult-female-{type}",
+        "rallidae-adult-male-{type}",
+        "rallidae-baby-female-{type}",
+        "rallidae-baby-male-{type}"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "file": "casuariidae:entities/animal/bird/rallidae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
       "movespeedByType": {
         "*-adult-*-tribonyxmortierii": 0.03
       },
       "animationSpeedByType": {
         "*-adult-*-tribonyxmortierii": 8.5
       },
-      "entityCodes": [
-        "little-scarecrow"
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "file": "casuariidae:entities/animal/bird/rallidae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-adult-*-tribonyxmortierii": 0.03
-      },
-      "animationSpeedByType": {
-        "*-adult-*-tribonyxmortierii": 8.5
-      },
       "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
       "retaliateAttacks": false
     },
     "side": "server"
@@ -80,77 +43,209 @@
   {
     "enabled": true,
     "op": "add",
+    "file": "casuariidae:entities/animal/bird/rallidae-adult.json",
     "path": "/server/behaviors/9/aitasks/-",
-    "file": "casuariidae:entities/animal/bird/rallidae-baby.json",
     "value": {
       "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-baby-*-tribonyxmortierii": 0.015
-      },
-      "animationSpeedByType": {
-        "*-baby-*-tribonyxmortierii": 7.5
-      },
-      "entityCodes": [
-        "scarecrow"
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "rallidae-adult-female-{type}",
+        "rallidae-adult-male-{type}",
+        "rallidae-baby-female-{type}",
+        "rallidae-baby-male-{type}"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "file": "casuariidae:entities/animal/bird/rallidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
       "movespeedByType": {
-        "*-baby-*-tribonyxmortierii": 0.015
+        "rallidae-adult-*": 0.03,
+        "*": 0.03
       },
       "animationSpeedByType": {
-        "*-baby-*-tribonyxmortierii": 7.5
+        "*-adult-*-tribonyxmortierii": 2
       },
-      "entityCodes": [
-        "little-scarecrow"
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "file": "casuariidae:entities/animal/bird/rallidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-baby-*-tribonyxmortierii": 0.015
-      },
-      "animationSpeedByType": {
-        "*-baby-*-tribonyxmortierii": 7.5
-      },
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
       "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "casuariidae:entities/animal/bird/rallidae-adult.json",
+    "path": "/server/behaviors/9/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.41,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "rallidae-adult-female-{type}",
+        "rallidae-adult-male-{type}",
+        "rallidae-baby-female-{type}",
+        "rallidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*-adult-*-tribonyxmortierii": 0.003
+      },
+      "animationSpeedByType": {
+        "*-adult-*-tribonyxmortierii": 2
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "threatening",
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "casuariidae:entities/animal/bird/rallidae-baby.json",
+    "path": "/server/behaviors/9/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Run",
+      "skipEntityCodes": [
+        "rallidae-adult-female-{type}",
+        "rallidae-adult-male-{type}",
+        "rallidae-baby-female-{type}",
+        "rallidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*-baby-*-tribonyxmortierii": 0.015
+      },
+      "animationSpeedByType": {
+        "*-baby-*-tribonyxmortierii": 7.5
+      },
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "casuariidae:entities/animal/bird/rallidae-baby.json",
+    "path": "/server/behaviors/9/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "rallidae-adult-female-{type}",
+        "rallidae-adult-male-{type}",
+        "rallidae-baby-female-{type}",
+        "rallidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*-baby-*-tribonyxmortierii": 0.03
+      },
+      "animationSpeedByType": {
+        "*-baby-*-tribonyxmortierii": 5
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "casuariidae:entities/animal/bird/rallidae-baby.json",
+    "path": "/server/behaviors/9/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.41,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "rallidae-adult-female-{type}",
+        "rallidae-adult-male-{type}",
+        "rallidae-baby-female-{type}",
+        "rallidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*-baby-*-tribonyxmortierii": 0.003
+      },
+      "animationSpeedByType": {
+        "*-baby-*-tribonyxmortierii": 5
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "threatening",
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
       "retaliateAttacks": false
     },
     "side": "server"

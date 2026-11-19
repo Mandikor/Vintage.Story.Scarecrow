@@ -2,103 +2,17 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/behaviorConfigs/taskai/aitasks/-",
     "file": "monoceros:entities/wildmonoceros.json",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.05,
-      "animation": "Gallop",
-      "animationSpeed": 2,
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "enabledByType": {
-        "wildmonoceros-baby-*-indicus": true,
-        "wildmonoceros-baby-*-caledonius": true,
-        "*": false
-      },
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
     "path": "/behaviorConfigs/taskai/aitasks/-",
-    "file": "monoceros:entities/wildmonoceros.json",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.05,
-      "animation": "Gallop",
-      "animationSpeed": 2,
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "enabledByType": {
-        "*-adult-*": true,
-        "*": false
-      },
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/behaviorConfigs/taskai/aitasks/-",
-    "file": "monoceros:entities/wildmonoceros.json",
-    "value": {
-      "code": "seekentity",
-      "movespeed": 0.037,
-      "animation": "Charge",
-      "animationSpeed": 1,
-      "sound": "game:creature/hooved/generic/sniff*",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 8.7,
-      "priorityForCancel": 8.7,
-      "slot": 0,
-      "seekingRange": 16,
-      "minCooldownMs": 1000,
-      "maxCooldownMs": 1500,
-      "maxFollowTime": 15,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
-      ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "enabledByType": {
-        "*-adult-*": true,
-        "*": false
-      },
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/behaviorConfigs/taskai/aitasks/-",
-    "file": "monoceros:entities/wildmonoceros.json",
     "value": {
       "code": "meleeattack",
       "animation": "Attack",
+      "enabledByType": {
+        "*-adult-*": true,
+        "*": false
+      },
+      "priority": 3,
+      "slot": 1,
       "damageByType": {
         "*-adult-female-indicus": 10,
         "*-adult-male-indicus": 15,
@@ -110,29 +24,144 @@
       "damageTierByType": {
         "*": 3
       },
+      "mincooldown": 500,
+      "maxcooldown": 1000,
       "attackDurationMs": 500,
       "damagePlayerAtMs": 250,
       "animationSpeed": 1,
+      "whenInEmotionState": "aggressiveondamage|aggressivearoundentities",
       "entityCodes": [
-        "scarecrow"
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
       ],
-      "priority": 8.8,
-      "priorityForCancel": 8.8,
-      "slot": 1,
-      "minCooldownMs": 500,
-      "maxCooldownMs": 1000,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
-      ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
-      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "monoceros:entities/wildmonoceros.json",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "value": {
+      "code": "seekentity",
       "enabledByType": {
         "*-adult-*": true,
         "*": false
       },
+      "priority": 2.5,
+      "mincooldown": 1000,
+      "maxcooldown": 1500,
+      "seekingRange": 10,
+      "movespeed": 0.037,
+      "animation": "Charge",
+      "animationSpeed": 1,
+      "sound": "game:creature/hooved/generic/sniff*",
+      "whenInEmotionState": "aggressiveondamage|aggressivearoundentities",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
       "retaliateAttacks": false
     },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "monoceros:entities/wildmonoceros.json",
+    "path": "/behaviorConfigs/taskai/aitasks/9/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "monoceros:entities/wildmonoceros.json",
+    "path": "/behaviorConfigs/taskai/aitasks/9/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "monoceros:entities/wildmonoceros.json",
+    "path": "/behaviorConfigs/taskai/aitasks/9/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "monoceros:entities/wildmonoceros.json",
+    "path": "/behaviorConfigs/taskai/aitasks/10/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "monoceros:entities/wildmonoceros.json",
+    "path": "/behaviorConfigs/taskai/aitasks/10/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "monoceros:entities/wildmonoceros.json",
+    "path": "/behaviorConfigs/taskai/aitasks/10/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "monoceros:entities/wildmonoceros.json",
+    "path": "/behaviorConfigs/taskai/aitasks/11/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "monoceros:entities/wildmonoceros.json",
+    "path": "/behaviorConfigs/taskai/aitasks/11/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "monoceros:entities/wildmonoceros.json",
+    "path": "/behaviorConfigs/taskai/aitasks/11/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "monoceros:entities/wildmonoceros.json",
+    "path": "/behaviorConfigs/taskai/aitasks/12/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "monoceros:entities/wildmonoceros.json",
+    "path": "/behaviorConfigs/taskai/aitasks/12/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "monoceros:entities/wildmonoceros.json",
+    "path": "/behaviorConfigs/taskai/aitasks/12/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
     "side": "server"
   }
 ]

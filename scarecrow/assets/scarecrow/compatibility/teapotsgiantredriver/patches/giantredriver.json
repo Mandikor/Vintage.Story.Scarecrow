@@ -1,8 +1,91 @@
 [
   {
     "enabled": true,
+    "op": "add",
     "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "meleeattack",
+      "skipEntityCodes": [
+        "giantredriver-*",
+        "tame-giantredriver-*"
+      ],
+      "priority": 2.1,
+      "damageByType": {
+        "*-female": 6,
+        "*": 8
+      },
+      "damageTier": 2,
+      "minCooldownByType": {
+        "*-female": 1000,
+        "*": 1500
+      },
+      "maxCooldownByType": {
+        "*-female": 1500,
+        "*": 2500
+      },
+      "attackDurationMs": 900,
+      "damagePlayerAtMs": 300,
+      "animation": "Attack",
+      "animationSpeed": 1.2,
+      "sound": "game:creature/pig/attack",
+      "whenInEmotionState": "aggressiveondamage",
+      "damageType": "BluntAttack",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "meleeattack",
+      "skipEntityCodes": [
+        "giantredriver-*",
+        "tame-giantredriver-*"
+      ],
+      "priority": 2,
+      "damageByType": {
+        "*-female": 6,
+        "*": 8
+      },
+      "damageTier": 2,
+      "minCooldownByType": {
+        "*-female": 1000,
+        "*": 1500
+      },
+      "maxCooldownByType": {
+        "*-female": 1500,
+        "*": 2500
+      },
+      "attackDurationMs": 900,
+      "damagePlayerAtMs": 300,
+      "animation": "Attack",
+      "animationSpeed": 1.2,
+      "sound": "game:creature/pig/attack",
+      "whenNotInEmotionState": "aggressiveondamage",
+      "maxGeneration": 2,
+      "damageType": "BluntAttack",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
     "op": "replace",
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "path": "/server/behaviors/11/aitasks/2/entityCodes",
     "value": [
       "chicken-*",
@@ -20,110 +103,46 @@
   },
   {
     "enabled": true,
-    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "op": "add",
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
       "code": "fleeentity",
+      "priority": 1.8,
+      "seekingRange": 27,
       "movespeed": 0.075,
       "animation": "Run",
       "animationSpeed": 1.2,
       "sound": "game:creature/pig/hurt",
+      "whenInEmotionState": "fleeondamage",
       "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 2.55,
-      "priorityForCancel": 2.55,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
-    "op": "add",
-    "path": "/server/behaviors/11/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.075,
-      "animation": "Run",
-      "animationSpeed": 1.2,
-      "sound": "game:creature/pig/hurt",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 2.55,
-      "priorityForCancel": 2.55,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
-    "op": "add",
-    "path": "/server/behaviors/11/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.075,
-      "animation": "Run",
-      "animationSpeed": 1.2,
-      "sound": "game:creature/pig/hurt",
-      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 2.55,
-      "priorityForCancel": 2.55,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
       "retaliateAttacks": false
     },
     "side": "server"
   },
   {
     "enabled": true,
-    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "op": "add",
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
       "code": "seekentity",
+      "priority": 1.5,
+      "mincooldown": 1000,
+      "maxcooldown": 1500,
       "movespeed": 0.063,
+      "seekingRange": 24,
       "animation": "Canter",
       "animationSpeed": 1.2,
+      "whenInEmotionState": "aggressiveondamage",
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
-      ],
-      "priority": 2.65,
-      "priorityForCancel": 2.65,
-      "slot": 0,
-      "seekingRange": 16,
-      "minCooldownMs": 1000,
-      "maxCooldownMs": 1500,
-      "maxFollowTime": 15,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
-      ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
       ],
       "retaliateAttacks": false
     },
@@ -131,47 +150,144 @@
   },
   {
     "enabled": true,
-    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "op": "add",
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
-      "code": "meleeattack",
-      "damageByType": {
-        "*-female": 6,
-        "*": 8
-      },
-      "damageTier": 2,
-      "attackDurationMs": 900,
-      "damagePlayerAtMs": 300,
-      "animation": "Attack",
+      "code": "seekentity",
+      "priority": 1.5,
+      "mincooldown": 1000,
+      "maxcooldown": 1500,
+      "movespeed": 0.063,
+      "seekingRange": 12,
+      "animation": "Canter",
       "animationSpeed": 1.2,
-      "damageType": "BluntAttack",
+      "whenInEmotionState": "aggressivearoundentities",
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 2.75,
-      "priorityForCancel": 2.75,
-      "slot": 1,
-      "minCooldownMs": 500,
-      "maxCooldownMs": 1500,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
-      ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "minCooldownMsByType": {
-        "*-female": 1000,
-        "*": 1500
-      },
-      "maxCooldownMsByType": {
-        "*-female": 1500,
-        "*": 2500
-      },
       "retaliateAttacks": false
     },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "seekentity",
+      "priority": 1.44,
+      "mincooldown": 1000,
+      "maxcooldown": 1500,
+      "seekingRange": 11,
+      "movespeed": 0.075,
+      "animation": "Canter",
+      "animationSpeed": 1.2,
+      "maxGeneration": 2,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 1.36,
+      "movespeed": 0.0375,
+      "seekingRange": 15,
+      "animation": "Trot",
+      "animationSpeed": 1.2,
+      "sound": "game:creature/pig/hurt",
+      "maxGeneration": 2,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
+    "path": "/server/behaviors/11/aitasks/10/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
+    "path": "/server/behaviors/11/aitasks/10/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
+    "path": "/server/behaviors/11/aitasks/10/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 1.32,
+      "movespeed": 0.033,
+      "seekingRange": 21,
+      "animation": "Trot",
+      "animationSpeed": 1.2,
+      "sound": "game:creature/pig/hurt",
+      "maxGeneration": 1,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
+    "path": "/server/behaviors/11/aitasks/15/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
+    "path": "/server/behaviors/11/aitasks/15/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
+    "path": "/server/behaviors/11/aitasks/15/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
     "side": "server"
   }
 ]

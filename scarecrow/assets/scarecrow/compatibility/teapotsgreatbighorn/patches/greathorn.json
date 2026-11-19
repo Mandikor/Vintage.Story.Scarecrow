@@ -1,122 +1,13 @@
 [
   {
     "enabled": true,
-    "file": "teapotsgreatbighorn:entities/animal/mammal/hooved/greathorn.json",
     "op": "add",
-    "path": "/server/behaviors/14/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "animationSpeed": 1.5,
-      "movespeed": 0.099,
-      "sound": "game:creature/sheep/hurt2",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 2.2,
-      "priorityForCancel": 2.2,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
     "file": "teapotsgreatbighorn:entities/animal/mammal/hooved/greathorn.json",
-    "op": "add",
-    "path": "/server/behaviors/14/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "animationSpeed": 1.5,
-      "movespeed": 0.099,
-      "sound": "game:creature/sheep/hurt2",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 2.2,
-      "priorityForCancel": 2.2,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "teapotsgreatbighorn:entities/animal/mammal/hooved/greathorn.json",
-    "op": "add",
-    "path": "/server/behaviors/14/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "animationSpeed": 1.5,
-      "movespeed": 0.099,
-      "sound": "game:creature/sheep/hurt2",
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 2.2,
-      "priorityForCancel": 2.2,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "teapotsgreatbighorn:entities/animal/mammal/hooved/greathorn.json",
-    "op": "add",
-    "path": "/server/behaviors/14/aitasks/-",
-    "value": {
-      "code": "seekentity",
-      "movespeed": 0.071,
-      "animation": "Charge",
-      "animationSpeed": 1.43,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 2.3,
-      "priorityForCancel": 2.3,
-      "slot": 0,
-      "seekingRange": 16,
-      "minCooldownMs": 1000,
-      "maxCooldownMs": 1500,
-      "maxFollowTime": 15,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
-      ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "teapotsgreatbighorn:entities/animal/mammal/hooved/greathorn.json",
-    "op": "add",
     "path": "/server/behaviors/14/aitasks/-",
     "value": {
       "code": "meleeattack",
+      "priority": 2.1,
+      "slot": 1,
       "knockbackStrengthByType": {
         "*-female": 2.5,
         "*": 3
@@ -129,25 +20,130 @@
       "damageTier": 2,
       "minDist": 2.4,
       "minVerDist": 1.2,
+      "mincooldown": 1500,
+      "maxcooldown": 2500,
       "attackDurationMs": 1250,
       "damagePlayerAtMs": 800,
       "animation": "Attack",
       "animationSpeed": 1,
+      "sound": "game:creature/sheep/hurt2",
+      "soundStartMs": 300,
+      "whenInEmotionState": "aggressiveondamage",
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 2.4,
-      "priorityForCancel": 2.4,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgreatbighorn:entities/animal/mammal/hooved/greathorn.json",
+    "path": "/server/behaviors/14/aitasks/-",
+    "value": {
+      "code": "meleeattack",
+      "priority": 2,
       "slot": 1,
-      "minCooldownMs": 1500,
-      "maxCooldownMs": 2500,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
+      "knockbackStrengthByType": {
+        "*-female": 2.5,
+        "*": 3
+      },
+      "damageByType": {
+        "*-female": 8,
+        "*": 10
+      },
+      "damageType": "BluntAttack",
+      "damageTier": 2,
+      "minDist": 2.4,
+      "minVerDist": 1.2,
+      "mincooldown": 1500,
+      "maxcooldown": 2500,
+      "attackDurationMs": 1250,
+      "damagePlayerAtMs": 800,
+      "animation": "Attack",
+      "animationSpeed": 1,
+      "sound": "game:creature/sheep/hurt2",
+      "soundStartMs": 300,
+      "whenNotInEmotionState": "aggressiveondamage",
+      "maxGeneration": 2,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
       ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgreatbighorn:entities/animal/mammal/hooved/greathorn.json",
+    "path": "/server/behaviors/14/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 1.8,
+      "seekingRange": 16,
+      "animation": "Run",
+      "animationSpeed": 1.5,
+      "movespeed": 0.099,
+      "sound": "game:creature/sheep/hurt2",
+      "whenInEmotionState": "fleeondamage",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgreatbighorn:entities/animal/mammal/hooved/greathorn.json",
+    "path": "/server/behaviors/14/aitasks/-",
+    "value": {
+      "code": "seekentity",
+      "priority": 1.5,
+      "mincooldown": 1000,
+      "maxcooldown": 1500,
+      "seekingRange": 20,
+      "movespeed": 0.071,
+      "animation": "Charge",
+      "animationSpeed": 1.43,
+      "whenInEmotionState": "aggressiveondamage",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgreatbighorn:entities/animal/mammal/hooved/greathorn.json",
+    "path": "/server/behaviors/14/aitasks/-",
+    "value": {
+      "code": "seekentity",
+      "priority": 1.44,
+      "mincooldown": 1000,
+      "maxcooldown": 1500,
+      "seekingRange": 7,
+      "movespeed": 0.071,
+      "animation": "Charge",
+      "animationSpeed": 1.43,
+      "maxGeneration": 2,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
       ],
       "retaliateAttacks": false
     },

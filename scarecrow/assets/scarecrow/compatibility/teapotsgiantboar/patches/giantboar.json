@@ -1,8 +1,89 @@
 [
   {
     "enabled": true,
+    "op": "add",
     "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
+    "path": "/server/behaviors/13/aitasks/-",
+    "value": {
+      "code": "meleeattack",
+      "skipEntityCodes": [
+        "giantboar-*",
+        "tame-giantboar-*"
+      ],
+      "priority": 2.5,
+      "damageByType": {
+        "*-male": 12,
+        "*-female": 10
+      },
+      "damageTier": 2,
+      "damageType": "PiercingAttack",
+      "sound": "game:creature/pig/attack",
+      "soundStartMs": 300,
+      "minDist": 3.5,
+      "minVerDist": 1.5,
+      "animation": "Attack",
+      "animationSpeed": 1.5,
+      "movespeed": 0.055,
+      "mincooldown": 1200,
+      "maxcooldown": 1500,
+      "attackDurationMs": 900,
+      "damagePlayerAtMs": 500,
+      "knockbackStrength": 2,
+      "whenInEmotionState": "aggressiveondamage",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
+    "path": "/server/behaviors/13/aitasks/-",
+    "value": {
+      "code": "meleeattack",
+      "skipEntityCodes": [
+        "giantboar-*",
+        "tame-giantboar-*"
+      ],
+      "priority": 2.5,
+      "damageByType": {
+        "*-male": 12,
+        "*-female": 10
+      },
+      "damageTier": 2,
+      "damageType": "PiercingAttack",
+      "sound": "game:creature/pig/attack",
+      "soundStartMs": 300,
+      "minDist": 3.5,
+      "minVerDist": 1.5,
+      "animation": "Attack",
+      "animationSpeed": 1.5,
+      "movespeed": 0.055,
+      "mincooldown": 1200,
+      "maxcooldown": 1500,
+      "attackDurationMs": 900,
+      "damagePlayerAtMs": 500,
+      "knockbackStrength": 2,
+      "whenInEmotionState": "aggressivearoundentities|saturated",
+      "maxGeneration": 3,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
     "op": "replace",
+    "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
     "path": "/server/behaviors/13/aitasks/3/entityCodes",
     "value": [
       "chicken-*",
@@ -20,106 +101,25 @@
   },
   {
     "enabled": true,
-    "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
     "op": "add",
-    "path": "/server/behaviors/13/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.045,
-      "animation": "Trot",
-      "animationSpeed": 1.2,
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 2.6,
-      "priorityForCancel": 2.6,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
     "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
-    "op": "add",
-    "path": "/server/behaviors/13/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.045,
-      "animation": "Trot",
-      "animationSpeed": 1.2,
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 2.6,
-      "priorityForCancel": 2.6,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
-    "op": "add",
-    "path": "/server/behaviors/13/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.045,
-      "animation": "Trot",
-      "animationSpeed": 1.2,
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 2.6,
-      "priorityForCancel": 2.6,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
-    "op": "add",
     "path": "/server/behaviors/13/aitasks/-",
     "value": {
       "code": "seekentity",
+      "enabledByType": {
+        "*-female": true,
+        "*": false
+      },
+      "priority": 2.41,
       "movespeed": 0.055,
+      "seekingRange": 15,
       "animation": "Run",
+      "whenInEmotionState": "aggressivearoundentities",
+      "maxGeneration": 3,
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
-      ],
-      "priority": 2.7,
-      "priorityForCancel": 2.7,
-      "slot": 0,
-      "seekingRange": 16,
-      "minCooldownMs": 500,
-      "maxCooldownMs": 1000,
-      "maxFollowTime": 15,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
-      ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
       ],
       "retaliateAttacks": false
     },
@@ -127,39 +127,42 @@
   },
   {
     "enabled": true,
-    "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
     "op": "add",
+    "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
     "path": "/server/behaviors/13/aitasks/-",
     "value": {
-      "code": "meleeattack",
-      "damageByType": {
-        "*-male": 12,
-        "*-female": 10
-      },
-      "damageTier": 2,
-      "damageType": "PiercingAttack",
-      "minDist": 3.5,
-      "minVerDist": 1.5,
-      "animation": "Attack",
-      "animationSpeed": 1.5,
-      "attackDurationMs": 900,
-      "damagePlayerAtMs": 500,
-      "knockbackStrength": 2,
+      "code": "seekentity",
+      "priority": 2.4,
+      "movespeed": 0.055,
+      "seekingRange": 15,
+      "animation": "Run",
+      "whenInEmotionState": "aggressiveondamage",
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 2.8,
-      "priorityForCancel": 2.8,
-      "slot": 1,
-      "minCooldownMs": 1200,
-      "maxCooldownMs": 1500,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
-      ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
+    "path": "/server/behaviors/13/aitasks/-",
+    "value": {
+      "code": "seekentity",
+      "priority": 2.4,
+      "movespeed": 0.055,
+      "seekingRange": 15,
+      "animation": "Run",
+      "whenInEmotionState": "saturated",
+      "maxGeneration": 3,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
       ],
       "retaliateAttacks": false
     },

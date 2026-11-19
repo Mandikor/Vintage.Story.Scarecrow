@@ -2,280 +2,48 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
     "file": "vombatidae:entities/animal/mammal/vombatidae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
       "animation": "Run",
+      "skipEntityCodes": [
+        "vombatidae-*"
+      ],
       "movespeedByType": {
+        "*-adult-male-phascolonusgigas": 0.0521,
+        "*-adult-female-phascolonusgigas": 0.0521,
         "*-adult-male-vombatushacketti": 0.0667,
         "*-adult-female-vombatushacketti": 0.0667,
         "*-adult-male-*": 0.0833,
         "*-adult-female-*": 0.0833
       },
       "animationSpeedByType": {
+        "*-adult-male-phascolonusgigas": 3.05,
+        "*-adult-female-phascolonusgigas": 2.89,
         "*-adult-male-vombatushacketti": 3.9,
         "*-adult-female-vombatushacketti": 3.75,
         "*-adult-male-*": 4.89,
         "*-adult-female-*": 4.63
       },
-      "entityCodes": [
-        "scarecrow"
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "fleeDurationMs": 20000,
+      "whenInEmotionStates": [
+        "fleeondamage"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
-      "enabledByType": {
-        "vombatidae-adult-*-lasiorhinuskrefftii": true,
-        "vombatidae-adult-*-lasiorhinuslatifrons": true,
-        "vombatidae-adult-*-vombatushacketti": true,
-        "vombatidae-adult-*-vombatusursinus": true,
-        "*": false
-      },
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "vombatidae:entities/animal/mammal/vombatidae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-adult-male-vombatushacketti": 0.0667,
-        "*-adult-female-vombatushacketti": 0.0667,
-        "*-adult-male-*": 0.0833,
-        "*-adult-female-*": 0.0833
-      },
-      "animationSpeedByType": {
-        "*-adult-male-vombatushacketti": 3.9,
-        "*-adult-female-vombatushacketti": 3.75,
-        "*-adult-male-*": 4.89,
-        "*-adult-female-*": 4.63
-      },
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "enabledByType": {
-        "vombatidae-adult-*-lasiorhinuskrefftii": true,
-        "vombatidae-adult-*-lasiorhinuslatifrons": true,
-        "vombatidae-adult-*-vombatushacketti": true,
-        "vombatidae-adult-*-vombatusursinus": true,
-        "*": false
-      },
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "vombatidae:entities/animal/mammal/vombatidae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-adult-male-vombatushacketti": 0.0667,
-        "*-adult-female-vombatushacketti": 0.0667,
-        "*-adult-male-*": 0.0833,
-        "*-adult-female-*": 0.0833
-      },
-      "animationSpeedByType": {
-        "*-adult-male-vombatushacketti": 3.9,
-        "*-adult-female-vombatushacketti": 3.75,
-        "*-adult-male-*": 4.89,
-        "*-adult-female-*": 4.63
-      },
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "enabledByType": {
-        "vombatidae-adult-*-lasiorhinuskrefftii": true,
-        "vombatidae-adult-*-lasiorhinuslatifrons": true,
-        "vombatidae-adult-*-vombatushacketti": true,
-        "vombatidae-adult-*-vombatusursinus": true,
-        "*": false
-      },
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "vombatidae:entities/animal/mammal/vombatidae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-adult-male-phascolonusgigas": 0.0521,
-        "*-adult-female-phascolonusgigas": 0.0521,
-        "*-adult-male-*": 0.0833,
-        "*-adult-female-*": 0.0833
-      },
-      "animationSpeedByType": {
-        "*-adult-male-phascolonusgigas": 3.05,
-        "*-adult-female-phascolonusgigas": 2.89,
-        "*-adult-male-*": 4.89,
-        "*-adult-female-*": 4.63
-      },
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "enabledByType": {
-        "vombatidae-adult-*-phascolonusgigas": true,
-        "*": false
-      },
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "vombatidae:entities/animal/mammal/vombatidae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-adult-male-phascolonusgigas": 0.0521,
-        "*-adult-female-phascolonusgigas": 0.0521,
-        "*-adult-male-*": 0.0833,
-        "*-adult-female-*": 0.0833
-      },
-      "animationSpeedByType": {
-        "*-adult-male-phascolonusgigas": 3.05,
-        "*-adult-female-phascolonusgigas": 2.89,
-        "*-adult-male-*": 4.89,
-        "*-adult-female-*": 4.63
-      },
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "enabledByType": {
-        "vombatidae-adult-*-phascolonusgigas": true,
-        "*": false
-      },
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "vombatidae:entities/animal/mammal/vombatidae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-adult-male-phascolonusgigas": 0.0521,
-        "*-adult-female-phascolonusgigas": 0.0521,
-        "*-adult-male-*": 0.0833,
-        "*-adult-female-*": 0.0833
-      },
-      "animationSpeedByType": {
-        "*-adult-male-phascolonusgigas": 3.05,
-        "*-adult-female-phascolonusgigas": 2.89,
-        "*-adult-male-*": 4.89,
-        "*-adult-female-*": 4.63
-      },
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "enabledByType": {
-        "vombatidae-adult-*-phascolonusgigas": true,
-        "*": false
-      },
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "vombatidae:entities/animal/mammal/vombatidae-adult.json",
-    "value": {
-      "code": "seekentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-adult-male-phascolonusgigas": 0.0521,
-        "*-adult-female-phascolonusgigas": 0.0521,
-        "*-adult-male-*": 0.0833,
-        "*-adult-female-*": 0.0833
-      },
-      "animationSpeedByType": {
-        "*-adult-male-phascolonusgigas": 3.05,
-        "*-adult-female-phascolonusgigas": 2.89,
-        "*-adult-male-*": 4.89,
-        "*-adult-female-*": 4.63
-      },
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.7,
-      "priorityForCancel": 8.7,
-      "slot": 0,
-      "seekingRange": 16,
-      "minCooldownMs": 500,
-      "maxCooldownMs": 1000,
-      "maxFollowTime": 15,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
-      ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "enabledByType": {
-        "vombatidae-adult-*-phascolonusgigas": true,
-        "*": false
-      },
       "retaliateAttacks": false
     },
     "side": "server"
@@ -283,121 +51,197 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
     "file": "vombatidae:entities/animal/mammal/vombatidae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
     "value": {
-      "code": "meleeattack",
-      "animation": "Attack",
-      "animationSpeed": 1.25,
-      "damageByType": {
-        "*-adult-*-phascolonusgigas": 9
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "vombatidae-*"
+      ],
+      "movespeedByType": {
+        "*-adult-male-*": 0.0082,
+        "*-adult-female-*": 0.009
       },
-      "damageType": "SlashingAttack",
-      "minDist": 1.25,
-      "damageTier": 1,
-      "attackDurationMs": 1250,
-      "damagePlayerAtMs": 500,
+      "animationSpeed": 1.0,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "fleeDurationMs": 60000,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.8,
-      "priorityForCancel": 8.8,
-      "slot": 1,
-      "minCooldownMs": 500,
-      "maxCooldownMs": 1500,
-      "whenNotInEmotionStates": [
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "vombatidae:entities/animal/mammal/vombatidae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.4,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "vombatidae-*"
+      ],
+      "movespeedByType": {
+        "*-adult-male-*": 0.003075,
+        "*-adult-female-*": 0.003375
+      },
+      "animationSpeedByType": {
+        "*-phascolonusgigas": 0.6,
+        "*": 1.35
+      },
+      "seekingRange": 60,
+      "fleeingDistance": 180,
+      "fleeDurationMs": 60000,
+      "whenInEmotionStates": [
         "fleeondamage"
       ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
       ],
-      "enabledByType": {
-        "vombatidae-adult-*-phascolonusgigas": true,
-        "*": false
-      },
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "vombatidae:entities/animal/mammal/vombatidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-baby-*-phascolonusgigas": 0.036,
-        "*-baby-*": 0.018
-      },
-      "animationSpeedByType": {
-        "*-baby-*": 4
-      },
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
       "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "vombatidae:entities/animal/mammal/vombatidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-baby-*-phascolonusgigas": 0.036,
-        "*-baby-*": 0.018
-      },
-      "animationSpeedByType": {
-        "*-baby-*": 4
-      },
       "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "vombatidae:entities/animal/mammal/vombatidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-baby-*-phascolonusgigas": 0.036,
-        "*-baby-*": 0.018
-      },
-      "animationSpeedByType": {
-        "*-baby-*": 4
-      },
-      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "vombatidae:entities/animal/mammal/vombatidae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Run",
+      "skipEntityCodes": [
+        "vombatidae-*"
+      ],
+      "movespeedByType": {
+        "*-baby-*-phascolonusgigas": 0.036,
+        "*-baby-*": 0.018
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 4
+      },
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "fleeDurationMs": 20000,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "vombatidae:entities/animal/mammal/vombatidae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "vombatidae-*"
+      ],
+      "movespeedByType": {
+        "*-baby-*": 0.0045
+      },
+      "animationSpeed": 1.0,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "fleeDurationMs": 60000,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "vombatidae:entities/animal/mammal/vombatidae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.4,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "vombatidae-*"
+      ],
+      "movespeedByType": {
+        "*-baby-*": 0.00225
+      },
+      "animationSpeedByType": {
+        "*-phascolonusgigas": 0.5,
+        "*": 1
+      },
+      "seekingRange": 60,
+      "fleeingDistance": 180,
+      "fleeDurationMs": 60000,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
       "retaliateAttacks": false
     },
     "side": "server"

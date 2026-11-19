@@ -2,126 +2,39 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
     "file": "casuariidae:entities/animal/bird/dromornithidae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
       "animation": "Run",
+      "skipEntityCodes": [
+        "anatidae-*",
+        "casuariidae-*",
+        "dromornithidae-*"
+      ],
       "movespeedByType": {
         "dromornithidae-adult-*-genyornisnewtoni": 0.09
       },
       "animationSpeedByType": {
         "*-adult-*-genyornisnewtoni": 2.7
       },
-      "entityCodes": [
-        "scarecrow"
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "casuariidae:entities/animal/bird/dromornithidae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "dromornithidae-adult-*-genyornisnewtoni": 0.09
-      },
-      "animationSpeedByType": {
-        "*-adult-*-genyornisnewtoni": 2.7
-      },
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "casuariidae:entities/animal/bird/dromornithidae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "dromornithidae-adult-*-genyornisnewtoni": 0.09
-      },
-      "animationSpeedByType": {
-        "*-adult-*-genyornisnewtoni": 2.7
-      },
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "casuariidae:entities/animal/bird/dromornithidae-adult.json",
-    "value": {
-      "code": "seekentity",
-      "animation": "Charge",
-      "movespeedByType": {
-        "dromornithidae-adult-*-genyornisnewtoni": 0.045
-      },
-      "animationSpeedByType": {
-        "*-adult-*-genyornisnewtoni": 1.35
-      },
-      "soundByType": {
-        "*-genyornisnewtoni": "creature/dromornithidae/call*"
-      },
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.7,
-      "priorityForCancel": 8.7,
-      "slot": 0,
-      "seekingRange": 16,
-      "minCooldownMs": 500,
-      "maxCooldownMs": 1000,
-      "maxFollowTime": 15,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
-      ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
-      ],
       "retaliateAttacks": false
     },
     "side": "server"
@@ -129,114 +42,208 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
     "file": "casuariidae:entities/animal/bird/dromornithidae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
     "value": {
-      "code": "meleeattack",
-      "animation": "Attack",
-      "animationSpeed": 1.5,
-      "damageByType": {
-        "dromornithidae-adult-*-genyornisnewtoni": 10
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "anatidae-*",
+        "casuariidae-*",
+        "dromornithidae-*"
+      ],
+      "movespeedByType": {
+        "dromornithidae-adult-*-genyornisnewtoni": 0.01,
+        "*": 0.045
       },
-      "damageType": "SlashingAttack",
-      "minDist": 1,
-      "damageTier": 2,
-      "attackDurationMs": 800,
-      "damagePlayerAtMs": 500,
+      "animationSpeedByType": {
+        "dromornithidae-adult-*-genyornisnewtoni": 0.75
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.8,
-      "priorityForCancel": 8.8,
-      "slot": 1,
-      "minCooldownMs": 500,
-      "maxCooldownMs": 500,
-      "whenNotInEmotionStates": [
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "casuariidae:entities/animal/bird/dromornithidae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.41,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "anatidae-*",
+        "casuariidae-*",
+        "dromornithidae-*"
+      ],
+      "movespeedByType": {
+        "dromornithidae-adult-*": 0.0075
+      },
+      "animationSpeedByType": {
+        "dromornithidae-adult-*-genyornisnewtoni": 0.75
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
         "fleeondamage"
       ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
+      "tagsAppliedToEntity": [
+        "threatening",
+        "state-moving",
+        "state-sprinting"
       ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "casuariidae:entities/animal/bird/dromornithidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "dromornithidae-baby-*-genyornisnewtoni": 0.045
-      },
-      "animationSpeedByType": {
-        "dromornithidae-baby-*-genyornisnewtoni": 7.2
-      },
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
       "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "casuariidae:entities/animal/bird/dromornithidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "dromornithidae-baby-*-genyornisnewtoni": 0.045
-      },
-      "animationSpeedByType": {
-        "dromornithidae-baby-*-genyornisnewtoni": 7.2
-      },
       "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "casuariidae:entities/animal/bird/dromornithidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "dromornithidae-baby-*-genyornisnewtoni": 0.045
-      },
-      "animationSpeedByType": {
-        "dromornithidae-baby-*-genyornisnewtoni": 7.2
-      },
-      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "casuariidae:entities/animal/bird/dromornithidae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Run",
+      "skipEntityCodes": [
+        "dromornithidae-adult-female-{type}",
+        "dromornithidae-adult-male-{type}",
+        "dromornithidae-baby-female-{type}",
+        "dromornithidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "dromornithidae-baby-*-genyornisnewtoni": 0.045
+      },
+      "animationSpeedByType": {
+        "dromornithidae-baby-*-genyornisnewtoni": 7.2
+      },
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "casuariidae:entities/animal/bird/dromornithidae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "dromornithidae-adult-female-{type}",
+        "dromornithidae-adult-male-{type}",
+        "dromornithidae-baby-female-{type}",
+        "dromornithidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "dromornithidae-baby-*-genyornisnewtoni": 0.005,
+        "*": 0.045
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 1.5
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "casuariidae:entities/animal/bird/dromornithidae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.41,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "dromornithidae-adult-female-{type}",
+        "dromornithidae-adult-male-{type}",
+        "dromornithidae-baby-female-{type}",
+        "dromornithidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "dromornithidae-baby-*-genyornisnewtoni": 0.00375
+      },
+      "animationSpeedByType": {
+        "dromornithidae-baby-*-genyornisnewtoni": 1.5
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "threatening",
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
       "retaliateAttacks": false
     },
     "side": "server"

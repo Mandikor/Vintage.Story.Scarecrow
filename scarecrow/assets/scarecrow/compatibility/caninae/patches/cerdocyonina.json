@@ -2,11 +2,19 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
     "file": "caninae:entities/animal/mammal/cerdocyonina-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
       "animation": "Gallop",
+      "skipEntityCodes": [
+        "caninae-cerdocyonina-adult-female-{genus}-{species}",
+        "caninae-cerdocyonina-adult-male-{genus}-{species}",
+        "caninae-cerdocyonina-baby-female-{genus}-{species}",
+        "caninae-cerdocyonina-baby-male-{genus}-{species}"
+      ],
       "movespeedByType": {
         "*-female-atelocynus-microtis": 0.048,
         "*-male-atelocynus-microtis": 0.056,
@@ -16,205 +24,41 @@
         "*-male-chrysocyon-brachyurus": 0.116,
         "*-female-dusicyon-australis": 0.056,
         "*-male-dusicyon-australis": 0.06,
-        "*-female-lycalopex-culpaeus": 0.048,
-        "*-male-lycalopex-culpaeus": 0.052,
-        "*-female-lycalopex-fulvipes": 0.04,
-        "*-male-lycalopex-fulvipes": 0.044,
-        "*-female-lycalopex-griseus": 0.048,
-        "*-male-lycalopex-griseus": 0.052,
-        "*-female-lycalopex-gymnocercus": 0.048,
-        "*-male-lycalopex-gymnocercus": 0.052,
-        "*-female-lycalopex-sechurae": 0.04,
-        "*-male-lycalopex-sechurae": 0.044,
-        "*-female-lycalopex-vetulus": 0.04,
-        "*-male-lycalopex-vetulus": 0.044,
-        "*-female-speothos-venaticus": 0.04,
-        "*-male-speothos-venaticus": 0.044
-      },
-      "animationSpeed": 4,
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "enabledByType": {
-        "caninae-cerdocyonina-adult-*-atelocynus-microtis": true,
-        "caninae-cerdocyonina-adult-*-cerdocyon-thous": true,
-        "caninae-cerdocyonina-adult-*-chrysocyon-brachyurus": true,
-        "caninae-cerdocyonina-adult-*-dusicyon-australis": true,
-        "caninae-cerdocyonina-adult-*-lycalopex-culpaeus": true,
-        "caninae-cerdocyonina-adult-*-lycalopex-fulvipes": true,
-        "caninae-cerdocyonina-adult-*-lycalopex-griseus": true,
-        "caninae-cerdocyonina-adult-*-lycalopex-gymnocercus": true,
-        "caninae-cerdocyonina-adult-*-lycalopex-sechurae": true,
-        "caninae-cerdocyonina-adult-*-lycalopex-vetulus": true,
-        "caninae-cerdocyonina-adult-*-speothos-venaticus": true,
-        "*": false
-      },
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "caninae:entities/animal/mammal/cerdocyonina-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Gallop",
-      "movespeedByType": {
-        "*-female-atelocynus-microtis": 0.048,
-        "*-male-atelocynus-microtis": 0.056,
-        "*-female-cerdocyon-thous": 0.052,
-        "*-male-cerdocyon-thous": 0.056,
-        "*-female-chrysocyon-brachyurus": 0.108,
-        "*-male-chrysocyon-brachyurus": 0.116,
-        "*-female-dusicyon-australis": 0.056,
-        "*-male-dusicyon-australis": 0.06,
-        "*-female-lycalopex-culpaeus": 0.048,
-        "*-male-lycalopex-culpaeus": 0.052,
-        "*-female-lycalopex-fulvipes": 0.04,
-        "*-male-lycalopex-fulvipes": 0.044,
-        "*-female-lycalopex-griseus": 0.048,
-        "*-male-lycalopex-griseus": 0.052,
-        "*-female-lycalopex-gymnocercus": 0.048,
-        "*-male-lycalopex-gymnocercus": 0.052,
-        "*-female-lycalopex-sechurae": 0.04,
-        "*-male-lycalopex-sechurae": 0.044,
-        "*-female-lycalopex-vetulus": 0.04,
-        "*-male-lycalopex-vetulus": 0.044,
-        "*-female-speothos-venaticus": 0.04,
-        "*-male-speothos-venaticus": 0.044
-      },
-      "animationSpeed": 4,
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "enabledByType": {
-        "caninae-cerdocyonina-adult-*-atelocynus-microtis": true,
-        "caninae-cerdocyonina-adult-*-cerdocyon-thous": true,
-        "caninae-cerdocyonina-adult-*-chrysocyon-brachyurus": true,
-        "caninae-cerdocyonina-adult-*-dusicyon-australis": true,
-        "caninae-cerdocyonina-adult-*-lycalopex-culpaeus": true,
-        "caninae-cerdocyonina-adult-*-lycalopex-fulvipes": true,
-        "caninae-cerdocyonina-adult-*-lycalopex-griseus": true,
-        "caninae-cerdocyonina-adult-*-lycalopex-gymnocercus": true,
-        "caninae-cerdocyonina-adult-*-lycalopex-sechurae": true,
-        "caninae-cerdocyonina-adult-*-lycalopex-vetulus": true,
-        "caninae-cerdocyonina-adult-*-speothos-venaticus": true,
-        "*": false
-      },
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "caninae:entities/animal/mammal/cerdocyonina-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Gallop",
-      "movespeedByType": {
-        "*-female-atelocynus-microtis": 0.048,
-        "*-male-atelocynus-microtis": 0.056,
-        "*-female-cerdocyon-thous": 0.052,
-        "*-male-cerdocyon-thous": 0.056,
-        "*-female-chrysocyon-brachyurus": 0.108,
-        "*-male-chrysocyon-brachyurus": 0.116,
-        "*-female-dusicyon-australis": 0.056,
-        "*-male-dusicyon-australis": 0.06,
-        "*-female-lycalopex-culpaeus": 0.048,
-        "*-male-lycalopex-culpaeus": 0.052,
-        "*-female-lycalopex-fulvipes": 0.04,
-        "*-male-lycalopex-fulvipes": 0.044,
-        "*-female-lycalopex-griseus": 0.048,
-        "*-male-lycalopex-griseus": 0.052,
-        "*-female-lycalopex-gymnocercus": 0.048,
-        "*-male-lycalopex-gymnocercus": 0.052,
-        "*-female-lycalopex-sechurae": 0.04,
-        "*-male-lycalopex-sechurae": 0.044,
-        "*-female-lycalopex-vetulus": 0.04,
-        "*-male-lycalopex-vetulus": 0.044,
-        "*-female-speothos-venaticus": 0.04,
-        "*-male-speothos-venaticus": 0.044
-      },
-      "animationSpeed": 4,
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "enabledByType": {
-        "caninae-cerdocyonina-adult-*-atelocynus-microtis": true,
-        "caninae-cerdocyonina-adult-*-cerdocyon-thous": true,
-        "caninae-cerdocyonina-adult-*-chrysocyon-brachyurus": true,
-        "caninae-cerdocyonina-adult-*-dusicyon-australis": true,
-        "caninae-cerdocyonina-adult-*-lycalopex-culpaeus": true,
-        "caninae-cerdocyonina-adult-*-lycalopex-fulvipes": true,
-        "caninae-cerdocyonina-adult-*-lycalopex-griseus": true,
-        "caninae-cerdocyonina-adult-*-lycalopex-gymnocercus": true,
-        "caninae-cerdocyonina-adult-*-lycalopex-sechurae": true,
-        "caninae-cerdocyonina-adult-*-lycalopex-vetulus": true,
-        "caninae-cerdocyonina-adult-*-speothos-venaticus": true,
-        "*": false
-      },
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "caninae:entities/animal/mammal/cerdocyonina-adult.json",
-    "value": {
-      "code": "seekentity",
-      "animation": "Gallop",
-      "movespeedByType": {
         "*-female-dusicyon-avus": 0.08,
         "*-male-dusicyon-avus": 0.088,
+        "*-female-lycalopex-culpaeus": 0.048,
+        "*-male-lycalopex-culpaeus": 0.052,
+        "*-female-lycalopex-fulvipes": 0.04,
+        "*-male-lycalopex-fulvipes": 0.044,
+        "*-female-lycalopex-griseus": 0.048,
+        "*-male-lycalopex-griseus": 0.052,
+        "*-female-lycalopex-gymnocercus": 0.048,
+        "*-male-lycalopex-gymnocercus": 0.052,
+        "*-female-lycalopex-sechurae": 0.04,
+        "*-male-lycalopex-sechurae": 0.044,
+        "*-female-lycalopex-vetulus": 0.04,
+        "*-male-lycalopex-vetulus": 0.044,
         "*-female-speothos-pacivorus": 0.08,
-        "*-male-speothos-pacivorus": 0.088
+        "*-male-speothos-pacivorus": 0.088,
+        "*-female-speothos-venaticus": 0.04,
+        "*-male-speothos-venaticus": 0.044
       },
       "animationSpeed": 4,
-      "soundByType": {
-        "@.*-(atelocynus|cerdocyon|lycalopex|speothos)-.*": "caninae:creature/urocyon/hurt"
-      },
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.7,
-      "priorityForCancel": 8.7,
-      "slot": 0,
-      "seekingRange": 16,
-      "minCooldownMs": 500,
-      "maxCooldownMs": 1000,
-      "maxFollowTime": 15,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
-      ],
-      "enabledByType": {
-        "caninae-cerdocyonina-adult-*-dusicyon-avus": true,
-        "caninae-cerdocyonina-adult-*-speothos-pacivorus": true,
-        "*": false
-      },
       "retaliateAttacks": false
     },
     "side": "server"
@@ -222,151 +66,269 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
     "file": "caninae:entities/animal/mammal/cerdocyonina-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
     "value": {
-      "code": "meleeattack",
-      "animation": "Attack",
-      "animationSpeed": 2,
-      "damageByType": {
-        "*-dusicyon-avus": 5,
-        "*-speothos-pacivorus": 5
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "caninae-cerdocyonina-adult-female-{genus}-{species}",
+        "caninae-cerdocyonina-adult-male-{genus}-{species}",
+        "caninae-cerdocyonina-baby-female-{genus}-{species}",
+        "caninae-cerdocyonina-baby-male-{genus}-{species}"
+      ],
+      "movespeedByType": {
+        "*-atelocynus-microtis": 0.024,
+        "*-cerdocyon-thous": 0.024,
+        "*-chrysocyon-brachyurus": 0.06,
+        "*-dusicyon-australis": 0.032,
+        "*-dusicyon-avus": 0.035,
+        "*-lycalopex-culpaeus": 0.03,
+        "*-lycalopex-fulvipes": 0.018,
+        "*-lycalopex-griseus": 0.024,
+        "*-lycalopex-gymnocercus": 0.021,
+        "*-lycalopex-sechurae": 0.02,
+        "*-lycalopex-vetulus": 0.02,
+        "*-speothos-pacivorus": 0.03,
+        "*-speothos-venaticus": 0.02
       },
-      "damageType": "PiercingAttack",
-      "minDistByType": {
-        "*-avus": 1,
-        "*-pacivorus": 1.2,
-        "*": 0.7
-      },
-      "damageTier": 1,
-      "attackDurationMs": 800,
-      "damagePlayerAtMs": 250,
+      "animationSpeed": 1,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.8,
-      "priorityForCancel": 8.8,
-      "slot": 1,
-      "minCooldownMs": 500,
-      "maxCooldownMs": 500,
-      "whenNotInEmotionStates": [
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "caninae:entities/animal/mammal/cerdocyonina-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.4,
+      "animation": "Canter",
+      "skipEntityCodes": [
+        "caninae-cerdocyonina-adult-female-{genus}-{species}",
+        "caninae-cerdocyonina-adult-male-{genus}-{species}",
+        "caninae-cerdocyonina-baby-female-{genus}-{species}",
+        "caninae-cerdocyonina-baby-male-{genus}-{species}"
+      ],
+      "movespeedByType": {
+        "*-female-atelocynus-microtis": 0.024,
+        "*-male-atelocynus-microtis": 0.028,
+        "*-female-cerdocyon-thous": 0.026,
+        "*-male-cerdocyon-thous": 0.028,
+        "*-female-chrysocyon-brachyurus": 0.054,
+        "*-male-chrysocyon-brachyurus": 0.058,
+        "*-female-dusicyon-australis": 0.028,
+        "*-male-dusicyon-australis": 0.03,
+        "*-female-dusicyon-avus": 0.04,
+        "*-male-dusicyon-avus": 0.044,
+        "*-female-lycalopex-culpaeus": 0.024,
+        "*-male-lycalopex-culpaeus": 0.026,
+        "*-female-lycalopex-fulvipes": 0.02,
+        "*-male-lycalopex-fulvipes": 0.022,
+        "*-female-lycalopex-griseus": 0.024,
+        "*-male-lycalopex-griseus": 0.026,
+        "*-female-lycalopex-gymnocercus": 0.024,
+        "*-male-lycalopex-gymnocercus": 0.026,
+        "*-female-lycalopex-sechurae": 0.02,
+        "*-male-lycalopex-sechurae": 0.022,
+        "*-female-lycalopex-vetulus": 0.02,
+        "*-male-lycalopex-vetulus": 0.022,
+        "*-female-speothos-pacivorus": 0.04,
+        "*-male-speothos-pacivorus": 0.044,
+        "*-female-speothos-venaticus": 0.02,
+        "*-male-speothos-venaticus": 0.022
+      },
+      "animationSpeed": 2,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
         "fleeondamage"
       ],
-      "enabledByType": {
-        "caninae-cerdocyonina-adult-*-dusicyon-avus": true,
-        "caninae-cerdocyonina-adult-*-speothos-pacivorus": true,
-        "*": false
-      },
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "caninae:entities/animal/mammal/cerdocyonina-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Gallop",
-      "movespeedByType": {
-        "*-atelocynus-microtis": 0.013,
-        "*-cerdocyon-thous": 0.013,
-        "*-chrysocyon-brachyurus": 0.026,
-        "*-dusicyon-australis": 0.015,
-        "*-dusicyon-avus": 0.024,
-        "*-lycalopex-culpaeus": 0.015,
-        "*-lycalopex-fulvipes": 0.013,
-        "*-lycalopex-griseus": 0.015,
-        "*-lycalopex-gymnocercus": 0.015,
-        "*-lycalopex-sechurae": 0.015,
-        "*-lycalopex-vetulus": 0.013,
-        "*-speothos-pacivorus": 0.03,
-        "*-speothos-venaticus": 0.015
-      },
-      "animationSpeed": 2,
-      "entityCodes": [
-        "scarecrow"
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
       "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "caninae:entities/animal/mammal/cerdocyonina-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Gallop",
-      "movespeedByType": {
-        "*-atelocynus-microtis": 0.013,
-        "*-cerdocyon-thous": 0.013,
-        "*-chrysocyon-brachyurus": 0.026,
-        "*-dusicyon-australis": 0.015,
-        "*-dusicyon-avus": 0.024,
-        "*-lycalopex-culpaeus": 0.015,
-        "*-lycalopex-fulvipes": 0.013,
-        "*-lycalopex-griseus": 0.015,
-        "*-lycalopex-gymnocercus": 0.015,
-        "*-lycalopex-sechurae": 0.015,
-        "*-lycalopex-vetulus": 0.013,
-        "*-speothos-pacivorus": 0.03,
-        "*-speothos-venaticus": 0.015
-      },
-      "animationSpeed": 2,
       "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "caninae:entities/animal/mammal/cerdocyonina-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Gallop",
-      "movespeedByType": {
-        "*-atelocynus-microtis": 0.013,
-        "*-cerdocyon-thous": 0.013,
-        "*-chrysocyon-brachyurus": 0.026,
-        "*-dusicyon-australis": 0.015,
-        "*-dusicyon-avus": 0.024,
-        "*-lycalopex-culpaeus": 0.015,
-        "*-lycalopex-fulvipes": 0.013,
-        "*-lycalopex-griseus": 0.015,
-        "*-lycalopex-gymnocercus": 0.015,
-        "*-lycalopex-sechurae": 0.015,
-        "*-lycalopex-vetulus": 0.013,
-        "*-speothos-pacivorus": 0.03,
-        "*-speothos-venaticus": 0.015
-      },
-      "animationSpeed": 2,
-      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "caninae:entities/animal/mammal/cerdocyonina-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Gallop",
+      "skipEntityCodes": [
+        "caninae-cerdocyonina-adult-female-{genus}-{species}",
+        "caninae-cerdocyonina-adult-male-{genus}-{species}",
+        "caninae-cerdocyonina-baby-female-{genus}-{species}",
+        "caninae-cerdocyonina-baby-male-{genus}-{species}"
+      ],
+      "movespeedByType": {
+        "*-atelocynus-microtis": 0.013,
+        "*-cerdocyon-thous": 0.013,
+        "*-chrysocyon-brachyurus": 0.026,
+        "*-dusicyon-australis": 0.015,
+        "*-dusicyon-avus": 0.024,
+        "*-lycalopex-culpaeus": 0.015,
+        "*-lycalopex-fulvipes": 0.013,
+        "*-lycalopex-griseus": 0.015,
+        "*-lycalopex-gymnocercus": 0.015,
+        "*-lycalopex-sechurae": 0.015,
+        "*-lycalopex-vetulus": 0.013,
+        "*-speothos-pacivorus": 0.03,
+        "*-speothos-venaticus": 0.015
+      },
+      "animationSpeed": 2,
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "caninae:entities/animal/mammal/cerdocyonina-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "caninae-cerdocyonina-adult-female-{genus}-{species}",
+        "caninae-cerdocyonina-adult-male-{genus}-{species}",
+        "caninae-cerdocyonina-baby-female-{genus}-{species}",
+        "caninae-cerdocyonina-baby-male-{genus}-{species}"
+      ],
+      "movespeedByType": {
+        "*-atelocynus-microtis": 0.006,
+        "*-cerdocyon-thous": 0.006,
+        "*-chrysocyon-brachyurus": 0.012,
+        "*-dusicyon-australis": 0.009,
+        "*-dusicyon-avus": 0.01,
+        "*-lycalopex-culpaeus": 0.009,
+        "*-lycalopex-fulvipes": 0.006,
+        "*-lycalopex-griseus": 0.0072,
+        "*-lycalopex-gymnocercus": 0.0072,
+        "*-lycalopex-sechurae": 0.0072,
+        "*-lycalopex-vetulus": 0.006,
+        "*-speothos-pacivorus": 0.014,
+        "*-speothos-venaticus": 0.0072
+      },
+      "animationSpeed": 1,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "caninae:entities/animal/mammal/cerdocyonina-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.4,
+      "animation": "Canter",
+      "skipEntityCodes": [
+        "caninae-cerdocyonina-adult-female-{genus}-{species}",
+        "caninae-cerdocyonina-adult-male-{genus}-{species}",
+        "caninae-cerdocyonina-baby-female-{genus}-{species}",
+        "caninae-cerdocyonina-baby-male-{genus}-{species}"
+      ],
+      "movespeedByType": {
+        "*-atelocynus-microtis": 0.0065,
+        "*-cerdocyon-thous": 0.0065,
+        "*-chrysocyon-brachyurus": 0.013,
+        "*-dusicyon-australis": 0.0075,
+        "*-dusicyon-avus": 0.012,
+        "*-lycalopex-culpaeus": 0.0075,
+        "*-lycalopex-fulvipes": 0.0065,
+        "*-lycalopex-griseus": 0.0075,
+        "*-lycalopex-gymnocercus": 0.0075,
+        "*-lycalopex-sechurae": 0.0075,
+        "*-lycalopex-vetulus": 0.0065,
+        "*-speothos-pacivorus": 0.015,
+        "*-speothos-venaticus": 0.0075
+      },
+      "animationSpeed": 2,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
       "retaliateAttacks": false
     },
     "side": "server"

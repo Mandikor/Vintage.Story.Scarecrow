@@ -2,40 +2,18 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
     "file": "moschidae:entities/animal/mammal/hooved/moschidae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
       "animation": "Run",
-      "movespeedByType": {
-        "*-moschusanhuiensis": 0.0897,
-        "*-moschusberezovskii": 0.0897,
-        "*-moschuscupreus": 0.1036,
-        "*-moschusfuscus": 0.0933,
-        "*-moschusmoschiferus": 0.1036,
-        "*": 0.0933
-      },
-      "animationSpeed": 2.1,
-      "entityCodes": [
-        "scarecrow"
+      "skipEntityCodes": [
+        "moschidae-adult-female-{type}",
+        "moschidae-baby-female-{type}",
+        "moschidae-baby-male-{type}"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "moschidae:entities/animal/mammal/hooved/moschidae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
       "movespeedByType": {
         "*-moschusanhuiensis": 0.0897,
         "*-moschusberezovskii": 0.0897,
@@ -45,43 +23,22 @@
         "*": 0.0933
       },
       "animationSpeed": 2.1,
-      "entityCodes": [
-        "little-scarecrow"
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "fleeDurationMs": 20000,
+      "whenInEmotionStates": [
+        "fleeondamage"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "moschidae:entities/animal/mammal/hooved/moschidae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-moschusanhuiensis": 0.0897,
-        "*-moschusberezovskii": 0.0897,
-        "*-moschuscupreus": 0.1036,
-        "*-moschusfuscus": 0.0933,
-        "*-moschusmoschiferus": 0.1036,
-        "*": 0.0933
-      },
-      "animationSpeed": 2.1,
       "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
       "retaliateAttacks": false
     },
     "side": "server"
@@ -89,71 +46,204 @@
   {
     "enabled": true,
     "op": "add",
+    "file": "moschidae:entities/animal/mammal/hooved/moschidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
-    "file": "moschidae:entities/animal/mammal/hooved/moschidae-baby.json",
     "value": {
       "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*": 0.04
-      },
-      "animationSpeed": 2.5,
-      "entityCodes": [
-        "scarecrow"
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "moschidae-adult-female-{type}",
+        "moschidae-baby-female-{type}",
+        "moschidae-baby-male-{type}"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "moschidae:entities/animal/mammal/hooved/moschidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
       "movespeedByType": {
         "*": 0.04
       },
-      "animationSpeed": 2.5,
-      "entityCodes": [
-        "little-scarecrow"
+      "animationSpeed": 1,
+      "seekingRange": 30,
+      "fleeingDistance": 180,
+      "fleeDurationMs": 60000,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "moschidae:entities/animal/mammal/hooved/moschidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*": 0.04
-      },
-      "animationSpeed": 2.5,
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
       "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "moschidae:entities/animal/mammal/hooved/moschidae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.4,
+      "animation": "Canter",
+      "skipEntityCodes": [
+        "moschidae-adult-female-{type}",
+        "moschidae-baby-female-{type}",
+        "moschidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*-moschusanhuiensis": 0.0454,
+        "*-moschusberezovskii": 0.0454,
+        "*-moschuscupreus": 0.0524,
+        "*-moschusfuscus": 0.0472,
+        "*-moschusmoschiferus": 0.0524,
+        "*": 0.0472
+      },
+      "animationSpeed": 1.7,
+      "seekingRange": 30,
+      "fleeingDistance": 180,
+      "fleeDurationMs": 60000,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "moschidae:entities/animal/mammal/hooved/moschidae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.4,
+      "animation": "Run",
+      "skipEntityCodes": [
+        "moschidae-adult-female-{type}",
+        "moschidae-adult-male-{type}",
+        "moschidae-baby-female-{type}",
+        "moschidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*": 0.04
+      },
+      "animationSpeed": 2.5,
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "fleeDurationMs": 20000,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "moschidae:entities/animal/mammal/hooved/moschidae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.4,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "moschidae-adult-female-{type}",
+        "moschidae-adult-male-{type}",
+        "moschidae-baby-female-{type}",
+        "moschidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*": 0.02
+      },
+      "animationSpeed": 2,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "fleeDurationMs": 60000,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "moschidae:entities/animal/mammal/hooved/moschidae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.4,
+      "animation": "Canter",
+      "skipEntityCodes": [
+        "moschidae-adult-female-{type}",
+        "moschidae-adult-male-{type}",
+        "moschidae-baby-female-{type}",
+        "moschidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*": 0.02
+      },
+      "animationSpeed": 2,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "fleeDurationMs": 60000,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
       "retaliateAttacks": false
     },
     "side": "server"

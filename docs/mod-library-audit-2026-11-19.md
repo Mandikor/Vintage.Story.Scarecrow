@@ -9,6 +9,11 @@ tables and CSV below retain the original audit findings at `381f5b3`; they are
 historical evidence, not the current completion status. The author completed an
 in-game test without finding issues. Remaining work is tracked in [todo.md](../todo.md).
 
+The [remaining existing creature migration](native-creature-compatibility.md) is
+also implemented on `dev`, including tag-based tasks and generator handling;
+its in-game batch test is pending. The original counts and findings below remain
+unchanged as the starting-point audit.
+
 ## Inventory and scope
 
 - 165 package copies (ZIP files and unpacked directories), representing **81 mod IDs**.

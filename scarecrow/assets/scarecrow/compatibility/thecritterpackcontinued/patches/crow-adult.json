@@ -1,68 +1,43 @@
 [
   {
     "enabled": true,
-    "file": "thecritterpack:entities/animal/bird/crow/crow-adult.json",
     "op": "add",
+    "file": "thecritterpack:entities/animal/bird/crow/crow-adult.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
       "code": "fleeentity",
+      "priority": 1.8,
       "movespeed": 0.027,
       "animationSpeed": 2.4,
+      "seekingRange": 5,
       "animation": "fly",
+      "leapAtTarget": true,
+      "leapAnimation": "fly",
+      "leapChance": 1,
       "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "thecritterpack:entities/animal/bird/crow/crow-adult.json",
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.027,
-      "animationSpeed": 2.4,
-      "animation": "fly",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "thecritterpack:entities/animal/bird/crow/crow-adult.json",
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.027,
-      "animationSpeed": 2.4,
-      "animation": "fly",
-      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "retaliateAttacks": false
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0
     },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/bird/crow/crow-adult.json",
+    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/bird/crow/crow-adult.json",
+    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
     "side": "server"
   }
 ]

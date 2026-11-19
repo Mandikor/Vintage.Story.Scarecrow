@@ -16,8 +16,9 @@ remain compatible. The `combat` folder contains optional-mod compatibility code.
 | `Wearables/` | Shared inventory, whitelist/category checks, equipment persistence, radius bonuses and death cleanup. |
 | `Interactions/` | Localized server feedback and per-player repeat suppression. |
 | `Client/` | Optional radius highlights controlled by Ctrl+H; no server-side rendering. |
-| `combat/ModCompatibility.cs` | Central entry point for optional-mod client registrations. |
+| `combat/ModCompatibility.cs` | Central entry point for optional client registrations and server entity finalization. |
 | `combat/windchimes/` | Wind Chimes sound, block-shader rendering and attachment lifecycle hooks. |
+| `combat/equusponies/` | One-time server adaptation of resolved wild Equus: Expanded types after breed-specific AI generation. |
 
 `ScarecrowAttachments` is a partial class: the shared behavior lives in
 `Wearables/ScarecrowAttachments.cs`, while

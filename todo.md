@@ -72,16 +72,23 @@ Previously deferred cosmetics and aging remain deferred.
   Implemented in JSON; build and game-resolver checks passed.
 - [x] **Feverstone Wilds game test:** the author tested the integration and reported
   no issues in the observed behavior.
-- [ ] **P1 — Native player AI:** migrate the 27 existing creature integrations
-  with detected settings/proximity gaps, retaining native conditions and original
-  player tasks. Feverstone Wilds is implemented and its game test found no issues;
-  26 other integrations remain. The report and CSV retain the initial findings.
+- [x] **P1 — Native player AI implementation:** the remaining 26 creature mods
+  now use native player-code/tag tasks, retaining original action settings and
+  player/prey behavior. Shared chick templates, Equus: Expanded generation and
+  Bats' custom deterrents are covered separately. See the native creature guide;
+  the original audit and CSV retain their initial findings.
+- [ ] **Existing creature migration game test:** check representative FotSA species,
+  young/adults, swimming, sleep/injury states, Critter Pack birds/snails, Teapot
+  animals, wild/tame horses, generated Equus guard/flight breeds, Detailed Animals
+  chicks and Bats. Automated checks passed; in-game testing is pending.
 - [x] **Arctic Wolves 1.5.0:** native player-task adaptation already implemented
   and confirmed in game.
-- [ ] **P1 — Update details:** carry Bovinae 1.0.3 species-dependent flee animations
-  into the native-task migration; test Great Bighorn 1.1.1 and Feverstone sleep AI.
-- [ ] Review Bats' custom AI and Equus/Equus: Expanded/Detailed Animals runtime
-  generators separately; zero explicit player-code tasks is not proof of coverage.
+- [x] **P1 — Update implementation details:** Bovinae 1.0.3 animation maps and Great
+  Bighorn 1.1.1 native tasks are retained in the migration. Feverstone's game test
+  passed; Bovinae/Great Bighorn are included in the pending batch game test.
+- [x] Review Bats' custom AI and Equus/Equus: Expanded/Detailed Animals generators.
+  Actual builders and the server startup adapter were tested. Bats retains its
+  native feed-deterrent mechanism, not every hard-coded EntityPlayer interaction.
 - [x] Leaf Litter 1.6.0: rake JSON and decompiled ItemRake unchanged, existing
   attachment patch applies; no update-specific code change identified.
 - [x] Cervinae 0.1.19: breeding-key correction does not change AI or our patch paths.

@@ -2,43 +2,19 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
     "file": "thylacinidae:entities/animal/mammal/dasyuridae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "fleeentity",
+      "priority": 9.42,
+      "priorityForCancel": 9.42,
       "animation": "Run",
-      "movespeedByType": {
-        "*-adult-male-sarcophilusharrisii": 0.0302,
-        "*-adult-female-sarcophilusharrisii": 0.0271,
-        "*-adult-male-sarcophiluslaniarius": 0.0323,
-        "*-adult-female-sarcophiluslaniarius": 0.0292
-      },
-      "animationSpeedByType": {
-        "*-adult-male-sarcophilusharrisii": 2.1,
-        "*-adult-female-sarcophilusharrisii": 2.3,
-        "*-adult-male-sarcophiluslaniarius": 1.9,
-        "*-adult-female-sarcophiluslaniarius": 2.2
-      },
-      "entityCodes": [
-        "scarecrow"
+      "skipEntityCodes": [
+        "dasyuridae-adult-female-{type}",
+        "dasyuridae-adult-male-{type}",
+        "dasyuridae-baby-female-{type}",
+        "dasyuridae-baby-male-{type}"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "thylacinidae:entities/animal/mammal/dasyuridae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
       "movespeedByType": {
         "*-adult-male-sarcophilusharrisii": 0.0302,
         "*-adult-female-sarcophilusharrisii": 0.0271,
@@ -51,46 +27,21 @@
         "*-adult-male-sarcophiluslaniarius": 1.9,
         "*-adult-female-sarcophiluslaniarius": 2.2
       },
-      "entityCodes": [
-        "little-scarecrow"
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "thylacinidae:entities/animal/mammal/dasyuridae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-adult-male-sarcophilusharrisii": 0.0302,
-        "*-adult-female-sarcophilusharrisii": 0.0271,
-        "*-adult-male-sarcophiluslaniarius": 0.0323,
-        "*-adult-female-sarcophiluslaniarius": 0.0292
-      },
-      "animationSpeedByType": {
-        "*-adult-male-sarcophilusharrisii": 2.1,
-        "*-adult-female-sarcophilusharrisii": 2.3,
-        "*-adult-male-sarcophiluslaniarius": 1.9,
-        "*-adult-female-sarcophiluslaniarius": 2.2
-      },
       "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
       "retaliateAttacks": false
     },
     "side": "server"
@@ -98,86 +49,217 @@
   {
     "enabled": true,
     "op": "add",
+    "file": "thylacinidae:entities/animal/mammal/dasyuridae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
-    "file": "thylacinidae:entities/animal/mammal/dasyuridae-baby.json",
     "value": {
       "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-baby-*-sarcophilusharrisii": 0.016,
-        "*-baby-*-sarcophiluslaniarius": 0.016
-      },
-      "animationSpeedByType": {
-        "*-baby-*-sarcophilusharrisii": 2,
-        "*-baby-*-sarcophiluslaniarius": 1.8,
-        "*": 1
-      },
-      "entityCodes": [
-        "scarecrow"
+      "priority": 9.41,
+      "priorityForCancel": 9.42,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "dasyuridae-adult-female-{type}",
+        "dasyuridae-adult-male-{type}",
+        "dasyuridae-baby-female-{type}",
+        "dasyuridae-baby-male-{type}"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "thylacinidae:entities/animal/mammal/dasyuridae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
       "movespeedByType": {
-        "*-baby-*-sarcophilusharrisii": 0.016,
-        "*-baby-*-sarcophiluslaniarius": 0.016
+        "*": 0.02
       },
-      "animationSpeedByType": {
-        "*-baby-*-sarcophilusharrisii": 2,
-        "*-baby-*-sarcophiluslaniarius": 1.8,
-        "*": 1
-      },
-      "entityCodes": [
-        "little-scarecrow"
+      "animationSpeed": 1.5,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "fleeDurationMs": 60000,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "thylacinidae:entities/animal/mammal/dasyuridae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-baby-*-sarcophilusharrisii": 0.016,
-        "*-baby-*-sarcophiluslaniarius": 0.016
-      },
-      "animationSpeedByType": {
-        "*-baby-*-sarcophilusharrisii": 2,
-        "*-baby-*-sarcophiluslaniarius": 1.8,
-        "*": 1
-      },
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
       "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thylacinidae:entities/animal/mammal/dasyuridae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.41,
+      "animation": "Canter",
+      "skipEntityCodes": [
+        "dasyuridae-adult-female-{type}",
+        "dasyuridae-adult-male-{type}",
+        "dasyuridae-baby-female-{type}",
+        "dasyuridae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*-adult-*-sarcophilusharrisii": 0.016,
+        "*-adult-*-sarcophiluslaniarius": 0.016
+      },
+      "animationSpeedByType": {
+        "*-adult-male-sarcophilusharrisii": 2,
+        "*-adult-female-sarcophilusharrisii": 2.5,
+        "*-adult-male-sarcophiluslaniarius": 1.7,
+        "*-adult-female-sarcophiluslaniarius": 2.2,
+        "*": 1
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "fleeDurationMs": 60000,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thylacinidae:entities/animal/mammal/dasyuridae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.42,
+      "priorityForCancel": 9.42,
+      "animation": "Run",
+      "skipEntityCodes": [
+        "dasyuridae-adult-female-{type}",
+        "dasyuridae-adult-male-{type}",
+        "dasyuridae-baby-female-{type}",
+        "dasyuridae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*-baby-*-sarcophilusharrisii": 0.016,
+        "*-baby-*-sarcophiluslaniarius": 0.016
+      },
+      "animationSpeedByType": {
+        "*-baby-*-sarcophilusharrisii": 2,
+        "*-baby-*-sarcophiluslaniarius": 1.8,
+        "*": 1
+      },
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thylacinidae:entities/animal/mammal/dasyuridae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.42,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "dasyuridae-adult-female-{type}",
+        "dasyuridae-adult-male-{type}",
+        "dasyuridae-baby-female-{type}",
+        "dasyuridae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*": 0.01
+      },
+      "animationSpeed": 1.5,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "fleeDurationMs": 60000,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thylacinidae:entities/animal/mammal/dasyuridae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.41,
+      "animation": "Canter",
+      "skipEntityCodes": [
+        "dasyuridae-adult-female-{type}",
+        "dasyuridae-adult-male-{type}",
+        "dasyuridae-baby-female-{type}",
+        "dasyuridae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*-baby-*-sarcophilusharrisii": 0.008,
+        "*-baby-*-sarcophiluslaniarius": 0.008
+      },
+      "animationSpeedByType": {
+        "*-baby-*-sarcophilusharrisii": 2,
+        "*-baby-*-sarcophiluslaniarius": 1.8,
+        "*": 1
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "fleeDurationMs": 60000,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
       "retaliateAttacks": false
     },
     "side": "server"

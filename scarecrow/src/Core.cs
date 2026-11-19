@@ -34,6 +34,7 @@ namespace Scarecrow
             api.World.Logger.Event("########## started '{0}' mod ##########", Mod.Info.Name);
 
             AttachableItems.Apply(api);
+            ModCompatibility.FinalizeEntities(api);
         }
 
         public override void StartClientSide(ICoreClientAPI api)

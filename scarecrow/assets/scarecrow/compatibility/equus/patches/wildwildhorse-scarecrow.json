@@ -2,102 +2,17 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/behaviorConfigs/taskai/aitasks/-",
     "file": "equus:entities/wildwildhorse.json",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.05,
-      "animation": "Gallop",
-      "animationSpeed": 2,
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "enabledByType": {
-        "wildwildhorse-baby-*-ferus": true,
-        "*": false
-      },
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
     "path": "/behaviorConfigs/taskai/aitasks/-",
-    "file": "equus:entities/wildwildhorse.json",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.05,
-      "animation": "Gallop",
-      "animationSpeed": 2,
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "enabledByType": {
-        "*-adult-*": true,
-        "*": false
-      },
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/behaviorConfigs/taskai/aitasks/-",
-    "file": "equus:entities/wildwildhorse.json",
-    "value": {
-      "code": "seekentity",
-      "movespeed": 0.037,
-      "animation": "Charge",
-      "animationSpeed": 1,
-      "sound": "game:creature/hooved/generic/sniff*",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 8.7,
-      "priorityForCancel": 8.7,
-      "slot": 0,
-      "seekingRange": 16,
-      "minCooldownMs": 1000,
-      "maxCooldownMs": 1500,
-      "maxFollowTime": 15,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
-      ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "enabledByType": {
-        "*-adult-*": true,
-        "*": false
-      },
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/behaviorConfigs/taskai/aitasks/-",
-    "file": "equus:entities/wildwildhorse.json",
     "value": {
       "code": "meleeattack",
       "animation": "Attack",
+      "enabledByType": {
+        "*-baby-*": false,
+        "*": true
+      },
+      "priority": 3,
+      "slot": 1,
       "damageByType": {
         "*-adult-*-ferus": 7
       },
@@ -107,29 +22,191 @@
       "damageTierByType": {
         "*": 3
       },
+      "mincooldown": 500,
+      "maxcooldown": 1000,
       "attackDurationMs": 500,
       "damagePlayerAtMs": 250,
       "animationSpeed": 1,
+      "whenInEmotionState": "aggressiveondamage",
       "entityCodes": [
-        "scarecrow"
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
       ],
-      "priority": 8.8,
-      "priorityForCancel": 8.8,
-      "slot": 1,
-      "minCooldownMs": 500,
-      "maxCooldownMs": 1000,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "equus:entities/wildwildhorse.json",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "value": {
+      "code": "seekentity",
+      "priority": 2.5,
+      "mincooldown": 1000,
+      "maxcooldown": 1500,
+      "seekingRange": 20,
+      "movespeed": 0.037,
+      "animation": "Charge",
+      "animationSpeed": 1,
+      "sound": "game:creature/hooved/generic/sniff*",
+      "whenInEmotionState": "aggressiveondamage",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
       ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
-      ],
+      "retaliateAttacks": false,
       "enabledByType": {
         "*-adult-*": true,
         "*": false
-      },
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "equus:entities/wildwildhorse.json",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "whenInEmotionState": "fleeondamage",
+      "priority": 1.8,
+      "movespeed": 0.05,
+      "seekingRange": 12,
+      "animation": "Gallop",
+      "animationSpeed": 2,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
       "retaliateAttacks": false
     },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "equus:entities/wildwildhorse.json",
+    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "enabledByType": {
+        "wildwildhorse*": true,
+        "*": false
+      },
+      "priority": 1.7,
+      "movespeed": 0.05,
+      "seekingRange": 12,
+      "animation": "Gallop",
+      "animationSpeed": 2,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "equus:entities/wildwildhorse.json",
+    "path": "/behaviorConfigs/taskai/aitasks/9/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "equus:entities/wildwildhorse.json",
+    "path": "/behaviorConfigs/taskai/aitasks/9/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "equus:entities/wildwildhorse.json",
+    "path": "/behaviorConfigs/taskai/aitasks/9/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "equus:entities/wildwildhorse.json",
+    "path": "/behaviorConfigs/taskai/aitasks/10/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "equus:entities/wildwildhorse.json",
+    "path": "/behaviorConfigs/taskai/aitasks/10/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "equus:entities/wildwildhorse.json",
+    "path": "/behaviorConfigs/taskai/aitasks/10/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "equus:entities/wildwildhorse.json",
+    "path": "/behaviorConfigs/taskai/aitasks/11/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "equus:entities/wildwildhorse.json",
+    "path": "/behaviorConfigs/taskai/aitasks/11/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "equus:entities/wildwildhorse.json",
+    "path": "/behaviorConfigs/taskai/aitasks/11/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "equus:entities/wildwildhorse.json",
+    "path": "/behaviorConfigs/taskai/aitasks/12/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "equus:entities/wildwildhorse.json",
+    "path": "/behaviorConfigs/taskai/aitasks/12/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "equus:entities/wildwildhorse.json",
+    "path": "/behaviorConfigs/taskai/aitasks/12/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
     "side": "server"
   }
 ]

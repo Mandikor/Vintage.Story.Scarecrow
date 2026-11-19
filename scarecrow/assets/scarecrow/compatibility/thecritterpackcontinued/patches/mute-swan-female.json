@@ -1,68 +1,109 @@
 [
   {
     "enabled": true,
-    "file": "thecritterpack:entities/animal/bird/swan/mute/mute-swan-female.json",
     "op": "add",
+    "file": "thecritterpack:entities/animal/bird/swan/mute/mute-swan-female.json",
     "path": "/server/behaviors/8/aitasks/-",
     "value": {
       "code": "fleeentity",
-      "movespeed": 0.022,
+      "priority": 2.3,
+      "movespeed": 0.0,
       "animationSpeed": 1.6,
-      "animation": "walk",
+      "seekingRange": 9,
+      "animation": "idle",
+      "sound": "creature/swan/swan-hiss",
       "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 3.1,
-      "priorityForCancel": 3.1,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "thecritterpack:entities/animal/bird/swan/mute/mute-swan-female.json",
-    "op": "add",
-    "path": "/server/behaviors/8/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.022,
-      "animationSpeed": 1.6,
-      "animation": "walk",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 3.1,
-      "priorityForCancel": 3.1,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "thecritterpack:entities/animal/bird/swan/mute/mute-swan-female.json",
-    "op": "add",
-    "path": "/server/behaviors/8/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.022,
-      "animationSpeed": 1.6,
-      "animation": "walk",
-      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 3.1,
-      "priorityForCancel": 3.1,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/bird/swan/mute/mute-swan-female.json",
+    "path": "/server/behaviors/8/aitasks/-",
+    "value": {
+      "code": "meleeattack",
+      "enabledByType": {
+        "*-adult": true,
+        "*": false
+      },
+      "animation": "attack",
+      "priority": 3,
+      "damage": 2.1,
+      "minDist": 2.7,
+      "damageType": "PiercingAttack",
+      "slot": 1,
+      "mincooldown": 1500,
+      "maxcooldown": 1500,
+      "attackDurationMs": 800,
+      "damagePlayerAtMs": 500,
+      "whenInEmotionState": "aggressiveondamage|aggressivearoundentities",
+      "sound": "creature/swan/swan-hiss",
+      "animationSpeed": 0.8,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
       "retaliateAttacks": false
     },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/bird/swan/mute/mute-swan-female.json",
+    "path": "/server/behaviors/8/aitasks/-",
+    "value": {
+      "code": "seekentity",
+      "enabledByType": {
+        "*-adult": true,
+        "*": false
+      },
+      "priority": 2.5,
+      "movespeed": 0.03,
+      "seekingRange": 3,
+      "animation": "Run",
+      "animationSpeed": 1.5,
+      "sound": "creature/swan/swan-hiss",
+      "whenInEmotionState": "aggressiveondamage|aggressivearoundentities",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/bird/swan/mute/mute-swan-female.json",
+    "path": "/server/behaviors/8/aitasks/5/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/bird/swan/mute/mute-swan-female.json",
+    "path": "/server/behaviors/8/aitasks/5/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/bird/swan/mute/mute-swan-female.json",
+    "path": "/server/behaviors/8/aitasks/5/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
     "side": "server"
   }
 ]

@@ -2,63 +2,19 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
     "file": "viverridae:entities/animal/mammal/viverridae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
       "animation": "Run",
-      "movespeedByType": {
-        "*-adult-*-genetta*": 0.09,
-        "*-adult-*-poiana*": 0.09,
-        "*-adult-*-viverriculaindica": 0.09,
-        "*-adult-*-civettictiscivetta": 0.07,
-        "*-adult-*-macrogalidiamusschenbroekii": 0.07,
-        "*-adult-*-viverra*": 0.07,
-        "*-adult-*-arctictisbinturong": 0.03,
-        "*-adult-*-cynogalebennettii": 0.03,
-        "*-adult-*": 0.05
-      },
-      "animationSpeedByType": {
-        "*-adult-male-genetta*": 4.05,
-        "*-adult-female-genetta*": 4.5,
-        "*-adult-male-poiana*": 4.05,
-        "*-adult-female-poiana*": 4.5,
-        "*-adult-male-viverriculaindica": 4.05,
-        "*-adult-female-viverriculaindica": 4.5,
-        "*-adult-male-civettictiscivetta": 2.1,
-        "*-adult-female-civettictiscivetta": 2.3,
-        "*-adult-male-macrogalidiamusschenbroekii": 2.1,
-        "*-adult-female-macrogalidiamusschenbroekii": 2.3,
-        "*-adult-male-viverra*": 2.1,
-        "*-adult-female-viverra*": 2.3,
-        "*-adult-male-arctictisbinturong": 0.9,
-        "*-adult-female-arctictisbinturong": 1,
-        "*-adult-male-cynogalebennettii": 1.35,
-        "*-adult-female-cynogalebennettii": 1.5,
-        "*-adult-male-*": 2.25,
-        "*-adult-female-*": 2.5,
-        "*": 1
-      },
-      "entityCodes": [
-        "scarecrow"
+      "skipEntityCodes": [
+        "viverridae-adult-female-{type}",
+        "viverridae-adult-male-{type}",
+        "viverridae-baby-female-{type}",
+        "viverridae-baby-male-{type}"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "viverridae:entities/animal/mammal/viverridae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
       "movespeedByType": {
         "*-adult-*-genetta*": 0.09,
         "*-adult-*-poiana*": 0.09,
@@ -68,6 +24,7 @@
         "*-adult-*-viverra*": 0.07,
         "*-adult-*-arctictisbinturong": 0.03,
         "*-adult-*-cynogalebennettii": 0.03,
+        "*-adult-*-nandiniabinotata": 0.03,
         "*-adult-*": 0.05
       },
       "animationSpeedByType": {
@@ -84,73 +41,28 @@
         "*-adult-male-viverra*": 2.1,
         "*-adult-female-viverra*": 2.3,
         "*-adult-male-arctictisbinturong": 0.9,
-        "*-adult-female-arctictisbinturong": 1,
+        "*-adult-female-arctictisbinturong": 1.0,
         "*-adult-male-cynogalebennettii": 1.35,
         "*-adult-female-cynogalebennettii": 1.5,
         "*-adult-male-*": 2.25,
         "*-adult-female-*": 2.5,
         "*": 1
       },
-      "entityCodes": [
-        "little-scarecrow"
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "viverridae:entities/animal/mammal/viverridae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-adult-*-genetta*": 0.09,
-        "*-adult-*-poiana*": 0.09,
-        "*-adult-*-viverriculaindica": 0.09,
-        "*-adult-*-civettictiscivetta": 0.07,
-        "*-adult-*-macrogalidiamusschenbroekii": 0.07,
-        "*-adult-*-viverra*": 0.07,
-        "*-adult-*-arctictisbinturong": 0.03,
-        "*-adult-*-cynogalebennettii": 0.03,
-        "*-adult-*": 0.05
-      },
-      "animationSpeedByType": {
-        "*-adult-male-genetta*": 4.05,
-        "*-adult-female-genetta*": 4.5,
-        "*-adult-male-poiana*": 4.05,
-        "*-adult-female-poiana*": 4.5,
-        "*-adult-male-viverriculaindica": 4.05,
-        "*-adult-female-viverriculaindica": 4.5,
-        "*-adult-male-civettictiscivetta": 2.1,
-        "*-adult-female-civettictiscivetta": 2.3,
-        "*-adult-male-macrogalidiamusschenbroekii": 2.1,
-        "*-adult-female-macrogalidiamusschenbroekii": 2.3,
-        "*-adult-male-viverra*": 2.1,
-        "*-adult-female-viverra*": 2.3,
-        "*-adult-male-arctictisbinturong": 0.9,
-        "*-adult-female-arctictisbinturong": 1,
-        "*-adult-male-cynogalebennettii": 1.35,
-        "*-adult-female-cynogalebennettii": 1.5,
-        "*-adult-male-*": 2.25,
-        "*-adult-female-*": 2.5,
-        "*": 1
-      },
       "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
       "retaliateAttacks": false
     },
     "side": "server"
@@ -158,98 +70,230 @@
   {
     "enabled": true,
     "op": "add",
+    "file": "viverridae:entities/animal/mammal/viverridae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
-    "file": "viverridae:entities/animal/mammal/viverridae-baby.json",
     "value": {
       "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-baby-*": 0.045
-      },
-      "animationSpeedByType": {
-        "*-baby-*-arctictisbinturong": 2.64,
-        "*-baby-*-civettictiscivetta": 2.64,
-        "*-baby-*-macrogalidiamusschenbroekii": 2.64,
-        "*-baby-*-viverracivettina": 2.64,
-        "*-baby-*-viverramegaspila": 2.64,
-        "*-baby-*-viverrazibetha": 2.64,
-        "*-baby-*": 4,
-        "*": 1
-      },
-      "entityCodes": [
-        "scarecrow"
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "viverridae-adult-female-{type}",
+        "viverridae-adult-male-{type}",
+        "viverridae-baby-female-{type}",
+        "viverridae-baby-male-{type}"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "viverridae:entities/animal/mammal/viverridae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
       "movespeedByType": {
-        "*-baby-*": 0.045
+        "*-adult-*": 0.02
       },
-      "animationSpeedByType": {
-        "*-baby-*-arctictisbinturong": 2.64,
-        "*-baby-*-civettictiscivetta": 2.64,
-        "*-baby-*-macrogalidiamusschenbroekii": 2.64,
-        "*-baby-*-viverracivettina": 2.64,
-        "*-baby-*-viverramegaspila": 2.64,
-        "*-baby-*-viverrazibetha": 2.64,
-        "*-baby-*": 4,
-        "*": 1
-      },
-      "entityCodes": [
-        "little-scarecrow"
+      "animationSpeed": 1.5,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "viverridae:entities/animal/mammal/viverridae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-baby-*": 0.045
-      },
-      "animationSpeedByType": {
-        "*-baby-*-arctictisbinturong": 2.64,
-        "*-baby-*-civettictiscivetta": 2.64,
-        "*-baby-*-macrogalidiamusschenbroekii": 2.64,
-        "*-baby-*-viverracivettina": 2.64,
-        "*-baby-*-viverramegaspila": 2.64,
-        "*-baby-*-viverrazibetha": 2.64,
-        "*-baby-*": 4,
-        "*": 1
-      },
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
       "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "viverridae:entities/animal/mammal/viverridae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.4,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "viverridae-adult-female-{type}",
+        "viverridae-adult-male-{type}",
+        "viverridae-baby-female-{type}",
+        "viverridae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*-adult-*": 0.0036
+      },
+      "animationSpeedByType": {
+        "*-adult-male-arctictisbinturong": 0.6,
+        "*-adult-female-arctictisbinturong": 0.66,
+        "*-adult-male-civettictiscivetta": 0.6,
+        "*-adult-female-civettictiscivetta": 0.66,
+        "*-adult-male-macrogalidiamusschenbroekii": 0.6,
+        "*-adult-female-macrogalidiamusschenbroekii": 0.66,
+        "*-adult-male-viverracivettina": 0.6,
+        "*-adult-female-viverracivettina": 0.66,
+        "*-adult-male-viverramegaspila": 0.6,
+        "*-adult-female-viverramegaspila": 0.66,
+        "*-adult-male-viverrazibetha": 0.6,
+        "*-adult-female-viverrazibetha": 0.66,
+        "*-adult-male-*": 0.9,
+        "*-adult-female-*": 1,
+        "*": 1
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "viverridae:entities/animal/mammal/viverridae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Run",
+      "skipEntityCodes": [
+        "viverridae-adult-female-{type}",
+        "viverridae-adult-male-{type}",
+        "viverridae-baby-female-{type}",
+        "viverridae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*-baby-*": 0.045
+      },
+      "animationSpeedByType": {
+        "*-baby-*-arctictisbinturong": 2.64,
+        "*-baby-*-civettictiscivetta": 2.64,
+        "*-baby-*-macrogalidiamusschenbroekii": 2.64,
+        "*-baby-*-viverracivettina": 2.64,
+        "*-baby-*-viverramegaspila": 2.64,
+        "*-baby-*-viverrazibetha": 2.64,
+        "*-baby-*": 4,
+        "*": 1
+      },
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "viverridae:entities/animal/mammal/viverridae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "viverridae-adult-female-{type}",
+        "viverridae-adult-male-{type}",
+        "viverridae-baby-female-{type}",
+        "viverridae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*-baby-*": 0.01
+      },
+      "animationSpeed": 1.5,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "viverridae:entities/animal/mammal/viverridae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.4,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "viverridae-adult-female-{type}",
+        "viverridae-adult-male-{type}",
+        "viverridae-baby-female-{type}",
+        "viverridae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*-baby-*": 0.0027
+      },
+      "animationSpeedByType": {
+        "*-baby-*-arctictisbinturong": 0.89,
+        "*-baby-*-civettictiscivetta": 0.89,
+        "*-baby-*-macrogalidiamusschenbroekii": 0.89,
+        "*-baby-*-viverracivettina": 0.89,
+        "*-baby-*-viverramegaspila": 0.89,
+        "*-baby-*-viverrazibetha": 0.89,
+        "*-baby-*": 1.35,
+        "*": 1
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
       "retaliateAttacks": false
     },
     "side": "server"

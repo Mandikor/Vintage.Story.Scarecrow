@@ -2,80 +2,41 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
     "file": "casuariidae:entities/animal/bird/anatidae-adult.json",
+    "path": "/server/behaviors/9/aitasks/-",
     "value": {
       "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
       "animation": "Run",
-      "movespeedByType": {
-        "anatidae-adult-*-cereopsisnovaehollandiae": 0.06
-      },
-      "animationSpeedByType": {
-        "*-adult-female-cereopsisnovaehollandiae": 4.2,
-        "*-adult-male-cereopsisnovaehollandiae": 4
-      },
-      "entityCodes": [
-        "scarecrow"
+      "skipEntityCodes": [
+        "anatidae-adult-female-{type}",
+        "anatidae-adult-male-{type}",
+        "anatidae-baby-female-{type}",
+        "anatidae-baby-male-{type}"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "file": "casuariidae:entities/animal/bird/anatidae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
       "movespeedByType": {
         "anatidae-adult-*-cereopsisnovaehollandiae": 0.06
       },
       "animationSpeedByType": {
         "*-adult-female-cereopsisnovaehollandiae": 4.2,
-        "*-adult-male-cereopsisnovaehollandiae": 4
+        "*-adult-male-cereopsisnovaehollandiae": 4.0
       },
-      "entityCodes": [
-        "little-scarecrow"
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "file": "casuariidae:entities/animal/bird/anatidae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "anatidae-adult-*-cereopsisnovaehollandiae": 0.06
-      },
-      "animationSpeedByType": {
-        "*-adult-female-cereopsisnovaehollandiae": 4.2,
-        "*-adult-male-cereopsisnovaehollandiae": 4
-      },
       "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
       "retaliateAttacks": false
     },
     "side": "server"
@@ -83,77 +44,210 @@
   {
     "enabled": true,
     "op": "add",
+    "file": "casuariidae:entities/animal/bird/anatidae-adult.json",
     "path": "/server/behaviors/9/aitasks/-",
-    "file": "casuariidae:entities/animal/bird/anatidae-baby.json",
     "value": {
       "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "anatidae-baby-*-cereopsisnovaehollandiae": 0.015
-      },
-      "animationSpeedByType": {
-        "*-baby-*-cereopsisnovaehollandiae": 2
-      },
-      "entityCodes": [
-        "scarecrow"
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "anatidae-adult-female-{type}",
+        "anatidae-adult-male-{type}",
+        "anatidae-baby-female-{type}",
+        "anatidae-baby-male-{type}"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "file": "casuariidae:entities/animal/bird/anatidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
       "movespeedByType": {
-        "anatidae-baby-*-cereopsisnovaehollandiae": 0.015
+        "anatidae-adult-*-cereopsisnovaehollandiae": 0.03
       },
       "animationSpeedByType": {
-        "*-baby-*-cereopsisnovaehollandiae": 2
+        "*-adult-female-cereopsisnovaehollandiae": 1.05,
+        "*-adult-male-cereopsisnovaehollandiae": 1.0
       },
-      "entityCodes": [
-        "little-scarecrow"
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "file": "casuariidae:entities/animal/bird/anatidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "anatidae-baby-*-cereopsisnovaehollandiae": 0.015
-      },
-      "animationSpeedByType": {
-        "*-baby-*-cereopsisnovaehollandiae": 2
-      },
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
       "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "casuariidae:entities/animal/bird/anatidae-adult.json",
+    "path": "/server/behaviors/9/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.41,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "anatidae-adult-female-{type}",
+        "anatidae-adult-male-{type}",
+        "anatidae-baby-female-{type}",
+        "anatidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "anatidae-adult-*-cereopsisnovaehollandiae": 0.003
+      },
+      "animationSpeedByType": {
+        "*-adult-female-cereopsisnovaehollandiae": 1.05,
+        "*-adult-male-cereopsisnovaehollandiae": 1.0
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "threatening",
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "casuariidae:entities/animal/bird/anatidae-baby.json",
+    "path": "/server/behaviors/9/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Run",
+      "skipEntityCodes": [
+        "anatidae-adult-female-{type}",
+        "anatidae-adult-male-{type}",
+        "anatidae-baby-female-{type}",
+        "anatidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "anatidae-baby-*-cereopsisnovaehollandiae": 0.015
+      },
+      "animationSpeedByType": {
+        "*-baby-*-cereopsisnovaehollandiae": 2.0
+      },
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "casuariidae:entities/animal/bird/anatidae-baby.json",
+    "path": "/server/behaviors/9/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "anatidae-adult-female-{type}",
+        "anatidae-adult-male-{type}",
+        "anatidae-baby-female-{type}",
+        "anatidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*-baby-*-cereopsisnovaehollandiae": 0.03
+      },
+      "animationSpeedByType": {
+        "*-baby-*-cereopsisnovaehollandiae": 2.0
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "casuariidae:entities/animal/bird/anatidae-baby.json",
+    "path": "/server/behaviors/9/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.41,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "anatidae-adult-female-{type}",
+        "anatidae-adult-male-{type}",
+        "anatidae-baby-female-{type}",
+        "anatidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "anatidae-adult-*-cereopsisnovaehollandiae": 0.003
+      },
+      "animationSpeedByType": {
+        "*-baby-*-cereopsisnovaehollandiae": 2.0
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "threatening",
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
       "retaliateAttacks": false
     },
     "side": "server"

@@ -1,68 +1,144 @@
 [
   {
     "enabled": true,
-    "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-female.json",
     "op": "add",
+    "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-female.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "fleeentity",
+      "priority": 2,
       "movespeed": 0.05,
       "animationSpeed": 1.9,
+      "seekingRange": 8,
       "animation": "Walk",
+      "whenNotInEmotionState": "fleeondamage",
       "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-female.json",
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.05,
-      "animationSpeed": 1.9,
-      "animation": "Walk",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-female.json",
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.05,
-      "animationSpeed": 1.9,
-      "animation": "Walk",
-      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
       "retaliateAttacks": false
     },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-female.json",
+    "path": "/server/behaviors/10/aitasks/2/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-female.json",
+    "path": "/server/behaviors/10/aitasks/2/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-female.json",
+    "path": "/server/behaviors/10/aitasks/2/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-female.json",
+    "path": "/server/behaviors/10/aitasks/3/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-female.json",
+    "path": "/server/behaviors/10/aitasks/3/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-female.json",
+    "path": "/server/behaviors/10/aitasks/3/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-female.json",
+    "path": "/server/behaviors/10/aitasks/4/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-female.json",
+    "path": "/server/behaviors/10/aitasks/4/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-female.json",
+    "path": "/server/behaviors/10/aitasks/4/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-female.json",
+    "path": "/server/behaviors/10/aitasks/5/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-female.json",
+    "path": "/server/behaviors/10/aitasks/5/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-female.json",
+    "path": "/server/behaviors/10/aitasks/5/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-female.json",
+    "path": "/server/behaviors/10/aitasks/6/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-female.json",
+    "path": "/server/behaviors/10/aitasks/6/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-female.json",
+    "path": "/server/behaviors/10/aitasks/6/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
     "side": "server"
   }
 ]

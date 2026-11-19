@@ -2,116 +2,54 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
     "file": "dinornithidae:entities/animal/bird/anatidae-adult.json",
+    "path": "/server/behaviors/9/aitasks/-",
     "value": {
       "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
       "animation": "Run",
-      "movespeedByType": {
-        "*-adult-*-anasaucklandica": 0.018,
-        "*-adult-*-anaschlorotis": 0.02,
-        "*-adult-*-anasnesiotis": 0.018,
-        "*-adult-female-cnemiorniscalcitrans": 0.033,
-        "*-adult-male-cnemiorniscalcitrans": 0.031,
-        "*-adult-female-cnemiornisgracilis": 0.0345,
-        "*-adult-male-cnemiornisgracilis": 0.0325,
-        "*-adult-*-chenonettafinschi": 0.025
-      },
-      "animationSpeedByType": {
-        "*-adult-*-anasaucklandica": 3.42,
-        "*-adult-*-anaschlorotis": 3.33,
-        "*-adult-*-anasnesiotis": 3.42,
-        "*-adult-female-cnemiorniscalcitrans": 2.31,
-        "*-adult-male-cnemiorniscalcitrans": 2.07,
-        "*-adult-female-cnemiornisgracilis": 2.48,
-        "*-adult-male-cnemiornisgracilis": 2.23
-      },
-      "entityCodes": [
-        "scarecrow"
+      "skipEntityCodes": [
+        "anatidae-adult-female-{type}",
+        "anatidae-adult-male-{type}",
+        "anatidae-baby-female-{type}",
+        "anatidae-baby-male-{type}"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "file": "dinornithidae:entities/animal/bird/anatidae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
       "movespeedByType": {
         "*-adult-*-anasaucklandica": 0.018,
         "*-adult-*-anaschlorotis": 0.02,
         "*-adult-*-anasnesiotis": 0.018,
+        "*-adult-chenonettafinschi": 0.025,
         "*-adult-female-cnemiorniscalcitrans": 0.033,
         "*-adult-male-cnemiorniscalcitrans": 0.031,
         "*-adult-female-cnemiornisgracilis": 0.0345,
-        "*-adult-male-cnemiornisgracilis": 0.0325,
-        "*-adult-*-chenonettafinschi": 0.025
+        "*-adult-male-cnemiornisgracilis": 0.0325
       },
       "animationSpeedByType": {
         "*-adult-*-anasaucklandica": 3.42,
         "*-adult-*-anaschlorotis": 3.33,
         "*-adult-*-anasnesiotis": 3.42,
+        "*-adult-chenonettafinschi": 2.5,
         "*-adult-female-cnemiorniscalcitrans": 2.31,
         "*-adult-male-cnemiorniscalcitrans": 2.07,
         "*-adult-female-cnemiornisgracilis": 2.48,
         "*-adult-male-cnemiornisgracilis": 2.23
       },
-      "entityCodes": [
-        "little-scarecrow"
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "file": "dinornithidae:entities/animal/bird/anatidae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "*-adult-*-anasaucklandica": 0.018,
-        "*-adult-*-anaschlorotis": 0.02,
-        "*-adult-*-anasnesiotis": 0.018,
-        "*-adult-female-cnemiorniscalcitrans": 0.033,
-        "*-adult-male-cnemiorniscalcitrans": 0.031,
-        "*-adult-female-cnemiornisgracilis": 0.0345,
-        "*-adult-male-cnemiornisgracilis": 0.0325,
-        "*-adult-*-chenonettafinschi": 0.025
-      },
-      "animationSpeedByType": {
-        "*-adult-*-anasaucklandica": 3.42,
-        "*-adult-*-anaschlorotis": 3.33,
-        "*-adult-*-anasnesiotis": 3.42,
-        "*-adult-female-cnemiorniscalcitrans": 2.31,
-        "*-adult-male-cnemiorniscalcitrans": 2.07,
-        "*-adult-female-cnemiornisgracilis": 2.48,
-        "*-adult-male-cnemiornisgracilis": 2.23
-      },
       "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
       "retaliateAttacks": false
     },
     "side": "server"
@@ -119,92 +57,237 @@
   {
     "enabled": true,
     "op": "add",
+    "file": "dinornithidae:entities/animal/bird/anatidae-adult.json",
     "path": "/server/behaviors/9/aitasks/-",
-    "file": "dinornithidae:entities/animal/bird/anatidae-baby.json",
     "value": {
       "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "anatidae-baby-*": 0.015
-      },
-      "animationSpeedByType": {
-        "*-baby-*-anasaucklandica": 5,
-        "*-baby-*-anaschlorotis": 5,
-        "*-baby-*-anasnesiotis": 5,
-        "*-baby-*-chenonettafinschi": 3,
-        "*-baby-*-cnemiorniscalcitrans": 2,
-        "*-baby-*-cnemiornisgracilis": 2
-      },
-      "entityCodes": [
-        "scarecrow"
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "anatidae-adult-female-{type}",
+        "anatidae-adult-male-{type}",
+        "anatidae-baby-female-{type}",
+        "anatidae-baby-male-{type}"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "file": "dinornithidae:entities/animal/bird/anatidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
       "movespeedByType": {
-        "anatidae-baby-*": 0.015
+        "anatidae-adult-*": 0.03,
+        "*": 0.03
       },
       "animationSpeedByType": {
-        "*-baby-*-anasaucklandica": 5,
-        "*-baby-*-anaschlorotis": 5,
-        "*-baby-*-anasnesiotis": 5,
-        "*-baby-*-chenonettafinschi": 3,
-        "*-baby-*-cnemiorniscalcitrans": 2,
-        "*-baby-*-cnemiornisgracilis": 2
+        "*-adult-*-anasaucklandica": 2.85,
+        "*-adult-*-anaschlorotis": 2.5,
+        "*-adult-*-anasnesiotis": 2.85,
+        "*-adult-*-chenonettafinschi": 1.5,
+        "*-adult-female-cnemiorniscalcitrans": 1.05,
+        "*-adult-male-cnemiorniscalcitrans": 1.0,
+        "*-adult-female-cnemiornisgracilis": 1.08,
+        "*-adult-male-cnemiornisgracilis": 1.03
       },
-      "entityCodes": [
-        "little-scarecrow"
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "file": "dinornithidae:entities/animal/bird/anatidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "anatidae-baby-*": 0.015
-      },
-      "animationSpeedByType": {
-        "*-baby-*-anasaucklandica": 5,
-        "*-baby-*-anaschlorotis": 5,
-        "*-baby-*-anasnesiotis": 5,
-        "*-baby-*-chenonettafinschi": 3,
-        "*-baby-*-cnemiorniscalcitrans": 2,
-        "*-baby-*-cnemiornisgracilis": 2
-      },
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
       "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "dinornithidae:entities/animal/bird/anatidae-adult.json",
+    "path": "/server/behaviors/9/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.41,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "anatidae-adult-female-{type}",
+        "anatidae-adult-male-{type}",
+        "anatidae-baby-female-{type}",
+        "anatidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "anatidae-adult-*": 0.003
+      },
+      "animationSpeedByType": {
+        "*-adult-*-anasaucklandica": 2.85,
+        "*-adult-*-anaschlorotis": 2.5,
+        "*-adult-*-anasnesiotis": 2.85,
+        "*-adult-*-chenonettafinschi": 1.5,
+        "*-adult-female-cnemiorniscalcitrans": 1.05,
+        "*-adult-male-cnemiorniscalcitrans": 1.0,
+        "*-adult-female-cnemiornisgracilis": 1.08,
+        "*-adult-male-cnemiornisgracilis": 1.03
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "dinornithidae:entities/animal/bird/anatidae-baby.json",
+    "path": "/server/behaviors/9/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Run",
+      "skipEntityCodes": [
+        "anatidae-adult-female-{type}",
+        "anatidae-adult-male-{type}",
+        "anatidae-baby-female-{type}",
+        "anatidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "anatidae-baby-*": 0.015
+      },
+      "animationSpeedByType": {
+        "*-baby-*-anasaucklandica": 5,
+        "*-baby-*-anaschlorotis": 5,
+        "*-baby-*-anasnesiotis": 5,
+        "*-baby-*-chenonettafinschi": 3.0,
+        "*-baby-*-cnemiorniscalcitrans": 2.0,
+        "*-baby-*-cnemiornisgracilis": 2.0
+      },
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "dinornithidae:entities/animal/bird/anatidae-baby.json",
+    "path": "/server/behaviors/9/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "anatidae-adult-female-{type}",
+        "anatidae-adult-male-{type}",
+        "anatidae-baby-female-{type}",
+        "anatidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*": 0.03
+      },
+      "animationSpeedByType": {
+        "*-baby-*-anasaucklandica": 5,
+        "*-baby-*-anaschlorotis": 5,
+        "*-baby-*-anasnesiotis": 5,
+        "*-baby-*-chenonettafinschi": 3.0,
+        "*-baby-*-cnemiorniscalcitrans": 2.0,
+        "*-baby-*-cnemiornisgracilis": 2.0
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "dinornithidae:entities/animal/bird/anatidae-baby.json",
+    "path": "/server/behaviors/9/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.41,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "anatidae-adult-female-{type}",
+        "anatidae-adult-male-{type}",
+        "anatidae-baby-female-{type}",
+        "anatidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "anatidae-baby-*": 0.003
+      },
+      "animationSpeedByType": {
+        "*-baby-*-anasaucklandica": 5,
+        "*-baby-*-anaschlorotis": 5,
+        "*-baby-*-anasnesiotis": 5,
+        "*-baby-*-chenonettafinschi": 3.0,
+        "*-baby-*-cnemiorniscalcitrans": 2.0,
+        "*-baby-*-cnemiornisgracilis": 2.0
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "threatening",
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
       "retaliateAttacks": false
     },
     "side": "server"

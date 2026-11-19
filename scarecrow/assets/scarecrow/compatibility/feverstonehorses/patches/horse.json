@@ -1,177 +1,197 @@
 [
   {
     "enabled": true,
-    "file": "feverstonehorses:entities/land/horse.json",
     "op": "add",
-    "path": "/server/behaviors/14/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.058,
-      "animation": "gallop",
-      "animationSpeed": 2.2,
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 2.1,
-      "priorityForCancel": 2.1,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "enabledByType": {
-        "horse-wild-*-donkey": true,
-        "horse-wild-*-shire": true,
-        "horse-wild-*-quarter": true,
-        "*": false
-      },
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
     "file": "feverstonehorses:entities/land/horse.json",
-    "op": "add",
-    "path": "/server/behaviors/14/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.058,
-      "animation": "gallop",
-      "animationSpeed": 2.2,
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 2.1,
-      "priorityForCancel": 2.1,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "enabledByType": {
-        "horse-wild-*-donkey": true,
-        "horse-wild-*-shire": true,
-        "horse-wild-*-quarter": true,
-        "*": false
-      },
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonehorses:entities/land/horse.json",
-    "op": "add",
-    "path": "/server/behaviors/14/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.058,
-      "animation": "gallop",
-      "animationSpeed": 2.2,
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 2.1,
-      "priorityForCancel": 2.1,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "enabledByType": {
-        "horse-wild-*-donkey": true,
-        "horse-wild-*-shire": true,
-        "horse-wild-*-quarter": true,
-        "*": false
-      },
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonehorses:entities/land/horse.json",
-    "op": "add",
-    "path": "/server/behaviors/14/aitasks/-",
-    "value": {
-      "code": "seekentity",
-      "movespeed": 0.058,
-      "animation": "gallop",
-      "animationSpeed": 2.2,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 2.2,
-      "priorityForCancel": 2.2,
-      "slot": 0,
-      "seekingRange": 16,
-      "minCooldownMs": 500,
-      "maxCooldownMs": 1000,
-      "maxFollowTime": 15,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
-      ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "enabledByType": {
-        "horse-wild-*-donkey": true,
-        "horse-wild-*-shire": true,
-        "horse-wild-*-quarter": true,
-        "*": false
-      },
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonehorses:entities/land/horse.json",
-    "op": "add",
     "path": "/server/behaviors/14/aitasks/-",
     "value": {
       "code": "meleeattack",
+      "priority": 2,
+      "slot": 1,
       "damageByType": {
+        "*-percheron": 4,
         "*-shire": 3.6,
         "*-quarter": 2.8,
-        "*-donkey": 2
+        "*-arabian": 2.5,
+        "*-donkey": 2.0
       },
       "damageTier": 2,
+      "mincooldown": 1500,
+      "maxcooldown": 2500,
       "attackDurationMs": 750,
       "damagePlayerAtMs": 500,
-      "animation": "attack",
+      "animation": "attackFront",
       "animationSpeed": 1.4,
+      "whenInEmotionState": "aggressiveondamage",
+      "sound": "horse/horseattack",
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 2.3,
-      "priorityForCancel": 2.3,
-      "slot": 1,
-      "minCooldownMs": 1500,
-      "maxCooldownMs": 2500,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
-      ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
-      ],
+      "retaliateAttacks": false,
       "enabledByType": {
-        "horse-wild-*-donkey": true,
-        "horse-wild-*-shire": true,
-        "horse-wild-*-quarter": true,
-        "*": false
-      },
-      "retaliateAttacks": false
+        "*-tamed-*": false,
+        "*": true
+      }
     },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "feverstonehorses:entities/land/horse.json",
+    "path": "/server/behaviors/14/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 1.8,
+      "movespeed": 0.058,
+      "seekingRange": 24,
+      "animation": "gallop",
+      "animationSpeed": 2.2,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
+      "enabledByType": {
+        "*-tamed-*": false,
+        "*": true
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "feverstonehorses:entities/land/horse.json",
+    "path": "/server/behaviors/14/aitasks/6/stopOnNearbyEntityCodesByType",
+    "value": {
+      "horse-wild-male-percheron": [
+        "player",
+        "wolf-*",
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "horse-wild-male-arabian": [
+        "player",
+        "wolf-*",
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "horse-wild-male-donkey": [
+        "player",
+        "wolf-*",
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "horse-wild-male-shire": [
+        "player",
+        "wolf-*",
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "horse-wild-male-quarter": [
+        "player",
+        "wolf-*",
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "horse-wild-female-percheron": [
+        "player",
+        "wolf-*",
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "horse-wild-female-arabian": [
+        "player",
+        "wolf-*",
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "horse-wild-female-donkey": [
+        "player",
+        "wolf-*",
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "horse-wild-female-shire": [
+        "player",
+        "wolf-*",
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "horse-wild-female-quarter": [
+        "player",
+        "wolf-*",
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "horse-tamed-male-percheron": [
+        "player",
+        "wolf-*"
+      ],
+      "horse-tamed-male-arabian": [
+        "player",
+        "wolf-*"
+      ],
+      "horse-tamed-male-donkey": [
+        "player",
+        "wolf-*"
+      ],
+      "horse-tamed-male-shire": [
+        "player",
+        "wolf-*"
+      ],
+      "horse-tamed-male-quarter": [
+        "player",
+        "wolf-*"
+      ],
+      "horse-tamed-female-percheron": [
+        "player",
+        "wolf-*"
+      ],
+      "horse-tamed-female-arabian": [
+        "player",
+        "wolf-*"
+      ],
+      "horse-tamed-female-donkey": [
+        "player",
+        "wolf-*"
+      ],
+      "horse-tamed-female-shire": [
+        "player",
+        "wolf-*"
+      ],
+      "horse-tamed-female-quarter": [
+        "player",
+        "wolf-*"
+      ],
+      "*": [
+        "player",
+        "wolf-*"
+      ]
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "remove",
+    "file": "feverstonehorses:entities/land/horse.json",
+    "path": "/server/behaviors/14/aitasks/6/stopOnNearbyEntityCodes",
+    "value": null,
     "side": "server"
   }
 ]

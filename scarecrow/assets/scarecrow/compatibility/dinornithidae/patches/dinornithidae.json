@@ -2,11 +2,16 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
     "file": "dinornithidae:entities/animal/bird/dinornithidae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
       "animation": "Run",
+      "skipEntityCodes": [
+        "dinornithidae-*"
+      ],
       "movespeedByType": {
         "dinornithidae-adult-*-dinornisnovaezealandiae": 0.0625,
         "dinornithidae-adult-*-dinornisrobustus": 0.0625
@@ -15,121 +20,21 @@
         "*-adult-female-*": 1.875,
         "*-adult-male-*": 2.5
       },
-      "entityCodes": [
-        "scarecrow"
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "dinornithidae:entities/animal/bird/dinornithidae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "dinornithidae-adult-*-dinornisnovaezealandiae": 0.0625,
-        "dinornithidae-adult-*-dinornisrobustus": 0.0625
-      },
-      "animationSpeedByType": {
-        "*-adult-female-*": 1.875,
-        "*-adult-male-*": 2.5
-      },
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "dinornithidae:entities/animal/bird/dinornithidae-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "dinornithidae-adult-*-dinornisnovaezealandiae": 0.0625,
-        "dinornithidae-adult-*-dinornisrobustus": 0.0625
-      },
-      "animationSpeedByType": {
-        "*-adult-female-*": 1.875,
-        "*-adult-male-*": 2.5
-      },
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "dinornithidae:entities/animal/bird/dinornithidae-adult.json",
-    "value": {
-      "code": "seekentity",
-      "animation": "Charge",
-      "movespeedByType": {
-        "dinornithidae-adult-*-dinornisnovaezealandiae": 0.0625,
-        "dinornithidae-adult-*-dinornisrobustus": 0.0625
-      },
-      "animationSpeedByType": {
-        "*-adult-female-*": 1.875,
-        "*-adult-male-*": 2.5
-      },
-      "soundByType": {
-        "*-adult-*": "creature/dinornithidae/hurt"
-      },
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.7,
-      "priorityForCancel": 8.7,
-      "slot": 0,
-      "seekingRange": 16,
-      "minCooldownMs": 500,
-      "maxCooldownMs": 1000,
-      "maxFollowTime": 15,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
-      ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
-      ],
       "retaliateAttacks": false
     },
     "side": "server"
@@ -137,126 +42,211 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
     "file": "dinornithidae:entities/animal/bird/dinornithidae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
     "value": {
-      "code": "meleeattack",
-      "animation": "Attack",
-      "animationSpeed": 1.5,
-      "damageByType": {
-        "dinornithidae-adult-female-dinornisnovaezealandiae": 9,
-        "dinornithidae-adult-male-dinornisnovaezealandiae": 6,
-        "dinornithidae-adult-female-dinornisrobustus": 9,
-        "dinornithidae-adult-male-dinornisrobustus": 6
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "dinornithidae-*"
+      ],
+      "movespeedByType": {
+        "dinornithidae-adult-*-dinornisnovaezealandiae": 0.01,
+        "dinornithidae-adult-*-dinornisrobustus": 0.01,
+        "*": 0.045
       },
-      "damageType": "SlashingAttack",
-      "minDistByType": {
-        "*-male-*": 1.5,
-        "*": 2
+      "animationSpeedByType": {
+        "dinornithidae-adult-female-dinornisnovaezealandiae": 0.75,
+        "dinornithidae-adult-female-dinornisrobustus": 1.0
       },
-      "damageTierByType": {
-        "*-male-*": 1,
-        "*": 2
-      },
-      "attackDurationMs": 800,
-      "damagePlayerAtMs": 500,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.8,
-      "priorityForCancel": 8.8,
-      "slot": 1,
-      "minCooldownMs": 500,
-      "maxCooldownMs": 500,
-      "whenNotInEmotionStates": [
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "dinornithidae:entities/animal/bird/dinornithidae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.41,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "dinornithidae-*"
+      ],
+      "movespeedByType": {
+        "dinornithidae-adult-*-dinornisnovaezealandiae": 0.0075,
+        "dinornithidae-adult-*-dinornisrobustus": 0.0075,
+        "*": 0.006
+      },
+      "animationSpeedByType": {
+        "dinornithidae-adult-female-dinornisnovaezealandiae": 0.75,
+        "dinornithidae-adult-female-dinornisrobustus": 0.75
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
         "fleeondamage"
       ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
+      "tagsAppliedToEntity": [
+        "threatening",
+        "state-moving",
+        "state-sprinting"
       ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "dinornithidae:entities/animal/bird/dinornithidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "dinornithidae-baby-*-dinornisnovaezealandiae": 0.045,
-        "dinornithidae-baby-*-dinornisrobustus": 0.045
-      },
-      "animationSpeedByType": {
-        "*-baby-*": 7.2
-      },
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
       "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "dinornithidae:entities/animal/bird/dinornithidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "dinornithidae-baby-*-dinornisnovaezealandiae": 0.045,
-        "dinornithidae-baby-*-dinornisrobustus": 0.045
-      },
-      "animationSpeedByType": {
-        "*-baby-*": 7.2
-      },
       "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "dinornithidae:entities/animal/bird/dinornithidae-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeedByType": {
-        "dinornithidae-baby-*-dinornisnovaezealandiae": 0.045,
-        "dinornithidae-baby-*-dinornisrobustus": 0.045
-      },
-      "animationSpeedByType": {
-        "*-baby-*": 7.2
-      },
-      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "dinornithidae:entities/animal/bird/dinornithidae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Run",
+      "skipEntityCodes": [
+        "dinornithidae-adult-female-{type}",
+        "dinornithidae-adult-male-{type}",
+        "dinornithidae-baby-female-{type}",
+        "dinornithidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "dinornithidae-baby-*-dinornisnovaezealandiae": 0.045,
+        "dinornithidae-baby-*-dinornisrobustus": 0.045
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 7.2
+      },
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "dinornithidae:entities/animal/bird/dinornithidae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "dinornithidae-adult-female-{type}",
+        "dinornithidae-adult-male-{type}",
+        "dinornithidae-baby-female-{type}",
+        "dinornithidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "dinornithidae-baby-*-dinornisnovaezealandiae": 0.005,
+        "dinornithidae-baby-*-dinornisrobustus": 0.005,
+        "*": 0.045
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 1.5
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "dinornithidae:entities/animal/bird/dinornithidae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.41,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "dinornithidae-adult-female-{type}",
+        "dinornithidae-adult-male-{type}",
+        "dinornithidae-baby-female-{type}",
+        "dinornithidae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "dinornithidae-baby-*": 0.00375
+      },
+      "animationSpeedByType": {
+        "*-baby-*": 1.5
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "threatening",
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
       "retaliateAttacks": false
     },
     "side": "server"

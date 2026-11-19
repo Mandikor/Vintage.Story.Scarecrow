@@ -2,38 +2,19 @@
   {
     "enabled": true,
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
     "file": "caninae:entities/animal/mammal/urocyonini-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
       "animation": "Gallop",
-      "movespeedByType": {
-        "*-female-urocyon-cinereoargenteus": 0.104,
-        "*-male-urocyon-cinereoargenteus": 0.112,
-        "*-female-urocyon-littoralis": 0.082,
-        "*-male-urocyon-littoralis": 0.088
-      },
-      "animationSpeed": 4,
-      "entityCodes": [
-        "scarecrow"
+      "skipEntityCodes": [
+        "caninae-urocyonini-adult-female-{genus}-{species}",
+        "caninae-urocyonini-adult-male-{genus}-{species}",
+        "caninae-urocyonini-baby-female-{genus}-{species}",
+        "caninae-urocyonini-baby-male-{genus}-{species}"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "caninae:entities/animal/mammal/urocyonini-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Gallop",
       "movespeedByType": {
         "*-female-urocyon-cinereoargenteus": 0.104,
         "*-male-urocyon-cinereoargenteus": 0.112,
@@ -41,41 +22,21 @@
         "*-male-urocyon-littoralis": 0.088
       },
       "animationSpeed": 4,
-      "entityCodes": [
-        "little-scarecrow"
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "caninae:entities/animal/mammal/urocyonini-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Gallop",
-      "movespeedByType": {
-        "*-female-urocyon-cinereoargenteus": 0.104,
-        "*-male-urocyon-cinereoargenteus": 0.112,
-        "*-female-urocyon-littoralis": 0.082,
-        "*-male-urocyon-littoralis": 0.088
-      },
-      "animationSpeed": 4,
       "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
       "retaliateAttacks": false
     },
     "side": "server"
@@ -83,74 +44,203 @@
   {
     "enabled": true,
     "op": "add",
+    "file": "caninae:entities/animal/mammal/urocyonini-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
-    "file": "caninae:entities/animal/mammal/urocyonini-baby.json",
     "value": {
       "code": "fleeentity",
-      "animation": "Gallop",
-      "movespeedByType": {
-        "*-urocyon-cinereoargenteus": 0.024,
-        "*-urocyon-littoralis": 0.02
-      },
-      "animationSpeed": 4,
-      "entityCodes": [
-        "scarecrow"
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "caninae-urocyonini-adult-female-{genus}-{species}",
+        "caninae-urocyonini-adult-male-{genus}-{species}",
+        "caninae-urocyonini-baby-female-{genus}-{species}",
+        "caninae-urocyonini-baby-male-{genus}-{species}"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "caninae:entities/animal/mammal/urocyonini-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Gallop",
       "movespeedByType": {
-        "*-urocyon-cinereoargenteus": 0.024,
-        "*-urocyon-littoralis": 0.02
+        "*-urocyon-cinereoargenteus": 0.036,
+        "*-urocyon-littoralis": 0.024
       },
-      "animationSpeed": 4,
-      "entityCodes": [
-        "little-scarecrow"
+      "animationSpeed": 1,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "caninae:entities/animal/mammal/urocyonini-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Gallop",
-      "movespeedByType": {
-        "*-urocyon-cinereoargenteus": 0.024,
-        "*-urocyon-littoralis": 0.02
-      },
-      "animationSpeed": 4,
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
       "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 8.5,
-      "priorityForCancel": 8.5,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "caninae:entities/animal/mammal/urocyonini-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.4,
+      "animation": "Canter",
+      "skipEntityCodes": [
+        "caninae-urocyonini-adult-female-{genus}-{species}",
+        "caninae-urocyonini-adult-male-{genus}-{species}",
+        "caninae-urocyonini-baby-female-{genus}-{species}",
+        "caninae-urocyonini-baby-male-{genus}-{species}"
+      ],
+      "movespeedByType": {
+        "*-female-urocyon-cinereoargenteus": 0.026,
+        "*-male-urocyon-cinereoargenteus": 0.028,
+        "*-female-urocyon-littoralis": 0.021,
+        "*-male-urocyon-littoralis": 0.022
+      },
+      "animationSpeed": 2,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
       "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "caninae:entities/animal/mammal/urocyonini-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Gallop",
+      "skipEntityCodes": [
+        "caninae-urocyonini-adult-female-{genus}-{species}",
+        "caninae-urocyonini-adult-male-{genus}-{species}",
+        "caninae-urocyonini-baby-female-{genus}-{species}",
+        "caninae-urocyonini-baby-male-{genus}-{species}"
+      ],
+      "movespeedByType": {
+        "*-urocyon-cinereoargenteus": 0.024,
+        "*-urocyon-littoralis": 0.02
+      },
+      "animationSpeed": 4,
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "caninae:entities/animal/mammal/urocyonini-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "caninae-urocyonini-adult-female-{genus}-{species}",
+        "caninae-urocyonini-adult-male-{genus}-{species}",
+        "caninae-urocyonini-baby-female-{genus}-{species}",
+        "caninae-urocyonini-baby-male-{genus}-{species}"
+      ],
+      "movespeedByType": {
+        "*-urocyon-cinereoargenteus": 0.016,
+        "*-urocyon-littoralis": 0.012
+      },
+      "animationSpeed": 1,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "caninae:entities/animal/mammal/urocyonini-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.4,
+      "animation": "Canter",
+      "skipEntityCodes": [
+        "caninae-urocyonini-adult-female-{genus}-{species}",
+        "caninae-urocyonini-adult-male-{genus}-{species}",
+        "caninae-urocyonini-baby-female-{genus}-{species}",
+        "caninae-urocyonini-baby-male-{genus}-{species}"
+      ],
+      "movespeedByType": {
+        "*-urocyon-cinereoargenteus": 0.012,
+        "*-urocyon-littoralis": 0.01
+      },
+      "animationSpeed": 2,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
       "retaliateAttacks": false
     },
     "side": "server"

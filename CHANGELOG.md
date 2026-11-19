@@ -5,6 +5,25 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Native player AI for the remaining supported creature mods
+
+- Reworked the remaining 26 static creature integrations and the shared vanilla
+  chick template: 134 current definitions, 334 copied player-code/tag tasks and
+  143 wake/proximity lists. Preserve native priorities, ranges, species animation
+  maps, action settings and emotion conditions rather than generic size/diet rules.
+- Restore original player/prey behavior previously changed by older Critter Pack
+  and Teapot patches. Retarget only scarecrow reactions, disable attacker leakage
+  in added tasks and retain tame/age eligibility. Remove artificial snail fleeing
+  where the original mod has no corresponding player reaction.
+- Add a gated, one-time server adapter under `combat/equusponies` for final wild
+  Equus: Expanded guard/breed AI generated after JSON patching. Verify the actual
+  builder's nine wild definitions and 64 variants, mod absence, tame/foreign/client
+  exclusions, preserved source data and idempotence.
+- Verify Detailed Animals' actual clone routine for both generated chick sexes.
+  Bats retains its authored feed-deterrent integration as a custom-AI exception.
+  Other vanilla animal patches are unchanged. Build and automated checks pass;
+  in-game testing of this batch is pending.
+
 ### Feverstone Wilds 3.2.1 native player AI
 
 - Replaced the 3.1.1 baseline and corrected six shifted task-list paths for 3.2.1.

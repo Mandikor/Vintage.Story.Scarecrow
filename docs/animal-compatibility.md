@@ -7,8 +7,11 @@ The [2026-11-19 local-library audit](mod-library-audit-2026-11-19.md) records ne
 supplied versions, detected patch-path failures and the planned migration to
 native player-target tasks. The six Feverstone Wilds failures are now corrected
 on `dev` for 3.2.1; see the [dedicated guide](feverstonewilds-compatibility.md).
-Except for Arctic Wolves and Feverstone Wilds, the rules below
-describe the earlier size/diet policy, not a completed native-player-AI migration.
+The [remaining existing creature integrations are now migrated on dev](native-creature-compatibility.md),
+including generator checks and the custom Bats exception; their in-game test is
+pending. The size/diet rules below are historical for mod integrations and still
+describe the remaining vanilla policy. The shared vanilla chick template was
+updated for Detailed Animals; other vanilla animals are unchanged in this batch.
 
 ## Reaction rules
 
