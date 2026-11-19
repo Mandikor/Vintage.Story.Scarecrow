@@ -5,6 +5,17 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Teapot's Giant Scorpion 1.0.2
+
+- Add five native player-target task copies for surface/cave scorpions: sting,
+  claws, charge and two climbing pursuit variants. Preserve native damage,
+  poison, reach, movement, animation and emotion conditions/triggers.
+- Keep original player/predator tasks intact and disable unrelated-attacker
+  retaliation only in copies. No flee task, C# adapter or spawn prefixes added.
+- Actual game resolver checks pass for both variants and ten additional task
+  configurations; native task inheritance verified against the DLL. Build passes;
+  the author's in-game test also passed. See [behavior guide](docs/teapotsgiantscorpion-compatibility.md).
+
 ### Talonborne 1.2.0
 
 - Extend the adult and young hippogryphs' native player-sensitive grazing

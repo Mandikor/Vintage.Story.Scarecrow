@@ -63,10 +63,10 @@ The [local mod audit](docs/mod-library-audit-2026-11-19.md) inventories 81 mod I
 38 already supported directly or through inheritance, and 43 not explicitly
 integrated. This is a review backlog, not approval to implement every candidate.
 Previously deferred cosmetics and aging remain deferred.
-After Crows, the additional FotSA batch, Flocks, Fantasy Creatures, Pegasus and
-Talonborne, 46 IDs are supported and 35 have no
+After Crows, the additional FotSA batch, Flocks, Fantasy Creatures, Pegasus,
+Talonborne and Giant Scorpion, 47 IDs are supported and 34 have no
 explicit integration. Two of those are reviewed/deferred fully aquatic mods;
-33 remain review candidates. The audit retains the original inventory.
+32 remain review candidates. The audit retains the original inventory.
 
 - [x] Inventory ZIP/unpacked duplicates, manifest versions and current support.
 - [x] Audit existing patch paths and native player-code/player-tag AI tasks.
@@ -134,7 +134,11 @@ explicit integration. Two of those are reviewed/deferred fully aquatic mods;
   commanded rest, owner/flight controls, eggs and nests unchanged. Resolver
   checks pass for all 16 adult/young variants. See [scope](docs/talonborne-compatibility.md).
 - [x] **Talonborne game test:** the author completed the in-game test successfully.
-- [ ] **P2 — Teapot's Giant Scorpion** (`teapotsgiantscorpion`, 1.0.2): Adapt the five native player-target tasks and validate attack/reach behavior.
+- [x] **P2 — Giant Scorpion implementation** (`teapotsgiantscorpion`, 1.0.2):
+  five native sting/claw/charge/pursuit copies; original reach, poison and emotion
+  settings retained. Resolver checks pass for both variants/ten configurations;
+  native DLL inheritance verified. See [guide](docs/teapotsgiantscorpion-compatibility.md).
+- [x] **Giant Scorpion game test:** the author completed the in-game test successfully.
 - [ ] **P3 — Teapot's Undead Legion** (`teapotsundeadlegion`, 2.2.2): Discuss whether scarecrows should attract hostile undead; do not silently treat them as crop pests.
 
 ### Aquatic creature candidates

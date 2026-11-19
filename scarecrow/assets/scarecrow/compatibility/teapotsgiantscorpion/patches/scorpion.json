@@ -1,0 +1,186 @@
+[
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgiantscorpion:entities/land/scorpion.json",
+    "path": "/server/behaviors/7/aitasks/-",
+    "value": {
+      "code": "teapotsgiantscorpion-poisonmeleeattack",
+      "minVerDist": 1.75,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "triggerEmotionState": "aggressiveondamage",
+      "priority": 2.1,
+      "slot": 1,
+      "damageByType": {
+        "*-surface": 4,
+        "*-cave": 6
+      },
+      "poisonDamageByType": {
+        "*-surface": 3,
+        "*-cave": 6
+      },
+      "poisonDurationSecByType": {
+        "*-surface": 60,
+        "*-cave": 120
+      },
+      "poisonTicksByType": {
+        "*-surface": 30,
+        "*-cave": 60
+      },
+      "damageTierByType": {
+        "*-surface": 1,
+        "*-cave": 2
+      },
+      "damageType": "PiercingAttack",
+      "mincooldown": 20000,
+      "maxcooldown": 40000,
+      "damagePlayerAtMs": 1125,
+      "attackDurationMs": 1700,
+      "animation": "sting",
+      "animationSpeed": 0.6,
+      "sound": "teapotsgiantscorpion:creature/scorpion/sting*",
+      "soundStartMs": 1060,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgiantscorpion:entities/land/scorpion.json",
+    "path": "/server/behaviors/7/aitasks/-",
+    "value": {
+      "code": "teapotsgiantscorpion-poisonmeleeattack",
+      "minVerDist": 1.75,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "triggerEmotionState": "aggressiveondamage",
+      "priority": 2,
+      "slot": 1,
+      "damageByType": {
+        "*-surface": 3,
+        "*-cave": 4.5
+      },
+      "damageTierByType": {
+        "*-surface": 1,
+        "*-cave": 2
+      },
+      "damageType": "SlashingAttack",
+      "mincooldown": 800,
+      "maxcooldown": 1600,
+      "damagePlayerAtMs": 515,
+      "attackDurationMs": 1050,
+      "animation": "attack1",
+      "animationSpeed": 0.65,
+      "sound": "teapotsgiantscorpion:creature/scorpion/claw*",
+      "soundStartMs": 480,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgiantscorpion:entities/land/scorpion.json",
+    "path": "/server/behaviors/7/aitasks/-",
+    "value": {
+      "code": "teapotsgiantscorpion-charge",
+      "climbMinHeight": 2.2,
+      "climbMaxDistance": 20,
+      "climbReaimMs": 100,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "triggerEmotionState": "aggressiveondamage",
+      "priority": 1.7,
+      "mincooldown": 15000,
+      "maxcooldown": 15000,
+      "movespeed": 0.084,
+      "seekingRange": 16,
+      "maxFollowTime": 20,
+      "chargeBoostMinMs": 2000,
+      "chargeBoostMaxMs": 4000,
+      "chargeBoostStepMs": 500,
+      "runMovespeed": 0.042,
+      "runAnimation": "run",
+      "runAnimationSpeed": 1,
+      "minChargeDistance": 6,
+      "outOfCombatMs": 10000,
+      "reachDistance": 2,
+      "pauseAfterChargeMinMs": 500,
+      "pauseAfterChargeMaxMs": 1000,
+      "animation": "charge",
+      "animationSpeed": 1.5,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgiantscorpion:entities/land/scorpion.json",
+    "path": "/server/behaviors/7/aitasks/-",
+    "value": {
+      "code": "teapotsgiantscorpion-seek",
+      "climbMinHeight": 2.2,
+      "climbMaxDistance": 20,
+      "climbReaimMs": 100,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "whenInEmotionState": "aggressiveondamage",
+      "triggerEmotionState": "aggressiveondamage",
+      "priority": 1.6,
+      "mincooldown": 0,
+      "maxcooldown": 100,
+      "searchWaitMs": 250,
+      "movespeed": 0.042,
+      "seekingRange": 24,
+      "executionChance": 1,
+      "animation": "run",
+      "animationSpeed": 1,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsgiantscorpion:entities/land/scorpion.json",
+    "path": "/server/behaviors/7/aitasks/-",
+    "value": {
+      "code": "teapotsgiantscorpion-seek",
+      "climbMinHeight": 2.2,
+      "climbMaxDistance": 20,
+      "climbReaimMs": 100,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "triggerEmotionState": "aggressiveondamage",
+      "priority": 1.5,
+      "mincooldown": 200,
+      "maxcooldown": 400,
+      "searchWaitMs": 2000,
+      "movespeed": 0.042,
+      "seekingRange": 20,
+      "executionChance": 0.5,
+      "animation": "run",
+      "animationSpeed": 1,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

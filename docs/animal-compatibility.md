@@ -1,5 +1,9 @@
 # Animal compatibility behavior
 
+The [Giant Scorpion integration](teapotsgiantscorpion-compatibility.md) copies
+native sting, claw, charge and climbing pursuit tasks for both surface/cave
+forms. Scorpions attack scarecrows; they do not gain a flee task.
+
 The [Talonborne integration](talonborne-compatibility.md) only extends native
 grazing interruption for raised adult/young mounts. It adds no combat or fear
 and does not override commanded rest.
