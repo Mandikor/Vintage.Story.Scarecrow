@@ -1,5 +1,9 @@
 # Animal compatibility behavior
 
+The [Pegasus integration](pegasus-compatibility.md) extends only wild forms'
+native injury-dependent defense/fear and resting wake lists. Inherited additions
+are disabled for feral/tamed mounts; Jaunt flight controls are unchanged.
+
 The [Fantasy Creatures integration](fantasycreatures-compatibility.md) adapts
 native combat/fear tasks, including hostile humanoids and undead. These creatures
 can attack scarecrows; player following is unchanged.

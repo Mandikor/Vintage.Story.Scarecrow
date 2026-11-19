@@ -63,10 +63,10 @@ The [local mod audit](docs/mod-library-audit-2026-11-19.md) inventories 81 mod I
 38 already supported directly or through inheritance, and 43 not explicitly
 integrated. This is a review backlog, not approval to implement every candidate.
 Previously deferred cosmetics and aging remain deferred.
-After Crows, the additional FotSA batch, Flocks and Fantasy Creatures,
-44 IDs are supported and 37 have no
+After Crows, the additional FotSA batch, Flocks, Fantasy Creatures and Pegasus,
+45 IDs are supported and 36 have no
 explicit integration. Two of those are reviewed/deferred fully aquatic mods;
-35 remain review candidates. The audit retains the original inventory.
+34 remain review candidates. The audit retains the original inventory.
 
 - [x] Inventory ZIP/unpacked duplicates, manifest versions and current support.
 - [x] Audit existing patch paths and native player-code/player-tag AI tasks.
@@ -124,7 +124,11 @@ explicit integration. Two of those are reviewed/deferred fully aquatic mods;
   resolver checks pass for 26 variants and 74 additional task configurations.
   See [behavior guide](docs/fantasycreatures-compatibility.md).
 - [x] **Fantasy Creatures game test:** the author completed the in-game test successfully.
-- [ ] **P2 — Pegasus: Winged horses** (`pegasus`, 1.1.0-rc.1): Review generated wild versus owned/mount variants and flight AI.
+- [x] **P2 — Pegasus implementation** (`pegasus`, 1.1.0-rc.1): three native
+  wild-only injury combat/fear copies and four gated wake lists. Feral/tamed
+  inherited additions disabled; Jaunt flight/owner controls unchanged. Resolver
+  checks pass for all 12 variants. See [scope](docs/pegasus-compatibility.md).
+- [x] **Pegasus game test:** the author completed the in-game test successfully.
 - [ ] **P2 — Talonborne** (`talonborne`, 1.2.0): Mostly mount AI: inspect custom proximity/bed-down hooks and ownership before adding reactions.
 - [ ] **P2 — Teapot's Giant Scorpion** (`teapotsgiantscorpion`, 1.0.2): Adapt the five native player-target tasks and validate attack/reach behavior.
 - [ ] **P3 — Teapot's Undead Legion** (`teapotsundeadlegion`, 2.2.2): Discuss whether scarecrows should attract hostile undead; do not silently treat them as crop pests.

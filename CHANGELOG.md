@@ -5,6 +5,17 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Pegasus: Winged horses 1.1.0-rc.1
+
+- Add JSON-only support for wild Pegasi: native injury-dependent adult melee
+  and pursuit, injury flight for adults/young, and four extended rest/wake lists.
+- Gate inherited additions by entity type so feral and tamed mounts retain
+  their original behavior. Preserve native emotion conditions, movement,
+  damage and ranges; leave eggs, owner following and Jaunt flight controls intact.
+- Variant-resolver checks pass for all 12 wild/feral/tamed variants, including
+  eight active and 28 disabled additional task configurations. Build passes;
+  the author's in-game test also passed. See [scope](docs/pegasus-compatibility.md).
+
 ### Fantasy Creatures Mod 0.8.3
 
 - Add 14 JSON compatibility files for goblins, orks, skeletons, slimes, tree

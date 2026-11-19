@@ -1,5 +1,12 @@
 # Local mod compatibility audit — 2026-11-19
 
+Latest implementation: [Pegasus 1.1.0-rc.1](pegasus-compatibility.md) adds wild-only
+injury combat/fear and wake lists, excluding inherited reactions on feral/tamed
+mounts. Automated checks and the author's game test passed. Current totals are
+**45 supported IDs**, **36 without explicit integration**: two deliberately
+deferred aquatic mods and **34 review candidates**. These totals supersede older
+follow-ups below; historical inventory tables remain intact.
+
 Latest implementation: [Fantasy Creatures 0.8.3](fantasycreatures-compatibility.md)
 adds native combat/fear tasks across 14 definitions, including hostile humanoids
 and undead, while retaining player following. Automated checks and the author's
