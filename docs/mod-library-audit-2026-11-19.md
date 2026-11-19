@@ -11,7 +11,7 @@ in-game test without finding issues. Remaining work is tracked in [todo.md](../t
 
 The [remaining existing creature migration](native-creature-compatibility.md) is
 also implemented on `dev`, including tag-based tasks and generator handling;
-its in-game batch test is pending. The original counts and findings below remain
+its in-game batch test was completed successfully by the author. The original counts and findings below remain
 unchanged as the starting-point audit.
 
 ## Inventory and scope

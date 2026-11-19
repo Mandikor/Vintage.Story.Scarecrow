@@ -77,15 +77,14 @@ Previously deferred cosmetics and aging remain deferred.
   player/prey behavior. Shared chick templates, Equus: Expanded generation and
   Bats' custom deterrents are covered separately. See the native creature guide;
   the original audit and CSV retain their initial findings.
-- [ ] **Existing creature migration game test:** check representative FotSA species,
-  young/adults, swimming, sleep/injury states, Critter Pack birds/snails, Teapot
-  animals, wild/tame horses, generated Equus guard/flight breeds, Detailed Animals
-  chicks and Bats. Automated checks passed; in-game testing is pending.
+- [x] **Existing creature migration game test:** the author completed the batch's
+  in-game test successfully. Automated checks also passed; this does not imply
+  exhaustive coverage of every species, state or mod combination.
 - [x] **Arctic Wolves 1.5.0:** native player-task adaptation already implemented
   and confirmed in game.
 - [x] **P1 — Update implementation details:** Bovinae 1.0.3 animation maps and Great
   Bighorn 1.1.1 native tasks are retained in the migration. Feverstone's game test
-  passed; Bovinae/Great Bighorn are included in the pending batch game test.
+  passed; the remaining creature batch's game test also passed.
 - [x] Review Bats' custom AI and Equus/Equus: Expanded/Detailed Animals generators.
   Actual builders and the server startup adapter were tested. Bats retains its
   native feed-deterrent mechanism, not every hard-coded EntityPlayer interaction.

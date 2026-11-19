@@ -22,7 +22,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 - Verify Detailed Animals' actual clone routine for both generated chick sexes.
   Bats retains its authored feed-deterrent integration as a custom-AI exception.
   Other vanilla animal patches are unchanged. Build and automated checks pass;
-  in-game testing of this batch is pending.
+  the author also completed this batch's in-game test successfully.
 
 ### Feverstone Wilds 3.2.1 native player AI
 

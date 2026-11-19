@@ -1,8 +1,8 @@
 # Native player AI for existing creature integrations
 
 This documents the next migration batch on `dev`, following the already tested
-Arctic Wolves and Feverstone Wilds integrations. In-game testing of this batch
-is pending. Supplied versions are local baselines, not claims about ModDB's
+Arctic Wolves and Feverstone Wilds integrations. The author completed this batch's
+in-game test successfully. Supplied versions are local baselines, not claims about ModDB's
 latest releases.
 
 ## What the patches do
@@ -127,13 +127,14 @@ flight AI was added.
 The native deterrent code was inspected and both patches were checked for target
 codes/ranges and preservation of all settings outside the deterrent field.
 
-## Validation and remaining game test
+## Validation and game testing
 
 All shipped static operations were applied to the supplied raw assets and resolved
 with the real game variant resolver. Checks preserve original action/player/prey
 settings, validate target isolation, enabled-by-type rules and wake lists, and
 read the written patches back. Runtime tests use the actual external builders.
-These are not full simulations of navigation, scheduling or every mod combination.
+The author also completed the batch's in-game test successfully. These checks
+do not exhaustively cover navigation, scheduling or every mod combination.
 
 Suggested in-game samples: large/small FotSA predators and herbivores, adults and
 young, swimming cases, Critter Pack birds and snails, Teapot adults/babies, wild

@@ -8,8 +8,8 @@ supplied versions, detected patch-path failures and the planned migration to
 native player-target tasks. The six Feverstone Wilds failures are now corrected
 on `dev` for 3.2.1; see the [dedicated guide](feverstonewilds-compatibility.md).
 The [remaining existing creature integrations are now migrated on dev](native-creature-compatibility.md),
-including generator checks and the custom Bats exception; their in-game test is
-pending. The size/diet rules below are historical for mod integrations and still
+including generator checks and the custom Bats exception; the author completed
+the batch's in-game test successfully. The size/diet rules below are historical for mod integrations and still
 describe the remaining vanilla policy. The shared vanilla chick template was
 updated for Detailed Animals; other vanilla animals are unchanged in this batch.
 
@@ -253,8 +253,8 @@ was checked for both generated chick variants.
 The revised Arctic Wolves patches were separately applied to the supplied 1.5.0
 adult and baby assets. Checks cover all seven player-target task copies and both
 sleep wake-up lists, preserve the original tasks and all non-target settings,
-and reject arbitrary-attacker responses in the additional tasks. An in-game
-test of the revised integration is still required.
+and reject arbitrary-attacker responses in the additional tasks. The author also
+completed the revised Arctic Wolves integration's in-game test successfully.
 
 These checks do not simulate pathfinding, task scheduling or a complete running
 mod set. In-game testing should include a small herbivore, a large herbivore before

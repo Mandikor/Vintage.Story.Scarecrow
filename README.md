@@ -395,7 +395,7 @@ path failures are now corrected for **3.2.1**, with native player AI replacing
 the older generic rules. **3.1.1 is no longer the supported baseline.** See the
 [Feverstone guide](docs/feverstonewilds-compatibility.md),
 [native creature migration](docs/native-creature-compatibility.md) and
-[to-do list](todo.md) for the implementation and pending batch game test.
+[to-do list](todo.md) for the implementation and successful batch game test.
 
 See the [source structure and extension guide](docs/source-structure.md) for code
 responsibilities, optional-mod adapters and inventory/synchronization rules.
