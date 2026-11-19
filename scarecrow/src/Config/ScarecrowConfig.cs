@@ -5,6 +5,11 @@
     /// </summary>
     public class ScarecrowConfig
     {
+        public const int CurrentConfigVersion = 2;
+
+        /// <summary>Configuration schema version, independent of the mod release version.</summary>
+        public int ConfigVersion { get; set; } = CurrentConfigVersion;
+
         /// <summary>Write spawn interception details to the server log.</summary>
         public bool DebugOutput { get; set; } = false;
 

@@ -278,6 +278,7 @@ data directory. For a dedicated server, edit the file in the server's data direc
 
 ```json
 {
+  "ConfigVersion": 2,
   "DebugOutput": false,
   "ScaredAnimalPrefixes": [
     "hare",
@@ -288,6 +289,7 @@ data directory. For a dedicated server, edit the file in the server's data direc
 
 | Setting | Purpose |
 | --- | --- |
+| `ConfigVersion` | Configuration schema, independent of the mod version. Updated automatically; currently `2`. |
 | `DebugOutput` | Writes spawn-interception details to the server log when enabled. |
 | `ScaredAnimalPrefixes` | Animal-code prefixes blocked by natural-spawn protection. Matching is case-insensitive and uses the code path, without the mod domain. For example, `hare` matches `hare-adult` and `hare-baby`. |
 
@@ -296,6 +298,16 @@ the configured natural-spawn blocking while leaving the animal flee patches acti
 
 If the JSON cannot be read, the mod logs the error and uses its defaults without
 overwriting the invalid file. Correct the file and restart.
+
+Older configs without `ConfigVersion` are treated as schema 1 and upgraded to
+schema 2. Missing settings receive their defaults; existing values, empty animal
+lists and unknown properties are preserved. Before changing an existing file,
+the mod saves its original settings to `ModConfig/scarecrow.json.bak`.
+
+Complete current files are not rewritten on startup. Newer schemas are read
+without downgrading or rewriting them. If a backup or save fails, the loaded
+settings remain active and the error is logged. Configuration versioning does
+not enable or include scarecrow aging in this branch.
 
 ### Custom attachment rules
 

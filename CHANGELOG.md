@@ -5,6 +5,25 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Versioned configuration migration
+
+- Added `ConfigVersion` schema 2. Existing 1.9.3 configs without a version are
+  treated as schema 1 and upgraded automatically, adding only missing settings
+  with defaults while preserving customized values and unknown properties.
+- Back up the original configuration to `scarecrow.json.bak` before upgrading.
+  Current complete files are left untouched; files with newer schema versions
+  are never downgraded or rewritten. Invalid JSON, invalid known settings or
+  invalid version values are not overwritten.
+- Retain the loaded runtime settings if a backup or save fails. Missing settings
+  are also repaired in partially edited configs already marked with the current
+  version; case-insensitive property names do not create duplicate entries.
+
+### Cleanup after scarecrow destruction
+
+- Synchronize the empty equipment inventory after death and stop rendering dropped
+  attachments and wind chimes on dead scarecrows. Dead scarecrows no longer offer
+  equipment or pickup hints, and natural-spawn interception stops immediately.
+
 ### Interaction failure feedback
 
 - Added short in-game error messages for placement blocked by solid blocks or
@@ -213,6 +232,15 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   clarified the difference between natural-spawn protection and animal flee behavior.
 - Removed the build-from-source instructions and the local regression-test command
   from the public README.
+
+## 1.9.4 (2026-11-19)
+
+- Fixed animals fleeing from players after taking damage, including bears.
+  Scarecrow-specific flee tasks no longer trigger instant flight when an animal
+  is hurt and do not react to attackers outside their configured scarecrow targets.
+- Applied the correction to vanilla animals and all existing animal-mod patches.
+  Existing scarecrow detection ranges, movement settings and natural-spawn
+  protection remain unchanged.
 
 ## 1.9.3 (2026-11-13)
 

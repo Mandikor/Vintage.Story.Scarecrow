@@ -30,6 +30,11 @@ namespace Scarecrow
 
         private void RenderWindChimes(bool isShadowPass)
         {
+            if (!entity.Alive)
+            {
+                ClearMeshes();
+                return;
+            }
             InventoryBase inventory = entity.GetBehavior<ScarecrowAttachments>()?.Inventory;
             if (inventory == null) return;
             for (int index = 0; index < 2 && index < inventory.Count; index++)

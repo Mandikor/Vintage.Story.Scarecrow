@@ -202,6 +202,17 @@ namespace Scarecrow
         {
             windChimeSounds?.Dispose();
             base.OnEntityDeath(damageSourceForDeath);
+            // Vanilla DropAll empties the inventory, but only marks the mesh dirty.
+            // Publish the final empty snapshot while the corpse remains in the world.
+            if (entity.World.Side == EnumAppSide.Server && inv != null) storeInv();
+            entity.MarkShapeModified();
+        }
+
+        public override void OnTesselation(ref Shape entityShape, string shapePathForLogging,
+            ref bool shapeIsCloned, ref string[] willDeleteElements)
+        {
+            if (!entity.Alive) return;
+            base.OnTesselation(ref entityShape, shapePathForLogging, ref shapeIsCloned, ref willDeleteElements);
         }
 
         protected override Shape addGearToShape(Shape entityShape, ItemSlot gearslot, string slotCode,
@@ -261,6 +272,7 @@ namespace Scarecrow
         public override WorldInteraction[] GetInteractionHelp(IClientWorldAccessor world, EntitySelection selection,
             IClientPlayer player, ref EnumHandling handled)
         {
+            if (!entity.Alive) return null;
             WorldInteraction[] help = base.GetInteractionHelp(world, selection, player, ref handled);
             if (help == null || selection.SelectionBoxIndex <= 0) return help;
             if (GetSlotFromSelectionBoxIndex(selection.SelectionBoxIndex - 1) is not ScarecrowAttachmentSlot slot) return help;

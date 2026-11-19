@@ -23,23 +23,7 @@ namespace Scarecrow
 
         private void LoadConfig(ICoreAPI api)
         {
-            try
-            {
-                Config = api.LoadModConfig<ScarecrowConfig>("scarecrow.json");
-            }
-            catch (Exception ex)
-            {
-                // Do not overwrite the file: the user probably just made a typo.
-                api.Logger.Error("[Scarecrow] Could not read ModConfig/scarecrow.json, using defaults. Fix the file and restart. Error: {0}", ex.Message);
-                Config = new ScarecrowConfig();
-            }
-
-            if (Config == null)
-            {
-                Config = new ScarecrowConfig();
-                api.StoreModConfig(Config, "scarecrow.json");
-                api.Logger.Notification("[Scarecrow] Wrote default config to ModConfig/scarecrow.json");
-            }
+            Config = ScarecrowConfigLoader.Load(api);
         }
 
         public override void AssetsFinalize(ICoreAPI api)

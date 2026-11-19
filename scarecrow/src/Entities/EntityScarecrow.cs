@@ -50,7 +50,7 @@ namespace Scarecrow
                 sapi = api as ICoreServerAPI;
                 SynchronizeOwnerName();
                 SynchronizeProtectionSettings();
-                AttachSpawnHooks();
+                if (Alive) AttachSpawnHooks();
             }
         }
 
@@ -58,6 +58,12 @@ namespace Scarecrow
         {
             DetachSpawnHooks();
             base.OnEntityDespawn(despawnData);
+        }
+
+        public override void Die(EnumDespawnReason reason = EnumDespawnReason.Death, DamageSource damageSourceForDeath = null)
+        {
+            DetachSpawnHooks();
+            base.Die(reason, damageSourceForDeath);
         }
 
         private void SynchronizeProtectionSettings()
@@ -301,6 +307,7 @@ namespace Scarecrow
 
         public override WorldInteraction[] GetInteractionHelp(IClientWorldAccessor world, EntitySelection es, IClientPlayer player)
         {
+            if (!Alive) return Array.Empty<WorldInteraction>();
             var interactions = ObjectCacheUtil.GetOrCreate(world.Api, "scarecrow:interactions:pickup", () =>
             {
                 return new WorldInteraction[] {
