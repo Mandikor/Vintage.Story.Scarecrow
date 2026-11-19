@@ -1,0 +1,45 @@
+[
+  {
+    "enabled": true,
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "add",
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
+    "value": "dreamcatchers:dreamcatcher-*"
+  },
+  {
+    "enabled": true,
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "addmerge",
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/stepParentTo",
+    "value": {
+      "ScarecrowDreamcatcherMount": {
+        "elementName": "ScarecrowDreamcatcherLeftMount"
+      }
+    }
+  },
+  {
+    "enabled": true,
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "add",
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
+    "value": "dreamcatchers:dreamcatcher-*"
+  },
+  {
+    "enabled": true,
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "addmerge",
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/stepParentTo",
+    "value": {
+      "ScarecrowDreamcatcherMount": {
+        "elementName": "ScarecrowDreamcatcherRightMount"
+      }
+    }
+  },
+  {
+    "enabled": true,
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "add",
+    "path": "/attributes/useSlotPrefix",
+    "value": true
+  }
+]

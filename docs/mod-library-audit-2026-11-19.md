@@ -1,5 +1,16 @@
 # Local mod compatibility audit — 2026-11-19
 
+Latest implementation: [Dreamcatchers 1.0.2](dreamcatchers-compatibility.md)
+adds decorative full-size arm attachments. No native gameplay effect was found
+in the supplied content-only mod; no bonus is added. Automated checks pass for
+5,200 variants against the working 1.0.2 package. Corrected model paths address
+the invisible attachment reported in its initial game test; the author's retest passed.
+The separate 1.0.31 package retains its confirmed upstream `itemtypes/bead.json`
+shape/item error and reported loading failure. Totals count implemented compatibility, not successful upstream
+loading: **49 supported IDs**, **32
+without explicit integration**: two deliberately deferred aquatic mods and
+**30 review candidates**. These supersede older totals; inventory tables remain intact.
+
 Latest implementation: [Undead Legion 2.2.2](teapotsundeadlegion-compatibility.md)
 extends hostile undead's native target lists while excluding bound companions
 and player summons. Automated checks and the author's game test passed. Totals are

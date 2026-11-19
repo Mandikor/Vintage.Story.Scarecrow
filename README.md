@@ -352,6 +352,7 @@ The repository includes compatibility assets for the following mods and families
 | Leaf Litter | Rake attachment shapes |
 | More Lanterns by Ape | Paper and metal lantern attachments with natural-spawn radius bonuses |
 | Wind Chimes by Ape | Upright arm attachments with original spatial chime sounds |
+| Dreamcatchers 1.0.2 | Tested decorative attachments on either/both full-size arms; no gameplay bonus. Newer 1.0.31 has an upstream loading error; see [guide](docs/dreamcatchers-compatibility.md) |
 | Equus, Equus Ferus and Monoceros | Animal behavior patches |
 | Equus: Shared Ancestry and Equus: Expanded | Wild donkey reactions and inherited pony reactions |
 | Vara's Arctic Wolves | Native player-target AI adapted for scarecrows, including attacks, injury fear, pup fleeing and sleep interruption |

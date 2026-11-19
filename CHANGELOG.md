@@ -5,6 +5,23 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Dreamcatchers 1.0.2 arm decorations
+
+- Allow finished dreamcatchers on either arm of the full-size scarecrow, including
+  both arms together, using the existing equipment/ownership/pickup rules.
+- Add dedicated upright arm mounts at scale 0.6 and retain original wood/cloth
+  textures and wall-placement geometry. All JSON patches live under
+  `compatibility/dreamcatchers`; no C# adapter is needed.
+- Review confirms the supplied content-only mod has no gameplay protection
+  effect. No spawn-radius bonus, storm protection or other effect is invented.
+- Attachment/variant checks pass for all 5,200 variants and both arm transforms.
+  Correct the invisible attachment in the working 1.0.2 package by using its
+  `block/dreamcatcher` model instead of 1.0.31's `block/dreamcatcherwall` path.
+  Build and the author's gameplay retest of the corrected attachment pass.
+- Record the separate upstream 1.0.31 packaging error: `itemtypes/bead.json`
+  contains shape data instead of an item definition and prevents game loading.
+  The author confirmed 1.0.2 loads. See [guide](docs/dreamcatchers-compatibility.md).
+
 ### Teapot's Undead Legion 2.2.2
 
 - Extend hostile revenants, brutes, hunters, spectres, Lich-raised spectres and

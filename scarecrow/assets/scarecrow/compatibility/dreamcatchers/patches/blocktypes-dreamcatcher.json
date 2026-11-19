@@ -1,0 +1,21 @@
+[
+  {
+    "enabled": true,
+    "file": "dreamcatchers:blocktypes/dreamcatcher.json",
+    "op": "add",
+    "path": "/attributes",
+    "value": {
+      "attachableToEntity": {
+        "attachedShapeBySlotCode": {
+          "sc-leftarm": {
+            "base": "dreamcatchers:block/dreamcatcher"
+          },
+          "sc-rightarm": {
+            "base": "dreamcatchers:block/dreamcatcher"
+          }
+        },
+        "texturePrefixCode": "scarecrow-dreamcatchers"
+      }
+    }
+  }
+]

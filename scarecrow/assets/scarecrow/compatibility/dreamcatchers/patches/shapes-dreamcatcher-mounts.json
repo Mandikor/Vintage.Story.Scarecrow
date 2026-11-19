@@ -1,0 +1,72 @@
+[
+  {
+    "enabled": true,
+    "file": "dreamcatchers:shapes/block/dreamcatcher.json",
+    "op": "add",
+    "path": "/elements/0/stepParentName",
+    "value": "ScarecrowDreamcatcherMount",
+    "side": "client"
+  },
+  {
+    "enabled": true,
+    "file": "scarecrow:shapes/entity/nonliving/scarecrow.json",
+    "op": "add",
+    "path": "/elements/0/children/0/children/0/children/1/children/1/children/0/children/-",
+    "value": {
+      "name": "ScarecrowDreamcatcherLeftMount",
+      "from": [
+        -4.850000381469727,
+        -13.290899276733398,
+        0.6000000238418579
+      ],
+      "to": [
+        -4.850000381469727,
+        -13.290899276733398,
+        0.6000000238418579
+      ],
+      "rotationOrigin": [
+        3,
+        1,
+        1
+      ],
+      "scaleX": 0.6,
+      "scaleY": 0.6,
+      "scaleZ": 0.6,
+      "rotationX": 0.349186,
+      "rotationY": 3.984754,
+      "rotationZ": -5.012147
+    },
+    "side": "client"
+  },
+  {
+    "enabled": true,
+    "file": "scarecrow:shapes/entity/nonliving/scarecrow.json",
+    "op": "add",
+    "path": "/elements/0/children/0/children/0/children/2/children/1/children/0/children/-",
+    "value": {
+      "name": "ScarecrowDreamcatcherRightMount",
+      "from": [
+        -4.850000381469727,
+        -13.290899276733398,
+        0.6000000238418579
+      ],
+      "to": [
+        -4.850000381469727,
+        -13.290899276733398,
+        0.6000000238418579
+      ],
+      "rotationOrigin": [
+        3,
+        1,
+        1
+      ],
+      "scaleX": 0.6,
+      "scaleY": 0.6,
+      "scaleZ": 0.6,
+      "rotationX": 179.650814,
+      "rotationY": 3.984754,
+      "rotationZ": -174.987853
+    },
+    "side": "client"
+  }
+]
