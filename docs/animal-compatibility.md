@@ -3,6 +3,12 @@
 The vanilla and compatibility patches add reactions to the scarecrow, little
 scarecrow and vanilla straw dummy. They extend the animals' existing AI task lists.
 
+The [2026-11-19 local-library audit](mod-library-audit-2026-11-19.md) records newer
+supplied versions, detected patch-path failures and the planned migration to
+native player-target tasks. In particular, six existing Feverstone Wilds patches
+need new task-list paths for 3.2.1. Except for Arctic Wolves, the rules below
+describe the earlier size/diet policy, not a completed native-player-AI migration.
+
 ## Reaction rules
 
 | Animal group | Normal reaction | After injury |

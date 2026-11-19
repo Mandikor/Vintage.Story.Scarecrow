@@ -382,5 +382,10 @@ Scarecrow is distributed under the [MIT License](LICENSE.txt).
 
 ## Source code
 
+The [local mod compatibility audit](docs/mod-library-audit-2026-11-19.md) lists
+checked versions, known issues and proposed integrations. It identifies six
+Feverstone Wilds patches that need path updates for version 3.2.1; these repairs
+and the broader native-player-AI migration are tracked in [the to-do list](todo.md).
+
 See the [source structure and extension guide](docs/source-structure.md) for code
 responsibilities, optional-mod adapters and inventory/synchronization rules.

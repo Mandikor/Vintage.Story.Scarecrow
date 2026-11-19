@@ -5,6 +5,16 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Local mod-library audit and compatibility backlog
+
+- Audited 81 manifest mod IDs from 165 supplied ZIP/directory copies, comparing
+  seven available version transitions and checking existing patch targets.
+- Documented six invalid Feverstone Wilds 3.2.1 AI paths, native player-code/tag
+  adaptation gaps, relevant update changes and malformed upstream source files.
+- Added a per-entity CSV and a complete 43-ID candidate backlog, distinguishing
+  creature support, pets/capture, equipment, other scarecrows and dependencies.
+  Gameplay fixes and further integrations remain explicitly pending in todo.md.
+
 ### Vara's Arctic Wolves: native AI reactions
 
 - Revised the existing 1.5.0 integration to use every player-target AI task as
