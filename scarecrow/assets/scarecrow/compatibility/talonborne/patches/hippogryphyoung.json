@@ -1,0 +1,26 @@
+[
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "talonborne:entities/mount/hippogryphyoung.json",
+    "path": "/server/behaviors/7/aitasks/1/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "talonborne:entities/mount/hippogryphyoung.json",
+    "path": "/server/behaviors/7/aitasks/1/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "talonborne:entities/mount/hippogryphyoung.json",
+    "path": "/server/behaviors/7/aitasks/1/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  }
+]

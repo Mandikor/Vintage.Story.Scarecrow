@@ -5,6 +5,17 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Talonborne 1.2.0
+
+- Extend the adult and young hippogryphs' native player-sensitive grazing
+  interruption lists with all three scarecrow types, retaining the configured
+  3-block range and generation-dependent idle sensitivity.
+- Keep raised mounts' behavior intact: no invented flee/attack tasks, changes
+  to bed-down or commanded rest, ownership, Jaunt flight, eggs or nests.
+- Six JSON operations pass checks across all 16 adult/young color variants
+  using the game's variant resolver. Build and the author's in-game test pass.
+  See [scope and behavior](docs/talonborne-compatibility.md).
+
 ### Pegasus: Winged horses 1.1.0-rc.1
 
 - Add JSON-only support for wild Pegasi: native injury-dependent adult melee

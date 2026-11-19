@@ -1,5 +1,12 @@
 # Local mod compatibility audit — 2026-11-19
 
+Latest implementation: [Talonborne 1.2.0](talonborne-compatibility.md) extends
+adult/young grazing interruption only, retaining raised mounts' noncombat AI
+and commanded rest. Automated checks and the author's game test passed. Totals are
+**46 supported IDs**, **35 without explicit integration**: two deliberately
+deferred aquatic mods and **33 review candidates**. These totals supersede
+earlier follow-ups below; historical inventory tables remain intact.
+
 Latest implementation: [Pegasus 1.1.0-rc.1](pegasus-compatibility.md) adds wild-only
 injury combat/fear and wake lists, excluding inherited reactions on feral/tamed
 mounts. Automated checks and the author's game test passed. Current totals are

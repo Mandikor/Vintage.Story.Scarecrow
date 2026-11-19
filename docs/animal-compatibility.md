@@ -1,5 +1,9 @@
 # Animal compatibility behavior
 
+The [Talonborne integration](talonborne-compatibility.md) only extends native
+grazing interruption for raised adult/young mounts. It adds no combat or fear
+and does not override commanded rest.
+
 The [Pegasus integration](pegasus-compatibility.md) extends only wild forms'
 native injury-dependent defense/fear and resting wake lists. Inherited additions
 are disabled for feral/tamed mounts; Jaunt flight controls are unchanged.

@@ -359,6 +359,7 @@ The repository includes compatibility assets for the following mods and families
 | Flocks 0.22.1 | Built-in crow protection at Flocks' own radius; mouse flee/wake patches. Other birds retain native behavior; see [scope and settings](docs/flocks-compatibility.md) |
 | Fantasy Creatures Mod 0.8.3 | Native player-target combat/fear for goblins, orks, skeletons, slimes, tree creatures and dragons; hostile creatures can attack scarecrows. See [behavior guide](docs/fantasycreatures-compatibility.md) |
 | Pegasus: Winged horses 1.1.0-rc.1 | Wild-only injury defense/fear and rest interruption; feral/tamed mounts and Jaunt flight controls unchanged. See [scope](docs/pegasus-compatibility.md) |
+| Talonborne 1.2.0 | Adult/young grazing interruption only; no fleeing or attacks added to raised mounts. Commanded rest and flight unchanged. See [scope](docs/talonborne-compatibility.md) |
 | Feverstone's Horses | Wild land-animal reactions |
 | Feverstone Wilds 3.2.1 | Native player-target tasks for wild land animals, griffon flight attacks and all young griffon ages; tame variants excluded |
 | Sonya's Quality Fowl and More Animals | Flee rules for ducks and other small birds |
