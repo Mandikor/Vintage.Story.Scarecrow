@@ -5,6 +5,19 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Fantasy Creatures Mod 0.8.3
+
+- Add 14 JSON compatibility files for goblins, orks, skeletons, slimes, tree
+  creatures and ground/flying dragons: 51 isolated native player-target task
+  copies and five extended wake/idle-interruption lists.
+- Preserve native attacks, pursuit, injury/daylight flight, variant settings and
+  original player/prey tasks. Keep blue-dragon player following unchanged; only
+  its player-target wing attack receives a scarecrow copy. No C# adapter or new
+  spawn prefixes.
+- Actual game variant-resolver checks pass for 26 variants and 74 additional
+  task configurations. The author's in-game test also passed; see the
+  [behavior guide](docs/fantasycreatures-compatibility.md).
+
 ### Flocks 0.22.1 compatibility
 
 - Verify built-in recognition of both scarecrow sizes and the straw dummy for

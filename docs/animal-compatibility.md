@@ -1,5 +1,9 @@
 # Animal compatibility behavior
 
+The [Fantasy Creatures integration](fantasycreatures-compatibility.md) adapts
+native combat/fear tasks, including hostile humanoids and undead. These creatures
+can attack scarecrows; player following is unchanged.
+
 The [Flocks integration](flocks-compatibility.md) retains built-in corvid
 protection and adds mouse flee/wake patches. Other custom Flocks birds retain
 their native player-only reactions.

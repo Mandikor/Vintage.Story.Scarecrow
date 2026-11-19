@@ -1,0 +1,36 @@
+[
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/dragon-blue.json",
+    "path": "/server/behaviors/7/aitasks/-",
+    "value": {
+      "code": "meleeattack",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.05,
+      "minDist": 6.0,
+      "minVerDist": 8.0,
+      "damage": 12,
+      "damageTier": 3,
+      "damageType": "BluntAttack",
+      "attackAngleRangeDeg": 360,
+      "knockbackStrength": 6.0,
+      "mincooldown": 3500,
+      "maxcooldown": 6500,
+      "damagePlayerAtMs": 800,
+      "attackDurationMs": 1500,
+      "animation": "airwhip",
+      "animationSpeed": 1.0,
+      "sound": "creature/dragon_wingflap",
+      "soundStartMs": 0,
+      "soundRange": 40,
+      "priorityForCancel": 9,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

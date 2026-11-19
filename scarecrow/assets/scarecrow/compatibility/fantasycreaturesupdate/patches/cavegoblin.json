@@ -1,0 +1,111 @@
+[
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/cavegoblin.json",
+    "path": "/server/behaviors/6/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 3,
+      "movespeed": 0.05,
+      "seekingRange": 20,
+      "fleeingDistance": 64,
+      "fleeDurationMs": 9999999,
+      "minDayLightByType": {
+        "cavegoblin-normal": 0.925
+      },
+      "ignoreDeepDayLight": true,
+      "cancelOnHurt": true,
+      "executionChance": 0.03,
+      "animationSpeed": 1.3,
+      "animation": "standrun",
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/cavegoblin.json",
+    "path": "/server/behaviors/6/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.5,
+      "movespeed": 0.05,
+      "seekingRange": 12,
+      "cancelOnHurt": true,
+      "animationSpeed": 1.3,
+      "whenInEmotionState": "fleeondamage",
+      "animation": "standrun",
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/cavegoblin.json",
+    "path": "/server/behaviors/6/aitasks/-",
+    "value": {
+      "code": "meleeattack",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2,
+      "damageByType": {
+        "cavegoblin-normal": 4,
+        "cavegoblin-lessarmored": 6
+      },
+      "damageTierByType": {
+        "cavegoblin-normal": 1,
+        "cavegoblin-lessarmored": 1
+      },
+      "mincooldown": 500,
+      "maxcooldown": 1750,
+      "damagePlayerAtMs": 400,
+      "attackDurationMs": 1000,
+      "animation": "standattack",
+      "animationSpeed": 1.5,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/cavegoblin.json",
+    "path": "/server/behaviors/6/aitasks/-",
+    "value": {
+      "code": "seekentity",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 1.5,
+      "mincooldown": 400,
+      "maxcooldown": 800,
+      "movespeed": 0.035,
+      "seekingRange": 20,
+      "animationSpeed": 1.3,
+      "animation": "standrun",
+      "sound": "fantasycreatures:creature/goblin_idle1",
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

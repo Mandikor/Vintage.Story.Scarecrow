@@ -1,5 +1,12 @@
 # Local mod compatibility audit — 2026-11-19
 
+Latest implementation: [Fantasy Creatures 0.8.3](fantasycreatures-compatibility.md)
+adds native combat/fear tasks across 14 definitions, including hostile humanoids
+and undead, while retaining player following. Automated checks and the author's
+game test passed. Totals are **44 supported IDs**, **37 without explicit integration**:
+two deliberately deferred aquatic mods and **35 review candidates**. These totals
+supersede earlier follow-ups below; historical inventory tables remain intact.
+
 Latest follow-up: [Flocks 0.22.1](flocks-compatibility.md) retains native crow
 protection and adds mouse flee/wake patches. Other custom bird behaviors remain
 unchanged. Build and automated checks pass; the author's game test passed. Totals are

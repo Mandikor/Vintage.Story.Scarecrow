@@ -1,0 +1,31 @@
+[
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/ent-shepherd.json",
+    "path": "/server/behaviors/5/aitasks/-",
+    "value": {
+      "code": "meleeattack",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2,
+      "minDist": 2.3,
+      "minVerDist": 4.1,
+      "damage": 12,
+      "damageTier": 1,
+      "mincooldown": 500,
+      "maxcooldown": 1750,
+      "damagePlayerAtMs": 400,
+      "attackDurationMs": 1000,
+      "knockbackStrength": 3.0,
+      "animation": "attack",
+      "animationSpeed": 1.0,
+      "sound": "game:effect/treefell",
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/treant.json",
+    "path": "/server/behaviors/5/aitasks/-",
+    "value": {
+      "code": "meleeattack",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2,
+      "minDist": 4.9,
+      "minVerDist": 7.2,
+      "damage": 18,
+      "damageTier": 1,
+      "mincooldown": 500,
+      "maxcooldown": 1750,
+      "damagePlayerAtMs": 400,
+      "attackDurationMs": 1000,
+      "animation": "standattack",
+      "animationSpeed": 1.0,
+      "sound": "game:effect/treefell",
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/treant.json",
+    "path": "/server/behaviors/5/aitasks/-",
+    "value": {
+      "code": "seekentity",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 1.5,
+      "mincooldown": 5000,
+      "maxcooldown": 7000,
+      "movespeed": 0.028,
+      "seekingRange": 12,
+      "extraTargetDistance": 2,
+      "animationSpeed": 1.3,
+      "animation": "standlowwalk",
+      "sound": "creature/treant_idle",
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/treant.json",
+    "path": "/server/behaviors/5/aitasks/3/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/treant.json",
+    "path": "/server/behaviors/5/aitasks/3/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/treant.json",
+    "path": "/server/behaviors/5/aitasks/3/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  }
+]

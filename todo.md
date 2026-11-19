@@ -63,9 +63,10 @@ The [local mod audit](docs/mod-library-audit-2026-11-19.md) inventories 81 mod I
 38 already supported directly or through inheritance, and 43 not explicitly
 integrated. This is a review backlog, not approval to implement every candidate.
 Previously deferred cosmetics and aging remain deferred.
-After Crows, the additional FotSA batch and Flocks, 43 IDs are supported and 38 have no
+After Crows, the additional FotSA batch, Flocks and Fantasy Creatures,
+44 IDs are supported and 37 have no
 explicit integration. Two of those are reviewed/deferred fully aquatic mods;
-36 remain review candidates. The audit retains the original inventory.
+35 remain review candidates. The audit retains the original inventory.
 
 - [x] Inventory ZIP/unpacked duplicates, manifest versions and current support.
 - [x] Audit existing patch paths and native player-code/player-tag AI tasks.
@@ -117,7 +118,12 @@ explicit integration. Two of those are reviewed/deferred fully aquatic mods;
   retain native player-only reactions; see [scope](docs/flocks-compatibility.md).
   Automated checks passed.
 - [x] **Flocks game test:** the author completed the in-game test successfully.
-- [ ] **P2 — Fantasy Creatures Mod** (`fantasycreaturesupdate`, 0.8.3): Review each species and humanoid separately; copy only relevant player reactions.
+- [x] **P2 — Fantasy Creatures implementation** (`fantasycreaturesupdate`, 0.8.3):
+  14 definitions, 51 combat/fear task copies and five wake lists. Native hostile
+  humanoid/undead behavior retained; blue-dragon following unchanged. Actual game
+  resolver checks pass for 26 variants and 74 additional task configurations.
+  See [behavior guide](docs/fantasycreatures-compatibility.md).
+- [x] **Fantasy Creatures game test:** the author completed the in-game test successfully.
 - [ ] **P2 — Pegasus: Winged horses** (`pegasus`, 1.1.0-rc.1): Review generated wild versus owned/mount variants and flight AI.
 - [ ] **P2 — Talonborne** (`talonborne`, 1.2.0): Mostly mount AI: inspect custom proximity/bed-down hooks and ownership before adding reactions.
 - [ ] **P2 — Teapot's Giant Scorpion** (`teapotsgiantscorpion`, 1.0.2): Adapt the five native player-target tasks and validate attack/reach behavior.

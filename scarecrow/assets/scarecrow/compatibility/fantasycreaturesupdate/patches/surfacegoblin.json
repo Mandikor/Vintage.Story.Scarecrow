@@ -1,0 +1,229 @@
+[
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/surfacegoblin.json",
+    "path": "/server/behaviors/6/aitasksByType/surfacegoblin-hunter/-",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.5,
+      "movespeed": 0.05,
+      "seekingRange": 12,
+      "cancelOnHurt": true,
+      "animationSpeed": 1.3,
+      "whenInEmotionState": "fleeondamage",
+      "animation": "standrun",
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/surfacegoblin.json",
+    "path": "/server/behaviors/6/aitasksByType/surfacegoblin-hunter/-",
+    "value": {
+      "code": "meleeattack",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2,
+      "damage": 6,
+      "damageTier": 1,
+      "mincooldown": 500,
+      "maxcooldown": 950,
+      "damagePlayerAtMs": 400,
+      "attackDurationMs": 950,
+      "animation": "standattack",
+      "animationSpeed": 1.5,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/surfacegoblin.json",
+    "path": "/server/behaviors/6/aitasksByType/surfacegoblin-hunter/-",
+    "value": {
+      "code": "seekentity",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 1.5,
+      "mincooldown": 400,
+      "maxcooldown": 800,
+      "movespeed": 0.043,
+      "seekingRange": 28,
+      "animationSpeed": 1.3,
+      "animation": "standrun",
+      "sound": "fantasycreatures:creature/goblin_idle1",
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/surfacegoblin.json",
+    "path": "/server/behaviors/6/aitasksByType/surfacegoblin-pelted/-",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.5,
+      "movespeed": 0.044,
+      "seekingRange": 12,
+      "cancelOnHurt": true,
+      "animationSpeed": 1.3,
+      "whenInEmotionState": "fleeondamage",
+      "animation": "standrun",
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/surfacegoblin.json",
+    "path": "/server/behaviors/6/aitasksByType/surfacegoblin-pelted/-",
+    "value": {
+      "code": "meleeattack",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2,
+      "damage": 6,
+      "damageTier": 1,
+      "mincooldown": 500,
+      "maxcooldown": 1750,
+      "damagePlayerAtMs": 400,
+      "attackDurationMs": 1000,
+      "animation": "standattack",
+      "animationSpeed": 1.5,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/surfacegoblin.json",
+    "path": "/server/behaviors/6/aitasksByType/surfacegoblin-pelted/-",
+    "value": {
+      "code": "seekentity",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 1.5,
+      "mincooldown": 400,
+      "maxcooldown": 800,
+      "movespeed": 0.035,
+      "seekingRange": 15,
+      "animationSpeed": 1.3,
+      "animation": "standrun",
+      "sound": "fantasycreatures:creature/goblin_idle1",
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/surfacegoblin.json",
+    "path": "/server/behaviors/6/aitasksByType/surfacegoblin-*/-",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2.5,
+      "movespeed": 0.06,
+      "seekingRange": 12,
+      "cancelOnHurt": true,
+      "animationSpeed": 1.3,
+      "whenInEmotionState": "fleeondamage",
+      "animation": "standrun",
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/surfacegoblin.json",
+    "path": "/server/behaviors/6/aitasksByType/surfacegoblin-*/-",
+    "value": {
+      "code": "meleeattack",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 2,
+      "damageByType": {
+        "surfacegoblin-normal": 1.5,
+        "surfacegoblin-armored": 3,
+        "surfacegoblin-alternate_1": 1.5
+      },
+      "damageTierByType": {
+        "surfacegoblin-normal": 0,
+        "surfacegoblin-armored": 1,
+        "surfacegoblin-alternate_1": 0
+      },
+      "mincooldown": 500,
+      "maxcooldown": 1750,
+      "damagePlayerAtMs": 400,
+      "attackDurationMs": 1000,
+      "animation": "standattack",
+      "animationSpeed": 1.5,
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "fantasycreatures:entities/land/surfacegoblin.json",
+    "path": "/server/behaviors/6/aitasksByType/surfacegoblin-*/-",
+    "value": {
+      "code": "seekentity",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 1.5,
+      "mincooldown": 400,
+      "maxcooldown": 800,
+      "movespeed": 0.04,
+      "seekingRange": 15,
+      "animationSpeed": 1.3,
+      "animation": "standrun",
+      "sound": "fantasycreatures:creature/goblin_idle1",
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]
