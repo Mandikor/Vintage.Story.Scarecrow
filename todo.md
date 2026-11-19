@@ -67,11 +67,15 @@ Previously deferred cosmetics and aging remain deferred.
 - [x] Inventory ZIP/unpacked duplicates, manifest versions and current support.
 - [x] Audit existing patch paths and native player-code/player-tag AI tasks.
 - [x] Compare supplied older/newer versions and identify update-specific impacts.
-- [ ] **P0 — Feverstone Wilds 3.2.1:** repair six shifted AI task-list paths,
-  decide support for 3.1.1 and classify the new griffon life stages.
+- [x] **P0 — Feverstone Wilds 3.2.1:** repaired six shifted AI task-list paths;
+  3.2.1 replaces the 3.1.1 baseline. New griffon ages follow native player AI.
+  Implemented in JSON; build and game-resolver checks passed.
+- [x] **Feverstone Wilds game test:** the author tested the integration and reported
+  no issues in the observed behavior.
 - [ ] **P1 — Native player AI:** migrate the 27 existing creature integrations
   with detected settings/proximity gaps, retaining native conditions and original
-  player tasks. See the report's supported-mod table and per-entity CSV.
+  player tasks. Feverstone Wilds is implemented and its game test found no issues;
+  26 other integrations remain. The report and CSV retain the initial findings.
 - [x] **Arctic Wolves 1.5.0:** native player-task adaptation already implemented
   and confirmed in game.
 - [ ] **P1 — Update details:** carry Bovinae 1.0.3 species-dependent flee animations

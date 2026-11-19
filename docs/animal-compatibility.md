@@ -5,8 +5,9 @@ scarecrow and vanilla straw dummy. They extend the animals' existing AI task lis
 
 The [2026-11-19 local-library audit](mod-library-audit-2026-11-19.md) records newer
 supplied versions, detected patch-path failures and the planned migration to
-native player-target tasks. In particular, six existing Feverstone Wilds patches
-need new task-list paths for 3.2.1. Except for Arctic Wolves, the rules below
+native player-target tasks. The six Feverstone Wilds failures are now corrected
+on `dev` for 3.2.1; see the [dedicated guide](feverstonewilds-compatibility.md).
+Except for Arctic Wolves and Feverstone Wilds, the rules below
 describe the earlier size/diet policy, not a completed native-player-AI migration.
 
 ## Reaction rules
@@ -19,7 +20,7 @@ describe the earlier size/diet policy, not a completed native-player-AI migratio
 | Small adult predators | Flee | Flee |
 | Large adult predators | Approach and attack | Attack unless the native `fleeondamage` state takes precedence |
 
-Except for the native player-task adaptation for Vara's Arctic Wolves described
+Except for the native player-task adaptations for Vara's Arctic Wolves and Feverstone Wilds described
 below, `fleeentity` uses a detection range of **16 blocks** for the scarecrow, **12 blocks**
 for the little scarecrow and **8 blocks** for the straw dummy. Its escape-distance
 setting extends four blocks beyond that range. Actual movement still depends on
@@ -109,7 +110,7 @@ come from their manifests, rather than the names of their extracted directories.
 | `equusponies` | 0.5.0 |
 | `equussharedancestry` | 1.6.0 |
 | `feverstonehorses` | 2.4.2 |
-| `feverstonewilds` | 3.1.1 |
+| `feverstonewilds` | 3.2.1 (native player-task adaptation; replaces the 3.1.1 baseline) |
 | `fowlmod` | 1.0.1 |
 | `moreanimals` | 1.7.1 |
 | `teapotsgiantboar` | 1.1.1 |
@@ -120,9 +121,10 @@ come from their manifests, rather than the names of their extracted directories.
 Small wildlife, small birds and young animals flee. Adult wild donkeys and horses,
 bison, giraffes, ostriches, yaks and Teapot's large herbivores use injury-triggered
 defense. Giant boars follow the defensive omnivore rule used for vanilla pigs.
-Adult Arctic wolves use their native player-target reactions as described below;
-the larger Feverstone predators attack, and their young flee.
-Feverstone's meat-eating hellboar follows the predator rule. The Critter Pack's
+Adult Arctic wolves use their native player-target reactions as described below.
+Feverstone Wilds also follows its native player tasks, including flight attacks,
+young-animal exceptions and by-type tame exclusions; see its dedicated guide.
+The Critter Pack's
 waxwing remains a small fleeing bird despite its unusually high configured weight.
 
 Separate tamed definitions and tame variants in mixed definitions are excluded.

@@ -3,6 +3,12 @@
 Audit baseline: Scarecrow `dev` at `381f5b3`. Sources are the supplied local
 `Mods_Scarecrow` library, not ModDB's live release catalogue.
 
+Follow-up on `dev`: [Feverstone Wilds 3.2.1 has now been adapted](feverstonewilds-compatibility.md),
+including the six path repairs, native player tasks and new griffon ages. The
+tables and CSV below retain the original audit findings at `381f5b3`; they are
+historical evidence, not the current completion status. The author completed an
+in-game test without finding issues. Remaining work is tracked in [todo.md](../todo.md).
+
 ## Inventory and scope
 
 - 165 package copies (ZIP files and unpacked directories), representing **81 mod IDs**.

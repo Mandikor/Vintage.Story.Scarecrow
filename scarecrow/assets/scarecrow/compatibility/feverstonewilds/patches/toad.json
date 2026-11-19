@@ -6,63 +6,71 @@
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
       "code": "fleeentity",
+      "priority": 1.5,
       "movespeed": 0.025,
-      "animation": "run",
-      "animationSpeed": 2.2,
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/toad.json",
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.025,
-      "animation": "run",
-      "animationSpeed": 2.2,
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
       "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/toad.json",
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.025,
       "animation": "run",
       "animationSpeed": 2.2,
+      "whenInEmotionState": "fleeondamage",
       "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "retaliateAttacks": false
+      "retaliateAttacks": false,
+      "enabledByType": {
+        "toad": true,
+        "*": false
+      }
     },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/toad.json",
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/toad.json",
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/toad.json",
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/toad.json",
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/toad.json",
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/toad.json",
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
     "side": "server"
   }
 ]

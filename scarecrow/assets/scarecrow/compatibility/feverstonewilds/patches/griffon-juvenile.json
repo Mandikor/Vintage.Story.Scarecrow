@@ -1,0 +1,69 @@
+[
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/griffon-juvenile.json",
+    "op": "add",
+    "path": "/server/behaviors/14/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 1.5,
+      "movespeed": 0.03,
+      "animationSpeed": 1.5,
+      "seekingRange": 8,
+      "animation": "Run",
+      "sound": " ",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false,
+      "enabledByType": {
+        "griffon-juvenile-wild-male": true,
+        "griffon-juvenile-wild-female": true,
+        "griffon-juvenile-tamed-male": false,
+        "griffon-juvenile-tamed-female": false,
+        "*": false
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/griffon-juvenile.json",
+    "op": "add",
+    "path": "/server/behaviors/14/aitasks/7/stopOnNearbyEntityCodesByType",
+    "value": {
+      "griffon-juvenile-wild-male": [
+        "player",
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "griffon-juvenile-wild-female": [
+        "player",
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "griffon-juvenile-tamed-male": [
+        "player"
+      ],
+      "griffon-juvenile-tamed-female": [
+        "player"
+      ],
+      "*": [
+        "player"
+      ]
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/griffon-juvenile.json",
+    "op": "remove",
+    "path": "/server/behaviors/14/aitasks/7/stopOnNearbyEntityCodes",
+    "value": null,
+    "side": "server"
+  }
+]

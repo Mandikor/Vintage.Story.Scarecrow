@@ -349,7 +349,8 @@ The repository includes compatibility assets for the following mods and families
 | Equus, Equus Ferus and Monoceros | Animal behavior patches |
 | Equus: Shared Ancestry and Equus: Expanded | Wild donkey reactions and inherited pony reactions |
 | Vara's Arctic Wolves | Native player-target AI adapted for scarecrows, including attacks, injury fear, pup fleeing and sleep interruption |
-| Feverstone's Horses and Feverstone Wilds | Wild land-animal reactions, including native griffon flight attacks |
+| Feverstone's Horses | Wild land-animal reactions |
+| Feverstone Wilds 3.2.1 | Native player-target tasks for wild land animals, griffon flight attacks and all young griffon ages; tame variants excluded |
 | Sonya's Quality Fowl and More Animals | Flee rules for ducks and other small birds |
 | Teapot's Giant Boar, Giant Redriver and Great Bighorn | Fleeing, injury-triggered adult defense and young-animal protection |
 | The Critters Pack coral fork | Wild-animal reactions and updated native scarecrow targets |
@@ -383,9 +384,11 @@ Scarecrow is distributed under the [MIT License](LICENSE.txt).
 ## Source code
 
 The [local mod compatibility audit](docs/mod-library-audit-2026-11-19.md) lists
-checked versions, known issues and proposed integrations. It identifies six
-Feverstone Wilds patches that need path updates for version 3.2.1; these repairs
-and the broader native-player-AI migration are tracked in [the to-do list](todo.md).
+checked versions, known issues and proposed integrations. Its six Feverstone Wilds
+path failures are now corrected for **3.2.1**, with native player AI replacing
+the older generic rules. **3.1.1 is no longer the supported baseline.** See the
+[Feverstone guide](docs/feverstonewilds-compatibility.md) and [to-do list](todo.md)
+for testing and the remaining native-player-AI migration.
 
 See the [source structure and extension guide](docs/source-structure.md) for code
 responsibilities, optional-mod adapters and inventory/synchronization rules.

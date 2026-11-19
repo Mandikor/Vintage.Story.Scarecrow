@@ -6,62 +6,52 @@
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
       "code": "fleeentity",
+      "priority": 6,
       "movespeed": 0.03,
       "animationSpeed": 1.4,
+      "seekingRange": 9,
       "animation": "Run",
       "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/cockatrice-chick.json",
-    "op": "add",
-    "path": "/server/behaviors/11/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.03,
-      "animationSpeed": 1.4,
-      "animation": "Run",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/cockatrice-chick.json",
-    "op": "add",
-    "path": "/server/behaviors/11/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.03,
-      "animationSpeed": 1.4,
-      "animation": "Run",
-      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "retaliateAttacks": false
+      "retaliateAttacks": false,
+      "enabledByType": {
+        "cockatrice-chick": true,
+        "*": false
+      }
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "feverstonewilds:entities/land/cockatrice-chick.json",
+    "op": "add",
+    "path": "/server/behaviors/11/aitasks/-",
+    "value": {
+      "code": "meleeattack",
+      "priority": 1,
+      "slot": 1,
+      "damage": 1,
+      "damageTier": 1,
+      "mincooldown": 1500,
+      "maxcooldown": 2500,
+      "attackDurationMs": 1250,
+      "damagePlayerAtMs": 800,
+      "animation": "Attack",
+      "animationSpeed": 2,
+      "whenInEmotionState": "aggressiveondamage",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false,
+      "enabledByType": {
+        "cockatrice-chick": true,
+        "*": false
+      }
     },
     "side": "server"
   }

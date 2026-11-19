@@ -5,6 +5,19 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Feverstone Wilds 3.2.1 native player AI
+
+- Replaced the 3.1.1 baseline and corrected six shifted task-list paths for 3.2.1.
+  Added juvenile and adolescent griffon patches alongside the existing cub/adult.
+- Reworked 21 wild land-animal definitions with 47 native player-target tasks and
+  32 sleep/proximity lists, including adult griffon flight seek/melee attacks.
+  Preserve authored priorities, ranges, damage, timing, animations and conditions.
+- Exclude tame variants from added reactions and wake-up changes; preserve native
+  player/prey/owner tasks and disable attacker substitution in added tasks.
+- Correct the cub's wild-variant selection only for its added scarecrow task.
+  Integration remains JSON-only; build and actual game variant-resolver checks
+  pass. The author's in-game test also found no issues.
+
 ### Local mod-library audit and compatibility backlog
 
 - Audited 81 manifest mod IDs from 165 supplied ZIP/directory copies, comparing
