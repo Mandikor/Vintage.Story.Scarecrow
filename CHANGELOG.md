@@ -5,6 +5,19 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Teapot's Undead Legion 2.2.2
+
+- Extend hostile revenants, brutes, hunters, spectres, Lich-raised spectres and
+  Liches with scarecrow targets: 21 combat lists and nine wake lists across six
+  JSON files. Retain 12 already-covering wildcard lists without duplicate tasks.
+- Preserve shared attack cooldowns, ranged spacing, weapon/tier gates, native
+  spells and original player/prey behavior. Bound companions, player summons,
+  transport creatures and projectiles remain unchanged. No new flee behavior,
+  C# adapter or spawn prefixes.
+- Actual game resolver checks pass for 180 hostile variants; 73 companion and
+  nonliving variants remain unpatched. Build and the author's in-game test pass.
+  See [behavior guide](docs/teapotsundeadlegion-compatibility.md).
+
 ### Teapot's Giant Scorpion 1.0.2
 
 - Add five native player-target task copies for surface/cave scorpions: sting,

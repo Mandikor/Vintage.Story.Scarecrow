@@ -361,6 +361,7 @@ The repository includes compatibility assets for the following mods and families
 | Pegasus: Winged horses 1.1.0-rc.1 | Wild-only injury defense/fear and rest interruption; feral/tamed mounts and Jaunt flight controls unchanged. See [scope](docs/pegasus-compatibility.md) |
 | Talonborne 1.2.0 | Adult/young grazing interruption only; no fleeing or attacks added to raised mounts. Commanded rest and flight unchanged. See [scope](docs/talonborne-compatibility.md) |
 | Teapot's Giant Scorpion 1.0.2 | Surface/cave native sting, claws, charge and climbing pursuit; scorpions can attack scarecrows. See [behavior guide](docs/teapotsgiantscorpion-compatibility.md) |
+| Teapot's Undead Legion 2.2.2 | Hostile undead attack/pursue scarecrows using native melee, ranged and Lich combat; bound companions and player summons unchanged. See [behavior guide](docs/teapotsundeadlegion-compatibility.md) |
 | Feverstone's Horses | Wild land-animal reactions |
 | Feverstone Wilds 3.2.1 | Native player-target tasks for wild land animals, griffon flight attacks and all young griffon ages; tame variants excluded |
 | Sonya's Quality Fowl and More Animals | Flee rules for ducks and other small birds |

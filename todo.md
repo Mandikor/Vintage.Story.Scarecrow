@@ -64,9 +64,9 @@ The [local mod audit](docs/mod-library-audit-2026-11-19.md) inventories 81 mod I
 integrated. This is a review backlog, not approval to implement every candidate.
 Previously deferred cosmetics and aging remain deferred.
 After Crows, the additional FotSA batch, Flocks, Fantasy Creatures, Pegasus,
-Talonborne and Giant Scorpion, 47 IDs are supported and 34 have no
+Talonborne, Giant Scorpion and Undead Legion, 48 IDs are supported and 33 have no
 explicit integration. Two of those are reviewed/deferred fully aquatic mods;
-32 remain review candidates. The audit retains the original inventory.
+31 remain review candidates. The audit retains the original inventory.
 
 - [x] Inventory ZIP/unpacked duplicates, manifest versions and current support.
 - [x] Audit existing patch paths and native player-code/player-tag AI tasks.
@@ -139,7 +139,12 @@ explicit integration. Two of those are reviewed/deferred fully aquatic mods;
   settings retained. Resolver checks pass for both variants/ten configurations;
   native DLL inheritance verified. See [guide](docs/teapotsgiantscorpion-compatibility.md).
 - [x] **Giant Scorpion game test:** the author completed the in-game test successfully.
-- [ ] **P3 — Teapot's Undead Legion** (`teapotsundeadlegion`, 2.2.2): Discuss whether scarecrows should attract hostile undead; do not silently treat them as crop pests.
+- [x] **P3 — Undead Legion implementation** (`teapotsundeadlegion`, 2.2.2):
+  hostile undead attack/pursue scarecrows; 21 combat and nine wake lists extended
+  directly, 12 existing wildcard lists retained. Bound/player-summoned forms
+  excluded. Resolver checks pass for 180 hostile variants; 73 companion/nonliving
+  variants unpatched. See [guide](docs/teapotsundeadlegion-compatibility.md).
+- [x] **Undead Legion game test:** the author completed the in-game test successfully.
 
 ### Aquatic creature candidates
 

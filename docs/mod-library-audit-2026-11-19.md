@@ -1,5 +1,12 @@
 # Local mod compatibility audit — 2026-11-19
 
+Latest implementation: [Undead Legion 2.2.2](teapotsundeadlegion-compatibility.md)
+extends hostile undead's native target lists while excluding bound companions
+and player summons. Automated checks and the author's game test passed. Totals are
+**48 supported IDs**, **33 without explicit integration**: two deliberately
+deferred aquatic mods and **31 review candidates**. These totals supersede older
+follow-ups below; historical inventory tables remain intact.
+
 Latest implementation: [Giant Scorpion 1.0.2](teapotsgiantscorpion-compatibility.md)
 adds five native combat/pursuit task copies for both surface/cave variants.
 Automated checks and the author's game test passed. Current totals are **47 supported

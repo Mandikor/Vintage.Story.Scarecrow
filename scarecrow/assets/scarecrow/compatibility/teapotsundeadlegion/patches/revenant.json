@@ -1,0 +1,122 @@
+[
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/revenant.json",
+    "path": "/server/behaviors/6/aitasks/5/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/revenant.json",
+    "path": "/server/behaviors/6/aitasks/5/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/revenant.json",
+    "path": "/server/behaviors/6/aitasks/5/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/revenant.json",
+    "path": "/server/behaviors/6/aitasks/6/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/revenant.json",
+    "path": "/server/behaviors/6/aitasks/6/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/revenant.json",
+    "path": "/server/behaviors/6/aitasks/6/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/revenant.json",
+    "path": "/server/behaviors/6/aitasks/8/entityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/revenant.json",
+    "path": "/server/behaviors/6/aitasks/8/entityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/revenant.json",
+    "path": "/server/behaviors/6/aitasks/8/entityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/revenant.json",
+    "path": "/server/behaviors/6/aitasks/10/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/revenant.json",
+    "path": "/server/behaviors/6/aitasks/10/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/revenant.json",
+    "path": "/server/behaviors/6/aitasks/10/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/revenant.json",
+    "path": "/server/behaviors/6/aitasks/11/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/revenant.json",
+    "path": "/server/behaviors/6/aitasks/11/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/revenant.json",
+    "path": "/server/behaviors/6/aitasks/11/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  }
+]

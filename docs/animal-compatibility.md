@@ -1,5 +1,9 @@
 # Animal compatibility behavior
 
+The [Undead Legion integration](teapotsundeadlegion-compatibility.md) extends
+hostile undead's existing target lists directly, retaining shared cooldowns and
+native ranged/Lich combat. Bound companions and player summons are unchanged.
+
 The [Giant Scorpion integration](teapotsgiantscorpion-compatibility.md) copies
 native sting, claw, charge and climbing pursuit tasks for both surface/cave
 forms. Scorpions attack scarecrows; they do not gain a flee task.

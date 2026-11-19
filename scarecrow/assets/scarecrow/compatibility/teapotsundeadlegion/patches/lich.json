@@ -1,0 +1,98 @@
+[
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/lich.json",
+    "path": "/server/behaviors/6/aitasks/0/entityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/lich.json",
+    "path": "/server/behaviors/6/aitasks/0/entityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/lich.json",
+    "path": "/server/behaviors/6/aitasks/0/entityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/lich.json",
+    "path": "/server/behaviors/6/aitasks/1/entityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/lich.json",
+    "path": "/server/behaviors/6/aitasks/1/entityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/lich.json",
+    "path": "/server/behaviors/6/aitasks/1/entityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/lich.json",
+    "path": "/server/behaviors/6/aitasks/2/entityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/lich.json",
+    "path": "/server/behaviors/6/aitasks/2/entityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/lich.json",
+    "path": "/server/behaviors/6/aitasks/2/entityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/lich.json",
+    "path": "/server/behaviors/6/aitasks/8/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/lich.json",
+    "path": "/server/behaviors/6/aitasks/8/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "teapotsundeadlegion:entities/land/lich.json",
+    "path": "/server/behaviors/6/aitasks/8/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  }
+]
