@@ -5,27 +5,24 @@
     "op": "add",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
-      "code": "seekentity",
-      "movespeed": 0.045,
-      "animation": "Run",
-      "animationSpeed": 2,
-      "sound": "game:creature/wolf/growl*",
+      "code": "meleeattack",
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 2.3,
-      "priorityForCancel": 2.3,
-      "slot": 0,
-      "seekingRange": 16,
-      "minCooldownMs": 500,
-      "maxCooldownMs": 1000,
-      "maxFollowTime": 15,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
-      ],
+      "priority": 2.1,
+      "damage": 8,
+      "damageTier": 2,
+      "damageType": "SlashingAttack",
+      "slot": 1,
+      "mincooldown": 500,
+      "maxcooldown": 1500,
+      "attackDurationMs": 1200,
+      "damagePlayerAtMs": 900,
+      "animation": "attack-withwindup",
+      "animationSpeed": 1.5,
+      "sound": "game:creature/wolf/attack*",
       "retaliateAttacks": false
     },
     "side": "server"
@@ -37,28 +34,153 @@
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "meleeattack",
-      "damage": 8,
-      "damageTier": 2,
-      "damageType": "SlashingAttack",
-      "attackDurationMs": 1200,
-      "damagePlayerAtMs": 900,
-      "animation": "attack-withwindup",
-      "animationSpeed": 1.5,
       "entityCodes": [
         "scarecrow",
         "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 2.4,
-      "priorityForCancel": 2.4,
+      "priority": 2,
+      "damage": 6,
+      "damageTier": 2,
+      "damageType": "SlashingAttack",
       "slot": 1,
-      "minCooldownMs": 500,
-      "maxCooldownMs": 1500,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
-      ],
+      "mincooldown": 3000,
+      "maxcooldown": 5000,
+      "attackDurationMs": 800,
+      "damagePlayerAtMs": 500,
+      "animation": "Attack-High",
+      "animationSpeed": 1.5,
+      "sound": "game:creature/wolf/attack*",
       "retaliateAttacks": false
     },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "arcticwolves:entities/arcticwolf-adult.json",
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 1.6,
+      "movespeed": 0.052,
+      "seekingRange": 20,
+      "animation": "Run",
+      "animationSpeed": 2,
+      "whenInEmotionState": "fleeondamage",
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "arcticwolves:entities/arcticwolf-adult.json",
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "seekentity",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 1.51,
+      "movespeed": 0.045,
+      "seekingRange": 7,
+      "belowTempSeekingRange": 20,
+      "belowTempThreshold": -20,
+      "animation": "Run",
+      "leapAtTarget": true,
+      "leapAnimation": null,
+      "animationSpeed": 2,
+      "leapChance": 0.01,
+      "sound": "game:creature/wolf/growl*",
+      "whenNotInEmotionState": "saturated",
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "arcticwolves:entities/arcticwolf-adult.json",
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "seekentity",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 1.5,
+      "movespeed": 0.045,
+      "seekingRange": 13,
+      "belowTempSeekingRange": 20,
+      "belowTempThreshold": -20,
+      "animation": "Canter",
+      "leapAtTarget": true,
+      "leapAnimation": null,
+      "animationSpeed": 1.5,
+      "leapChance": 0.01,
+      "sound": "game:creature/wolf/growl*",
+      "whenNotInEmotionState": "saturated",
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "arcticwolves:entities/arcticwolf-adult.json",
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "seekentity",
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "priority": 1.49,
+      "movespeed": 0.045,
+      "seekingRange": 13,
+      "animation": "Run",
+      "leapAtTarget": true,
+      "leapAnimation": null,
+      "animationSpeed": 2,
+      "leapChance": 0.01,
+      "sound": "game:creature/wolf/growl*",
+      "whenInEmotionState": "aggressiveondamage",
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "arcticwolves:entities/arcticwolf-adult.json",
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/10/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "arcticwolves:entities/arcticwolf-adult.json",
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/10/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "arcticwolves:entities/arcticwolf-adult.json",
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/10/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
     "side": "server"
   }
 ]

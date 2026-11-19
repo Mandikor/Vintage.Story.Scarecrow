@@ -348,7 +348,7 @@ The repository includes compatibility assets for the following mods and families
 | Wind Chimes by Ape | Upright arm attachments with original spatial chime sounds |
 | Equus, Equus Ferus and Monoceros | Animal behavior patches |
 | Equus: Shared Ancestry and Equus: Expanded | Wild donkey reactions and inherited pony reactions |
-| Vara's Arctic Wolves | Adult attack and young-animal flee rules |
+| Vara's Arctic Wolves | Native player-target AI adapted for scarecrows, including attacks, injury fear, pup fleeing and sleep interruption |
 | Feverstone's Horses and Feverstone Wilds | Wild land-animal reactions, including native griffon flight attacks |
 | Sonya's Quality Fowl and More Animals | Flee rules for ducks and other small birds |
 | Teapot's Giant Boar, Giant Redriver and Great Bighorn | Fleeing, injury-triggered adult defense and young-animal protection |

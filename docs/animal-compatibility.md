@@ -13,7 +13,8 @@ scarecrow and vanilla straw dummy. They extend the animals' existing AI task lis
 | Small adult predators | Flee | Flee |
 | Large adult predators | Approach and attack | Attack unless the native `fleeondamage` state takes precedence |
 
-`fleeentity` uses a detection range of **16 blocks** for the scarecrow, **12 blocks**
+Except for the native player-task adaptation for Vara's Arctic Wolves described
+below, `fleeentity` uses a detection range of **16 blocks** for the scarecrow, **12 blocks**
 for the little scarecrow and **8 blocks** for the straw dummy. Its escape-distance
 setting extends four blocks beyond that range. Actual movement still depends on
 terrain and pathfinding.
@@ -113,7 +114,8 @@ come from their manifests, rather than the names of their extracted directories.
 Small wildlife, small birds and young animals flee. Adult wild donkeys and horses,
 bison, giraffes, ostriches, yaks and Teapot's large herbivores use injury-triggered
 defense. Giant boars follow the defensive omnivore rule used for vanilla pigs.
-Adult Arctic wolves and the larger Feverstone predators attack; their young flee.
+Adult Arctic wolves use their native player-target reactions as described below;
+the larger Feverstone predators attack, and their young flee.
 Feverstone's meat-eating hellboar follows the predator rule. The Critter Pack's
 waxwing remains a small fleeing bird despite its unusually high configured weight.
 
@@ -143,6 +145,35 @@ Detailed Animals generates chicks from the patched vanilla chicken template.
 They inherit the existing rules without separate duplicate tasks. None of these
 additions changes natural-spawn protection: its default list remains hares and
 raccoons.
+
+### Vara's Arctic Wolves: native player-task adaptation
+
+The patches for version 1.5.0 live under `compatibility/varasarcticwolves/patches`.
+The manifest mod ID is `varasarcticwolves`, while entity assets use the
+`arcticwolves` domain. No C# adapter is required.
+
+Scarecrows represent a stationary player for this integration. Instead of the
+earlier generic predator/young-animal rules, each task whose `entityCodes`
+contains `player` receives a separate copy targeting only `scarecrow`,
+`little-scarecrow` and `strawdummy`. Native task priorities are retained rather
+than raised above the original tasks.
+
+- Adults receive both melee attacks, the injury-fear flee task and all three seek
+  tasks. Damage, cooldowns, animations, leap settings, hunger and injury conditions,
+  and the increased seeking range below -20 degrees remain as authored by Vara.
+- Pups receive their original flee task, including its eight-block detection
+  range. The same native range applies to all three scarecrow types.
+- For both ages, the existing sleep task keeps its `player` wake-up target and
+  gains the three scarecrow targets. Sleep duration, priority and wake-up range
+  remain unchanged; a duplicate sleep task is not added.
+- Only the additional tasks disable `retaliateAttacks` and any
+  `instafleeOnDamageChance`. Otherwise a recent player attacker could bypass the
+  scarecrow target filter. Original player/prey tasks and their damage responses
+  remain intact.
+
+These rules preserve the original animal AI settings; they do not turn
+scarecrows into actual players or extend natural-spawn blocking to Arctic wolves.
+The copied tasks can still be affected by native AI scheduling and emotion states.
 
 ## Vanilla animals
 
@@ -200,13 +231,19 @@ and **181 variants**, including 611 enabled task configurations. It also verifie
 the panda/predatory-bear split, elder-boar exclusions and coverage of every wild
 vanilla mammal and chicken definition.
 
-The additional rules are checked against raw mod assets and the game's variant
+The initial additional rules were checked against raw mod assets and the game's variant
 resolver: 219 variant/file combinations, including 34 excluded tame cases, and
 639 enabled task configurations. Checks include applying the shipped JSON patch
 operations to the original assets, animation availability and injury gates.
 The actual Equus: Expanded builder was exercised for nine wild
 definitions and 64 age/gender variants; the actual Detailed Animals clone routine
 was checked for both generated chick variants.
+
+The revised Arctic Wolves patches were separately applied to the supplied 1.5.0
+adult and baby assets. Checks cover all seven player-target task copies and both
+sleep wake-up lists, preserve the original tasks and all non-target settings,
+and reject arbitrary-attacker responses in the additional tasks. An in-game
+test of the revised integration is still required.
 
 These checks do not simulate pathfinding, task scheduling or a complete running
 mod set. In-game testing should include a small herbivore, a large herbivore before

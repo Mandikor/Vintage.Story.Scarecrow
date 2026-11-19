@@ -5,6 +5,17 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Vara's Arctic Wolves: native AI reactions
+
+- Revised the existing 1.5.0 integration to use every player-target AI task as
+  its basis: six adult tasks and one pup flee task, preserving native priorities,
+  damage, timing, movement, animations, temperature ranges and emotion conditions.
+- Added scarecrow targets to both existing sleep wake-up lists while retaining
+  player detection. Original player/prey tasks remain intact; added scarecrow
+  tasks cannot inherit arbitrary attackers or trigger instant flight on damage.
+- Kept all patches under `compatibility/varasarcticwolves/patches`, with no C#
+  adapter or changes to the natural-spawn blocking configuration.
+
 ### Source organization and contributor documentation
 
 - Grouped optional-mod C# adapters under `src/combat`, including Wind Chimes

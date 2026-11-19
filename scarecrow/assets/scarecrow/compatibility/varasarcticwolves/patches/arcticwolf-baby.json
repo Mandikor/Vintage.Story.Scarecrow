@@ -6,66 +6,44 @@
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "fleeentity",
-      "movespeed": 0.02,
-      "animationSpeed": 4,
-      "animation": "Run",
-      "sound": "game:creature/wolf/pup-bark",
+      "instafleeOnDamageChance": 0,
       "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "arcticwolves:entities/arcticwolf-baby.json",
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.02,
-      "animationSpeed": 4,
-      "animation": "Run",
-      "sound": "game:creature/wolf/pup-bark",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "arcticwolves:entities/arcticwolf-baby.json",
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.02,
-      "animationSpeed": 4,
-      "animation": "Run",
-      "sound": "game:creature/wolf/pup-bark",
-      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
         "strawdummy"
       ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
+      "priority": 1.5,
+      "movespeed": 0.02,
+      "animationSpeed": 4,
       "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
+      "animation": "Run",
+      "sound": "game:creature/wolf/pup-bark",
       "retaliateAttacks": false
     },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "arcticwolves:entities/arcticwolf-baby.json",
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/4/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "arcticwolves:entities/arcticwolf-baby.json",
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/4/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "file": "arcticwolves:entities/arcticwolf-baby.json",
+    "op": "add",
+    "path": "/server/behaviors/10/aitasks/4/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
     "side": "server"
   }
 ]
