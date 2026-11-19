@@ -1,0 +1,59 @@
+[
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "crows:entities/crow.json",
+    "path": "/attributes/otherScarecrows/scarecrow:scarecrow",
+    "value": [
+      16,
+      18
+    ],
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "crows:entities/crow.json",
+    "path": "/attributes/otherScarecrows/scarecrow:little-scarecrow",
+    "value": [
+      12,
+      16
+    ],
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "crows:entities/crow.json",
+    "path": "/attributes/otherScarecrows/game:strawdummy",
+    "value": [
+      8,
+      12
+    ],
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "crows:entities/crow.json",
+    "path": "/server/behaviors/12/aitasks/12/stopOnNearbyEntityCodes/-",
+    "value": "scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "crows:entities/crow.json",
+    "path": "/server/behaviors/12/aitasks/12/stopOnNearbyEntityCodes/-",
+    "value": "little-scarecrow",
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "crows:entities/crow.json",
+    "path": "/server/behaviors/12/aitasks/12/stopOnNearbyEntityCodes/-",
+    "value": "strawdummy",
+    "side": "server"
+  }
+]

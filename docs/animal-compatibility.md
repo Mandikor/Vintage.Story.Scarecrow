@@ -2,6 +2,8 @@
 
 The vanilla and compatibility patches add reactions to the scarecrow, little
 scarecrow and vanilla straw dummy. They extend the animals' existing AI task lists.
+The [Crows integration](crows-compatibility.md) instead extends that mod's own
+exclusion-zone registration and wake list, preserving its custom flight AI.
 
 The [2026-11-19 local-library audit](mod-library-audit-2026-11-19.md) records newer
 supplied versions, detected patch-path failures and the planned migration to

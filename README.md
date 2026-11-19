@@ -355,6 +355,7 @@ The repository includes compatibility assets for the following mods and families
 | Equus, Equus Ferus and Monoceros | Animal behavior patches |
 | Equus: Shared Ancestry and Equus: Expanded | Wild donkey reactions and inherited pony reactions |
 | Vara's Arctic Wolves | Native player-target AI adapted for scarecrows, including attacks, injury fear, pup fleeing and sleep interruption |
+| Crows 0.2.7 | Native flight/feeding/perch exclusion for all three scarecrow types; little scarecrow radius aligned to 12 blocks |
 | Feverstone's Horses | Wild land-animal reactions |
 | Feverstone Wilds 3.2.1 | Native player-target tasks for wild land animals, griffon flight attacks and all young griffon ages; tame variants excluded |
 | Sonya's Quality Fowl and More Animals | Flee rules for ducks and other small birds |

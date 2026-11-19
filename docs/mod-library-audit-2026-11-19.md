@@ -14,6 +14,14 @@ also implemented on `dev`, including tag-based tasks and generator handling;
 its in-game batch test was completed successfully by the author. The original counts and findings below remain
 unchanged as the starting-point audit.
 
+The [Crows 0.2.7 follow-up](crows-compatibility.md) verified built-in support for
+both Scarecrow entities in the currently supplied package. The new JSON patch
+aligns the little radius and adds straw-dummy exclusion plus wake targets; its
+game test was completed successfully by the author. Crows is therefore no longer
+an unimplemented candidate.
+Current totals are 39 supported IDs and 42 remaining review candidates. The
+original tables below are historical and do not override this follow-up.
+
 ## Inventory and scope
 
 - 165 package copies (ZIP files and unpacked directories), representing **81 mod IDs**.

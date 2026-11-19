@@ -5,6 +5,18 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Crows 0.2.7 native compatibility
+
+- Use Crows' existing `otherScarecrows` mechanism instead of adding competing
+  generic flee tasks. Retain the full-size 16/18 exclusion/avoidance radii,
+  align the little scarecrow to 12/16 and register the straw dummy at 8/12.
+- Extend the original player wake list with the three scarecrow types. Preserve
+  flight, feeding, landing/perching, player/social behavior and other registrations;
+  no C# adapter or new natural-spawn blocking entries are required.
+- Verify the actual Crows DLL's recognition, flight-threat checks, boundaries,
+  avoidance memory/expiry and native scarecrow values. The author also completed
+  the in-game test successfully.
+
 ### Native player AI for the remaining supported creature mods
 
 - Reworked the remaining 26 static creature integrations and the shared vanilla

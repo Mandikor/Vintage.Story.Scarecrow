@@ -63,6 +63,8 @@ The [local mod audit](docs/mod-library-audit-2026-11-19.md) inventories 81 mod I
 38 already supported directly or through inheritance, and 43 not explicitly
 integrated. This is a review backlog, not approval to implement every candidate.
 Previously deferred cosmetics and aging remain deferred.
+The follow-up Crows integration brings the current counts to 39 supported and
+42 remaining review candidates; the audit retains the original inventory.
 
 - [x] Inventory ZIP/unpacked duplicates, manifest versions and current support.
 - [x] Audit existing patch paths and native player-code/player-tag AI tasks.
@@ -94,7 +96,11 @@ Previously deferred cosmetics and aging remain deferred.
 
 ### New creature candidates
 
-- [ ] **P1 — Crows** (`crows`, 0.2.7): Retain native straw-dummy avoidance; add both scarecrows. Review custom flight, crop/egg theft, keep-distance and curiosity tasks in C#.
+- [x] **P1 — Crows implementation** (`crows`, 0.2.7): verified the built-in
+  `otherScarecrows` integration, aligned the little scarecrow to 12/16, registered
+  the straw dummy at 8/12 and extended the original wake list. Keep native flight,
+  feeding and player/social behavior; no C# adapter. Automated checks passed.
+- [x] **Crows game test:** the author completed the in-game test successfully.
 - [ ] **P2 — Fauna of the Stone Age: Felinae** (`felinae`, 0.2.16): Adapt player-tag reactions for wild small cats, retaining native states instead of assigning a generic size rule.
 - [ ] **P2 — Fauna of the Stone Age: Manidae** (`manidae`, 1.0.24): Adapt player-tag reactions for pangolins, including native defensive states.
 - [ ] **P2 — Fauna of the Stone Age: Spheniscidae** (`spheniscidae`, 1.0.20): Separate land and swimming reactions for adult and baby penguins.
