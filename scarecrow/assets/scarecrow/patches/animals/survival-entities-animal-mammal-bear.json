@@ -5,6 +5,7 @@
     "file": "game:entities/animal/mammal/bear-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "scarecrow" ],
       "priority": 1.8,
       "movespeedByType": {
@@ -15,7 +16,7 @@
         "bear-polar-*": 0.06
       },
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "animationSpeedByType": {
         "bear-sun-*": 2.3,
@@ -34,6 +35,7 @@
     "file": "game:entities/animal/mammal/bear-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.8,
       "movespeedByType": {
@@ -44,7 +46,7 @@
         "bear-polar-*": 0.06
       },
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "animationSpeedByType": {
         "bear-sun-*": 2.3,
@@ -63,6 +65,7 @@
     "file": "game:entities/animal/mammal/bear-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "strawdummy" ],
       "priority": 1.8,
       "movespeedByType": {
@@ -73,7 +76,7 @@
         "bear-polar-*": 0.06
       },
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "animationSpeedByType": {
         "bear-sun-*": 2.3,

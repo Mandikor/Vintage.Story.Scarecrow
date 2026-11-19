@@ -5,7 +5,8 @@
     "file": "game:entities/animal/mammal/hooved/gazelle-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.065,
@@ -22,7 +23,8 @@
     "file": "game:entities/animal/mammal/hooved/gazelle-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.065,
@@ -39,7 +41,8 @@
     "file": "game:entities/animal/mammal/hooved/gazelle-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "strawdummy" ],
       "priority": 1.6,
       "movespeed": 0.065,
@@ -56,7 +59,8 @@
     "file": "game:entities/animal/mammal/hooved/gazelle-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.065,
@@ -73,7 +77,8 @@
     "file": "game:entities/animal/mammal/hooved/gazelle-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.065,
@@ -90,7 +95,8 @@
     "file": "game:entities/animal/mammal/hooved/gazelle-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "strawdummy" ],
       "priority": 1.6,
       "movespeed": 0.065,

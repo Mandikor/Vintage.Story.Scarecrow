@@ -6,12 +6,13 @@
     "file": "casuariidae:entities/animal/bird/anatidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "scarecrow"
       ],
       "priority": 5.5,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "movespeedByType": {
         "anatidae-adult-*-cereopsisnovaehollandiae": 0.06
@@ -30,12 +31,13 @@
     "file": "casuariidae:entities/animal/bird/anatidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "little-scarecrow"
       ],
       "priority": 5.5,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "movespeedByType": {
         "anatidae-adult-*-cereopsisnovaehollandiae": 0.06
@@ -54,12 +56,13 @@
     "file": "casuariidae:entities/animal/bird/anatidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "strawdummy"
       ],
       "priority": 5.5,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "movespeedByType": {
         "anatidae-adult-*-cereopsisnovaehollandiae": 0.06
@@ -78,12 +81,13 @@
     "file": "casuariidae:entities/animal/bird/anatidae-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "scarecrow"
       ],
       "priority": 5.5,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "movespeedByType": {
         "anatidae-baby-*-cereopsisnovaehollandiae": 0.015
@@ -101,12 +105,13 @@
     "file": "casuariidae:entities/animal/bird/anatidae-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "little-scarecrow"
       ],
       "priority": 5.5,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "movespeedByType": {
         "anatidae-baby-*-cereopsisnovaehollandiae": 0.015
@@ -124,12 +129,13 @@
     "file": "casuariidae:entities/animal/bird/anatidae-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "strawdummy"
       ],
       "priority": 5.5,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "movespeedByType": {
         "anatidae-baby-*-cereopsisnovaehollandiae": 0.015

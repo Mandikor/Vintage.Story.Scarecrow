@@ -5,7 +5,8 @@
     "file": "game:entities/animal/mammal/hooved/sheep-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.025,
@@ -22,7 +23,8 @@
     "file": "game:entities/animal/mammal/hooved/sheep-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.025,
@@ -39,7 +41,8 @@
     "file": "game:entities/animal/mammal/hooved/sheep-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "strawdummy" ],
       "priority": 1.6,
       "movespeed": 0.025,
@@ -56,7 +59,8 @@
     "file": "game:entities/animal/mammal/hooved/sheep-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "scarecrow" ],
       "priority": 1.9,
       "movespeed": 0.052,
@@ -73,7 +77,8 @@
     "file": "game:entities/animal/mammal/hooved/sheep-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.9,
       "movespeed": 0.052,
@@ -90,7 +95,8 @@
     "file": "game:entities/animal/mammal/hooved/sheep-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "strawdummy" ],
       "priority": 1.9,
       "movespeed": 0.052,

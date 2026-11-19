@@ -5,7 +5,8 @@
     "file": "game:entities/animal/mammal/hooved/moose-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "entityCodes": [ "scarecrow" ],
       "priority": 1.6,
@@ -23,7 +24,8 @@
     "file": "game:entities/animal/mammal/hooved/moose-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.6,
@@ -41,7 +43,8 @@
     "file": "game:entities/animal/mammal/hooved/moose-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "entityCodes": [ "strawdummy" ],
       "priority": 1.6,
@@ -59,7 +62,8 @@
     "file": "game:entities/animal/mammal/hooved/moose-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "entityCodes": [ "scarecrow" ],
       "priority": 1.6,
@@ -77,7 +81,8 @@
     "file": "game:entities/animal/mammal/hooved/moose-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.6,
@@ -95,7 +100,8 @@
     "file": "game:entities/animal/mammal/hooved/moose-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "entityCodes": [ "strawdummy" ],
       "priority": 1.6,

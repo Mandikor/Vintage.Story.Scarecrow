@@ -5,7 +5,8 @@
     "file": "game:entities/animal/mammal/raccoon-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.02,
@@ -21,7 +22,8 @@
     "file": "game:entities/animal/mammal/raccoon-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.02,
@@ -37,7 +39,8 @@
     "file": "game:entities/animal/mammal/raccoon-baby.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "strawdummy" ],
       "priority": 1.6,
       "movespeed": 0.02,
@@ -53,7 +56,8 @@
     "file": "game:entities/animal/mammal/raccoon-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "scarecrow" ],
       "priority": 2.1,
       "movespeed": 0.035,
@@ -69,7 +73,8 @@
     "file": "game:entities/animal/mammal/raccoon-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "little-scarecrow" ],
       "priority": 2.1,
       "movespeed": 0.035,
@@ -85,7 +90,8 @@
     "file": "game:entities/animal/mammal/raccoon-adult.json",
     "value": {
       "code": "fleeentity",
-      "instafleeOnDamageChance": 1,
+      "retaliateAttacks": false,
+      "instafleeOnDamageChance": 0,
       "entityCodes": [ "strawdummy" ],
       "priority": 2.1,
       "movespeed": 0.035,

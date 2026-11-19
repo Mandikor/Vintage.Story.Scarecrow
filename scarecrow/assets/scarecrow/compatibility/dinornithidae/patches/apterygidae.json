@@ -6,12 +6,13 @@
     "file": "dinornithidae:entities/animal/bird/apterygidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "scarecrow"
       ],
       "priority": 5.5,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "movespeedByType": {
         "*-adult-female-apteryxhaastii": 0.0375,
@@ -47,12 +48,13 @@
     "file": "dinornithidae:entities/animal/bird/apterygidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "little-scarecrow"
       ],
       "priority": 5.5,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "movespeedByType": {
         "*-adult-female-apteryxhaastii": 0.0375,
@@ -88,12 +90,13 @@
     "file": "dinornithidae:entities/animal/bird/apterygidae-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "strawdummy"
       ],
       "priority": 5.5,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "movespeedByType": {
         "*-adult-female-apteryxhaastii": 0.0375,
@@ -129,12 +132,13 @@
     "file": "dinornithidae:entities/animal/bird/apterygidae-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "scarecrow"
       ],
       "priority": 5.5,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "movespeedByType": {
         "apterygidae-baby-*": 0.015
@@ -152,12 +156,13 @@
     "file": "dinornithidae:entities/animal/bird/apterygidae-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "little-scarecrow"
       ],
       "priority": 5.5,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "movespeedByType": {
         "apterygidae-baby-*": 0.015
@@ -175,12 +180,13 @@
     "file": "dinornithidae:entities/animal/bird/apterygidae-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [
         "strawdummy"
       ],
       "priority": 5.5,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "movespeedByType": {
         "apterygidae-baby-*": 0.015

@@ -5,12 +5,13 @@
     "file": "game:entities/animal/mammal/wolf-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.02,
       "animationSpeed": 4,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "sound": "creature/wolf/pup-bark"
     },
@@ -22,12 +23,13 @@
     "file": "game:entities/animal/mammal/wolf-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.6,
       "movespeed": 0.02,
       "animationSpeed": 4,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "sound": "creature/wolf/pup-bark"
     },
@@ -39,12 +41,13 @@
     "file": "game:entities/animal/mammal/wolf-baby.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "strawdummy" ],
       "priority": 1.6,
       "movespeed": 0.02,
       "animationSpeed": 4,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run",
       "sound": "creature/wolf/pup-bark"
     },
@@ -56,12 +59,13 @@
     "file": "game:entities/animal/mammal/wolf-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "scarecrow" ],
       "priority": 1.7,
       "movespeed": 0.052,
       "animationSpeed": 2,
       "seekingRange": 16,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run"
     },
     "side": "server"
@@ -72,12 +76,13 @@
     "file": "game:entities/animal/mammal/wolf-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "little-scarecrow" ],
       "priority": 1.7,
       "movespeed": 0.052,
       "animationSpeed": 2,
       "seekingRange": 12,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run"
     },
     "side": "server"
@@ -88,12 +93,13 @@
     "file": "game:entities/animal/mammal/wolf-adult.json",
     "value": {
       "code": "fleeentity",
+      "retaliateAttacks": false,
       "entityCodes": [ "strawdummy" ],
       "priority": 1.7,
       "movespeed": 0.052,
       "animationSpeed": 2,
       "seekingRange": 8,
-      "instafleeOnDamageChance": 1,
+      "instafleeOnDamageChance": 0,
       "animation": "Run"
     },
     "side": "server"
