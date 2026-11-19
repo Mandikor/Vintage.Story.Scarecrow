@@ -363,7 +363,11 @@ The repository includes compatibility assets for the following mods and families
 | The Critters Pack coral fork | Wild-animal reactions and updated native scarecrow targets |
 | Bats | Native feeding deterrents at the three protection radii |
 | Truth and Beauty: Detailed Animals | Generated chicks inherit vanilla chicken flee rules |
-| FotSA family | Animal behavior patches for Bovinae, Caninae, Capreolinae, Casuariidae, Cervinae, Dinornithidae, Elephantidae, Machairodontinae, Meiolaniidae, Moschidae, Pantherinae, Rhinocerotidae, Thylacinidae, Viverridae and Vombatidae |
+| FotSA family | Animal behavior patches for Bovinae, Caninae, Capreolinae, Casuariidae, Cervinae, Dinornithidae, Elephantidae, Felinae, Machairodontinae, Manidae, Meiolaniidae, Moschidae, Pantherinae, Rhinocerotidae, Spheniscidae, Thylacinidae, Viverridae and Vombatidae |
+
+The [additional FotSA guide](docs/fotsa-additional-compatibility.md) covers the
+new Felinae, Manidae and Spheniscidae patches, native fear/defense conditions and
+the deliberate exclusion of fully aquatic Iniidae and Sirenia.
 
 Compatibility depends on the installed versions and the asset definitions supplied
 by those mods. Include the relevant mod versions when reporting a compatibility issue.

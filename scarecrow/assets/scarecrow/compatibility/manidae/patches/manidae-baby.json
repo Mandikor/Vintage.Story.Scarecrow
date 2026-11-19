@@ -1,0 +1,135 @@
+[
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "manidae:entities/animal/mammal/manidae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "manidae-*"
+      ],
+      "movespeedByType": {
+        "*-baby-*-crassicaudata": 0.002,
+        "*-baby-*-culionensis": 0.0026,
+        "*-baby-*-gigantea": 0.003,
+        "*-baby-*-javanica": 0.0024,
+        "*-baby-*-mysteria": 0.0024,
+        "*-baby-*-pentadactyla": 0.002,
+        "*-baby-*-temminckii": 0.0018,
+        "*-baby-*-tetradactyla": 0.0014,
+        "*-baby-*-tricuspis": 0.0018
+      },
+      "animationSpeed": 2,
+      "seekingRange": 5,
+      "fleeingDistance": 20,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "manidae:entities/animal/mammal/manidae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "manidae-*"
+      ],
+      "movespeedByType": {
+        "*-baby-*-crassicaudata": 0.001,
+        "*-baby-*-culionensis": 0.0013,
+        "*-baby-*-gigantea": 0.0015,
+        "*-baby-*-javanica": 0.0012,
+        "*-baby-*-mysteria": 0.0012,
+        "*-baby-*-pentadactyla": 0.001,
+        "*-baby-*-temminckii": 0.0009,
+        "*-baby-*-tetradactyla": 0.0007,
+        "*-baby-*-tricuspis": 0.0009
+      },
+      "animationSpeed": 1,
+      "seekingRange": 20,
+      "fleeingDistance": 30,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "manidae:entities/animal/mammal/manidae-baby.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.4,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "manidae-*"
+      ],
+      "movespeedByType": {
+        "*-baby-*-crassicaudata": 0.001,
+        "*-baby-*-culionensis": 0.0013,
+        "*-baby-*-gigantea": 0.0015,
+        "*-baby-*-javanica": 0.0012,
+        "*-baby-*-mysteria": 0.0012,
+        "*-baby-*-pentadactyla": 0.001,
+        "*-baby-*-temminckii": 0.0009,
+        "*-baby-*-tetradactyla": 0.0007,
+        "*-baby-*-tricuspis": 0.0009
+      },
+      "animationSpeed": 1,
+      "seekingRange": 10,
+      "fleeingDistance": 40,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

@@ -5,6 +5,18 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Additional relevant FotSA families
+
+- Add JSON-only support for Felinae 0.2.16, Manidae 1.0.24 and Spheniscidae 1.0.20:
+  six adult/young files and 19 native player-tag task copies. Preserve native
+  fear conditions, movement/animation maps, priorities and land/swimming gates.
+- Retain Manidae's zero-speed defensive animation instead of forcing flight.
+  Penguin eggs and fully aquatic Iniidae/Sirenia are left unchanged. Original
+  player/prey/breeding tasks are preserved; no new spawn-blocking prefixes.
+- Actual game variant-resolver checks pass for 132 variants and 414 enabled
+  configurations, including swimming and stationary defense. The author also
+  completed the in-game test successfully.
+
 ### Crows 0.2.7 native compatibility
 
 - Use Crows' existing `otherScarecrows` mechanism instead of adding competing

@@ -22,6 +22,14 @@ an unimplemented candidate.
 Current totals are 39 supported IDs and 42 remaining review candidates. The
 original tables below are historical and do not override this follow-up.
 
+The [additional FotSA follow-up](fotsa-additional-compatibility.md) now implements
+Felinae 0.2.16, Manidae 1.0.24 and Spheniscidae 1.0.20; its game test passed.
+Iniidae and Sirenia were reviewed and deferred as fully aquatic. Current totals
+are therefore **42 supported IDs** and **39 without explicit integration**, of
+which two are deliberately deferred aquatic mods and 37 remain review candidates.
+This supersedes the Crows-only follow-up totals above; the inventory tables and
+CSV retain their original audit baseline.
+
 ## Inventory and scope
 
 - 165 package copies (ZIP files and unpacked directories), representing **81 mod IDs**.

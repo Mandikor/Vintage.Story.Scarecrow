@@ -1,0 +1,148 @@
+[
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "felinae:entities/animal/mammal/felinae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.42,
+      "priorityForCancel": 9.42,
+      "animation": "Run",
+      "skipEntityCodes": [
+        "felinae-adult-female-{type}",
+        "felinae-adult-male-{type}",
+        "felinae-baby-female-{type}",
+        "felinae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*-adult-*-caracalcaracal": 0.167,
+        "*-adult-*-lynxlynx": 0.167,
+        "*-adult-*-lynxpardinus": 0.127,
+        "*-adult-*-lynxcanadensis": 0.1
+      },
+      "animationSpeedByType": {
+        "*-adult-male-caracalcaracal": 2.7,
+        "*-adult-female-caracalcaracal": 3,
+        "*-adult-male-lynxcanadensis": 2.4,
+        "*-adult-female-lynxcanadensis": 2.7,
+        "*-adult-male-lynxlynx": 2.1,
+        "*-adult-female-lynxlynx": 2.25,
+        "*-adult-male-lynxpardinus": 2.1,
+        "*-adult-female-lynxpardinus": 2.25,
+        "*": 1
+      },
+      "seekingRange": 20,
+      "fleeingDistance": 50,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "felinae:entities/animal/mammal/felinae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.42,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "felinae-adult-female-{type}",
+        "felinae-adult-male-{type}",
+        "felinae-baby-female-{type}",
+        "felinae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*": 0.04
+      },
+      "animationSpeed": 2,
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "fleeDurationMs": 60000,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "felinae:entities/animal/mammal/felinae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.41,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "felinae-adult-female-{type}",
+        "felinae-adult-male-{type}",
+        "felinae-baby-female-{type}",
+        "felinae-baby-male-{type}"
+      ],
+      "movespeedByType": {
+        "*-adult-*-caracalcaracal": 0.0036,
+        "*-adult-*-lynxcanadensis": 0.0036,
+        "*-adult-*-lynxlynx": 0.0036,
+        "*-adult-*-lynxpardinus": 0.0036
+      },
+      "animationSpeedByType": {
+        "*-adult-male-caracalcaracal": 0.9,
+        "*-adult-female-caracalcaracal": 1,
+        "*-adult-male-lynxcanadensis": 0.8,
+        "*-adult-female-lynxcanadensis": 0.9,
+        "*-adult-male-lynxlynx": 0.7,
+        "*-adult-female-lynxlynx": 0.75,
+        "*-adult-male-lynxpardinus": 0.7,
+        "*-adult-female-lynxpardinus": 0.75,
+        "*": 1
+      },
+      "seekingRange": 120,
+      "fleeingDistance": 180,
+      "fleeDurationMs": 60000,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

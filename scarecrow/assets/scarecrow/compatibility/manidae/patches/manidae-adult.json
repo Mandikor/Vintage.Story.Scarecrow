@@ -1,0 +1,201 @@
+[
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "manidae:entities/animal/mammal/manidae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.5,
+      "priorityForCancel": 10.0,
+      "animation": "Sleep",
+      "executionChance": 0.95,
+      "skipEntityCodes": [
+        "manidae-*"
+      ],
+      "movespeedByType": {
+        "*": 0.0
+      },
+      "animationSpeed": 2,
+      "fleeDurationMs": 240000,
+      "seekingRange": 10,
+      "fleeingDistance": 20,
+      "stopOnHurt": false,
+      "whenSwimming": false,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "defended",
+        "shelled"
+      ],
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "manidae:entities/animal/mammal/manidae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "manidae-*"
+      ],
+      "movespeedByType": {
+        "*-adult-male-crassicaudata": 0.0072,
+        "*-adult-female-crassicaudata": 0.0058,
+        "*-adult-male-culionensis": 0.009,
+        "*-adult-female-culionensis": 0.0072,
+        "*-adult-male-gigantea": 0.0118,
+        "*-adult-female-gigantea": 0.009,
+        "*-adult-male-javanica": 0.008,
+        "*-adult-female-javanica": 0.0066,
+        "*-adult-male-mysteria": 0.008,
+        "*-adult-female-mysteria": 0.0066,
+        "*-adult-male-pentadactyla": 0.0072,
+        "*-adult-female-pentadactyla": 0.0058,
+        "*-adult-male-temminckii": 0.007,
+        "*-adult-female-temminckii": 0.0056,
+        "*-adult-male-tetradactyla": 0.0058,
+        "*-adult-female-tetradactyla": 0.0046,
+        "*-adult-male-tricuspis": 0.0066,
+        "*-adult-female-tricuspis": 0.0054
+      },
+      "animationSpeed": 2,
+      "seekingRange": 5,
+      "fleeingDistance": 20,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "manidae:entities/animal/mammal/manidae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.41,
+      "priorityForCancel": 9.41,
+      "animation": "Swim",
+      "skipEntityCodes": [
+        "manidae-*"
+      ],
+      "movespeedByType": {
+        "*-adult-male-crassicaudata": 0.0036,
+        "*-adult-female-crassicaudata": 0.0029,
+        "*-adult-male-culionensis": 0.0045,
+        "*-adult-female-culionensis": 0.0036,
+        "*-adult-male-gigantea": 0.0056,
+        "*-adult-female-gigantea": 0.0045,
+        "*-adult-male-javanica": 0.004,
+        "*-adult-female-javanica": 0.0033,
+        "*-adult-male-mysteria": 0.004,
+        "*-adult-female-mysteria": 0.0033,
+        "*-adult-male-pentadactyla": 0.0036,
+        "*-adult-female-pentadactyla": 0.0029,
+        "*-adult-male-temminckii": 0.0035,
+        "*-adult-female-temminckii": 0.0028,
+        "*-adult-male-tetradactyla": 0.0029,
+        "*-adult-female-tetradactyla": 0.0023,
+        "*-adult-male-tricuspis": 0.0033,
+        "*-adult-female-tricuspis": 0.0027
+      },
+      "animationSpeed": 1,
+      "seekingRange": 20,
+      "fleeingDistance": 30,
+      "whenSwimming": true,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-feet-in-liquid",
+        "state-moving",
+        "state-swimming"
+      ],
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "file": "manidae:entities/animal/mammal/manidae-adult.json",
+    "path": "/server/behaviors/10/aitasks/-",
+    "value": {
+      "code": "fleeentity",
+      "priority": 9.4,
+      "priorityForCancel": 9.4,
+      "animation": "Walk",
+      "skipEntityCodes": [
+        "manidae-*"
+      ],
+      "movespeedByType": {
+        "*-adult-male-crassicaudata": 0.0036,
+        "*-adult-female-crassicaudata": 0.0029,
+        "*-adult-male-culionensis": 0.0045,
+        "*-adult-female-culionensis": 0.0036,
+        "*-adult-male-gigantea": 0.0056,
+        "*-adult-female-gigantea": 0.0045,
+        "*-adult-male-javanica": 0.004,
+        "*-adult-female-javanica": 0.0033,
+        "*-adult-male-mysteria": 0.004,
+        "*-adult-female-mysteria": 0.0033,
+        "*-adult-male-pentadactyla": 0.0036,
+        "*-adult-female-pentadactyla": 0.0029,
+        "*-adult-male-temminckii": 0.0035,
+        "*-adult-female-temminckii": 0.0028,
+        "*-adult-male-tetradactyla": 0.0029,
+        "*-adult-female-tetradactyla": 0.0023,
+        "*-adult-male-tricuspis": 0.0033,
+        "*-adult-female-tricuspis": 0.0027
+      },
+      "animationSpeed": 1,
+      "seekingRange": 10,
+      "fleeingDistance": 40,
+      "whenInEmotionStates": [
+        "fleeondamage"
+      ],
+      "tagsAppliedToEntity": [
+        "state-moving",
+        "state-sprinting"
+      ],
+      "whenSwimming": false,
+      "entityCodes": [
+        "scarecrow",
+        "little-scarecrow",
+        "strawdummy"
+      ],
+      "retaliateAttacks": false
+    },
+    "side": "server"
+  }
+]

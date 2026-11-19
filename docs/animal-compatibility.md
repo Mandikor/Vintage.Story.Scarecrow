@@ -4,6 +4,9 @@ The vanilla and compatibility patches add reactions to the scarecrow, little
 scarecrow and vanilla straw dummy. They extend the animals' existing AI task lists.
 The [Crows integration](crows-compatibility.md) instead extends that mod's own
 exclusion-zone registration and wake list, preserving its custom flight AI.
+The [additional FotSA batch](fotsa-additional-compatibility.md) adds Felinae,
+Manidae and Spheniscidae with their native player-tag conditions. Its in-game
+test was completed successfully; fully aquatic Iniidae and Sirenia remain deferred.
 
 The [2026-11-19 local-library audit](mod-library-audit-2026-11-19.md) records newer
 supplied versions, detected patch-path failures and the planned migration to

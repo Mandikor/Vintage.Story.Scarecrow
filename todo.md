@@ -63,8 +63,9 @@ The [local mod audit](docs/mod-library-audit-2026-11-19.md) inventories 81 mod I
 38 already supported directly or through inheritance, and 43 not explicitly
 integrated. This is a review backlog, not approval to implement every candidate.
 Previously deferred cosmetics and aging remain deferred.
-The follow-up Crows integration brings the current counts to 39 supported and
-42 remaining review candidates; the audit retains the original inventory.
+After Crows and the additional FotSA batch, 42 IDs are supported and 39 have no
+explicit integration. Two of those are reviewed/deferred fully aquatic mods;
+37 remain review candidates. The audit retains the original inventory.
 
 - [x] Inventory ZIP/unpacked duplicates, manifest versions and current support.
 - [x] Audit existing patch paths and native player-code/player-tag AI tasks.
@@ -101,9 +102,15 @@ The follow-up Crows integration brings the current counts to 39 supported and
   the straw dummy at 8/12 and extended the original wake list. Keep native flight,
   feeding and player/social behavior; no C# adapter. Automated checks passed.
 - [x] **Crows game test:** the author completed the in-game test successfully.
-- [ ] **P2 — Fauna of the Stone Age: Felinae** (`felinae`, 0.2.16): Adapt player-tag reactions for wild small cats, retaining native states instead of assigning a generic size rule.
-- [ ] **P2 — Fauna of the Stone Age: Manidae** (`manidae`, 1.0.24): Adapt player-tag reactions for pangolins, including native defensive states.
-- [ ] **P2 — Fauna of the Stone Age: Spheniscidae** (`spheniscidae`, 1.0.20): Separate land and swimming reactions for adult and baby penguins.
+- [x] **P2 — Felinae implementation** (`felinae`, 0.2.16): native player-tag
+  tasks for adult and young caracals/lynxes; native fear conditions retained.
+- [x] **P2 — Manidae implementation** (`manidae`, 1.0.24): native player-tag
+  tasks for adults/young, including stationary adult defense and swimming gates.
+- [x] **P2 — Spheniscidae implementation** (`spheniscidae`, 1.0.20): native
+  adult/chick land and swimming tasks; eggs unchanged.
+- [x] **Additional FotSA game test:** the author completed the in-game test
+  successfully. Automated checks cover 132 variants and 414 enabled task
+  configurations.
 - [ ] **P2 — Flocks** (`flocks`, 0.22.1): Review all bird entities and custom flock AI; distinguish wild birds from domesticated forms.
 - [ ] **P2 — Fantasy Creatures Mod** (`fantasycreaturesupdate`, 0.8.3): Review each species and humanoid separately; copy only relevant player reactions.
 - [ ] **P2 — Pegasus: Winged horses** (`pegasus`, 1.1.0-rc.1): Review generated wild versus owned/mount variants and flight AI.
@@ -113,8 +120,11 @@ The follow-up Crows integration brings the current counts to 39 supported and
 
 ### Aquatic creature candidates
 
-- [ ] **P3 — Fauna of the Stone Age: Iniidae Plus** (`iniidae`, 0.1.8): Dolphins/related aquatic creatures: decide whether waterborne reactions are useful; malformed supplied item JSON also needs upstream review.
-- [ ] **P3 — Fauna of the Stone Age: Sirenia** (`sirenia`, 1.0.33): Decide the intended effect on fully aquatic wildlife before implementing underwater AI.
+- [x] **Relevance review — Iniidae Plus** (`iniidae`, 0.1.8): fully aquatic,
+  deferred for a land/garden scarecrow; no implementation. Malformed supplied
+  item JSON remains an upstream issue.
+- [x] **Relevance review — Sirenia** (`sirenia`, 1.0.33): fully aquatic,
+  deferred for a land/garden scarecrow; no implementation.
 
 ### Taming, pets and capture compatibility
 
