@@ -67,7 +67,8 @@
           },
           "scale": 1
         },
-        "scarecrowUseCeilingTextures": true
+        "scarecrowUseCeilingTextures": true,
+        "scarecrowPendulum": true
       },
       "*": {
         "attachableToEntityByType": {
@@ -131,7 +132,8 @@
           },
           "scale": 1
         },
-        "scarecrowUseCeilingTextures": true
+        "scarecrowUseCeilingTextures": true,
+        "scarecrowPendulum": true
       }
     }
   }

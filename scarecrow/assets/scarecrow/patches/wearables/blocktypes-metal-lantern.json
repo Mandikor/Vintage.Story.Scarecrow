@@ -87,5 +87,11 @@
       },
       "scale": 1
     }
+  },
+  {
+    "file": "game:blocktypes/metal/lantern.json",
+    "op": "add",
+    "path": "/attributes/scarecrowPendulum",
+    "value": true
   }
 ]

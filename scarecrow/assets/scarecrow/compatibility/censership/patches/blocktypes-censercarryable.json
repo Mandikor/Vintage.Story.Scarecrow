@@ -74,5 +74,11 @@
       },
       "scale": 1
     }
+  },
+  {
+    "file": "censership:blocktypes/censercarryable.json",
+    "op": "add",
+    "path": "/attributes/scarecrowPendulum",
+    "value": true
   }
 ]

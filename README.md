@@ -232,6 +232,22 @@ the selected collectible. Export the JSON and save it in your assets to retain
 changes. See the [modder guide](docs/scarecrow-arm-transforms.md) for examples,
 coordinate frames and testing instructions.
 
+### Optional pendulum motion
+
+Set `attributes.scarecrowPendulum` to `true` to let a permitted arm item or block
+swing as a whole with the wind, or `false` to keep it still. Existing tool and
+Dreamcatcher patches default to `false`; existing lanterns, oil lamps, censers,
+Firefly Jars and wind chimes default to `true`. Without the new attribute, their
+previous behavior is retained. Wind chimes keep their specialized moving parts;
+`false` freezes those parts without disabling sound, light or protection bonuses.
+
+The existing per-arm transforms still set the resting position. Generic models
+retain full size and use the arm storage origin; existing hanging lights retain
+their previous size and ceiling pivot. An optional `scarecrowPendulumPivot` array
+can supply another pivot. See the [modder guide](docs/scarecrow-arm-transforms.md)
+for coordinate details and custom attachment-point support. The setting affects
+the full-size scarecrow's arms only and does not make an item attachable by itself.
+
 ### Primitive Survival
 
 With **Primitive Survival 5.1.4**, attach any of its 13 wooden lanterns or seven

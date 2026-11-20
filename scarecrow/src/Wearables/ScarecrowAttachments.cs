@@ -45,7 +45,7 @@ namespace Scarecrow
                 AssetLocation code = stack?.Collectible?.Code;
                 if (code == null) continue;
                 bool legacyNeck = slotCodes[index] == "sc-neck" && allowedCodes[index].Length == 0
-                    && AnimatedArmLantern.Matches(stack);
+                    && ScarecrowPendulum.IsLegacyHanger(stack);
                 if (!legacyNeck && !allowedCodes[index].Any(pattern => WildcardUtil.Match(pattern, code.ToString()))) continue;
                 int candidate = GetEquipmentRadiusBonus(stack);
                 if (candidate <= bonus) continue;
@@ -154,7 +154,7 @@ namespace Scarecrow
         {
             int neck = Array.IndexOf(slotCodes, "sc-neck");
             if (neck < 0 || neck >= inv.Count || allowedCodes[neck].Length != 0
-                || !AnimatedArmLantern.Matches(inv[neck].Itemstack)) return false;
+                || !ScarecrowPendulum.IsLegacyHanger(inv[neck].Itemstack)) return false;
             for (int i = 0; i < inv.Count && i < slotCodes.Length; i++)
             {
                 if (slotCodes[i] is not ("sc-leftarm" or "sc-rightarm") || !inv[i].Empty

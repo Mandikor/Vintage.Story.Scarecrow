@@ -63,5 +63,20 @@
       },
       "scale": 1
     }
+  },
+  {
+    "file": "dreamcatchers:blocktypes/dreamcatcher.json",
+    "op": "add",
+    "path": "/attributes/scarecrowPendulum",
+    "value": false
+  },
+  {
+    "file": "dreamcatchers:blocktypes/dreamcatcher.json",
+    "op": "add",
+    "path": "/attributes/scarecrowPendulumAttachmentPoints",
+    "value": {
+      "sc-leftarm": "ScarecrowDreamcatcherLeftAP",
+      "sc-rightarm": "ScarecrowDreamcatcherRightAP"
+    }
   }
 ]

@@ -64,5 +64,11 @@
       },
       "scale": 1
     }
+  },
+  {
+    "file": "artofgrowing:itemtypes/tool/hayfork.json",
+    "op": "add",
+    "path": "/attributes/scarecrowPendulum",
+    "value": false
   }
 ]

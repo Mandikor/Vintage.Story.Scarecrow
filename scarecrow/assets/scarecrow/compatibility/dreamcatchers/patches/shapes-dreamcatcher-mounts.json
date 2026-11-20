@@ -34,7 +34,18 @@
       "scaleZ": 0.6,
       "rotationX": 0.349186,
       "rotationY": 3.984754,
-      "rotationZ": -5.012147
+      "rotationZ": -5.012147,
+      "attachmentpoints": [
+        {
+          "code": "ScarecrowDreamcatcherLeftAP",
+          "posX": 0,
+          "posY": 0,
+          "posZ": 0,
+          "rotationX": 0,
+          "rotationY": 0,
+          "rotationZ": 0
+        }
+      ]
     },
     "side": "client"
   },
@@ -65,7 +76,18 @@
       "scaleZ": 0.6,
       "rotationX": 179.650814,
       "rotationY": 3.984754,
-      "rotationZ": -174.987853
+      "rotationZ": -174.987853,
+      "attachmentpoints": [
+        {
+          "code": "ScarecrowDreamcatcherRightAP",
+          "posX": 0,
+          "posY": 0,
+          "posZ": 0,
+          "rotationX": 0,
+          "rotationY": 0,
+          "rotationZ": 0
+        }
+      ]
     },
     "side": "client"
   }

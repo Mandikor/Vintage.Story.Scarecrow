@@ -72,6 +72,59 @@ optional transforms are ignored. Cache invalidation follows replacement of the
 attribute token; code changing transforms should replace the complete JSON object,
 as the editor does, instead of mutating a cached token in place.
 
+## Optional whole-model pendulum
+
+Add a boolean alongside the transform attributes:
+
+```json
+"scarecrowPendulum": true,
+"scarecrowPendulumPivot": [0, 0, 0]
+```
+
+The switch is independent of attachment permission, item category and radius
+bonus. It accepts items as well as blocks. Current tool and Dreamcatcher patches
+explicitly default to `false`, while existing animated lights/decorations and
+Wind Chimes default to `true`. With no switch, legacy hanging decorations/chimes
+keep their previous animation and ordinary items stay static.
+
+Generic opted-in models render separately rather than being added to the static
+body mesh. They use the same arm storage coordinate frame as ordinary tools, with
+scale one by default. Their transform is applied before pendulum motion. The
+optional three-number pivot is in that model frame, in block units, before the
+arm transform; it defaults to `(0,0,0)` for generic models. Existing lanterns and
+other legacy hangers retain their ceiling-frame pivot `(0.5,1,0.5)` and original
+scale. Their existing mesh offsets are still applied before motion.
+
+`false` leaves legacy hanging models in the private renderer at their resting
+pose, preserving textures, light and particle handling. Ordinary tools return to
+their static attachment path. Wind chimes retain their specialized split meshes:
+`true` advances individual parts, while `false` leaves them at rest. Their wind
+sounds and radius bonuses are unaffected. Neither the little scarecrow's neck
+nor ordinary placed world blocks gain this motion.
+
+For an attachment that already uses a special step-parent frame rather than the
+normal arm storage, an advanced optional mapping can name equivalent pose points:
+
+```json
+"scarecrowPendulumAttachmentPoints": {
+  "sc-leftarm": "MyLeftMountAP",
+  "sc-rightarm": "MyRightMountAP"
+}
+```
+
+The modder must supply those attachment points on the entity shape. Without an
+override, generic models use `ScarecrowArmLeftOriginAP`/`ScarecrowArmRightOriginAP`.
+Dreamcatchers already include equivalent points on their existing mounts so their
+position is retained if enabled. Legacy hanging lights keep their dedicated
+lantern points. Models requiring multiple different step parents or a custom
+shape/texture supplier need individual validation; a boolean does not reproduce
+arbitrary custom rendering logic.
+
+Edit these attributes in source patches and reload the game/assets. `.tfedit`
+continues to edit the transform attributes; it does not provide a pendulum checkbox.
+
+The author reported a successful in-game test of the pendulum extension.
+
 ## Native transform editor
 
 1. Equip a currently supported item on a full-size scarecrow. Use either the

@@ -327,5 +327,17 @@
       },
       "scale": 1
     }
+  },
+  {
+    "file": "primitivesurvival:blocktypes/glass/fireflies.json",
+    "op": "add",
+    "path": "/attributes/scarecrowPendulum",
+    "value": true
+  },
+  {
+    "file": "primitivesurvival:blocktypes/wood/woodlantern.json",
+    "op": "add",
+    "path": "/attributes/scarecrowPendulum",
+    "value": true
   }
 ]

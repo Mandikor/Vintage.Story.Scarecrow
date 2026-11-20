@@ -60,5 +60,11 @@
       },
       "scale": 1
     }
+  },
+  {
+    "file": "leaflitter:itemtypes/rake.json",
+    "op": "add",
+    "path": "/attributes/scarecrowPendulum",
+    "value": false
   }
 ]

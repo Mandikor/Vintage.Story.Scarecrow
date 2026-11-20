@@ -68,6 +68,13 @@ implementation. Tool bonuses were removed from the plan at the author's request.
    Tool arm shapes have been replaced by original models; the author's calibrated
    right-arm bug net is preserved. Remaining tool transforms await manual tuning.
 
+10. [x] **General pendulum switch.** Add visual-only `scarecrowPendulum` for item
+    and block arm models, optional pivots and custom pose points. Existing lights
+    keep their motion by default, tools/Dreamcatchers stay still, and Wind Chimes
+    retain their specialized parts. Build, item/block motion/switch checks and
+    existing Primitive Survival checks passed. The author completed the in-game
+    test successfully.
+
 ## Compatibility review — updated 2026-11-20
 
 Reconciled with manifests in both ZIP archives and unpacked directories under

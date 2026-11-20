@@ -9,7 +9,8 @@ namespace Scarecrow
     /// <summary>Animates attached hanging pieces independently of placed-block animation mods.</summary>
     public class WindChimeScarecrowRenderer : EntityShapeRenderer
     {
-        private readonly Block[] blocks = new Block[2];
+        private readonly CollectibleObject[] collectibles = new CollectibleObject[2];
+        private readonly bool[] pendulumStates = new bool[2];
         private readonly ItemStack[] renderedStacks = new ItemStack[2];
         private readonly MultiTextureMeshRef[] meshes = new MultiTextureMeshRef[2];
         private readonly Matrixf chimeMatrix = new();
@@ -30,11 +31,11 @@ namespace Scarecrow
         {
             base.DoRender3DOpaque(dt, isShadowPass);
             if (isSpectator) return;
-            RenderWindChimes(dt, isShadowPass);
+            RenderArmAttachments(dt, isShadowPass);
         }
 
         // Reuse meshes per arm; apply the animated mount transform in both opaque and shadow passes.
-        private void RenderWindChimes(float dt, bool isShadowPass)
+        private void RenderArmAttachments(float dt, bool isShadowPass)
         {
             if (!entity.Alive)
             {
@@ -50,8 +51,11 @@ namespace Scarecrow
             {
                 ItemStack stack = inventory[index].Itemstack;
                 bool lantern = AnimatedArmLantern.Matches(stack);
-                Block block = lantern || stack?.ItemAttributes?["scarecrowWindChime"].AsBool(false) == true ? stack.Block : null;
-                if (blocks[index] != block || (lantern && !ReferenceEquals(renderedStacks[index], stack)))
+                bool pendulum = ScarecrowPendulum.IsEnabled(stack);
+                Block block = stack?.Block;
+                CollectibleObject collectible = lantern || ScarecrowPendulum.IsWindChime(stack) ? stack?.Collectible : null;
+                if (collectibles[index] != collectible || pendulumStates[index] != pendulum
+                    || !ReferenceEquals(renderedStacks[index], stack))
                 {
                     meshes[index]?.Dispose();
                     animated[index]?.Dispose();
@@ -59,9 +63,10 @@ namespace Scarecrow
                     lanterns[index] = null;
                     animated[index] = null;
                     meshes[index] = null;
-                    blocks[index] = block;
+                    collectibles[index] = collectible;
+                    pendulumStates[index] = pendulum;
                     renderedStacks[index] = stack;
-                    if (block != null)
+                    if (collectible != null)
                     {
                         // These are entity attachments, not placed block entities. Always use our
                         // private animation; Immersive Lanterns may animate placed copies separately.
@@ -73,18 +78,20 @@ namespace Scarecrow
                         }
                         catch (System.Exception exception)
                         {
-                            capi.Logger.Warning("[Scarecrow] Cannot animate attachment {0}; using static rendering: {1}", block.Code, exception.Message);
+                            capi.Logger.Warning("[Scarecrow] Cannot animate attachment {0}; using static rendering: {1}", collectible.Code, exception.Message);
                         }
                         if (animated[index] == null && lanterns[index] == null)
                         {
-                            capi.Tesselator.TesselateBlock(block, out MeshData mesh);
+                            MeshData mesh;
+                            if (block != null) capi.Tesselator.TesselateBlock(block, out mesh);
+                            else capi.Tesselator.TesselateItem(stack.Item, out mesh);
                             meshes[index] = capi.Render.UploadMultiTextureMesh(mesh);
                         }
                     }
                 }
                 if (meshes[index] == null && animated[index] == null && lanterns[index] == null) continue;
                 AttachmentPointAndPose point = entity.AnimManager?.Animator?.GetAttachmentPointPose(
-                    lantern ? (index == 0 ? "ScarecrowLanternLeftAP" : "ScarecrowLanternRightAP")
+                    lantern ? ScarecrowPendulum.GetAttachmentPoint(stack, index)
                         : (index == 0 ? "ScarecrowWindChimeLeftAP" : "ScarecrowWindChimeRightAP"));
                 if (point == null) continue;
                 chimeMatrix.Set(ModelMat).Mul(point.AnimModelMatrix);
@@ -110,7 +117,7 @@ namespace Scarecrow
                         .RotateX(block.Shape.rotateX * GameMath.DEG2RAD)
                         .RotateY(block.Shape.rotateY * GameMath.DEG2RAD)
                         .RotateZ(block.Shape.rotateZ * GameMath.DEG2RAD).Translate(-.5f, -.5f, -.5f);
-                    if (advance)
+                    if (advance && pendulum)
                     {
                         Vec3d wind = entity.World.BlockAccessor.GetWindSpeedAt(entity.Pos.XYZ);
                         float[] m = chimeMatrix.Values;
@@ -182,7 +189,7 @@ namespace Scarecrow
                 lanterns[index] = null;
                 animated[index] = null;
                 meshes[index] = null;
-                blocks[index] = null;
+                collectibles[index] = null;
                 renderedStacks[index] = null;
             }
         }

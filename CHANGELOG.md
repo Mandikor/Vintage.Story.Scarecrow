@@ -5,6 +5,24 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### General wind-driven pendulum switch
+
+- Add `scarecrowPendulum` as a visual-only opt-in for whole item/block models on
+  either full-size arm. Explicit `false` freezes existing hangers at rest; absent
+  metadata preserves previous behavior. Keep Wind Chimes' separate moving-part
+  animation when enabled and freeze it when disabled, retaining sound and bonuses.
+- Generalize the private attachment mesh path to items and blocks, retain native
+  texture sources and per-arm transforms, and add storage-origin pose points on
+  both standard and Plumpkins models. Generic tools keep their existing rest frame
+  and full scale. Existing hanging lights retain their scale, pivot and particles.
+- Allow `scarecrowPendulumPivot` and optional per-slot attachment-point overrides;
+  add matching pose points for Dreamcatchers' existing specialized mounts. Keep
+  tool/Dreamcatcher defaults off and existing animated-decoration defaults on in
+  the current patches. No changes to attachment permission, radius or ownership.
+- Build and isolated item/block switch, motion, pivot and constructor checks pass;
+  Primitive Survival regression checks and 76 operations across 12 attachment
+  patch files also pass. The author's in-game test passed.
+
 ### General arm transforms and native editor integration
 
 - Switch both arms' scythes, metal/stone hoes, bug nets, snow shovels, Art of

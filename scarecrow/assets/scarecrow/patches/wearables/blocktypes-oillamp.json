@@ -83,5 +83,11 @@
       },
       "scale": 1
     }
+  },
+  {
+    "file": "game:blocktypes/clay/fired/oillamp.json",
+    "op": "add",
+    "path": "/attributes/scarecrowPendulum",
+    "value": true
   }
 ]

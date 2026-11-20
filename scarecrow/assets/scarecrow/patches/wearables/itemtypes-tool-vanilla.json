@@ -237,5 +237,29 @@
       },
       "scale": 1
     }
+  },
+  {
+    "file": "game:itemtypes/tool/bugnet.json",
+    "op": "add",
+    "path": "/attributes/scarecrowPendulum",
+    "value": false
+  },
+  {
+    "file": "game:itemtypes/tool/hoe.json",
+    "op": "add",
+    "path": "/attributes/scarecrowPendulum",
+    "value": false
+  },
+  {
+    "file": "game:itemtypes/tool/scythe.json",
+    "op": "add",
+    "path": "/attributes/scarecrowPendulum",
+    "value": false
+  },
+  {
+    "file": "game:itemtypes/tool/snowshovel.json",
+    "op": "add",
+    "path": "/attributes/scarecrowPendulum",
+    "value": false
   }
 ]

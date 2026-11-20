@@ -6,25 +6,25 @@ using Vintagestory.GameContent;
 
 namespace Scarecrow
 {
-    /// <summary>A private ceiling-model mesh swinging about its arm suspension point, never a placed block entity.</summary>
+    /// <summary>A private item/block attachment mesh swinging about its configured pivot, never a placed entity.</summary>
     internal sealed class AnimatedArmLantern : IDisposable
     {
         public MultiTextureMeshRef Mesh { get; private set; }
         public readonly Matrixf Transform = new();
         private readonly WindChimeMotion motion;
         private readonly float scale;
+        private readonly Vec3f pivot;
+        private readonly bool pendulumEnabled;
         private readonly CenserArmSmoke smoke;
         private readonly ArmAttachmentParticles oilLampParticles;
 
-        public static bool Matches(ItemStack stack) => stack?.Block != null
-            && (stack.ItemAttributes?["scarecrowArmLantern"].AsBool(false) == true
-                || stack.ItemAttributes?["scarecrowHangingDecoration"].AsBool(false) == true);
+        public static bool Matches(ItemStack stack) => ScarecrowPendulum.UsesWholeModelRenderer(stack);
 
         public AnimatedArmLantern(ICoreClientAPI api, ItemStack stack, string slot, long entityId, int arm)
         {
-            CompositeShape model = IAttachableToEntity.FromCollectible(stack.Block)?.GetAttachedShape(stack, slot);
+            CompositeShape model = IAttachableToEntity.FromCollectible(stack.Collectible)?.GetAttachedShape(stack, slot);
             Shape shape = model?.Base == null ? null : Shape.TryGet(api, model.Base.CopyWithPathPrefixAndAppendixOnce("shapes/", ".json"));
-            if (shape == null) throw new InvalidOperationException("Missing arm lantern shape: " + model?.Base);
+            if (shape == null) throw new InvalidOperationException("Missing arm attachment shape: " + model?.Base);
             MeshData mesh;
             if (stack.Block is BlockLantern vanilla)
             {
@@ -35,16 +35,16 @@ namespace Scarecrow
             }
             else
             {
-                Block textureBlock = stack.Block;
-                if (stack.ItemAttributes["scarecrowUseCeilingTextures"].AsBool(false))
+                CollectibleObject textureSource = stack.Collectible;
+                if (stack.Block != null && stack.ItemAttributes["scarecrowUseCeilingTextures"].AsBool(false))
                 {
                     // Hanging shapes can contain texture keys absent from the inventory/ground
                     // atlas mapping (oil-lamp rope, More Lanterns ropes/paper/metal). Use the
                     // actual ceiling variant's texture source, retaining state/color/brightness.
                     AssetLocation code = stack.Block.Code;
-                    textureBlock = api.World.GetBlock(new AssetLocation(code.Domain, code.Path[..^2] + "down")) ?? textureBlock;
+                    textureSource = api.World.GetBlock(new AssetLocation(code.Domain, code.Path[..^2] + "down")) ?? textureSource;
                 }
-                api.Tesselator.TesselateShape(textureBlock, shape, out mesh,
+                api.Tesselator.TesselateShape(textureSource, shape, out mesh,
                     new Vec3f(model.rotateX, model.rotateY, model.rotateZ));
             }
             // Small ground models can align their top with the shared ceiling pivot through
@@ -52,11 +52,13 @@ namespace Scarecrow
             float[] offset = stack.ItemAttributes["scarecrowArmLanternOffset"].AsArray<float>();
             if (offset?.Length == 3) mesh.Translate(offset[0], offset[1], offset[2]);
             Mesh = api.Render.UploadMultiTextureMesh(mesh);
-            scale = stack.ItemAttributes["scarecrowArmLanternScale"].AsFloat(.6f);
+            scale = stack.ItemAttributes["scarecrowArmLanternScale"].AsFloat(ScarecrowPendulum.IsLegacyHanger(stack) ? .6f : 1f);
+            pivot = ScarecrowPendulum.GetPivot(stack);
+            pendulumEnabled = ScarecrowPendulum.IsEnabled(stack);
             motion = new WindChimeMotion(entityId, arm);
-            if (stack.ItemAttributes["scarecrowCenserSmoke"].AsBool(false) && api.ModLoader.IsModEnabled("censership"))
+            if (stack.Block != null && stack.ItemAttributes["scarecrowCenserSmoke"].AsBool(false) && api.ModLoader.IsModEnabled("censership"))
                 smoke = new CenserArmSmoke(api, stack.Block, scale);
-            if (stack.ItemAttributes["scarecrowOilLampParticles"].AsBool(false))
+            if (stack.Block != null && stack.ItemAttributes["scarecrowOilLampParticles"].AsBool(false))
             {
                 // The placed-block emitter uses a fixed height that does not match the rendered
                 // hanging shape. Locate the model's flame pivot before applying the arm transform.
@@ -68,6 +70,7 @@ namespace Scarecrow
 
         public void Advance(float dt, double windX, double windZ)
         {
+            if (!pendulumEnabled) return;
             motion.Advance(dt, windX, windZ);
             var angles = motion.GetAngles(0);
             UpdateTransform(angles.pitch * .65f, angles.yaw * .3f, angles.roll * .65f);
@@ -98,10 +101,11 @@ namespace Scarecrow
 
         private void UpdateTransform(float pitch, float yaw, float roll)
         {
-            // Ceiling models share the block's top-center hanging point. Scale and rotate around it.
-            Transform.Identity().Translate(.5f, 1, .5f)
+            // Existing hangers retain their ceiling pivot; generic models use their local
+            // attachment origin unless the modder supplies a different pivot in block units.
+            Transform.Identity().Translate(pivot.X, pivot.Y, pivot.Z)
                 .RotateX(pitch * GameMath.DEG2RAD).RotateY(yaw * GameMath.DEG2RAD)
-                .RotateZ(roll * GameMath.DEG2RAD).Scale(scale, scale, scale).Translate(-.5f, -1, -.5f);
+                .RotateZ(roll * GameMath.DEG2RAD).Scale(scale, scale, scale).Translate(-pivot.X, -pivot.Y, -pivot.Z);
         }
 
         public void Dispose() { Mesh?.Dispose(); Mesh = null; }

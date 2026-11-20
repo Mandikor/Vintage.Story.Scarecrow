@@ -54,7 +54,8 @@
             "z": 0.5
           },
           "scale": 1
-        }
+        },
+        "scarecrowPendulum": true
       },
       "*-wood": {
         "attachableToEntity": {
@@ -105,7 +106,8 @@
             "z": 0.5
           },
           "scale": 1
-        }
+        },
+        "scarecrowPendulum": true
       },
       "*-brass": {
         "attachableToEntity": {
@@ -156,7 +158,8 @@
             "z": 0.5
           },
           "scale": 1
-        }
+        },
+        "scarecrowPendulum": true
       },
       "*-copper": {
         "attachableToEntity": {
@@ -207,7 +210,8 @@
             "z": 0.5
           },
           "scale": 1
-        }
+        },
+        "scarecrowPendulum": true
       },
       "*-crystal-*": {
         "attachableToEntity": {
@@ -258,7 +262,8 @@
             "z": 0.5
           },
           "scale": 1
-        }
+        },
+        "scarecrowPendulum": true
       },
       "*-bone": {
         "attachableToEntity": {
@@ -309,7 +314,8 @@
             "z": 0.5
           },
           "scale": 1
-        }
+        },
+        "scarecrowPendulum": true
       }
     }
   }
