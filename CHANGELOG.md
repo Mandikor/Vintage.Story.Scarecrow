@@ -5,6 +5,24 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Wind chime hanging-piece animation
+
+- Animate individual hanging pieces on each arm, with or without Immersive Lanterns,
+  using local wind, damped pendulum response and independent phases. Retain
+  original pivots, textures and fixed supports, including copper/bone models.
+- Keep our attachment animation active alongside `immersivelanterns`; suppress
+  shader wind on private copies to avoid double motion. Placed block animations
+  remain independent. Remove the initial switch that left most attached models
+  stationary with Immersive Lanterns installed.
+- Cache split meshes and release them on equipment changes, shape reloads,
+  death and disposal; shadows reuse current transforms. Sound, +6 radius bonus
+  and shared/placed-block assets remain unchanged.
+- Build and geometry/motion checks pass for seven models and 39 moving subtrees,
+  both with original assets and Immersive Lanterns 0.4.1's shape patches applied.
+  The author's attachment game tests passed both without Immersive Lanterns and
+  with it enabled. The combined retest was limited to equipping scarecrows;
+  placed-block issues were reproduced separately without Scarecrow installed.
+
 ### Dreamcatchers 1.0.2 arm decorations
 
 - Allow finished dreamcatchers on either arm of the full-size scarecrow, including

@@ -24,8 +24,8 @@ in 1.5.3 remain supported. Arm mounts compensate
 for the arms' built-in rotation so wind chimes hang vertically in the resting
 pose. Separate texture prefixes allow different wind chimes or a wind chime and
 a More Lanterns lantern to be equipped together. The Wind Chimes integration
-does not require More Lanterns. Disabled dreamcatchers and unrelated items are
-not added to the attachment whitelist.
+does not require More Lanterns. Other decorations use their own explicit
+attachment rules.
 
 ## Sound
 
@@ -84,14 +84,49 @@ block behaviors, textures, sounds and material variants are preserved. Models an
 recordings are referenced from Wind Chimes, without copying them into Scarecrow
 or adding a hard assembly dependency.
 
-Wind chimes are drawn separately using the game's block tesselator and block
-shader, preserving the original ceiling models' wind flags and moving regions.
-The entity shader otherwise changes wind mode 9 while handling frost, producing
-different motion. The optional renderer avoids that reinterpretation without
-changing game shaders or original Wind Chimes models. Corrected arm attachment
-points retain upright alignment, scale and animation poses. Meshes are cached and
-released on item changes, shape reloads and renderer disposal; the shadow pass
-uses the same block meshes.
+Wind chimes are drawn separately using the game's block shader. Corrected arm
+attachment points retain upright alignment, scale and scarecrow animation poses.
+Meshes are cached and released on item changes, shape reloads, death and renderer
+disposal. Shadows draw the same parts without advancing their motion.
+
+### Hanging-piece animation
+
+Each arm uses independent wind-driven pendulum motion and damped follow-through,
+whether or not Immersive Lanterns is installed. Small phase differences move
+pieces independently, with subtle motion in calm weather. Wind is sampled at
+the scarecrow and transformed into the hanging model's local orientation.
+
+Only attached models use this controller; placed wind chimes retain their own
+block-entity animation. Our private copies suppress shader wind to avoid double
+motion even when Immersive Lanterns modifies the shared source shapes. The
+initial mod-presence switch was removed after testing showed it left most
+attached materials stationary when Immersive Lanterns was enabled. Reported
+invisibility of placed copper/bone models with that mod remains a separate
+upstream issue; this attachment renderer does not repair placed blocks.
+
+Complete `chime1`, `chime2`, etc. subtrees rotate about their original pivots;
+the support stays fixed. Bamboo, wood, brass, copper, crystal and bone are covered,
+including all nine pieces in the supplied bamboo-fountain shape if selected.
+Splitting happens once per model/equipment change, not per frame. Only private
+shape copies lose shader wind, avoiding double motion without changing shared
+assets or placed blocks. Models without named chime pieces fall back to legacy
+rendering.
+
+This is an independent client-side implementation, not a call into Immersive
+Lanterns or a new dependency. Sound, equipment rules and the +6 spawn-radius bonus
+are unchanged. No configuration migration or additional JSON patches are needed.
+
+Checks cover seven supplied 1.5.4 shapes and 39 moving subtrees, both unmodified
+and after applying Immersive Lanterns 0.4.1's actual shape patches: face conservation,
+fixed pivots, identity rest transforms and unmodified originals. Motion checks
+cover independent deterministic phases, bounded strong-wind/lag response, invalid
+time inputs and settling after wind stops. Build passes. The author confirmed
+successful attachment animation without Immersive Lanterns and completed the
+combined-mod retest without errors, limited to hanging wind chimes on scarecrows.
+This does not claim validation of placed wind chimes: invisibility and a GUI
+collection-modified crash were reproduced with only Wind Chimes 1.5.4 and
+Immersive Lanterns 0.4.1 installed, without Scarecrow. The author reports this
+upstream issue is already known and remains unfixed.
 
 Renderer selection is patched on the server, where entity types are registered,
 and passed to clients with the entity properties. Models are excluded from the

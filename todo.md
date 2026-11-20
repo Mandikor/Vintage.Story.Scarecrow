@@ -170,6 +170,15 @@ explicit integration. Two of those are reviewed/deferred fully aquatic mods;
 
 ### Equipment and decoration candidates
 
+- [x] **Wind chime motion implementation:** independent wind-driven hanging
+  pieces with or without Immersive Lanterns; suppress shader wind on private
+  attachment models and leave placed block animation unchanged. Geometry/motion checks
+  pass for all seven supplied models and 39 moving subtrees.
+- [x] **Wind chime motion attachment game test:** the author confirmed successful
+  animation without Immersive Lanterns and an error-free combined-mod retest,
+  limited to equipping scarecrows. Placed-block invisibility/crashes were
+  reproduced separately without Scarecrow and remain an upstream issue.
+
 - [ ] **P2 — Immersive Lanterns** (`immersivelanterns`, 0.4.1): Check whether modified vanilla lanterns already work before adding patches or duplicate bonuses.
 - [x] **P2 — Dreamcatchers implementation** (`dreamcatchers`, 1.0.2): finished
   decorations on either/both full-size arms, dedicated upright mounts, all 5,200

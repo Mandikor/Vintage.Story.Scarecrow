@@ -274,7 +274,12 @@ animal flee and attack distances remain unchanged.
 
 This support works independently of More Lanterns and can be used alongside it.
 All JSON patches are under `compatibility/windchimes/patches`; original models,
-textures and recordings are referenced directly. See the
+textures and recordings are referenced directly. Attached wind chimes use
+independent wind-driven hanging-piece animation with damped follow-through,
+including when **Immersive Lanterns** is installed. Shader wind is suppressed
+on our private model copies to avoid double movement. Placed wind chimes, sound
+and radius bonuses are unchanged.
+See the
 [wind chime compatibility guide](docs/windchime-compatibility.md) for details.
 
 ## Configuration
