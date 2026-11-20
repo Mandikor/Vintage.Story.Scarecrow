@@ -57,17 +57,17 @@ implementation. Tool bonuses were removed from the plan at the author's request.
    interception immediately. Implemented; build and automated inventory/drop and
    wind chime checks passed.
 
-## Compatibility review — 2026-11-19
+## Compatibility review — updated 2026-11-20
 
-The [local mod audit](docs/mod-library-audit-2026-11-19.md) inventories 81 mod IDs:
-38 already supported directly or through inheritance, and 43 not explicitly
-integrated. This is a review backlog, not approval to implement every candidate.
-Previously deferred cosmetics and aging remain deferred.
-After Crows, the additional FotSA batch, Flocks, Fantasy Creatures, Pegasus,
-Talonborne, Giant Scorpion, Undead Legion, Dreamcatchers and censership,
-50 IDs are supported and 31 have no
-explicit integration. Two of those are reviewed/deferred fully aquatic mods;
-29 remain review candidates. The audit retains the original inventory.
+Reconciled with manifests in both ZIP archives and unpacked directories under
+`Mods_Scarecrow` after the local library cleanup. Duplicate copies and versions
+count once per mod ID: 57 IDs are present, of which 50 have direct integration
+or inherit supported content. Seven have no explicit integration: two aquatic
+mods remain reviewed/deferred, and five remain open review candidates below.
+Absent mods have been removed from this active backlog; existing compatibility code remains
+unchanged. Previously deferred cosmetics and aging remain deferred.
+The [original local mod audit](docs/mod-library-audit-2026-11-19.md) is a historical
+snapshot of 81 IDs and does not describe the cleaned current library.
 
 - [x] Inventory ZIP/unpacked duplicates, manifest versions and current support.
 - [x] Audit existing patch paths and native player-code/player-tag AI tasks.
@@ -96,6 +96,13 @@ explicit integration. Two of those are reviewed/deferred fully aquatic mods;
 - [x] Leaf Litter 1.6.0: rake JSON and decompiled ItemRake unchanged, existing
   attachment patch applies; no update-specific code change identified.
 - [x] Cervinae 0.1.19: breeding-key correction does not change AI or our patch paths.
+
+### Updates newly present in the cleaned library
+
+- [ ] **P1 — Giant Scorpion 1.0.3:** compare native player-target tasks and patch
+  paths with the implemented/tested 1.0.2 integration; validate any required changes.
+- [ ] **P2 — Leaf Litter 1.6.1:** compare rake definitions, attachment geometry and
+  relevant code with the reviewed 1.6.0 baseline. No new-version validation claimed.
 
 ### New creature candidates
 
@@ -157,19 +164,13 @@ explicit integration. Two of those are reviewed/deferred fully aquatic mods;
 
 ### Taming, pets and capture compatibility
 
-- [ ] **P1 — Animal cages** (`animalcages`, 5.0.1): Verify released/captured animals remain outside natural-spawn blocking; no new pet hostility.
-- [ ] **P1 — Catch Livestock** (`catchlivestock`, 0.2.4): Verify release behavior and owner preservation with the existing spawn interceptor.
 - [ ] **P1 — Pet AI** (`petai`, 5.1.2): Verify custom pet combat, owner commands and inventory handling; infrastructure, not a new species.
-- [ ] **P1 — Tamables: Critters** (`tamablescritters`, 0.2.6): Review runtime changes against Critter Pack patches; compare 0.2.5 and 0.2.6 DLL behavior.
-- [ ] **P1 — Tamables: FOTSA** (`tamablesfotsa`, 0.8.7): Review runtime/taming patches against FotSA; keep owned animals out of wild-only reactions.
-- [ ] **P2 — Feral Kinship** (`feralkinship`, 0.5.8): Review generated/tamed variants and owner-aware player behavior.
-- [ ] **P2 — Universal Husbandry** (`universalhusbandry`, 1.2.1): Review changed husbandry/taming behavior without globally repelling livestock.
-- [ ] **P2 — Pet Bunny** (`bunnypet`, 1.0.5): Ensure pet bunnies and newborns are not treated as natural wild spawns.
-- [ ] **P2 — Cats** (`cats`, 5.0.2): Review domestic versus wild behavior and owner protection.
-- [ ] **P2 — Fox taming** (`foxtaming`, 1.7.6): Review custom petseekentity/petmeleeattack tasks; do not clone owner commands.
-- [ ] **P2 — Wolf taming** (`wolftaming`, 5.0.1): Review custom pet AI, fetching, following and ownership; avoid attacks on scarecrows by pets.
 
 ### Equipment and decoration candidates
+
+- [x] **Plumpkins attachment fix** (`plumpkins`, 1.1.3): apply the existing arm
+  mount patches to the alternative full-size model, preserving its rounded head
+  and existing tool/foot storage. Build, attachment checks and in-game test passed.
 
 - [x] **Vanilla oil-lamp arm implementation:** ten filled colors using the native
   ceiling suspension/flame model, light, flame/smoke particles and pendulum motion;
@@ -187,15 +188,14 @@ explicit integration. Two of those are reviewed/deferred fully aquatic mods;
   Automated checks also cover variant rules, migration and render exclusion.
 
 - [x] **Wind chime motion implementation:** independent wind-driven hanging
-  pieces with or without Immersive Lanterns; suppress shader wind on private
+  pieces; suppress shader wind on private
   attachment models and leave placed block animation unchanged. Geometry/motion checks
   pass for all seven supplied models and 39 moving subtrees.
 - [x] **Wind chime motion attachment game test:** the author confirmed successful
-  animation without Immersive Lanterns and an error-free combined-mod retest,
-  limited to equipping scarecrows. Placed-block invisibility/crashes were
+  animation and an error-free compatibility retest, limited to equipping
+  scarecrows. Third-party placed-block invisibility/crashes were
   reproduced separately without Scarecrow and remain an upstream issue.
 
-- [ ] **P2 — Immersive Lanterns** (`immersivelanterns`, 0.4.1): Check whether modified vanilla lanterns already work before adding patches or duplicate bonuses.
 - [x] **P2 — Dreamcatchers implementation** (`dreamcatchers`, 1.0.2): finished
   decorations on either/both full-size arms, dedicated upright mounts, all 5,200
   variants checked. Supplied content-only mod has no gameplay protection effect;
@@ -211,26 +211,13 @@ explicit integration. Two of those are reviewed/deferred fully aquatic mods;
   Resolver/slot/source-preservation checks pass for 234 variants. See
   [guide](docs/censership-compatibility.md).
 - [x] **censership game test:** the author completed the in-game test successfully.
-- [ ] **P3 — Heraldry Add-On** (`heraldryaddon`, 1.1.0): Explore decorative attachments only after the deferred cosmetic item is reopened.
-- [ ] **P3 — Heraldry : Banners** (`heraldrybanners`, 2.0.0): Explore banner mounting and compatibility with existing equipment slots.
-- [ ] **P3 — More Banners** (`morebanners`, 1.3.3): Decorative candidate; two supplied Better Ruins recipe JSON files fail parsing.
 
-### Other scarecrow implementations and farming mods
+### Farming and survival compatibility
 
-- [ ] **P3 — canhalloween** (`canhalloween`, 1.0.4): Review existing scarecrow/decorative entities and overlap; no blanket hostile-creature integration.
-- [ ] **P3 — Flowerbeds** (`flowerbeds`, 1.0.3): Review whether its scarecrow/decor behavior should share protection.
-- [ ] **P3 — LTOFarmingPlus** (`ltofarmingplus`, 5.0.2): Review farming/scarecrow entities and behavior overlap.
-- [ ] **P3 — Scarecrow Modded** (`scarecrowm`, 1.7.3): Alternate Scarecrow Modded package; ships scarecrow.dll. Review assembly/class overlap before joint use.
-- [ ] **P3 — Vintage Scarecrows** (`vintagescarecrow`, 0.0.8): Review other scarecrow entities, ownership and overlapping protection.
+- [ ] **P2 — Primitive Survival** (`primitivesurvival`, 5.1.4): Review relevant creatures, traps and player-target behavior; determine whether explicit integration is needed before adding patches.
 
 ### Libraries and general utility mods: assess need, do not promise a patch
 
 - [ ] **P2 — Genelib** (`genelib`, 3.2.1): Dependency used by creature generators; verify in the full creature-mod combination.
 - [ ] **P2 — Jaunt: Extended Riding System** (`jaunt`, 3.3.1): Riding-system dependency; review only where mounts interact with scarecrows.
-- [ ] **P2 — Carry On** (`carryon`, 2.0.0-rc.1): Assess carrying interactions/ownership; do not duplicate normal scarecrow pickup.
-- [ ] **P2 — CarryOnLib** (`carryonlib`, 1.0.0-rc.1): Dependency of Carry On; generally no separate creature patch.
 - [ ] **P2 — Core of Arts** (`coreofartspatch`, 1.2.2): Dependency of Art of Growing; check shared registration/recipes as a combination.
-- [ ] **P3 — Attribute Rendering Library** (`attributerenderinglibrary`, 3.2.0): Rendering library: no direct scarecrow integration identified.
-- [ ] **P3 — ConfigKit** (`configkit`, 1.5.2): Configuration library: no direct scarecrow integration identified.
-- [ ] **P3 — Heraldry** (`heraldry`, 2.0.0): Dependency for banner integrations, not a creature integration.
-- [ ] **P3 — Integrated Mod Manager** (`integratedmodmanager`, 1.1.4): Management utility: no direct scarecrow integration identified.
