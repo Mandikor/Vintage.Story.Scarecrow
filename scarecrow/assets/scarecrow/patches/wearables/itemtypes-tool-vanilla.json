@@ -5,8 +5,8 @@
     "path": "/attributes/attachableToEntity",
     "value": {
       "attachedShapeBySlotCode": {
-        "sc-leftarm": { "base": "scarecrow:item/wearable/vanilla/scythe-left" },
-        "sc-rightarm": { "base": "scarecrow:item/wearable/vanilla/scythe-right" }
+        "sc-leftarm": { "base": "game:item/tool/scythe" },
+        "sc-rightarm": { "base": "game:item/tool/scythe" }
       },
       "texturePrefixCode": "scarecrow-scythe-{metal}"
     },
@@ -20,12 +20,12 @@
       "texturePrefixCode": "scarecrow-hoe-{material}",
       "attachedShapeBySlotCodeByType": {
         "@hoe-(copper|tinbronze|bismuthbronze|blackbronze|gold|silver|iron|meteoriciron|steel)": {
-          "sc-leftarm": { "base": "scarecrow:item/wearable/vanilla/hoe-left-metal" },
-          "sc-rightarm": { "base": "scarecrow:item/wearable/vanilla/hoe-right-metal" }
+          "sc-leftarm": { "base": "game:item/tool/hoe-copper" },
+          "sc-rightarm": { "base": "game:item/tool/hoe-copper" }
         },
         "@hoe-(chert|granite|andesite|basalt|obsidian|peridotite|flint)": {
-          "sc-leftarm": { "base": "scarecrow:item/wearable/vanilla/hoe-left-stone" },
-          "sc-rightarm": { "base": "scarecrow:item/wearable/vanilla/hoe-right-stone" }
+          "sc-leftarm": { "base": "game:item/tool/hoe-stone" },
+          "sc-rightarm": { "base": "game:item/tool/hoe-stone" }
         }
       }
     },
@@ -37,8 +37,8 @@
     "path": "/attributes/attachableToEntity",
     "value": {
       "attachedShapeBySlotCode": {
-        "sc-leftarm": { "base": "scarecrow:item/wearable/vanilla/bugnet-left" },
-        "sc-rightarm": { "base": "scarecrow:item/wearable/vanilla/bugnet-right" }
+        "sc-leftarm": { "base": "game:item/tool/bugnet" },
+        "sc-rightarm": { "base": "game:item/tool/bugnet" }
       },
       "texturePrefixCode": "scarecrow-bugnet-{type}"
     },
@@ -51,12 +51,191 @@
     "value": {
       "attachableToEntity": {
         "attachedShapeBySlotCode": {
-          "sc-leftarm": { "base": "scarecrow:item/wearable/vanilla/snowshovel-left" },
-          "sc-rightarm": { "base": "scarecrow:item/wearable/vanilla/snowshovel-right" }
+          "sc-leftarm": { "base": "game:item/tool/snowshovel" },
+          "sc-rightarm": { "base": "game:item/tool/snowshovel" }
         },
         "texturePrefixCode": "scarecrow-snowshovel-{material}"
       }
     },
     "side": "server"
+  },
+  {
+    "file": "game:itemtypes/tool/bugnet.json",
+    "op": "add",
+    "path": "/attributes/onScarecrowLeftArmTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    }
+  },
+  {
+    "file": "game:itemtypes/tool/bugnet.json",
+    "op": "add",
+    "path": "/attributes/onScarecrowRightArmTransform",
+    "value": {
+      "translation": {
+        "x": -0.15,
+        "y": 0,
+        "z": -0.6
+      },
+      "rotation": {
+        "x": -10,
+        "y": -150,
+        "z": 16
+      },
+      "scale": 0.9
+    }
+  },
+  {
+    "file": "game:itemtypes/tool/hoe.json",
+    "op": "add",
+    "path": "/attributes/onScarecrowLeftArmTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    }
+  },
+  {
+    "file": "game:itemtypes/tool/hoe.json",
+    "op": "add",
+    "path": "/attributes/onScarecrowRightArmTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    }
+  },
+  {
+    "file": "game:itemtypes/tool/scythe.json",
+    "op": "add",
+    "path": "/attributes/onScarecrowLeftArmTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    }
+  },
+  {
+    "file": "game:itemtypes/tool/scythe.json",
+    "op": "add",
+    "path": "/attributes/onScarecrowRightArmTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    }
+  },
+  {
+    "file": "game:itemtypes/tool/snowshovel.json",
+    "op": "add",
+    "path": "/attributes/onScarecrowLeftArmTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    }
+  },
+  {
+    "file": "game:itemtypes/tool/snowshovel.json",
+    "op": "add",
+    "path": "/attributes/onScarecrowRightArmTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    }
   }
 ]

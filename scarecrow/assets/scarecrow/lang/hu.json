@@ -75,5 +75,7 @@
 	"scarecrow:interaction-error-equipment": "Ez a tárgy nem illik ehhez a rögzítési ponthoz.",
 	"scarecrow:interaction-error-occupied": "Ez a rögzítési pont már foglalt.",
 	"scarecrow:interaction-error-owner": "Csak a tulajdonos módosíthatja ezt a madárijesztőt.",
-	"scarecrow:interaction-error-claim": "Nincs hozzáférési jogosultságod ehhez a területhez."
+	"scarecrow:interaction-error-claim": "Nincs hozzáférési jogosultságod ehhez a területhez.",
+	"scarecrow:transform-leftarm": "Madárijesztő – bal kar",
+	"scarecrow:transform-rightarm": "Madárijesztő – jobb kar"
 }

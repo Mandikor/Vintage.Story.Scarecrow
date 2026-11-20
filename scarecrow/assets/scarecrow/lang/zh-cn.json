@@ -75,5 +75,7 @@
 	"scarecrow:interaction-error-equipment": "此物品不适合这个安装点。",
 	"scarecrow:interaction-error-occupied": "这个安装点已被占用。",
 	"scarecrow:interaction-error-owner": "只有所有者才能修改这个稻草人。",
-	"scarecrow:interaction-error-claim": "你没有此区域的访问权限。"
+	"scarecrow:interaction-error-claim": "你没有此区域的访问权限。",
+	"scarecrow:transform-leftarm": "稻草人 – 左臂",
+	"scarecrow:transform-rightarm": "稻草人 – 右臂"
 }

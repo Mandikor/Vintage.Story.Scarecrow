@@ -75,5 +75,7 @@
 	"scarecrow:interaction-error-equipment": "Þessi hlutur passar ekki á þennan festipunkt.",
 	"scarecrow:interaction-error-occupied": "Þessi festipunktur er þegar í notkun.",
 	"scarecrow:interaction-error-owner": "Aðeins eigandinn má breyta þessari fuglahræðu.",
-	"scarecrow:interaction-error-claim": "Þú hefur ekki aðgangsheimild að þessu svæði."
+	"scarecrow:interaction-error-claim": "Þú hefur ekki aðgangsheimild að þessu svæði.",
+	"scarecrow:transform-leftarm": "Fuglahræða – vinstri handleggur",
+	"scarecrow:transform-rightarm": "Fuglahræða – hægri handleggur"
 }

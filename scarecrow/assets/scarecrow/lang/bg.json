@@ -75,5 +75,7 @@
 	"scarecrow:interaction-error-equipment": "Този предмет не пасва на тази точка за закрепване.",
 	"scarecrow:interaction-error-occupied": "Тази точка за закрепване вече е заета.",
 	"scarecrow:interaction-error-owner": "Само собственикът може да променя това плашило.",
-	"scarecrow:interaction-error-claim": "Нямате разрешение за достъп до тази територия."
+	"scarecrow:interaction-error-claim": "Нямате разрешение за достъп до тази територия.",
+	"scarecrow:transform-leftarm": "Плашило — лява ръка",
+	"scarecrow:transform-rightarm": "Плашило — дясна ръка"
 }

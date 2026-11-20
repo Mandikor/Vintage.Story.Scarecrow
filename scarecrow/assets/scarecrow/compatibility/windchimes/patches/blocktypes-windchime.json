@@ -18,7 +18,43 @@
           "texturePrefixCode": "scarecrow-windchimes"
         },
         "scarecrowWindChime": true,
-        "scarecrowRadiusBonus": 6
+        "scarecrowRadiusBonus": 6,
+        "onScarecrowRightArmTransform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "origin": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          },
+          "scale": 1
+        },
+        "onScarecrowLeftArmTransform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "origin": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          },
+          "scale": 1
+        }
       },
       "*-wood": {
         "attachableToEntity": {
@@ -33,7 +69,43 @@
           "texturePrefixCode": "scarecrow-windchimes"
         },
         "scarecrowWindChime": true,
-        "scarecrowRadiusBonus": 6
+        "scarecrowRadiusBonus": 6,
+        "onScarecrowRightArmTransform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "origin": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          },
+          "scale": 1
+        },
+        "onScarecrowLeftArmTransform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "origin": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          },
+          "scale": 1
+        }
       },
       "*-brass": {
         "attachableToEntity": {
@@ -48,7 +120,43 @@
           "texturePrefixCode": "scarecrow-windchimes"
         },
         "scarecrowWindChime": true,
-        "scarecrowRadiusBonus": 6
+        "scarecrowRadiusBonus": 6,
+        "onScarecrowRightArmTransform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "origin": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          },
+          "scale": 1
+        },
+        "onScarecrowLeftArmTransform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "origin": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          },
+          "scale": 1
+        }
       },
       "*-copper": {
         "attachableToEntity": {
@@ -63,7 +171,43 @@
           "texturePrefixCode": "scarecrow-windchimes"
         },
         "scarecrowWindChime": true,
-        "scarecrowRadiusBonus": 6
+        "scarecrowRadiusBonus": 6,
+        "onScarecrowRightArmTransform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "origin": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          },
+          "scale": 1
+        },
+        "onScarecrowLeftArmTransform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "origin": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          },
+          "scale": 1
+        }
       },
       "*-crystal-*": {
         "attachableToEntity": {
@@ -78,7 +222,43 @@
           "texturePrefixCode": "scarecrow-windchimes"
         },
         "scarecrowWindChime": true,
-        "scarecrowRadiusBonus": 6
+        "scarecrowRadiusBonus": 6,
+        "onScarecrowRightArmTransform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "origin": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          },
+          "scale": 1
+        },
+        "onScarecrowLeftArmTransform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "origin": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          },
+          "scale": 1
+        }
       },
       "*-bone": {
         "attachableToEntity": {
@@ -93,7 +273,43 @@
           "texturePrefixCode": "scarecrow-windchimes"
         },
         "scarecrowWindChime": true,
-        "scarecrowRadiusBonus": 6
+        "scarecrowRadiusBonus": 6,
+        "onScarecrowRightArmTransform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "origin": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          },
+          "scale": 1
+        },
+        "onScarecrowLeftArmTransform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "origin": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          },
+          "scale": 1
+        }
       }
     }
   }

@@ -88,6 +88,8 @@ namespace Scarecrow
                         : (index == 0 ? "ScarecrowWindChimeLeftAP" : "ScarecrowWindChimeRightAP"));
                 if (point == null) continue;
                 chimeMatrix.Set(ModelMat).Mul(point.AnimModelMatrix);
+                float[] armTransform = ScarecrowArmTransform.GetMatrix(stack, index == 0 ? "sc-leftarm" : "sc-rightarm");
+                if (armTransform != null) chimeMatrix.Mul(armTransform);
                 if (lanterns[index] is AnimatedArmLantern armLantern)
                 {
                     if (advance)

@@ -8,15 +8,61 @@
       "texturePrefixCode": "scarecrow-hayfork-{material}",
       "attachedShapeBySlotCodeByType": {
         "hayfork-wooden": {
-          "sc-leftarm": { "base": "scarecrow:item/wearable/aog/hayfork-wood-left" },
-          "sc-rightarm": { "base": "scarecrow:item/wearable/aog/hayfork-wood-right" }
+          "sc-leftarm": { "base": "artofgrowing:item/tool/hayfork-wood" },
+          "sc-rightarm": { "base": "artofgrowing:item/tool/hayfork-wood" }
         },
         "*": {
-          "sc-leftarm": { "base": "scarecrow:item/wearable/aog/hayfork-metal-left" },
-          "sc-rightarm": { "base": "scarecrow:item/wearable/aog/hayfork-metal-right" }
+          "sc-leftarm": { "base": "artofgrowing:item/tool/hayfork-metal" },
+          "sc-rightarm": { "base": "artofgrowing:item/tool/hayfork-metal" }
         }
       }
     },
     "side": "server"
+  },
+  {
+    "file": "artofgrowing:itemtypes/tool/hayfork.json",
+    "op": "add",
+    "path": "/attributes/onScarecrowLeftArmTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    }
+  },
+  {
+    "file": "artofgrowing:itemtypes/tool/hayfork.json",
+    "op": "add",
+    "path": "/attributes/onScarecrowRightArmTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    }
   }
 ]

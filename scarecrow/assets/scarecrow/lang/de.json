@@ -71,5 +71,7 @@
 	"scarecrow:interaction-error-equipment": "Dieser Gegenstand passt nicht an diesen Befestigungspunkt.",
 	"scarecrow:interaction-error-occupied": "Dieser Befestigungspunkt ist bereits belegt.",
 	"scarecrow:interaction-error-owner": "Nur der Eigentümer darf diese Vogelscheuche verändern.",
-	"scarecrow:interaction-error-claim": "Du hast hier keine Zugriffsberechtigung."
+	"scarecrow:interaction-error-claim": "Du hast hier keine Zugriffsberechtigung.",
+	"scarecrow:transform-leftarm": "Vogelscheuche – linker Arm",
+	"scarecrow:transform-rightarm": "Vogelscheuche – rechter Arm"
 }

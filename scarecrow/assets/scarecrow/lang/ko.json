@@ -75,5 +75,7 @@
 	"scarecrow:interaction-error-equipment": "이 아이템은 이 부착 지점에 맞지 않습니다.",
 	"scarecrow:interaction-error-occupied": "이 부착 지점은 이미 사용 중입니다.",
 	"scarecrow:interaction-error-owner": "소유자만 이 허수아비를 변경할 수 있습니다.",
-	"scarecrow:interaction-error-claim": "이 구역에 접근할 권한이 없습니다."
+	"scarecrow:interaction-error-claim": "이 구역에 접근할 권한이 없습니다.",
+	"scarecrow:transform-leftarm": "허수아비 – 왼팔",
+	"scarecrow:transform-rightarm": "허수아비 – 오른팔"
 }

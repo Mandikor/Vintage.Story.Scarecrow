@@ -38,8 +38,9 @@ namespace Scarecrow
                 Block textureBlock = stack.Block;
                 if (stack.ItemAttributes["scarecrowUseCeilingTextures"].AsBool(false))
                 {
-                    // Oil-lamp ceiling ropes are not present in the inventory/ground model's atlas
-                    // mapping. Use the actual hanging variant's texture source, keeping its color.
+                    // Hanging shapes can contain texture keys absent from the inventory/ground
+                    // atlas mapping (oil-lamp rope, More Lanterns ropes/paper/metal). Use the
+                    // actual ceiling variant's texture source, retaining state/color/brightness.
                     AssetLocation code = stack.Block.Code;
                     textureBlock = api.World.GetBlock(new AssetLocation(code.Domain, code.Path[..^2] + "down")) ?? textureBlock;
                 }

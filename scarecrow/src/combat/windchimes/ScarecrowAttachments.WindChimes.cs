@@ -65,16 +65,26 @@ namespace Scarecrow
                 && ((windChimesEnabled && gearslot.Itemstack?.ItemAttributes?["scarecrowWindChime"].AsBool(false) == true)
                     || (IsArmInventorySlot(gearslot) && AnimatedArmLantern.Matches(gearslot.Itemstack))))
                 return entityShape;
-            return base.addGearToShape(entityShape, gearslot, slotCode, shapePathForLogging,
+            string armCode = GetArmSlotCode(gearslot);
+            if (entityShape == null || ScarecrowArmTransform.GetMatrix(gearslot.Itemstack, armCode) == null)
+                return base.addGearToShape(entityShape, gearslot, slotCode, shapePathForLogging,
+                    ref shapeIsCloned, ref willDeleteElements, overrideStepParent);
+            if (!shapeIsCloned) { entityShape = entityShape.Clone(); shapeIsCloned = true; }
+            var previous = ScarecrowArmTransform.Snapshot(entityShape);
+            Shape result = base.addGearToShape(entityShape, gearslot, slotCode, shapePathForLogging,
                 ref shapeIsCloned, ref willDeleteElements, overrideStepParent);
+            ScarecrowArmTransform.ApplyToAdded(result, previous, gearslot.Itemstack, armCode);
+            return result;
         }
 
-        private bool IsArmInventorySlot(ItemSlot slot)
+        private bool IsArmInventorySlot(ItemSlot slot) => GetArmSlotCode(slot) != null;
+
+        private string GetArmSlotCode(ItemSlot slot)
         {
-            if (inv == null) return false;
+            if (inv == null) return null;
             for (int i = 0; i < inv.Count && i < slotCodes.Length; i++)
-                if (ReferenceEquals(inv[i], slot)) return slotCodes[i] is "sc-leftarm" or "sc-rightarm";
-            return false;
+                if (ReferenceEquals(inv[i], slot)) return ScarecrowArmTransform.AttributeForSlot(slotCodes[i]) != null ? slotCodes[i] : null;
+            return null;
         }
     }
 }

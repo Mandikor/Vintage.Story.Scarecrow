@@ -5,6 +5,42 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### General arm transforms and native editor integration
+
+- Switch both arms' scythes, metal/stone hoes, bug nets, snow shovels, Art of
+  Growing hayforks and Leaf Litter rakes to their original game/mod models.
+  Remove 16 obsolete tool attachment shapes and preserve all authored transform
+  values, including the author's tested right-arm bug-net placement. Other tool
+  positions are intentionally left for manual calibration in the native editor.
+- Add optional `onScarecrowLeftArmTransform` and `onScarecrowRightArmTransform`
+  collectible attributes using native ModelTransform translation, rotation,
+  origin and scaling. Apply adjustments to newly attached static geometry or the
+  animated attachment frame before wind motion, including shadows/particles.
+  Preserve body geometry, other equipment, native categories and slot permissions.
+- Register separate arm targets in the native transform editor, with local live
+  preview refresh and labels in all 33 languages. Exported JSON must be saved to
+  source assets; preview changes are not synchronized to the server. Remove owned
+  editor entries on disposal. No Walking Stick integration is added yet.
+- Build and checks pass for native matrix equivalence in both animation versions,
+  independent arms, default/invalid metadata, cache invalidation, geometry isolation
+  and editor registration/events/cleanup. The author's transform game test passed.
+- Add explicit neutral left/right defaults to all 16 existing arm-attachment
+  definitions across 12 patch files, covering vanilla tools/lights, Art of Growing,
+  Leaf Litter, More Lanterns, Wind Chimes, Dreamcatchers, censership and Primitive
+  Survival. Translation/rotation remain zero, origin is 0.5 per axis and scale is
+  one, preserving authored placement. Neck/foot-only items are unchanged.
+- Fix six startup patch errors reported in game: More Lanterns and Wind Chimes
+  define attributes by type, so place their neutral transforms in the existing
+  `attributesByType` branches rather than beneath a missing root `attributes`.
+  Verify all 62 operations in the 12 affected patch files with the game's actual
+  JSON patch library against the supplied assets.
+- Use More Lanterns ceiling variants as texture sources for animated arm models,
+  preserving state/color/brightness and supplying rope, paper and coal mappings
+  missing from floor-model texture sources. The author's retest passed; fresh
+  client/server main/debug logs contain no errors and no previous texture-mapping
+  failures. Server warnings remain about missing `GlassSouthL` step parents for
+  Modern 1/2 and Gothic 1 on the Plumpkins shape; these need separate review.
+
 ### Animal Cages release compatibility
 
 - Install a server-side Harmony hook only when Animal Cages is active. Mark the

@@ -75,5 +75,7 @@
 	"scarecrow:interaction-error-equipment": "Este objeto no encaja en este punto de sujeción.",
 	"scarecrow:interaction-error-occupied": "Este punto de sujeción ya está ocupado.",
 	"scarecrow:interaction-error-owner": "Solo el propietario puede modificar este espantapájaros.",
-	"scarecrow:interaction-error-claim": "No tienes permiso para acceder a esta zona."
+	"scarecrow:interaction-error-claim": "No tienes permiso para acceder a esta zona.",
+	"scarecrow:transform-leftarm": "Espantapájaros – brazo izquierdo",
+	"scarecrow:transform-rightarm": "Espantapájaros – brazo derecho"
 }

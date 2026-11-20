@@ -75,5 +75,7 @@
 	"scarecrow:interaction-error-equipment": "Ĉi tiu objekto ne taŭgas por ĉi tiu fikspunkto.",
 	"scarecrow:interaction-error-occupied": "Ĉi tiu fikspunkto jam estas okupita.",
 	"scarecrow:interaction-error-owner": "Nur la posedanto povas modifi ĉi tiun birdotimigilon.",
-	"scarecrow:interaction-error-claim": "Vi ne havas permeson aliri ĉi tiun teritorion."
+	"scarecrow:interaction-error-claim": "Vi ne havas permeson aliri ĉi tiun teritorion.",
+	"scarecrow:transform-leftarm": "Birdotimigilo – maldekstra brako",
+	"scarecrow:transform-rightarm": "Birdotimigilo – dekstra brako"
 }

@@ -57,6 +57,17 @@ implementation. Tool bonuses were removed from the plan at the author's request.
    interception immediately. Implemented; build and automated inventory/drop and
    wind chime checks passed.
 
+9. [x] **General per-arm transforms for modders.** Optional native ModelTransform
+   attributes for left/right arms, static and animated equipment, plus native
+   transform-editor entries and local preview refresh. Existing categories and
+   attachment permissions remain intact. Build and isolated checks passed;
+   see the [modder guide](docs/scarecrow-arm-transforms.md).
+   The author completed the transform game test successfully. All existing arm
+   attachment patches now include neutral left/right transform defaults; neck and
+   foot-only items are unchanged.
+   Tool arm shapes have been replaced by original models; the author's calibrated
+   right-arm bug net is preserved. Remaining tool transforms await manual tuning.
+
 ## Compatibility review — updated 2026-11-20
 
 Reconciled with manifests in both ZIP archives and unpacked directories under

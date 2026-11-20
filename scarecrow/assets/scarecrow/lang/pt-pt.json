@@ -75,5 +75,7 @@
 	"scarecrow:interaction-error-equipment": "Este objeto não serve neste ponto de fixação.",
 	"scarecrow:interaction-error-occupied": "Este ponto de fixação já está ocupado.",
 	"scarecrow:interaction-error-owner": "Só o proprietário pode modificar este espantalho.",
-	"scarecrow:interaction-error-claim": "Não tens permissão para aceder a esta área."
+	"scarecrow:interaction-error-claim": "Não tens permissão para aceder a esta área.",
+	"scarecrow:transform-leftarm": "Espantalho – braço esquerdo",
+	"scarecrow:transform-rightarm": "Espantalho – braço direito"
 }

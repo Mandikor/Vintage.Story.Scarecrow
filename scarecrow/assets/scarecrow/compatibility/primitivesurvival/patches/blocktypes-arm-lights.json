@@ -235,5 +235,97 @@
     "op": "add",
     "value": "primitivesurvival:fireflies-marshimp-straight",
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-"
+  },
+  {
+    "file": "primitivesurvival:blocktypes/glass/fireflies.json",
+    "op": "add",
+    "path": "/attributes/onScarecrowLeftArmTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    }
+  },
+  {
+    "file": "primitivesurvival:blocktypes/glass/fireflies.json",
+    "op": "add",
+    "path": "/attributes/onScarecrowRightArmTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    }
+  },
+  {
+    "file": "primitivesurvival:blocktypes/wood/woodlantern.json",
+    "op": "add",
+    "path": "/attributes/onScarecrowLeftArmTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    }
+  },
+  {
+    "file": "primitivesurvival:blocktypes/wood/woodlantern.json",
+    "op": "add",
+    "path": "/attributes/onScarecrowRightArmTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    }
   }
 ]

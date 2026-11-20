@@ -75,5 +75,7 @@
 	"scarecrow:interaction-error-equipment": "Гэты прадмет не падыходзіць да гэтага мацавання.",
 	"scarecrow:interaction-error-occupied": "Гэтае мацаванне ўжо занятае.",
 	"scarecrow:interaction-error-owner": "Толькі ўладальнік можа змяняць гэтае пудзіла.",
-	"scarecrow:interaction-error-claim": "У вас няма дазволу на доступ да гэтай тэрыторыі."
+	"scarecrow:interaction-error-claim": "У вас няма дазволу на доступ да гэтай тэрыторыі.",
+	"scarecrow:transform-leftarm": "Пудзіла — левая рука",
+	"scarecrow:transform-rightarm": "Пудзіла — правая рука"
 }

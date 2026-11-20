@@ -9,6 +9,7 @@ namespace Scarecrow
     {
         public ScarecrowConfig Config { get; private set; }
         private System.IDisposable serverCompatibility;
+        private System.IDisposable transformEditor;
 
         // Register stable JSON-facing names on both sides before entities or inventories load.
         public override void Start(ICoreAPI api)
@@ -43,6 +44,7 @@ namespace Scarecrow
         {
             base.StartClientSide(api);
             ModCompatibility.RegisterClientRenderers(api);
+            transformEditor = new ScarecrowTransformEditor(api);
         }
 
         public override void StartServerSide(ICoreServerAPI api)
@@ -55,6 +57,8 @@ namespace Scarecrow
         {
             serverCompatibility?.Dispose();
             serverCompatibility = null;
+            transformEditor?.Dispose();
+            transformEditor = null;
             base.Dispose();
         }
     }

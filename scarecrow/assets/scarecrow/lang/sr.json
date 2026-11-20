@@ -75,5 +75,7 @@
 	"scarecrow:interaction-error-equipment": "Овај предмет не одговара овом месту за причвршћивање.",
 	"scarecrow:interaction-error-occupied": "Ово место за причвршћивање је већ заузето.",
 	"scarecrow:interaction-error-owner": "Само власник може да мења ово страшило.",
-	"scarecrow:interaction-error-claim": "Немате дозволу за приступ овој територији."
+	"scarecrow:interaction-error-claim": "Немате дозволу за приступ овој територији.",
+	"scarecrow:transform-leftarm": "Страшило – лева рука",
+	"scarecrow:transform-rightarm": "Страшило – десна рука"
 }

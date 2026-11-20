@@ -7,12 +7,58 @@
     "value": {
       "attachableToEntity": {
         "attachedShapeBySlotCode": {
-          "sc-leftarm": { "base": "scarecrow:item/wearable/leaflitter/rake-left" },
-          "sc-rightarm": { "base": "scarecrow:item/wearable/leaflitter/rake-right" }
+          "sc-leftarm": { "base": "leaflitter:item/rake" },
+          "sc-rightarm": { "base": "leaflitter:item/rake" }
         },
         "texturePrefixCode": "scarecrow-rake"
       }
     },
     "side": "server"
+  },
+  {
+    "file": "leaflitter:itemtypes/rake.json",
+    "op": "add",
+    "path": "/attributes/onScarecrowLeftArmTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    }
+  },
+  {
+    "file": "leaflitter:itemtypes/rake.json",
+    "op": "add",
+    "path": "/attributes/onScarecrowRightArmTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    }
   }
 ]

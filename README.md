@@ -218,6 +218,20 @@ The mod preserves the original attachment categories of tools and other equipmen
 For example, hoes and scythes remain compatible with vanilla stands. The scarecrow
 uses its own item-code whitelist to decide which of those tools it accepts.
 
+### Arm transforms for modders
+
+Optional `onScarecrowLeftArmTransform` and `onScarecrowRightArmTransform`
+collectible attributes adjust translation, rotation, origin and scale using the
+game's standard transform format. Static equipment and animated attachments are
+supported on both full-size shapes. Existing items without these attributes retain
+their appearance; attachment permission and native categories remain separate.
+
+The native `.tfedit` transform list includes **Scarecrow – left arm** and
+**Scarecrow – right arm**, with a local preview refresh for equipped copies of
+the selected collectible. Export the JSON and save it in your assets to retain
+changes. See the [modder guide](docs/scarecrow-arm-transforms.md) for examples,
+coordinate frames and testing instructions.
+
 ### Primitive Survival
 
 With **Primitive Survival 5.1.4**, attach any of its 13 wooden lanterns or seven

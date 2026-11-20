@@ -28,5 +28,51 @@
     },
     "path": "/attributes",
     "op": "addmerge"
+  },
+  {
+    "file": "censership:blocktypes/censerattachable.json",
+    "op": "add",
+    "path": "/attributes/onScarecrowLeftArmTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    }
+  },
+  {
+    "file": "censership:blocktypes/censerattachable.json",
+    "op": "add",
+    "path": "/attributes/onScarecrowRightArmTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    }
   }
 ]
