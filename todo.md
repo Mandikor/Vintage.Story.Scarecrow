@@ -79,8 +79,8 @@ implementation. Tool bonuses were removed from the plan at the author's request.
 
 Reconciled with manifests in both ZIP archives and unpacked directories under
 `Mods_Scarecrow` after the local library cleanup. Duplicate copies and versions
-count once per mod ID: 58 IDs are present (including Animal Cages, re-added after
-cleanup), of which 52 have direct integration
+count once per mod ID: 59 IDs are present (including Animal Cages, re-added after
+cleanup, and Adventurer's Walking Stick), of which 53 have direct integration
 or inherit supported content. Six have no explicit integration: two aquatic
 mods remain reviewed/deferred, and four remain open review candidates below.
 Absent mods have been removed from this active backlog; existing compatibility code remains
@@ -194,6 +194,14 @@ snapshot of 81 IDs and does not describe the cleaned current library.
 - [ ] **P1 — Pet AI** (`petai`, 5.1.2): Verify custom pet combat, owner commands and inventory handling; infrastructure, not a new species.
 
 ### Equipment and decoration candidates
+
+- [x] **Adventurer's Walking Stick implementation** (`walkingstick`, 3.0.12):
+  18 complete definitions/30 variants on either full-size arm, original models,
+  neutral transforms and pendulum off. Preserve native categories/riding slots;
+  exclude separate weapons and empty sheaths. Build and 54-operation/30-variant
+  checks passed; no radius bonus or player-ability adapter.
+- [x] **Walking Stick game test:** the author completed the in-game test
+  successfully. Per-item arm transforms remain available for further calibration.
 
 - [x] **Plumpkins attachment fix** (`plumpkins`, 1.1.3): apply the existing arm
   mount patches to the alternative full-size model, preserving its rounded head

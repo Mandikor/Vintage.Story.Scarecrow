@@ -1,0 +1,57 @@
+[
+  {
+    "file": "walkingstick:itemtypes/tool/walkingsticks/walkingstick-shepherds.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "value": {
+      "attachableToEntity": {
+        "attachedShapeBySlotCode": {
+          "sc-leftarm": {
+            "base": "walkingstick:tool/walkingsticks/walkingstick-shepherds"
+          },
+          "sc-rightarm": {
+            "base": "walkingstick:tool/walkingsticks/walkingstick-shepherds"
+          }
+        },
+        "texturePrefixCode": "scarecrow-walkingstick-shepherds"
+      },
+      "onScarecrowLeftArmTransform": {
+        "translation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 1
+      },
+      "onScarecrowRightArmTransform": {
+        "translation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 1
+      },
+      "scarecrowPendulum": false
+    }
+  }
+]

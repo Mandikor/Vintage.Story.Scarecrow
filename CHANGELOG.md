@@ -5,6 +5,22 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Adventurer's Walking Stick arm attachments
+
+- Support 18 complete stick definitions/30 variants from walkingstick 3.0.12 on
+  either arm of both full-size models, including 13 lantern materials and complete
+  sheathed sticks. Exclude separate hidden blades/guns and empty sheaths, as well
+  as small-scarecrow, neck and foot slots.
+- Reference original models with neutral per-arm transforms for manual editor
+  calibration and pendulum motion initially disabled. Preserve original categories,
+  40 existing riding-animal attachment configurations and native item properties.
+  No radius bonus or active player-ability adapter is added. Keep all patches in
+  `compatibility/walkingstick/patches`; no C# integration is required.
+- Build and checks pass for 54 operations using the game's actual JSON patch
+  library, all 30 variants, original shapes and categories, slot/domain exclusions
+  and zero bonus. The author's in-game test passed; individual positions remain
+  editable through the per-arm transforms.
+
 ### General wind-driven pendulum switch
 
 - Add `scarecrowPendulum` as a visual-only opt-in for whole item/block models on

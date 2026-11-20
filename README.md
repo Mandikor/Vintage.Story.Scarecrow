@@ -248,6 +248,21 @@ can supply another pivot. See the [modder guide](docs/scarecrow-arm-transforms.m
 for coordinate details and custom attachment-point support. The setting affects
 the full-size scarecrow's arms only and does not make an item attachable by itself.
 
+### Adventurer's Walking Stick
+
+With **Adventurer's Walking Stick 3.0.12**, both full-size scarecrow models accept
+18 complete walking-stick types (30 variants, including 13 lantern materials) on
+either arm. Attach them with **Shift + right-click** instead of another tool.
+Separate hidden blades/guns and empty sheaths are excluded; complete sheathed
+walking sticks are included. Neck/foot slots and the little scarecrow are excluded.
+
+The patches reference the original item models and preserve existing `utilities`
+categories and riding-animal attachments. Left/right transforms start neutral for
+manual alignment through `.tfedit`; pendulum motion initially stays off and may be
+enabled in the patches. No radius bonus or active player ability is added. See the
+[compatibility guide](docs/walkingstick-compatibility.md). All JSON files are under
+`compatibility/walkingstick/patches`.
+
 ### Primitive Survival
 
 With **Primitive Survival 5.1.4**, attach any of its 13 wooden lanterns or seven
@@ -425,6 +440,7 @@ The repository includes compatibility assets for the following mods and families
 | Plumpkins | Alternative pumpkin shape for the scarecrow and its item, retaining the standard equipment mounts and animated arm attachments |
 | Primitive Survival 5.1.4 | Wooden lanterns and filled Firefly Jars as wind-driven arm lighting; +2/+1 natural-spawn radius bonuses |
 | Animal Cages 5.0.1 | Cage releases remain outside natural-spawn blocking; optional server-side Harmony integration |
+| Adventurer's Walking Stick 3.0.12 | Complete walking sticks on either full-size arm, original models and editable transforms |
 | Grass to Ropes | Alternative crafting recipes |
 | Leaf Litter | Rake attachment shapes |
 | More Lanterns by Ape | Paper and metal lantern attachments with natural-spawn radius bonuses |
