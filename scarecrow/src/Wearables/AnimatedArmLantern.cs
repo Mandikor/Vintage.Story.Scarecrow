@@ -14,6 +14,7 @@ namespace Scarecrow
         private readonly WindChimeMotion motion;
         private readonly float scale;
         private readonly CenserArmSmoke smoke;
+        private readonly ArmAttachmentParticles oilLampParticles;
 
         public static bool Matches(ItemStack stack) => stack?.Block != null
             && (stack.ItemAttributes?["scarecrowArmLantern"].AsBool(false) == true
@@ -32,13 +33,31 @@ namespace Scarecrow
                 mesh = vanilla.GenMesh(api, stack.Attributes.GetString("material", "copper"),
                     stack.Attributes.GetString("lining", "plain"), stack.Attributes.GetString("glass", "quartz"), shape);
             }
-            else api.Tesselator.TesselateShape(stack.Block, shape, out mesh,
-                new Vec3f(model.rotateX, model.rotateY, model.rotateZ));
+            else
+            {
+                Block textureBlock = stack.Block;
+                if (stack.ItemAttributes["scarecrowUseCeilingTextures"].AsBool(false))
+                {
+                    // Oil-lamp ceiling ropes are not present in the inventory/ground model's atlas
+                    // mapping. Use the actual hanging variant's texture source, keeping its color.
+                    AssetLocation code = stack.Block.Code;
+                    textureBlock = api.World.GetBlock(new AssetLocation(code.Domain, code.Path[..^2] + "down")) ?? textureBlock;
+                }
+                api.Tesselator.TesselateShape(textureBlock, shape, out mesh,
+                    new Vec3f(model.rotateX, model.rotateY, model.rotateZ));
+            }
             Mesh = api.Render.UploadMultiTextureMesh(mesh);
             scale = stack.ItemAttributes["scarecrowArmLanternScale"].AsFloat(.6f);
             motion = new WindChimeMotion(entityId, arm);
             if (stack.ItemAttributes["scarecrowCenserSmoke"].AsBool(false) && api.ModLoader.IsModEnabled("censership"))
                 smoke = new CenserArmSmoke(api, stack.Block, scale);
+            if (stack.ItemAttributes["scarecrowOilLampParticles"].AsBool(false))
+            {
+                // The placed-block emitter uses a fixed height that does not match the rendered
+                // hanging shape. Locate the model's flame pivot before applying the arm transform.
+                oilLampParticles = new ArmAttachmentParticles(stack.Block.ParticleProperties,
+                    FindOilLampWick(shape), scale);
+            }
             UpdateTransform(0, 0, 0);
         }
 
@@ -47,6 +66,29 @@ namespace Scarecrow
             motion.Advance(dt, windX, windZ);
             var angles = motion.GetAngles(0);
             UpdateTransform(angles.pitch * .65f, angles.yaw * .3f, angles.roll * .65f);
+        }
+
+        internal static Vec3f FindOilLampWick(Shape shape)
+        {
+            Vec3f Find(ShapeElement[] elements, float[] parent)
+            {
+                if (elements == null) return null;
+                foreach (ShapeElement element in elements)
+                {
+                    if (string.Equals(element.Name, "Flame", StringComparison.OrdinalIgnoreCase))
+                    {
+                        double[] origin = element.RotationOrigin ?? element.From;
+                        float[] point = Mat4f.MulWithVec4(parent, (float)origin[0] / 16,
+                            (float)origin[1] / 16, (float)origin[2] / 16, 1);
+                        return new Vec3f(point[0], point[1], point[2]);
+                    }
+                    float[] matrix = Mat4f.Mul(new float[16], parent, element.GetLocalTransformMatrix(0));
+                    Vec3f found = Find(element.Children, matrix);
+                    if (found != null) return found;
+                }
+                return null;
+            }
+            return Find(shape.Elements, Mat4f.Create()) ?? new Vec3f(.5f, 7f / 32, .5f);
         }
 
         private void UpdateTransform(float pitch, float yaw, float roll)
@@ -59,7 +101,10 @@ namespace Scarecrow
 
         public void Dispose() { Mesh?.Dispose(); Mesh = null; }
 
-        public void EmitSmoke(ICoreClientAPI api, float dt, Matrixf cameraRelativeModel)
-            => smoke?.Emit(api, dt, cameraRelativeModel);
+        public void EmitParticles(ICoreClientAPI api, float dt, Matrixf cameraRelativeModel)
+        {
+            smoke?.Emit(api, dt, cameraRelativeModel);
+            oilLampParticles?.Emit(api, dt, cameraRelativeModel);
+        }
     }
 }

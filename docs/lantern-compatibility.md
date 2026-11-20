@@ -8,6 +8,43 @@ slot for both vanilla and supported More Lanterns lanterns.
 
 ## Wind animation and existing inventories
 
+### Vanilla oil lamps
+
+Filled vanilla `oillamp-*-up` inventory variants can also occupy either full-size
+arm. Contrary to the initial assumption, Vintage Story 1.22.7 provides
+`game:block/clay/claylamp-ceiling`, including its suspension and flame geometry.
+This original model is used instead of adapting a wall bracket. All ten ceramic
+colors retain their original textures and light emission, and use the existing
+arm pendulum renderer at scale 0.6. The matching placed/down variant supplies
+textures so the ceiling rope is available as well as the ceramic/oil/fire.
+
+Oil lamps add **one block** to natural-spawn protection (17 blocks on the full-size
+scarecrow's default base radius). Only the strongest equipment bonus applies;
+two oil lamps still give +1. Raw, empty fired lamps,
+wall/down inventory states, neck/foot slots and the little scarecrow are excluded.
+The stack retains its normal inventory code for removal, drops and pickup. World
+placement and block particle definitions are unchanged. Both original particle
+profiles are also emitted on the arms: flame quads and occasional smoke. Each
+arm owns private copies, retaining native colors, quantities, velocity and lifetime;
+particle size/spread scale with the model. The source is derived from the
+ceiling model's `Flame` pivot and all its parent transforms, rather than the
+placed block's fixed emission height, and follows the full swinging transform.
+Emission is throttled, skips paused games and distant models, and does not
+advance in shadow passes. No placed-block particle data is mutated.
+
+The three operations in `patches/wearables/blocktypes-oillamp.json` add optional
+attachment metadata and the two arm permissions. Checks use the actual game
+variant resolver for all 60 color/orientation combinations, verifying ten
+eligible lamps, original properties, both arm slots, exclusions, the +1 bonus and
+static-mesh exclusion. Particle checks confirm independent arm data, both native
+profiles, native quantity/lifetime, correct wick source and unchanged originals.
+The first particle test found the source too low; the corrected source now uses
+the actual model wick instead of the block emitter's 7/32 height.
+Build passes; the author completed the in-game retest successfully after the
+particle-source correction.
+
+### Metal and supported mod lanterns
+
 Arm lanterns swing as rigid bodies around their ceiling-model suspension points,
 using independent wind/damping state per arm. Upright mounts compensate for arm
 angles. The animation works with and without Immersive Lanterns and does not
@@ -29,6 +66,7 @@ New neck insertion is denied. No equipment is dropped or discarded by migration.
 
 | Lantern | Natural-spawn radius bonus |
 | --- | ---: |
+| Filled vanilla oil lamp, full-size arms only | +1 block |
 | Small vanilla lantern | +2 blocks |
 | Large vanilla lantern | +4 blocks |
 | More Lanterns paper lantern | +2 blocks |

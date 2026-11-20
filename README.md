@@ -192,6 +192,7 @@ animal flee and attack behavior remains species-specific.
 | Left and right arms, full-size scarecrow only | Scythes, hoes, bug nets and snow shovels |
 | Left and right arms with optional mods | Art of Growing hayforks and the Leaf Litter rake |
 | Arms, full-size scarecrow only | Small and large upright vanilla lanterns, instead of tools |
+| Arms, full-size scarecrow only | Filled vanilla oil lamps in all ten colors, with original ceiling suspension, flame/smoke particles and +1 block natural-spawn radius bonus (does not stack) |
 | Neck, little scarecrow only | Small and large upright vanilla lanterns, plus supported More Lanterns paper/metal lanterns |
 | Arms with More Lanterns, full-size scarecrow only | The same paper and metal lanterns, instead of tools |
 | Arms with Wind Chimes, full-size scarecrow only | Bamboo, wood, bone, brass, copper and crystal wind chimes, instead of tools |

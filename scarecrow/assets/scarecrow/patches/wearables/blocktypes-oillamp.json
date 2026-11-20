@@ -1,0 +1,41 @@
+[
+  {
+    "file": "game:blocktypes/clay/fired/oillamp.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "value": {
+      "scarecrowArmLanternByType": {
+        "*-up": true,
+        "*": false
+      },
+      "scarecrowArmLanternScale": 0.6,
+      "scarecrowRadiusBonusByType": {
+        "*-up": 1,
+        "*": 0
+      },
+      "scarecrowUseCeilingTextures": true,
+      "scarecrowOilLampParticles": true,
+      "attachableToEntityByType": {
+        "*-up": {
+          "attachedShapeBySlotCode": {
+            "sc-leftarm": { "base": "game:block/clay/claylamp-ceiling" },
+            "sc-rightarm": { "base": "game:block/clay/claylamp-ceiling" }
+          },
+          "texturePrefixCode": "scarecrow-oillamp"
+        }
+      }
+    }
+  },
+  {
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "add",
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
+    "value": "game:oillamp-*-up"
+  },
+  {
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "add",
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
+    "value": "game:oillamp-*-up"
+  }
+]

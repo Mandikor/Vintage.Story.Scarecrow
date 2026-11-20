@@ -171,6 +171,13 @@ explicit integration. Two of those are reviewed/deferred fully aquatic mods;
 
 ### Equipment and decoration candidates
 
+- [x] **Vanilla oil-lamp arm implementation:** ten filled colors using the native
+  ceiling suspension/flame model, light, flame/smoke particles and pendulum motion;
+  +1 radius bonus. Particle profiles are private per arm and follow the wick.
+  Raw/empty lamps and other slots excluded; checks pass for 60 variants.
+- [x] **Oil-lamp game test:** the author completed the in-game retest successfully
+  after correcting the particle source to the model's wick.
+
 - [x] **Arm lantern implementation:** vanilla small/large and More Lanterns
   pendulum animation; no new full-size neck insertion. Little neck retained.
   Saved/packed neck lanterns migrate to a free arm, otherwise remain removable

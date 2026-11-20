@@ -5,6 +5,24 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Vanilla oil lamps on arms
+
+- Allow all ten filled vanilla oil-lamp colors on either full-size scarecrow arm,
+  using the game's existing ceiling shape with suspension and flame geometry.
+  Reuse wind-driven pendulum motion and native light/ceramic textures; use the
+  hanging variant's texture source for the rope.
+- Add a +1-block natural-spawn radius bonus; retain strongest-only equipment
+  bonuses so two oil lamps do not stack. Exclude raw/empty lamps, wall/down states
+  and other slots. Add original flame/smoke particle profiles as private per-arm
+  copies following the swinging wick, with pause/range/throttle guards and no
+  shadow-pass emission. World blocks and shared particle data remain unchanged.
+- Correct a low oil-lamp particle source found in testing: derive the emitter
+  from the rendered ceiling model's flame pivot and parent transforms instead
+  of reusing the placed-block emission height.
+- Build and actual variant/slot checks pass for 60 color/orientation combinations,
+  including duplicate-mesh prevention. The author's in-game retest passed after
+  correcting the particle source.
+
 ### censership 1.0.6 arm decorations
 
 - Support 39 upright inventory censers on either full-size scarecrow arm:
