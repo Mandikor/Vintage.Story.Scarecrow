@@ -185,6 +185,17 @@ Other custom prefixes are identified explicitly as code prefixes. All 33 existin
 languages include the new labels. These figures describe natural-spawn protection;
 animal flee and attack behavior remains species-specific.
 
+### Animal Cages
+
+With **Animal Cages 5.0.1**, animals released from either cage size are treated as
+player releases rather than natural spawns. A server-side Harmony patch is
+installed only when `animalcages` is active. It marks the restored animal before
+spawning, so naturally caught hares and raccoons are not removed when released
+inside a scarecrow's protection radius. Other configured animal prefixes receive
+the same treatment. Saved animal data and ordinary flee/attack rules remain intact;
+natural spawns are still blocked normally. See the
+[compatibility guide](docs/animalcages-compatibility.md).
+
 ## Equipment
 
 | Attachment point | Accepted items |
@@ -383,6 +394,7 @@ The repository includes compatibility assets for the following mods and families
 | Art of Growing Breeding Addon patch | Crafting adjustments |
 | Plumpkins | Alternative pumpkin shape for the scarecrow and its item, retaining the standard equipment mounts and animated arm attachments |
 | Primitive Survival 5.1.4 | Wooden lanterns and filled Firefly Jars as wind-driven arm lighting; +2/+1 natural-spawn radius bonuses |
+| Animal Cages 5.0.1 | Cage releases remain outside natural-spawn blocking; optional server-side Harmony integration |
 | Grass to Ropes | Alternative crafting recipes |
 | Leaf Litter | Rake attachment shapes |
 | More Lanterns by Ape | Paper and metal lantern attachments with natural-spawn radius bonuses |

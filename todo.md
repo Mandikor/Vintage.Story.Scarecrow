@@ -61,7 +61,8 @@ implementation. Tool bonuses were removed from the plan at the author's request.
 
 Reconciled with manifests in both ZIP archives and unpacked directories under
 `Mods_Scarecrow` after the local library cleanup. Duplicate copies and versions
-count once per mod ID: 57 IDs are present, of which 51 have direct integration
+count once per mod ID: 58 IDs are present (including Animal Cages, re-added after
+cleanup), of which 52 have direct integration
 or inherit supported content. Six have no explicit integration: two aquatic
 mods remain reviewed/deferred, and four remain open review candidates below.
 Absent mods have been removed from this active backlog; existing compatibility code remains
@@ -164,6 +165,14 @@ snapshot of 81 IDs and does not describe the cleaned current library.
 
 ### Taming, pets and capture compatibility
 
+- [x] **Animal Cages release integration** (`animalcages`, 5.0.1): optional
+  server-side Harmony hook marks restored animals before spawning from either
+  cage size, preserving saved state and avoiding false natural-spawn removal.
+  Build and actual-DLL checks passed; natural spawning remains blocked normally.
+- [x] **Animal Cages game test:** the author captured naturally spawned hares and
+  raccoons and released them beside a scarecrow. Both appeared successfully and
+  their normal flee AI activated. Cage-size variants and occupied-cage save/reload
+  were not separately reported as tested in game.
 - [ ] **P1 — Pet AI** (`petai`, 5.1.2): Verify custom pet combat, owner commands and inventory handling; infrastructure, not a new species.
 
 ### Equipment and decoration candidates

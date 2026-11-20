@@ -5,6 +5,21 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Animal Cages release compatibility
+
+- Install a server-side Harmony hook only when Animal Cages is active. Mark the
+  restored animal with `origin = animalcages-release` before either cage size
+  spawns it. This prevents serialized `entityspawner` origins from causing
+  released hares, raccoons or other configured animals to be removed by Scarecrow.
+- Preserve saved animal state, normal AI and natural-spawn blocking. Keep the
+  integration under `src/combat/animalcages`, with no hard dependency on Animal
+  Cages and no JSON patches. Remove only this hook when the mod system is disposed.
+- Build and checks using the actual 5.0.1 DLL pass: reproduce the original removal,
+  verify both cage sizes, saved state, absent-mod gating, continued natural-spawn
+  blocking and patch disposal. The author's in-game test passed: naturally spawned
+  hares and raccoons were captured and released beside a scarecrow; both appeared
+  successfully and fled through their normal AI tasks.
+
 ### Primitive Survival arm lighting
 
 - Support all 13 wooden lanterns and seven filled Firefly Jar types from Primitive

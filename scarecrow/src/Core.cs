@@ -1,5 +1,6 @@
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
+using Vintagestory.API.Server;
 
 namespace Scarecrow
 {
@@ -7,6 +8,7 @@ namespace Scarecrow
     public class Core : ModSystem
     {
         public ScarecrowConfig Config { get; private set; }
+        private System.IDisposable serverCompatibility;
 
         // Register stable JSON-facing names on both sides before entities or inventories load.
         public override void Start(ICoreAPI api)
@@ -41,6 +43,19 @@ namespace Scarecrow
         {
             base.StartClientSide(api);
             ModCompatibility.RegisterClientRenderers(api);
+        }
+
+        public override void StartServerSide(ICoreServerAPI api)
+        {
+            base.StartServerSide(api);
+            serverCompatibility = ModCompatibility.StartServer(api);
+        }
+
+        public override void Dispose()
+        {
+            serverCompatibility?.Dispose();
+            serverCompatibility = null;
+            base.Dispose();
         }
     }
 }
