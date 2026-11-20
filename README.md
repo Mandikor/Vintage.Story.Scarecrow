@@ -39,7 +39,7 @@ The optional mods listed below are not required to use Scarecrow.
 
 | Type | Natural-spawn protection radius | Attachments |
 | --- | --- | --- |
-| Scarecrow | 16 blocks | Two tools, one lantern and one watering can |
+| Scarecrow | 16 blocks | Two arm items (tools, lanterns or supported decorations) and one watering can |
 | Little scarecrow | 12 blocks | One lantern and one watering can |
 | Vanilla straw dummy | 8 blocks | No additional attachment slots from this mod |
 
@@ -57,8 +57,9 @@ With **More Lanterns** installed, supported paper lanterns add **2 blocks** and
 metal lanterns add **4 blocks** to the same natural-spawn protection. Floating
 lanterns, stone lanterns and lantern parts are excluded. See
 [More Lanterns support](#more-lanterns-by-ape) below for supported models and slots.
-The full-size scarecrow can also hold these lanterns in either arm instead of a
-tool. With several lanterns attached, only the strongest radius bonus applies.
+The full-size scarecrow holds vanilla and supported mod lanterns in either arm
+instead of a tool, with no new neck attachments. The little scarecrow retains
+its neck lantern. With several lanterns attached, only the strongest bonus applies.
 
 ### How animal protection works
 
@@ -190,8 +191,8 @@ animal flee and attack behavior remains species-specific.
 | --- | --- |
 | Left and right arms, full-size scarecrow only | Scythes, hoes, bug nets and snow shovels |
 | Left and right arms with optional mods | Art of Growing hayforks and the Leaf Litter rake |
-| Neck, both scarecrow variants | Small and large upright vanilla lanterns |
-| Neck with More Lanterns | Upright paper and metal lanterns; floating and stone lanterns are excluded |
+| Arms, full-size scarecrow only | Small and large upright vanilla lanterns, instead of tools |
+| Neck, little scarecrow only | Small and large upright vanilla lanterns, plus supported More Lanterns paper/metal lanterns |
 | Arms with More Lanterns, full-size scarecrow only | The same paper and metal lanterns, instead of tools |
 | Arms with Wind Chimes, full-size scarecrow only | Bamboo, wood, bone, brass, copper and crystal wind chimes, instead of tools |
 | Foot, both scarecrow variants | Fired vanilla watering cans |
@@ -214,8 +215,8 @@ models that can be placed on walls or ceilings:
 | Metal | Modern 1, Modern 2, Gothic 1, Medieval 2, Medieval 3, Medieval 4, Medieval 6 | +4 blocks |
 
 Attach their normal **upright inventory variants** with **Shift + right-click**.
-Both scarecrow sizes accept a lantern at the neck. The full-size scarecrow can also
-hold one in each arm instead of a tool, for up to three lanterns. Floating lanterns,
+The full-size scarecrow holds one in each arm instead of a tool, for up to two
+lanterns; the little scarecrow retains its neck lantern. Floating lanterns,
 stone lanterns and unfinished lantern parts are not accepted.
 
 The original hanging models and available colors, on/off states and brightness
@@ -224,6 +225,13 @@ textures, so differently colored lanterns can be equipped together. Chinese pape
 and metal lanterns have been enlarged by 50% from the initial attachment scale;
 Basic and Medieval 1 Small paper lanterns retain their size. The arm mounts correct
 the arms' angles so lanterns hang straight down in the resting pose.
+
+Vanilla and More Lanterns arm attachments now swing with local wind and damped
+follow-through, including with Immersive Lanterns installed. The little
+scarecrow's neck lantern keeps its existing appearance. On loading an older
+full-size scarecrow, its neck lantern moves to the first free arm. If both arms
+are occupied, it remains safely stored and removable in the legacy neck slot;
+new items cannot be attached there. Packed equipment uses the same migration.
 
 Only the **strongest attached lantern's bonus** applies, up to **+4 blocks**;
 bonuses do not stack. Removing a lantern uses the strongest remaining bonus or

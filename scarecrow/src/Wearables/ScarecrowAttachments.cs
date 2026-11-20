@@ -43,7 +43,10 @@ namespace Scarecrow
                 if (index >= inv.Count) continue;
                 ItemStack stack = inv[index].Itemstack;
                 AssetLocation code = stack?.Collectible?.Code;
-                if (code == null || !allowedCodes[index].Any(pattern => WildcardUtil.Match(pattern, code.ToString()))) continue;
+                if (code == null) continue;
+                bool legacyNeck = slotCodes[index] == "sc-neck" && allowedCodes[index].Length == 0
+                    && AnimatedArmLantern.Matches(stack);
+                if (!legacyNeck && !allowedCodes[index].Any(pattern => WildcardUtil.Match(pattern, code.ToString()))) continue;
                 int candidate = GetEquipmentRadiusBonus(stack);
                 if (candidate <= bonus) continue;
                 bonus = candidate;
@@ -141,7 +144,26 @@ namespace Scarecrow
                 else entity.World.Logger.Warning("Scarecrow: could not restore missing equipment in slot {0}.", slotCodes[i]);
             }
             entity.Attributes.RemoveAttribute(StoredEquipmentAttribute);
+            if (entity.World.Side == EnumAppSide.Server) MoveLegacyNeckLantern();
             storeInv();
+        }
+
+        // Keep inventory indices stable for existing worlds and packed items. A disabled neck slot
+        // remains removable storage if both arms are full; never overwrite or drop its contents.
+        private bool MoveLegacyNeckLantern()
+        {
+            int neck = Array.IndexOf(slotCodes, "sc-neck");
+            if (neck < 0 || neck >= inv.Count || allowedCodes[neck].Length != 0
+                || !AnimatedArmLantern.Matches(inv[neck].Itemstack)) return false;
+            for (int i = 0; i < inv.Count && i < slotCodes.Length; i++)
+            {
+                if (slotCodes[i] is not ("sc-leftarm" or "sc-rightarm") || !inv[i].Empty
+                    || inv[i] is not ScarecrowAttachmentSlot arm || !arm.Allows(inv[neck].Itemstack)) continue;
+                inv[i].Itemstack = inv[neck].Itemstack;
+                inv[neck].Itemstack = null;
+                return true;
+            }
+            return false;
         }
 
         // Saved inventories need the same slot filters during import and normal loading.
@@ -163,6 +185,11 @@ namespace Scarecrow
                 // Loading is not insertion: keep saved contents removable after rule changes.
                 ItemStack stack = inv[i].Itemstack;
                 inv[i] = new ScarecrowAttachmentSlot(inv, categories[i], allowedCodes[i]) { Itemstack = stack };
+            }
+            if (entity.World.Side == EnumAppSide.Server && MoveLegacyNeckLantern())
+            {
+                storeInv();
+                entity.MarkShapeModified();
             }
             RefreshCompatibilitySounds();
         }

@@ -170,6 +170,14 @@ explicit integration. Two of those are reviewed/deferred fully aquatic mods;
 
 ### Equipment and decoration candidates
 
+- [x] **Arm lantern implementation:** vanilla small/large and More Lanterns
+  pendulum animation; no new full-size neck insertion. Little neck retained.
+  Saved/packed neck lanterns migrate to a free arm, otherwise remain removable
+  without loss. Variant, slot, fixed-pivot and migration checks passed.
+- [x] **Arm lantern game test:** the author completed the gameplay retest
+  successfully after the inventory-based fix for duplicate static meshes.
+  Automated checks also cover variant rules, migration and render exclusion.
+
 - [x] **Wind chime motion implementation:** independent wind-driven hanging
   pieces with or without Immersive Lanterns; suppress shader wind on private
   attachment models and leave placed block animation unchanged. Geometry/motion checks

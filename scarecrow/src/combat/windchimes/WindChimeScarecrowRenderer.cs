@@ -10,10 +10,12 @@ namespace Scarecrow
     public class WindChimeScarecrowRenderer : EntityShapeRenderer
     {
         private readonly Block[] blocks = new Block[2];
+        private readonly ItemStack[] renderedStacks = new ItemStack[2];
         private readonly MultiTextureMeshRef[] meshes = new MultiTextureMeshRef[2];
         private readonly Matrixf chimeMatrix = new();
         private readonly Matrixf pieceMatrix = new();
         private readonly AnimatedWindChime[] animated = new AnimatedWindChime[2];
+        private readonly AnimatedArmLantern[] lanterns = new AnimatedArmLantern[2];
         private long lastMotionUpdate = -1;
 
         public WindChimeScarecrowRenderer(Entity entity, ICoreClientAPI api) : base(entity, api) { }
@@ -47,36 +49,57 @@ namespace Scarecrow
             for (int index = 0; index < 2 && index < inventory.Count; index++)
             {
                 ItemStack stack = inventory[index].Itemstack;
-                Block block = stack?.ItemAttributes?["scarecrowWindChime"].AsBool(false) == true ? stack.Block : null;
-                if (blocks[index] != block)
+                bool lantern = AnimatedArmLantern.Matches(stack);
+                Block block = lantern || stack?.ItemAttributes?["scarecrowWindChime"].AsBool(false) == true ? stack.Block : null;
+                if (blocks[index] != block || (lantern && !ReferenceEquals(renderedStacks[index], stack)))
                 {
                     meshes[index]?.Dispose();
                     animated[index]?.Dispose();
+                    lanterns[index]?.Dispose();
+                    lanterns[index] = null;
                     animated[index] = null;
                     meshes[index] = null;
                     blocks[index] = block;
+                    renderedStacks[index] = stack;
                     if (block != null)
                     {
                         // These are entity attachments, not placed block entities. Always use our
                         // private animation; Immersive Lanterns may animate placed copies separately.
-                        try { animated[index] = AnimatedWindChime.TryCreate(capi, block, entity.EntityId, index); }
+                        try
+                        {
+                            if (lantern) lanterns[index] = new AnimatedArmLantern(capi, stack,
+                                index == 0 ? "sc-leftarm" : "sc-rightarm", entity.EntityId, index);
+                            else animated[index] = AnimatedWindChime.TryCreate(capi, block, entity.EntityId, index);
+                        }
                         catch (System.Exception exception)
                         {
-                            capi.Logger.Warning("[Scarecrow] Cannot animate {0}; using legacy wind chime rendering: {1}", block.Code, exception.Message);
+                            capi.Logger.Warning("[Scarecrow] Cannot animate attachment {0}; using static rendering: {1}", block.Code, exception.Message);
                         }
-                        if (animated[index] == null)
+                        if (animated[index] == null && lanterns[index] == null)
                         {
                             capi.Tesselator.TesselateBlock(block, out MeshData mesh);
                             meshes[index] = capi.Render.UploadMultiTextureMesh(mesh);
                         }
                     }
                 }
-                if (meshes[index] == null && animated[index] == null) continue;
+                if (meshes[index] == null && animated[index] == null && lanterns[index] == null) continue;
                 AttachmentPointAndPose point = entity.AnimManager?.Animator?.GetAttachmentPointPose(
-                    index == 0 ? "ScarecrowWindChimeLeftAP" : "ScarecrowWindChimeRightAP");
+                    lantern ? (index == 0 ? "ScarecrowLanternLeftAP" : "ScarecrowLanternRightAP")
+                        : (index == 0 ? "ScarecrowWindChimeLeftAP" : "ScarecrowWindChimeRightAP"));
                 if (point == null) continue;
                 chimeMatrix.Set(ModelMat).Mul(point.AnimModelMatrix);
-                if (animated[index] is AnimatedWindChime animation)
+                if (lanterns[index] is AnimatedArmLantern armLantern)
+                {
+                    if (advance)
+                    {
+                        Vec3d wind = entity.World.BlockAccessor.GetWindSpeedAt(entity.Pos.XYZ);
+                        GetLocalWind(wind, chimeMatrix.Values, out double x, out double z);
+                        armLantern.Advance(dt, x, z);
+                    }
+                    pieceMatrix.Set(chimeMatrix.Values).Mul(armLantern.Transform.Values);
+                    RenderMesh(armLantern.Mesh, pieceMatrix, isShadowPass, true);
+                }
+                else if (animated[index] is AnimatedWindChime animation)
                 {
                     // Block tessellation normally applies the composite shape rotation. Our split meshes
                     // are unrotated; apply that same rotation to their common frame, including shadows.
@@ -102,6 +125,14 @@ namespace Scarecrow
                 }
                 else RenderMesh(meshes[index], chimeMatrix, isShadowPass, false);
             }
+        }
+
+        private static void GetLocalWind(Vec3d wind, float[] m, out double x, out double z)
+        {
+            double xLength = System.Math.Sqrt(m[0] * m[0] + m[2] * m[2]);
+            double zLength = System.Math.Sqrt(m[8] * m[8] + m[10] * m[10]);
+            x = (wind.X * m[0] + wind.Z * m[2]) / System.Math.Max(xLength, .0001);
+            z = (wind.X * m[8] + wind.Z * m[10]) / System.Math.Max(zLength, .0001);
         }
 
         private void RenderMesh(MultiTextureMeshRef mesh, Matrixf matrix, bool isShadowPass, bool localAnimation)
@@ -144,9 +175,12 @@ namespace Scarecrow
             {
                 meshes[index]?.Dispose();
                 animated[index]?.Dispose();
+                lanterns[index]?.Dispose();
+                lanterns[index] = null;
                 animated[index] = null;
                 meshes[index] = null;
                 blocks[index] = null;
+                renderedStacks[index] = null;
             }
         }
 

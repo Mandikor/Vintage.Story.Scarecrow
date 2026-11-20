@@ -58,13 +58,23 @@ namespace Scarecrow
             string shapePathForLogging, ref bool shapeIsCloned, ref string[] willDeleteElements,
             Dictionary<string, StepParentElementTo> overrideStepParent = null)
         {
-            // The entity shader treats wind mode 9 as a frost flag and changes its movement.
-            // The optional renderer draws these blocks separately with their original wind flags.
-            if (windChimesEnabled && entity.Properties?.Client?.Renderer is WindChimeScarecrowRenderer
-                && gearslot.Itemstack?.ItemAttributes?["scarecrowWindChime"].AsBool(false) == true)
+            // The container calls us with "default"; EntityBehaviorAttachable resolves the slot
+            // name only inside base.addGearToShape. Inspect the actual inventory slot here so
+            // separately animated arm lanterns are not also inserted into the static entity mesh.
+            if (entity.Properties?.Client?.Renderer is WindChimeScarecrowRenderer
+                && ((windChimesEnabled && gearslot.Itemstack?.ItemAttributes?["scarecrowWindChime"].AsBool(false) == true)
+                    || (IsArmInventorySlot(gearslot) && AnimatedArmLantern.Matches(gearslot.Itemstack))))
                 return entityShape;
             return base.addGearToShape(entityShape, gearslot, slotCode, shapePathForLogging,
                 ref shapeIsCloned, ref willDeleteElements, overrideStepParent);
+        }
+
+        private bool IsArmInventorySlot(ItemSlot slot)
+        {
+            if (inv == null) return false;
+            for (int i = 0; i < inv.Count && i < slotCodes.Length; i++)
+                if (ReferenceEquals(inv[i], slot)) return slotCodes[i] is "sc-leftarm" or "sc-rightarm";
+            return false;
         }
     }
 }

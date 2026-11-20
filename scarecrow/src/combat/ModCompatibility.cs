@@ -11,9 +11,10 @@ namespace Scarecrow
 
         public static void RegisterClientRenderers(ICoreClientAPI api)
         {
-            // Register only when the mod is installed; its JSON patch selects this renderer.
-            if (api.ModLoader.IsModEnabled("windchimes"))
-                api.RegisterEntityRendererClass("ScarecrowWindChimeShape", typeof(WindChimeScarecrowRenderer));
+            // Vanilla arm lanterns also need this renderer when no optional decoration mod is installed.
+            api.RegisterEntityRendererClass("ScarecrowAttachmentShape", typeof(WindChimeScarecrowRenderer));
+            // Keep the existing JSON-facing alias for Wind Chimes and saved entity properties.
+            api.RegisterEntityRendererClass("ScarecrowWindChimeShape", typeof(WindChimeScarecrowRenderer));
         }
     }
 }

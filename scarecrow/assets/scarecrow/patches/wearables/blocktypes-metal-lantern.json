@@ -1,24 +1,45 @@
-  [
-    {
-        "file": "game:blocktypes/metal/lantern.json",
-        "op": "addmerge",
-        "path": "/attributesByType/*-up/attachableToEntityByType/lantern-small-*/attachedShapeBySlotCode",
-        "value": {
-            "sc-neck": {
-                "base": "scarecrow:item/wearable/vanilla/lantern-small"
-            }
-        },
-        "side": "server"
-    },
-    {
-      "file": "game:blocktypes/metal/lantern.json",
-      "op": "addmerge",
-      "path": "/attributesByType/*-up/attachableToEntityByType/lantern-large-*/attachedShapeBySlotCode",
-      "value": {
-        "sc-neck": {
-          "base": "scarecrow:item/wearable/vanilla/lantern-large"
-        }
+[
+  {
+    "file": "game:blocktypes/metal/lantern.json",
+    "op": "addmerge",
+    "path": "/attributesByType/*-up/attachableToEntityByType/lantern-small-*/attachedShapeBySlotCode",
+    "value": {
+      "sc-neck": {
+        "base": "scarecrow:item/wearable/vanilla/lantern-small"
       },
-      "side": "server"
-    }
-  ]
+      "sc-leftarm": {
+        "base": "game:block/metal/lantern/small/ceiling"
+      },
+      "sc-rightarm": {
+        "base": "game:block/metal/lantern/small/ceiling"
+      }
+    },
+    "side": "server"
+  },
+  {
+    "file": "game:blocktypes/metal/lantern.json",
+    "op": "addmerge",
+    "path": "/attributesByType/*-up/attachableToEntityByType/lantern-large-*/attachedShapeBySlotCode",
+    "value": {
+      "sc-neck": {
+        "base": "scarecrow:item/wearable/vanilla/lantern-large"
+      },
+      "sc-leftarm": {
+        "base": "game:block/metal/lantern/large/ceiling"
+      },
+      "sc-rightarm": {
+        "base": "game:block/metal/lantern/large/ceiling"
+      }
+    },
+    "side": "server"
+  },
+  {
+    "value": {
+      "scarecrowArmLanternScale": 0.6,
+      "scarecrowArmLantern": true
+    },
+    "op": "addmerge",
+    "path": "/attributesByType/*-up",
+    "file": "game:blocktypes/metal/lantern.json"
+  }
+]

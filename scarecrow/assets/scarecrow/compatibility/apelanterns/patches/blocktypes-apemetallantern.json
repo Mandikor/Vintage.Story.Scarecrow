@@ -25,7 +25,12 @@
         "scarecrowRadiusBonusByType": {
           "*-up": 4,
           "*": 0
-        }
+        },
+        "scarecrowArmLanternByType": {
+          "*-up": true,
+          "*": false
+        },
+        "scarecrowArmLanternScale": 0.6
       },
       "*": {
         "attachableToEntityByType": {
@@ -47,7 +52,12 @@
         "scarecrowRadiusBonusByType": {
           "*-up": 4,
           "*": 0
-        }
+        },
+        "scarecrowArmLanternByType": {
+          "*-up": true,
+          "*": false
+        },
+        "scarecrowArmLanternScale": 0.6
       }
     }
   }

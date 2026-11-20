@@ -1,10 +1,31 @@
 # Lantern compatibility
 
-Both scarecrow sizes accept lanterns at their neck attachment point using
-**Shift + right-click**. Use an empty hand with the same control to remove one.
-The full-size scarecrow also accepts More Lanterns paper and metal lanterns in
-either arm slot. Each arm holds a tool or a lantern. The little scarecrow retains
-its single lantern slot at the neck.
+Use **Shift + right-click** to equip a lantern, or the same control with an empty
+hand to remove one. The full-size scarecrow accepts small/large vanilla lanterns
+and supported More Lanterns lanterns in either arm instead of a tool. Its neck
+no longer accepts new equipment. The little scarecrow keeps its existing neck
+slot for both vanilla and supported More Lanterns lanterns.
+
+## Wind animation and existing inventories
+
+Arm lanterns swing as rigid bodies around their ceiling-model suspension points,
+using independent wind/damping state per arm. Upright mounts compensate for arm
+angles. The animation works with and without Immersive Lanterns and does not
+create block entities or alter placed lanterns. Private rendering suppresses
+shader wind so motion is not applied twice. Small/basic paper models keep scale
+0.4; other paper and metal models use 0.6, as do vanilla ceiling models.
+
+Vanilla uses its own `BlockLantern.GenMesh` texture provider, preserving the
+stack's metal, lining and glass. Changing an arm's stack refreshes its mesh even
+when the block code is unchanged. Shadows reuse the current swinging transform;
+meshes are released on equipment changes, retessellation, death and disposal.
+The little scarecrow's neck lantern remains rendered by its previous method.
+
+The full-size inventory retains its old neck index for save compatibility.
+Existing neck lanterns move to the first empty arm on server loading or packed
+item restoration. Occupied arms are never overwritten: if both are full, the
+legacy lantern stays removable at the neck with its radius bonus preserved.
+New neck insertion is denied. No equipment is dropped or discarded by migration.
 
 | Lantern | Natural-spawn radius bonus |
 | --- | ---: |
@@ -49,7 +70,7 @@ vertically in the resting pose, with their hanging points and sizes preserved.
 Floating lanterns, stone lanterns and unfinished lantern parts are not accepted.
 
 The four JSON patch files live in
-`assets/scarecrow/compatibility/apelanterns/patches`. They add the neck and arm-slot
+`assets/scarecrow/compatibility/apelanterns/patches`. They add the little neck and full-size arm-slot
 whitelists, attachment metadata, radius bonuses and model mounts. The hanging
 shapes and textures are referenced from More Lanterns directly; its geometry and
 textures are not copied into Scarecrow. Shape patches add attachment-parent metadata
@@ -64,5 +85,18 @@ preservation of handbook and texture settings, and attachment of all eleven nati
 models at their expected scales. Matrix checks verify vertical arm alignment and
 unchanged hanging points at both scales. In-game testing also confirmed the neck
 attachments, adjusted model sizes, arm mounts and corrected vertical rotation.
+
+The new arm-only/wind-animation revision additionally checks both vanilla sizes
+in all six orientations, native category preservation, blocked full-size neck
+insertion, retained little-neck acceptance, fixed swing pivots and lossless
+legacy migration (left arm, right arm and both occupied). Build passes; the author
+completed the revised attachment's in-game test successfully. Earlier game tests
+above refer to the previous attachment rules.
+
+The first arm-animation game test confirmed equipping and wind motion but exposed
+duplicate static/animated lanterns. Static-mesh exclusion now checks the actual
+inventory slot: the engine initially passes `default`, and only the base
+attachable behavior resolves it to the configured arm code. The corrected
+render exclusion passed the author's gameplay retest; neck lantern rendering is retained.
 
 [More Lanterns source repository](https://github.com/Monkeybrain73/morelanterns)

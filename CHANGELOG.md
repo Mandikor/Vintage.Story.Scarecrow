@@ -5,6 +5,24 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Wind-driven arm lanterns
+
+- Allow small/large vanilla lanterns on either full-size scarecrow arm alongside
+  supported More Lanterns models, with independent wind-driven pendulum motion.
+  Keep native metal, lining, glass, variant textures, light and strongest-only
+  radius rules. The renderer also works without Wind Chimes installed.
+- Remove new neck insertion on the full-size scarecrow. The little scarecrow
+  retains its vanilla/More Lanterns neck lantern and previous rendering.
+- Preserve old inventory indices and migrate saved/packed full-size neck lanterns
+  to the first empty arm. If both arms are occupied, keep the old lantern safely
+  removable at its legacy position without losing its bonus or overwriting gear.
+- Geometry, variant, slot and migration checks pass, including 768 More Lanterns
+  variants and both vanilla sizes/orientations. The author's gameplay test passed.
+- Fix duplicate static/animated arm lanterns found in the initial game test:
+  identify arm slots from the inventory instead of the unresolved `default`
+  slot-name argument. Keep little/legacy neck rendering; the author's gameplay
+  retest passed.
+
 ### Wind chime hanging-piece animation
 
 - Animate individual hanging pieces on each arm, with or without Immersive Lanterns,

@@ -1,20 +1,6 @@
 [
   {
     "enabled": true,
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "add",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/2/allowedCodes/-",
-    "value": "apelanterns:apemetallantern-*-up"
-  },
-  {
-    "enabled": true,
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "add",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/2/allowedCodes/-",
-    "value": "apelanterns:apepaperlantern-*-up"
-  },
-  {
-    "enabled": true,
     "file": "scarecrow:entities/nonliving/little-scarecrow.json",
     "op": "add",
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",

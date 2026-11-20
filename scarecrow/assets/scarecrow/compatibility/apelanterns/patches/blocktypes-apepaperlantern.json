@@ -25,6 +25,15 @@
         "scarecrowRadiusBonusByType": {
           "*-up": 2,
           "*": 0
+        },
+        "scarecrowArmLanternByType": {
+          "*-up": true,
+          "*": false
+        },
+        "scarecrowArmLanternScaleByType": {
+          "*-basic-*": 0.4,
+          "*-medieval1small-*": 0.4,
+          "*": 0.6
         }
       },
       "*": {
@@ -47,6 +56,15 @@
         "scarecrowRadiusBonusByType": {
           "*-up": 2,
           "*": 0
+        },
+        "scarecrowArmLanternByType": {
+          "*-up": true,
+          "*": false
+        },
+        "scarecrowArmLanternScaleByType": {
+          "*-basic-*": 0.4,
+          "*-medieval1small-*": 0.4,
+          "*": 0.6
         }
       }
     }

@@ -17,7 +17,8 @@
 	"attributes": {
 		"spawnDamageParticles": true,
 		"scareRadius": 16,
-		"pickupItemCode": "scarecrow:scarecrow"
+		"pickupItemCode": "scarecrow:scarecrow",
+		"useSlotPrefix": true
 	},
 
 	"behaviorConfigs": {
@@ -27,7 +28,7 @@
 			"wearableSlots": [
 				{
 					"code": "sc-leftarm",
-					"allowedCodes": [ "game:scythe-*", "game:hoe-*", "game:bugnet-*", "game:snowshovel-*", "artofgrowing:hayfork-*", "leaflitter:rake" ],
+					"allowedCodes": [ "game:scythe-*", "game:hoe-*", "game:bugnet-*", "game:snowshovel-*", "artofgrowing:hayfork-*", "leaflitter:rake", "game:lantern-*-up" ],
 					"attachmentPointCode": "LArmAP",
 					"stepParentTo": {
 						"": { "elementName": "LArmStorage" }
@@ -35,7 +36,7 @@
 				},
 				{
 					"code": "sc-rightarm",
-					"allowedCodes": [ "game:scythe-*", "game:hoe-*", "game:bugnet-*", "game:snowshovel-*", "artofgrowing:hayfork-*", "leaflitter:rake" ],
+					"allowedCodes": [ "game:scythe-*", "game:hoe-*", "game:bugnet-*", "game:snowshovel-*", "artofgrowing:hayfork-*", "leaflitter:rake", "game:lantern-*-up" ],
 					"attachmentPointCode": "RArmAP",
 					"stepParentTo": {
 						"": { "elementName": "RArmStorage" }
@@ -43,7 +44,7 @@
 				},
 				{
 					"code": "sc-neck",
-					"allowedCodes": [ "game:lantern-*-up" ],
+					"allowedCodes": [],
 					"attachmentPointCode": "LanternAP",
 					"stepParentTo": {
 						"": { "elementName": "LanternStorage" }
@@ -67,7 +68,7 @@
 	},
 
 	"client": {
-		"renderer": "Shape",
+		"renderer": "ScarecrowAttachmentShape",
 		"shape": { "base": "scarecrow:entity/nonliving/scarecrow" },
 		"behaviors": [
 			{ "code": "repulseagents" },
