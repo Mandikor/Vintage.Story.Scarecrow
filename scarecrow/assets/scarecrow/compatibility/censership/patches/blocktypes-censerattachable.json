@@ -1,0 +1,32 @@
+[
+  {
+    "enabled": true,
+    "file": "censership:blocktypes/censerattachable.json",
+    "value": {
+      "scarecrowHangingDecorationByType": {
+        "*-up": true,
+        "*": false
+      },
+      "attachableToEntityByType": {
+        "*-up": {
+          "texturePrefixCode": "scarecrow-censership",
+          "attachedShapeBySlotCode": {
+            "sc-leftarm": {
+              "base": "censership:block/censers/{style}-ceiling"
+            },
+            "sc-rightarm": {
+              "base": "censership:block/censers/{style}-ceiling"
+            }
+          }
+        }
+      },
+      "scarecrowArmLanternScale": 0.6,
+      "scarecrowCenserSmokeByType": {
+        "*-up": true,
+        "*": false
+      }
+    },
+    "path": "/attributes",
+    "op": "addmerge"
+  }
+]

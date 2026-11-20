@@ -98,6 +98,7 @@ namespace Scarecrow
                     }
                     pieceMatrix.Set(chimeMatrix.Values).Mul(armLantern.Transform.Values);
                     RenderMesh(armLantern.Mesh, pieceMatrix, isShadowPass, true);
+                    if (advance) armLantern.EmitSmoke(capi, dt, pieceMatrix);
                 }
                 else if (animated[index] is AnimatedWindChime animation)
                 {

@@ -5,6 +5,20 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### censership 1.0.6 arm decorations
+
+- Support 39 upright inventory censers on either full-size scarecrow arm:
+  Metal Open, Metal Gills, Metal Dome and Carryable, using original hanging
+  geometry/materials and wind-driven pendulum motion.
+- Preserve original light and add client smoke from private copies of the
+  original ceiling-block particle profiles. No invented radius bonus or buff.
+  Stand-only objects, incense/candles, chains and other slots remain excluded.
+- Keep all JSON patches under `compatibility/censership` and optional particle
+  handling under `src/combat/censership`. Placed blocks remain unchanged.
+- Build and checks pass for 234 orientations/material variants, including both
+  arms, exclusions, zero bonus and duplicate-mesh prevention. The author's
+  in-game test also passed.
+
 ### Wind-driven arm lanterns
 
 - Allow small/large vanilla lanterns on either full-size scarecrow arm alongside

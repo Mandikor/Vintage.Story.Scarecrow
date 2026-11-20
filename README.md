@@ -195,6 +195,7 @@ animal flee and attack behavior remains species-specific.
 | Neck, little scarecrow only | Small and large upright vanilla lanterns, plus supported More Lanterns paper/metal lanterns |
 | Arms with More Lanterns, full-size scarecrow only | The same paper and metal lanterns, instead of tools |
 | Arms with Wind Chimes, full-size scarecrow only | Bamboo, wood, bone, brass, copper and crystal wind chimes, instead of tools |
+| Arms with censership, full-size scarecrow only | Metal Open, Metal Gills, Metal Dome and Carryable censers, with smoke, light and pendulum motion; no radius bonus |
 | Foot, both scarecrow variants | Fired vanilla watering cans |
 
 Each point holds one item. The interaction hints show the items allowed at the
@@ -366,6 +367,7 @@ The repository includes compatibility assets for the following mods and families
 | More Lanterns by Ape | Paper and metal lantern attachments with natural-spawn radius bonuses |
 | Wind Chimes by Ape | Upright arm attachments with original spatial chime sounds |
 | Dreamcatchers 1.0.2 | Tested decorative attachments on either/both full-size arms; no gameplay bonus. Newer 1.0.31 has an upstream loading error; see [guide](docs/dreamcatchers-compatibility.md) |
+| censership 1.0.6 | Hanging arm censers with original smoke/light and wind motion; no protection bonus. See [guide](docs/censership-compatibility.md) |
 | Equus, Equus Ferus and Monoceros | Animal behavior patches |
 | Equus: Shared Ancestry and Equus: Expanded | Wild donkey reactions and inherited pony reactions |
 | Vara's Arctic Wolves | Native player-target AI adapted for scarecrows, including attacks, injury fear, pup fleeing and sleep interruption |

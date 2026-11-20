@@ -13,9 +13,11 @@ namespace Scarecrow
         public readonly Matrixf Transform = new();
         private readonly WindChimeMotion motion;
         private readonly float scale;
+        private readonly CenserArmSmoke smoke;
 
         public static bool Matches(ItemStack stack) => stack?.Block != null
-            && stack.ItemAttributes?["scarecrowArmLantern"].AsBool(false) == true;
+            && (stack.ItemAttributes?["scarecrowArmLantern"].AsBool(false) == true
+                || stack.ItemAttributes?["scarecrowHangingDecoration"].AsBool(false) == true);
 
         public AnimatedArmLantern(ICoreClientAPI api, ItemStack stack, string slot, long entityId, int arm)
         {
@@ -35,6 +37,8 @@ namespace Scarecrow
             Mesh = api.Render.UploadMultiTextureMesh(mesh);
             scale = stack.ItemAttributes["scarecrowArmLanternScale"].AsFloat(.6f);
             motion = new WindChimeMotion(entityId, arm);
+            if (stack.ItemAttributes["scarecrowCenserSmoke"].AsBool(false) && api.ModLoader.IsModEnabled("censership"))
+                smoke = new CenserArmSmoke(api, stack.Block, scale);
             UpdateTransform(0, 0, 0);
         }
 
@@ -54,5 +58,8 @@ namespace Scarecrow
         }
 
         public void Dispose() { Mesh?.Dispose(); Mesh = null; }
+
+        public void EmitSmoke(ICoreClientAPI api, float dt, Matrixf cameraRelativeModel)
+            => smoke?.Emit(api, dt, cameraRelativeModel);
     }
 }

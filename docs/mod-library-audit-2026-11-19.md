@@ -1,5 +1,12 @@
 # Local mod compatibility audit — 2026-11-19
 
+Latest implementation: [censership 1.0.6](censership-compatibility.md) adds 39
+hanging arm decorations with original smoke/light, pendulum movement and no
+radius bonus. Checks pass for 234 variants; the author's game test passed. Totals are
+**50 supported IDs**, **31 without explicit integration**: two deliberately
+deferred aquatic mods and **29 review candidates**. These totals supersede older
+follow-ups below; historical inventory tables remain intact.
+
 Latest implementation: [Dreamcatchers 1.0.2](dreamcatchers-compatibility.md)
 adds decorative full-size arm attachments. No native gameplay effect was found
 in the supplied content-only mod; no bonus is added. Automated checks pass for

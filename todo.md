@@ -64,9 +64,10 @@ The [local mod audit](docs/mod-library-audit-2026-11-19.md) inventories 81 mod I
 integrated. This is a review backlog, not approval to implement every candidate.
 Previously deferred cosmetics and aging remain deferred.
 After Crows, the additional FotSA batch, Flocks, Fantasy Creatures, Pegasus,
-Talonborne, Giant Scorpion, Undead Legion and Dreamcatchers, 49 IDs are supported and 32 have no
+Talonborne, Giant Scorpion, Undead Legion, Dreamcatchers and censership,
+50 IDs are supported and 31 have no
 explicit integration. Two of those are reviewed/deferred fully aquatic mods;
-30 remain review candidates. The audit retains the original inventory.
+29 remain review candidates. The audit retains the original inventory.
 
 - [x] Inventory ZIP/unpacked duplicates, manifest versions and current support.
 - [x] Audit existing patch paths and native player-code/player-tag AI tasks.
@@ -197,7 +198,12 @@ explicit integration. Two of those are reviewed/deferred fully aquatic mods;
   incompatible 1.0.31 model path. **Known upstream 1.0.31 error:**
   `itemtypes/bead.json` is a shape instead of an item definition and prevents
   loading. Upstream files remain unchanged.
-- [ ] **P2 — censership** (`censership`, 1.0.6): Review eligible hanging objects and intended effects before adding slot rules.
+- [x] **P2 — censership implementation** (`censership`, 1.0.6): 39 inventory
+  censers on either/both arms; original hanging models, light, cloned smoke
+  profiles and pendulum motion. No native protection effect or radius bonus.
+  Resolver/slot/source-preservation checks pass for 234 variants. See
+  [guide](docs/censership-compatibility.md).
+- [x] **censership game test:** the author completed the in-game test successfully.
 - [ ] **P3 — Heraldry Add-On** (`heraldryaddon`, 1.1.0): Explore decorative attachments only after the deferred cosmetic item is reopened.
 - [ ] **P3 — Heraldry : Banners** (`heraldrybanners`, 2.0.0): Explore banner mounting and compatibility with existing equipment slots.
 - [ ] **P3 — More Banners** (`morebanners`, 1.3.3): Decorative candidate; two supplied Better Ruins recipe JSON files fail parsing.
