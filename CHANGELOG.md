@@ -5,6 +5,22 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Primitive Survival arm lighting
+
+- Support all 13 wooden lanterns and seven filled Firefly Jar types from Primitive
+  Survival 5.1.4 on either arm of the standard and Plumpkins full-size models.
+  Reuse native ceiling-lantern/jar geometry, textures and light colors with the
+  existing wind-driven pendulum renderer. Align the jar cork to the hanging pivot
+  through a private mesh offset; original world shapes remain unchanged.
+- Wooden lanterns add +2 blocks and filled jars +1 to natural-spawn protection.
+  Retain strongest-only bonuses, automatic outline updates and Ctrl + H. Exclude
+  empty/baited jars, placed orientations and small/neck/foot slots. Creature AI
+  is outside the requested scope; no AI tasks are patched.
+- Keep all integration patches under `compatibility/primitivesurvival/patches`.
+  Build and resolver checks pass for 96 variants, slot/bonus/removal rules, native
+  textures and duplicate-mesh prevention. Mount checks pass on both full-size
+  models. The author's in-game test passed.
+
 ### Plumpkins attachment rendering
 
 - Apply lantern, Wind Chimes, Dreamcatchers and More Lanterns mount patches to

@@ -61,9 +61,9 @@ implementation. Tool bonuses were removed from the plan at the author's request.
 
 Reconciled with manifests in both ZIP archives and unpacked directories under
 `Mods_Scarecrow` after the local library cleanup. Duplicate copies and versions
-count once per mod ID: 57 IDs are present, of which 50 have direct integration
-or inherit supported content. Seven have no explicit integration: two aquatic
-mods remain reviewed/deferred, and five remain open review candidates below.
+count once per mod ID: 57 IDs are present, of which 51 have direct integration
+or inherit supported content. Six have no explicit integration: two aquatic
+mods remain reviewed/deferred, and four remain open review candidates below.
 Absent mods have been removed from this active backlog; existing compatibility code remains
 unchanged. Previously deferred cosmetics and aging remain deferred.
 The [original local mod audit](docs/mod-library-audit-2026-11-19.md) is a historical
@@ -212,9 +212,15 @@ snapshot of 81 IDs and does not describe the cleaned current library.
   [guide](docs/censership-compatibility.md).
 - [x] **censership game test:** the author completed the in-game test successfully.
 
-### Farming and survival compatibility
+### Primitive Survival compatibility
 
-- [ ] **P2 — Primitive Survival** (`primitivesurvival`, 5.1.4): Review relevant creatures, traps and player-target behavior; determine whether explicit integration is needed before adding patches.
+- [x] **Primitive Survival arm lighting** (`primitivesurvival`, 5.1.4): 13 wooden
+  lanterns (+2 radius) and seven filled Firefly Jars (+1), native textures/light
+  and wind-driven pendulum motion on either arm of both full-size models.
+  Strongest-only bonuses; empty/baited jars and other slots excluded. Build and
+  96-variant resolver checks passed. The author excluded creature AI from scope.
+- [x] **Primitive Survival game test:** the author completed the in-game test
+  successfully after implementing arm lighting, wind motion and radius bonuses.
 
 ### Libraries and general utility mods: assess need, do not promise a patch
 

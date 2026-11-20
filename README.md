@@ -197,6 +197,7 @@ animal flee and attack behavior remains species-specific.
 | Arms with More Lanterns, full-size scarecrow only | The same paper and metal lanterns, instead of tools |
 | Arms with Wind Chimes, full-size scarecrow only | Bamboo, wood, bone, brass, copper and crystal wind chimes, instead of tools |
 | Arms with censership, full-size scarecrow only | Metal Open, Metal Gills, Metal Dome and Carryable censers, with smoke, light and pendulum motion; no radius bonus |
+| Arms with Primitive Survival, full-size scarecrow only | Wooden lanterns (+2 blocks) and filled Firefly Jars (+1 block), with original light and wind-driven pendulum motion |
 | Foot, both scarecrow variants | Fired vanilla watering cans |
 
 Each point holds one item. The interaction hints show the items allowed at the
@@ -205,6 +206,24 @@ selected point.
 The mod preserves the original attachment categories of tools and other equipment.
 For example, hoes and scythes remain compatible with vanilla stands. The scarecrow
 uses its own item-code whitelist to decide which of those tools it accepts.
+
+### Primitive Survival
+
+With **Primitive Survival 5.1.4**, attach any of its 13 wooden lanterns or seven
+filled Firefly Jar types to either arm using **Shift + right-click**. Both the
+standard full-size model and the rounded Plumpkins model are supported. The
+little scarecrow and neck/foot slots do not accept these lights.
+
+Wooden lanterns use their original ceiling model and add **2 blocks** to the
+natural-spawn protection radius. Filled Firefly Jars retain their species-specific
+textures and light colors, hang from the cork and add **1 block**. Both swing with
+the local wind. Use the normal inventory variants; empty/baited jars and placed
+orientation variants are excluded.
+
+Only the strongest equipment bonus applies. The radius outline and tooltip update
+when either light is attached or removed; **Ctrl + H** retains its toggle behavior.
+All JSON patches are under `compatibility/primitivesurvival/patches`. This
+integration adds no creature AI tasks or placed-block behavior changes.
 
 ### More Lanterns by Ape
 
@@ -363,6 +382,7 @@ The repository includes compatibility assets for the following mods and families
 | Art of Growing and its patched version | Crafting adjustments and hayfork attachment shapes |
 | Art of Growing Breeding Addon patch | Crafting adjustments |
 | Plumpkins | Alternative pumpkin shape for the scarecrow and its item, retaining the standard equipment mounts and animated arm attachments |
+| Primitive Survival 5.1.4 | Wooden lanterns and filled Firefly Jars as wind-driven arm lighting; +2/+1 natural-spawn radius bonuses |
 | Grass to Ropes | Alternative crafting recipes |
 | Leaf Litter | Rake attachment shapes |
 | More Lanterns by Ape | Paper and metal lantern attachments with natural-spawn radius bonuses |

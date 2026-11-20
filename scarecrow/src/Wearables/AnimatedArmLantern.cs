@@ -46,6 +46,10 @@ namespace Scarecrow
                 api.Tesselator.TesselateShape(textureBlock, shape, out mesh,
                     new Vec3f(model.rotateX, model.rotateY, model.rotateZ));
             }
+            // Small ground models can align their top with the shared ceiling pivot through
+            // attachment-only metadata. Move this private mesh; never alter the placed shape.
+            float[] offset = stack.ItemAttributes["scarecrowArmLanternOffset"].AsArray<float>();
+            if (offset?.Length == 3) mesh.Translate(offset[0], offset[1], offset[2]);
             Mesh = api.Render.UploadMultiTextureMesh(mesh);
             scale = stack.ItemAttributes["scarecrowArmLanternScale"].AsFloat(.6f);
             motion = new WindChimeMotion(entityId, arm);
