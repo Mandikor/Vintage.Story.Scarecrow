@@ -299,6 +299,7 @@
 											"children": [
 												{
 													"name": "LArmStorage",
+													"children": [],
 													"from": [ 0.0, -0.2, -0.2 ],
 													"to": [ 5.2, 2.2, 2.2 ],
 													"rotationOrigin": [ 0.0, 1.0, 1.0 ],
@@ -501,6 +502,7 @@
 											"children": [
 												{
 													"name": "RArmStorage",
+													"children": [],
 													"from": [ 0.0, -0.2, -0.2 ],
 													"to": [ 5.2, 2.2, 2.2 ],
 													"rotationOrigin": [ 0.0, 1.0, 1.0 ],

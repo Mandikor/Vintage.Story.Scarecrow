@@ -5,6 +5,14 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Plumpkins attachment rendering
+
+- Apply lantern, Wind Chimes, Dreamcatchers and More Lanterns mount patches to
+  both full-size scarecrow shapes, including the alternative Plumpkins model.
+  Add the missing arm child containers without changing its pumpkin geometry.
+- Verify matching attachment positions, upright hanging mounts and preserved
+  tool/foot storage points on both models. The author's in-game test passed.
+
 ### Vanilla oil lamps on arms
 
 - Allow all ten filled vanilla oil-lamp colors on either full-size scarecrow arm,

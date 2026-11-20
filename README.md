@@ -362,7 +362,7 @@ The repository includes compatibility assets for the following mods and families
 | --- | --- |
 | Art of Growing and its patched version | Crafting adjustments and hayfork attachment shapes |
 | Art of Growing Breeding Addon patch | Crafting adjustments |
-| Plumpkins | Alternative pumpkin shape for the scarecrow and its item |
+| Plumpkins | Alternative pumpkin shape for the scarecrow and its item, retaining the standard equipment mounts and animated arm attachments |
 | Grass to Ropes | Alternative crafting recipes |
 | Leaf Litter | Rake attachment shapes |
 | More Lanterns by Ape | Paper and metal lantern attachments with natural-spawn radius bonuses |

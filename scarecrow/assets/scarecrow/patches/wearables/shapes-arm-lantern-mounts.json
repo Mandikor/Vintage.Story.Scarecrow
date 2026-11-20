@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "file": "scarecrow:shapes/entity/nonliving/scarecrow.json",
+    "file": "scarecrow:shapes/entity/nonliving/scarecrow*",
     "op": "add",
     "path": "/elements/0/children/0/children/0/children/1/children/1/children/0/children/-",
     "value": {
@@ -43,7 +43,7 @@
   },
   {
     "enabled": true,
-    "file": "scarecrow:shapes/entity/nonliving/scarecrow.json",
+    "file": "scarecrow:shapes/entity/nonliving/scarecrow*",
     "op": "add",
     "path": "/elements/0/children/0/children/0/children/2/children/1/children/0/children/-",
     "value": {
