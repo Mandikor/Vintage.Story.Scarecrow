@@ -4,10 +4,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Linnunpelätin",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Aseta valitut työkalut vasempaan käteen",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Aseta valitut työkalut oikeaan käteen",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Ripusta lyhty kaulaan",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Aseta kastelukannu jalkojen juureen",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Vasen käsivarsi – varusteet",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Oikea käsivarsi – varusteet",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Kaula – varusteet",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Juuri – kastelukannu",
 
 
 	// Description Scarecrow

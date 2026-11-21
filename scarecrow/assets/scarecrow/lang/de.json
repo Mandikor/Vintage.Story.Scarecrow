@@ -2,10 +2,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Vogelscheuche",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Platziere die ausgewählten Werkzeuge auf dem linken Arm",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Platziere die ausgewählten Werkzeuge auf dem rechten Arm",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Hänge eine Laterne um den Hals",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Platziere eine Gießkanne am Fuß",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Linker Arm – Ausrüstung",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Rechter Arm – Ausrüstung",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Hals – Ausrüstung",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Fuß – Gießkanne",
 
 	// Description Scarecrow
 	"scarecrow:item-scarecrow": "Vogelscheuche",

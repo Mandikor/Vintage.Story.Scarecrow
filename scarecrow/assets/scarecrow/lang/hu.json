@@ -4,10 +4,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Madárijesztő",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "A kiválasztott eszközök elhelyezése a bal karon",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "A kiválasztott eszközök elhelyezése a jobb karon",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Lámpás akasztása a nyakra",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Öntözőkanna elhelyezése a lábnál",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Bal kar – felszerelés",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Jobb kar – felszerelés",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Nyak – felszerelés",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Láb – öntözőkanna",
 
 
 	// Description Scarecrow

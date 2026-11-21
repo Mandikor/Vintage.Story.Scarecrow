@@ -7,10 +7,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "案山子(かかし)",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "選択したツールを左腕に置く",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "選択したツールを右腕に置く",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "首にランタンを吊り下げる",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "水差しを足元に置く",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "左腕 – 装備",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "右腕 – 装備",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "首 – 装備",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "足元 – じょうろ",
 
 
 	// Description Scarecrow

@@ -4,10 +4,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Fugleskræmsel",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Anbring de valgte værktøjer på venstre arm",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Anbring de valgte værktøjer på højre arm",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Hæng en lygte om halsen",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Sæt en vandkande ved foden",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Venstre arm – udstyr",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Højre arm – udstyr",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Hals – udstyr",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Ved foden – vandkande",
 
 
 	// Description Scarecrow

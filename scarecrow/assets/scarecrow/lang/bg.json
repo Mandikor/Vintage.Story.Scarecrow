@@ -4,10 +4,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Плашило",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Поставете избраните инструменти на лявата ръка",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Поставете избраните инструменти на дясната ръка",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Окачете фенер на врата",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Поставете лейка при краката",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Лява ръка — екипировка",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Дясна ръка — екипировка",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Врат — екипировка",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Основа — лейка",
 
 
 	// Description Scarecrow

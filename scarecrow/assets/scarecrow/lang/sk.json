@@ -4,10 +4,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Strašiak",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Umiestniť vybrané nástroje na ľavú ruku",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Umiestniť vybrané nástroje na pravú ruku",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Zavesiť lampáš na krk",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Postaviť krhlu k nohám",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Ľavá ruka – vybavenie",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Pravá ruka – vybavenie",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Krk – vybavenie",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Pri nohách – krhla",
 
 
 	// Description Scarecrow

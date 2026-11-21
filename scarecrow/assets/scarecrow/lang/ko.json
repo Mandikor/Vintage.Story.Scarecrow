@@ -4,10 +4,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "허수아비",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "선택한 도구를 왼팔에 배치",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "선택한 도구를 오른팔에 배치",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "목에 랜턴 걸기",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "발치에 물뿌리개 놓기",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "왼팔 – 장비",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "오른팔 – 장비",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "목 – 장비",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "발밑 – 물뿌리개",
 
 
 	// Description Scarecrow

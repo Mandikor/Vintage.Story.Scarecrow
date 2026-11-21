@@ -4,10 +4,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Korkuluk",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Seçili araçları sol kola yerleştir",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Seçili araçları sağ kola yerleştir",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Boyna fener as",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Ayağa sulama kabı koy",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Sol kol – ekipman",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Sağ kol – ekipman",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Boyun – ekipman",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Ayak – sulama kabı",
 
 
 	// Description Scarecrow

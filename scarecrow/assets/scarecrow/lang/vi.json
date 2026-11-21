@@ -4,10 +4,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Bù nhìn",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Đặt công cụ đã chọn lên cánh tay trái",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Đặt công cụ đã chọn lên cánh tay phải",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Treo đèn lồng lên cổ",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Đặt bình tưới ở chân",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Tay trái – trang bị",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Tay phải – trang bị",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Cổ – trang bị",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Chân – bình tưới",
 
 
 	// Description Scarecrow

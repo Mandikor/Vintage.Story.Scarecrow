@@ -4,10 +4,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Birdotimigilo",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Meti la elektitajn ilojn sur la maldekstran brakon",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Meti la elektitajn ilojn sur la dekstran brakon",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Pendigi lanternon sur la kolon",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Meti akvumilon ĉe la piedoj",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Maldekstra brako – ekipaĵo",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Dekstra brako – ekipaĵo",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Kolo – ekipaĵo",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Ĉe la piedo – akvumilo",
 
 
 	// Description Scarecrow

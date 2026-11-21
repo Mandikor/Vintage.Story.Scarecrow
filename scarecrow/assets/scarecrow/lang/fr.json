@@ -4,10 +4,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Épouvantail",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Placer les outils sélectionnés sur le bras gauche",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Placer les outils sélectionnés sur le bras droit",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Accrocher une lanterne au cou",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Placer un arrosoir au pied",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Bras gauche – équipement",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Bras droit – équipement",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Cou – équipement",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Au pied – arrosoir",
 
 
 	// Description Scarecrow

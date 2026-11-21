@@ -4,10 +4,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "稻草人",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "將選取的工具放在左臂上",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "將選取的工具放在右臂上",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "在脖子上掛一盞提燈",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "在腳邊放一個澆水壺",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "左臂 – 裝備",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "右臂 – 裝備",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "頸部 – 裝備",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "腳邊 – 澆水壺",
 
 
 	// Description Scarecrow

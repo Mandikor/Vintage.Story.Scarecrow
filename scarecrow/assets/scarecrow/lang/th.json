@@ -4,10 +4,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "หุ่นไล่กา",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "วางเครื่องมือที่เลือกบนแขนซ้าย",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "วางเครื่องมือที่เลือกบนแขนขวา",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "แขวนตะเกียงที่คอ",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "วางบัวรดน้ำที่เท้า",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "แขนซ้าย – อุปกรณ์",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "แขนขวา – อุปกรณ์",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "คอ – อุปกรณ์",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "บริเวณเท้า – บัวรดน้ำ",
 
 
 	// Description Scarecrow

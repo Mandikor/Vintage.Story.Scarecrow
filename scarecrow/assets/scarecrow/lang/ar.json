@@ -4,10 +4,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "فزاعة",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "ضع الأدوات المحددة على الذراع اليسرى",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "ضع الأدوات المحددة على الذراع اليمنى",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "علّق فانوسًا على الرقبة",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "ضع مرشة مياه عند القدم",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "الذراع الأيسر – المعدات",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "الذراع الأيمن – المعدات",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "الرقبة – المعدات",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "القدم – إبريق الري",
 
 
 	// Description Scarecrow

@@ -2,10 +2,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Опудало",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Розмістити обрані інструменти на лівому плечі",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Розмістити обрані інструменти на правому плечі",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Підвісити ліхтар на шиї",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Розмістити лейку біля ніг",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Ліва рука — спорядження",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Права рука — спорядження",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Шия — спорядження",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Біля ніг — лійка",
 
 
 	// Description Scarecrow

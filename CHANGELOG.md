@@ -7,6 +7,10 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ### Consistent neck attachment names
 
+- Update all four selection-box labels in all 33 languages to describe equipment
+  locations instead of outdated tool-only or lantern-placement instructions.
+  Keep the foot label specific to watering cans; existing item interaction hints
+  continue to identify supported equipment.
 - Rename `LanternAP` to `NeckAP` and `LanternStorage` to `NeckStorage` in both
   scarecrow entity definitions, all three entity shapes, vanilla lantern attachment
   shapes and all 33 selection-box translations. Preserve geometry, slot order and

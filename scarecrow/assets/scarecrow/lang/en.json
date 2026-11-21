@@ -2,10 +2,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Scarecrow",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Place selected tools on the left arm",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Place selected tools on the right arm",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Hang a lantern on the neck",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Place a watering can at the foot",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Left arm – equipment",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Right arm – equipment",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Neck – equipment",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Foot – watering can",
 
 
 	// Description Scarecrow

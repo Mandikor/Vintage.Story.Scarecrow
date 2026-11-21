@@ -4,10 +4,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Spaventapasseri",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Posiziona gli strumenti selezionati sul braccio sinistro",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Posiziona gli strumenti selezionati sul braccio destro",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Appendi una lanterna al collo",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Posiziona un annaffiatoio ai piedi",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Braccio sinistro – equipaggiamento",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Braccio destro – equipaggiamento",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Collo – equipaggiamento",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Ai piedi – annaffiatoio",
 
 
 	// Description Scarecrow

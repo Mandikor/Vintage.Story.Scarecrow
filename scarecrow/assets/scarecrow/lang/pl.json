@@ -4,10 +4,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Strach na wróble",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Umieść wybrane narzędzia na lewym ramieniu",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Umieść wybrane narzędzia na prawym ramieniu",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Zawieś latarnię na szyi",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Postaw konewkę u stóp",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Lewe ramię – wyposażenie",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Prawe ramię – wyposażenie",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Szyja – wyposażenie",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "U stóp – konewka",
 
 
 	// Description Scarecrow

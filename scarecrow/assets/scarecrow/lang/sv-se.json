@@ -4,10 +4,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Fågelskrämma",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Placera de valda verktygen på vänster arm",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Placera de valda verktygen på höger arm",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Häng en lykta runt halsen",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Placera en vattenkanna vid fötterna",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Vänster arm – utrustning",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Höger arm – utrustning",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Hals – utrustning",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Vid foten – vattenkanna",
 
 
 	// Description Scarecrow

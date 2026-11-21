@@ -4,10 +4,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Fuglahræða",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Setja valin verkfæri á vinstri handlegg",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Setja valin verkfæri á hægri handlegg",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Hengja lukt á hálsinn",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Setja vatnskönnu við fæturna",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Vinstri handleggur – búnaður",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Hægri handleggur – búnaður",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Háls – búnaður",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Við fót – vökvunarkanna",
 
 
 	// Description Scarecrow

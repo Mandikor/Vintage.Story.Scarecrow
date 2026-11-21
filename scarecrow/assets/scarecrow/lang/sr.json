@@ -4,10 +4,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Плашило",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Поставите изабране алате на леву руку",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Поставите изабране алате на десну руку",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Окачити фењер око врата",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Поставити канту код стопала",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Лева рука – опрема",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Десна рука – опрема",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Врат – опрема",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Подножје – канта за заливање",
 
 
 	// Description Scarecrow

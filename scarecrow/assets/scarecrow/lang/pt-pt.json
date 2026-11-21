@@ -4,10 +4,10 @@
 	// Tab Name for Creative Mode
 	"game:tabname-scarecrow": "Espantalho",
 
-	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Colocar as ferramentas selecionadas no braço esquerdo",
-	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Colocar as ferramentas selecionadas no braço direito",
-	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Pendurar uma lanterna no pescoço",
-	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Colocar um regador aos pés",
+	"creature-scarecrow:*scarecrow-selectionbox-LArmAP": "Braço esquerdo – equipamento",
+	"creature-scarecrow:*scarecrow-selectionbox-RArmAP": "Braço direito – equipamento",
+	"creature-scarecrow:*scarecrow-selectionbox-NeckAP": "Pescoço – equipamento",
+	"creature-scarecrow:*scarecrow-selectionbox-FootAP": "Base – regador",
 
 
 	// Description Scarecrow
