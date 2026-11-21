@@ -1,7 +1,7 @@
 # Changelog
 
-All notable changes to the Scarecrow mod, newest first. The version numbers match
-`scarecrow/modinfo.json`, the dates are the dates of the release commits.
+I keep track of notable Scarecrow changes here, newest first. The version numbers
+match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ## Unreleased
 
@@ -57,7 +57,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   `compatibility/walkingstick/patches`; no C# integration is required.
 - Build and checks pass for 54 operations using the game's actual JSON patch
   library, all 30 variants, original shapes and categories, slot/domain exclusions
-  and zero bonus. The author's in-game test passed; individual positions remain
+  and zero bonus. My in-game test passed; individual positions remain
   editable through the per-arm transforms.
 
 ### General wind-driven pendulum switch
@@ -76,14 +76,14 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   the current patches. No changes to attachment permission, radius or ownership.
 - Build and isolated item/block switch, motion, pivot and constructor checks pass;
   Primitive Survival regression checks and 76 operations across 12 attachment
-  patch files also pass. The author's in-game test passed.
+  patch files also pass. My in-game test passed.
 
 ### General arm transforms and native editor integration
 
 - Switch both arms' scythes, metal/stone hoes, bug nets, snow shovels, Art of
   Growing hayforks and Leaf Litter rakes to their original game/mod models.
   Remove 16 obsolete tool attachment shapes and preserve all authored transform
-  values, including the author's tested right-arm bug-net placement. Other tool
+  values, including my tested right-arm bug-net placement. Other tool
   positions are intentionally left for manual calibration in the native editor.
 - Add optional `onScarecrowLeftArmTransform` and `onScarecrowRightArmTransform`
   collectible attributes using native ModelTransform translation, rotation,
@@ -96,7 +96,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   editor entries on disposal. No Walking Stick integration is added yet.
 - Build and checks pass for native matrix equivalence in both animation versions,
   independent arms, default/invalid metadata, cache invalidation, geometry isolation
-  and editor registration/events/cleanup. The author's transform game test passed.
+  and editor registration/events/cleanup. My transform game test passed.
 - Add explicit neutral left/right defaults to all 16 existing arm-attachment
   definitions across 12 patch files, covering vanilla tools/lights, Art of Growing,
   Leaf Litter, More Lanterns, Wind Chimes, Dreamcatchers, censership and Primitive
@@ -109,7 +109,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   JSON patch library against the supplied assets.
 - Use More Lanterns ceiling variants as texture sources for animated arm models,
   preserving state/color/brightness and supplying rope, paper and coal mappings
-  missing from floor-model texture sources. The author's retest passed; fresh
+  missing from floor-model texture sources. My retest passed; fresh
   client/server main/debug logs contain no errors and no previous texture-mapping
   failures. Server warnings remain about missing `GlassSouthL` step parents for
   Modern 1/2 and Gothic 1 on the Plumpkins shape; these need separate review.
@@ -125,7 +125,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   Cages and no JSON patches. Remove only this hook when the mod system is disposed.
 - Build and checks using the actual 5.0.1 DLL pass: reproduce the original removal,
   verify both cage sizes, saved state, absent-mod gating, continued natural-spawn
-  blocking and patch disposal. The author's in-game test passed: naturally spawned
+  blocking and patch disposal. My in-game test passed: naturally spawned
   hares and raccoons were captured and released beside a scarecrow; both appeared
   successfully and fled through their normal AI tasks.
 
@@ -138,12 +138,12 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   through a private mesh offset; original world shapes remain unchanged.
 - Wooden lanterns add +2 blocks and filled jars +1 to natural-spawn protection.
   Retain strongest-only bonuses, automatic outline updates and Ctrl + H. Exclude
-  empty/baited jars, placed orientations and small/neck/foot slots. Creature AI
-  is outside the requested scope; no AI tasks are patched.
+  empty/baited jars, placed orientations and small/neck/foot slots. I left creature
+  AI outside this integration; no AI tasks are patched.
 - Keep all integration patches under `compatibility/primitivesurvival/patches`.
   Build and resolver checks pass for 96 variants, slot/bonus/removal rules, native
   textures and duplicate-mesh prevention. Mount checks pass on both full-size
-  models. The author's in-game test passed.
+  models. My in-game test passed.
 
 ### Plumpkins attachment rendering
 
@@ -151,7 +151,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   both full-size scarecrow shapes, including the alternative Plumpkins model.
   Add the missing arm child containers without changing its pumpkin geometry.
 - Verify matching attachment positions, upright hanging mounts and preserved
-  tool/foot storage points on both models. The author's in-game test passed.
+  tool/foot storage points on both models. My in-game test passed.
 
 ### Vanilla oil lamps on arms
 
@@ -168,7 +168,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   from the rendered ceiling model's flame pivot and parent transforms instead
   of reusing the placed-block emission height.
 - Build and actual variant/slot checks pass for 60 color/orientation combinations,
-  including duplicate-mesh prevention. The author's in-game retest passed after
+  including duplicate-mesh prevention. My in-game retest passed after
   correcting the particle source.
 
 ### censership 1.0.6 arm decorations
@@ -182,7 +182,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 - Keep all JSON patches under `compatibility/censership` and optional particle
   handling under `src/combat/censership`. Placed blocks remain unchanged.
 - Build and checks pass for 234 orientations/material variants, including both
-  arms, exclusions, zero bonus and duplicate-mesh prevention. The author's
+  arms, exclusions, zero bonus and duplicate-mesh prevention. My
   in-game test also passed.
 
 ### Wind-driven arm lanterns
@@ -197,10 +197,10 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   to the first empty arm. If both arms are occupied, keep the old lantern safely
   removable at its legacy position without losing its bonus or overwriting gear.
 - Geometry, variant, slot and migration checks pass, including 768 More Lanterns
-  variants and both vanilla sizes/orientations. The author's gameplay test passed.
+  variants and both vanilla sizes/orientations. My gameplay test passed.
 - Fix duplicate static/animated arm lanterns found in the initial game test:
   identify arm slots from the inventory instead of the unresolved `default`
-  slot-name argument. Keep little/legacy neck rendering; the author's gameplay
+  slot-name argument. Keep little/legacy neck rendering; my gameplay
   retest passed.
 
 ### Wind chime hanging-piece animation
@@ -208,7 +208,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 - Animate individual hanging pieces on each arm, with or without Immersive Lanterns,
   using local wind, damped pendulum response and independent phases. Retain
   original pivots, textures and fixed supports, including copper/bone models.
-- Keep our attachment animation active alongside `immersivelanterns`; suppress
+- Keep my attachment animation active alongside `immersivelanterns`; suppress
   shader wind on private copies to avoid double motion. Placed block animations
   remain independent. Remove the initial switch that left most attached models
   stationary with Immersive Lanterns installed.
@@ -217,7 +217,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   and shared/placed-block assets remain unchanged.
 - Build and geometry/motion checks pass for seven models and 39 moving subtrees,
   both with original assets and Immersive Lanterns 0.4.1's shape patches applied.
-  The author's attachment game tests passed both without Immersive Lanterns and
+  My attachment game tests passed both without Immersive Lanterns and
   with it enabled. The combined retest was limited to equipping scarecrows;
   placed-block issues were reproduced separately without Scarecrow installed.
 
@@ -233,10 +233,10 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 - Attachment/variant checks pass for all 5,200 variants and both arm transforms.
   Correct the invisible attachment in the working 1.0.2 package by using its
   `block/dreamcatcher` model instead of 1.0.31's `block/dreamcatcherwall` path.
-  Build and the author's gameplay retest of the corrected attachment pass.
+  The build passed, and my gameplay retest of the corrected attachment passed.
 - Record the separate upstream 1.0.31 packaging error: `itemtypes/bead.json`
   contains shape data instead of an item definition and prevents game loading.
-  The author confirmed 1.0.2 loads. See local guide.
+  I confirmed 1.0.2 loads. See local guide.
 
 ### Teapot's Undead Legion 2.2.2
 
@@ -248,7 +248,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   transport creatures and projectiles remain unchanged. No new flee behavior,
   C# adapter or spawn prefixes.
 - Actual game resolver checks pass for 180 hostile variants; 73 companion and
-  nonliving variants remain unpatched. Build and the author's in-game test pass.
+  nonliving variants remain unpatched. The build passed, and my in-game test passed.
   See local behavior guide.
 
 ### Teapot's Giant Scorpion 1.0.2
@@ -260,7 +260,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   retaliation only in copies. No flee task, C# adapter or spawn prefixes added.
 - Actual game resolver checks pass for both variants and ten additional task
   configurations; native task inheritance verified against the DLL. Build passes;
-  the author's in-game test also passed. See local behavior guide.
+  my in-game test also passed. See local behavior guide.
 
 ### Talonborne 1.2.0
 
@@ -270,7 +270,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 - Keep raised mounts' behavior intact: no invented flee/attack tasks, changes
   to bed-down or commanded rest, ownership, Jaunt flight, eggs or nests.
 - Six JSON operations pass checks across all 16 adult/young color variants
-  using the game's variant resolver. Build and the author's in-game test pass.
+  using the game's variant resolver. The build passed, and my in-game test passed.
   See local scope and behavior.
 
 ### Pegasus: Winged horses 1.1.0-rc.1
@@ -282,7 +282,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   damage and ranges; leave eggs, owner following and Jaunt flight controls intact.
 - Variant-resolver checks pass for all 12 wild/feral/tamed variants, including
   eight active and 28 disabled additional task configurations. Build passes;
-  the author's in-game test also passed. See local scope.
+  my in-game test also passed. See local scope.
 
 ### Fantasy Creatures Mod 0.8.3
 
@@ -294,7 +294,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   its player-target wing attack receives a scarecrow copy. No C# adapter or new
   spawn prefixes.
 - Actual game variant-resolver checks pass for 26 variants and 74 additional
-  task configurations. The author's in-game test also passed; see the
+  task configurations. My in-game test also passed; see the
   local behavior guide.
 
 ### Flocks 0.22.1 compatibility
@@ -307,7 +307,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   only in the copy. No new spawn prefixes or C# adapter.
 - Other custom bird behaviors retain native player-only reactions; see
   local scope and settings. Build and automated checks
-  pass; the author completed the in-game test successfully.
+  pass; I completed the in-game test successfully.
 
 ### Additional relevant FotSA families
 
@@ -318,7 +318,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   Penguin eggs and fully aquatic Iniidae/Sirenia are left unchanged. Original
   player/prey/breeding tasks are preserved; no new spawn-blocking prefixes.
 - Actual game variant-resolver checks pass for 132 variants and 414 enabled
-  configurations, including swimming and stationary defense. The author also
+  configurations, including swimming and stationary defense. I also
   completed the in-game test successfully.
 
 ### Crows 0.2.7 native compatibility
@@ -330,7 +330,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   flight, feeding, landing/perching, player/social behavior and other registrations;
   no C# adapter or new natural-spawn blocking entries are required.
 - Verify the actual Crows DLL's recognition, flight-threat checks, boundaries,
-  avoidance memory/expiry and native scarecrow values. The author also completed
+  avoidance memory/expiry and native scarecrow values. I also completed
   the in-game test successfully.
 
 ### Native player AI for the remaining supported creature mods
@@ -350,7 +350,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 - Verify Detailed Animals' actual clone routine for both generated chick sexes.
   Bats retains its authored feed-deterrent integration as a custom-AI exception.
   Other vanilla animal patches are unchanged. Build and automated checks pass;
-  the author also completed this batch's in-game test successfully.
+  I also completed this batch's in-game test successfully.
 
 ### Feverstone Wilds 3.2.1 native player AI
 
@@ -363,7 +363,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   player/prey/owner tasks and disable attacker substitution in added tasks.
 - Correct the cub's wild-variant selection only for its added scarecrow task.
   Integration remains JSON-only; build and actual game variant-resolver checks
-  pass. The author's in-game test also found no issues.
+  pass. I also found no issues during my in-game test.
 
 ### Local mod-library audit and compatibility backlog
 

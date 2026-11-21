@@ -4,8 +4,8 @@ Keep unwelcome animals away from your garden in **Vintage Story**. Place a scare
 near your crops, berry bushes, beehives or chicken coop, then equip it with gardening
 tools, a lantern and a watering can.
 
-The mod adds a full-size scarecrow and a smaller version that does not require a
-pumpkin. It also gives the vanilla straw dummy a role in protecting your garden.
+I added a full-size scarecrow and a smaller version that does not require a
+pumpkin. I also gave the vanilla straw dummy a role in protecting your garden.
 
 [Download on the Vintage Story Mod Database](https://mods.vintagestory.at/scarecrow)
 · [Changelog](CHANGELOG.md)
@@ -386,7 +386,7 @@ All JSON patches are under `compatibility/windchimes/patches`; original models,
 textures and recordings are referenced directly. Attached wind chimes use
 independent wind-driven hanging-piece animation with damped follow-through,
 including when **Immersive Lanterns** is installed. Shader wind is suppressed
-on our private model copies to avoid double movement. Placed wind chimes, sound
+on private attachment model copies to avoid double movement. Placed wind chimes, sound
 and radius bonuses are unchanged.
 See the
 [Wind Chimes settings](#wind-chimes-by-ape) for details.
@@ -519,7 +519,7 @@ size and age rules, injury-triggered defense and the mod versions used for the a
 
 ## Feedback and contributions
 
-Bug reports, compatibility fixes and translation improvements are welcome.
+I welcome bug reports, compatibility fixes and translation improvements.
 When reporting a problem, include:
 
 - Your Vintage Story and Scarecrow versions.

@@ -1,7 +1,7 @@
 # Scarecrow ideas
 
-Status for the `dev` branch. Deferred items require renewed discussion before
-implementation. Tool bonuses were removed from the plan at the author's request.
+This is my working list for the `dev` branch. I will revisit deferred items before
+implementing them. I have removed tool bonuses from the plan.
 
 1. [x] **Show protection information in the placed scarecrow's tooltip when looking
    at it, without chat messages.** Display the
@@ -65,17 +65,17 @@ implementation. Tool bonuses were removed from the plan at the author's request.
    transform-editor entries and local preview refresh. Existing categories and
    attachment permissions remain intact. Build and isolated checks passed;
    see the [arm transform settings](README.md#arm-transforms-for-modders).
-   The author completed the transform game test successfully. All existing arm
+   I completed the transform game test successfully. All existing arm
    attachment patches now include neutral left/right transform defaults; neck and
    foot-only items are unchanged.
-   Tool arm shapes have been replaced by original models; the author's calibrated
+   Tool arm shapes have been replaced by original models; my calibrated
    right-arm bug net is preserved. Remaining tool transforms await manual tuning.
 
 10. [x] **General pendulum switch.** Add visual-only `scarecrowPendulum` for item
     and block arm models, optional pivots and custom pose points. Existing lights
     keep their motion by default, tools/Dreamcatchers stay still, and Wind Chimes
     retain their specialized parts. Build, item/block motion/switch checks and
-    existing Primitive Survival checks passed. The author completed the in-game
+    existing Primitive Survival checks passed. I completed the in-game
     test successfully.
 
 ## Compatibility review — updated 2026-11-20
@@ -97,14 +97,14 @@ snapshot of 81 IDs and does not describe the cleaned current library.
 - [x] **P0 — Feverstone Wilds 3.2.1:** repaired six shifted AI task-list paths;
   3.2.1 replaces the 3.1.1 baseline. New griffon ages follow native player AI.
   Implemented in JSON; build and game-resolver checks passed.
-- [x] **Feverstone Wilds game test:** the author tested the integration and reported
+- [x] **Feverstone Wilds game test:** I tested the integration and found
   no issues in the observed behavior.
 - [x] **P1 — Native player AI implementation:** the remaining 26 creature mods
   now use native player-code/tag tasks, retaining original action settings and
   player/prey behavior. Shared chick templates, Equus: Expanded generation and
   Bats' custom deterrents are covered separately. See the native creature guide;
   the original audit and CSV retain their initial findings.
-- [x] **Existing creature migration game test:** the author completed the batch's
+- [x] **Existing creature migration game test:** I completed the batch's
   in-game test successfully. Automated checks also passed; this does not imply
   exhaustive coverage of every species, state or mod combination.
 - [x] **Arctic Wolves 1.5.0:** native player-task adaptation already implemented
@@ -117,7 +117,7 @@ snapshot of 81 IDs and does not describe the cleaned current library.
   native feed-deterrent mechanism, not every hard-coded EntityPlayer interaction.
 - [x] Leaf Litter 1.6.0: rake JSON and decompiled ItemRake unchanged, existing
   attachment patch applies; no update-specific code change identified.
-- [x] Cervinae 0.1.19: breeding-key correction does not change AI or our patch paths.
+- [x] Cervinae 0.1.19: breeding-key correction does not change AI or my patch paths.
 
 ### Updates newly present in the cleaned library
 
@@ -132,14 +132,14 @@ snapshot of 81 IDs and does not describe the cleaned current library.
   `otherScarecrows` integration, aligned the little scarecrow to 12/16, registered
   the straw dummy at 8/12 and extended the original wake list. Keep native flight,
   feeding and player/social behavior; no C# adapter. Automated checks passed.
-- [x] **Crows game test:** the author completed the in-game test successfully.
+- [x] **Crows game test:** I completed the in-game test successfully.
 - [x] **P2 — Felinae implementation** (`felinae`, 0.2.16): native player-tag
   tasks for adult and young caracals/lynxes; native fear conditions retained.
 - [x] **P2 — Manidae implementation** (`manidae`, 1.0.24): native player-tag
   tasks for adults/young, including stationary adult defense and swimming gates.
 - [x] **P2 — Spheniscidae implementation** (`spheniscidae`, 1.0.20): native
   adult/chick land and swimming tasks; eggs unchanged.
-- [x] **Additional FotSA game test:** the author completed the in-game test
+- [x] **Additional FotSA game test:** I completed the in-game test
   successfully. Automated checks cover 132 variants and 414 enabled task
   configurations.
 - [x] **P2 — Flocks review and scoped integration** (`flocks`, 0.22.1): retain
@@ -147,34 +147,34 @@ snapshot of 81 IDs and does not describe the cleaned current library.
   bird definitions reviewed; no separate domesticated forms found. Other birds
   retain native player-only reactions; see [compatibility overview](README.md#optional-mod-compatibility).
   Automated checks passed.
-- [x] **Flocks game test:** the author completed the in-game test successfully.
+- [x] **Flocks game test:** I completed the in-game test successfully.
 - [x] **P2 — Fantasy Creatures implementation** (`fantasycreaturesupdate`, 0.8.3):
   14 definitions, 51 combat/fear task copies and five wake lists. Native hostile
   humanoid/undead behavior retained; blue-dragon following unchanged. Actual game
   resolver checks pass for 26 variants and 74 additional task configurations.
   See [compatibility overview](README.md#optional-mod-compatibility).
-- [x] **Fantasy Creatures game test:** the author completed the in-game test successfully.
+- [x] **Fantasy Creatures game test:** I completed the in-game test successfully.
 - [x] **P2 — Pegasus implementation** (`pegasus`, 1.1.0-rc.1): three native
   wild-only injury combat/fear copies and four gated wake lists. Feral/tamed
   inherited additions disabled; Jaunt flight/owner controls unchanged. Resolver
   checks pass for all 12 variants. See [compatibility overview](README.md#optional-mod-compatibility).
-- [x] **Pegasus game test:** the author completed the in-game test successfully.
+- [x] **Pegasus game test:** I completed the in-game test successfully.
 - [x] **P2 — Talonborne implementation** (`talonborne`, 1.2.0): extend adult/young
   grazing interruption only. No native player combat/fear tasks; bed-down,
   commanded rest, owner/flight controls, eggs and nests unchanged. Resolver
   checks pass for all 16 adult/young variants. See [compatibility overview](README.md#optional-mod-compatibility).
-- [x] **Talonborne game test:** the author completed the in-game test successfully.
+- [x] **Talonborne game test:** I completed the in-game test successfully.
 - [x] **P2 — Giant Scorpion implementation** (`teapotsgiantscorpion`, 1.0.2):
   five native sting/claw/charge/pursuit copies; original reach, poison and emotion
   settings retained. Resolver checks pass for both variants/ten configurations;
   native DLL inheritance verified. See [compatibility overview](README.md#optional-mod-compatibility).
-- [x] **Giant Scorpion game test:** the author completed the in-game test successfully.
+- [x] **Giant Scorpion game test:** I completed the in-game test successfully.
 - [x] **P3 — Undead Legion implementation** (`teapotsundeadlegion`, 2.2.2):
   hostile undead attack/pursue scarecrows; 21 combat and nine wake lists extended
   directly, 12 existing wildcard lists retained. Bound/player-summoned forms
   excluded. Resolver checks pass for 180 hostile variants; 73 companion/nonliving
   variants unpatched. See [compatibility overview](README.md#optional-mod-compatibility).
-- [x] **Undead Legion game test:** the author completed the in-game test successfully.
+- [x] **Undead Legion game test:** I completed the in-game test successfully.
 
 ### Aquatic creature candidates
 
@@ -190,10 +190,10 @@ snapshot of 81 IDs and does not describe the cleaned current library.
   server-side Harmony hook marks restored animals before spawning from either
   cage size, preserving saved state and avoiding false natural-spawn removal.
   Build and actual-DLL checks passed; natural spawning remains blocked normally.
-- [x] **Animal Cages game test:** the author captured naturally spawned hares and
+- [x] **Animal Cages game test:** I captured naturally spawned hares and
   raccoons and released them beside a scarecrow. Both appeared successfully and
-  their normal flee AI activated. Cage-size variants and occupied-cage save/reload
-  were not separately reported as tested in game.
+  their normal flee AI activated. I have not recorded separate in-game tests for
+  both cage sizes or occupied-cage save/reload.
 - [ ] **P1 — Pet AI** (`petai`, 5.1.2): Verify custom pet combat, owner commands and inventory handling; infrastructure, not a new species.
 
 ### Equipment and decoration candidates
@@ -203,7 +203,7 @@ snapshot of 81 IDs and does not describe the cleaned current library.
   neutral transforms and pendulum off. Preserve native categories/riding slots;
   exclude separate weapons and empty sheaths. Build and 54-operation/30-variant
   checks passed; no radius bonus or player-ability adapter.
-- [x] **Walking Stick game test:** the author completed the in-game test
+- [x] **Walking Stick game test:** I completed the in-game test
   successfully. Per-item arm transforms remain available for further calibration.
 
 - [x] **Plumpkins attachment fix** (`plumpkins`, 1.1.3): apply the existing arm
@@ -214,14 +214,14 @@ snapshot of 81 IDs and does not describe the cleaned current library.
   ceiling suspension/flame model, light, flame/smoke particles and pendulum motion;
   +1 radius bonus. Particle profiles are private per arm and follow the wick.
   Raw/empty lamps and other slots excluded; checks pass for 60 variants.
-- [x] **Oil-lamp game test:** the author completed the in-game retest successfully
+- [x] **Oil-lamp game test:** I completed the in-game retest successfully
   after correcting the particle source to the model's wick.
 
 - [x] **Arm lantern implementation:** vanilla small/large and More Lanterns
   pendulum animation; no new full-size neck insertion. Little neck retained.
   Saved/packed neck lanterns migrate to a free arm, otherwise remain removable
   without loss. Variant, slot, fixed-pivot and migration checks passed.
-- [x] **Arm lantern game test:** the author completed the gameplay retest
+- [x] **Arm lantern game test:** I completed the gameplay retest
   successfully after the inventory-based fix for duplicate static meshes.
   Automated checks also cover variant rules, migration and render exclusion.
 
@@ -229,7 +229,7 @@ snapshot of 81 IDs and does not describe the cleaned current library.
   pieces; suppress shader wind on private
   attachment models and leave placed block animation unchanged. Geometry/motion checks
   pass for all seven supplied models and 39 moving subtrees.
-- [x] **Wind chime motion attachment game test:** the author confirmed successful
+- [x] **Wind chime motion attachment game test:** I confirmed successful
   animation and an error-free compatibility retest, limited to equipping
   scarecrows. Third-party placed-block invisibility/crashes were
   reproduced separately without Scarecrow and remain an upstream issue.
@@ -238,7 +238,7 @@ snapshot of 81 IDs and does not describe the cleaned current library.
   decorations on either/both full-size arms, dedicated upright mounts, all 5,200
   variants checked. Supplied content-only mod has no gameplay protection effect;
   no radius bonus added. See [compatibility overview](README.md#optional-mod-compatibility).
-- [x] **Dreamcatchers 1.0.2 attachment retest:** the author completed the in-game
+- [x] **Dreamcatchers 1.0.2 attachment retest:** I completed the in-game
   retest successfully. Corrected patches use `block/dreamcatcher` instead of the
   incompatible 1.0.31 model path. **Known upstream 1.0.31 error:**
   `itemtypes/bead.json` is a shape instead of an item definition and prevents
@@ -248,7 +248,7 @@ snapshot of 81 IDs and does not describe the cleaned current library.
   profiles and pendulum motion. No native protection effect or radius bonus.
   Resolver/slot/source-preservation checks pass for 234 variants. See
   [compatibility overview](README.md#optional-mod-compatibility).
-- [x] **censership game test:** the author completed the in-game test successfully.
+- [x] **censership game test:** I completed the in-game test successfully.
 
 ### Primitive Survival compatibility
 
@@ -256,8 +256,8 @@ snapshot of 81 IDs and does not describe the cleaned current library.
   lanterns (+2 radius) and seven filled Firefly Jars (+1), native textures/light
   and wind-driven pendulum motion on either arm of both full-size models.
   Strongest-only bonuses; empty/baited jars and other slots excluded. Build and
-  96-variant resolver checks passed. The author excluded creature AI from scope.
-- [x] **Primitive Survival game test:** the author completed the in-game test
+  96-variant resolver checks passed. I excluded creature AI from scope.
+- [x] **Primitive Survival game test:** I completed the in-game test
   successfully after implementing arm lighting, wind motion and radius bonuses.
 
 ### Libraries and general utility mods: assess need, do not promise a patch
