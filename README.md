@@ -272,6 +272,46 @@ can supply another pivot in model-frame block units: generic models default to
 per-slot pose-point names through `scarecrowPendulumAttachmentPoints`. The setting affects
 the full-size scarecrow's arms only and does not make an item attachable by itself.
 
+Here is a complete example of all three pendulum-specific attributes for a generic
+arm item or block. Add these entries to its existing `attributes` object, or merge
+them into `/attributes` with a compatibility patch:
+
+```json
+{
+  "attributes": {
+    "scarecrowPendulum": true,
+    "scarecrowPendulumPivot": [0.0, 0.0, 0.0],
+    "scarecrowPendulumAttachmentPoints": {
+      "sc-leftarm": "ScarecrowArmLeftOriginAP",
+      "sc-rightarm": "ScarecrowArmRightOriginAP"
+    }
+  }
+}
+```
+
+| Attribute | Meaning | Default when omitted |
+| --- | --- | --- |
+| `scarecrowPendulum` | `true` enables wind-driven motion; `false` keeps the attachment at rest. Applies to both arms. | Existing hanging lights/decorations and wind chimes keep moving; ordinary tools remain still. |
+| `scarecrowPendulumPivot` | `[x, y, z]` is the model's rotation point before the per-arm transform, in block units. One block equals 16 shape units. | Generic models: `[0, 0, 0]`. Legacy hanging lights/decorations: `[0.5, 1, 0.5]`. |
+| `scarecrowPendulumAttachmentPoints` | Optional per-arm overrides naming attachment points that exist in the scarecrow's entity shape. | Generic models use the two `ScarecrowArm…OriginAP` points shown above. |
+
+For a normal tool, only `"scarecrowPendulum": true` is needed; the other two
+entries in the example explicitly repeat its defaults. For an existing hanging
+light, omit the pivot to preserve its ceiling suspension point, or use
+`"scarecrowPendulumPivot": [0.5, 1.0, 0.5]` explicitly.
+
+Replace the point names only when using custom mounts with matching attachment
+points in the entity shape. For example, Dreamcatchers uses
+`ScarecrowDreamcatcherLeftAP` and `ScarecrowDreamcatcherRightAP`. Legacy hanging
+lights keep their dedicated lantern points and ignore these point overrides.
+Wind chimes use their own model-specific part pivots: the boolean switch applies,
+but these whole-model pivot and point overrides do not.
+
+Use `onScarecrowLeftArmTransform` and `onScarecrowRightArmTransform`, described
+above, to adjust the resting position, rotation and size independently. They can
+coexist with all three pendulum attributes. `.tfedit` edits those transforms;
+the pendulum switch, pivot and point names are edited directly in the JSON.
+
 ### Adventurer's Walking Stick
 
 With **Adventurer's Walking Stick 3.0.12**, both full-size scarecrow models accept
