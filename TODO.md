@@ -61,7 +61,7 @@ implementation. Tool bonuses were removed from the plan at the author's request.
    attributes for left/right arms, static and animated equipment, plus native
    transform-editor entries and local preview refresh. Existing categories and
    attachment permissions remain intact. Build and isolated checks passed;
-   see the [modder guide](docs/scarecrow-arm-transforms.md).
+   see the [arm transform settings](README.md#arm-transforms-for-modders).
    The author completed the transform game test successfully. All existing arm
    attachment patches now include neutral left/right transform defaults; neck and
    foot-only items are unchanged.
@@ -85,7 +85,7 @@ or inherit supported content. Six have no explicit integration: two aquatic
 mods remain reviewed/deferred, and four remain open review candidates below.
 Absent mods have been removed from this active backlog; existing compatibility code remains
 unchanged. Previously deferred cosmetics and aging remain deferred.
-The [original local mod audit](docs/mod-library-audit-2026-11-19.md) is a historical
+The original local mod audit is a historical
 snapshot of 81 IDs and does not describe the cleaned current library.
 
 - [x] Inventory ZIP/unpacked duplicates, manifest versions and current support.
@@ -142,35 +142,35 @@ snapshot of 81 IDs and does not describe the cleaned current library.
 - [x] **P2 — Flocks review and scoped integration** (`flocks`, 0.22.1): retain
   built-in corvid protection; add native mouse flee/wake patches. Seven custom
   bird definitions reviewed; no separate domesticated forms found. Other birds
-  retain native player-only reactions; see [scope](docs/flocks-compatibility.md).
+  retain native player-only reactions; see [compatibility overview](README.md#optional-mod-compatibility).
   Automated checks passed.
 - [x] **Flocks game test:** the author completed the in-game test successfully.
 - [x] **P2 — Fantasy Creatures implementation** (`fantasycreaturesupdate`, 0.8.3):
   14 definitions, 51 combat/fear task copies and five wake lists. Native hostile
   humanoid/undead behavior retained; blue-dragon following unchanged. Actual game
   resolver checks pass for 26 variants and 74 additional task configurations.
-  See [behavior guide](docs/fantasycreatures-compatibility.md).
+  See [compatibility overview](README.md#optional-mod-compatibility).
 - [x] **Fantasy Creatures game test:** the author completed the in-game test successfully.
 - [x] **P2 — Pegasus implementation** (`pegasus`, 1.1.0-rc.1): three native
   wild-only injury combat/fear copies and four gated wake lists. Feral/tamed
   inherited additions disabled; Jaunt flight/owner controls unchanged. Resolver
-  checks pass for all 12 variants. See [scope](docs/pegasus-compatibility.md).
+  checks pass for all 12 variants. See [compatibility overview](README.md#optional-mod-compatibility).
 - [x] **Pegasus game test:** the author completed the in-game test successfully.
 - [x] **P2 — Talonborne implementation** (`talonborne`, 1.2.0): extend adult/young
   grazing interruption only. No native player combat/fear tasks; bed-down,
   commanded rest, owner/flight controls, eggs and nests unchanged. Resolver
-  checks pass for all 16 adult/young variants. See [scope](docs/talonborne-compatibility.md).
+  checks pass for all 16 adult/young variants. See [compatibility overview](README.md#optional-mod-compatibility).
 - [x] **Talonborne game test:** the author completed the in-game test successfully.
 - [x] **P2 — Giant Scorpion implementation** (`teapotsgiantscorpion`, 1.0.2):
   five native sting/claw/charge/pursuit copies; original reach, poison and emotion
   settings retained. Resolver checks pass for both variants/ten configurations;
-  native DLL inheritance verified. See [guide](docs/teapotsgiantscorpion-compatibility.md).
+  native DLL inheritance verified. See [compatibility overview](README.md#optional-mod-compatibility).
 - [x] **Giant Scorpion game test:** the author completed the in-game test successfully.
 - [x] **P3 — Undead Legion implementation** (`teapotsundeadlegion`, 2.2.2):
   hostile undead attack/pursue scarecrows; 21 combat and nine wake lists extended
   directly, 12 existing wildcard lists retained. Bound/player-summoned forms
   excluded. Resolver checks pass for 180 hostile variants; 73 companion/nonliving
-  variants unpatched. See [guide](docs/teapotsundeadlegion-compatibility.md).
+  variants unpatched. See [compatibility overview](README.md#optional-mod-compatibility).
 - [x] **Undead Legion game test:** the author completed the in-game test successfully.
 
 ### Aquatic creature candidates
@@ -234,7 +234,7 @@ snapshot of 81 IDs and does not describe the cleaned current library.
 - [x] **P2 — Dreamcatchers implementation** (`dreamcatchers`, 1.0.2): finished
   decorations on either/both full-size arms, dedicated upright mounts, all 5,200
   variants checked. Supplied content-only mod has no gameplay protection effect;
-  no radius bonus added. See [guide](docs/dreamcatchers-compatibility.md).
+  no radius bonus added. See [compatibility overview](README.md#optional-mod-compatibility).
 - [x] **Dreamcatchers 1.0.2 attachment retest:** the author completed the in-game
   retest successfully. Corrected patches use `block/dreamcatcher` instead of the
   incompatible 1.0.31 model path. **Known upstream 1.0.31 error:**
@@ -244,7 +244,7 @@ snapshot of 81 IDs and does not describe the cleaned current library.
   censers on either/both arms; original hanging models, light, cloned smoke
   profiles and pendulum motion. No native protection effect or radius bonus.
   Resolver/slot/source-preservation checks pass for 234 variants. See
-  [guide](docs/censership-compatibility.md).
+  [compatibility overview](README.md#optional-mod-compatibility).
 - [x] **censership game test:** the author completed the in-game test successfully.
 
 ### Primitive Survival compatibility

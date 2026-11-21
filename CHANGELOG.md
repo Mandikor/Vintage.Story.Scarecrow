@@ -197,7 +197,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   Build and the author's gameplay retest of the corrected attachment pass.
 - Record the separate upstream 1.0.31 packaging error: `itemtypes/bead.json`
   contains shape data instead of an item definition and prevents game loading.
-  The author confirmed 1.0.2 loads. See [guide](docs/dreamcatchers-compatibility.md).
+  The author confirmed 1.0.2 loads. See local guide.
 
 ### Teapot's Undead Legion 2.2.2
 
@@ -210,7 +210,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   C# adapter or spawn prefixes.
 - Actual game resolver checks pass for 180 hostile variants; 73 companion and
   nonliving variants remain unpatched. Build and the author's in-game test pass.
-  See [behavior guide](docs/teapotsundeadlegion-compatibility.md).
+  See local behavior guide.
 
 ### Teapot's Giant Scorpion 1.0.2
 
@@ -221,7 +221,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   retaliation only in copies. No flee task, C# adapter or spawn prefixes added.
 - Actual game resolver checks pass for both variants and ten additional task
   configurations; native task inheritance verified against the DLL. Build passes;
-  the author's in-game test also passed. See [behavior guide](docs/teapotsgiantscorpion-compatibility.md).
+  the author's in-game test also passed. See local behavior guide.
 
 ### Talonborne 1.2.0
 
@@ -232,7 +232,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   to bed-down or commanded rest, ownership, Jaunt flight, eggs or nests.
 - Six JSON operations pass checks across all 16 adult/young color variants
   using the game's variant resolver. Build and the author's in-game test pass.
-  See [scope and behavior](docs/talonborne-compatibility.md).
+  See local scope and behavior.
 
 ### Pegasus: Winged horses 1.1.0-rc.1
 
@@ -243,7 +243,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   damage and ranges; leave eggs, owner following and Jaunt flight controls intact.
 - Variant-resolver checks pass for all 12 wild/feral/tamed variants, including
   eight active and 28 disabled additional task configurations. Build passes;
-  the author's in-game test also passed. See [scope](docs/pegasus-compatibility.md).
+  the author's in-game test also passed. See local scope.
 
 ### Fantasy Creatures Mod 0.8.3
 
@@ -256,7 +256,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   spawn prefixes.
 - Actual game variant-resolver checks pass for 26 variants and 74 additional
   task configurations. The author's in-game test also passed; see the
-  [behavior guide](docs/fantasycreatures-compatibility.md).
+  local behavior guide.
 
 ### Flocks 0.22.1 compatibility
 
@@ -267,7 +267,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   original player/predator tasks; disable damage-triggered flight and retaliation
   only in the copy. No new spawn prefixes or C# adapter.
 - Other custom bird behaviors retain native player-only reactions; see
-  [scope and settings](docs/flocks-compatibility.md). Build and automated checks
+  local scope and settings. Build and automated checks
   pass; the author completed the in-game test successfully.
 
 ### Additional relevant FotSA families
@@ -334,7 +334,7 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
   adaptation gaps, relevant update changes and malformed upstream source files.
 - Added a per-entity CSV and a complete 43-ID candidate backlog, distinguishing
   creature support, pets/capture, equipment, other scarecrows and dependencies.
-  Gameplay fixes and further integrations remain explicitly pending in todo.md.
+  Gameplay fixes and further integrations remain explicitly pending in TODO.md.
 
 ### Vara's Arctic Wolves: native AI reactions
 

@@ -67,9 +67,8 @@ Scarecrow uses two complementary mechanisms:
 
 **Animal reactions:** supported creature mods use their native player-target AI
 as the basis for scarecrow reactions. This includes player tags, variant rules,
-injury/hunger states and sleep interruption; see the
-[native creature guide](docs/native-creature-compatibility.md), including the
-runtime-generator and Bats exceptions.
+injury/hunger states and sleep interruption. Runtime-generated creatures inherit
+their supported templates; Bats uses its native feeding-deterrent mechanism.
 
 The remaining vanilla rules generally make small animals and young animals flee. Large
 herbivores can defend themselves when injury triggers aggression. Large predators,
@@ -194,7 +193,7 @@ spawning, so naturally caught hares and raccoons are not removed when released
 inside a scarecrow's protection radius. Other configured animal prefixes receive
 the same treatment. Saved animal data and ordinary flee/attack rules remain intact;
 natural spawns are still blocked normally. See the
-[compatibility guide](docs/animalcages-compatibility.md).
+[Animal Cages details](#animal-cages).
 
 ## Equipment
 
@@ -229,8 +228,22 @@ their appearance; attachment permission and native categories remain separate.
 The native `.tfedit` transform list includes **Scarecrow – left arm** and
 **Scarecrow – right arm**, with a local preview refresh for equipped copies of
 the selected collectible. Export the JSON and save it in your assets to retain
-changes. See the [modder guide](docs/scarecrow-arm-transforms.md) for examples,
-coordinate frames and testing instructions.
+changes. Translation and origin use block units; rotation uses degrees. Omitted
+translation/rotation default to zero, scale to one and origin to `(0.5, 0.5, 0.5)`.
+For example, add this collectible attribute to adjust only the right arm:
+
+```json
+"onScarecrowRightArmTransform": {
+  "translation": { "x": 0, "y": 0.1, "z": 0 },
+  "rotation": { "x": 0, "y": 0, "z": -15 },
+  "origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
+  "scale": 0.8
+}
+```
+
+Transforms are relative to each attachment's existing local frame, not world
+coordinates. The editor preview is local to the editing client; it does not save
+individual equipment changes or synchronize them to the server.
 
 ### Optional pendulum motion
 
@@ -244,8 +257,9 @@ previous behavior is retained. Wind chimes keep their specialized moving parts;
 The existing per-arm transforms still set the resting position. Generic models
 retain full size and use the arm storage origin; existing hanging lights retain
 their previous size and ceiling pivot. An optional `scarecrowPendulumPivot` array
-can supply another pivot. See the [modder guide](docs/scarecrow-arm-transforms.md)
-for coordinate details and custom attachment-point support. The setting affects
+can supply another pivot in model-frame block units: generic models default to
+`[0, 0, 0]`, legacy hanging lights to `[0.5, 1, 0.5]`. Custom mounts can supply
+per-slot pose-point names through `scarecrowPendulumAttachmentPoints`. The setting affects
 the full-size scarecrow's arms only and does not make an item attachable by itself.
 
 ### Adventurer's Walking Stick
@@ -260,7 +274,7 @@ The patches reference the original item models and preserve existing `utilities`
 categories and riding-animal attachments. Left/right transforms start neutral for
 manual alignment through `.tfedit`; pendulum motion initially stays off and may be
 enabled in the patches. No radius bonus or active player ability is added. See the
-[compatibility guide](docs/walkingstick-compatibility.md). All JSON files are under
+[Walking Stick details](#adventurers-walking-stick). All JSON files are under
 `compatibility/walkingstick/patches`.
 
 ### Primitive Survival
@@ -319,7 +333,7 @@ attack distances remain unchanged.
 
 All compatibility JSON patches are under `compatibility/apelanterns/patches`.
 Existing tool categories and world-block geometry are preserved. See the
-[lantern compatibility guide](docs/lantern-compatibility.md) for asset and validation
+[More Lanterns settings](#more-lanterns-by-ape) for asset and validation
 details.
 
 ### Wind Chimes by Ape
@@ -365,7 +379,7 @@ including when **Immersive Lanterns** is installed. Shader wind is suppressed
 on our private model copies to avoid double movement. Placed wind chimes, sound
 and radius bonuses are unchanged.
 See the
-[wind chime compatibility guide](docs/windchime-compatibility.md) for details.
+[Wind Chimes settings](#wind-chimes-by-ape) for details.
 
 ## Configuration
 
@@ -445,18 +459,18 @@ The repository includes compatibility assets for the following mods and families
 | Leaf Litter | Rake attachment shapes |
 | More Lanterns by Ape | Paper and metal lantern attachments with natural-spawn radius bonuses |
 | Wind Chimes by Ape | Upright arm attachments with original spatial chime sounds |
-| Dreamcatchers 1.0.2 | Tested decorative attachments on either/both full-size arms; no gameplay bonus. Newer 1.0.31 has an upstream loading error; see [guide](docs/dreamcatchers-compatibility.md) |
-| censership 1.0.6 | Hanging arm censers with original smoke/light and wind motion; no protection bonus. See [guide](docs/censership-compatibility.md) |
+| Dreamcatchers 1.0.2 | Tested decorative attachments on either/both full-size arms; no gameplay bonus. Newer 1.0.31 has an upstream loading error |
+| censership 1.0.6 | Hanging arm censers with original smoke/light and wind motion; no protection bonus |
 | Equus, Equus Ferus and Monoceros | Animal behavior patches |
 | Equus: Shared Ancestry and Equus: Expanded | Wild donkey reactions and inherited pony reactions |
 | Vara's Arctic Wolves | Native player-target AI adapted for scarecrows, including attacks, injury fear, pup fleeing and sleep interruption |
 | Crows 0.2.7 | Native flight/feeding/perch exclusion for all three scarecrow types; little scarecrow radius aligned to 12 blocks |
-| Flocks 0.22.1 | Built-in crow protection at Flocks' own radius; mouse flee/wake patches. Other birds retain native behavior; see [scope and settings](docs/flocks-compatibility.md) |
-| Fantasy Creatures Mod 0.8.3 | Native player-target combat/fear for goblins, orks, skeletons, slimes, tree creatures and dragons; hostile creatures can attack scarecrows. See [behavior guide](docs/fantasycreatures-compatibility.md) |
-| Pegasus: Winged horses 1.1.0-rc.1 | Wild-only injury defense/fear and rest interruption; feral/tamed mounts and Jaunt flight controls unchanged. See [scope](docs/pegasus-compatibility.md) |
-| Talonborne 1.2.0 | Adult/young grazing interruption only; no fleeing or attacks added to raised mounts. Commanded rest and flight unchanged. See [scope](docs/talonborne-compatibility.md) |
-| Teapot's Giant Scorpion 1.0.2 | Surface/cave native sting, claws, charge and climbing pursuit; scorpions can attack scarecrows. See [behavior guide](docs/teapotsgiantscorpion-compatibility.md) |
-| Teapot's Undead Legion 2.2.2 | Hostile undead attack/pursue scarecrows using native melee, ranged and Lich combat; bound companions and player summons unchanged. See [behavior guide](docs/teapotsundeadlegion-compatibility.md) |
+| Flocks 0.22.1 | Built-in crow protection at Flocks' own radius; mouse flee/wake patches. Other birds retain native behavior |
+| Fantasy Creatures Mod 0.8.3 | Native player-target combat/fear for goblins, orks, skeletons, slimes, tree creatures and dragons; hostile creatures can attack scarecrows |
+| Pegasus: Winged horses 1.1.0-rc.1 | Wild-only injury defense/fear and rest interruption; feral/tamed mounts and Jaunt flight controls unchanged |
+| Talonborne 1.2.0 | Adult/young grazing interruption only; no fleeing or attacks added to raised mounts. Commanded rest and flight unchanged |
+| Teapot's Giant Scorpion 1.0.2 | Surface/cave native sting, claws, charge and climbing pursuit; scorpions can attack scarecrows |
+| Teapot's Undead Legion 2.2.2 | Hostile undead attack/pursue scarecrows using native melee, ranged and Lich combat; bound companions and player summons unchanged |
 | Feverstone's Horses | Wild land-animal reactions |
 | Feverstone Wilds 3.2.1 | Native player-target tasks for wild land animals, griffon flight attacks and all young griffon ages; tame variants excluded |
 | Sonya's Quality Fowl and More Animals | Flee rules for ducks and other small birds |
@@ -466,14 +480,14 @@ The repository includes compatibility assets for the following mods and families
 | Truth and Beauty: Detailed Animals | Generated chicks inherit vanilla chicken flee rules |
 | FotSA family | Animal behavior patches for Bovinae, Caninae, Capreolinae, Casuariidae, Cervinae, Dinornithidae, Elephantidae, Felinae, Machairodontinae, Manidae, Meiolaniidae, Moschidae, Pantherinae, Rhinocerotidae, Spheniscidae, Thylacinidae, Viverridae and Vombatidae |
 
-The [additional FotSA guide](docs/fotsa-additional-compatibility.md) covers the
+The [compatibility overview](#optional-mod-compatibility) covers the
 new Felinae, Manidae and Spheniscidae patches, native fear/defense conditions and
 the deliberate exclusion of fully aquatic Iniidae and Sirenia.
 
 Compatibility depends on the installed versions and the asset definitions supplied
 by those mods. Include the relevant mod versions when reporting a compatibility issue.
 
-See [animal compatibility details](docs/animal-compatibility.md) for the current
+See [compatibility overview](#optional-mod-compatibility) for the current
 size and age rules, injury-triggered defense and the mod versions used for the audit.
 
 ## Feedback and contributions
@@ -495,13 +509,14 @@ Scarecrow is distributed under the [MIT License](LICENSE.txt).
 
 ## Source code
 
-The [local mod compatibility audit](docs/mod-library-audit-2026-11-19.md) lists
-checked versions, known issues and proposed integrations. Its six Feverstone Wilds
-path failures are now corrected for **3.2.1**, with native player AI replacing
-the older generic rules. **3.1.1 is no longer the supported baseline.** See the
-[Feverstone guide](docs/feverstonewilds-compatibility.md),
-[native creature migration](docs/native-creature-compatibility.md) and
-[to-do list](todo.md) for the implementation and successful batch game test.
+The published `dev` branch contains `scarecrow/`, `CHANGELOG.md`, `LICENSE.txt`,
+`TODO.md` and this README. Development scripts, IDE settings, extended guides,
+audit notes and local tests are kept locally and are not included in the branch.
 
-See the [source structure and extension guide](docs/source-structure.md) for code
-responsibilities, optional-mod adapters and inventory/synchronization rules.
+Code is under [scarecrow/src](scarecrow/src), with optional-mod adapters under
+`scarecrow/src/combat` and JSON compatibility patches under
+`scarecrow/assets/scarecrow/compatibility`. Shared equipment rules remain separate
+from optional-mod integrations. See the [to-do list](TODO.md) for current work.
+
+Feverstone Wilds **3.2.1** is the supported baseline; the older 3.1.1 paths were
+replaced and the native creature migration passed its batch game test.
