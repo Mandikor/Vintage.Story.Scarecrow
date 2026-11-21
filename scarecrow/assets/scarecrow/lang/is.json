@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "Aðeins eigandinn má breyta þessari fuglahræðu.",
 	"scarecrow:interaction-error-claim": "Þú hefur ekki aðgangsheimild að þessu svæði.",
 	"scarecrow:transform-leftarm": "Fuglahræða – vinstri handleggur",
-	"scarecrow:transform-rightarm": "Fuglahræða – hægri handleggur"
+	"scarecrow:transform-rightarm": "Fuglahræða – hægri handleggur",
+	"scarecrow:tooltip-animal-all": "Dýr"
 }

@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "Nur la posedanto povas modifi ĉi tiun birdotimigilon.",
 	"scarecrow:interaction-error-claim": "Vi ne havas permeson aliri ĉi tiun teritorion.",
 	"scarecrow:transform-leftarm": "Birdotimigilo – maldekstra brako",
-	"scarecrow:transform-rightarm": "Birdotimigilo – dekstra brako"
+	"scarecrow:transform-rightarm": "Birdotimigilo – dekstra brako",
+	"scarecrow:tooltip-animal-all": "Bestoj"
 }

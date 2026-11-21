@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "Tylko właściciel może modyfikować tego stracha na wróble.",
 	"scarecrow:interaction-error-claim": "Nie masz uprawnień dostępu do tego obszaru.",
 	"scarecrow:transform-leftarm": "Strach na wróble – lewe ramię",
-	"scarecrow:transform-rightarm": "Strach na wróble – prawe ramię"
+	"scarecrow:transform-rightarm": "Strach na wróble – prawe ramię",
+	"scarecrow:tooltip-animal-all": "Zwierzęta"
 }

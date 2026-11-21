@@ -33,6 +33,7 @@ namespace Scarecrow
         private int scareRadius = DefaultScareRadius;
         private string pickupItemCode = DefaultPickupItemCode;
         private readonly Dictionary<string, string> animalGroupNames = new();
+        private readonly Dictionary<string, AnimalSpawnRule> animalSpawnRules = new();
 
         /// <summary>Natural-spawn protection, including the strongest attached equipment bonus.</summary>
         public int ScareRadius => scareRadius + (GetBehavior<ScarecrowAttachments>()?.EquipmentRadiusBonus ?? 0);
@@ -133,7 +134,7 @@ namespace Scarecrow
                 text.AppendLine(FormatProtectionLine("scarecrow:tooltip-spawn-loading"));
                 return AppendInventoryInfo(text, attachments).ToString();
             }
-            prefixes = prefixes.Where(prefix => !string.IsNullOrEmpty(prefix))
+            prefixes = prefixes.Where(prefix => !string.IsNullOrEmpty(prefix) && GetAnimalSpawnRule(prefix).IsValid)
                 .Distinct(StringComparer.OrdinalIgnoreCase).ToArray();
             if (prefixes.Length == 0)
             {
@@ -176,6 +177,28 @@ namespace Scarecrow
         {
             string cacheKey = Lang.CurrentLocale + ":" + prefix;
             if (animalGroupNames.TryGetValue(cacheKey, out string cached)) return cached;
+            AnimalSpawnRule rule = GetAnimalSpawnRule(prefix);
+            if (rule.IsQualified)
+            {
+                string group = rule.GroupHint;
+                string translated = group.Length == 0 ? Lang.Get("scarecrow:tooltip-animal-all")
+                    : Lang.GetMatchingIfExists("scarecrow:tooltip-animal-" + group);
+                if (translated == null && rule.Domain != "*")
+                    translated = Lang.GetMatchingIfExists(rule.Domain + ":item-creature-" + group);
+                if (translated == null)
+                {
+                    // Pick one translated representative instead of listing every age/color
+                    // variant. Respect the same domain/path filter as actual spawn blocking.
+                    translated = World.EntityTypes.Where(type => rule.Matches(type.Code))
+                        .OrderBy(type => type.Code.ToString(), StringComparer.Ordinal)
+                        .Select(type => Lang.GetMatchingIfExists(type.Code.Domain + ":item-creature-" + group)
+                            ?? Lang.GetMatchingIfExists(type.Code.Domain + ":item-creature-" + type.Code.Path))
+                        .FirstOrDefault(value => value != null);
+                }
+                string qualified = EscapeTooltipText(translated ?? group) + " (" + EscapeTooltipText(rule.Domain) + ")";
+                animalGroupNames[cacheKey] = qualified;
+                return qualified;
+            }
             string name = Lang.GetMatchingIfExists("scarecrow:tooltip-animal-" + prefix.ToLowerInvariant());
             if (name == null)
             {
@@ -358,10 +381,17 @@ namespace Scarecrow
 
             foreach (string prefix in prefixes)
             {
-                if (!string.IsNullOrEmpty(prefix) && path.StartsWith(prefix, StringComparison.OrdinalIgnoreCase)) return true;
+                if (!string.IsNullOrEmpty(prefix) && GetAnimalSpawnRule(prefix).Matches(code)) return true;
             }
 
             return false;
+        }
+
+        private AnimalSpawnRule GetAnimalSpawnRule(string entry)
+        {
+            if (!animalSpawnRules.TryGetValue(entry, out AnimalSpawnRule rule))
+                animalSpawnRules[entry] = rule = new AnimalSpawnRule(entry);
+            return rule;
         }
     }
 }

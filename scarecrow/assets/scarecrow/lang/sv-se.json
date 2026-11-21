@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "Endast ägaren kan ändra denna fågelskrämma.",
 	"scarecrow:interaction-error-claim": "Du har inte behörighet att använda detta område.",
 	"scarecrow:transform-leftarm": "Fågelskrämma – vänster arm",
-	"scarecrow:transform-rightarm": "Fågelskrämma – höger arm"
+	"scarecrow:transform-rightarm": "Fågelskrämma – höger arm",
+	"scarecrow:tooltip-animal-all": "Djur"
 }

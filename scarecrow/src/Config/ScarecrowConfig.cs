@@ -14,8 +14,9 @@
         public bool DebugOutput { get; set; } = false;
 
         /// <summary>
-        /// Entity code prefixes that scarecrows keep away from natural spawns. The prefix
-        /// is matched against the entity path, so "hare" covers hare-adult and hare-baby.
+        /// Natural-spawn filters. Plain entries match path prefixes across all domains;
+        /// qualified entries match exact domain:path codes or '*' wildcard patterns.
+        /// Examples: "hare", "game:hare-*", "modid:animal-adult", "*:hare-*".
         /// Animals born nearby or placed by players are not affected.
         /// </summary>
         public string[] ScaredAnimalPrefixes { get; set; } = { "hare", "raccoon" };

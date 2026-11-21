@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "Vain omistaja voi muokata tätä linnunpelätintä.",
 	"scarecrow:interaction-error-claim": "Sinulla ei ole käyttöoikeutta tähän alueeseen.",
 	"scarecrow:transform-leftarm": "Linnunpelätin – vasen käsivarsi",
-	"scarecrow:transform-rightarm": "Linnunpelätin – oikea käsivarsi"
+	"scarecrow:transform-rightarm": "Linnunpelätin – oikea käsivarsi",
+	"scarecrow:tooltip-animal-all": "Eläimet"
 }

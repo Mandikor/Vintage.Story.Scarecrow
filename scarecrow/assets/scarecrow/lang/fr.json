@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "Seul le propriétaire peut modifier cet épouvantail.",
 	"scarecrow:interaction-error-claim": "Vous ne disposez pas des droits nécessaires sur ce terrain.",
 	"scarecrow:transform-leftarm": "Épouvantail – bras gauche",
-	"scarecrow:transform-rightarm": "Épouvantail – bras droit"
+	"scarecrow:transform-rightarm": "Épouvantail – bras droit",
+	"scarecrow:tooltip-animal-all": "Animaux"
 }

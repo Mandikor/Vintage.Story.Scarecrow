@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "Само власник може да мења ово страшило.",
 	"scarecrow:interaction-error-claim": "Немате дозволу за приступ овој територији.",
 	"scarecrow:transform-leftarm": "Страшило – лева рука",
-	"scarecrow:transform-rightarm": "Страшило – десна рука"
+	"scarecrow:transform-rightarm": "Страшило – десна рука",
+	"scarecrow:tooltip-animal-all": "Животиње"
 }

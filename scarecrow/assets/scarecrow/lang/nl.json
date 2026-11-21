@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "Alleen de eigenaar kan deze vogelverschrikker aanpassen.",
 	"scarecrow:interaction-error-claim": "Je hebt geen toegangsrechten voor dit gebied.",
 	"scarecrow:transform-leftarm": "Vogelverschrikker – linkerarm",
-	"scarecrow:transform-rightarm": "Vogelverschrikker – rechterarm"
+	"scarecrow:transform-rightarm": "Vogelverschrikker – rechterarm",
+	"scarecrow:tooltip-animal-all": "Dieren"
 }

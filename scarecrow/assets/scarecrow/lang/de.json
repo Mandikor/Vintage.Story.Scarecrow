@@ -73,5 +73,6 @@
 	"scarecrow:interaction-error-owner": "Nur der Eigentümer darf diese Vogelscheuche verändern.",
 	"scarecrow:interaction-error-claim": "Du hast hier keine Zugriffsberechtigung.",
 	"scarecrow:transform-leftarm": "Vogelscheuche – linker Arm",
-	"scarecrow:transform-rightarm": "Vogelscheuche – rechter Arm"
+	"scarecrow:transform-rightarm": "Vogelscheuche – rechter Arm",
+	"scarecrow:tooltip-animal-all": "Tiere"
 }

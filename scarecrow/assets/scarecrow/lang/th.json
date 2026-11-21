@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "เฉพาะเจ้าของเท่านั้นที่แก้ไขหุ่นไล่กานี้ได้",
 	"scarecrow:interaction-error-claim": "คุณไม่มีสิทธิ์เข้าถึงพื้นที่นี้",
 	"scarecrow:transform-leftarm": "หุ่นไล่กา – แขนซ้าย",
-	"scarecrow:transform-rightarm": "หุ่นไล่กา – แขนขวา"
+	"scarecrow:transform-rightarm": "หุ่นไล่กา – แขนขวา",
+	"scarecrow:tooltip-animal-all": "สัตว์"
 }

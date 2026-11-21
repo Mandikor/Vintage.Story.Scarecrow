@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "Chỉ chủ sở hữu mới có thể thay đổi bù nhìn này.",
 	"scarecrow:interaction-error-claim": "Bạn không có quyền truy cập khu vực này.",
 	"scarecrow:transform-leftarm": "Bù nhìn – tay trái",
-	"scarecrow:transform-rightarm": "Bù nhìn – tay phải"
+	"scarecrow:transform-rightarm": "Bù nhìn – tay phải",
+	"scarecrow:tooltip-animal-all": "Động vật"
 }

@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "Somente o proprietário pode modificar este espantalho.",
 	"scarecrow:interaction-error-claim": "Você não tem permissão para acessar esta área.",
 	"scarecrow:transform-leftarm": "Espantalho – braço esquerdo",
-	"scarecrow:transform-rightarm": "Espantalho – braço direito"
+	"scarecrow:transform-rightarm": "Espantalho – braço direito",
+	"scarecrow:tooltip-animal-all": "Animais"
 }

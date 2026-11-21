@@ -5,6 +5,21 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Domain-aware natural-spawn filters
+
+- Retain plain `ScaredAnimalPrefixes` entries as case-insensitive path prefixes
+  across all mods. Add exact `modid:entity` and `modid:group-*` patterns, including
+  `*:group-*` across domains. Qualified paths use explicit `*` wildcards; malformed
+  qualified entries and regex patterns are ignored. Cache parsed rules and use
+  the same matcher for both natural-spawn hooks.
+- Display qualified filters as a translated group/representative animal name
+  followed by the mod ID in parentheses. Use a compact group fallback instead of
+  the full code; retain plain-entry display. Add an all-animal label in all 33
+  languages for rules such as `modid:*`.
+- Preserve config schema/defaults, radius checks and cage/player/birth exclusions.
+  Build and 30 matching cases pass, including both exact/domain wildcard behavior
+  and localized tooltip checks in all 33 languages. In-game confirmation is pending.
+
 ### Protection tooltip layout and occupied inventory
 
 - Keep owner formatting and add a blank line afterward. Retain the effective

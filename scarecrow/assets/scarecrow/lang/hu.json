@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "Csak a tulajdonos módosíthatja ezt a madárijesztőt.",
 	"scarecrow:interaction-error-claim": "Nincs hozzáférési jogosultságod ehhez a területhez.",
 	"scarecrow:transform-leftarm": "Madárijesztő – bal kar",
-	"scarecrow:transform-rightarm": "Madárijesztő – jobb kar"
+	"scarecrow:transform-rightarm": "Madárijesztő – jobb kar",
+	"scarecrow:tooltip-animal-all": "Állatok"
 }

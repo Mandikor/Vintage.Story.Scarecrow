@@ -8,6 +8,9 @@ implementation. Tool bonuses were removed from the plan at the author's request.
    effective natural-spawn protection radius, its base radius and strongest
    equipment bonus, and the configured animals affected. Clearly distinguish
    natural-spawn blocking from animals' flee and attack behavior.
+   Configured animal filters support legacy group prefixes and qualified exact/
+   wildcard codes. Qualified tooltip labels use translated names plus `(modid)`;
+   build and 33-language checks passed, in-game confirmation pending.
    Extend every existing language file with translated tooltip labels and messages.
    Resolve scarecrow, equipment and animal names through game/mod translations;
    format numbers in the player's chosen language and avoid hard-coded display text.

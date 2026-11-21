@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "Šią kaliausę keisti gali tik savininkas.",
 	"scarecrow:interaction-error-claim": "Neturite prieigos teisių šioje teritorijoje.",
 	"scarecrow:transform-leftarm": "Kaliausė – kairė ranka",
-	"scarecrow:transform-rightarm": "Kaliausė – dešinė ranka"
+	"scarecrow:transform-rightarm": "Kaliausė – dešinė ranka",
+	"scarecrow:tooltip-animal-all": "Gyvūnai"
 }
