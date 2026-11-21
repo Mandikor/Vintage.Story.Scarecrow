@@ -48,7 +48,7 @@
 
 	// Placed-entity protection tooltip
 	"scarecrow:tooltip-spawn-radius": "Bescherming tegen natuurlijk verschijnen: {0} blokken",
-	"scarecrow:tooltip-radius-breakdown": "Basisstraal: {0} · {1}: +{2}",
+	"scarecrow:tooltip-radius-breakdown": "Basisstraal: {0} · {1}: {2}",
 	"scarecrow:tooltip-equipment": "Uitrusting",
 	"scarecrow:tooltip-affected-animals": "Betrokken dieren: {0}",
 	"scarecrow:tooltip-spawn-disabled": "Bescherming tegen natuurlijk verschijnen: uitgeschakeld",
@@ -65,8 +65,8 @@
 	"scarecrow:tooltip-inventory": "Inventaris:",
 	"scarecrow:tooltip-inventory-sc-leftarm": "Linkerarm: {0}",
 	"scarecrow:tooltip-inventory-sc-rightarm": "Rechterarm: {0}",
-	"scarecrow:tooltip-inventory-sc-neck": "Lantaarnvak: {0}",
-	"scarecrow:tooltip-inventory-sc-foot": "Vak bij de voeten: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Hals: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Voet: {0}",
 	"scarecrow:tooltip-inventory-empty": "Leeg",
 	"scarecrow:tooltip-inventory-unavailable": "Niet beschikbaar voorwerp",
 

@@ -48,7 +48,7 @@
 
 	// Placed-entity protection tooltip
 	"scarecrow:tooltip-spawn-radius": "Blokowanie naturalnego pojawiania się: {0} bl.",
-	"scarecrow:tooltip-radius-breakdown": "Promień podstawowy: {0} · {1}: +{2}",
+	"scarecrow:tooltip-radius-breakdown": "Promień podstawowy: {0} · {1}: {2}",
 	"scarecrow:tooltip-equipment": "Wyposażenie",
 	"scarecrow:tooltip-affected-animals": "Objęte zwierzęta: {0}",
 	"scarecrow:tooltip-spawn-disabled": "Blokowanie naturalnego pojawiania się: wyłączone",
@@ -65,8 +65,8 @@
 	"scarecrow:tooltip-inventory": "Ekwipunek:",
 	"scarecrow:tooltip-inventory-sc-leftarm": "Lewe ramię: {0}",
 	"scarecrow:tooltip-inventory-sc-rightarm": "Prawe ramię: {0}",
-	"scarecrow:tooltip-inventory-sc-neck": "Miejsce na latarnię: {0}",
-	"scarecrow:tooltip-inventory-sc-foot": "Miejsce przy stopach: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Szyja: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "U stóp: {0}",
 	"scarecrow:tooltip-inventory-empty": "Puste",
 	"scarecrow:tooltip-inventory-unavailable": "Niedostępny przedmiot",
 

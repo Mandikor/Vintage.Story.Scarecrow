@@ -48,7 +48,7 @@
 
 	// Placed-entity protection tooltip
 	"scarecrow:tooltip-spawn-radius": "Protekto kontraŭ natura apero: {0} blokoj",
-	"scarecrow:tooltip-radius-breakdown": "Baza radiuso: {0} · {1}: +{2}",
+	"scarecrow:tooltip-radius-breakdown": "Baza radiuso: {0} · {1}: {2}",
 	"scarecrow:tooltip-equipment": "Ekipaĵo",
 	"scarecrow:tooltip-affected-animals": "Koncernaj bestoj: {0}",
 	"scarecrow:tooltip-spawn-disabled": "Protekto kontraŭ natura apero: malŝaltita",
@@ -65,8 +65,8 @@
 	"scarecrow:tooltip-inventory": "Inventaro:",
 	"scarecrow:tooltip-inventory-sc-leftarm": "Maldekstra brako: {0}",
 	"scarecrow:tooltip-inventory-sc-rightarm": "Dekstra brako: {0}",
-	"scarecrow:tooltip-inventory-sc-neck": "Lanterna loko: {0}",
-	"scarecrow:tooltip-inventory-sc-foot": "Loko ĉe la piedoj: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Kolo: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Ĉe la piedo: {0}",
 	"scarecrow:tooltip-inventory-empty": "Malplena",
 	"scarecrow:tooltip-inventory-unavailable": "Neatingebla objekto",
 

@@ -48,7 +48,7 @@
 
 	// Placed-entity protection tooltip
 	"scarecrow:tooltip-spawn-radius": "自然生成阻止范围：{0}格",
-	"scarecrow:tooltip-radius-breakdown": "基础半径：{0} · {1}：+{2}",
+	"scarecrow:tooltip-radius-breakdown": "基础半径：{0} · {1}：{2}",
 	"scarecrow:tooltip-equipment": "装备",
 	"scarecrow:tooltip-affected-animals": "受影响的动物：{0}",
 	"scarecrow:tooltip-spawn-disabled": "自然生成阻止：已禁用",
@@ -65,8 +65,8 @@
 	"scarecrow:tooltip-inventory": "物品栏：",
 	"scarecrow:tooltip-inventory-sc-leftarm": "左臂：{0}",
 	"scarecrow:tooltip-inventory-sc-rightarm": "右臂：{0}",
-	"scarecrow:tooltip-inventory-sc-neck": "灯笼槽位：{0}",
-	"scarecrow:tooltip-inventory-sc-foot": "脚部槽位：{0}",
+	"scarecrow:tooltip-inventory-sc-neck": "颈部：{0}",
+	"scarecrow:tooltip-inventory-sc-foot": "脚边：{0}",
 	"scarecrow:tooltip-inventory-empty": "空",
 	"scarecrow:tooltip-inventory-unavailable": "物品不可用",
 

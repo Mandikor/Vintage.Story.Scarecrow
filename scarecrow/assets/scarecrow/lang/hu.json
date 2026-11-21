@@ -48,7 +48,7 @@
 
 	// Placed-entity protection tooltip
 	"scarecrow:tooltip-spawn-radius": "Természetes megjelenés elleni védelem: {0} blokk",
-	"scarecrow:tooltip-radius-breakdown": "Alapsugár: {0} · {1}: +{2}",
+	"scarecrow:tooltip-radius-breakdown": "Alapsugár: {0} · {1}: {2}",
 	"scarecrow:tooltip-equipment": "Felszerelés",
 	"scarecrow:tooltip-affected-animals": "Érintett állatok: {0}",
 	"scarecrow:tooltip-spawn-disabled": "Természetes megjelenés elleni védelem: kikapcsolva",
@@ -65,8 +65,8 @@
 	"scarecrow:tooltip-inventory": "Leltár:",
 	"scarecrow:tooltip-inventory-sc-leftarm": "Bal kar: {0}",
 	"scarecrow:tooltip-inventory-sc-rightarm": "Jobb kar: {0}",
-	"scarecrow:tooltip-inventory-sc-neck": "Lámpás helye: {0}",
-	"scarecrow:tooltip-inventory-sc-foot": "Lábnál lévő hely: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Nyak: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Láb: {0}",
 	"scarecrow:tooltip-inventory-empty": "Üres",
 	"scarecrow:tooltip-inventory-unavailable": "Nem elérhető tárgy",
 

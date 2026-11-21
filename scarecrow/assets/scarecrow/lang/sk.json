@@ -48,7 +48,7 @@
 
 	// Placed-entity protection tooltip
 	"scarecrow:tooltip-spawn-radius": "Ochrana pred prirodzeným výskytom: {0} blokov",
-	"scarecrow:tooltip-radius-breakdown": "Základný dosah: {0} · {1}: +{2}",
+	"scarecrow:tooltip-radius-breakdown": "Základný dosah: {0} · {1}: {2}",
 	"scarecrow:tooltip-equipment": "Výbava",
 	"scarecrow:tooltip-affected-animals": "Dotknuté zvieratá: {0}",
 	"scarecrow:tooltip-spawn-disabled": "Ochrana pred prirodzeným výskytom: vypnutá",
@@ -65,8 +65,8 @@
 	"scarecrow:tooltip-inventory": "Inventár:",
 	"scarecrow:tooltip-inventory-sc-leftarm": "Ľavá ruka: {0}",
 	"scarecrow:tooltip-inventory-sc-rightarm": "Pravá ruka: {0}",
-	"scarecrow:tooltip-inventory-sc-neck": "Slot na lampáš: {0}",
-	"scarecrow:tooltip-inventory-sc-foot": "Slot pri nohách: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Krk: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Pri nohách: {0}",
 	"scarecrow:tooltip-inventory-empty": "Prázdne",
 	"scarecrow:tooltip-inventory-unavailable": "Nedostupný predmet",
 

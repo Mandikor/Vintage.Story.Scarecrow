@@ -5,6 +5,19 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Protection tooltip layout and occupied inventory
+
+- Keep owner formatting and add a blank line afterward. Retain the effective
+  spawn radius and affected animals; show the base radius with a generic equipment
+  bonus number, without a plus sign or the strongest item's name.
+- Add a separated inventory section to placed scarecrows, in left-arm, right-arm,
+  neck and foot order. Omit empty slots and omit the heading when no slots are
+  occupied. Color only the inventory heading gold; item rows use normal text.
+  Apply the same empty-row rule to packed-item inventory tooltips. Omit the
+  base/equipment breakdown on the vanilla straw dummy, which has no attachments.
+- Update bonus formatting and neck/foot labels in all 33 languages. Preserve
+  owner/protection styling, translated item names and escaped dynamic text.
+
 ### Consistent neck attachment names
 
 - Update all four selection-box labels in all 33 languages to describe equipment

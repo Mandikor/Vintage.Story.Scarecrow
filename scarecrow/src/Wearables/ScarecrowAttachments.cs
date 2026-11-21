@@ -69,6 +69,19 @@ namespace Scarecrow
 
         public ScarecrowAttachments(Entity entity) : base(entity) { }
 
+        // Inventory details use stable semantic slot codes, never selection-box names.
+        // Omit absent/empty slots so the little scarecrow cannot advertise arm storage.
+        public IEnumerable<(string Code, ItemStack Stack)> GetOccupiedSlots()
+        {
+            if (inv == null) yield break;
+            foreach (string code in new[] { "sc-leftarm", "sc-rightarm", "sc-neck", "sc-foot" })
+            {
+                int index = Array.IndexOf(slotCodes, code);
+                if (index >= 0 && index < inv.Count && !inv[index].Empty)
+                    yield return (code, inv[index].Itemstack);
+            }
+        }
+
         // Build a per-entity config from resolved collectible categories; never alter shared assets.
         private JsonObject PrepareConfig(JsonObject config, IWorldAccessor world)
         {

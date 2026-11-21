@@ -48,7 +48,7 @@
 
 	// Placed-entity protection tooltip
 	"scarecrow:tooltip-spawn-radius": "Apsauga nuo natūralaus atsiradimo: {0} blok.",
-	"scarecrow:tooltip-radius-breakdown": "Pagrindinis spindulys: {0} · {1}: +{2}",
+	"scarecrow:tooltip-radius-breakdown": "Pagrindinis spindulys: {0} · {1}: {2}",
 	"scarecrow:tooltip-equipment": "Įranga",
 	"scarecrow:tooltip-affected-animals": "Paveikiami gyvūnai: {0}",
 	"scarecrow:tooltip-spawn-disabled": "Apsauga nuo natūralaus atsiradimo: išjungta",
@@ -65,8 +65,8 @@
 	"scarecrow:tooltip-inventory": "Inventorius:",
 	"scarecrow:tooltip-inventory-sc-leftarm": "Kairė ranka: {0}",
 	"scarecrow:tooltip-inventory-sc-rightarm": "Dešinė ranka: {0}",
-	"scarecrow:tooltip-inventory-sc-neck": "Žibinto vieta: {0}",
-	"scarecrow:tooltip-inventory-sc-foot": "Vieta prie kojų: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Kaklas: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Prie kojų: {0}",
 	"scarecrow:tooltip-inventory-empty": "Tuščia",
 	"scarecrow:tooltip-inventory-unavailable": "Neprieinamas daiktas",
 

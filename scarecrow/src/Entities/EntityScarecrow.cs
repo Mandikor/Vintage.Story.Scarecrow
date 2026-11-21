@@ -123,33 +123,53 @@ namespace Scarecrow
                 ? Lang.Get("scarecrow:tooltip-owner-none")
                 : WatchedAttributes.GetString(OwnerNameAttribute, Lang.Get("scarecrow:tooltip-owner-unknown"));
             text.AppendLine(FormatTooltipLine(0xADD8E6, "scarecrow:tooltip-owner", EscapeTooltipText(owner)));
+            text.AppendLine();
+            ScarecrowAttachments attachments = GetBehavior<ScarecrowAttachments>();
 
             // The server owns spawn protection. Never substitute a client's local config.
             string[] prefixes = WatchedAttributes.GetStringArray(SpawnPrefixesAttribute, null);
             if (prefixes == null)
             {
-                return text.AppendLine(FormatProtectionLine("scarecrow:tooltip-spawn-loading")).ToString();
+                text.AppendLine(FormatProtectionLine("scarecrow:tooltip-spawn-loading"));
+                return AppendInventoryInfo(text, attachments).ToString();
             }
             prefixes = prefixes.Where(prefix => !string.IsNullOrEmpty(prefix))
                 .Distinct(StringComparer.OrdinalIgnoreCase).ToArray();
             if (prefixes.Length == 0)
             {
-                return text.AppendLine(FormatProtectionLine("scarecrow:tooltip-spawn-disabled")).ToString();
+                text.AppendLine(FormatProtectionLine("scarecrow:tooltip-spawn-disabled"));
+                return AppendInventoryInfo(text, attachments).ToString();
             }
 
-            int bonus = 0;
-            ItemStack equipment = GetBehavior<ScarecrowAttachments>()?.GetStrongestRadiusEquipment(out bonus);
+            int bonus = attachments?.EquipmentRadiusBonus ?? 0;
             CultureInfo culture;
             try { culture = CultureInfo.GetCultureInfo(Lang.CurrentLocale); }
             catch (CultureNotFoundException) { culture = CultureInfo.InvariantCulture; }
 
             text.AppendLine(FormatProtectionLine("scarecrow:tooltip-spawn-radius", (scareRadius + bonus).ToString("N0", culture)));
-            text.AppendLine(FormatProtectionLine("scarecrow:tooltip-radius-breakdown", scareRadius.ToString("N0", culture),
-                equipment == null ? FormatProtectionLine("scarecrow:tooltip-equipment") : EscapeTooltipText(equipment.GetName()),
-                bonus.ToString("N0", culture)));
+            // The vanilla straw dummy has no attachment inventory or equipment bonus.
+            if (attachments != null)
+                text.AppendLine(FormatProtectionLine("scarecrow:tooltip-radius-breakdown", scareRadius.ToString("N0", culture),
+                    FormatProtectionLine("scarecrow:tooltip-equipment"),
+                    bonus.ToString("N0", culture)));
             text.AppendLine(FormatProtectionLine("scarecrow:tooltip-affected-animals",
                 string.Join(Lang.Get("scarecrow:tooltip-list-separator"), prefixes.Select(GetAnimalGroupName).Distinct())));
-            return text.ToString();
+            return AppendInventoryInfo(text, attachments).ToString();
+        }
+
+        private static StringBuilder AppendInventoryInfo(StringBuilder text, ScarecrowAttachments attachments)
+        {
+            var equipment = attachments?.GetOccupiedSlots().ToArray();
+            if (equipment == null || equipment.Length == 0) return text;
+            text.AppendLine();
+            text.AppendLine(FormatProtectionLine("scarecrow:tooltip-inventory"));
+            foreach (var slot in equipment)
+            {
+                string name = slot.Stack.Collectible != null ? slot.Stack.GetName()
+                    : Lang.Get("scarecrow:tooltip-inventory-unavailable");
+                text.AppendLine(Lang.Get("scarecrow:tooltip-inventory-" + slot.Code, EscapeTooltipText(name)));
+            }
+            return text;
         }
 
         private string GetAnimalGroupName(string prefix)

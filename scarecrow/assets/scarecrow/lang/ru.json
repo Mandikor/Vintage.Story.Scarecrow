@@ -48,7 +48,7 @@
 
 	// Placed-entity protection tooltip
 	"scarecrow:tooltip-spawn-radius": "Блокировка естественного появления: {0} бл.",
-	"scarecrow:tooltip-radius-breakdown": "Базовый радиус: {0} · {1}: +{2}",
+	"scarecrow:tooltip-radius-breakdown": "Базовый радиус: {0} · {1}: {2}",
 	"scarecrow:tooltip-equipment": "Снаряжение",
 	"scarecrow:tooltip-affected-animals": "Затронутые животные: {0}",
 	"scarecrow:tooltip-spawn-disabled": "Блокировка естественного появления: отключена",
@@ -65,8 +65,8 @@
 	"scarecrow:tooltip-inventory": "Инвентарь:",
 	"scarecrow:tooltip-inventory-sc-leftarm": "Левая рука: {0}",
 	"scarecrow:tooltip-inventory-sc-rightarm": "Правая рука: {0}",
-	"scarecrow:tooltip-inventory-sc-neck": "Слот фонаря: {0}",
-	"scarecrow:tooltip-inventory-sc-foot": "Слот у ног: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Шея: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "У ног: {0}",
 	"scarecrow:tooltip-inventory-empty": "Пусто",
 	"scarecrow:tooltip-inventory-unavailable": "Недоступный предмет",
 

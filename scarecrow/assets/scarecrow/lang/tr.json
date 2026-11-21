@@ -48,7 +48,7 @@
 
 	// Placed-entity protection tooltip
 	"scarecrow:tooltip-spawn-radius": "Doğal oluşma engeli: {0} blok",
-	"scarecrow:tooltip-radius-breakdown": "Temel yarıçap: {0} · {1}: +{2}",
+	"scarecrow:tooltip-radius-breakdown": "Temel yarıçap: {0} · {1}: {2}",
 	"scarecrow:tooltip-equipment": "Ekipman",
 	"scarecrow:tooltip-affected-animals": "Etkilenen hayvanlar: {0}",
 	"scarecrow:tooltip-spawn-disabled": "Doğal oluşma engeli: devre dışı",
@@ -65,8 +65,8 @@
 	"scarecrow:tooltip-inventory": "Envanter:",
 	"scarecrow:tooltip-inventory-sc-leftarm": "Sol kol: {0}",
 	"scarecrow:tooltip-inventory-sc-rightarm": "Sağ kol: {0}",
-	"scarecrow:tooltip-inventory-sc-neck": "Fener yuvası: {0}",
-	"scarecrow:tooltip-inventory-sc-foot": "Ayak yuvası: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Boyun: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Ayak: {0}",
 	"scarecrow:tooltip-inventory-empty": "Boş",
 	"scarecrow:tooltip-inventory-unavailable": "Kullanılamayan eşya",
 

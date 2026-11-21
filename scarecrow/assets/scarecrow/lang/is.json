@@ -48,7 +48,7 @@
 
 	// Placed-entity protection tooltip
 	"scarecrow:tooltip-spawn-radius": "Vörn gegn náttúrulegri myndun dýra: {0} blokkir",
-	"scarecrow:tooltip-radius-breakdown": "Grunnradíus: {0} · {1}: +{2}",
+	"scarecrow:tooltip-radius-breakdown": "Grunnradíus: {0} · {1}: {2}",
 	"scarecrow:tooltip-equipment": "Búnaður",
 	"scarecrow:tooltip-affected-animals": "Dýr sem vörnin nær til: {0}",
 	"scarecrow:tooltip-spawn-disabled": "Vörn gegn náttúrulegri myndun dýra: óvirk",
@@ -65,8 +65,8 @@
 	"scarecrow:tooltip-inventory": "Birgðir:",
 	"scarecrow:tooltip-inventory-sc-leftarm": "Vinstri handleggur: {0}",
 	"scarecrow:tooltip-inventory-sc-rightarm": "Hægri handleggur: {0}",
-	"scarecrow:tooltip-inventory-sc-neck": "Luktarstæði: {0}",
-	"scarecrow:tooltip-inventory-sc-foot": "Stæði við fæturna: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Háls: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Við fót: {0}",
 	"scarecrow:tooltip-inventory-empty": "Tómt",
 	"scarecrow:tooltip-inventory-unavailable": "Hlutur ekki tiltækur",
 

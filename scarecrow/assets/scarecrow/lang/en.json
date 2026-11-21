@@ -46,7 +46,7 @@
 
 	// Placed-entity protection tooltip
 	"scarecrow:tooltip-spawn-radius": "Natural-spawn protection: {0} blocks",
-	"scarecrow:tooltip-radius-breakdown": "Base: {0} · {1}: +{2}",
+	"scarecrow:tooltip-radius-breakdown": "Base radius: {0} · {1}: {2}",
 	"scarecrow:tooltip-equipment": "Equipment",
 	"scarecrow:tooltip-affected-animals": "Affected animals: {0}",
 	"scarecrow:tooltip-spawn-disabled": "Natural-spawn protection: disabled",
@@ -63,8 +63,8 @@
 	"scarecrow:tooltip-inventory": "Inventory:",
 	"scarecrow:tooltip-inventory-sc-leftarm": "Left arm: {0}",
 	"scarecrow:tooltip-inventory-sc-rightarm": "Right arm: {0}",
-	"scarecrow:tooltip-inventory-sc-neck": "Lantern slot: {0}",
-	"scarecrow:tooltip-inventory-sc-foot": "Foot slot: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Neck: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Foot: {0}",
 	"scarecrow:tooltip-inventory-empty": "Empty",
 	"scarecrow:tooltip-inventory-unavailable": "Unavailable item",
 

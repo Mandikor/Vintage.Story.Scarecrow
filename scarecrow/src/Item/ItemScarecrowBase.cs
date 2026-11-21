@@ -119,16 +119,21 @@ namespace Scarecrow
             if (!ScarecrowAttachments.HasStoredEquipment(inSlot.Itemstack)) return;
 
             var equipment = inSlot.Itemstack.Attributes.GetTreeAttribute(ScarecrowAttachments.StoredEquipmentAttribute);
-            if (dsc.Length > 0 && dsc[dsc.Length - 1] != '\n') dsc.AppendLine();
-            dsc.AppendLine();
-            dsc.AppendLine("<strong>" + Lang.Get("scarecrow:tooltip-inventory") + "</strong>");
+            bool headingShown = false;
             foreach (string code in EquipmentSlotOrder)
             {
                 if (!HasArmSlots && (code == "sc-leftarm" || code == "sc-rightarm")) continue;
                 // Tooltip rendering must not resolve or otherwise modify the stored inventory itself.
                 ItemStack stack = equipment.GetItemstack(code)?.Clone();
-                string name = stack == null ? Lang.Get("scarecrow:tooltip-inventory-empty")
-                    : stack.ResolveBlockOrItem(world) ? stack.GetName() : Lang.Get("scarecrow:tooltip-inventory-unavailable");
+                if (stack == null) continue;
+                if (!headingShown)
+                {
+                    if (dsc.Length > 0 && dsc[dsc.Length - 1] != '\n') dsc.AppendLine();
+                    dsc.AppendLine();
+                    dsc.AppendLine("<strong>" + Lang.Get("scarecrow:tooltip-inventory") + "</strong>");
+                    headingShown = true;
+                }
+                string name = stack.ResolveBlockOrItem(world) ? stack.GetName() : Lang.Get("scarecrow:tooltip-inventory-unavailable");
                 name = name.Replace("&", "&amp;").Replace("<", "&lt;").Replace(">", "&gt;");
                 dsc.AppendLine(Lang.Get("scarecrow:tooltip-inventory-" + code, name));
             }

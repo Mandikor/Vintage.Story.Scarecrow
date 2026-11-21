@@ -50,7 +50,7 @@
 
 	// Placed-entity protection tooltip
 	"scarecrow:tooltip-spawn-radius": "自然出現の抑制範囲：{0}ブロック",
-	"scarecrow:tooltip-radius-breakdown": "基本範囲：{0}・{1}：+{2}",
+	"scarecrow:tooltip-radius-breakdown": "基本範囲：{0}・{1}：{2}",
 	"scarecrow:tooltip-equipment": "装備",
 	"scarecrow:tooltip-affected-animals": "対象の動物：{0}",
 	"scarecrow:tooltip-spawn-disabled": "自然出現の抑制：無効",
@@ -67,8 +67,8 @@
 	"scarecrow:tooltip-inventory": "インベントリ：",
 	"scarecrow:tooltip-inventory-sc-leftarm": "左腕：{0}",
 	"scarecrow:tooltip-inventory-sc-rightarm": "右腕：{0}",
-	"scarecrow:tooltip-inventory-sc-neck": "ランタンスロット：{0}",
-	"scarecrow:tooltip-inventory-sc-foot": "足元スロット：{0}",
+	"scarecrow:tooltip-inventory-sc-neck": "首：{0}",
+	"scarecrow:tooltip-inventory-sc-foot": "足元：{0}",
 	"scarecrow:tooltip-inventory-empty": "空",
 	"scarecrow:tooltip-inventory-unavailable": "利用できないアイテム",
 

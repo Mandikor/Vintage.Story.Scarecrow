@@ -48,7 +48,7 @@
 
 	// Placed-entity protection tooltip
 	"scarecrow:tooltip-spawn-radius": "ป้องกันการเกิดตามธรรมชาติ: {0} บล็อก",
-	"scarecrow:tooltip-radius-breakdown": "รัศมีพื้นฐาน: {0} · {1}: +{2}",
+	"scarecrow:tooltip-radius-breakdown": "รัศมีพื้นฐาน: {0} · {1}: {2}",
 	"scarecrow:tooltip-equipment": "อุปกรณ์",
 	"scarecrow:tooltip-affected-animals": "สัตว์ที่ได้รับผล: {0}",
 	"scarecrow:tooltip-spawn-disabled": "ป้องกันการเกิดตามธรรมชาติ: ปิดใช้งาน",
@@ -65,8 +65,8 @@
 	"scarecrow:tooltip-inventory": "ช่องเก็บของ:",
 	"scarecrow:tooltip-inventory-sc-leftarm": "แขนซ้าย: {0}",
 	"scarecrow:tooltip-inventory-sc-rightarm": "แขนขวา: {0}",
-	"scarecrow:tooltip-inventory-sc-neck": "ช่องโคมไฟ: {0}",
-	"scarecrow:tooltip-inventory-sc-foot": "ช่องที่เท้า: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "คอ: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "บริเวณเท้า: {0}",
 	"scarecrow:tooltip-inventory-empty": "ว่าง",
 	"scarecrow:tooltip-inventory-unavailable": "ไอเทมไม่พร้อมใช้งาน",
 

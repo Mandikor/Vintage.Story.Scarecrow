@@ -26,7 +26,7 @@ implementation. Tool bonuses were removed from the plan at the author's request.
    access. The tooltip shows the owner with a bold light-blue label and normal name.
    Packed item tooltips list stored equipment in left-arm, right-arm, lantern and
    foot order; the little scarecrow lists only its two existing slots. All labels
-   are localized, and empty slots are identified explicitly.
+   are localized. Empty slots are omitted; empty inventories have no heading.
 3. [x] **Make attached wind chime audio respond to the environment.** Silent in
    calm weather; original recordings play once with longer pauses in light wind
    and shorter pauses in stronger wind. Cover at the scarecrow or listener reduces

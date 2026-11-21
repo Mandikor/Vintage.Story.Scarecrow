@@ -48,7 +48,7 @@
 
 	// Placed-entity protection tooltip
 	"scarecrow:tooltip-spawn-radius": "Luonnollisen ilmestymisen esto: {0} lohkoa",
-	"scarecrow:tooltip-radius-breakdown": "Perussäde: {0} · {1}: +{2}",
+	"scarecrow:tooltip-radius-breakdown": "Perussäde: {0} · {1}: {2}",
 	"scarecrow:tooltip-equipment": "Varusteet",
 	"scarecrow:tooltip-affected-animals": "Vaikutuksen alaiset eläimet: {0}",
 	"scarecrow:tooltip-spawn-disabled": "Luonnollisen ilmestymisen esto: pois käytöstä",
@@ -65,8 +65,8 @@
 	"scarecrow:tooltip-inventory": "Tavaraluettelo:",
 	"scarecrow:tooltip-inventory-sc-leftarm": "Vasen käsivarsi: {0}",
 	"scarecrow:tooltip-inventory-sc-rightarm": "Oikea käsivarsi: {0}",
-	"scarecrow:tooltip-inventory-sc-neck": "Lyhtypaikka: {0}",
-	"scarecrow:tooltip-inventory-sc-foot": "Paikka jalkojen juuressa: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Kaula: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Juuri: {0}",
 	"scarecrow:tooltip-inventory-empty": "Tyhjä",
 	"scarecrow:tooltip-inventory-unavailable": "Esine ei ole saatavilla",
 

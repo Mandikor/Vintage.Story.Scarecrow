@@ -48,7 +48,7 @@
 
 	// Placed-entity protection tooltip
 	"scarecrow:tooltip-spawn-radius": "Skydd mot naturlig uppkomst: {0} block",
-	"scarecrow:tooltip-radius-breakdown": "Grundradie: {0} · {1}: +{2}",
+	"scarecrow:tooltip-radius-breakdown": "Grundradie: {0} · {1}: {2}",
 	"scarecrow:tooltip-equipment": "Utrustning",
 	"scarecrow:tooltip-affected-animals": "Berörda djur: {0}",
 	"scarecrow:tooltip-spawn-disabled": "Skydd mot naturlig uppkomst: avaktiverat",
@@ -65,8 +65,8 @@
 	"scarecrow:tooltip-inventory": "Inventarie:",
 	"scarecrow:tooltip-inventory-sc-leftarm": "Vänster arm: {0}",
 	"scarecrow:tooltip-inventory-sc-rightarm": "Höger arm: {0}",
-	"scarecrow:tooltip-inventory-sc-neck": "Lyktplats: {0}",
-	"scarecrow:tooltip-inventory-sc-foot": "Plats vid fötterna: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Hals: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Vid foten: {0}",
 	"scarecrow:tooltip-inventory-empty": "Tom",
 	"scarecrow:tooltip-inventory-unavailable": "Otillgängligt föremål",
 

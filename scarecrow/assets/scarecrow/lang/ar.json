@@ -48,7 +48,7 @@
 
 	// Placed-entity protection tooltip
 	"scarecrow:tooltip-spawn-radius": "منع الظهور الطبيعي: {0} كتلة",
-	"scarecrow:tooltip-radius-breakdown": "النطاق الأساسي: {0} · {1}: +{2}",
+	"scarecrow:tooltip-radius-breakdown": "النطاق الأساسي: {0} · {1}: {2}",
 	"scarecrow:tooltip-equipment": "التجهيزات",
 	"scarecrow:tooltip-affected-animals": "الحيوانات المتأثرة: {0}",
 	"scarecrow:tooltip-spawn-disabled": "منع الظهور الطبيعي: معطّل",
@@ -65,8 +65,8 @@
 	"scarecrow:tooltip-inventory": "المخزون:",
 	"scarecrow:tooltip-inventory-sc-leftarm": "الذراع اليسرى: {0}",
 	"scarecrow:tooltip-inventory-sc-rightarm": "الذراع اليمنى: {0}",
-	"scarecrow:tooltip-inventory-sc-neck": "خانة الفانوس: {0}",
-	"scarecrow:tooltip-inventory-sc-foot": "خانة القدم: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "الرقبة: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "القدم: {0}",
 	"scarecrow:tooltip-inventory-empty": "فارغ",
 	"scarecrow:tooltip-inventory-unavailable": "عنصر غير متاح",
 

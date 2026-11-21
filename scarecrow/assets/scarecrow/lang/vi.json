@@ -48,7 +48,7 @@
 
 	// Placed-entity protection tooltip
 	"scarecrow:tooltip-spawn-radius": "Ngăn xuất hiện tự nhiên: {0} khối",
-	"scarecrow:tooltip-radius-breakdown": "Bán kính cơ bản: {0} · {1}: +{2}",
+	"scarecrow:tooltip-radius-breakdown": "Bán kính cơ bản: {0} · {1}: {2}",
 	"scarecrow:tooltip-equipment": "Trang bị",
 	"scarecrow:tooltip-affected-animals": "Động vật bị ảnh hưởng: {0}",
 	"scarecrow:tooltip-spawn-disabled": "Ngăn xuất hiện tự nhiên: đã tắt",
@@ -65,8 +65,8 @@
 	"scarecrow:tooltip-inventory": "Túi đồ:",
 	"scarecrow:tooltip-inventory-sc-leftarm": "Tay trái: {0}",
 	"scarecrow:tooltip-inventory-sc-rightarm": "Tay phải: {0}",
-	"scarecrow:tooltip-inventory-sc-neck": "Ô đèn lồng: {0}",
-	"scarecrow:tooltip-inventory-sc-foot": "Ô ở chân: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Cổ: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Chân: {0}",
 	"scarecrow:tooltip-inventory-empty": "Trống",
 	"scarecrow:tooltip-inventory-unavailable": "Vật phẩm không khả dụng",
 

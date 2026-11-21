@@ -48,7 +48,7 @@
 
 	// Placed-entity protection tooltip
 	"scarecrow:tooltip-spawn-radius": "Beskyttelse mod naturlig fremkomst: {0} blokke",
-	"scarecrow:tooltip-radius-breakdown": "Grundradius: {0} · {1}: +{2}",
+	"scarecrow:tooltip-radius-breakdown": "Grundradius: {0} · {1}: {2}",
 	"scarecrow:tooltip-equipment": "Udstyr",
 	"scarecrow:tooltip-affected-animals": "Berørte dyr: {0}",
 	"scarecrow:tooltip-spawn-disabled": "Beskyttelse mod naturlig fremkomst: deaktiveret",
@@ -65,8 +65,8 @@
 	"scarecrow:tooltip-inventory": "Inventar:",
 	"scarecrow:tooltip-inventory-sc-leftarm": "Venstre arm: {0}",
 	"scarecrow:tooltip-inventory-sc-rightarm": "Højre arm: {0}",
-	"scarecrow:tooltip-inventory-sc-neck": "Lygteplads: {0}",
-	"scarecrow:tooltip-inventory-sc-foot": "Plads ved fødderne: {0}",
+	"scarecrow:tooltip-inventory-sc-neck": "Hals: {0}",
+	"scarecrow:tooltip-inventory-sc-foot": "Ved foden: {0}",
 	"scarecrow:tooltip-inventory-empty": "Tom",
 	"scarecrow:tooltip-inventory-unavailable": "Utilgængelig genstand",
 
