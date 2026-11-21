@@ -5,6 +5,13 @@ All notable changes to the Scarecrow mod, newest first. The version numbers matc
 
 ## Unreleased
 
+### Consistent neck attachment names
+
+- Rename `LanternAP` to `NeckAP` and `LanternStorage` to `NeckStorage` in both
+  scarecrow entity definitions, all three entity shapes, vanilla lantern attachment
+  shapes and all 33 selection-box translations. Preserve geometry, slot order and
+  the saved `sc-neck` inventory code.
+
 ### Adventurer's Walking Stick arm attachments
 
 - Support 18 complete stick definitions/30 variants from walkingstick 3.0.12 on

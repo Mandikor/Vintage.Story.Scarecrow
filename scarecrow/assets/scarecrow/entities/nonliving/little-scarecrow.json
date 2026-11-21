@@ -27,9 +27,9 @@
         {
           "code": "sc-neck",
           "allowedCodes": [ "game:lantern-*-up" ],
-          "attachmentPointCode": "LanternAP",
+          "attachmentPointCode": "NeckAP",
           "stepParentTo": {
-            "": { "elementName": "LanternStorage" }
+            "": { "elementName": "NeckStorage" }
           }
         },
         {
@@ -44,7 +44,7 @@
       "useShiftAttach": true
     },
 		"selectionboxes": {
-			"selectionBoxes": [ "LanternAP", "FootAP" ]
+			"selectionBoxes": [ "NeckAP", "FootAP" ]
 		}
 	},
 

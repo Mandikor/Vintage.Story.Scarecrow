@@ -45,9 +45,9 @@
 				{
 					"code": "sc-neck",
 					"allowedCodes": [],
-					"attachmentPointCode": "LanternAP",
+					"attachmentPointCode": "NeckAP",
 					"stepParentTo": {
-						"": { "elementName": "LanternStorage" }
+						"": { "elementName": "NeckStorage" }
 					}
 				},
 				{
@@ -63,7 +63,7 @@
 		},
 		"selectionboxes": {
 			"__comment": "Modders, make sure the selectionBoxes are in the same order as the wearableSlots, or things can go haywire. Placed chest contents dont get synced properly for example, if wrongly ordered.",
-			"selectionBoxes": [ "LArmAP", "RArmAP", "LanternAP", "FootAP" ]
+			"selectionBoxes": [ "LArmAP", "RArmAP", "NeckAP", "FootAP" ]
 		}
 	},
 
