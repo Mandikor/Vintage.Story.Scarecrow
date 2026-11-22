@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "Bu korkuluğu yalnızca sahibi değiştirebilir.",
 	"scarecrow:interaction-error-claim": "Bu alana erişim iznin yok.",
 	"scarecrow:transform-botharms": "Korkuluk – iki kol",
+	"scarecrow:transform-neck": "Korkuluk – Boyun",
 	"scarecrow:tooltip-animal-all": "Hayvanlar"
 }

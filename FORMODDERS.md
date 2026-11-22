@@ -11,6 +11,7 @@ an older release ZIP may not include them.
 - [Complete integration example](#complete-integration-example)
 - [Models, textures and variants](#models-textures-and-variants)
 - [Arm transforms](#arm-transforms)
+- [Neck attachments](#neck-attachments)
 - [The in-game transform editor](#the-in-game-transform-editor)
 - [Pendulum motion](#pendulum-motion)
 - [Radius bonuses](#radius-bonuses)
@@ -282,6 +283,35 @@ motion, including shadows and supported following particle emitters. Body geomet
 other equipment and shared source shapes stay unchanged. Code editing the
 attribute should replace its complete JSON object so the cache detects the change.
 
+## Neck attachments
+
+Neck equipment needs a `sc-neck` model in `attachedShapeBySlotCode` and permission
+in the little scarecrow's slot 0 `allowedCodes`. Use the normal native attachment
+pipeline and existing `NeckStorage`; no new shape mount is needed. Primitive
+Survival demonstrates this with its wooden lanterns and filled Firefly Jars.
+
+Optional `attributes.onScarecrowNeckTransform` uses the same native ModelTransform
+format, defaults and finite-value validation as the arm setting. It affects only
+newly attached neck geometry, without mirroring or applying the arm transform.
+Existing neck items without this attribute keep their appearance. For example:
+
+```json
+{
+  "onScarecrowNeckTransform": {
+    "translation": { "x": -0.08, "y": -0.4, "z": -0.08 },
+    "rotation": { "x": 0, "y": 0, "z": 0 },
+    "origin": { "x": 0, "y": 0, "z": 0 },
+    "scale": 0.4
+  }
+}
+```
+
+These illustrative wood-lantern values align a ceiling-model suspension point in
+the neck's local frame; other models need their own values. Arm renderer offsets
+and scales are not applied to neck models. Neck equipment uses the static entity
+mesh and does not gain pendulum motion. Permissions, radius bonuses, ownership,
+pickup and persistence remain separate from this visual metadata.
+
 ## The in-game transform editor
 
 1. Equip an allowed item on either full-size model. Hold another copy of the same
@@ -292,6 +322,11 @@ attribute should replace its complete JSON object so the cache detects the chang
    wearing the same collectible refresh locally on both arms; right is mirrored.
 4. Copy the JSON into `onScarecrowTransform` in the source asset/patch, reload and
    verify persistence. Remove obsolete individual-arm entries from your patch.
+
+For neck equipment, equip it on the little scarecrow, hold the same collectible
+variant and select **Scarecrow – Neck**. Export the result into
+`onScarecrowNeckTransform`. This is an independent neck target, not an additional
+individual-arm override; changing it does not change either arm's calibration.
 
 Preview is local development tooling, not a per-stack/server configuration editor.
 All loaded copies of that collectible on this client can change. Other players

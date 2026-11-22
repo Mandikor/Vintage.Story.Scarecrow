@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "Solo el propietario puede modificar este espantapájaros.",
 	"scarecrow:interaction-error-claim": "No tienes permiso para acceder a esta zona.",
 	"scarecrow:transform-botharms": "Espantapájaros – ambos brazos",
+	"scarecrow:transform-neck": "Espantapájaros – Cuello",
 	"scarecrow:tooltip-animal-all": "Animales"
 }

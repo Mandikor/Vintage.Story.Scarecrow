@@ -258,6 +258,13 @@ snapshot of 81 IDs and does not describe the cleaned current library.
 
 ### Primitive Survival compatibility
 
+- [x] **Little scarecrow neck lighting:** allow all 13 wooden lanterns and seven
+  filled Firefly Jar types at `sc-neck`, with independent neck transforms and a
+  localized editor target. Preserve +2/+1 radius bonuses and existing arm motion.
+  Empty/baited jars, placed variants and foot/full-size-neck insertion stay excluded.
+- [x] **Primitive Survival neck game test:** I completed the in-game test of the
+  little scarecrow's neck-lighting extension successfully.
+
 - [x] **Primitive Survival arm lighting** (`primitivesurvival`, 5.1.4): 13 wooden
   lanterns (+2 radius) and seven filled Firefly Jars (+1), native textures/light
   and wind-driven pendulum motion on either arm of both full-size models.

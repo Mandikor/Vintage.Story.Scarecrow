@@ -66,18 +66,28 @@ namespace Scarecrow
                     || (IsArmInventorySlot(gearslot) && AnimatedArmLantern.Matches(gearslot.Itemstack))))
                 return entityShape;
             string armCode = GetArmSlotCode(gearslot);
-            if (entityShape == null || ScarecrowArmTransform.GetMatrix(gearslot.Itemstack, armCode) == null)
+            ModelTransform neckTransform = IsNeckInventorySlot(gearslot)
+                ? ScarecrowArmTransform.GetNeckTransform(gearslot.Itemstack) : null;
+            if (entityShape == null || (neckTransform == null
+                && ScarecrowArmTransform.GetMatrix(gearslot.Itemstack, armCode) == null))
                 return base.addGearToShape(entityShape, gearslot, slotCode, shapePathForLogging,
                     ref shapeIsCloned, ref willDeleteElements, overrideStepParent);
             if (!shapeIsCloned) { entityShape = entityShape.Clone(); shapeIsCloned = true; }
             var previous = ScarecrowArmTransform.Snapshot(entityShape);
             Shape result = base.addGearToShape(entityShape, gearslot, slotCode, shapePathForLogging,
                 ref shapeIsCloned, ref willDeleteElements, overrideStepParent);
-            ScarecrowArmTransform.ApplyToAdded(result, previous, gearslot.Itemstack, armCode);
+            if (neckTransform != null) ScarecrowArmTransform.ApplyToAdded(result, previous, neckTransform);
+            else ScarecrowArmTransform.ApplyToAdded(result, previous, gearslot.Itemstack, armCode);
             return result;
         }
 
         private bool IsArmInventorySlot(ItemSlot slot) => GetArmSlotCode(slot) != null;
+
+        private bool IsNeckInventorySlot(ItemSlot slot)
+        {
+            int index = System.Array.IndexOf(slotCodes, "sc-neck");
+            return inv != null && index >= 0 && index < inv.Count && ReferenceEquals(inv[index], slot);
+        }
 
         private string GetArmSlotCode(ItemSlot slot)
         {

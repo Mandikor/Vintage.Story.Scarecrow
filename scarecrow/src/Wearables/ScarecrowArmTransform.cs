@@ -14,6 +14,7 @@ namespace Scarecrow
     public static class ScarecrowArmTransform
     {
         public const string SharedAttribute = "onScarecrowTransform";
+        public const string NeckAttribute = "onScarecrowNeckTransform";
         private sealed class Entry
         {
             public readonly JToken Token;
@@ -75,6 +76,19 @@ namespace Scarecrow
 
         internal static float[] GetMatrix(ItemStack stack, string slot) => Read(stack, slot)?.Matrix;
 
+        // Neck attachments use their own static frame, independent of arm mirroring.
+        // Read only during tessellation; never move the shared source model or neck slot.
+        internal static ModelTransform GetNeckTransform(ItemStack stack)
+        {
+            if (stack?.ItemAttributes?[NeckAttribute].Token is not JObject token) return null;
+            try
+            {
+                ModelTransform transform = token.ToObject<ModelTransform>().EnsureDefaultValues();
+                return transform.AsMatrix.All(float.IsFinite) ? transform : null;
+            }
+            catch (JsonException) { return null; }
+        }
+
         // A mirrored adjustment alone does not reverse an asymmetric model.
         // Reflect only the private right-tool mesh; native MatrixTransform also
         // transforms packed normals and face directions. Reflection reverses
@@ -110,8 +124,10 @@ namespace Scarecrow
         }
 
         internal static void ApplyToAdded(Shape shape, HashSet<ShapeElement> previous, ItemStack stack, string slot)
+            => ApplyToAdded(shape, previous, Read(stack, slot)?.Transform);
+
+        internal static void ApplyToAdded(Shape shape, HashSet<ShapeElement> previous, ModelTransform transform)
         {
-            ModelTransform transform = Read(stack, slot)?.Transform;
             if (transform == null) return;
             void Visit(ShapeElement[] elements, ShapeElement parent)
             {

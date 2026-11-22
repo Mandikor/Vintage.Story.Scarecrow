@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "Tohoto strašáka může upravovat pouze vlastník.",
 	"scarecrow:interaction-error-claim": "Nemáte oprávnění k přístupu na toto území.",
 	"scarecrow:transform-botharms": "Strašák – obě paže",
+	"scarecrow:transform-neck": "Strašák – Krk",
 	"scarecrow:tooltip-animal-all": "Zvířata"
 }

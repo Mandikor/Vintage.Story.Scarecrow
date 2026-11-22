@@ -75,5 +75,6 @@
 	"scarecrow:interaction-error-owner": "Only the owner can modify this scarecrow.",
 	"scarecrow:interaction-error-claim": "You do not have permission to access this area.",
 	"scarecrow:transform-botharms": "Scarecrow – both arms",
+	"scarecrow:transform-neck": "Scarecrow – Neck",
 	"scarecrow:tooltip-animal-all": "Animals"
 }

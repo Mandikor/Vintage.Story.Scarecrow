@@ -75,5 +75,6 @@
 	"scarecrow:interaction-error-owner": "Лише власник може змінювати це опудало.",
 	"scarecrow:interaction-error-claim": "У вас немає прав доступу до цієї території.",
 	"scarecrow:transform-botharms": "Опудало – обидві руки",
+	"scarecrow:transform-neck": "Опудало – Шия",
 	"scarecrow:tooltip-animal-all": "Тварини"
 }

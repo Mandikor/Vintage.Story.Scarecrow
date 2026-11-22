@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "المالك وحده يستطيع تعديل فزاعة الطيور هذه.",
 	"scarecrow:interaction-error-claim": "ليس لديك إذن بالوصول إلى هذه المنطقة.",
 	"scarecrow:transform-botharms": "الفزاعة – كلا الذراعين",
+	"scarecrow:transform-neck": "الفزاعة – الرقبة",
 	"scarecrow:tooltip-animal-all": "الحيوانات"
 }

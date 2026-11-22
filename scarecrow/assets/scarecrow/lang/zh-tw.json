@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "只有擁有者才能修改這個稻草人。",
 	"scarecrow:interaction-error-claim": "你沒有此區域的存取權限。",
 	"scarecrow:transform-botharms": "稻草人 – 雙臂",
+	"scarecrow:transform-neck": "稻草人 – 頸部",
 	"scarecrow:tooltip-animal-all": "動物"
 }

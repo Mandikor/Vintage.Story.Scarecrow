@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "Само собственикът може да променя това плашило.",
 	"scarecrow:interaction-error-claim": "Нямате разрешение за достъп до тази територия.",
 	"scarecrow:transform-botharms": "Плашило – двете ръце",
+	"scarecrow:transform-neck": "Плашило – Врат",
 	"scarecrow:tooltip-animal-all": "Животни"
 }

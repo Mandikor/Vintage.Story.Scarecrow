@@ -21,6 +21,7 @@ namespace Scarecrow
         {
             this.api = api;
             Add(ScarecrowArmTransform.SharedAttribute, "scarecrow:transform-botharms");
+            Add(ScarecrowArmTransform.NeckAttribute, "scarecrow:transform-neck");
             api.Event.RegisterEventBusListener(OnTransformChanged, filterByEventName: "onsettransform");
         }
 
@@ -36,7 +37,7 @@ namespace Scarecrow
         {
             if (disposed || data is not TreeAttribute tree || tree.GetBool("preventDefault")) return;
             string target = tree.GetString("target");
-            if (target != ScarecrowArmTransform.SharedAttribute) return;
+            if (target != ScarecrowArmTransform.SharedAttribute && target != ScarecrowArmTransform.NeckAttribute) return;
             CollectibleObject collectible = api.World.Player?.InventoryManager.ActiveHotbarSlot?.Itemstack?.Collectible;
             if (collectible == null) return;
 

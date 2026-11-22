@@ -214,7 +214,7 @@ natural spawns are still blocked normally. See the
 | Left and right arms with optional mods | Art of Growing hayforks and the Leaf Litter rake |
 | Arms, full-size scarecrow only | Small and large upright vanilla lanterns, instead of tools |
 | Arms, full-size scarecrow only | Filled vanilla oil lamps in all ten colors, with original ceiling suspension, flame/smoke particles and +1 block natural-spawn radius bonus (does not stack) |
-| Neck, little scarecrow only | Small and large upright vanilla lanterns, plus supported More Lanterns paper/metal lanterns |
+| Neck, little scarecrow only | Small/large vanilla lanterns, supported More Lanterns, Primitive Survival wooden lanterns (+2 blocks) and filled Firefly Jars (+1 block) |
 | Arms with More Lanterns, full-size scarecrow only | The same paper and metal lanterns, instead of tools |
 | Arms with Wind Chimes, full-size scarecrow only | Bamboo, wood, bone, brass, copper and crystal wind chimes, instead of tools |
 | Arms with censership, full-size scarecrow only | Metal Open, Metal Gills, Metal Dome and Carryable censers, with smoke, light and pendulum motion; no radius bonus |
@@ -267,18 +267,24 @@ enabled in the patches. No radius bonus or active player ability is added. See t
 With **Primitive Survival 5.1.4**, attach any of its 13 wooden lanterns or seven
 filled Firefly Jar types to either arm using **Shift + right-click**. Both the
 standard full-size model and the rounded Plumpkins model are supported. The
-little scarecrow and neck/foot slots do not accept these lights.
+little scarecrow also accepts them at its neck. Foot slots and new full-size neck
+attachments remain excluded.
 
 Wooden lanterns use their original ceiling model and add **2 blocks** to the
 natural-spawn protection radius. Filled Firefly Jars retain their species-specific
 textures and light colors, hang from the cork and add **1 block**. Both swing with
-the local wind. Use the normal inventory variants; empty/baited jars and placed
+the local wind on the full-size arms. Neck lights stay still and use separate
+neck scaling/placement without changing the calibrated arm transforms. Use the
+normal inventory variants; empty/baited jars and placed
 orientation variants are excluded.
 
 Only the strongest equipment bonus applies. The radius outline and tooltip update
 when either light is attached or removed; **Ctrl + H** retains its toggle behavior.
 All JSON patches are under `compatibility/primitivesurvival/patches`. This
 integration adds no creature AI tasks or placed-block behavior changes.
+The little scarecrow reaches 14 blocks with a wooden lantern or 13 with a filled
+Firefly Jar. For neck placement adjustments, select **Scarecrow – Neck** in
+`.tfedit` and save the exported `onScarecrowNeckTransform` to the matching patch.
 
 ### More Lanterns by Ape
 
@@ -437,7 +443,7 @@ The repository includes compatibility assets for the following mods and families
 | Art of Growing and its patched version | Crafting adjustments and hayfork attachment shapes |
 | Art of Growing Breeding Addon patch | Crafting adjustments |
 | Plumpkins | Alternative pumpkin shape for the scarecrow and its item, retaining the standard equipment mounts and animated arm attachments |
-| Primitive Survival 5.1.4 | Wooden lanterns and filled Firefly Jars as wind-driven arm lighting; +2/+1 natural-spawn radius bonuses |
+| Primitive Survival 5.1.4 | Wooden lanterns and filled Firefly Jars on full-size arms with wind motion or on the little scarecrow's neck; +2/+1 radius bonuses |
 | Animal Cages 5.0.1 | Cage releases remain outside natural-spawn blocking; optional server-side Harmony integration |
 | Adventurer's Walking Stick 3.0.12 | Complete walking sticks on either full-size arm, original models and editable transforms |
 | Grass to Ropes | Alternative crafting recipes |

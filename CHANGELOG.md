@@ -5,6 +5,23 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ## Unreleased
 
+### Primitive Survival lights on the little scarecrow's neck
+
+- Allow 13 wooden lanterns and seven filled Firefly Jar types in the little
+  scarecrow's neck slot, reusing the original ceiling/jar models and textures.
+  Retain +2/+1 natural-spawn radius bonuses (14/13 blocks on the little model).
+- Add optional `onScarecrowNeckTransform` for static neck placement, independent
+  of the mirrored arm transform and arm pendulum rendering. Register a neck
+  `.tfedit` target with labels in all 33 languages.
+- Keep existing neck geometry, other neck equipment, full-size arm calibration,
+  original models and world behavior unchanged. Empty/baited jars, placed variants,
+  foot slots and new full-size neck insertion remain excluded. JSON patches stay
+  in `compatibility/primitivesurvival/patches`.
+- Build and checks pass for all 96 source variants, slot exclusions, neck models,
+  bonuses and unchanged native properties. Native matrix/editor tests confirm
+  independent neck placement, unchanged arms and safe invalid-metadata handling.
+  My in-game test of the neck-lighting extension passed.
+
 ### Verified tool alignment and Walking Stick exclusions
 
 - My in-game test confirms correct mirrored tool geometry. I tested and aligned

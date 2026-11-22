@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "Толькі ўладальнік можа змяняць гэтае пудзіла.",
 	"scarecrow:interaction-error-claim": "У вас няма дазволу на доступ да гэтай тэрыторыі.",
 	"scarecrow:transform-botharms": "Пудзіла – абедзве рукі",
+	"scarecrow:transform-neck": "Пудзіла – Шыя",
 	"scarecrow:tooltip-animal-all": "Жывёлы"
 }

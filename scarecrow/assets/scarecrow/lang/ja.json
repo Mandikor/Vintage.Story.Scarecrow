@@ -79,5 +79,6 @@
 	"scarecrow:interaction-error-owner": "このかかしを変更できるのは所有者だけです。",
 	"scarecrow:interaction-error-claim": "この領域へのアクセス権限がありません。",
 	"scarecrow:transform-botharms": "かかし – 両腕",
+	"scarecrow:transform-neck": "かかし – 首",
 	"scarecrow:tooltip-animal-all": "動物"
 }

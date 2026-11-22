@@ -77,5 +77,6 @@
 	"scarecrow:interaction-error-owner": "Только владелец может изменять это пугало.",
 	"scarecrow:interaction-error-claim": "У вас нет прав доступа к этой территории.",
 	"scarecrow:transform-botharms": "Пугало – обе руки",
+	"scarecrow:transform-neck": "Пугало – Шея",
 	"scarecrow:tooltip-animal-all": "Животные"
 }
