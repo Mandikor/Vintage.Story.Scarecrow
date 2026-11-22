@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "vombatidae:entities/animal/mammal/vombatidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -50,7 +50,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "vombatidae:entities/animal/mammal/vombatidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -89,7 +89,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "vombatidae:entities/animal/mammal/vombatidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -130,7 +130,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "vombatidae:entities/animal/mammal/vombatidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -170,7 +170,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "vombatidae:entities/animal/mammal/vombatidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -208,7 +208,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "vombatidae:entities/animal/mammal/vombatidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {

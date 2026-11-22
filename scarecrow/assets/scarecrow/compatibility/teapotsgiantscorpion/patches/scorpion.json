@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantscorpion:entities/land/scorpion.json",
     "path": "/server/behaviors/7/aitasks/-",
     "value": {
@@ -50,7 +50,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantscorpion:entities/land/scorpion.json",
     "path": "/server/behaviors/7/aitasks/-",
     "value": {
@@ -87,7 +87,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantscorpion:entities/land/scorpion.json",
     "path": "/server/behaviors/7/aitasks/-",
     "value": {
@@ -126,7 +126,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantscorpion:entities/land/scorpion.json",
     "path": "/server/behaviors/7/aitasks/-",
     "value": {
@@ -156,7 +156,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantscorpion:entities/land/scorpion.json",
     "path": "/server/behaviors/7/aitasks/-",
     "value": {

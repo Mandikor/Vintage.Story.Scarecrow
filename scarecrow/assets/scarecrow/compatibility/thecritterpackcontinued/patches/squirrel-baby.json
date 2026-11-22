@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -24,7 +24,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -46,7 +46,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -54,7 +54,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -62,7 +62,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -70,7 +70,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -78,7 +78,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -86,7 +86,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -94,7 +94,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/5/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -102,7 +102,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/5/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -110,7 +110,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/5/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -118,7 +118,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -126,7 +126,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -134,7 +134,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -142,7 +142,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -150,7 +150,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -158,7 +158,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -166,7 +166,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/8/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -174,7 +174,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/8/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -182,7 +182,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-baby.json",
     "path": "/server/behaviors/9/aitasks/8/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",

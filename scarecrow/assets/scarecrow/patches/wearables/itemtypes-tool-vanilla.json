@@ -61,7 +61,7 @@
   },
   {
     "file": "game:itemtypes/tool/bugnet.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/onScarecrowLeftArmTransform",
     "value": {
       "translation": {
@@ -84,7 +84,7 @@
   },
   {
     "file": "game:itemtypes/tool/bugnet.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/onScarecrowRightArmTransform",
     "value": {
       "translation": {
@@ -102,7 +102,7 @@
   },
   {
     "file": "game:itemtypes/tool/hoe.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/onScarecrowLeftArmTransform",
     "value": {
       "translation": {
@@ -125,7 +125,7 @@
   },
   {
     "file": "game:itemtypes/tool/hoe.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/onScarecrowRightArmTransform",
     "value": {
       "translation": {
@@ -148,7 +148,7 @@
   },
   {
     "file": "game:itemtypes/tool/scythe.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/onScarecrowLeftArmTransform",
     "value": {
       "translation": {
@@ -171,7 +171,7 @@
   },
   {
     "file": "game:itemtypes/tool/scythe.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/onScarecrowRightArmTransform",
     "value": {
       "translation": {
@@ -194,7 +194,7 @@
   },
   {
     "file": "game:itemtypes/tool/snowshovel.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/onScarecrowLeftArmTransform",
     "value": {
       "translation": {
@@ -217,7 +217,7 @@
   },
   {
     "file": "game:itemtypes/tool/snowshovel.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/onScarecrowRightArmTransform",
     "value": {
       "translation": {
@@ -240,25 +240,25 @@
   },
   {
     "file": "game:itemtypes/tool/bugnet.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/scarecrowPendulum",
     "value": false
   },
   {
     "file": "game:itemtypes/tool/hoe.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/scarecrowPendulum",
     "value": false
   },
   {
     "file": "game:itemtypes/tool/scythe.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/scarecrowPendulum",
     "value": false
   },
   {
     "file": "game:itemtypes/tool/snowshovel.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/scarecrowPendulum",
     "value": false
   }

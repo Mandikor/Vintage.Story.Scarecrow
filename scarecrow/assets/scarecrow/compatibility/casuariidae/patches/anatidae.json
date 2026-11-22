@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "casuariidae:entities/animal/bird/anatidae-adult.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -43,7 +43,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "casuariidae:entities/animal/bird/anatidae-adult.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -86,7 +86,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "casuariidae:entities/animal/bird/anatidae-adult.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -129,7 +129,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "casuariidae:entities/animal/bird/anatidae-baby.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -170,7 +170,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "casuariidae:entities/animal/bird/anatidae-baby.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -212,7 +212,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "casuariidae:entities/animal/bird/anatidae-baby.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {

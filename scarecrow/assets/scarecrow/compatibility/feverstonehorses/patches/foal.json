@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "feverstonehorses:entities/land/foal.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -36,7 +36,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "feverstonehorses:entities/land/foal.json",
     "path": "/server/behaviors/11/aitasks/5/stopOnNearbyEntityCodesByType",
     "value": {

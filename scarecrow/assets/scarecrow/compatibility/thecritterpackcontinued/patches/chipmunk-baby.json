@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-baby.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -23,7 +23,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-baby.json",
     "path": "/server/behaviors/9/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -31,7 +31,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-baby.json",
     "path": "/server/behaviors/9/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -39,7 +39,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-baby.json",
     "path": "/server/behaviors/9/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -47,7 +47,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-baby.json",
     "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -55,7 +55,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-baby.json",
     "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -63,7 +63,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-baby.json",
     "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -71,7 +71,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-baby.json",
     "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -79,7 +79,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-baby.json",
     "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -87,7 +87,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-baby.json",
     "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -95,7 +95,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-baby.json",
     "path": "/server/behaviors/9/aitasks/5/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -103,7 +103,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-baby.json",
     "path": "/server/behaviors/9/aitasks/5/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -111,7 +111,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-baby.json",
     "path": "/server/behaviors/9/aitasks/5/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -119,7 +119,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-baby.json",
     "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -127,7 +127,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-baby.json",
     "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -135,7 +135,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/chipmunk/chipmunk-baby.json",
     "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",

@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/megalapterygidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -43,7 +43,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/megalapterygidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -87,7 +87,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/megalapterygidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -130,7 +130,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/megalapterygidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -171,7 +171,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/megalapterygidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -214,7 +214,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/megalapterygidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {

@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgreatbighorn:entities/animal/mammal/hooved/greathorn.json",
     "path": "/server/behaviors/14/aitasks/-",
     "value": {
@@ -40,7 +40,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgreatbighorn:entities/animal/mammal/hooved/greathorn.json",
     "path": "/server/behaviors/14/aitasks/-",
     "value": {
@@ -80,7 +80,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgreatbighorn:entities/animal/mammal/hooved/greathorn.json",
     "path": "/server/behaviors/14/aitasks/-",
     "value": {
@@ -103,7 +103,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgreatbighorn:entities/animal/mammal/hooved/greathorn.json",
     "path": "/server/behaviors/14/aitasks/-",
     "value": {
@@ -127,7 +127,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgreatbighorn:entities/animal/mammal/hooved/greathorn.json",
     "path": "/server/behaviors/14/aitasks/-",
     "value": {

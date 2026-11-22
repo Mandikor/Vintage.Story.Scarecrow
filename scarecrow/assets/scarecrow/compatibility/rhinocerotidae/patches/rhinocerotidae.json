@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "rhinocerotidae:entities/animal/mammal/hooved/rhinocerotidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -53,7 +53,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "rhinocerotidae:entities/animal/mammal/hooved/rhinocerotidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -93,7 +93,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "rhinocerotidae:entities/animal/mammal/hooved/rhinocerotidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -135,7 +135,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "rhinocerotidae:entities/animal/mammal/hooved/rhinocerotidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -180,7 +180,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "rhinocerotidae:entities/animal/mammal/hooved/rhinocerotidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -226,7 +226,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "rhinocerotidae:entities/animal/mammal/hooved/rhinocerotidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {

@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
     "path": "/behaviorConfigs/taskai/aitasks/-",
     "value": {
@@ -39,7 +39,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
     "path": "/behaviorConfigs/taskai/aitasks/-",
     "value": {
@@ -61,7 +61,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
     "path": "/behaviorConfigs/taskai/aitasks/-",
     "value": {
@@ -86,7 +86,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
     "path": "/behaviorConfigs/taskai/aitasks/-",
     "value": {
@@ -111,7 +111,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
     "path": "/behaviorConfigs/taskai/aitasks/-",
     "value": {
@@ -136,7 +136,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
     "path": "/behaviorConfigs/taskai/aitasks/6/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -144,7 +144,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
     "path": "/behaviorConfigs/taskai/aitasks/6/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -152,7 +152,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
     "path": "/behaviorConfigs/taskai/aitasks/6/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -160,7 +160,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
     "path": "/behaviorConfigs/taskai/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -168,7 +168,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
     "path": "/behaviorConfigs/taskai/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -176,7 +176,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
     "path": "/behaviorConfigs/taskai/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -184,7 +184,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
     "path": "/behaviorConfigs/taskai/aitasks/8/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -192,7 +192,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
     "path": "/behaviorConfigs/taskai/aitasks/8/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -200,7 +200,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
     "path": "/behaviorConfigs/taskai/aitasks/8/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -208,7 +208,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
     "path": "/behaviorConfigs/taskai/aitasks/11/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -216,7 +216,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
     "path": "/behaviorConfigs/taskai/aitasks/11/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -224,7 +224,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
     "path": "/behaviorConfigs/taskai/aitasks/11/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",

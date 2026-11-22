@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/apterygidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -60,7 +60,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/apterygidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -103,7 +103,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/apterygidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -154,7 +154,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/apterygidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -195,7 +195,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/apterygidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -237,7 +237,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/apterygidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {

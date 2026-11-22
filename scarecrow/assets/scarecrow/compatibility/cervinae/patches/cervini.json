@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "cervinae:entities/animal/mammal/hooved/cervini-adult.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -39,7 +39,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "cervinae:entities/animal/mammal/hooved/cervini-adult.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -77,7 +77,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "cervinae:entities/animal/mammal/hooved/cervini-adult.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -115,7 +115,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "cervinae:entities/animal/mammal/hooved/cervini-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -152,7 +152,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "cervinae:entities/animal/mammal/hooved/cervini-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -190,7 +190,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "cervinae:entities/animal/mammal/hooved/cervini-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {

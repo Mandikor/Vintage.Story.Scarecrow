@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/hellboar-piglet.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "fleeentity",
@@ -28,7 +28,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/hellboar-piglet.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
     "side": "server"
@@ -36,7 +36,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/hellboar-piglet.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
     "side": "server"
@@ -44,7 +44,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/hellboar-piglet.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
     "side": "server"
@@ -52,7 +52,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/hellboar-piglet.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/6/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
     "side": "server"
@@ -60,7 +60,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/hellboar-piglet.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/6/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
     "side": "server"
@@ -68,7 +68,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/hellboar-piglet.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/6/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
     "side": "server"

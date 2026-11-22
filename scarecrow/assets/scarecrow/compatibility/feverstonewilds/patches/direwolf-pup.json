@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/direwolf-pup.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
       "code": "fleeentity",
@@ -28,7 +28,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/direwolf-pup.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/11/aitasks/5/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
     "side": "server"
@@ -36,7 +36,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/direwolf-pup.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/11/aitasks/5/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
     "side": "server"
@@ -44,7 +44,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/direwolf-pup.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/11/aitasks/5/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
     "side": "server"

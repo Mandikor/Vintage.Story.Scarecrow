@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "casuariidae:entities/animal/bird/rallidae-adult.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -42,7 +42,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "casuariidae:entities/animal/bird/rallidae-adult.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -85,7 +85,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "casuariidae:entities/animal/bird/rallidae-adult.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -127,7 +127,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "casuariidae:entities/animal/bird/rallidae-baby.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -168,7 +168,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "casuariidae:entities/animal/bird/rallidae-baby.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -210,7 +210,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "casuariidae:entities/animal/bird/rallidae-baby.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {

@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "machairodontinae:entities/animal/mammal/machairodontinae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -46,7 +46,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "machairodontinae:entities/animal/mammal/machairodontinae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -86,7 +86,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "machairodontinae:entities/animal/mammal/machairodontinae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -131,7 +131,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "machairodontinae:entities/animal/mammal/machairodontinae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -171,7 +171,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "machairodontinae:entities/animal/mammal/machairodontinae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -211,7 +211,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "machairodontinae:entities/animal/mammal/machairodontinae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {

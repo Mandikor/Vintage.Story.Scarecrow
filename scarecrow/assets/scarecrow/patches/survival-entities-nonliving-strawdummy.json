@@ -83,7 +83,7 @@
     "file": "game:itemtypes/creature/strawdummy.json"
   },
   {
-    "op": "add",
+    "op": "addmerge",
     "path": "/groundTransform",
     "value": {
       "translation": {

@@ -17,7 +17,7 @@
   },
   {
     "file": "leaflitter:itemtypes/rake.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/onScarecrowLeftArmTransform",
     "value": {
       "translation": {
@@ -40,7 +40,7 @@
   },
   {
     "file": "leaflitter:itemtypes/rake.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/onScarecrowRightArmTransform",
     "value": {
       "translation": {
@@ -63,7 +63,7 @@
   },
   {
     "file": "leaflitter:itemtypes/rake.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/scarecrowPendulum",
     "value": false
   }

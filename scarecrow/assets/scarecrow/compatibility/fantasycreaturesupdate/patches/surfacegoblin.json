@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/surfacegoblin.json",
     "path": "/server/behaviors/6/aitasksByType/surfacegoblin-hunter/-",
     "value": {
@@ -25,7 +25,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/surfacegoblin.json",
     "path": "/server/behaviors/6/aitasksByType/surfacegoblin-hunter/-",
     "value": {
@@ -50,7 +50,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/surfacegoblin.json",
     "path": "/server/behaviors/6/aitasksByType/surfacegoblin-hunter/-",
     "value": {
@@ -74,7 +74,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/surfacegoblin.json",
     "path": "/server/behaviors/6/aitasksByType/surfacegoblin-pelted/-",
     "value": {
@@ -98,7 +98,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/surfacegoblin.json",
     "path": "/server/behaviors/6/aitasksByType/surfacegoblin-pelted/-",
     "value": {
@@ -123,7 +123,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/surfacegoblin.json",
     "path": "/server/behaviors/6/aitasksByType/surfacegoblin-pelted/-",
     "value": {
@@ -147,7 +147,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/surfacegoblin.json",
     "path": "/server/behaviors/6/aitasksByType/surfacegoblin-*/-",
     "value": {
@@ -171,7 +171,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/surfacegoblin.json",
     "path": "/server/behaviors/6/aitasksByType/surfacegoblin-*/-",
     "value": {
@@ -204,7 +204,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/surfacegoblin.json",
     "path": "/server/behaviors/6/aitasksByType/surfacegoblin-*/-",
     "value": {

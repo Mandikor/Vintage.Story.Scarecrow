@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "bovinae:entities/animal/mammal/hooved/bovinae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -76,7 +76,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "bovinae:entities/animal/mammal/hooved/bovinae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -114,7 +114,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "bovinae:entities/animal/mammal/hooved/bovinae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {

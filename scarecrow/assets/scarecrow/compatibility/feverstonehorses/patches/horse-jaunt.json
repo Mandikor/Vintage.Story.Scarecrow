@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "feverstonehorses:entities/land/horse-jaunt.json",
     "path": "/server/behaviors/15/aitasks/-",
     "value": {
@@ -39,7 +39,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "feverstonehorses:entities/land/horse-jaunt.json",
     "path": "/server/behaviors/15/aitasks/-",
     "value": {
@@ -65,7 +65,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "feverstonehorses:entities/land/horse-jaunt.json",
     "path": "/server/behaviors/15/aitasks/6/stopOnNearbyEntityCodesByType",
     "value": {

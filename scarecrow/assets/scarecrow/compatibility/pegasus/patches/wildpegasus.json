@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "pegasus:entities/wildpegasus.json",
     "path": "/behaviorConfigs/taskai/aitasks/-",
     "side": "server",
@@ -39,7 +39,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "pegasus:entities/wildpegasus.json",
     "path": "/behaviorConfigs/taskai/aitasks/-",
     "side": "server",
@@ -68,7 +68,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "pegasus:entities/wildpegasus.json",
     "path": "/behaviorConfigs/taskai/aitasks/-",
     "side": "server",
@@ -102,7 +102,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "pegasus:entities/wildpegasus.json",
     "path": "/behaviorConfigs/taskai/aitasks/8/stopOnNearbyEntityCodesByType",
     "side": "server",
@@ -137,7 +137,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "pegasus:entities/wildpegasus.json",
     "path": "/behaviorConfigs/taskai/aitasks/9/stopOnNearbyEntityCodesByType",
     "side": "server",
@@ -172,7 +172,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "pegasus:entities/wildpegasus.json",
     "path": "/behaviorConfigs/taskai/aitasks/10/stopOnNearbyEntityCodesByType",
     "side": "server",
@@ -197,7 +197,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "pegasus:entities/wildpegasus.json",
     "path": "/behaviorConfigs/taskai/aitasks/11/stopOnNearbyEntityCodesByType",
     "side": "server",

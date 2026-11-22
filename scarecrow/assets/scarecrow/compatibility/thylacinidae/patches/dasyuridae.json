@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thylacinidae:entities/animal/mammal/dasyuridae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -48,7 +48,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thylacinidae:entities/animal/mammal/dasyuridae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -89,7 +89,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thylacinidae:entities/animal/mammal/dasyuridae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -136,7 +136,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thylacinidae:entities/animal/mammal/dasyuridae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -180,7 +180,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thylacinidae:entities/animal/mammal/dasyuridae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -221,7 +221,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thylacinidae:entities/animal/mammal/dasyuridae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {

@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -23,7 +23,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -45,7 +45,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -53,7 +53,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -61,7 +61,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -69,7 +69,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -77,7 +77,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -85,7 +85,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -93,7 +93,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/5/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -101,7 +101,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/5/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -109,7 +109,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/5/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -117,7 +117,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/6/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -125,7 +125,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/6/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -133,7 +133,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/6/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -141,7 +141,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -149,7 +149,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -157,7 +157,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -165,7 +165,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/8/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -173,7 +173,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/8/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -181,7 +181,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/8/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -189,7 +189,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/9/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -197,7 +197,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/9/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -205,7 +205,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/9/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -213,7 +213,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/10/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -221,7 +221,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/10/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -229,7 +229,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/10/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -237,7 +237,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {

@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar-baby.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {

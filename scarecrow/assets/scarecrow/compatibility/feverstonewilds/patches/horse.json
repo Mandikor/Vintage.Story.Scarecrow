@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/horse.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/14/aitasks/-",
     "value": {
       "code": "meleeattack",
@@ -59,7 +59,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/horse.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/14/aitasks/-",
     "value": {
       "code": "fleeentity",
@@ -104,7 +104,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/horse.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/14/aitasks/8/stopOnNearbyEntityCodesByType",
     "value": {
       "horse-wild-male-percheron": [

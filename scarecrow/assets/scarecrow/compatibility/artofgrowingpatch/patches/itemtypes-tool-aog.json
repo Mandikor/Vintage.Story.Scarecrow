@@ -21,7 +21,7 @@
   },
   {
     "file": "artofgrowing:itemtypes/tool/hayfork.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/onScarecrowLeftArmTransform",
     "value": {
       "translation": {
@@ -44,7 +44,7 @@
   },
   {
     "file": "artofgrowing:itemtypes/tool/hayfork.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/onScarecrowRightArmTransform",
     "value": {
       "translation": {
@@ -67,7 +67,7 @@
   },
   {
     "file": "artofgrowing:itemtypes/tool/hayfork.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/scarecrowPendulum",
     "value": false
   }

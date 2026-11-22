@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/slime.json",
     "path": "/server/behaviors/6/aitasks/-",
     "value": {
@@ -25,7 +25,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/slime.json",
     "path": "/server/behaviors/6/aitasks/-",
     "value": {
@@ -57,7 +57,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/slime.json",
     "path": "/server/behaviors/6/aitasks/-",
     "value": {

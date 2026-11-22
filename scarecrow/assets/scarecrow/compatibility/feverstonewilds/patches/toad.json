@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/toad.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
       "code": "fleeentity",
@@ -28,7 +28,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/toad.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
     "side": "server"
@@ -36,7 +36,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/toad.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
     "side": "server"
@@ -44,7 +44,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/toad.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
     "side": "server"
@@ -52,7 +52,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/toad.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
     "side": "server"
@@ -60,7 +60,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/toad.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
     "side": "server"
@@ -68,7 +68,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/toad.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
     "side": "server"

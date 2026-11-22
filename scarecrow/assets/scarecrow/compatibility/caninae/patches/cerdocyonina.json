@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "caninae:entities/animal/mammal/cerdocyonina-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -65,7 +65,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "caninae:entities/animal/mammal/cerdocyonina-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -117,7 +117,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "caninae:entities/animal/mammal/cerdocyonina-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -181,7 +181,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "caninae:entities/animal/mammal/cerdocyonina-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -232,7 +232,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "caninae:entities/animal/mammal/cerdocyonina-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -284,7 +284,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "caninae:entities/animal/mammal/cerdocyonina-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {

@@ -16,7 +16,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/bird/sparrow/house-sparrow_f.json",
     "path": "/server/behaviors/8/aitasks/-",
     "value": {
@@ -40,7 +40,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/bird/sparrow/house-sparrow_f.json",
     "path": "/server/behaviors/8/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",

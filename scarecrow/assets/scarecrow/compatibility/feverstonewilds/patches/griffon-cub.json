@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/griffon-cub.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/14/aitasks/-",
     "value": {
       "code": "fleeentity",
@@ -29,7 +29,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/griffon-cub.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/14/aitasks/7/stopOnNearbyEntityCodesByType",
     "value": {
       "griffon-cub-wild": [

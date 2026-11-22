@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/revenant-brute.json",
     "path": "/server/behaviors/6/aitasks/6/entityCodes/-",
     "value": "scarecrow",
@@ -9,7 +9,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/revenant-brute.json",
     "path": "/server/behaviors/6/aitasks/6/entityCodes/-",
     "value": "little-scarecrow",
@@ -17,7 +17,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/revenant-brute.json",
     "path": "/server/behaviors/6/aitasks/6/entityCodes/-",
     "value": "strawdummy",
@@ -25,7 +25,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/revenant-brute.json",
     "path": "/server/behaviors/6/aitasks/8/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -33,7 +33,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/revenant-brute.json",
     "path": "/server/behaviors/6/aitasks/8/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -41,7 +41,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/revenant-brute.json",
     "path": "/server/behaviors/6/aitasks/8/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",

@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -42,7 +42,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -103,7 +103,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -126,7 +126,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -150,7 +150,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -174,7 +174,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -198,7 +198,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -221,7 +221,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "path": "/server/behaviors/11/aitasks/10/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -229,7 +229,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "path": "/server/behaviors/11/aitasks/10/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -237,7 +237,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "path": "/server/behaviors/11/aitasks/10/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -245,7 +245,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -268,7 +268,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "path": "/server/behaviors/11/aitasks/15/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -276,7 +276,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "path": "/server/behaviors/11/aitasks/15/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -284,7 +284,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantredriver:entities/animal/mammal/hooved/giantredriver.json",
     "path": "/server/behaviors/11/aitasks/15/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",

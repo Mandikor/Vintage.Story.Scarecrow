@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/cockatrice-chick.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
       "code": "fleeentity",
@@ -27,7 +27,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/cockatrice-chick.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
       "code": "meleeattack",

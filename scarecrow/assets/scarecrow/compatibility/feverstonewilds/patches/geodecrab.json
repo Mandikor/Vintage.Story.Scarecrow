@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/geodecrab.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
       "code": "fleeentity",
@@ -27,7 +27,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/geodecrab.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
     "side": "server"
@@ -35,7 +35,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/geodecrab.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
     "side": "server"
@@ -43,7 +43,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/geodecrab.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
     "side": "server"
@@ -51,7 +51,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/geodecrab.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
     "side": "server"
@@ -59,7 +59,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/geodecrab.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
     "side": "server"
@@ -67,7 +67,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/geodecrab.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
     "side": "server"

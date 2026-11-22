@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/bison.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/15/aitasks/-",
     "value": {
       "code": "meleeattack",
@@ -37,7 +37,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/bison.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/15/aitasks/-",
     "value": {
       "code": "seekentity",
@@ -68,7 +68,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/bison.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/15/aitasks/-",
     "value": {
       "code": "fleeentity",
@@ -98,7 +98,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/bison.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/15/aitasks/10/stopOnNearbyEntityCodesByType",
     "value": {
       "bison-wild-male": [
@@ -136,7 +136,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/bison.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/15/aitasks/16/stopOnNearbyEntityCodesByType",
     "value": {
       "bison-wild-male": [

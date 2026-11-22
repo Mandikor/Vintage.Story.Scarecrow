@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "arcticwolves:entities/arcticwolf-baby.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "fleeentity",
@@ -25,7 +25,7 @@
   {
     "enabled": true,
     "file": "arcticwolves:entities/arcticwolf-baby.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
     "side": "server"
@@ -33,7 +33,7 @@
   {
     "enabled": true,
     "file": "arcticwolves:entities/arcticwolf-baby.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
     "side": "server"
@@ -41,7 +41,7 @@
   {
     "enabled": true,
     "file": "arcticwolves:entities/arcticwolf-baby.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
     "side": "server"

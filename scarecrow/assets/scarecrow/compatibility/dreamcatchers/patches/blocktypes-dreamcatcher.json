@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "dreamcatchers:blocktypes/dreamcatcher.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes",
     "value": {
       "attachableToEntity": {
@@ -20,13 +20,13 @@
   },
   {
     "file": "dreamcatchers:blocktypes/dreamcatcher.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/onScarecrowLeftArmTransform",
     "value": {
       "translation": {
-        "x": 0.0056250393,
-        "y": 0.26409128,
-        "z": 0.28500003
+        "x": 0.01,
+        "y": 0.26,
+        "z": 0.29
       },
       "rotation": {
         "x": 0,
@@ -47,13 +47,13 @@
   },
   {
     "file": "dreamcatchers:blocktypes/dreamcatcher.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/onScarecrowRightArmTransform",
     "value": {
       "translation": {
-        "x": 0.00562495,
-        "y": 0.2640912,
-        "z": 0.2850001
+        "x": 0.01,
+        "y": 0.26,
+        "z": 0.29
       },
       "rotation": {
         "x": 0,
@@ -74,13 +74,13 @@
   },
   {
     "file": "dreamcatchers:blocktypes/dreamcatcher.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/scarecrowPendulum",
     "value": false
   },
   {
     "file": "dreamcatchers:blocktypes/dreamcatcher.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/scarecrowPendulumAttachmentPoints",
     "value": {
       "sc-leftarm": "ScarecrowLanternLeftAP",

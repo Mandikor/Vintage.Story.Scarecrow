@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "dreamcatchers:shapes/block/dreamcatcher.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/0/stepParentName",
     "value": "ScarecrowDreamcatcherMount",
     "side": "client"

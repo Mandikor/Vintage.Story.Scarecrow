@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "pantherinae:entities/animal/mammal/pantherinae-panthera-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -55,7 +55,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "pantherinae:entities/animal/mammal/pantherinae-panthera-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -101,7 +101,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "pantherinae:entities/animal/mammal/pantherinae-panthera-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -157,7 +157,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "pantherinae:entities/animal/mammal/pantherinae-panthera-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -198,7 +198,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "pantherinae:entities/animal/mammal/pantherinae-panthera-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -233,7 +233,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "pantherinae:entities/animal/mammal/pantherinae-panthera-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {

@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "elephantidae:entities/animal/mammal/elephantidae-adult.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -60,7 +60,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "elephantidae:entities/animal/mammal/elephantidae-adult.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -102,7 +102,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "elephantidae:entities/animal/mammal/elephantidae-adult.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -161,7 +161,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "elephantidae:entities/animal/mammal/elephantidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -205,7 +205,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "elephantidae:entities/animal/mammal/elephantidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -247,7 +247,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "elephantidae:entities/animal/mammal/elephantidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -290,7 +290,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "elephantidae:entities/animal/mammal/elephantidae-baby.json",
     "path": "/server/behaviors/10/aitasks/14/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -298,7 +298,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "elephantidae:entities/animal/mammal/elephantidae-baby.json",
     "path": "/server/behaviors/10/aitasks/14/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -306,7 +306,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "elephantidae:entities/animal/mammal/elephantidae-baby.json",
     "path": "/server/behaviors/10/aitasks/14/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",

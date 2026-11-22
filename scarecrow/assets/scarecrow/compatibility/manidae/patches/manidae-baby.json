@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "manidae:entities/animal/mammal/manidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -45,7 +45,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "manidae:entities/animal/mammal/manidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -90,7 +90,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "manidae:entities/animal/mammal/manidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {

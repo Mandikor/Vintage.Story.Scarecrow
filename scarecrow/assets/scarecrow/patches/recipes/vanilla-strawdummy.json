@@ -1,6 +1,6 @@
 [
   {
-    "op": "add",
+    "op": "addmerge",
     "path": "/enabled",
     "value": true,
     "file": "game:recipes/grid/strawdummy.json",
@@ -33,7 +33,7 @@
     "side": "Server"
   },
   {
-    "op": "add",
+    "op": "addmerge",
     "path": "/recipeGroup",
     "value": 1,
     "file": "game:recipes/grid/strawdummy.json",

@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "capreolinae:entities/animal/mammal/hooved/alceini-adult.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -39,7 +39,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "capreolinae:entities/animal/mammal/hooved/alceini-adult.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -74,7 +74,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "capreolinae:entities/animal/mammal/hooved/alceini-adult.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -112,7 +112,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "capreolinae:entities/animal/mammal/hooved/alceini-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -154,7 +154,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "capreolinae:entities/animal/mammal/hooved/alceini-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -195,7 +195,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "capreolinae:entities/animal/mammal/hooved/alceini-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {

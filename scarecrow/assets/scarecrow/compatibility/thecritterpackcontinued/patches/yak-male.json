@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-male.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -29,7 +29,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-male.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -53,7 +53,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-male.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -76,7 +76,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-male.json",
     "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -84,7 +84,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-male.json",
     "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -92,7 +92,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-male.json",
     "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -100,7 +100,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-male.json",
     "path": "/server/behaviors/9/aitasks/11/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -108,7 +108,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-male.json",
     "path": "/server/behaviors/9/aitasks/11/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -116,7 +116,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-male.json",
     "path": "/server/behaviors/9/aitasks/11/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",

@@ -66,13 +66,13 @@ The example enables both full-size arms without changing the little scarecrow.
 [
   {
     "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
     "value": "mymod:gardencharm"
   },
   {
     "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
     "value": "mymod:gardencharm"
   }

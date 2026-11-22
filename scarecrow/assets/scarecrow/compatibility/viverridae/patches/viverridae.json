@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "viverridae:entities/animal/mammal/viverridae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -69,7 +69,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "viverridae:entities/animal/mammal/viverridae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -109,7 +109,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "viverridae:entities/animal/mammal/viverridae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -164,7 +164,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "viverridae:entities/animal/mammal/viverridae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -212,7 +212,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "viverridae:entities/animal/mammal/viverridae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -252,7 +252,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "viverridae:entities/animal/mammal/viverridae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {

@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/foal.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/13/aitasks/-",
     "value": {
       "code": "fleeentity",
@@ -37,7 +37,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/foal.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/13/aitasks/7/stopOnNearbyEntityCodesByType",
     "value": {
       "foal-wild-percheron": [

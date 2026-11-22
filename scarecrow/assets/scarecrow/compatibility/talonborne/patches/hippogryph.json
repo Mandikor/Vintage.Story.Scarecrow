@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "talonborne:entities/mount/hippogryph.json",
     "path": "/behaviorConfigs/taskai/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -9,7 +9,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "talonborne:entities/mount/hippogryph.json",
     "path": "/behaviorConfigs/taskai/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -17,7 +17,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "talonborne:entities/mount/hippogryph.json",
     "path": "/behaviorConfigs/taskai/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",

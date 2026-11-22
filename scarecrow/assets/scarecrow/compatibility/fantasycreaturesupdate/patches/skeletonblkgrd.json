@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/skeletonblkgrd.json",
     "path": "/server/behaviors/5/aitasks/-",
     "value": {
@@ -26,7 +26,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/skeletonblkgrd.json",
     "path": "/server/behaviors/5/aitasks/-",
     "value": {
@@ -50,7 +50,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/skeletonblkgrd.json",
     "path": "/server/behaviors/5/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -58,7 +58,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/skeletonblkgrd.json",
     "path": "/server/behaviors/5/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -66,7 +66,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/skeletonblkgrd.json",
     "path": "/server/behaviors/5/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",

@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/dragon-blue.json",
     "path": "/server/behaviors/7/aitasks/-",
     "value": {

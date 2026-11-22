@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "vombatidae:entities/animal/mammal/thylacoleonidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -44,7 +44,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "vombatidae:entities/animal/mammal/thylacoleonidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -85,7 +85,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "vombatidae:entities/animal/mammal/thylacoleonidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -129,7 +129,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "vombatidae:entities/animal/mammal/thylacoleonidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -172,7 +172,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "vombatidae:entities/animal/mammal/thylacoleonidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -213,7 +213,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "vombatidae:entities/animal/mammal/thylacoleonidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {

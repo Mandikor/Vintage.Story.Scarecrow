@@ -17,7 +17,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/bird/crow/crow-flying.json",
     "path": "/server/behaviors/8/aitasks/-",
     "value": {

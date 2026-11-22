@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
     "value": "dreamcatchers:dreamcatcher-*"
   },
@@ -20,7 +20,7 @@
   {
     "enabled": true,
     "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
     "value": "dreamcatchers:dreamcatcher-*"
   },
@@ -38,7 +38,7 @@
   {
     "enabled": true,
     "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/useSlotPrefix",
     "value": true
   }

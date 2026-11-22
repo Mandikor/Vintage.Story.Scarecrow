@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "casuariidae:entities/animal/bird/casuariidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -43,7 +43,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "casuariidae:entities/animal/bird/casuariidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -89,7 +89,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "casuariidae:entities/animal/bird/casuariidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -137,7 +137,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "casuariidae:entities/animal/bird/casuariidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -182,7 +182,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "casuariidae:entities/animal/bird/casuariidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -223,7 +223,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "casuariidae:entities/animal/bird/casuariidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {

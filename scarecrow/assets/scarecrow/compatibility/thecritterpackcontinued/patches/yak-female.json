@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-female.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -29,7 +29,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-female.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -53,7 +53,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-female.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -75,7 +75,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-female.json",
     "path": "/server/behaviors/11/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -83,7 +83,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-female.json",
     "path": "/server/behaviors/11/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -91,7 +91,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-female.json",
     "path": "/server/behaviors/11/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",

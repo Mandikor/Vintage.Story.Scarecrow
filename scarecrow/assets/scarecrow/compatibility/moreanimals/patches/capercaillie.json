@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "moreanimals:entities/capercaillie.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -32,7 +32,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "moreanimals:entities/capercaillie.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -62,7 +62,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "moreanimals:entities/capercaillie.json",
     "path": "/server/behaviors/11/aitasks/-",
     "value": {
@@ -90,7 +90,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "moreanimals:entities/capercaillie.json",
     "path": "/server/behaviors/11/aitasks/8/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -98,7 +98,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "moreanimals:entities/capercaillie.json",
     "path": "/server/behaviors/11/aitasks/8/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -106,7 +106,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "moreanimals:entities/capercaillie.json",
     "path": "/server/behaviors/11/aitasks/8/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",

@@ -14,7 +14,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/bird/waxwing/waxwing_g.json",
     "path": "/server/behaviors/9/aitasks/5/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -22,7 +22,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/bird/waxwing/waxwing_g.json",
     "path": "/server/behaviors/9/aitasks/5/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -30,7 +30,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/bird/waxwing/waxwing_g.json",
     "path": "/server/behaviors/9/aitasks/5/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",

@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "moreanimals:entities/capercaillie-chick.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -22,7 +22,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "moreanimals:entities/capercaillie-chick.json",
     "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -30,7 +30,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "moreanimals:entities/capercaillie-chick.json",
     "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -38,7 +38,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "moreanimals:entities/capercaillie-chick.json",
     "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",

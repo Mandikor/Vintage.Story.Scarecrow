@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/11/aitasks/-",
     "file": "game:entities/animal/mammal/hyena-baby.json",
     "value": {
@@ -24,7 +24,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/11/aitasks/-",
     "file": "game:entities/animal/mammal/hyena-baby.json",
     "value": {
@@ -47,7 +47,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/11/aitasks/-",
     "file": "game:entities/animal/mammal/hyena-baby.json",
     "value": {
@@ -70,7 +70,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/11/aitasks/-",
     "file": "game:entities/animal/mammal/hyena-adult.json",
     "value": {
@@ -101,7 +101,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/11/aitasks/-",
     "file": "game:entities/animal/mammal/hyena-adult.json",
     "value": {

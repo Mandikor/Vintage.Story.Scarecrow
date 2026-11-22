@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-female.json",
     "path": "/server/behaviors/8/aitasks/-",
     "value": {
@@ -24,7 +24,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-female.json",
     "path": "/server/behaviors/8/aitasks/-",
     "value": {
@@ -57,7 +57,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-female.json",
     "path": "/server/behaviors/8/aitasks/-",
     "value": {
@@ -84,7 +84,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-female.json",
     "path": "/server/behaviors/8/aitasks/5/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -92,7 +92,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-female.json",
     "path": "/server/behaviors/8/aitasks/5/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -100,7 +100,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-female.json",
     "path": "/server/behaviors/8/aitasks/5/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",

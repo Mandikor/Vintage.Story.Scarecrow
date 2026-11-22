@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "moschidae:entities/animal/mammal/hooved/moschidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -45,7 +45,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "moschidae:entities/animal/mammal/hooved/moschidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -85,7 +85,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "moschidae:entities/animal/mammal/hooved/moschidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -129,7 +129,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "moschidae:entities/animal/mammal/hooved/moschidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -169,7 +169,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "moschidae:entities/animal/mammal/hooved/moschidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -210,7 +210,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "moschidae:entities/animal/mammal/hooved/moschidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {

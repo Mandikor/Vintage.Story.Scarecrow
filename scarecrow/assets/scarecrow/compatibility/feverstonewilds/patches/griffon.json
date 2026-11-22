@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/griffon.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/21/aitasks/-",
     "value": {
       "code": "flightmeleeattack",
@@ -37,7 +37,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/griffon.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/21/aitasks/-",
     "value": {
       "code": "flightseekentity",
@@ -67,7 +67,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/griffon.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/21/aitasks/-",
     "value": {
       "code": "meleeattack",
@@ -102,7 +102,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/griffon.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/21/aitasks/-",
     "value": {
       "code": "fleeentity",
@@ -131,7 +131,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/griffon.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/21/aitasks/-",
     "value": {
       "code": "seekentity",
@@ -163,7 +163,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/griffon.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/21/aitasks/-",
     "value": {
       "code": "seekentity",
@@ -195,7 +195,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/griffon.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/21/aitasks/-",
     "value": {
       "code": "seekentity",
@@ -225,7 +225,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/griffon.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/21/aitasks/13/stopOnNearbyEntityCodesByType",
     "value": {
       "griffon-wild-male": [
@@ -263,7 +263,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/griffon.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/21/aitasks/17/stopOnNearbyEntityCodesByType",
     "value": {
       "griffon-wild-male": [

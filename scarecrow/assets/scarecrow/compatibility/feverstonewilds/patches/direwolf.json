@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "meleeattack",
@@ -35,7 +35,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "meleeattack",
@@ -68,7 +68,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "meleeattack",
@@ -101,7 +101,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "fleeentity",
@@ -128,7 +128,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "seekentity",
@@ -161,7 +161,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
       "code": "seekentity",
@@ -192,7 +192,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
     "side": "server"
@@ -200,7 +200,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
     "side": "server"
@@ -208,7 +208,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
     "side": "server"
@@ -216,7 +216,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/13/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
     "side": "server"
@@ -224,7 +224,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/13/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
     "side": "server"
@@ -232,7 +232,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/13/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
     "side": "server"

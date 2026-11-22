@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/raccoon-baby.json",
     "value": {
@@ -23,7 +23,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/raccoon-baby.json",
     "value": {
@@ -45,7 +45,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/raccoon-baby.json",
     "value": {
@@ -67,7 +67,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/raccoon-adult.json",
     "value": {
@@ -89,7 +89,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/raccoon-adult.json",
     "value": {
@@ -111,7 +111,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/raccoon-adult.json",
     "value": {

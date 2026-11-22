@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/11/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/deer-baby.json",
     "value": {
@@ -30,7 +30,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/11/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/deer-baby.json",
     "value": {
@@ -59,7 +59,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/11/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/deer-baby.json",
     "value": {
@@ -88,7 +88,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/deer-adult.json",
     "value": {
@@ -126,7 +126,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/deer-adult.json",
     "value": {
@@ -164,7 +164,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/deer-adult.json",
     "value": {
@@ -202,7 +202,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/deer-adult.json",
     "value": {
@@ -239,7 +239,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/deer-adult.json",
     "value": {
@@ -276,7 +276,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/deer-adult.json",
     "value": {
@@ -313,7 +313,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/deer-adult.json",
     "value": {
@@ -356,7 +356,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/deer-adult.json",
     "value": {

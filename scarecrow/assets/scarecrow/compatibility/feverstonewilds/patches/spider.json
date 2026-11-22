@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/spider.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
       "code": "meleeattack",
@@ -34,7 +34,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/spider.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
       "code": "seekentity",
@@ -61,7 +61,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/spider.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
     "side": "server"
@@ -69,7 +69,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/spider.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
     "side": "server"
@@ -77,7 +77,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/spider.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
     "side": "server"
@@ -85,7 +85,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/spider.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
     "side": "server"
@@ -93,7 +93,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/spider.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
     "side": "server"
@@ -101,7 +101,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/spider.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
     "side": "server"

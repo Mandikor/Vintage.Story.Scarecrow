@@ -2,14 +2,14 @@
   {
     "enabled": true,
     "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
     "value": "windchimes:windchime-*"
   },
   {
     "enabled": true,
     "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
     "value": "windchimes:windchime-*"
   },

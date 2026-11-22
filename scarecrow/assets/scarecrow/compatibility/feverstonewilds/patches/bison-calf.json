@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/bison-calf.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/13/aitasks/-",
     "value": {
       "code": "fleeentity",
@@ -29,7 +29,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/bison-calf.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/13/aitasks/6/stopOnNearbyEntityCodesByType",
     "value": {
       "bison-calf-wild": [

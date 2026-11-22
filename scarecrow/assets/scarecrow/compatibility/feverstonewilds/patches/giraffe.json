@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/giraffe.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
       "code": "seekentity",
@@ -33,7 +33,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/giraffe.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
       "code": "fleeentity",
@@ -63,7 +63,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/giraffe.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
       "code": "fleeentity",
@@ -92,7 +92,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/giraffe.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
     "side": "server"
@@ -100,7 +100,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/giraffe.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
     "side": "server"
@@ -108,7 +108,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/giraffe.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
     "side": "server"
@@ -116,7 +116,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/giraffe.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/8/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
     "side": "server"
@@ -124,7 +124,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/giraffe.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/8/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
     "side": "server"
@@ -132,7 +132,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/giraffe.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/8/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
     "side": "server"

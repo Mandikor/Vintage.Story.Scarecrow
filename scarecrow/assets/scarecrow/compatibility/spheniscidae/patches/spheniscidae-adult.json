@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "spheniscidae:entities/animal/bird/spheniscidae-adult.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -78,7 +78,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "spheniscidae:entities/animal/bird/spheniscidae-adult.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -175,7 +175,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "spheniscidae:entities/animal/bird/spheniscidae-adult.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {

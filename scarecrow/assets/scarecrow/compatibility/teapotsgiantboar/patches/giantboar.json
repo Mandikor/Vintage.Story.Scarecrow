@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
     "path": "/server/behaviors/13/aitasks/-",
     "value": {
@@ -41,7 +41,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
     "path": "/server/behaviors/13/aitasks/-",
     "value": {
@@ -101,7 +101,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
     "path": "/server/behaviors/13/aitasks/-",
     "value": {
@@ -127,7 +127,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
     "path": "/server/behaviors/13/aitasks/-",
     "value": {
@@ -148,7 +148,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsgiantboar:entities/animal/mammal/hooved/giantboar.json",
     "path": "/server/behaviors/13/aitasks/-",
     "value": {

@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/fieldmouse/fieldmouse.json",
     "path": "/server/behaviors/9/aitasks/1/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -9,7 +9,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/fieldmouse/fieldmouse.json",
     "path": "/server/behaviors/9/aitasks/1/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -17,7 +17,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/fieldmouse/fieldmouse.json",
     "path": "/server/behaviors/9/aitasks/1/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -25,7 +25,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/fieldmouse/fieldmouse.json",
     "path": "/server/behaviors/9/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -33,7 +33,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/fieldmouse/fieldmouse.json",
     "path": "/server/behaviors/9/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -41,7 +41,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/fieldmouse/fieldmouse.json",
     "path": "/server/behaviors/9/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -49,7 +49,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/fieldmouse/fieldmouse.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {

@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/ork.json",
     "path": "/server/behaviors/6/aitasksByType/ork-*/-",
     "value": {
@@ -25,7 +25,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/ork.json",
     "path": "/server/behaviors/6/aitasksByType/ork-*/-",
     "value": {
@@ -50,7 +50,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "fantasycreatures:entities/land/ork.json",
     "path": "/server/behaviors/6/aitasksByType/ork-*/-",
     "value": {

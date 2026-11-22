@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "viverridae:entities/animal/mammal/nandiniidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -44,7 +44,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "viverridae:entities/animal/mammal/nandiniidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -84,7 +84,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "viverridae:entities/animal/mammal/nandiniidae-adult.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -127,7 +127,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "viverridae:entities/animal/mammal/nandiniidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -169,7 +169,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "viverridae:entities/animal/mammal/nandiniidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {
@@ -209,7 +209,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "viverridae:entities/animal/mammal/nandiniidae-baby.json",
     "path": "/server/behaviors/10/aitasks/-",
     "value": {

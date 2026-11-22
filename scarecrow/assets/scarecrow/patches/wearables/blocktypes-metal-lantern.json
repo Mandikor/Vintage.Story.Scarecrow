@@ -44,7 +44,7 @@
   },
   {
     "file": "game:blocktypes/metal/lantern.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/onScarecrowLeftArmTransform",
     "value": {
       "translation": {
@@ -67,7 +67,7 @@
   },
   {
     "file": "game:blocktypes/metal/lantern.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/onScarecrowRightArmTransform",
     "value": {
       "translation": {
@@ -90,7 +90,7 @@
   },
   {
     "file": "game:blocktypes/metal/lantern.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/scarecrowPendulum",
     "value": true
   }

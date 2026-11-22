@@ -5,6 +5,13 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ## Unreleased
 
+### Merge-compatible JSON patch operations
+
+- Replace every `add` operation in the shipped JSON patches with `addmerge`.
+  Keep target paths, values, conditions and load sides unchanged so object
+  additions merge with existing fields through the game's patch implementation.
+- Update the patch examples in [FORMODDERS.md](FORMODDERS.md) to use `addmerge`.
+
 ### Shared arm mounts in the entity shapes
 
 - Bake the common lantern/hanging mounts and storage-origin pose points into both

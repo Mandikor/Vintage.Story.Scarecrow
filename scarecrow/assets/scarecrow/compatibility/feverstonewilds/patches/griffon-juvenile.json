@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/griffon-juvenile.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/14/aitasks/-",
     "value": {
       "code": "fleeentity",
@@ -31,7 +31,7 @@
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/griffon-juvenile.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/14/aitasks/7/stopOnNearbyEntityCodesByType",
     "value": {
       "griffon-juvenile-wild-male": [

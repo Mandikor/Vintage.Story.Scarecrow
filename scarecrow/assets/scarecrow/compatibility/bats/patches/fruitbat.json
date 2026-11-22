@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "bats:entities/fruitbat.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/7/aitasks/0/feedDeterrents",
     "value": [
       {

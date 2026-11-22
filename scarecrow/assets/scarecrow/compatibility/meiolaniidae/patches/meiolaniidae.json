@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-adult.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -41,7 +41,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-adult.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -83,7 +83,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-adult.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -123,7 +123,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-baby.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -163,7 +163,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-baby.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {
@@ -205,7 +205,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "meiolaniidae:entities/animal/reptile/meiolaniidae-baby.json",
     "path": "/server/behaviors/9/aitasks/-",
     "value": {

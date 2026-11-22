@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/sheep-baby.json",
     "value": {
@@ -24,7 +24,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/sheep-baby.json",
     "value": {
@@ -47,7 +47,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/sheep-baby.json",
     "value": {
@@ -70,7 +70,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/sheep-adult.json",
     "value": {
@@ -96,7 +96,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/sheep-adult.json",
     "value": {
@@ -122,7 +122,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/sheep-adult.json",
     "value": {
@@ -148,7 +148,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/sheep-adult.json",
     "value": {
@@ -181,7 +181,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "path": "/server/behaviors/10/aitasks/-",
     "file": "game:entities/animal/mammal/hooved/sheep-adult.json",
     "value": {

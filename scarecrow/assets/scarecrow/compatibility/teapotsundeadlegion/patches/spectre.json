@@ -1,7 +1,7 @@
 [
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/0/entityCodes/-",
     "value": "scarecrow",
@@ -9,7 +9,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/0/entityCodes/-",
     "value": "little-scarecrow",
@@ -17,7 +17,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/0/entityCodes/-",
     "value": "strawdummy",
@@ -25,7 +25,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/1/entityCodes/-",
     "value": "scarecrow",
@@ -33,7 +33,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/1/entityCodes/-",
     "value": "little-scarecrow",
@@ -41,7 +41,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/1/entityCodes/-",
     "value": "strawdummy",
@@ -49,7 +49,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/2/entityCodes/-",
     "value": "scarecrow",
@@ -57,7 +57,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/2/entityCodes/-",
     "value": "little-scarecrow",
@@ -65,7 +65,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/2/entityCodes/-",
     "value": "strawdummy",
@@ -73,7 +73,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/3/entityCodes/-",
     "value": "scarecrow",
@@ -81,7 +81,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/3/entityCodes/-",
     "value": "little-scarecrow",
@@ -89,7 +89,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/3/entityCodes/-",
     "value": "strawdummy",
@@ -97,7 +97,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "scarecrow",
@@ -105,7 +105,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "little-scarecrow",
@@ -113,7 +113,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/4/stopOnNearbyEntityCodes/-",
     "value": "strawdummy",
@@ -121,7 +121,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/5/entityCodes/-",
     "value": "scarecrow",
@@ -129,7 +129,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/5/entityCodes/-",
     "value": "little-scarecrow",
@@ -137,7 +137,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/5/entityCodes/-",
     "value": "strawdummy",
@@ -145,7 +145,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/12/entityCodes/-",
     "value": "scarecrow",
@@ -153,7 +153,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/12/entityCodes/-",
     "value": "little-scarecrow",
@@ -161,7 +161,7 @@
   },
   {
     "enabled": true,
-    "op": "add",
+    "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/spectre.json",
     "path": "/server/behaviors/6/aitasks/12/entityCodes/-",
     "value": "strawdummy",

@@ -28,19 +28,19 @@
   },
   {
     "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
     "value": "game:oillamp-*-up"
   },
   {
     "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
     "value": "game:oillamp-*-up"
   },
   {
     "file": "game:blocktypes/clay/fired/oillamp.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/onScarecrowLeftArmTransform",
     "value": {
       "translation": {
@@ -63,7 +63,7 @@
   },
   {
     "file": "game:blocktypes/clay/fired/oillamp.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/onScarecrowRightArmTransform",
     "value": {
       "translation": {
@@ -86,7 +86,7 @@
   },
   {
     "file": "game:blocktypes/clay/fired/oillamp.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/scarecrowPendulum",
     "value": true
   }
