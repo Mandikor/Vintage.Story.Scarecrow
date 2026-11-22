@@ -307,7 +307,8 @@ For a custom mount, provide real pose points in both entity shapes and map them:
 This is an `attributes` fragment; it does not create the named points. Missing
 mapping entries use generic defaults, but a supplied nonexistent point is not a
 replacement for authoring the mount. Dreamcatchers' matching points are
-`ScarecrowDreamcatcherLeftAP` and `ScarecrowDreamcatcherRightAP`.
+the shared `ScarecrowLanternLeftAP` and `ScarecrowLanternRightAP`; its previous
+model-specific mount size and displacement now live in the per-arm transforms.
 
 Legacy hangers marked with `scarecrowArmLantern` or `scarecrowHangingDecoration`
 use dedicated `ScarecrowLanternLeftAP` / `ScarecrowLanternRightAP` points and ignore
@@ -320,6 +321,18 @@ not apply. Sound and radius bonuses remain active when motion is disabled.
 Its animation also works with Immersive Lanterns; private attachment copies
 suppress shader wind to avoid duplicate motion. This does not fix unrelated
 placed-block issues in that mod combination.
+
+Both full-size entity shape files now contain the shared hanging mounts and arm
+origin points directly. No runtime shape patch is needed to create them. All
+supported hanging mod attachments use `ScarecrowLanternLeftAP` /
+`ScarecrowLanternRightAP`, retaining these established names for compatibility.
+Wind Chimes now uses these points too, with its former mount scale folded into
+the arm transforms. Generic tools retain the storage-origin points because their
+grip frame differs from a ceiling-hung model. Item-specific placement belongs in
+the transform attributes instead of additional per-mod arm mount elements.
+The little scarecrow's neck mounts and their optional compatibility patches are
+unchanged. Patches to foreign models may still be required for step-parent and
+texture compatibility; only duplicate owned arm infrastructure was removed.
 
 There are no public JSON controls for wind strength multiplier, damping,
 frequency, maximum angle or independent left/right motion booleans. The three

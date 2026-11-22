@@ -326,6 +326,41 @@
 																"up": { "texture": "#red", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
 																"down": { "texture": "#red", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
 															}
+														},
+														{
+															"name": "ScarecrowLanternLeftMount",
+															"from": [
+																-5,
+																-15,
+																-7
+															],
+															"to": [
+																-5,
+																-15,
+																-7
+															],
+															"rotationOrigin": [
+																3,
+																1,
+																1
+															],
+															"scaleX": 1,
+															"scaleY": 1,
+															"scaleZ": 1,
+															"rotationX": 0.349186,
+															"rotationY": 3.984754,
+															"rotationZ": -5.012147,
+															"attachmentpoints": [
+																{
+																	"code": "ScarecrowLanternLeftAP",
+																	"posX": 0,
+																	"posY": 0,
+																	"posZ": 0,
+																	"rotationX": 0,
+																	"rotationY": 0,
+																	"rotationZ": 0
+																}
+															]
 														}
 													],
 													"attachmentpoints": [
@@ -333,6 +368,15 @@
 															"code": "LArmAP",
 															"posX": "4.1","posY": "1.2","posZ": "1.2",
 															"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+														},
+														{
+															"code": "ScarecrowArmLeftOriginAP",
+															"posX": 0,
+															"posY": 0,
+															"posZ": 0,
+															"rotationX": 0,
+															"rotationY": 0,
+															"rotationZ": 0
 														}
 													]
 												}
@@ -548,6 +592,41 @@
 																"up": { "texture": "#red", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
 																"down": { "texture": "#red", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
 															}
+														},
+														{
+															"name": "ScarecrowLanternRightMount",
+															"from": [
+																-5,
+																-15,
+																-7
+															],
+															"to": [
+																-5,
+																-15,
+																-7
+															],
+															"rotationOrigin": [
+																3,
+																1,
+																1
+															],
+															"scaleX": 1,
+															"scaleY": 1,
+															"scaleZ": 1,
+															"rotationX": 179.650814,
+															"rotationY": 3.984754,
+															"rotationZ": -174.987853,
+															"attachmentpoints": [
+																{
+																	"code": "ScarecrowLanternRightAP",
+																	"posX": 0,
+																	"posY": 0,
+																	"posZ": 0,
+																	"rotationX": 0,
+																	"rotationY": 0,
+																	"rotationZ": 0
+																}
+															]
 														}
 													],
 													"attachmentpoints": [
@@ -555,6 +634,15 @@
 															"code": "RArmAP",
 															"posX": "4.1","posY": "1.2","posZ": "1.2",
 															"rotationX": "180.0","rotationY": "0.0","rotationZ": "0.0"
+														},
+														{
+															"code": "ScarecrowArmRightOriginAP",
+															"posX": 0,
+															"posY": 0,
+															"posZ": 0,
+															"rotationX": 0,
+															"rotationY": 0,
+															"rotationZ": 0
 														}
 													]
 												}

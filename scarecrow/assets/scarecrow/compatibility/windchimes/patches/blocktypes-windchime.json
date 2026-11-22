@@ -21,9 +21,9 @@
         "scarecrowRadiusBonus": 6,
         "onScarecrowRightArmTransform": {
           "translation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
+            "x": 0.0,
+            "y": 0.20000005,
+            "z": 2.9802322E-08
           },
           "rotation": {
             "x": 0,
@@ -35,13 +35,17 @@
             "y": 0.5,
             "z": 0.5
           },
-          "scale": 1
+          "scaleXYZ": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+          }
         },
         "onScarecrowLeftArmTransform": {
           "translation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
+            "x": 2.9802322E-08,
+            "y": 0.19999999,
+            "z": 0.0
           },
           "rotation": {
             "x": 0,
@@ -53,7 +57,11 @@
             "y": 0.5,
             "z": 0.5
           },
-          "scale": 1
+          "scaleXYZ": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+          }
         },
         "scarecrowPendulum": true
       },
@@ -73,9 +81,9 @@
         "scarecrowRadiusBonus": 6,
         "onScarecrowRightArmTransform": {
           "translation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
+            "x": 0.0,
+            "y": 0.20000005,
+            "z": 2.9802322E-08
           },
           "rotation": {
             "x": 0,
@@ -87,13 +95,17 @@
             "y": 0.5,
             "z": 0.5
           },
-          "scale": 1
+          "scaleXYZ": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+          }
         },
         "onScarecrowLeftArmTransform": {
           "translation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
+            "x": 2.9802322E-08,
+            "y": 0.19999999,
+            "z": 0.0
           },
           "rotation": {
             "x": 0,
@@ -105,7 +117,11 @@
             "y": 0.5,
             "z": 0.5
           },
-          "scale": 1
+          "scaleXYZ": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+          }
         },
         "scarecrowPendulum": true
       },
@@ -125,9 +141,9 @@
         "scarecrowRadiusBonus": 6,
         "onScarecrowRightArmTransform": {
           "translation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
+            "x": 0.0,
+            "y": 0.20000005,
+            "z": 2.9802322E-08
           },
           "rotation": {
             "x": 0,
@@ -139,13 +155,17 @@
             "y": 0.5,
             "z": 0.5
           },
-          "scale": 1
+          "scaleXYZ": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+          }
         },
         "onScarecrowLeftArmTransform": {
           "translation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
+            "x": 2.9802322E-08,
+            "y": 0.19999999,
+            "z": 0.0
           },
           "rotation": {
             "x": 0,
@@ -157,7 +177,11 @@
             "y": 0.5,
             "z": 0.5
           },
-          "scale": 1
+          "scaleXYZ": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+          }
         },
         "scarecrowPendulum": true
       },
@@ -177,9 +201,9 @@
         "scarecrowRadiusBonus": 6,
         "onScarecrowRightArmTransform": {
           "translation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
+            "x": 0.0,
+            "y": 0.20000005,
+            "z": 2.9802322E-08
           },
           "rotation": {
             "x": 0,
@@ -191,13 +215,17 @@
             "y": 0.5,
             "z": 0.5
           },
-          "scale": 1
+          "scaleXYZ": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+          }
         },
         "onScarecrowLeftArmTransform": {
           "translation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
+            "x": 2.9802322E-08,
+            "y": 0.19999999,
+            "z": 0.0
           },
           "rotation": {
             "x": 0,
@@ -209,7 +237,11 @@
             "y": 0.5,
             "z": 0.5
           },
-          "scale": 1
+          "scaleXYZ": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+          }
         },
         "scarecrowPendulum": true
       },
@@ -229,9 +261,9 @@
         "scarecrowRadiusBonus": 6,
         "onScarecrowRightArmTransform": {
           "translation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
+            "x": 0.0,
+            "y": 0.20000005,
+            "z": 2.9802322E-08
           },
           "rotation": {
             "x": 0,
@@ -243,13 +275,17 @@
             "y": 0.5,
             "z": 0.5
           },
-          "scale": 1
+          "scaleXYZ": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+          }
         },
         "onScarecrowLeftArmTransform": {
           "translation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
+            "x": 2.9802322E-08,
+            "y": 0.19999999,
+            "z": 0.0
           },
           "rotation": {
             "x": 0,
@@ -261,7 +297,11 @@
             "y": 0.5,
             "z": 0.5
           },
-          "scale": 1
+          "scaleXYZ": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+          }
         },
         "scarecrowPendulum": true
       },
@@ -281,9 +321,9 @@
         "scarecrowRadiusBonus": 6,
         "onScarecrowRightArmTransform": {
           "translation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
+            "x": 0.0,
+            "y": 0.20000005,
+            "z": 2.9802322E-08
           },
           "rotation": {
             "x": 0,
@@ -295,13 +335,17 @@
             "y": 0.5,
             "z": 0.5
           },
-          "scale": 1
+          "scaleXYZ": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+          }
         },
         "onScarecrowLeftArmTransform": {
           "translation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
+            "x": 2.9802322E-08,
+            "y": 0.19999999,
+            "z": 0.0
           },
           "rotation": {
             "x": 0,
@@ -313,7 +357,11 @@
             "y": 0.5,
             "z": 0.5
           },
-          "scale": 1
+          "scaleXYZ": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+          }
         },
         "scarecrowPendulum": true
       }

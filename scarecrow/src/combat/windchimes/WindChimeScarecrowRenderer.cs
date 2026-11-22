@@ -92,7 +92,7 @@ namespace Scarecrow
                 if (meshes[index] == null && animated[index] == null && lanterns[index] == null) continue;
                 AttachmentPointAndPose point = entity.AnimManager?.Animator?.GetAttachmentPointPose(
                     lantern ? ScarecrowPendulum.GetAttachmentPoint(stack, index)
-                        : (index == 0 ? "ScarecrowWindChimeLeftAP" : "ScarecrowWindChimeRightAP"));
+                        : (index == 0 ? "ScarecrowLanternLeftAP" : "ScarecrowLanternRightAP"));
                 if (point == null) continue;
                 chimeMatrix.Set(ModelMat).Mul(point.AnimModelMatrix);
                 float[] armTransform = ScarecrowArmTransform.GetMatrix(stack, index == 0 ? "sc-leftarm" : "sc-rightarm");

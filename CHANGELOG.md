@@ -5,6 +5,21 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ## Unreleased
 
+### Shared arm mounts in the entity shapes
+
+- Bake the common lantern/hanging mounts and storage-origin pose points into both
+  full-size entity shapes, including Plumpkins, instead of adding them by patches.
+- Reuse the shared hanging frame for More Lanterns, Wind Chimes and Dreamcatchers.
+  Move Wind Chimes' mount scale and Dreamcatchers' scale/offset into their per-arm
+  transforms; remove duplicate mod-specific arm mount elements and patches.
+- Preserve existing More Lanterns calibration, the little scarecrow's neck setup,
+  original body geometry, inventory rules, sound, particles and radius bonuses.
+  Foreign-model and neck compatibility patches remain where needed.
+- See [FORMODDERS.md](FORMODDERS.md#pendulum-motion) for shared points and transforms.
+- Build, 84 native matrix comparisons and 20 owned-asset operations through the
+  game's JSON patch library pass. Transform-editor, pendulum and Primitive Survival
+  regression checks pass; in-game confirmation of this consolidation is pending.
+
 ### Modder documentation
 
 - Consolidated attachment setup, models/textures, per-arm transforms, the native

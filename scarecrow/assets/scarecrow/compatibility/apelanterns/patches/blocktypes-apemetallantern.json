@@ -30,42 +30,32 @@
           "*-up": true,
           "*": false
         },
-        "scarecrowArmLanternScale": 0.6,
+        "scarecrowArmLanternScale": 1,
         "onScarecrowRightArmTransform": {
           "translation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
+            "x": -0.06,
+            "y": 0.05,
+            "z": -0.01
           },
           "rotation": {
             "x": 0,
-            "y": 0,
+            "y": 4,
             "z": 0
           },
-          "origin": {
-            "x": 0.5,
-            "y": 0.5,
-            "z": 0.5
-          },
-          "scale": 1
+          "scale": 0.9
         },
         "onScarecrowLeftArmTransform": {
           "translation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
+            "x": 0.06,
+            "y": 0.05,
+            "z": 0.01
           },
           "rotation": {
             "x": 0,
-            "y": 0,
+            "y": -4,
             "z": 0
           },
-          "origin": {
-            "x": 0.5,
-            "y": 0.5,
-            "z": 0.5
-          },
-          "scale": 1
+          "scale": 0.9
         },
         "scarecrowUseCeilingTextures": true,
         "scarecrowPendulum": true
@@ -95,7 +85,7 @@
           "*-up": true,
           "*": false
         },
-        "scarecrowArmLanternScale": 0.6,
+        "scarecrowArmLanternScale": 1,
         "onScarecrowRightArmTransform": {
           "translation": {
             "x": 0,

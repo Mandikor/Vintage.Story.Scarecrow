@@ -232,6 +232,9 @@ uses its own item-code whitelist to decide which of those tools it accepts.
 
 The [modder's guide](FORMODDERS.md#arm-transforms) documents both arm transforms,
 the native `.tfedit` workflow, coordinate units, defaults and complete JSON examples.
+Both full-size shapes contain shared arm mounts directly; supported hanging mods
+reuse these points with item-specific transforms. The little scarecrow's neck
+setup is unchanged.
 
 ### Optional pendulum motion
 

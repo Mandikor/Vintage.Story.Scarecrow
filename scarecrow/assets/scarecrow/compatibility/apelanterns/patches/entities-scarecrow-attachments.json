@@ -2,28 +2,28 @@
   {
     "enabled": true,
     "file": "scarecrow:entities/nonliving/little-scarecrow.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
     "value": "apelanterns:apemetallantern-*-up"
   },
   {
     "enabled": true,
     "file": "scarecrow:entities/nonliving/little-scarecrow.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
     "value": "apelanterns:apepaperlantern-*-up"
   },
   {
     "enabled": true,
     "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
     "value": "apelanterns:apemetallantern-*-up"
   },
   {
     "enabled": true,
     "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
     "value": "apelanterns:apepaperlantern-*-up"
   },
@@ -34,24 +34,24 @@
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/stepParentTo",
     "value": {
       "ScarecrowMoreLanternsMount": {
-        "elementName": "ScarecrowMoreLanternsLeftMount"
+        "elementName": "ScarecrowLanternLeftMount"
       },
       "ScarecrowMoreLanternsLargeMount": {
-        "elementName": "ScarecrowMoreLanternsLeftLargeMount"
+        "elementName": "ScarecrowLanternLeftMount"
       }
     }
   },
   {
     "enabled": true,
     "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
     "value": "apelanterns:apemetallantern-*-up"
   },
   {
     "enabled": true,
     "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
     "value": "apelanterns:apepaperlantern-*-up"
   },
@@ -62,17 +62,17 @@
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/stepParentTo",
     "value": {
       "ScarecrowMoreLanternsMount": {
-        "elementName": "ScarecrowMoreLanternsRightMount"
+        "elementName": "ScarecrowLanternRightMount"
       },
       "ScarecrowMoreLanternsLargeMount": {
-        "elementName": "ScarecrowMoreLanternsRightLargeMount"
+        "elementName": "ScarecrowLanternRightMount"
       }
     }
   },
   {
     "enabled": true,
     "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/useSlotPrefix",
     "value": true
   }

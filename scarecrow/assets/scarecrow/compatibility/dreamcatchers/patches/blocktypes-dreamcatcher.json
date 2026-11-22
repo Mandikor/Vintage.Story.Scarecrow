@@ -24,9 +24,9 @@
     "path": "/attributes/onScarecrowLeftArmTransform",
     "value": {
       "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
+        "x": 0.0056250393,
+        "y": 0.26409128,
+        "z": 0.28500003
       },
       "rotation": {
         "x": 0,
@@ -38,7 +38,11 @@
         "y": 0.5,
         "z": 0.5
       },
-      "scale": 1
+      "scaleXYZ": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 0.6
+      }
     }
   },
   {
@@ -47,9 +51,9 @@
     "path": "/attributes/onScarecrowRightArmTransform",
     "value": {
       "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
+        "x": 0.00562495,
+        "y": 0.2640912,
+        "z": 0.2850001
       },
       "rotation": {
         "x": 0,
@@ -61,7 +65,11 @@
         "y": 0.5,
         "z": 0.5
       },
-      "scale": 1
+      "scaleXYZ": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 0.6
+      }
     }
   },
   {
@@ -75,8 +83,8 @@
     "op": "add",
     "path": "/attributes/scarecrowPendulumAttachmentPoints",
     "value": {
-      "sc-leftarm": "ScarecrowDreamcatcherLeftAP",
-      "sc-rightarm": "ScarecrowDreamcatcherRightAP"
+      "sc-leftarm": "ScarecrowLanternLeftAP",
+      "sc-rightarm": "ScarecrowLanternRightAP"
     }
   }
 ]

@@ -2,7 +2,7 @@
   {
     "enabled": true,
     "file": "scarecrow:shapes/entity/nonliving/scarecrow*",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/0/children/0/children/0/children/0/children/0/children",
     "value": [
       {
@@ -53,7 +53,7 @@
   {
     "enabled": true,
     "file": "scarecrow:shapes/entity/nonliving/little-scarecrow.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/0/children/0/children/0/children/0/children/0/children",
     "value": [
       {
@@ -104,7 +104,7 @@
   {
     "enabled": true,
     "file": "apelanterns:shapes/block/apemetallantern/modern1-ceiling.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/0/stepParentName",
     "value": "ScarecrowMoreLanternsLargeMount",
     "side": "client"
@@ -112,7 +112,7 @@
   {
     "enabled": true,
     "file": "apelanterns:shapes/block/apemetallantern/modern2-ceiling.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/0/stepParentName",
     "value": "ScarecrowMoreLanternsLargeMount",
     "side": "client"
@@ -120,7 +120,7 @@
   {
     "enabled": true,
     "file": "apelanterns:shapes/block/apemetallantern/modern2-ceiling.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/1/stepParentName",
     "value": "ScarecrowMoreLanternsLargeMount",
     "side": "client"
@@ -128,7 +128,7 @@
   {
     "enabled": true,
     "file": "apelanterns:shapes/block/apemetallantern/gothic1-ceiling.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/0/stepParentName",
     "value": "ScarecrowMoreLanternsLargeMount",
     "side": "client"
@@ -136,7 +136,7 @@
   {
     "enabled": true,
     "file": "apelanterns:shapes/block/apemetallantern/gothic1-ceiling.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/1/stepParentName",
     "value": "ScarecrowMoreLanternsLargeMount",
     "side": "client"
@@ -144,7 +144,7 @@
   {
     "enabled": true,
     "file": "apelanterns:shapes/block/apemetallantern/gothic1-ceiling.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/2/stepParentName",
     "value": "ScarecrowMoreLanternsLargeMount",
     "side": "client"
@@ -152,7 +152,7 @@
   {
     "enabled": true,
     "file": "apelanterns:shapes/block/apemetallantern/medieval2-ceiling.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/0/stepParentName",
     "value": "ScarecrowMoreLanternsLargeMount",
     "side": "client"
@@ -160,7 +160,7 @@
   {
     "enabled": true,
     "file": "apelanterns:shapes/block/apemetallantern/medieval3-ceiling.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/0/stepParentName",
     "value": "ScarecrowMoreLanternsLargeMount",
     "side": "client"
@@ -168,7 +168,7 @@
   {
     "enabled": true,
     "file": "apelanterns:shapes/block/apemetallantern/medieval3-ceiling.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/1/stepParentName",
     "value": "ScarecrowMoreLanternsLargeMount",
     "side": "client"
@@ -176,7 +176,7 @@
   {
     "enabled": true,
     "file": "apelanterns:shapes/block/apemetallantern/medieval4-ceiling.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/0/stepParentName",
     "value": "ScarecrowMoreLanternsLargeMount",
     "side": "client"
@@ -184,7 +184,7 @@
   {
     "enabled": true,
     "file": "apelanterns:shapes/block/apemetallantern/medieval4-ceiling.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/1/stepParentName",
     "value": "ScarecrowMoreLanternsLargeMount",
     "side": "client"
@@ -192,7 +192,7 @@
   {
     "enabled": true,
     "file": "apelanterns:shapes/block/apemetallantern/medieval6-ceiling.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/0/stepParentName",
     "value": "ScarecrowMoreLanternsLargeMount",
     "side": "client"
@@ -200,7 +200,7 @@
   {
     "enabled": true,
     "file": "apelanterns:shapes/block/apemetallantern/medieval6-ceiling.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/1/stepParentName",
     "value": "ScarecrowMoreLanternsLargeMount",
     "side": "client"
@@ -208,7 +208,7 @@
   {
     "enabled": true,
     "file": "apelanterns:shapes/block/apepaperlantern/basic-ceiling.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/0/stepParentName",
     "value": "ScarecrowMoreLanternsMount",
     "side": "client"
@@ -216,7 +216,7 @@
   {
     "enabled": true,
     "file": "apelanterns:shapes/block/apepaperlantern/chinese-ceiling.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/0/stepParentName",
     "value": "ScarecrowMoreLanternsLargeMount",
     "side": "client"
@@ -224,7 +224,7 @@
   {
     "enabled": true,
     "file": "apelanterns:shapes/block/apepaperlantern/chinese2-ceiling.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/0/stepParentName",
     "value": "ScarecrowMoreLanternsLargeMount",
     "side": "client"
@@ -232,7 +232,7 @@
   {
     "enabled": true,
     "file": "apelanterns:shapes/block/apepaperlantern/medieval1small-ceiling.json",
-    "op": "add",
+    "op": "addmerge",
     "path": "/elements/0/stepParentName",
     "value": "ScarecrowMoreLanternsMount",
     "side": "client"
@@ -256,130 +256,6 @@
     "file": "apelanterns:shapes/block/apemetallantern/gothic1-ceiling.json",
     "op": "remove",
     "path": "/elements/0/children/12/children/0/stepParentName",
-    "side": "client"
-  },
-  {
-    "enabled": true,
-    "file": "scarecrow:shapes/entity/nonliving/scarecrow*",
-    "op": "add",
-    "path": "/elements/0/children/0/children/0/children/1/children/1/children/0/children/-",
-    "value": {
-      "name": "ScarecrowMoreLanternsLeftMount",
-      "from": [
-        -5,
-        -15,
-        -7
-      ],
-      "to": [
-        -5,
-        -15,
-        -7
-      ],
-      "rotationOrigin": [
-        3,
-        1,
-        1
-      ],
-      "scaleX": 0.4,
-      "scaleY": 0.4,
-      "scaleZ": 0.4,
-      "rotationX": 0.349186,
-      "rotationY": 3.984754,
-      "rotationZ": -5.012147
-    },
-    "side": "client"
-  },
-  {
-    "enabled": true,
-    "file": "scarecrow:shapes/entity/nonliving/scarecrow*",
-    "op": "add",
-    "path": "/elements/0/children/0/children/0/children/1/children/1/children/0/children/-",
-    "value": {
-      "name": "ScarecrowMoreLanternsLeftLargeMount",
-      "from": [
-        -5,
-        -15,
-        -7
-      ],
-      "to": [
-        -5,
-        -15,
-        -7
-      ],
-      "rotationOrigin": [
-        3,
-        1,
-        1
-      ],
-      "scaleX": 0.6,
-      "scaleY": 0.6,
-      "scaleZ": 0.6,
-      "rotationX": 0.349186,
-      "rotationY": 3.984754,
-      "rotationZ": -5.012147
-    },
-    "side": "client"
-  },
-  {
-    "enabled": true,
-    "file": "scarecrow:shapes/entity/nonliving/scarecrow*",
-    "op": "add",
-    "path": "/elements/0/children/0/children/0/children/2/children/1/children/0/children/-",
-    "value": {
-      "name": "ScarecrowMoreLanternsRightMount",
-      "from": [
-        -5,
-        -15,
-        -7
-      ],
-      "to": [
-        -5,
-        -15,
-        -7
-      ],
-      "rotationOrigin": [
-        3,
-        1,
-        1
-      ],
-      "scaleX": 0.4,
-      "scaleY": 0.4,
-      "scaleZ": 0.4,
-      "rotationX": 179.650814,
-      "rotationY": 3.984754,
-      "rotationZ": -174.987853
-    },
-    "side": "client"
-  },
-  {
-    "enabled": true,
-    "file": "scarecrow:shapes/entity/nonliving/scarecrow*",
-    "op": "add",
-    "path": "/elements/0/children/0/children/0/children/2/children/1/children/0/children/-",
-    "value": {
-      "name": "ScarecrowMoreLanternsRightLargeMount",
-      "from": [
-        -5,
-        -15,
-        -7
-      ],
-      "to": [
-        -5,
-        -15,
-        -7
-      ],
-      "rotationOrigin": [
-        3,
-        1,
-        1
-      ],
-      "scaleX": 0.6,
-      "scaleY": 0.6,
-      "scaleZ": 0.6,
-      "rotationX": 179.650814,
-      "rotationY": 3.984754,
-      "rotationZ": -174.987853
-    },
     "side": "client"
   }
 ]

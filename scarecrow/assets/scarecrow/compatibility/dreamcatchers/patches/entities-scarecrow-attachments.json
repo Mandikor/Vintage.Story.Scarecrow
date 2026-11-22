@@ -13,7 +13,7 @@
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/stepParentTo",
     "value": {
       "ScarecrowDreamcatcherMount": {
-        "elementName": "ScarecrowDreamcatcherLeftMount"
+        "elementName": "ScarecrowLanternLeftMount"
       }
     }
   },
@@ -31,7 +31,7 @@
     "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/stepParentTo",
     "value": {
       "ScarecrowDreamcatcherMount": {
-        "elementName": "ScarecrowDreamcatcherRightMount"
+        "elementName": "ScarecrowLanternRightMount"
       }
     }
   },
