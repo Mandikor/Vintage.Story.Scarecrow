@@ -76,7 +76,6 @@
 	"scarecrow:interaction-error-occupied": "Tento úchyt je již obsazený.",
 	"scarecrow:interaction-error-owner": "Tohoto strašáka může upravovat pouze vlastník.",
 	"scarecrow:interaction-error-claim": "Nemáte oprávnění k přístupu na toto území.",
-	"scarecrow:transform-leftarm": "Strašák – levá paže",
-	"scarecrow:transform-rightarm": "Strašák – pravá paže",
+	"scarecrow:transform-botharms": "Strašák – obě paže",
 	"scarecrow:tooltip-animal-all": "Zvířata"
 }

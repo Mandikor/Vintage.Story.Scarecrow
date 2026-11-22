@@ -76,7 +76,6 @@
 	"scarecrow:interaction-error-occupied": "Эта точка крепления уже занята.",
 	"scarecrow:interaction-error-owner": "Только владелец может изменять это пугало.",
 	"scarecrow:interaction-error-claim": "У вас нет прав доступа к этой территории.",
-	"scarecrow:transform-leftarm": "Пугало — левая рука",
-	"scarecrow:transform-rightarm": "Пугало — правая рука",
+	"scarecrow:transform-botharms": "Пугало – обе руки",
 	"scarecrow:tooltip-animal-all": "Животные"
 }

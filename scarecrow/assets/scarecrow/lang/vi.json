@@ -76,7 +76,6 @@
 	"scarecrow:interaction-error-occupied": "Vị trí gắn này đã có vật phẩm.",
 	"scarecrow:interaction-error-owner": "Chỉ chủ sở hữu mới có thể thay đổi bù nhìn này.",
 	"scarecrow:interaction-error-claim": "Bạn không có quyền truy cập khu vực này.",
-	"scarecrow:transform-leftarm": "Bù nhìn – tay trái",
-	"scarecrow:transform-rightarm": "Bù nhìn – tay phải",
+	"scarecrow:transform-botharms": "Bù nhìn – cả hai tay",
 	"scarecrow:tooltip-animal-all": "Động vật"
 }

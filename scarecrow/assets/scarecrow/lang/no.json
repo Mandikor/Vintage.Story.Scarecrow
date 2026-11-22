@@ -76,7 +76,6 @@
 	"scarecrow:interaction-error-occupied": "Dette festepunktet er allerede opptatt.",
 	"scarecrow:interaction-error-owner": "Bare eieren kan endre dette fugleskremselet.",
 	"scarecrow:interaction-error-claim": "Du har ikke tilgangstillatelse til dette området.",
-	"scarecrow:transform-leftarm": "Fugleskremsel – venstre arm",
-	"scarecrow:transform-rightarm": "Fugleskremsel – høyre arm",
+	"scarecrow:transform-botharms": "Fugleskremsel – begge armer",
 	"scarecrow:tooltip-animal-all": "Dyr"
 }

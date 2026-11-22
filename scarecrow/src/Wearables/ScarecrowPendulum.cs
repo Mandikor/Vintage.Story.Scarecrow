@@ -18,9 +18,17 @@ namespace Scarecrow
         public static bool IsEnabled(ItemStack stack) => stack?.ItemAttributes?[Attribute]
             .AsBool(IsLegacyHanger(stack) || IsWindChime(stack)) ?? false;
 
-        // Disabled legacy hangers still need their private hanging mesh, textures and
-        // particles. Generic tools only leave the static entity mesh when opted in.
+        // Default tool frames need a private mesh even at rest: the right model
+        // is reflected with corrected normals and triangle winding before upload.
+        internal static bool UsesToolFrame(ItemStack stack) => stack?.Collectible != null
+            && !IsLegacyHanger(stack) && !IsWindChime(stack)
+            && GetAttachmentPoint(stack, 0) == "ScarecrowArmLeftOriginAP"
+            && GetAttachmentPoint(stack, 1) == "ScarecrowArmRightOriginAP";
+
+        // Keep hanging textures/particles and reflected tools in their private
+        // renderer when motion is disabled; the switch only controls movement.
         internal static bool UsesWholeModelRenderer(ItemStack stack) => IsLegacyHanger(stack)
+            || UsesToolFrame(stack)
             || (stack?.Collectible != null && !IsWindChime(stack) && IsEnabled(stack));
 
         internal static string GetAttachmentPoint(ItemStack stack, int arm)

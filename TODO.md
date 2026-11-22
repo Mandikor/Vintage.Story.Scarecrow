@@ -60,16 +60,20 @@ implementing them. I have removed tool bonuses from the plan.
    interception immediately. Implemented; build and automated inventory/drop and
    wind chime checks passed.
 
-9. [x] **General per-arm transforms for modders.** Optional native ModelTransform
-   attributes for left/right arms, static and animated equipment, plus native
-   transform-editor entries and local preview refresh. Existing categories and
+9. [x] **Shared mirrored arm transform for modders.** One optional ModelTransform
+   attribute for both arms, static and animated equipment, plus a native
+   transform-editor entry and local preview refresh. Existing categories and
    attachment permissions remain intact. Build and isolated checks passed;
    see the [arm transform settings](README.md#arm-transforms-for-modders).
    I completed the transform game test successfully. All existing arm
-   attachment patches now include neutral left/right transform defaults; neck and
+   attachment patches now use a shared transform where possible; neck and
    foot-only items are unchanged.
-   Tool arm shapes have been replaced by original models; my calibrated
-   right-arm bug net is preserved. Remaining tool transforms await manual tuning.
+   Tool arm shapes have been replaced by original models. I tested and aligned
+   bug nets, snow shovels, scythes, hoes, hayforks and rakes; right-arm tool
+   geometry now mirrors correctly. Walking Sticks are also tested and aligned.
+   Added a shared mirrored `onScarecrowTransform` and a both-arms editor target;
+   individual-arm attributes and editor targets are removed. See
+   [FORMODDERS.md](FORMODDERS.md#arm-transforms) for the current workflow.
 
 10. [x] **General pendulum switch.** Add visual-only `scarecrowPendulum` for item
     and block arm models, optional pivots and custom pose points. Existing lights
@@ -199,12 +203,14 @@ snapshot of 81 IDs and does not describe the cleaned current library.
 ### Equipment and decoration candidates
 
 - [x] **Adventurer's Walking Stick implementation** (`walkingstick`, 3.0.12):
-  18 complete definitions/30 variants on either full-size arm, original models,
-  neutral transforms and pendulum off. Preserve native categories/riding slots;
-  exclude separate weapons and empty sheaths. Build and 54-operation/30-variant
-  checks passed; no radius bonus or player-ability adapter.
+  16 complete definitions/28 variants on either full-size arm, original models,
+  calibrated shared transforms and pendulum off. Preserve native categories/riding
+  slots; exclude separate weapons, empty sheaths and spear-style Blackguard/Forlorn,
+  which could not be attached with Shift + right-click in my game test.
+  Original integration checks passed; no radius bonus or player-ability adapter.
 - [x] **Walking Stick game test:** I completed the in-game test
-  successfully. Per-item arm transforms remain available for further calibration.
+  successfully, including alignment of all supported sticks. The shared per-item
+  transform remains editable; both removed types have no patches or arm whitelist entries.
 
 - [x] **Plumpkins attachment fix** (`plumpkins`, 1.1.3): apply the existing arm
   mount patches to the alternative full-size model, preserving its rounded head

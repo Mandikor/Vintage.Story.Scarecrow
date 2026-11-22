@@ -6,7 +6,7 @@ using Vintagestory.GameContent;
 
 namespace Scarecrow
 {
-    /// <summary>A private item/block attachment mesh swinging about its configured pivot, never a placed entity.</summary>
+    /// <summary>Private arm mesh with optional wind motion and right-tool reflection, never a placed entity.</summary>
     internal sealed class AnimatedArmLantern : IDisposable
     {
         public MultiTextureMeshRef Mesh { get; private set; }
@@ -51,9 +51,12 @@ namespace Scarecrow
             // attachment-only metadata. Move this private mesh; never alter the placed shape.
             float[] offset = stack.ItemAttributes["scarecrowArmLanternOffset"].AsArray<float>();
             if (offset?.Length == 3) mesh.Translate(offset[0], offset[1], offset[2]);
+            if (arm == 1 && ScarecrowPendulum.UsesToolFrame(stack))
+                ScarecrowArmTransform.MirrorToolMesh(mesh);
             Mesh = api.Render.UploadMultiTextureMesh(mesh);
             scale = stack.ItemAttributes["scarecrowArmLanternScale"].AsFloat(ScarecrowPendulum.IsLegacyHanger(stack) ? .6f : 1f);
             pivot = ScarecrowPendulum.GetPivot(stack);
+            if (arm == 1 && ScarecrowPendulum.UsesToolFrame(stack)) pivot.X = 1 - pivot.X;
             pendulumEnabled = ScarecrowPendulum.IsEnabled(stack);
             motion = new WindChimeMotion(entityId, arm);
             if (stack.Block != null && stack.ItemAttributes["scarecrowCenserSmoke"].AsBool(false) && api.ModLoader.IsModEnabled("censership"))

@@ -76,7 +76,6 @@
 	"scarecrow:interaction-error-occupied": "نقطة التثبيت هذه مشغولة بالفعل.",
 	"scarecrow:interaction-error-owner": "المالك وحده يستطيع تعديل فزاعة الطيور هذه.",
 	"scarecrow:interaction-error-claim": "ليس لديك إذن بالوصول إلى هذه المنطقة.",
-	"scarecrow:transform-leftarm": "الفزاعة – الذراع الأيسر",
-	"scarecrow:transform-rightarm": "الفزاعة – الذراع الأيمن",
+	"scarecrow:transform-botharms": "الفزاعة – كلا الذراعين",
 	"scarecrow:tooltip-animal-all": "الحيوانات"
 }

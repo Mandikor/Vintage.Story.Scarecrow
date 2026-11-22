@@ -39,7 +39,7 @@
 					"allowedCodes": [ "game:scythe-*", "game:hoe-*", "game:bugnet-*", "game:snowshovel-*", "artofgrowing:hayfork-*", "leaflitter:rake", "game:lantern-*-up" ],
 					"attachmentPointCode": "RArmAP",
 					"stepParentTo": {
-						"": { "elementName": "RArmStorage" }
+						"": { "elementName": "ScarecrowToolRightMount" }
 					}
 				},
 				{

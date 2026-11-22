@@ -85,6 +85,9 @@ namespace Scarecrow
                             MeshData mesh;
                             if (block != null) capi.Tesselator.TesselateBlock(block, out mesh);
                             else capi.Tesselator.TesselateItem(stack.Item, out mesh);
+                            mesh = mesh.Clone();
+                            if (index == 1 && ScarecrowPendulum.UsesToolFrame(stack))
+                                ScarecrowArmTransform.MirrorToolMesh(mesh);
                             meshes[index] = capi.Render.UploadMultiTextureMesh(mesh);
                         }
                     }

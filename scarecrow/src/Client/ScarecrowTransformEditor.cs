@@ -10,7 +10,7 @@ using Vintagestory.Client.NoObf;
 
 namespace Scarecrow
 {
-    /// <summary>Registers native .tfedit targets and refreshes equipped client previews on edits.</summary>
+    /// <summary>Registers the shared .tfedit target and refreshes equipped client previews on edits.</summary>
     internal sealed class ScarecrowTransformEditor : IDisposable
     {
         private readonly ICoreClientAPI api;
@@ -20,8 +20,7 @@ namespace Scarecrow
         public ScarecrowTransformEditor(ICoreClientAPI api)
         {
             this.api = api;
-            Add(ScarecrowArmTransform.LeftAttribute, "scarecrow:transform-leftarm");
-            Add(ScarecrowArmTransform.RightAttribute, "scarecrow:transform-rightarm");
+            Add(ScarecrowArmTransform.SharedAttribute, "scarecrow:transform-botharms");
             api.Event.RegisterEventBusListener(OnTransformChanged, filterByEventName: "onsettransform");
         }
 
@@ -37,7 +36,7 @@ namespace Scarecrow
         {
             if (disposed || data is not TreeAttribute tree || tree.GetBool("preventDefault")) return;
             string target = tree.GetString("target");
-            if (target != ScarecrowArmTransform.LeftAttribute && target != ScarecrowArmTransform.RightAttribute) return;
+            if (target != ScarecrowArmTransform.SharedAttribute) return;
             CollectibleObject collectible = api.World.Player?.InventoryManager.ActiveHotbarSlot?.Itemstack?.Collectible;
             if (collectible == null) return;
 

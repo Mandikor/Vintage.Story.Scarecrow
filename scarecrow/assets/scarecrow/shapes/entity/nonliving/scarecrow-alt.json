@@ -549,6 +549,20 @@
 													"name": "RArmStorage",
 													"children": [
 														{
+															"name": "ScarecrowToolRightMount",
+															"from": [16, 0, 2.4],
+															"to": [16, 0, 2.4],
+															"rotationOrigin": [16, 0, 2.4],
+															"rotationY": 180,
+															"attachmentpoints": [
+																{
+																	"code": "ScarecrowArmRightOriginAP",
+																	"posX": 0, "posY": 0, "posZ": 0,
+																	"rotationX": 0, "rotationY": 0, "rotationZ": 0
+																}
+															]
+														},
+														{
 															"name": "ScarecrowLanternRightMount",
 															"from": [
 																-5,
@@ -601,15 +615,6 @@
 															"code": "RArmAP",
 															"posX": "4.1","posY": "1.2","posZ": "1.2",
 															"rotationX": "180.0","rotationY": "0.0","rotationZ": "0.0"
-														},
-														{
-															"code": "ScarecrowArmRightOriginAP",
-															"posX": 0,
-															"posY": 0,
-															"posZ": 0,
-															"rotationX": 0,
-															"rotationY": 0,
-															"rotationZ": 0
 														}
 													]
 												}

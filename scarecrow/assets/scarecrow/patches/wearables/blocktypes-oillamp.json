@@ -18,8 +18,12 @@
       "attachableToEntityByType": {
         "*-up": {
           "attachedShapeBySlotCode": {
-            "sc-leftarm": { "base": "game:block/clay/claylamp-ceiling" },
-            "sc-rightarm": { "base": "game:block/clay/claylamp-ceiling" }
+            "sc-leftarm": {
+              "base": "game:block/clay/claylamp-ceiling"
+            },
+            "sc-rightarm": {
+              "base": "game:block/clay/claylamp-ceiling"
+            }
           },
           "texturePrefixCode": "scarecrow-oillamp"
         }
@@ -41,30 +45,7 @@
   {
     "file": "game:blocktypes/clay/fired/oillamp.json",
     "op": "addmerge",
-    "path": "/attributes/onScarecrowLeftArmTransform",
-    "value": {
-      "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "origin": {
-        "x": 0.5,
-        "y": 0.5,
-        "z": 0.5
-      },
-      "scale": 1
-    }
-  },
-  {
-    "file": "game:blocktypes/clay/fired/oillamp.json",
-    "op": "addmerge",
-    "path": "/attributes/onScarecrowRightArmTransform",
+    "path": "/attributes/onScarecrowTransform",
     "value": {
       "translation": {
         "x": 0,

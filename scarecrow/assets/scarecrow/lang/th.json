@@ -76,7 +76,6 @@
 	"scarecrow:interaction-error-occupied": "จุดติดตั้งนี้ถูกใช้งานอยู่แล้ว",
 	"scarecrow:interaction-error-owner": "เฉพาะเจ้าของเท่านั้นที่แก้ไขหุ่นไล่กานี้ได้",
 	"scarecrow:interaction-error-claim": "คุณไม่มีสิทธิ์เข้าถึงพื้นที่นี้",
-	"scarecrow:transform-leftarm": "หุ่นไล่กา – แขนซ้าย",
-	"scarecrow:transform-rightarm": "หุ่นไล่กา – แขนขวา",
+	"scarecrow:transform-botharms": "หุ่นไล่กา – แขนทั้งสองข้าง",
 	"scarecrow:tooltip-animal-all": "สัตว์"
 }

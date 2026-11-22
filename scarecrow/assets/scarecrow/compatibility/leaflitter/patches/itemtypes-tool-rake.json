@@ -7,8 +7,12 @@
     "value": {
       "attachableToEntity": {
         "attachedShapeBySlotCode": {
-          "sc-leftarm": { "base": "leaflitter:item/rake" },
-          "sc-rightarm": { "base": "leaflitter:item/rake" }
+          "sc-leftarm": {
+            "base": "leaflitter:item/rake"
+          },
+          "sc-rightarm": {
+            "base": "leaflitter:item/rake"
+          }
         },
         "texturePrefixCode": "scarecrow-rake"
       }
@@ -18,47 +22,18 @@
   {
     "file": "leaflitter:itemtypes/rake.json",
     "op": "addmerge",
-    "path": "/attributes/onScarecrowLeftArmTransform",
+    "path": "/attributes/onScarecrowTransform",
     "value": {
       "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
+        "x": 0.05,
+        "y": -0.85,
+        "z": -0.72
       },
       "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "origin": {
-        "x": 0.5,
-        "y": 0.5,
-        "z": 0.5
-      },
-      "scale": 1
-    }
-  },
-  {
-    "file": "leaflitter:itemtypes/rake.json",
-    "op": "addmerge",
-    "path": "/attributes/onScarecrowRightArmTransform",
-    "value": {
-      "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "origin": {
-        "x": 0.5,
-        "y": 0.5,
-        "z": 0.5
-      },
-      "scale": 1
+        "x": 4,
+        "y": -140,
+        "z": 96
+      }
     }
   },
   {

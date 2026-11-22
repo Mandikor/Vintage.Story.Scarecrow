@@ -8,12 +8,20 @@
       "texturePrefixCode": "scarecrow-hayfork-{material}",
       "attachedShapeBySlotCodeByType": {
         "hayfork-wooden": {
-          "sc-leftarm": { "base": "artofgrowing:item/tool/hayfork-wood" },
-          "sc-rightarm": { "base": "artofgrowing:item/tool/hayfork-wood" }
+          "sc-leftarm": {
+            "base": "artofgrowing:item/tool/hayfork-wood"
+          },
+          "sc-rightarm": {
+            "base": "artofgrowing:item/tool/hayfork-wood"
+          }
         },
         "*": {
-          "sc-leftarm": { "base": "artofgrowing:item/tool/hayfork-metal" },
-          "sc-rightarm": { "base": "artofgrowing:item/tool/hayfork-metal" }
+          "sc-leftarm": {
+            "base": "artofgrowing:item/tool/hayfork-metal"
+          },
+          "sc-rightarm": {
+            "base": "artofgrowing:item/tool/hayfork-metal"
+          }
         }
       }
     },
@@ -22,47 +30,32 @@
   {
     "file": "artofgrowing:itemtypes/tool/hayfork.json",
     "op": "addmerge",
-    "path": "/attributes/onScarecrowLeftArmTransform",
+    "path": "/attributes/onScarecrowTransformByType",
     "value": {
-      "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
+      "hayfork-wooden": {
+        "translation": {
+          "x": -0.53,
+          "y": -0.8,
+          "z": -0.04
+        },
+        "rotation": {
+          "x": 7,
+          "y": 60,
+          "z": 82
+        }
       },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "origin": {
-        "x": 0.5,
-        "y": 0.5,
-        "z": 0.5
-      },
-      "scale": 1
-    }
-  },
-  {
-    "file": "artofgrowing:itemtypes/tool/hayfork.json",
-    "op": "addmerge",
-    "path": "/attributes/onScarecrowRightArmTransform",
-    "value": {
-      "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "origin": {
-        "x": 0.5,
-        "y": 0.5,
-        "z": 0.5
-      },
-      "scale": 1
+      "*": {
+        "translation": {
+          "x": -0.53,
+          "y": -0.79,
+          "z": -0.04
+        },
+        "rotation": {
+          "x": 7,
+          "y": 60,
+          "z": 82
+        }
+      }
     }
   },
   {

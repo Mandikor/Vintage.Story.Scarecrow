@@ -74,7 +74,6 @@
 	"scarecrow:interaction-error-occupied": "Ця точка кріплення вже зайнята.",
 	"scarecrow:interaction-error-owner": "Лише власник може змінювати це опудало.",
 	"scarecrow:interaction-error-claim": "У вас немає прав доступу до цієї території.",
-	"scarecrow:transform-leftarm": "Опудало — ліва рука",
-	"scarecrow:transform-rightarm": "Опудало — права рука",
+	"scarecrow:transform-botharms": "Опудало – обидві руки",
 	"scarecrow:tooltip-animal-all": "Тварини"
 }

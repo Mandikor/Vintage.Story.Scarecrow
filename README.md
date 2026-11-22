@@ -230,7 +230,8 @@ uses its own item-code whitelist to decide which of those tools it accepts.
 
 ### Arm transforms for modders
 
-The [modder's guide](FORMODDERS.md#arm-transforms) documents both arm transforms,
+The [modder's guide](FORMODDERS.md#arm-transforms) documents one shared
+`onScarecrowTransform` with automatic right-arm mirroring,
 the native `.tfedit` workflow, coordinate units, defaults and complete JSON examples.
 Both full-size shapes contain shared arm mounts directly; supported hanging mods
 reuse these points with item-specific transforms. The little scarecrow's neck
@@ -246,14 +247,17 @@ attachment permission, models, transforms and wind motion in ready-to-adapt patc
 ### Adventurer's Walking Stick
 
 With **Adventurer's Walking Stick 3.0.12**, both full-size scarecrow models accept
-18 complete walking-stick types (30 variants, including 13 lantern materials) on
+16 complete walking-stick types (28 variants, including 13 lantern materials) on
 either arm. Attach them with **Shift + right-click** instead of another tool.
 Separate hidden blades/guns and empty sheaths are excluded; complete sheathed
 walking sticks are included. Neck/foot slots and the little scarecrow are excluded.
+Blackguard and Forlorn are excluded: these spear-style sticks did not support
+Shift + right-click attachment in my game test.
 
 The patches reference the original item models and preserve existing `utilities`
-categories and riding-animal attachments. Left/right transforms start neutral for
-manual alignment through `.tfedit`; pendulum motion initially stays off and may be
+categories and riding-animal attachments. I tested and aligned the supported
+sticks through the shared `.tfedit` transform; positions remain editable.
+Pendulum motion initially stays off and may be
 enabled in the patches. No radius bonus or active player ability is added. See the
 [Walking Stick details](#adventurers-walking-stick). All JSON files are under
 `compatibility/walkingstick/patches`.

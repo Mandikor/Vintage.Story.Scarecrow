@@ -76,7 +76,6 @@
 	"scarecrow:interaction-error-occupied": "Ce point de fixation est déjà occupé.",
 	"scarecrow:interaction-error-owner": "Seul le propriétaire peut modifier cet épouvantail.",
 	"scarecrow:interaction-error-claim": "Vous ne disposez pas des droits nécessaires sur ce terrain.",
-	"scarecrow:transform-leftarm": "Épouvantail – bras gauche",
-	"scarecrow:transform-rightarm": "Épouvantail – bras droit",
+	"scarecrow:transform-botharms": "Épouvantail – deux bras",
 	"scarecrow:tooltip-animal-all": "Animaux"
 }

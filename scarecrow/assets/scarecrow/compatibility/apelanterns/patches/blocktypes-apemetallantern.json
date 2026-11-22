@@ -31,20 +31,7 @@
           "*": false
         },
         "scarecrowArmLanternScale": 1,
-        "onScarecrowRightArmTransform": {
-          "translation": {
-            "x": -0.06,
-            "y": 0.05,
-            "z": -0.01
-          },
-          "rotation": {
-            "x": 0,
-            "y": 4,
-            "z": 0
-          },
-          "scale": 0.9
-        },
-        "onScarecrowLeftArmTransform": {
+        "onScarecrowTransform": {
           "translation": {
             "x": 0.06,
             "y": 0.05,
@@ -86,25 +73,7 @@
           "*": false
         },
         "scarecrowArmLanternScale": 1,
-        "onScarecrowRightArmTransform": {
-          "translation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "rotation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "origin": {
-            "x": 0.5,
-            "y": 0.5,
-            "z": 0.5
-          },
-          "scale": 1
-        },
-        "onScarecrowLeftArmTransform": {
+        "onScarecrowTransform": {
           "translation": {
             "x": 0,
             "y": 0,

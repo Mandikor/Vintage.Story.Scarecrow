@@ -78,7 +78,6 @@
 	"scarecrow:interaction-error-occupied": "この取り付け箇所はすでに使用中です。",
 	"scarecrow:interaction-error-owner": "このかかしを変更できるのは所有者だけです。",
 	"scarecrow:interaction-error-claim": "この領域へのアクセス権限がありません。",
-	"scarecrow:transform-leftarm": "かかし – 左腕",
-	"scarecrow:transform-rightarm": "かかし – 右腕",
+	"scarecrow:transform-botharms": "かかし – 両腕",
 	"scarecrow:tooltip-animal-all": "動物"
 }

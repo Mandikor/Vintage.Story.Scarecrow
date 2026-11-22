@@ -76,7 +76,6 @@
 	"scarecrow:interaction-error-occupied": "Dette fastgørelsespunkt er allerede optaget.",
 	"scarecrow:interaction-error-owner": "Kun ejeren kan ændre dette fugleskræmsel.",
 	"scarecrow:interaction-error-claim": "Du har ikke tilladelse til at tilgå dette område.",
-	"scarecrow:transform-leftarm": "Fugleskræmsel – venstre arm",
-	"scarecrow:transform-rightarm": "Fugleskræmsel – højre arm",
+	"scarecrow:transform-botharms": "Fugleskræmsel – begge arme",
 	"scarecrow:tooltip-animal-all": "Dyr"
 }

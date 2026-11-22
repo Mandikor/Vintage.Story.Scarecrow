@@ -35,7 +35,7 @@ No C# subclass or hard dependency is necessary for a normal item/block attachmen
 | Entity | Slot index | Stable slot code | Selection attachment point | Default shape element |
 | --- | ---: | --- | --- | --- |
 | Full-size scarecrow, standard and Plumpkins model | 0 | `sc-leftarm` | `LArmAP` | `LArmStorage` |
-| Full-size scarecrow, both models | 1 | `sc-rightarm` | `RArmAP` | `RArmStorage` |
+| Full-size scarecrow, both models | 1 | `sc-rightarm` | `RArmAP` | `ScarecrowToolRightMount` |
 | Full-size scarecrow, legacy contents only | 2 | `sc-neck` | `NeckAP` | `NeckStorage` |
 | Full-size scarecrow, both models | 3 | `sc-foot` | `FootAP` | `FootStorage` |
 | Little scarecrow | 0 | `sc-neck` | `NeckAP` | `NeckStorage` |
@@ -85,7 +85,7 @@ similarly named item in another mod is not accidentally accepted. These lists us
 the game's `WildcardUtil`, independently of the natural-spawn configuration rules.
 Append entries; replacing the entire list removes other integrations' permissions.
 
-### 2. Supply geometry, both transforms and every pendulum setting
+### 2. Supply geometry, one shared transform and every pendulum setting
 
 ```json
 [
@@ -101,15 +101,9 @@ Append entries; replacing the entire list removes other integrations' permission
         },
         "texturePrefixCode": "scarecrow-mymod-gardencharm"
       },
-      "onScarecrowLeftArmTransform": {
+      "onScarecrowTransform": {
         "translation": { "x": 0.0, "y": 0.1, "z": 0.0 },
         "rotation": { "x": 0.0, "y": 0.0, "z": 15.0 },
-        "origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
-        "scale": 0.8
-      },
-      "onScarecrowRightArmTransform": {
-        "translation": { "x": 0.0, "y": 0.1, "z": 0.0 },
-        "rotation": { "x": 0.0, "y": 0.0, "z": -15.0 },
         "origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
         "scale": 0.8
       },
@@ -182,7 +176,7 @@ existing `*-up` branch, merge attributes into `/attributesByType/*-up`:
     "path": "/attributesByType/*-up",
     "value": {
       "scarecrowPendulum": true,
-      "onScarecrowRightArmTransform": {
+      "onScarecrowTransform": {
         "translation": { "x": 0, "y": 0, "z": 0 },
         "rotation": { "x": 0, "y": 0, "z": 0 },
         "origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
@@ -201,12 +195,25 @@ assume it replaces the server-loaded entity type.
 
 ## Arm transforms
 
-| Attribute | Scope |
-| --- | --- |
-| `onScarecrowLeftArmTransform` | `sc-leftarm` only |
-| `onScarecrowRightArmTransform` | `sc-rightarm` only |
+Use **one** collectible attribute: `onScarecrowTransform`. Author it for the left
+arm; the right arm receives the mirrored adjustment automatically. This is JSON
+metadata, not a method or callback. There are no separate arm overrides.
 
-Both use native `ModelTransform` JSON:
+Place this object inside the collectible's `attributes`, or merge it through a
+compatibility patch into the appropriate root/by-type attributes branch:
+
+```json
+{
+  "onScarecrowTransform": {
+    "translation": { "x": 0.06, "y": 0.05, "z": 0.01 },
+    "rotation": { "x": 0, "y": -4, "z": 0 },
+    "origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
+    "scale": 0.9
+  }
+}
+```
+
+The format is native `ModelTransform` JSON:
 
 | Field | Meaning | Omitted value |
 | --- | --- | --- |
@@ -214,54 +221,83 @@ Both use native `ModelTransform` JSON:
 | `rotation` | `{ "x", "y", "z" }` angles in degrees | Zero |
 | `origin` | `{ "x", "y", "z" }` transform origin in block units | `(0.5, 0.5, 0.5)` |
 | `scale` | Uniform scale | One |
-| `scaleXYZ` | Native vector for independent axis scaling | Native uniform-scale fallback |
+| `scaleXYZ` | Independent axis scaling | Native uniform-scale fallback |
 
-One block equals 16 shape units. For nonuniform scaling, use `scaleXYZ` instead
-of competing uniform and per-axis settings:
+One block equals 16 shape units. For nonuniform scaling use, for example,
+`"scaleXYZ": { "x": 0.8, "y": 1, "z": 0.8 }` instead of `scale`. Keep authored
+values to at most two decimal places for readable patches; runtime/editor
+calculations retain full numeric precision.
 
-```json
-{
-  "onScarecrowRightArmTransform": {
-    "translation": { "x": 0.0, "y": 0.125, "z": 0.0 },
-    "rotation": { "x": 0.0, "y": 0.0, "z": -15.0 },
-    "origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
-    "scaleXYZ": { "x": 0.8, "y": 1.0, "z": 0.8 }
-  }
-}
-```
+### Mirroring
 
-Place this object inside collectible `attributes`. The neutral transform is zero
-translation/rotation and scale one; its origin can remain the native default.
-There is no automatic left/right mirroring or fallback from one arm to the other.
-Missing transforms preserve existing rendering; malformed/non-finite optional
-transforms are ignored.
+The shared adjustment is reflected at **local `x = 0.5`** in the model's block-unit
+frame. Default tool-frame attachments additionally reflect their private right-arm
+mesh at that plane, so asymmetric tool heads point in opposite directions rather
+than merely sharing a mirrored offset. Triangle winding, shader normals and face
+directions are corrected; original world/inventory models and UV values stay
+unchanged. Hanging lights, Wind Chimes and Dreamcatchers retain their existing
+model orientation. The resulting right-arm transform settings are:
 
-Coordinates are relative to the attachment's existing local frame, not world
-axes. Static tools use their step-parent frame; animated lights use their mount
-and model frame. Models are not normalized to a universal grip point. Transform
-matrix order follows native `T * O * Rx * Ry * Rz * S * -O`. The adjustment is
-applied before wind motion and affects the attachment's shadows and supported
-following particle emitters. Body geometry, other equipment and shared source
-shapes remain unchanged. Code that edits transforms should replace the complete
-attribute object; the cache detects replacement, not in-place token edits.
+| Field | Right arm from shared left-arm settings |
+| --- | --- |
+| `translation` | `(-x, y, z)` |
+| `rotation` | `(x, -y, -z)` degrees |
+| `origin` | `(1 - x, y, z)` |
+| `scale` / `scaleXYZ` | Unchanged |
+
+Shared translation `(0.06, 0.05, 0.01)` and rotation `(0, -4, 0)` therefore become
+`(-0.06, 0.05, 0.01)` and `(0, 4, 0)` on the right. Z displacement does not change
+sign. Default origin `(0.5, 0.5, 0.5)` remains unchanged. Missing fields receive
+native defaults before reflection; a neutral transform stays neutral on both arms.
+
+The former `onScarecrowLeftArmTransform` and `onScarecrowRightArmTransform`
+attributes are no longer read and cannot block the shared setting. Remove them
+from integrations and retain only `onScarecrowTransform`. To migrate a right-arm
+calibration, apply the same mirroring formulas once to express it for the left
+arm, then store that result as the shared transform. The right-arm bug-net
+calibration has been transferred this way; the left arm now uses its mirrored pose.
+If the shared attribute is absent, no additional transform is applied, even when
+old individual-arm keys remain. Malformed or non-finite shared values are ignored.
+
+Coordinates are relative to the attachment frame, not world axes. Static tools
+use their step-parent frame; animated lights use their mount/model frame. Both
+standard and Plumpkins hanging mounts have matching arm axis orientations.
+The right tool slot uses `ScarecrowToolRightMount`, a corrected child of the
+historically rotated `RArmStorage`. Its pose point `ScarecrowArmRightOriginAP`
+is on that child, so tools at rest and tools with pendulum motion use the
+same corrected frame. The left tool frame stays on `LArmStorage`. Default-frame
+tools use private cached attachment meshes even with pendulum motion disabled,
+allowing the right mesh to be reflected independently of the body mesh.
+
+Do not rotate `RArmStorage` itself to correct tools: the independent hanging
+mounts below it already compensate for its authored orientation. The tool child
+normalizes the right frame without moving working lights, chimes or Dreamcatchers.
+Test both arms for asymmetric original meshes, which are not normalized to a
+universal grip point. Automatic tool-mesh reflection applies when both pose-point
+names resolve to the standard tool origin points; custom pose-point mappings
+retain their own authored model orientation.
+
+Matrix order is native `T * O * Rx * Ry * Rz * S * -O`. It is applied before wind
+motion, including shadows and supported following particle emitters. Body geometry,
+other equipment and shared source shapes stay unchanged. Code editing the
+attribute should replace its complete JSON object so the cache detects the change.
 
 ## The in-game transform editor
 
 1. Equip an allowed item on either full-size model. Hold another copy of the same
-   collectible/material variant in your active hotbar slot.
-2. Open `.tfedit` and select **Scarecrow – left arm** or **Scarecrow – right arm**.
-   Labels follow the game's language.
-3. Adjust translation, rotation, origin and scale. Loaded scarecrows wearing that
-   collectible refresh on this client; the other arm's transform is independent.
-4. Copy the exported JSON into the corresponding source attribute or patch.
-   Reload assets/world as appropriate and verify the saved position again.
+   collectible/material variant in the active hotbar slot.
+2. Open `.tfedit` and select **Scarecrow – both arms**. This is the only Scarecrow
+   arm-transform target; its label is translated in all 33 languages.
+3. Set the left-arm translation, rotation, origin and scale. Loaded scarecrows
+   wearing the same collectible refresh locally on both arms; right is mirrored.
+4. Copy the JSON into `onScarecrowTransform` in the source asset/patch, reload and
+   verify persistence. Remove obsolete individual-arm entries from your patch.
 
-This is local development preview, not a per-stack or server-side configuration
-editor. All loaded copies of that collectible on the editing client can change;
-other players do not receive the preview. Values do not become permanent merely
-by closing the editor. Native editor reset/close behavior still applies. Pendulum
-switch, pivot and point names are edited in JSON, not by a `.tfedit` checkbox.
-Editing a transform does not grant permission for an unsupported held item.
+Preview is local development tooling, not a per-stack/server configuration editor.
+All loaded copies of that collectible on this client can change. Other players
+receive no preview, and closing the editor does not save source files. Native
+reset/close behavior still applies. Pendulum flags, pivots and point names are
+edited directly in JSON. Editing a transform does not grant attachment permission.
 
 ## Pendulum motion
 
@@ -281,7 +317,7 @@ Explicit `true` opts a generic model into separate animated rendering; explicit
 Walking Stick and Dreamcatcher patches default to false; existing lanterns, oil
 lamps, censers, Firefly Jars and wind chimes default to true.
 
-Generic models use their arm-storage origin at full scale before the optional arm
+Generic models use their corrected tool-frame origin at full scale before the shared arm
 transform. Legacy hanging lights retain authored scale, offsets and ceiling frame.
 For a legacy hanging light, omit the pivot or explicitly use `[0.5,1,0.5]` rather
 than copying the generic example's zero pivot.
@@ -290,6 +326,9 @@ The pendulum pivot and `ModelTransform.origin` serve different operations: the
 first sets the swing pivot, the second sets the resting transform's origin. Use
 the arm transforms for rest alignment, not the swing pivot to compensate for an
 incorrect model placement.
+For default tool-frame attachments, author the pivot for the left model; the
+right tool mesh and its pivot are both reflected (`x` becomes `1 - x`). Hanging
+lights and custom pose-point models retain their existing pivot handling.
 
 For a custom mount, provide real pose points in both entity shapes and map them:
 
@@ -308,12 +347,13 @@ This is an `attributes` fragment; it does not create the named points. Missing
 mapping entries use generic defaults, but a supplied nonexistent point is not a
 replacement for authoring the mount. Dreamcatchers' matching points are
 the shared `ScarecrowLanternLeftAP` and `ScarecrowLanternRightAP`; its previous
-model-specific mount size and displacement now live in the per-arm transforms.
+model-specific mount size and displacement now live in the shared transform.
 
 Legacy hangers marked with `scarecrowArmLantern` or `scarecrowHangingDecoration`
 use dedicated `ScarecrowLanternLeftAP` / `ScarecrowLanternRightAP` points and ignore
 point overrides. When disabled they retain their private renderer at rest, with
-light/textures/particles. Generic tools return to static attachment rendering.
+light/textures/particles. Default-frame tools also retain their private renderer
+at rest, including the reflected right model. The switch controls motion only.
 
 Wind Chimes uses model-specific split meshes and individual part pivots. The
 boolean freezes/enables those parts; whole-model pivot and point overrides do
@@ -388,7 +428,7 @@ additional wind-strength controls and do not run on the ordinary static path:
 
 | Attribute | Format / default | Effect and limits |
 | --- | --- | --- |
-| `scarecrowArmLanternScale` | Number; legacy hanger `0.6`, generic model `1` | Additional whole-model renderer scale, separate from the per-arm transform |
+| `scarecrowArmLanternScale` | Number; legacy hanger `0.6`, generic model `1` | Additional whole-model renderer scale, separate from the shared arm transform |
 | `scarecrowArmLanternOffset` | Three-number array; no offset | Translates the private mesh in block units before motion; used to align Firefly Jar corks |
 | `scarecrowUseCeilingTextures` | Boolean; false | Blocks only: looks up the corresponding `-down` texture source by replacing the final `up` of an inventory code. Only use with that actual orientation naming scheme; falls back to the original collectible if no block resolves |
 | `scarecrowCenserSmoke` | Boolean; false | Blocks only and only with `censership` active: enables its specialized smoke adapter using original particle profiles |
@@ -416,6 +456,12 @@ enable swinging. Supply sensible finite values for advanced scale/offset metadat
 the transform validator is not a general validator for every renderer attribute.
 
 Useful working references in this repository:
+
+My game test confirmed mirrored and aligned bug nets, snow shovels, scythes,
+hoes, hayforks, rakes and the retained Walking Sticks. Walking Stick support now
+excludes the spear-style Blackguard and Forlorn, which could not be attached with
+Shift + right-click; 16 definitions/28 variants remain. Existing calibrated values
+in the patches are starting points to retain when extending these integrations.
 
 - [Vanilla tools](scarecrow/assets/scarecrow/patches/wearables/itemtypes-tool-vanilla.json)
 - [Walking Stick integration](scarecrow/assets/scarecrow/compatibility/walkingstick/patches)

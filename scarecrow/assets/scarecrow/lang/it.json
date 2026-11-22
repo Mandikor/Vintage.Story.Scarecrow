@@ -76,7 +76,6 @@
 	"scarecrow:interaction-error-occupied": "Questo punto di fissaggio è già occupato.",
 	"scarecrow:interaction-error-owner": "Solo il proprietario può modificare questo spaventapasseri.",
 	"scarecrow:interaction-error-claim": "Non hai il permesso di accedere a questa zona.",
-	"scarecrow:transform-leftarm": "Spaventapasseri – braccio sinistro",
-	"scarecrow:transform-rightarm": "Spaventapasseri – braccio destro",
+	"scarecrow:transform-botharms": "Spaventapasseri – entrambe le braccia",
 	"scarecrow:tooltip-animal-all": "Animali"
 }

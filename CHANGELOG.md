@@ -5,6 +5,61 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ## Unreleased
 
+### Verified tool alignment and Walking Stick exclusions
+
+- My in-game test confirms correct mirrored tool geometry. I tested and aligned
+  bug nets, snow shovels, scythes, hoes, hayforks, rakes and supported Walking Sticks.
+- Remove Blackguard and Forlorn Walking Sticks from both arm whitelists and remove
+  their item patches: these spear-style items could not be attached with
+  Shift + right-click in the game test. Current support is 16 definitions and
+  28 variants, including 13 lantern materials; retain the calibrated transforms.
+- Recheck the current patches after calibration/exclusions: 79 operations in
+  28 files apply with the real game patch library; 32 definitions and 41 transform
+  branches, including type-dependent settings, pass validation.
+
+### Correct mirrored tool attachment frames
+
+- Add a corrected right-tool frame to both full-size shapes and use it as the
+  default right-arm step parent. Move the generic right-arm origin point onto
+  that frame so static and pendulum tools agree instead of appearing turned 180°.
+- Preserve left-tool calibration, existing hanging mounts/poses for lanterns,
+  Wind Chimes and Dreamcatchers, body geometry and the little scarecrow's neck.
+  No extra user-facing transform attribute is required.
+- Reflect the actual private right-tool mesh as well as its transform so
+  asymmetric tools face opposite directions. Correct triangle winding, packed
+  normals and face shading; keep UVs and shared source models unchanged. Cache
+  default tool-frame meshes separately even when pendulum motion is disabled;
+  preserve the existing hanging light/chime/Dreamcatcher rendering paths.
+- Build and 12 complete entity-space pose comparisons pass across both models
+  and both native animation versions, including static/pendulum frame agreement.
+  Original hanging/neck/foot matrices and remaining shape geometry are unchanged;
+  my in-game test now confirms the mirrored tools and completed alignment above.
+- Mesh checks additionally verify 36 mirrored vertex positions, corrected winding,
+  shader/packed normals, face shading and UV preservation through the real per-arm
+  constructor/upload path, with motion enabled and disabled. Existing pendulum
+  and Primitive Survival regressions are checked separately.
+
+### One shared mirrored arm transform
+
+- Add `onScarecrowTransform`: author the left-arm adjustment once and mirror it
+  for the right arm. Reflect local X displacement, Y/Z rotation and the X origin;
+  preserve scale and source assets. Remove individual-arm attributes from the
+  resolver and patches; obsolete keys cannot override or block the shared setting.
+- Add one `.tfedit` target with labels in all 33 languages and remove the two
+  individual-arm targets. Shared preview refreshes both arms; export/save remains
+  local and does not synchronize arbitrary client edits to the server.
+- Consolidate 41 transform pairs across 30 patch files, use mirrored left values
+  for More Lanterns/Dreamcatchers and transfer the calibrated right-arm bug net
+  into a shared transform with the mirrored left pose.
+  Keep neck/foot attachments, permission, motion, sound and bonuses unchanged.
+- Document defaults, mirroring formulas, migration and complete examples in
+  [FORMODDERS.md](FORMODDERS.md#arm-transforms).
+- Build and checks pass for native matrices in both animation versions, shared
+  cache refresh, ignored legacy keys and the single editor target/event/disposal.
+  The actual game patch library applies 81 operations in 30 files; 34 definitions,
+  41 shared transforms and 816 lantern variants passed those checks. The subsequent
+  in-game test confirmed the shared transforms and mirrored tool alignment.
+
 ### Merge-compatible JSON patch operations
 
 - Replace every `add` operation in the shipped JSON patches with `addmerge`.
@@ -25,7 +80,8 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 - See [FORMODDERS.md](FORMODDERS.md#pendulum-motion) for shared points and transforms.
 - Build, 84 native matrix comparisons and 20 owned-asset operations through the
   game's JSON patch library pass. Transform-editor, pendulum and Primitive Survival
-  regression checks pass; in-game confirmation of this consolidation is pending.
+  regression checks passed. Subsequent game tests confirmed the working hanging
+  attachments and corrected mirrored tool alignment.
 
 ### Modder documentation
 
@@ -78,7 +134,7 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 Current integration instructions and examples: [FORMODDERS.md](FORMODDERS.md).
 
-- Support 18 complete stick definitions/30 variants from walkingstick 3.0.12 on
+- Initially supported 18 complete stick definitions/30 variants from walkingstick 3.0.12 on
   either arm of both full-size models, including 13 lantern materials and complete
   sheathed sticks. Exclude separate hidden blades/guns and empty sheaths, as well
   as small-scarecrow, neck and foot slots.

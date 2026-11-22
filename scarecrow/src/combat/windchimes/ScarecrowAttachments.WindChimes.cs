@@ -60,7 +60,7 @@ namespace Scarecrow
         {
             // The container calls us with "default"; EntityBehaviorAttachable resolves the slot
             // name only inside base.addGearToShape. Inspect the actual inventory slot here so
-            // separately animated arm lanterns are not also inserted into the static entity mesh.
+            // separately rendered arm lights/tools are not also inserted into the body mesh.
             if (entity.Properties?.Client?.Renderer is WindChimeScarecrowRenderer
                 && ((windChimesEnabled && gearslot.Itemstack?.ItemAttributes?["scarecrowWindChime"].AsBool(false) == true)
                     || (IsArmInventorySlot(gearslot) && AnimatedArmLantern.Matches(gearslot.Itemstack))))

@@ -76,7 +76,6 @@
 	"scarecrow:interaction-error-occupied": "Bu bağlantı noktası zaten dolu.",
 	"scarecrow:interaction-error-owner": "Bu korkuluğu yalnızca sahibi değiştirebilir.",
 	"scarecrow:interaction-error-claim": "Bu alana erişim iznin yok.",
-	"scarecrow:transform-leftarm": "Korkuluk – sol kol",
-	"scarecrow:transform-rightarm": "Korkuluk – sağ kol",
+	"scarecrow:transform-botharms": "Korkuluk – iki kol",
 	"scarecrow:tooltip-animal-all": "Hayvanlar"
 }

@@ -19,29 +19,7 @@
         },
         "scarecrowWindChime": true,
         "scarecrowRadiusBonus": 6,
-        "onScarecrowRightArmTransform": {
-          "translation": {
-            "x": 0,
-            "y": 0.2,
-            "z": 0
-          },
-          "rotation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "origin": {
-            "x": 0.5,
-            "y": 0.5,
-            "z": 0.5
-          },
-          "scaleXYZ": {
-            "x": 0.6,
-            "y": 0.6,
-            "z": 0.6
-          }
-        },
-        "onScarecrowLeftArmTransform": {
+        "onScarecrowTransform": {
           "translation": {
             "x": 0,
             "y": 0.2,
@@ -79,29 +57,7 @@
         },
         "scarecrowWindChime": true,
         "scarecrowRadiusBonus": 6,
-        "onScarecrowRightArmTransform": {
-          "translation": {
-            "x": 0,
-            "y": 0.2,
-            "z": 0
-          },
-          "rotation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "origin": {
-            "x": 0.5,
-            "y": 0.5,
-            "z": 0.5
-          },
-          "scaleXYZ": {
-            "x": 0.6,
-            "y": 0.6,
-            "z": 0.6
-          }
-        },
-        "onScarecrowLeftArmTransform": {
+        "onScarecrowTransform": {
           "translation": {
             "x": 0,
             "y": 0.2,
@@ -139,29 +95,7 @@
         },
         "scarecrowWindChime": true,
         "scarecrowRadiusBonus": 6,
-        "onScarecrowRightArmTransform": {
-          "translation": {
-            "x": 0,
-            "y": 0.2,
-            "z": 0
-          },
-          "rotation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "origin": {
-            "x": 0.5,
-            "y": 0.5,
-            "z": 0.5
-          },
-          "scaleXYZ": {
-            "x": 0.6,
-            "y": 0.6,
-            "z": 0.6
-          }
-        },
-        "onScarecrowLeftArmTransform": {
+        "onScarecrowTransform": {
           "translation": {
             "x": 0,
             "y": 0.2,
@@ -199,29 +133,7 @@
         },
         "scarecrowWindChime": true,
         "scarecrowRadiusBonus": 6,
-        "onScarecrowRightArmTransform": {
-          "translation": {
-            "x": 0,
-            "y": 0.2,
-            "z": 0
-          },
-          "rotation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "origin": {
-            "x": 0.5,
-            "y": 0.5,
-            "z": 0.5
-          },
-          "scaleXYZ": {
-            "x": 0.6,
-            "y": 0.6,
-            "z": 0.6
-          }
-        },
-        "onScarecrowLeftArmTransform": {
+        "onScarecrowTransform": {
           "translation": {
             "x": 0,
             "y": 0.2,
@@ -259,29 +171,7 @@
         },
         "scarecrowWindChime": true,
         "scarecrowRadiusBonus": 6,
-        "onScarecrowRightArmTransform": {
-          "translation": {
-            "x": 0,
-            "y": 0.2,
-            "z": 0
-          },
-          "rotation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "origin": {
-            "x": 0.5,
-            "y": 0.5,
-            "z": 0.5
-          },
-          "scaleXYZ": {
-            "x": 0.6,
-            "y": 0.6,
-            "z": 0.6
-          }
-        },
-        "onScarecrowLeftArmTransform": {
+        "onScarecrowTransform": {
           "translation": {
             "x": 0,
             "y": 0.2,
@@ -319,29 +209,7 @@
         },
         "scarecrowWindChime": true,
         "scarecrowRadiusBonus": 6,
-        "onScarecrowRightArmTransform": {
-          "translation": {
-            "x": 0,
-            "y": 0.2,
-            "z": 0
-          },
-          "rotation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "origin": {
-            "x": 0.5,
-            "y": 0.5,
-            "z": 0.5
-          },
-          "scaleXYZ": {
-            "x": 0.6,
-            "y": 0.6,
-            "z": 0.6
-          }
-        },
-        "onScarecrowLeftArmTransform": {
+        "onScarecrowTransform": {
           "translation": {
             "x": 0,
             "y": 0.2,

@@ -76,7 +76,6 @@
 	"scarecrow:interaction-error-occupied": "這個安裝點已被占用。",
 	"scarecrow:interaction-error-owner": "只有擁有者才能修改這個稻草人。",
 	"scarecrow:interaction-error-claim": "你沒有此區域的存取權限。",
-	"scarecrow:transform-leftarm": "稻草人 – 左臂",
-	"scarecrow:transform-rightarm": "稻草人 – 右臂",
+	"scarecrow:transform-botharms": "稻草人 – 雙臂",
 	"scarecrow:tooltip-animal-all": "動物"
 }
