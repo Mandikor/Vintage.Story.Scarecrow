@@ -5,6 +5,14 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ## Unreleased
 
+### Modder documentation
+
+- Consolidated attachment setup, models/textures, per-arm transforms, the native
+  editor, all pendulum controls, radius bonuses and full patch examples in
+  [FORMODDERS.md](FORMODDERS.md). README now links to this guide instead of
+  duplicating implementation instructions. Existing change records below retain
+  their historical scope; the guide describes the current development interface.
+
 ### Domain-aware natural-spawn filters
 
 - Retain plain `ScaredAnimalPrefixes` entries as case-insensitive path prefixes
@@ -46,6 +54,8 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ### Adventurer's Walking Stick arm attachments
 
+Current integration instructions and examples: [FORMODDERS.md](FORMODDERS.md).
+
 - Support 18 complete stick definitions/30 variants from walkingstick 3.0.12 on
   either arm of both full-size models, including 13 lantern materials and complete
   sheathed sticks. Exclude separate hidden blades/guns and empty sheaths, as well
@@ -61,6 +71,8 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
   editable through the per-arm transforms.
 
 ### General wind-driven pendulum switch
+
+Current integration instructions and examples: [FORMODDERS.md](FORMODDERS.md).
 
 - Add `scarecrowPendulum` as a visual-only opt-in for whole item/block models on
   either full-size arm. Explicit `false` freezes existing hangers at rest; absent
@@ -79,6 +91,8 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
   patch files also pass. My in-game test passed.
 
 ### General arm transforms and native editor integration
+
+Current integration instructions and examples: [FORMODDERS.md](FORMODDERS.md).
 
 - Switch both arms' scythes, metal/stone hoes, bug nets, snow shovels, Art of
   Growing hayforks and Leaf Litter rakes to their original game/mod models.
@@ -131,6 +145,8 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ### Primitive Survival arm lighting
 
+Current integration instructions and examples: [FORMODDERS.md](FORMODDERS.md).
+
 - Support all 13 wooden lanterns and seven filled Firefly Jar types from Primitive
   Survival 5.1.4 on either arm of the standard and Plumpkins full-size models.
   Reuse native ceiling-lantern/jar geometry, textures and light colors with the
@@ -147,6 +163,8 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ### Plumpkins attachment rendering
 
+Current integration instructions and examples: [FORMODDERS.md](FORMODDERS.md).
+
 - Apply lantern, Wind Chimes, Dreamcatchers and More Lanterns mount patches to
   both full-size scarecrow shapes, including the alternative Plumpkins model.
   Add the missing arm child containers without changing its pumpkin geometry.
@@ -154,6 +172,8 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
   tool/foot storage points on both models. My in-game test passed.
 
 ### Vanilla oil lamps on arms
+
+Current integration instructions and examples: [FORMODDERS.md](FORMODDERS.md).
 
 - Allow all ten filled vanilla oil-lamp colors on either full-size scarecrow arm,
   using the game's existing ceiling shape with suspension and flame geometry.
@@ -173,6 +193,8 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ### censership 1.0.6 arm decorations
 
+Current integration instructions and examples: [FORMODDERS.md](FORMODDERS.md).
+
 - Support 39 upright inventory censers on either full-size scarecrow arm:
   Metal Open, Metal Gills, Metal Dome and Carryable, using original hanging
   geometry/materials and wind-driven pendulum motion.
@@ -186,6 +208,8 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
   in-game test also passed.
 
 ### Wind-driven arm lanterns
+
+Current integration instructions and examples: [FORMODDERS.md](FORMODDERS.md).
 
 - Allow small/large vanilla lanterns on either full-size scarecrow arm alongside
   supported More Lanterns models, with independent wind-driven pendulum motion.
@@ -205,6 +229,8 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ### Wind chime hanging-piece animation
 
+Current integration instructions and examples: [FORMODDERS.md](FORMODDERS.md).
+
 - Animate individual hanging pieces on each arm, with or without Immersive Lanterns,
   using local wind, damped pendulum response and independent phases. Retain
   original pivots, textures and fixed supports, including copper/bone models.
@@ -222,6 +248,8 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
   placed-block issues were reproduced separately without Scarecrow installed.
 
 ### Dreamcatchers 1.0.2 arm decorations
+
+Current integration instructions and examples: [FORMODDERS.md](FORMODDERS.md).
 
 - Allow finished dreamcatchers on either arm of the full-size scarecrow, including
   both arms together, using the existing equipment/ownership/pickup rules.
@@ -470,6 +498,8 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
   items separately. Shift + empty-hand removal of individual attachments is unchanged.
 
 ### More Lanterns compatibility
+
+Current integration instructions and examples: [FORMODDERS.md](FORMODDERS.md).
 
 - Added optional support for More Lanterns by Ape (`apelanterns` 1.4.4): all eleven
   wall/ceiling-capable metal and paper models, covering 128 upright inventory

@@ -9,6 +9,7 @@ pumpkin. I also gave the vanilla straw dummy a role in protecting your garden.
 
 [Download on the Vintage Story Mod Database](https://mods.vintagestory.at/scarecrow)
 · [Changelog](CHANGELOG.md)
+· [Modder guide](FORMODDERS.md)
 · [Report an issue](https://github.com/Mandikor/Vintage.Story.Scarecrow/issues)
 
 ## Features
@@ -229,88 +230,15 @@ uses its own item-code whitelist to decide which of those tools it accepts.
 
 ### Arm transforms for modders
 
-Optional `onScarecrowLeftArmTransform` and `onScarecrowRightArmTransform`
-collectible attributes adjust translation, rotation, origin and scale using the
-game's standard transform format. Static equipment and animated attachments are
-supported on both full-size shapes. Existing items without these attributes retain
-their appearance; attachment permission and native categories remain separate.
-
-The native `.tfedit` transform list includes **Scarecrow – left arm** and
-**Scarecrow – right arm**, with a local preview refresh for equipped copies of
-the selected collectible. Export the JSON and save it in your assets to retain
-changes. Translation and origin use block units; rotation uses degrees. Omitted
-translation/rotation default to zero, scale to one and origin to `(0.5, 0.5, 0.5)`.
-For example, add this collectible attribute to adjust only the right arm:
-
-```json
-"onScarecrowRightArmTransform": {
-  "translation": { "x": 0, "y": 0.1, "z": 0 },
-  "rotation": { "x": 0, "y": 0, "z": -15 },
-  "origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
-  "scale": 0.8
-}
-```
-
-Transforms are relative to each attachment's existing local frame, not world
-coordinates. The editor preview is local to the editing client; it does not save
-individual equipment changes or synchronize them to the server.
+The [modder's guide](FORMODDERS.md#arm-transforms) documents both arm transforms,
+the native `.tfedit` workflow, coordinate units, defaults and complete JSON examples.
 
 ### Optional pendulum motion
 
-Set `attributes.scarecrowPendulum` to `true` to let a permitted arm item or block
-swing as a whole with the wind, or `false` to keep it still. Existing tool and
-Dreamcatcher patches default to `false`; existing lanterns, oil lamps, censers,
-Firefly Jars and wind chimes default to `true`. Without the new attribute, their
-previous behavior is retained. Wind chimes keep their specialized moving parts;
-`false` freezes those parts without disabling sound, light or protection bonuses.
-
-The existing per-arm transforms still set the resting position. Generic models
-retain full size and use the arm storage origin; existing hanging lights retain
-their previous size and ceiling pivot. An optional `scarecrowPendulumPivot` array
-can supply another pivot in model-frame block units: generic models default to
-`[0, 0, 0]`, legacy hanging lights to `[0.5, 1, 0.5]`. Custom mounts can supply
-per-slot pose-point names through `scarecrowPendulumAttachmentPoints`. The setting affects
-the full-size scarecrow's arms only and does not make an item attachable by itself.
-
-Here is a complete example of all three pendulum-specific attributes for a generic
-arm item or block. Add these entries to its existing `attributes` object, or merge
-them into `/attributes` with a compatibility patch:
-
-```json
-{
-  "attributes": {
-    "scarecrowPendulum": true,
-    "scarecrowPendulumPivot": [0.0, 0.0, 0.0],
-    "scarecrowPendulumAttachmentPoints": {
-      "sc-leftarm": "ScarecrowArmLeftOriginAP",
-      "sc-rightarm": "ScarecrowArmRightOriginAP"
-    }
-  }
-}
-```
-
-| Attribute | Meaning | Default when omitted |
-| --- | --- | --- |
-| `scarecrowPendulum` | `true` enables wind-driven motion; `false` keeps the attachment at rest. Applies to both arms. | Existing hanging lights/decorations and wind chimes keep moving; ordinary tools remain still. |
-| `scarecrowPendulumPivot` | `[x, y, z]` is the model's rotation point before the per-arm transform, in block units. One block equals 16 shape units. | Generic models: `[0, 0, 0]`. Legacy hanging lights/decorations: `[0.5, 1, 0.5]`. |
-| `scarecrowPendulumAttachmentPoints` | Optional per-arm overrides naming attachment points that exist in the scarecrow's entity shape. | Generic models use the two `ScarecrowArm…OriginAP` points shown above. |
-
-For a normal tool, only `"scarecrowPendulum": true` is needed; the other two
-entries in the example explicitly repeat its defaults. For an existing hanging
-light, omit the pivot to preserve its ceiling suspension point, or use
-`"scarecrowPendulumPivot": [0.5, 1.0, 0.5]` explicitly.
-
-Replace the point names only when using custom mounts with matching attachment
-points in the entity shape. For example, Dreamcatchers uses
-`ScarecrowDreamcatcherLeftAP` and `ScarecrowDreamcatcherRightAP`. Legacy hanging
-lights keep their dedicated lantern points and ignore these point overrides.
-Wind chimes use their own model-specific part pivots: the boolean switch applies,
-but these whole-model pivot and point overrides do not.
-
-Use `onScarecrowLeftArmTransform` and `onScarecrowRightArmTransform`, described
-above, to adjust the resting position, rotation and size independently. They can
-coexist with all three pendulum attributes. `.tfedit` edits those transforms;
-the pendulum switch, pivot and point names are edited directly in the JSON.
+See [Pendulum motion](FORMODDERS.md#pendulum-motion) for all switches, pivots,
+attachment-point mappings, defaults and specialized-model exceptions. The
+[complete integration example](FORMODDERS.md#complete-integration-example) combines
+attachment permission, models, transforms and wind motion in ready-to-adapt patches.
 
 ### Adventurer's Walking Stick
 
@@ -488,27 +416,10 @@ not enable or include scarecrow aging in this branch.
 
 ### Custom attachment rules
 
-Attachment whitelists are asset settings, separate from `ModConfig/scarecrow.json`.
-They live in the entity definitions under
-`behaviorConfigs/scarecrowattachments/wearableSlots`.
-
-Each slot has an `allowedCodes` list, for example:
-
-```json
-"allowedCodes": [
-  "game:hoe-*",
-  "game:scythe-*"
-]
-```
-
-Patterns include the mod domain. `game:hoe-*` accepts vanilla hoe variants but not
-an unrelated mod's item with a similar name. These rules apply independently to
-each slot, and existing attachments remain removable after a rule changes.
-
-Adding an item code does not create a custom attachment model. Additional items may
-also need attachment metadata and a shape for the relevant slot. For maintained
-customizations, use a separate compatibility patch rather than editing a downloaded
-release ZIP.
+Attachment rules are asset settings, separate from `ModConfig/scarecrow.json`.
+See [FORMODDERS.md](FORMODDERS.md) for the complete slot/code whitelist, native
+category and model setup, textures, variant patches, arm transforms, pendulum
+motion, radius bonuses and testing instructions.
 
 ## Optional mod compatibility
 
@@ -577,7 +488,7 @@ Scarecrow is distributed under the [MIT License](LICENSE.txt).
 ## Source code
 
 The published `dev` branch contains `scarecrow/`, `CHANGELOG.md`, `LICENSE.txt`,
-`TODO.md` and this README. Development scripts, IDE settings, extended guides,
+`TODO.md`, `FORMODDERS.md` and this README. Development scripts, IDE settings, extended guides,
 audit notes and local tests are kept locally and are not included in the branch.
 
 Code is under [scarecrow/src](scarecrow/src), with optional-mod adapters under
