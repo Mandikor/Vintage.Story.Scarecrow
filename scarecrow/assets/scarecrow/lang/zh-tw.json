@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "重新載入稻草人的伺服器設定。",
   "scarecrow:reload-failed": "無法重新載入 scarecrow.json。原有設定仍然有效；請檢查伺服器日誌。",
   "scarecrow:reload-success": "設定已重新載入。已更新 {0} 個已載入的稻草人。",
-  "scarecrow:guide-radius-defaults": "所列半徑為預設值。伺服器設定可能有所不同；已放置稻草人的提示會顯示目前數值。"
+  "scarecrow:guide-radius-defaults": "所列半徑為預設值。伺服器設定可能有所不同；已放置稻草人的提示會顯示目前數值。",
+  "scarecrow:diagnose-help": "診斷自然生成攔截，不改變世界。",
+  "scarecrow:diagnose-target": "在八格內看向活著的稻草人並指定實體代碼，或看向活著的動物且不指定代碼。",
+  "scarecrow:diagnose-code": "請使用包含模組 ID 的完整、已註冊實體代碼。",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>稻草人：</strong></font>{0}\n<font color=\"#FFFFFF\"><strong>實體：</strong></font>{1}\n<font color=\"#FFFFFF\"><strong>符合的篩選項：</strong></font>{2}\n<font color=\"#FFFFFF\"><strong>基礎：</strong></font>{3} / <font color=\"#FFFFFF\"><strong>裝備：</strong></font>{4} / <font color=\"#FFFFFF\"><strong>總半徑：</strong></font>{5}\n<font color=\"#FFFFFF\"><strong>距離：</strong></font>{6} 格\n<font color=\"#FFFFFF\"><strong>自然生成遭攔截：</strong></font>{7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>來源：</strong></font>{0}。檢查目前狀態，不追溯過去的生成事件。",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>這隻現有動物不受限制：</strong></font>其來源不是 entityspawner。",
+  "scarecrow:diagnose-unknown": "未記錄",
+  "scarecrow:diagnose-no-crow": "此維度沒有已載入的活稻草人。",
+  "scarecrow:diagnose-yes": "是",
+  "scarecrow:diagnose-no": "否",
+  "scarecrow:diagnose-filter-miss": "沒有符合的篩選項",
+  "scarecrow:diagnose-outside": "在半徑之外"
 }

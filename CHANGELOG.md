@@ -5,6 +5,28 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ## Unreleased
 
+### Natural-spawn diagnostics
+
+- Added `/scarecrow diagnose <modid:entitycode>` for a selected scarecrow and
+  the player's position, plus `/scarecrow diagnose` for a selected animal's
+  current position and saved origin. Share filter parsing with spawn interception.
+- Report the matching filter, base/equipment/total radius, 3D distance and a
+  hypothetical natural-spawn result. Explain origin exemptions without assuming
+  that missing origin data means player placement. Prefer a blocking scarecrow
+  when protection overlaps; ignore other dimensions and dead scarecrows.
+- Require `controlserver` and a player. Send results only to the caller's Info Log
+  in their language, without duplicating them in regular chat. Command errors use
+  normal feedback. No automatic output, animal changes or AI diagnosis. Added text
+  in all 33 languages. I successfully tested the diagnosis feature with Info Log
+  output in game.
+- Start diagnosis reports with a blank line and format labels through their
+  colons in bold white; keep values in normal formatting across all 33 languages.
+  I also confirmed the revised formatting in game.
+- Automated checks passed for both command forms, filter matching, origin
+  exemptions, overlaps, dimensions, permissions and caller language. Existing
+  configuration reload/spawn-boundary checks passed; the build has no warnings
+  or errors.
+
 ### Reload server configuration
 
 - Added server-configurable base radii: `ScarecrowRadius` (16),

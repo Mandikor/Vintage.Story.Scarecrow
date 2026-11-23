@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "Tải lại cấu hình máy chủ của bù nhìn.",
   "scarecrow:reload-failed": "Không thể tải lại scarecrow.json. Thiết lập trước đó vẫn có hiệu lực; hãy kiểm tra nhật ký máy chủ.",
   "scarecrow:reload-success": "Đã tải lại cấu hình. Đã cập nhật {0} bù nhìn đang được tải.",
-  "scarecrow:guide-radius-defaults": "Các bán kính được liệt kê là giá trị mặc định. Thiết lập máy chủ có thể khác; chú thích của bù nhìn đã đặt hiển thị giá trị hiện tại."
+  "scarecrow:guide-radius-defaults": "Các bán kính được liệt kê là giá trị mặc định. Thiết lập máy chủ có thể khác; chú thích của bù nhìn đã đặt hiển thị giá trị hiện tại.",
+  "scarecrow:diagnose-help": "Kiểm tra chặn sinh tự nhiên mà không thay đổi thế giới.",
+  "scarecrow:diagnose-target": "Nhìn bù nhìn còn sống kèm mã thực thể, hoặc động vật còn sống không kèm mã, trong phạm vi tám khối.",
+  "scarecrow:diagnose-code": "Dùng mã thực thể đã đăng ký chính xác, bao gồm ID bản mod.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Bù nhìn:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Thực thể:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Bộ lọc phù hợp:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Cơ bản:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Trang bị:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Tổng bán kính:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Khoảng cách:</strong></font> {6} khối\n<font color=\"#FFFFFF\"><strong>Sinh tự nhiên bị chặn:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Nguồn gốc:</strong></font> {0}. Kiểm tra trạng thái hiện tại, không phải các lần sinh trước.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Động vật hiện có này được miễn:</strong></font> nguồn gốc không phải entityspawner.",
+  "scarecrow:diagnose-unknown": "không được ghi lại",
+  "scarecrow:diagnose-no-crow": "Không có bù nhìn còn sống nào được tải trong chiều không gian này.",
+  "scarecrow:diagnose-yes": "Có",
+  "scarecrow:diagnose-no": "Không",
+  "scarecrow:diagnose-filter-miss": "không có bộ lọc phù hợp",
+  "scarecrow:diagnose-outside": "ngoài bán kính"
 }

@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "إعادة تحميل إعدادات الخادم للفزاعات.",
   "scarecrow:reload-failed": "تعذرت إعادة تحميل scarecrow.json. بقيت الإعدادات الحالية فعالة؛ راجع سجل الخادم.",
   "scarecrow:reload-success": "أُعيد تحميل الإعدادات. تم تحديث {0} فزاعة محملة.",
-  "scarecrow:guide-radius-defaults": "أنصاف الأقطار المذكورة هي القيم الافتراضية. قد تختلف إعدادات الخادم؛ يعرض تلميح الفزاعة الموضوعة القيم الحالية."
+  "scarecrow:guide-radius-defaults": "أنصاف الأقطار المذكورة هي القيم الافتراضية. قد تختلف إعدادات الخادم؛ يعرض تلميح الفزاعة الموضوعة القيم الحالية.",
+  "scarecrow:diagnose-help": "فحص منع الظهور الطبيعي دون تغيير العالم.",
+  "scarecrow:diagnose-target": "انظر إلى فزاعة حية مع رمز كائن أو حيوان حي دون رمز، ضمن ثماني كتل.",
+  "scarecrow:diagnose-code": "استخدم رمز كائن مسجلاً ودقيقاً يتضمن معرّف التعديل.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>الفزاعة:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>الكائن:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>المرشح المطابق:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>الأساس:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>المعدات:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>نصف القطر الكلي:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>المسافة:</strong></font> {6} كتل\n<font color=\"#FFFFFF\"><strong>منع الظهور الطبيعي:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>الأصل:</strong></font> {0}. يفحص هذا الحالة الحالية وليس الظهور السابق.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>هذا الحيوان الموجود مستثنى:</strong></font> أصله ليس entityspawner.",
+  "scarecrow:diagnose-unknown": "غير مسجل",
+  "scarecrow:diagnose-no-crow": "لا توجد فزاعة حية محملة في هذا البعد.",
+  "scarecrow:diagnose-yes": "نعم",
+  "scarecrow:diagnose-no": "لا",
+  "scarecrow:diagnose-filter-miss": "لا يوجد مرشح مطابق",
+  "scarecrow:diagnose-outside": "خارج نصف القطر"
 }

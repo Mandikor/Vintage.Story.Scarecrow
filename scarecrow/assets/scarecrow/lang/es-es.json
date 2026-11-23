@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "Volver a cargar la configuración del servidor para los espantapájaros.",
   "scarecrow:reload-failed": "No se pudo volver a cargar scarecrow.json. Se conserva la configuración anterior; consulta el registro del servidor.",
   "scarecrow:reload-success": "Configuración recargada. Espantapájaros cargados actualizados: {0}.",
-  "scarecrow:guide-radius-defaults": "Los radios indicados son valores predeterminados. La configuración del servidor puede variar; la descripción del espantapájaros colocado muestra los valores actuales."
+  "scarecrow:guide-radius-defaults": "Los radios indicados son valores predeterminados. La configuración del servidor puede variar; la descripción del espantapájaros colocado muestra los valores actuales.",
+  "scarecrow:diagnose-help": "Comprobar la protección contra apariciones naturales sin cambiar el mundo.",
+  "scarecrow:diagnose-target": "Mira un espantapájaros vivo con un código de entidad, o un animal vivo sin código, a ocho bloques como máximo.",
+  "scarecrow:diagnose-code": "Indica un código de entidad registrado exacto, incluido el ID de su mod.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Espantapájaros:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Entidad:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Filtro coincidente:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Base:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Equipo:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Radio total:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Distancia:</strong></font> {6} bloques\n<font color=\"#FFFFFF\"><strong>Aparición natural bloqueada:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Origen:</strong></font> {0}. Se comprueba el estado actual, no apariciones pasadas.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Este animal existente está exento:</strong></font> su origen no es entityspawner.",
+  "scarecrow:diagnose-unknown": "no registrado",
+  "scarecrow:diagnose-no-crow": "No hay ningún espantapájaros vivo cargado en esta dimensión.",
+  "scarecrow:diagnose-yes": "Sí",
+  "scarecrow:diagnose-no": "No",
+  "scarecrow:diagnose-filter-miss": "ningún filtro coincidente",
+  "scarecrow:diagnose-outside": "fuera del radio"
 }

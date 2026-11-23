@@ -109,5 +109,17 @@
   "scarecrow:reload-help": "Serverkonfiguration der Vogelscheuchen neu laden.",
   "scarecrow:reload-failed": "scarecrow.json konnte nicht neu geladen werden. Die bisherigen Einstellungen bleiben aktiv; siehe Serverlog.",
   "scarecrow:reload-success": "Konfiguration neu geladen. {0} geladene Vogelscheuchen aktualisiert.",
-  "scarecrow:guide-radius-defaults": "Die genannten Radien sind Standardwerte. Die Servereinstellungen können abweichen; der Tooltip der platzierten Vogelscheuche zeigt die aktuellen Werte."
+  "scarecrow:guide-radius-defaults": "Die genannten Radien sind Standardwerte. Die Servereinstellungen können abweichen; der Tooltip der platzierten Vogelscheuche zeigt die aktuellen Werte.",
+  "scarecrow:diagnose-help": "Natürliche Spawn-Sperre prüfen, ohne die Welt zu verändern.",
+  "scarecrow:diagnose-target": "Sieh eine lebende Vogelscheuche mit Angabe eines Entitätencodes oder ein lebendes Tier ohne Code an, in höchstens acht Blöcken Entfernung.",
+  "scarecrow:diagnose-code": "Gib einen exakten registrierten Entitätencode einschließlich Mod-ID an.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Vogelscheuche:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Entität:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Passender Filter:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Basis:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Ausrüstung:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Gesamtradius:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Entfernung:</strong></font> {6} Blöcke\n<font color=\"#FFFFFF\"><strong>Natürlicher Spawn blockiert:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Herkunft:</strong></font> {0}. Geprüft wird der aktuelle Zustand, kein früherer Spawnvorgang.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Dieses vorhandene Tier ist ausgenommen:</strong></font> Seine Herkunft ist nicht entityspawner.",
+  "scarecrow:diagnose-unknown": "nicht gespeichert",
+  "scarecrow:diagnose-no-crow": "In dieser Dimension ist keine lebende Vogelscheuche geladen.",
+  "scarecrow:diagnose-yes": "Ja",
+  "scarecrow:diagnose-no": "Nein",
+  "scarecrow:diagnose-filter-miss": "kein passender Filter",
+  "scarecrow:diagnose-outside": "außerhalb des Radius"
 }

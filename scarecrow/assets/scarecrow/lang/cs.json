@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "Znovu načíst serverové nastavení strašáků.",
   "scarecrow:reload-failed": "Soubor scarecrow.json nelze znovu načíst. Dosavadní nastavení zůstává aktivní; zkontrolujte protokol serveru.",
   "scarecrow:reload-success": "Nastavení znovu načteno. Aktualizovaní načtení strašáci: {0}.",
-  "scarecrow:guide-radius-defaults": "Uvedené poloměry jsou výchozí hodnoty. Nastavení serveru se může lišit; aktuální hodnoty ukazuje popisek umístěného strašáka."
+  "scarecrow:guide-radius-defaults": "Uvedené poloměry jsou výchozí hodnoty. Nastavení serveru se může lišit; aktuální hodnoty ukazuje popisek umístěného strašáka.",
+  "scarecrow:diagnose-help": "Prověřit blokování přirozeného výskytu bez změn světa.",
+  "scarecrow:diagnose-target": "Dívejte se na živého strašáka s kódem entity, nebo na živé zvíře bez kódu, do osmi bloků.",
+  "scarecrow:diagnose-code": "Zadejte přesný registrovaný kód entity včetně ID modu.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Strašák:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Entita:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Odpovídající filtr:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Základ:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Výbava:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Celkový poloměr:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Vzdálenost:</strong></font> {6} bloků\n<font color=\"#FFFFFF\"><strong>Přirozený výskyt blokován:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Původ:</strong></font> {0}. Kontroluje se současný stav, nikoli dřívější výskyt.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Toto existující zvíře je vyňato:</strong></font> jeho původ není entityspawner.",
+  "scarecrow:diagnose-unknown": "nezaznamenán",
+  "scarecrow:diagnose-no-crow": "V této dimenzi není načten žádný živý strašák.",
+  "scarecrow:diagnose-yes": "Ano",
+  "scarecrow:diagnose-no": "Ne",
+  "scarecrow:diagnose-filter-miss": "žádný odpovídající filtr",
+  "scarecrow:diagnose-outside": "mimo poloměr"
 }

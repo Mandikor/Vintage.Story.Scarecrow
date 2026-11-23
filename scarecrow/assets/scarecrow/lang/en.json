@@ -111,5 +111,17 @@
   "scarecrow:reload-help": "Reload the scarecrow server configuration.",
   "scarecrow:reload-failed": "Could not reload scarecrow.json. Previous settings remain active; check the server log.",
   "scarecrow:reload-success": "Configuration reloaded. Updated {0} loaded scarecrows.",
-  "scarecrow:guide-radius-defaults": "The listed radii are defaults. Server settings may differ; the placed scarecrow's tooltip shows current values."
+  "scarecrow:guide-radius-defaults": "The listed radii are defaults. Server settings may differ; the placed scarecrow's tooltip shows current values.",
+  "scarecrow:diagnose-help": "Diagnose natural-spawn protection without changing the world.",
+  "scarecrow:diagnose-target": "Look at a living scarecrow with an entity code, or at a living animal without a code, within eight blocks.",
+  "scarecrow:diagnose-code": "Use an exact registered entity code, including its mod ID.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Scarecrow:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Entity:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Matching filter:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Base:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Equipment:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Total radius:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Distance:</strong></font> {6} blocks\n<font color=\"#FFFFFF\"><strong>Natural spawn blocked:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Origin:</strong></font> {0}. This checks the current state, not past spawning events.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>This existing animal is exempt:</strong></font> its origin is not entityspawner.",
+  "scarecrow:diagnose-unknown": "not recorded",
+  "scarecrow:diagnose-no-crow": "No living scarecrow is loaded in this dimension.",
+  "scarecrow:diagnose-yes": "Yes",
+  "scarecrow:diagnose-no": "No",
+  "scarecrow:diagnose-filter-miss": "no matching filter",
+  "scarecrow:diagnose-outside": "outside the radius"
 }

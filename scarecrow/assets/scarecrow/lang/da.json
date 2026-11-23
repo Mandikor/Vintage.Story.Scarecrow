@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "Genindlæs fugleskræmslernes serverindstillinger.",
   "scarecrow:reload-failed": "Kunne ikke genindlæse scarecrow.json. De nuværende indstillinger bevares; se serverloggen.",
   "scarecrow:reload-success": "Indstillinger genindlæst. Opdaterede indlæste fugleskræmsler: {0}.",
-  "scarecrow:guide-radius-defaults": "De viste radier er standardværdier. Serverindstillingerne kan være anderledes; den placerede fugleskræmsels værktøjstip viser de aktuelle værdier."
+  "scarecrow:guide-radius-defaults": "De viste radier er standardværdier. Serverindstillingerne kan være anderledes; den placerede fugleskræmsels værktøjstip viser de aktuelle værdier.",
+  "scarecrow:diagnose-help": "Undersøg naturlig spawn-beskyttelse uden at ændre verden.",
+  "scarecrow:diagnose-target": "Se på et levende fugleskræmsel med en entitetskode eller et levende dyr uden kode, inden for otte blokke.",
+  "scarecrow:diagnose-code": "Brug en præcis registreret entitetskode inklusive mod-ID.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Fugleskræmsel:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Entitet:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Matchende filter:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Basis:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Udstyr:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Samlet radius:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Afstand:</strong></font> {6} blokke\n<font color=\"#FFFFFF\"><strong>Naturlig spawn blokeret:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Oprindelse:</strong></font> {0}. Dette undersøger den aktuelle tilstand, ikke tidligere spawns.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Dette eksisterende dyr er undtaget:</strong></font> oprindelsen er ikke entityspawner.",
+  "scarecrow:diagnose-unknown": "ikke registreret",
+  "scarecrow:diagnose-no-crow": "Intet levende fugleskræmsel er indlæst i denne dimension.",
+  "scarecrow:diagnose-yes": "Ja",
+  "scarecrow:diagnose-no": "Nej",
+  "scarecrow:diagnose-filter-miss": "intet matchende filter",
+  "scarecrow:diagnose-outside": "uden for radius"
 }

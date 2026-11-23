@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "Перазагрузіць серверныя налады пудзілаў.",
   "scarecrow:reload-failed": "Не ўдалося перазагрузіць scarecrow.json. Дзейныя налады захаваны; праверце журнал сервера.",
   "scarecrow:reload-success": "Налады перазагружаны. Абноўлена загружаных пудзілаў: {0}.",
-  "scarecrow:guide-radius-defaults": "Паказаныя радыусы — стандартныя значэнні. Налады сервера могуць адрознівацца; падказка пастаўленага пудзіла паказвае актуальныя значэнні."
+  "scarecrow:guide-radius-defaults": "Паказаныя радыусы — стандартныя значэнні. Налады сервера могуць адрознівацца; падказка пастаўленага пудзіла паказвае актуальныя значэнні.",
+  "scarecrow:diagnose-help": "Праверыць блакіроўку натуральнага з’яўлення без змены свету.",
+  "scarecrow:diagnose-target": "Паглядзіце на жывое пудзіла з кодам сутнасці або на жывую жывёлу без кода, не далей за восем блокаў.",
+  "scarecrow:diagnose-code": "Укажыце дакладны зарэгістраваны код сутнасці з ID мода.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Пудзіла:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Сутнасць:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Адпаведны фільтр:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Аснова:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Рыштунак:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Агульны радыус:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Адлегласць:</strong></font> {6} блокаў\n<font color=\"#FFFFFF\"><strong>Натуральнае з’яўленне заблакіравана:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Паходжанне:</strong></font> {0}. Правяраецца бягучы стан, а не мінулыя з’яўленні.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Гэтая наяўная жывёла выключана:</strong></font> яе паходжанне не entityspawner.",
+  "scarecrow:diagnose-unknown": "не запісана",
+  "scarecrow:diagnose-no-crow": "У гэтым вымярэнні няма загружанага жывога пудзіла.",
+  "scarecrow:diagnose-yes": "Так",
+  "scarecrow:diagnose-no": "Не",
+  "scarecrow:diagnose-filter-miss": "няма адпаведнага фільтра",
+  "scarecrow:diagnose-outside": "па-за радыусам"
 }

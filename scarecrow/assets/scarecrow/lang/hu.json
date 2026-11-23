@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "A madárijesztők szerverbeállításainak újratöltése.",
   "scarecrow:reload-failed": "A scarecrow.json nem tölthető újra. A korábbi beállítások maradnak érvényben; ellenőrizd a szerver naplóját.",
   "scarecrow:reload-success": "Beállítások újratöltve. Frissített betöltött madárijesztők: {0}.",
-  "scarecrow:guide-radius-defaults": "A megadott sugarak alapértékek. A szerver beállításai eltérhetnek; az elhelyezett madárijesztő leírása mutatja az aktuális értékeket."
+  "scarecrow:guide-radius-defaults": "A megadott sugarak alapértékek. A szerver beállításai eltérhetnek; az elhelyezett madárijesztő leírása mutatja az aktuális értékeket.",
+  "scarecrow:diagnose-help": "A természetes megjelenés blokkolásának vizsgálata a világ módosítása nélkül.",
+  "scarecrow:diagnose-target": "Nézz egy élő madárijesztőre entitáskóddal, vagy egy élő állatra kód nélkül, legfeljebb nyolc blokkról.",
+  "scarecrow:diagnose-code": "Adj meg pontos, regisztrált entitáskódot a mod azonosítójával együtt.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Madárijesztő:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Entitás:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Illeszkedő szűrő:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Alap:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Felszerelés:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Teljes sugár:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Távolság:</strong></font> {6} blokk\n<font color=\"#FFFFFF\"><strong>Természetes megjelenés blokkolva:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Eredet:</strong></font> {0}. A jelenlegi állapotot vizsgálja, nem a korábbi megjelenéseket.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Ez a meglévő állat kivétel:</strong></font> eredete nem entityspawner.",
+  "scarecrow:diagnose-unknown": "nincs rögzítve",
+  "scarecrow:diagnose-no-crow": "Ebben a dimenzióban nincs betöltött élő madárijesztő.",
+  "scarecrow:diagnose-yes": "Igen",
+  "scarecrow:diagnose-no": "Nem",
+  "scarecrow:diagnose-filter-miss": "nincs illeszkedő szűrő",
+  "scarecrow:diagnose-outside": "a sugáron kívül"
 }

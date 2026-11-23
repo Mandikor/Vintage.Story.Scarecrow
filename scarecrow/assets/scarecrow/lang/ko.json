@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "허수아비 서버 설정을 다시 불러옵니다.",
   "scarecrow:reload-failed": "scarecrow.json을 다시 불러올 수 없습니다. 기존 설정이 유지됩니다. 서버 로그를 확인하세요.",
   "scarecrow:reload-success": "설정을 다시 불러왔습니다. 불러온 허수아비 {0}개를 갱신했습니다.",
-  "scarecrow:guide-radius-defaults": "표시된 반경은 기본값입니다. 서버 설정에 따라 달라질 수 있으며, 설치한 허수아비의 툴팁에 현재 값이 표시됩니다."
+  "scarecrow:guide-radius-defaults": "표시된 반경은 기본값입니다. 서버 설정에 따라 달라질 수 있으며, 설치한 허수아비의 툴팁에 현재 값이 표시됩니다.",
+  "scarecrow:diagnose-help": "세계를 변경하지 않고 자연 생성 차단을 진단합니다.",
+  "scarecrow:diagnose-target": "8블록 이내의 살아 있는 허수아비를 보고 엔티티 코드를 지정하거나, 살아 있는 동물을 보고 코드 없이 실행하세요.",
+  "scarecrow:diagnose-code": "모드 ID를 포함한 정확한 등록 엔티티 코드를 사용하세요.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>허수아비:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>엔티티:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>일치하는 필터:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>기본:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>장비:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>총 반경:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>거리:</strong></font> {6}블록\n<font color=\"#FFFFFF\"><strong>자연 생성 차단:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>출처:</strong></font> {0}. 과거 생성 기록이 아닌 현재 상태를 확인합니다.",
+  "scarecrow:diagnose-exempt": "이 기존 동물은 제외됩니다. 출처가 entityspawner가 아닙니다.",
+  "scarecrow:diagnose-unknown": "기록 없음",
+  "scarecrow:diagnose-no-crow": "이 차원에 불러온 살아 있는 허수아비가 없습니다.",
+  "scarecrow:diagnose-yes": "예",
+  "scarecrow:diagnose-no": "아니요",
+  "scarecrow:diagnose-filter-miss": "일치하는 필터 없음",
+  "scarecrow:diagnose-outside": "반경 밖"
 }

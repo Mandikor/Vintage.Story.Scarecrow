@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "Lataa linnunpelättimien palvelinasetukset uudelleen.",
   "scarecrow:reload-failed": "Tiedostoa scarecrow.json ei voitu ladata uudelleen. Aiemmat asetukset pysyvät käytössä; tarkista palvelimen loki.",
   "scarecrow:reload-success": "Asetukset ladattu uudelleen. Päivitettyjä ladattuja linnunpelättimiä: {0}.",
-  "scarecrow:guide-radius-defaults": "Luetellut säteet ovat oletusarvoja. Palvelinasetukset voivat poiketa niistä; asetetun linnunpelättimen työkaluvihje näyttää nykyiset arvot."
+  "scarecrow:guide-radius-defaults": "Luetellut säteet ovat oletusarvoja. Palvelinasetukset voivat poiketa niistä; asetetun linnunpelättimen työkaluvihje näyttää nykyiset arvot.",
+  "scarecrow:diagnose-help": "Tutki luonnollisen syntymisen estoa muuttamatta maailmaa.",
+  "scarecrow:diagnose-target": "Katso elävää linnunpelätintä entiteettikoodin kanssa tai elävää eläintä ilman koodia, enintään kahdeksan lohkon päästä.",
+  "scarecrow:diagnose-code": "Anna tarkka rekisteröity entiteettikoodi modin tunnuksineen.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Linnunpelätin:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Entiteetti:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Vastaava suodatin:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Perus:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Varusteet:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Kokonaissäde:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Etäisyys:</strong></font> {6} lohkoa\n<font color=\"#FFFFFF\"><strong>Luonnollinen syntyminen estetty:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Alkuperä:</strong></font> {0}. Tarkistetaan nykytila, ei aiempia syntymisiä.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Tämä olemassa oleva eläin on poikkeus:</strong></font> sen alkuperä ei ole entityspawner.",
+  "scarecrow:diagnose-unknown": "ei tallennettu",
+  "scarecrow:diagnose-no-crow": "Tässä ulottuvuudessa ei ole ladattua elävää linnunpelätintä.",
+  "scarecrow:diagnose-yes": "Kyllä",
+  "scarecrow:diagnose-no": "Ei",
+  "scarecrow:diagnose-filter-miss": "ei vastaavaa suodatinta",
+  "scarecrow:diagnose-outside": "säteen ulkopuolella"
 }

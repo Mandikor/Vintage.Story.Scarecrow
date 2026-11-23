@@ -430,6 +430,33 @@ equipment details twice. This local file is not synchronized by the server;
 existing placed-scarecrow tooltips and the server settings below are independent.
 All 33 existing languages include the new labels and guide.
 
+### Diagnose natural-spawn protection
+
+With the `controlserver` privilege, use `/scarecrow diagnose <modid:entitycode>`
+while looking at a living scarecrow within eight blocks. Supply an exact
+registered entity code, including its mod ID, without wildcards. The command
+checks whether a natural spawn of that entity would be blocked at your current
+position. It reports the matching filter (or `—`), base radius, equipment bonus,
+total radius and three-dimensional distance. A negative result identifies a
+missing filter or an out-of-range position.
+
+Alternatively, look at a living animal and use `/scarecrow diagnose` without a
+code. This reads its saved `origin` and compares its current position with loaded
+living scarecrows in the same dimension. An actual blocker takes priority over
+other candidates; otherwise the command prefers a matching filter, then the
+nearest scarecrow. Missing origin data is reported as unknown, not assumed to be
+player placement. Only `entityspawner` is subject to natural-spawn interception;
+other origins, including reproduction and player/cage placement, are exempt.
+
+Results appear only for the caller in the **Info Log** channel, in their language,
+without a duplicate in the input chat channel. Command errors still use the normal
+command feedback channel. Each report starts with a blank line; labels through
+their colons are bold white, while values retain normal formatting. The command does not spawn,
+remove or change animals and does not reconstruct earlier spawn events. Its
+natural-spawn result is hypothetical even for an already existing animal; it
+does not diagnose flee/attack AI. It requires a player and cannot run from the
+server console.
+
 ### Server protection settings
 
 On first startup, the mod creates `ModConfig/scarecrow.json` in the Vintage Story

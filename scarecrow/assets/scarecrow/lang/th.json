@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "โหลดการตั้งค่าเซิร์ฟเวอร์ของหุ่นไล่กาใหม่",
   "scarecrow:reload-failed": "ไม่สามารถโหลด scarecrow.json ใหม่ได้ การตั้งค่าเดิมยังคงใช้งานอยู่ โปรดตรวจสอบบันทึกเซิร์ฟเวอร์",
   "scarecrow:reload-success": "โหลดการตั้งค่าใหม่แล้ว อัปเดตหุ่นไล่กาที่โหลดไว้ {0} ตัว",
-  "scarecrow:guide-radius-defaults": "รัศมีที่ระบุเป็นค่าเริ่มต้น การตั้งค่าเซิร์ฟเวอร์อาจแตกต่างกัน คำอธิบายของหุ่นไล่กาที่วางแล้วจะแสดงค่าปัจจุบัน"
+  "scarecrow:guide-radius-defaults": "รัศมีที่ระบุเป็นค่าเริ่มต้น การตั้งค่าเซิร์ฟเวอร์อาจแตกต่างกัน คำอธิบายของหุ่นไล่กาที่วางแล้วจะแสดงค่าปัจจุบัน",
+  "scarecrow:diagnose-help": "ตรวจสอบการป้องกันการเกิดตามธรรมชาติโดยไม่เปลี่ยนโลก",
+  "scarecrow:diagnose-target": "มองหุ่นไล่กาที่ยังมีชีวิตพร้อมระบุรหัสเอนทิตี หรือมองสัตว์ที่ยังมีชีวิตโดยไม่ระบุรหัส ภายในแปดบล็อก",
+  "scarecrow:diagnose-code": "ใช้รหัสเอนทิตีที่ลงทะเบียนอย่างตรงตัว รวม ID ของม็อด",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>หุ่นไล่กา:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>เอนทิตี:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>ตัวกรองที่ตรงกัน:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>พื้นฐาน:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>อุปกรณ์:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>รัศมีรวม:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>ระยะทาง:</strong></font> {6} บล็อก\n<font color=\"#FFFFFF\"><strong>การเกิดตามธรรมชาติถูกป้องกัน:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>แหล่งกำเนิด:</strong></font> {0} ตรวจสอบสถานะปัจจุบัน ไม่ใช่เหตุการณ์เกิดในอดีต",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>สัตว์ที่มีอยู่นี้ได้รับการยกเว้น:</strong></font> แหล่งกำเนิดไม่ใช่ entityspawner",
+  "scarecrow:diagnose-unknown": "ไม่ได้บันทึก",
+  "scarecrow:diagnose-no-crow": "ไม่มีหุ่นไล่กาที่ยังมีชีวิตโหลดอยู่ในมิตินี้",
+  "scarecrow:diagnose-yes": "ใช่",
+  "scarecrow:diagnose-no": "ไม่",
+  "scarecrow:diagnose-filter-miss": "ไม่มีตัวกรองที่ตรงกัน",
+  "scarecrow:diagnose-outside": "นอกรัศมี"
 }

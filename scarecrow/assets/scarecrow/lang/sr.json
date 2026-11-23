@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "Поново учитај серверска подешавања страшила.",
   "scarecrow:reload-failed": "Није могуће поново учитати scarecrow.json. Претходна подешавања остају активна; проверите дневник сервера.",
   "scarecrow:reload-success": "Подешавања су поново учитана. Ажурирано учитаних страшила: {0}.",
-  "scarecrow:guide-radius-defaults": "Наведени полупречници су подразумеване вредности. Серверска подешавања могу бити другачија; опис постављеног страшила приказује тренутне вредности."
+  "scarecrow:guide-radius-defaults": "Наведени полупречници су подразумеване вредности. Серверска подешавања могу бити другачија; опис постављеног страшила приказује тренутне вредности.",
+  "scarecrow:diagnose-help": "Провери блокирање природног појављивања без измене света.",
+  "scarecrow:diagnose-target": "Погледај живо страшило уз код ентитета или живу животињу без кода, унутар осам блокова.",
+  "scarecrow:diagnose-code": "Унеси тачан регистровани код ентитета са ID-јем мода.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Страшило:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Ентитет:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Одговарајући филтер:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Основа:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Опрема:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Укупан полупречник:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Удаљеност:</strong></font> {6} блокова\n<font color=\"#FFFFFF\"><strong>Природно појављивање блокирано:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Порекло:</strong></font> {0}. Проверава се тренутно стање, не ранија појављивања.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Ова постојећа животиња је изузета:</strong></font> њено порекло није entityspawner.",
+  "scarecrow:diagnose-unknown": "није забележено",
+  "scarecrow:diagnose-no-crow": "У овој димензији нема учитаног живог страшила.",
+  "scarecrow:diagnose-yes": "Да",
+  "scarecrow:diagnose-no": "Не",
+  "scarecrow:diagnose-filter-miss": "нема одговарајућег филтера",
+  "scarecrow:diagnose-outside": "изван полупречника"
 }

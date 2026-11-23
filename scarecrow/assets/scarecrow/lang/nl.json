@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "De serverconfiguratie van vogelverschrikkers opnieuw laden.",
   "scarecrow:reload-failed": "scarecrow.json kon niet opnieuw worden geladen. De vorige instellingen blijven actief; bekijk het serverlogboek.",
   "scarecrow:reload-success": "Configuratie opnieuw geladen. Geladen vogelverschrikkers bijgewerkt: {0}.",
-  "scarecrow:guide-radius-defaults": "De genoemde stralen zijn standaardwaarden. Serverinstellingen kunnen afwijken; de tooltip van de geplaatste vogelverschrikker toont de huidige waarden."
+  "scarecrow:guide-radius-defaults": "De genoemde stralen zijn standaardwaarden. Serverinstellingen kunnen afwijken; de tooltip van de geplaatste vogelverschrikker toont de huidige waarden.",
+  "scarecrow:diagnose-help": "Natuurlijke spawnbeveiliging controleren zonder de wereld te wijzigen.",
+  "scarecrow:diagnose-target": "Kijk naar een levende vogelverschrikker met een entiteitscode, of een levend dier zonder code, binnen acht blokken.",
+  "scarecrow:diagnose-code": "Gebruik een exacte geregistreerde entiteitscode inclusief mod-ID.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Vogelverschrikker:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Entiteit:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Passend filter:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Basis:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Uitrusting:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Totale straal:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Afstand:</strong></font> {6} blokken\n<font color=\"#FFFFFF\"><strong>Natuurlijke spawn geblokkeerd:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Herkomst:</strong></font> {0}. Dit controleert de huidige toestand, geen eerdere spawns.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Dit bestaande dier is uitgezonderd:</strong></font> de herkomst is niet entityspawner.",
+  "scarecrow:diagnose-unknown": "niet opgeslagen",
+  "scarecrow:diagnose-no-crow": "Er is geen levende vogelverschrikker geladen in deze dimensie.",
+  "scarecrow:diagnose-yes": "Ja",
+  "scarecrow:diagnose-no": "Nee",
+  "scarecrow:diagnose-filter-miss": "geen passend filter",
+  "scarecrow:diagnose-outside": "buiten de straal"
 }

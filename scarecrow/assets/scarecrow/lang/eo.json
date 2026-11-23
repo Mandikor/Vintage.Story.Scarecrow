@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "Reŝargi la servilajn agordojn de birdotimigiloj.",
   "scarecrow:reload-failed": "Ne eblis reŝargi scarecrow.json. La antaŭaj agordoj restas aktivaj; kontrolu la servilan protokolon.",
   "scarecrow:reload-success": "Agordoj reŝargitaj. Ĝisdatigitaj ŝargitaj birdotimigiloj: {0}.",
-  "scarecrow:guide-radius-defaults": "La indikitaj radiusoj estas defaŭltaj valoroj. Servilaj agordoj povas malsami; la ŝpruchelpilo de la metita birdotimigilo montras la aktualajn valorojn."
+  "scarecrow:guide-radius-defaults": "La indikitaj radiusoj estas defaŭltaj valoroj. Servilaj agordoj povas malsami; la ŝpruchelpilo de la metita birdotimigilo montras la aktualajn valorojn.",
+  "scarecrow:diagnose-help": "Kontroli naturan aperoblokadon sen ŝanĝi la mondon.",
+  "scarecrow:diagnose-target": "Rigardu vivantan birdotimigilon kun entokodo aŭ vivantan beston sen kodo, ene de ok blokoj.",
+  "scarecrow:diagnose-code": "Uzu precizan registritan entokodon kun la mod-identigilo.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Birdotimigilo:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Ento:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Kongrua filtrilo:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Bazo:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Ekipaĵo:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Tuta radiuso:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Distanco:</strong></font> {6} blokoj\n<font color=\"#FFFFFF\"><strong>Natura apero blokita:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Origino:</strong></font> {0}. Tio kontrolas la nunan staton, ne antaŭajn aperojn.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Ĉi tiu ekzistanta besto estas esceptita:</strong></font> ĝia origino ne estas entityspawner.",
+  "scarecrow:diagnose-unknown": "ne registrita",
+  "scarecrow:diagnose-no-crow": "Neniu vivanta birdotimigilo estas ŝargita en ĉi tiu dimensio.",
+  "scarecrow:diagnose-yes": "Jes",
+  "scarecrow:diagnose-no": "Ne",
+  "scarecrow:diagnose-filter-miss": "neniu kongrua filtrilo",
+  "scarecrow:diagnose-outside": "ekster la radiuso"
 }

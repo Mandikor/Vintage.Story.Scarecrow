@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "Recharger la configuration serveur des épouvantails.",
   "scarecrow:reload-failed": "Impossible de recharger scarecrow.json. Les paramètres précédents restent actifs ; consultez le journal du serveur.",
   "scarecrow:reload-success": "Configuration rechargée. Épouvantails chargés mis à jour : {0}.",
-  "scarecrow:guide-radius-defaults": "Les rayons indiqués sont les valeurs par défaut. Les paramètres du serveur peuvent différer ; l’infobulle de l’épouvantail placé affiche les valeurs actuelles."
+  "scarecrow:guide-radius-defaults": "Les rayons indiqués sont les valeurs par défaut. Les paramètres du serveur peuvent différer ; l’infobulle de l’épouvantail placé affiche les valeurs actuelles.",
+  "scarecrow:diagnose-help": "Vérifier la protection contre les apparitions naturelles sans modifier le monde.",
+  "scarecrow:diagnose-target": "Visez un épouvantail vivant avec un code d’entité, ou un animal vivant sans code, à huit blocs maximum.",
+  "scarecrow:diagnose-code": "Indiquez un code d’entité enregistré exact avec son identifiant de mod.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Épouvantail :</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Entité :</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Filtre correspondant :</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Base :</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Équipement :</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Rayon total :</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Distance :</strong></font> {6} blocs\n<font color=\"#FFFFFF\"><strong>Apparition naturelle bloquée:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Origine :</strong></font> {0}. Vérification de l’état actuel, pas des apparitions passées.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Cet animal existant est exempté :</strong></font> son origine n’est pas entityspawner.",
+  "scarecrow:diagnose-unknown": "non enregistrée",
+  "scarecrow:diagnose-no-crow": "Aucun épouvantail vivant n’est chargé dans cette dimension.",
+  "scarecrow:diagnose-yes": "Oui",
+  "scarecrow:diagnose-no": "Non",
+  "scarecrow:diagnose-filter-miss": "aucun filtre correspondant",
+  "scarecrow:diagnose-outside": "hors du rayon"
 }

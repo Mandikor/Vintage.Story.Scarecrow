@@ -111,5 +111,17 @@
   "scarecrow:reload-help": "Перезавантажити серверні налаштування опудал.",
   "scarecrow:reload-failed": "Не вдалося перезавантажити scarecrow.json. Попередні налаштування залишаються активними; перевірте журнал сервера.",
   "scarecrow:reload-success": "Налаштування перезавантажено. Оновлено завантажених опудал: {0}.",
-  "scarecrow:guide-radius-defaults": "Зазначені радіуси є типовими значеннями. Налаштування сервера можуть відрізнятися; підказка встановленого опудала показує поточні значення."
+  "scarecrow:guide-radius-defaults": "Зазначені радіуси є типовими значеннями. Налаштування сервера можуть відрізнятися; підказка встановленого опудала показує поточні значення.",
+  "scarecrow:diagnose-help": "Перевірити блокування природної появи без зміни світу.",
+  "scarecrow:diagnose-target": "Подивіться на живе опудало з кодом сутності або на живу тварину без коду, не далі восьми блоків.",
+  "scarecrow:diagnose-code": "Укажіть точний зареєстрований код сутності з ID мода.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Опудало:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Сутність:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Відповідний фільтр:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Основа:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Спорядження:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Загальний радіус:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Відстань:</strong></font> {6} блоків\n<font color=\"#FFFFFF\"><strong>Природну появу заблоковано:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Походження:</strong></font> {0}. Перевіряється поточний стан, а не попередні появи.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Ця наявна тварина виключена:</strong></font> її походження не entityspawner.",
+  "scarecrow:diagnose-unknown": "не записано",
+  "scarecrow:diagnose-no-crow": "У цьому вимірі немає завантаженого живого опудала.",
+  "scarecrow:diagnose-yes": "Так",
+  "scarecrow:diagnose-no": "Ні",
+  "scarecrow:diagnose-filter-miss": "немає відповідного фільтра",
+  "scarecrow:diagnose-outside": "поза радіусом"
 }

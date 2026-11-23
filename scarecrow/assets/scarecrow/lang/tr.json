@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "Korkuluk sunucu yapılandırmasını yeniden yükle.",
   "scarecrow:reload-failed": "scarecrow.json yeniden yüklenemedi. Önceki ayarlar etkin kalır; sunucu günlüğünü kontrol edin.",
   "scarecrow:reload-success": "Yapılandırma yeniden yüklendi. Yüklenmiş {0} korkuluk güncellendi.",
-  "scarecrow:guide-radius-defaults": "Belirtilen yarıçaplar varsayılan değerlerdir. Sunucu ayarları farklı olabilir; yerleştirilmiş korkuluğun bilgi metni güncel değerleri gösterir."
+  "scarecrow:guide-radius-defaults": "Belirtilen yarıçaplar varsayılan değerlerdir. Sunucu ayarları farklı olabilir; yerleştirilmiş korkuluğun bilgi metni güncel değerleri gösterir.",
+  "scarecrow:diagnose-help": "Dünyayı değiştirmeden doğal doğma engelini incele.",
+  "scarecrow:diagnose-target": "Sekiz blok içinde, varlık koduyla yaşayan bir korkuluğa veya kod olmadan yaşayan bir hayvana bakın.",
+  "scarecrow:diagnose-code": "Mod kimliği dahil, tam ve kayıtlı bir varlık kodu kullanın.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Korkuluk:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Varlık:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Eşleşen filtre:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Temel:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Ekipman:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Toplam yarıçap:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Mesafe:</strong></font> {6} blok\n<font color=\"#FFFFFF\"><strong>Doğal doğma engellenir:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Köken:</strong></font> {0}. Geçmiş doğmalar değil, mevcut durum incelenir.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Bu mevcut hayvan muaftır:</strong></font> kökeni entityspawner değildir.",
+  "scarecrow:diagnose-unknown": "kaydedilmemiş",
+  "scarecrow:diagnose-no-crow": "Bu boyutta yüklenmiş yaşayan korkuluk yok.",
+  "scarecrow:diagnose-yes": "Evet",
+  "scarecrow:diagnose-no": "Hayır",
+  "scarecrow:diagnose-filter-miss": "eşleşen filtre yok",
+  "scarecrow:diagnose-outside": "yarıçapın dışında"
 }

@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "Wczytaj ponownie konfigurację serwera dla strachów na wróble.",
   "scarecrow:reload-failed": "Nie udało się ponownie wczytać scarecrow.json. Poprzednie ustawienia pozostają aktywne; sprawdź dziennik serwera.",
   "scarecrow:reload-success": "Konfiguracja wczytana ponownie. Zaktualizowane wczytane strachy na wróble: {0}.",
-  "scarecrow:guide-radius-defaults": "Podane promienie są wartościami domyślnymi. Ustawienia serwera mogą się różnić; opis postawionego stracha na wróble pokazuje aktualne wartości."
+  "scarecrow:guide-radius-defaults": "Podane promienie są wartościami domyślnymi. Ustawienia serwera mogą się różnić; opis postawionego stracha na wróble pokazuje aktualne wartości.",
+  "scarecrow:diagnose-help": "Sprawdź blokadę naturalnego pojawiania się bez zmieniania świata.",
+  "scarecrow:diagnose-target": "Spójrz na żywego stracha na wróble z kodem bytu lub na żywe zwierzę bez kodu, z odległości do ośmiu bloków.",
+  "scarecrow:diagnose-code": "Podaj dokładny zarejestrowany kod bytu wraz z identyfikatorem moda.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Strach na wróble:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Byt:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Pasujący filtr:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Baza:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Wyposażenie:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Łączny promień:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Odległość:</strong></font> {6} bloków\n<font color=\"#FFFFFF\"><strong>Naturalne pojawienie zablokowane:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Pochodzenie:</strong></font> {0}. Sprawdzany jest obecny stan, nie wcześniejsze pojawienia.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>To istniejące zwierzę jest wyłączone:</strong></font> jego pochodzenie to nie entityspawner.",
+  "scarecrow:diagnose-unknown": "niezapisane",
+  "scarecrow:diagnose-no-crow": "W tym wymiarze nie ma wczytanego żywego stracha na wróble.",
+  "scarecrow:diagnose-yes": "Tak",
+  "scarecrow:diagnose-no": "Nie",
+  "scarecrow:diagnose-filter-miss": "brak pasującego filtra",
+  "scarecrow:diagnose-outside": "poza promieniem"
 }

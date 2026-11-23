@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "Endurhlaða netþjónsstillingum fuglahræðanna.",
   "scarecrow:reload-failed": "Ekki tókst að endurhlaða scarecrow.json. Fyrri stillingar haldast virkar; skoðaðu annál netþjónsins.",
   "scarecrow:reload-success": "Stillingar endurhlaðnar. Uppfærðar hlaðnar fuglahræður: {0}.",
-  "scarecrow:guide-radius-defaults": "Uppgefnir radíusar eru sjálfgefin gildi. Stillingar netþjónsins geta verið aðrar; upplýsingatexti uppsettrar fuglahræðu sýnir gildandi gildi."
+  "scarecrow:guide-radius-defaults": "Uppgefnir radíusar eru sjálfgefin gildi. Stillingar netþjónsins geta verið aðrar; upplýsingatexti uppsettrar fuglahræðu sýnir gildandi gildi.",
+  "scarecrow:diagnose-help": "Athuga náttúrulega birtingarvörn án þess að breyta heiminum.",
+  "scarecrow:diagnose-target": "Horfðu á lifandi fuglahræðu með einingarkóða eða lifandi dýr án kóða, innan átta blokka.",
+  "scarecrow:diagnose-code": "Notaðu nákvæman skráðan einingarkóða með auðkenni viðbótar.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Fuglahræða:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Eining:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Samsvarandi sía:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Grunnur:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Búnaður:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Heildarradíus:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Fjarlægð:</strong></font> {6} blokkir\n<font color=\"#FFFFFF\"><strong>Náttúruleg birting stöðvuð:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Uppruni:</strong></font> {0}. Þetta athugar núverandi stöðu, ekki fyrri birtingar.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Þetta fyrirliggjandi dýr er undanþegið:</strong></font> uppruni þess er ekki entityspawner.",
+  "scarecrow:diagnose-unknown": "ekki skráður",
+  "scarecrow:diagnose-no-crow": "Engin lifandi fuglahræða er hlaðin í þessari vídd.",
+  "scarecrow:diagnose-yes": "Já",
+  "scarecrow:diagnose-no": "Nei",
+  "scarecrow:diagnose-filter-miss": "engin samsvarandi sía",
+  "scarecrow:diagnose-outside": "utan radíuss"
 }

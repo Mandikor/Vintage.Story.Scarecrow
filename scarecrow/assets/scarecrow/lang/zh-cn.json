@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "重新加载稻草人的服务器配置。",
   "scarecrow:reload-failed": "无法重新加载 scarecrow.json。原有设置仍然生效；请检查服务器日志。",
   "scarecrow:reload-success": "配置已重新加载。已更新 {0} 个已加载的稻草人。",
-  "scarecrow:guide-radius-defaults": "所列半径为默认值。服务器设置可能有所不同；已放置稻草人的提示会显示当前值。"
+  "scarecrow:guide-radius-defaults": "所列半径为默认值。服务器设置可能有所不同；已放置稻草人的提示会显示当前值。",
+  "scarecrow:diagnose-help": "诊断自然生成拦截，不改变世界。",
+  "scarecrow:diagnose-target": "在八格内看向活着的稻草人并指定实体代码，或看向活着的动物且不指定代码。",
+  "scarecrow:diagnose-code": "请使用包含模组 ID 的完整、已注册实体代码。",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>稻草人：</strong></font>{0}\n<font color=\"#FFFFFF\"><strong>实体：</strong></font>{1}\n<font color=\"#FFFFFF\"><strong>匹配筛选项：</strong></font>{2}\n<font color=\"#FFFFFF\"><strong>基础：</strong></font>{3} / <font color=\"#FFFFFF\"><strong>装备：</strong></font>{4} / <font color=\"#FFFFFF\"><strong>总半径：</strong></font>{5}\n<font color=\"#FFFFFF\"><strong>距离：</strong></font>{6} 格\n<font color=\"#FFFFFF\"><strong>自然生成被拦截：</strong></font>{7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>来源：</strong></font>{0}。检查当前状态，不追溯过去的生成事件。",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>这只现有动物不受限制：</strong></font>其来源不是 entityspawner。",
+  "scarecrow:diagnose-unknown": "未记录",
+  "scarecrow:diagnose-no-crow": "此维度没有已加载的活稻草人。",
+  "scarecrow:diagnose-yes": "是",
+  "scarecrow:diagnose-no": "否",
+  "scarecrow:diagnose-filter-miss": "没有匹配筛选项",
+  "scarecrow:diagnose-outside": "在半径之外"
 }

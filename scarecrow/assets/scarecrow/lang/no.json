@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "Last inn fugleskremslenes serverinnstillinger på nytt.",
   "scarecrow:reload-failed": "Kunne ikke laste inn scarecrow.json på nytt. Tidligere innstillinger beholdes; se serverloggen.",
   "scarecrow:reload-success": "Innstillingene er lastet inn på nytt. Oppdaterte innlastede fugleskremsler: {0}.",
-  "scarecrow:guide-radius-defaults": "De oppgitte radiene er standardverdier. Serverinnstillingene kan være annerledes; verktøytipset til det plasserte fugleskremselet viser gjeldende verdier."
+  "scarecrow:guide-radius-defaults": "De oppgitte radiene er standardverdier. Serverinnstillingene kan være annerledes; verktøytipset til det plasserte fugleskremselet viser gjeldende verdier.",
+  "scarecrow:diagnose-help": "Undersøk naturlig spawn-beskyttelse uten å endre verden.",
+  "scarecrow:diagnose-target": "Se på et levende fugleskremsel med en entitetskode, eller et levende dyr uten kode, innen åtte blokker.",
+  "scarecrow:diagnose-code": "Bruk en nøyaktig registrert entitetskode med mod-ID.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Fugleskremsel:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Entitet:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Samsvarende filter:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Basis:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Utstyr:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Samlet radius:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Avstand:</strong></font> {6} blokker\n<font color=\"#FFFFFF\"><strong>Naturlig spawn blokkert:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Opprinnelse:</strong></font> {0}. Dette undersøker nåværende tilstand, ikke tidligere spawns.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Dette eksisterende dyret er unntatt:</strong></font> opprinnelsen er ikke entityspawner.",
+  "scarecrow:diagnose-unknown": "ikke registrert",
+  "scarecrow:diagnose-no-crow": "Ingen levende fugleskremsler er lastet inn i denne dimensjonen.",
+  "scarecrow:diagnose-yes": "Ja",
+  "scarecrow:diagnose-no": "Nei",
+  "scarecrow:diagnose-filter-miss": "intet samsvarende filter",
+  "scarecrow:diagnose-outside": "utenfor radiusen"
 }

@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "Läs in fågelskrämmornas serverinställningar igen.",
   "scarecrow:reload-failed": "Kunde inte läsa in scarecrow.json igen. Tidigare inställningar behålls; se serverloggen.",
   "scarecrow:reload-success": "Inställningarna har lästs in igen. Uppdaterade inlästa fågelskrämmor: {0}.",
-  "scarecrow:guide-radius-defaults": "De angivna radierna är standardvärden. Serverinställningarna kan skilja sig; den placerade fågelskrämmans verktygstips visar aktuella värden."
+  "scarecrow:guide-radius-defaults": "De angivna radierna är standardvärden. Serverinställningarna kan skilja sig; den placerade fågelskrämmans verktygstips visar aktuella värden.",
+  "scarecrow:diagnose-help": "Undersök naturligt spawnskydd utan att ändra världen.",
+  "scarecrow:diagnose-target": "Titta på en levande fågelskrämma med en entitetskod, eller ett levande djur utan kod, inom åtta block.",
+  "scarecrow:diagnose-code": "Ange en exakt registrerad entitetskod inklusive mod-ID.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Fågelskrämma:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Entitet:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Matchande filter:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Bas:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Utrustning:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Total radie:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Avstånd:</strong></font> {6} block\n<font color=\"#FFFFFF\"><strong>Naturlig spawn blockerad:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Ursprung:</strong></font> {0}. Detta undersöker aktuellt tillstånd, inte tidigare spawns.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Detta befintliga djur är undantaget:</strong></font> ursprunget är inte entityspawner.",
+  "scarecrow:diagnose-unknown": "inte registrerat",
+  "scarecrow:diagnose-no-crow": "Ingen levande fågelskrämma är inläst i denna dimension.",
+  "scarecrow:diagnose-yes": "Ja",
+  "scarecrow:diagnose-no": "Nej",
+  "scarecrow:diagnose-filter-miss": "inget matchande filter",
+  "scarecrow:diagnose-outside": "utanför radien"
 }

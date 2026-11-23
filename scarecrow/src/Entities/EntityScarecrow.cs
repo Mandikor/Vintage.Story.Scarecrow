@@ -37,7 +37,7 @@ namespace Scarecrow
         private readonly Dictionary<string, AnimalSpawnRule> animalSpawnRules = new();
 
         // Clients always prefer the synchronized server value over their own asset defaults.
-        private int BaseScareRadius => WatchedAttributes.GetInt(BaseRadiusAttribute, scareRadius);
+        internal int BaseScareRadius => WatchedAttributes.GetInt(BaseRadiusAttribute, scareRadius);
         /// <summary>Natural-spawn protection, including the strongest attached equipment bonus.</summary>
         public int ScareRadius => BaseScareRadius + (GetBehavior<ScarecrowAttachments>()?.EquipmentRadiusBonus ?? 0);
 
@@ -409,19 +409,23 @@ namespace Scarecrow
         }
 
         private bool IsScaredAnimal(AssetLocation code)
+            => MatchingSpawnFilter(code) != null;
+
+        // Shared with diagnostics so qualified codes and legacy prefixes have identical semantics.
+        internal string MatchingSpawnFilter(AssetLocation code)
         {
             string path = code?.Path;
-            if (path == null) return false;
+            if (path == null) return null;
 
             string[] prefixes = config?.ScaredAnimalPrefixes;
-            if (prefixes == null) return false;
+            if (prefixes == null) return null;
 
             foreach (string prefix in prefixes)
             {
-                if (!string.IsNullOrEmpty(prefix) && GetAnimalSpawnRule(prefix).Matches(code)) return true;
+                if (!string.IsNullOrEmpty(prefix) && GetAnimalSpawnRule(prefix).Matches(code)) return prefix;
             }
 
-            return false;
+            return null;
         }
 
         private AnimalSpawnRule GetAnimalSpawnRule(string entry)

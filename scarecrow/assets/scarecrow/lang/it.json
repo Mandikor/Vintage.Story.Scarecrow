@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "Ricarica la configurazione server degli spaventapasseri.",
   "scarecrow:reload-failed": "Impossibile ricaricare scarecrow.json. Le impostazioni precedenti restano attive; controlla il registro del server.",
   "scarecrow:reload-success": "Configurazione ricaricata. Spaventapasseri caricati aggiornati: {0}.",
-  "scarecrow:guide-radius-defaults": "I raggi indicati sono i valori predefiniti. Le impostazioni del server possono variare; la descrizione dello spaventapasseri posizionato mostra i valori attuali."
+  "scarecrow:guide-radius-defaults": "I raggi indicati sono i valori predefiniti. Le impostazioni del server possono variare; la descrizione dello spaventapasseri posizionato mostra i valori attuali.",
+  "scarecrow:diagnose-help": "Verifica la protezione dalle generazioni naturali senza modificare il mondo.",
+  "scarecrow:diagnose-target": "Guarda uno spaventapasseri vivo con un codice entità, oppure un animale vivo senza codice, entro otto blocchi.",
+  "scarecrow:diagnose-code": "Indica un codice entità registrato esatto, incluso l’ID della mod.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Spaventapasseri:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Entità:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Filtro corrispondente:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Base:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Equipaggiamento:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Raggio totale:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Distanza:</strong></font> {6} blocchi\n<font color=\"#FFFFFF\"><strong>Generazione naturale bloccata:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Origine:</strong></font> {0}. Si verifica lo stato attuale, non le generazioni precedenti.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Questo animale esistente è esente:</strong></font> la sua origine non è entityspawner.",
+  "scarecrow:diagnose-unknown": "non registrata",
+  "scarecrow:diagnose-no-crow": "Nessuno spaventapasseri vivo è caricato in questa dimensione.",
+  "scarecrow:diagnose-yes": "Sì",
+  "scarecrow:diagnose-no": "No",
+  "scarecrow:diagnose-filter-miss": "nessun filtro corrispondente",
+  "scarecrow:diagnose-outside": "fuori dal raggio"
 }

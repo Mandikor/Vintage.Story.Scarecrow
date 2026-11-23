@@ -67,6 +67,7 @@ namespace Scarecrow
         private void RegisterCommands(ICoreServerAPI api)
         {
             _ = new ScarecrowAccessCommands(api);
+            _ = new ScarecrowDiagnostics(api);
             api.ChatCommands.GetOrCreate("scarecrow")
                 .BeginSubCommand("reload")
                 .WithDescription(Lang.Get("scarecrow:reload-help"))

@@ -15,6 +15,15 @@ compatibility follow-up test is currently open.
 
 ## Feature checklist
 
+- [x] **Natural-spawn diagnosis:** `/scarecrow diagnose <modid:entitycode>` for
+  a selected scarecrow and the caller's position, or `/scarecrow diagnose` for
+  a selected animal's origin/current position. Owner state and animals remain
+  unchanged; `controlserver` required, caller-only translated Info Log output.
+- [x] **Diagnosis game test:** I successfully tested the diagnosis feature with
+  output in the Info Log channel.
+- [x] **Diagnosis formatting retest:** I confirmed the leading blank line, bold
+  white labels including colons, and normally formatted values in the Info Log.
+
 - [x] **Reload server configuration:** `/scarecrow reload` for `controlserver`
   users and the server console. Updates loaded scarecrows, configurable base
   radii (16/12/8 defaults), tooltip data and enabled radius outlines;

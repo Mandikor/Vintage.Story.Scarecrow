@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "Презареждане на сървърните настройки на плашилата.",
   "scarecrow:reload-failed": "Неуспешно презареждане на scarecrow.json. Текущите настройки остават; проверете сървърния дневник.",
   "scarecrow:reload-success": "Настройките са презаредени. Обновени заредени плашила: {0}.",
-  "scarecrow:guide-radius-defaults": "Посочените радиуси са стойности по подразбиране. Сървърните настройки може да са различни; подсказката на поставеното плашило показва текущите стойности."
+  "scarecrow:guide-radius-defaults": "Посочените радиуси са стойности по подразбиране. Сървърните настройки може да са различни; подсказката на поставеното плашило показва текущите стойности.",
+  "scarecrow:diagnose-help": "Проверка на блокирането на естествена поява без промяна на света.",
+  "scarecrow:diagnose-target": "Погледнете живо плашило с код на обект или живо животно без код, до осем блока.",
+  "scarecrow:diagnose-code": "Въведете точен регистриран код на обект с ID на мода.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Плашило:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Обект:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Съответстващ филтър:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Основа:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Екипировка:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Общ радиус:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Разстояние:</strong></font> {6} блока\n<font color=\"#FFFFFF\"><strong>Естествената поява е блокирана:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Произход:</strong></font> {0}. Проверява се текущото състояние, не минали появи.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Това съществуващо животно е изключено:</strong></font> произходът му не е entityspawner.",
+  "scarecrow:diagnose-unknown": "незаписан",
+  "scarecrow:diagnose-no-crow": "В това измерение няма заредено живо плашило.",
+  "scarecrow:diagnose-yes": "Да",
+  "scarecrow:diagnose-no": "Не",
+  "scarecrow:diagnose-filter-miss": "няма съответстващ филтър",
+  "scarecrow:diagnose-outside": "извън радиуса"
 }

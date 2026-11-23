@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "Recarregar a configuração de servidor dos espantalhos.",
   "scarecrow:reload-failed": "Não foi possível recarregar scarecrow.json. As configurações anteriores continuam ativas; consulte o registro do servidor.",
   "scarecrow:reload-success": "Configuração recarregada. Espantalhos carregados atualizados: {0}.",
-  "scarecrow:guide-radius-defaults": "Os raios indicados são valores padrão. As configurações do servidor podem ser diferentes; a descrição do espantalho colocado mostra os valores atuais."
+  "scarecrow:guide-radius-defaults": "Os raios indicados são valores padrão. As configurações do servidor podem ser diferentes; a descrição do espantalho colocado mostra os valores atuais.",
+  "scarecrow:diagnose-help": "Verificar a proteção contra surgimentos naturais sem alterar o mundo.",
+  "scarecrow:diagnose-target": "Olhe para um espantalho vivo com um código de entidade, ou um animal vivo sem código, a até oito blocos.",
+  "scarecrow:diagnose-code": "Informe um código de entidade registrado exato, incluindo o ID da mod.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Espantalho:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Entidade:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Filtro correspondente:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Base:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Equipamento:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Raio total:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Distância:</strong></font> {6} blocos\n<font color=\"#FFFFFF\"><strong>Surgimento natural bloqueado:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Origem:</strong></font> {0}. Verifica o estado atual, não surgimentos anteriores.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Este animal existente está isento:</strong></font> sua origem não é entityspawner.",
+  "scarecrow:diagnose-unknown": "não registrada",
+  "scarecrow:diagnose-no-crow": "Nenhum espantalho vivo está carregado nesta dimensão.",
+  "scarecrow:diagnose-yes": "Sim",
+  "scarecrow:diagnose-no": "Não",
+  "scarecrow:diagnose-filter-miss": "nenhum filtro correspondente",
+  "scarecrow:diagnose-outside": "fora do raio"
 }

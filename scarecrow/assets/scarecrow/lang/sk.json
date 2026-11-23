@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "Znova načítať serverové nastavenia strašiakov.",
   "scarecrow:reload-failed": "Súbor scarecrow.json sa nepodarilo znova načítať. Doterajšie nastavenia zostávajú aktívne; skontrolujte protokol servera.",
   "scarecrow:reload-success": "Nastavenia znova načítané. Aktualizované načítané strašiaky: {0}.",
-  "scarecrow:guide-radius-defaults": "Uvedené polomery sú predvolené hodnoty. Nastavenia servera sa môžu líšiť; aktuálne hodnoty zobrazuje popis umiestneného strašiaka."
+  "scarecrow:guide-radius-defaults": "Uvedené polomery sú predvolené hodnoty. Nastavenia servera sa môžu líšiť; aktuálne hodnoty zobrazuje popis umiestneného strašiaka.",
+  "scarecrow:diagnose-help": "Overiť blokovanie prirodzeného výskytu bez zmeny sveta.",
+  "scarecrow:diagnose-target": "Pozerajte sa na živého strašiaka s kódom entity alebo na živé zviera bez kódu, do ôsmich blokov.",
+  "scarecrow:diagnose-code": "Zadajte presný registrovaný kód entity vrátane ID modu.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Strašiak:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Entita:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Zodpovedajúci filter:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Základ:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Výbava:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Celkový polomer:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Vzdialenosť:</strong></font> {6} blokov\n<font color=\"#FFFFFF\"><strong>Prirodzený výskyt blokovaný:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Pôvod:</strong></font> {0}. Kontroluje sa aktuálny stav, nie skorší výskyt.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Toto existujúce zviera je vyňaté:</strong></font> jeho pôvod nie je entityspawner.",
+  "scarecrow:diagnose-unknown": "nezaznamenaný",
+  "scarecrow:diagnose-no-crow": "V tejto dimenzii nie je načítaný žiadny živý strašiak.",
+  "scarecrow:diagnose-yes": "Áno",
+  "scarecrow:diagnose-no": "Nie",
+  "scarecrow:diagnose-filter-miss": "žiadny zodpovedajúci filter",
+  "scarecrow:diagnose-outside": "mimo polomeru"
 }

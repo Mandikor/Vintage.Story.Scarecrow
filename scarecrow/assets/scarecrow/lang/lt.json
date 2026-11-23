@@ -113,5 +113,17 @@
   "scarecrow:reload-help": "Iš naujo įkelti kaliausių serverio nustatymus.",
   "scarecrow:reload-failed": "Nepavyko iš naujo įkelti scarecrow.json. Ankstesni nustatymai lieka aktyvūs; patikrinkite serverio žurnalą.",
   "scarecrow:reload-success": "Nustatymai įkelti iš naujo. Atnaujinta įkeltų kaliausių: {0}.",
-  "scarecrow:guide-radius-defaults": "Nurodyti spinduliai yra numatytosios reikšmės. Serverio nustatymai gali skirtis; pastatytos kaliausės patarime rodomos dabartinės reikšmės."
+  "scarecrow:guide-radius-defaults": "Nurodyti spinduliai yra numatytosios reikšmės. Serverio nustatymai gali skirtis; pastatytos kaliausės patarime rodomos dabartinės reikšmės.",
+  "scarecrow:diagnose-help": "Tikrinti natūralaus atsiradimo blokavimą nekeičiant pasaulio.",
+  "scarecrow:diagnose-target": "Žiūrėkite į gyvą kaliausę su objekto kodu arba į gyvą gyvūną be kodo, ne toliau kaip aštuoni blokai.",
+  "scarecrow:diagnose-code": "Naudokite tikslų registruotą objekto kodą su modifikacijos ID.",
+  "scarecrow:diagnose-report": "<font color=\"#FFFFFF\"><strong>Kaliausė:</strong></font> {0}\n<font color=\"#FFFFFF\"><strong>Objektas:</strong></font> {1}\n<font color=\"#FFFFFF\"><strong>Atitinkantis filtras:</strong></font> {2}\n<font color=\"#FFFFFF\"><strong>Pagrindas:</strong></font> {3} / <font color=\"#FFFFFF\"><strong>Įranga:</strong></font> {4} / <font color=\"#FFFFFF\"><strong>Bendras spindulys:</strong></font> {5}\n<font color=\"#FFFFFF\"><strong>Atstumas:</strong></font> {6} blokų\n<font color=\"#FFFFFF\"><strong>Natūralus atsiradimas blokuojamas:</strong></font> {7}",
+  "scarecrow:diagnose-origin": "<font color=\"#FFFFFF\"><strong>Kilmė:</strong></font> {0}. Tikrinama dabartinė būsena, ne ankstesni atsiradimai.",
+  "scarecrow:diagnose-exempt": "<font color=\"#FFFFFF\"><strong>Šiam esamam gyvūnui taikoma išimtis:</strong></font> jo kilmė nėra entityspawner.",
+  "scarecrow:diagnose-unknown": "neįrašyta",
+  "scarecrow:diagnose-no-crow": "Šioje dimensijoje nėra įkeltos gyvos kaliausės.",
+  "scarecrow:diagnose-yes": "Taip",
+  "scarecrow:diagnose-no": "Ne",
+  "scarecrow:diagnose-filter-miss": "nėra atitinkančio filtro",
+  "scarecrow:diagnose-outside": "už spindulio ribų"
 }
