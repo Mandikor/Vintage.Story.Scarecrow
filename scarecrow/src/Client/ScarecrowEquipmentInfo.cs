@@ -108,17 +108,23 @@ namespace Scarecrow
             return text.ToString();
         }
 
+        internal static void AppendTooltip(ItemStack stack, ItemSlot slot, ref string description)
+        {
+            var behavior = stack?.Collectible?.GetBehavior<EquipmentTooltip>();
+            if (behavior == null || !behavior.info.config.ShowEquipmentTooltips || slot?.Itemstack == null) return;
+            var text = new StringBuilder(description);
+            if (text.Length > 0 && text[text.Length - 1] != '\n') text.AppendLine();
+            text.AppendLine().AppendLine("<font color=\"#FFC850\"><strong>" + Lang.Get(SectionTitle) + "</strong></font>");
+            text.AppendLine(behavior.info.Body(slot.Itemstack));
+            description = text.ToString();
+        }
+
+        // Retain the resolved information on its collectible, without adding text inside
+        // GetHeldItemInfo: overrides may append their own descriptions after that hook.
         private sealed class EquipmentTooltip : CollectibleBehavior
         {
-            private readonly ScarecrowEquipmentInfo info;
+            internal readonly ScarecrowEquipmentInfo info;
             internal EquipmentTooltip(CollectibleObject collectible, ScarecrowEquipmentInfo info) : base(collectible) { this.info = info; }
-            public override void GetHeldItemInfo(ItemSlot slot, StringBuilder text, IWorldAccessor world, bool withDebugInfo)
-            {
-                if (!info.config.ShowEquipmentTooltips || slot?.Itemstack == null) return;
-                if (text.Length > 0 && text[text.Length - 1] != '\n') text.AppendLine();
-                text.AppendLine().AppendLine("<font color=\"#FFC850\"><strong>" + Lang.Get(SectionTitle) + "</strong></font>");
-                text.AppendLine(info.Body(slot.Itemstack));
-            }
         }
     }
 }

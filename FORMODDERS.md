@@ -486,6 +486,13 @@ modified. The optional inventory section is controlled by the personal
 with either preference. All new labels and the guide are translated in the 33
 existing language files.
 
+The equipment behavior stores the resolved information; it does not insert
+text during `GetHeldItemInfo`, because item subclasses may append their own
+description after that callback. When inventory tooltips are enabled, a
+client-scoped Harmony postfix appends the section to the completed
+`ItemStack.GetDescription` result. It leaves server descriptions unchanged and
+is removed when the client mod system is disposed.
+
 ## Specialized integrations
 
 These existing attributes identify specialized paths; they are not universal

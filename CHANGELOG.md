@@ -7,6 +7,11 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ### Equipment information and survival handbook
 
+- Append the optional equipment tooltip only after the complete item/mod
+  description has been produced, so item-specific text stays before it.
+  The client-only hook is installed only when enabled and removed on disposal;
+  server descriptions remain unchanged. Automated ordering checks passed;
+  my in-game retest confirmed the section appears at the end of regular tooltips.
 - Add a localized Scarecrow guide with recipe links for the large and little
   scarecrows and the straw dummy. Explain placement, equipment, natural-spawn
   blocking versus animal AI, strongest-only bonuses, Ctrl+H, pickup and ownership.

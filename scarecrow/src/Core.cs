@@ -12,6 +12,7 @@ namespace Scarecrow
         private System.IDisposable serverCompatibility;
         private System.IDisposable transformEditor;
         private System.IDisposable handbook;
+        private System.IDisposable equipmentTooltip;
 
         // Register stable JSON-facing names on both sides before entities or inventories load.
         public override void Start(ICoreAPI api)
@@ -49,6 +50,7 @@ namespace Scarecrow
         {
             base.StartClientSide(api);
             ClientConfig = ScarecrowConfigLoader.LoadClient(api);
+            if (ClientConfig.ShowEquipmentTooltips) equipmentTooltip = new ScarecrowEquipmentTooltipTail();
             ModCompatibility.RegisterClientRenderers(api);
             transformEditor = new ScarecrowTransformEditor(api);
             handbook = new ScarecrowHandbook(api);
@@ -68,6 +70,8 @@ namespace Scarecrow
             transformEditor = null;
             handbook?.Dispose();
             handbook = null;
+            equipmentTooltip?.Dispose();
+            equipmentTooltip = null;
             base.Dispose();
         }
     }

@@ -394,7 +394,8 @@ separate `ModConfig/scarecrow-client.json` in their own Vintage Story data direc
 ```
 
 Set `ShowEquipmentTooltips` to `true` and restart the client to show the additional
-equipment section in inventory tooltips. It starts with a blank line and a bold
+equipment section at the end of inventory tooltips, after the complete item/mod
+description. It starts with a blank line and a bold
 gold heading; details use normal text. Zero bonuses are omitted. The handbook
 information remains available with either preference, without repeating the
 equipment details twice. This local file is not synchronized by the server;

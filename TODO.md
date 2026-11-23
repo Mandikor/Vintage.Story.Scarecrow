@@ -6,7 +6,8 @@ implementing them. I have removed tool bonuses from the plan.
 ## Current status — updated 2026-11-23
 
 I have completed the planned compatibility reviews and the recorded game tests.
-The equipment handbook/tooltip extension and its game test are complete.
+The equipment handbook/tooltip extension and its original game test are complete.
+The follow-up tooltip ordering change also passed its game test.
 Visual customization (item 4) and aging/repair (item 5) remain deliberately deferred.
 
 The Animal Cages occupied-cage save/reload test also passed. No additional
@@ -21,6 +22,10 @@ compatibility follow-up test is currently open.
   All 33 languages extended; automated configuration and information checks passed.
 - [x] **Equipment information game test:** I confirmed that the guide, handbook
   links and personal tooltip settings work in game.
+- [x] **Equipment tooltip order retest:** I confirmed that the equipment section
+  appears at the end of the regular tooltip across the tested items. Automated
+  checks cover ordering, one section only, the display preference, server
+  isolation and hook cleanup.
 
 1. [x] **Show protection information in the placed scarecrow's tooltip when looking
    at it, without chat messages.** Display the
