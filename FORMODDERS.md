@@ -566,6 +566,10 @@ in the patches are starting points to retain when extending these integrations.
 One item occupies each slot. Shift + right-click equips a permitted held item;
 Shift + empty hand removes individual equipment. Owner-UID and claim checks apply
 to attaching, removing and targeted pickup, including server packet handling.
+The owner can grant per-entity `equipment` access for gear changes or `full` access
+for gear changes and pickup through `/scarecrow access`. Delegates cannot manage
+grants. The server checks claim rights in addition to grants. Grants use player
+UIDs and persist with the entity; they are not copied into the pickup item.
 Existing ownerless entities retain claim-based access. Unsupported items or failed
 placement do not consume the held item.
 

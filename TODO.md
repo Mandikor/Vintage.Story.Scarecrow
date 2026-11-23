@@ -15,6 +15,14 @@ compatibility follow-up test is currently open.
 
 ## Feature checklist
 
+- [x] **Shared player access:** owner-managed per-scarecrow UID grants for
+  equipment changes or full access including pickup; claim rights still apply.
+  Commands and handbook guidance are included in all 33 languages.
+- [x] **Shared access command availability:** I confirmed that the command is
+  usable in game.
+- [ ] **Shared access multiplayer game test:** test with two players, both permission levels,
+  downgrade/revoke, claims, save/reload and pickup/replacement.
+
 - [x] **Equipment information and survival handbook:** guide with recipe links;
   supported equipment pages show positions, radius bonuses and wind motion.
   Optional personal inventory section uses `ShowEquipmentTooltips` (default off)

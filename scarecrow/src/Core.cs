@@ -59,6 +59,7 @@ namespace Scarecrow
         public override void StartServerSide(ICoreServerAPI api)
         {
             base.StartServerSide(api);
+            _ = new ScarecrowAccessCommands(api);
             serverCompatibility = ModCompatibility.StartServer(api);
         }
 

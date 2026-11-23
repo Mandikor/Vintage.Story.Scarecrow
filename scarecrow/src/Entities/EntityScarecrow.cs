@@ -20,7 +20,7 @@ namespace Scarecrow
     /// The differences between them are data driven through the entity attributes
     /// "scareRadius" (blocks) and "pickupItemCode" (item returned when picked up).
     /// </summary>
-    public class EntityScarecrow : EntityHumanoid
+    public partial class EntityScarecrow : EntityHumanoid
     {
         private const int DefaultScareRadius = 8;
         private const string DefaultPickupItemCode = "game:strawdummy";
@@ -77,6 +77,9 @@ namespace Scarecrow
         // Ownership is persisted by UID; display names are synchronized separately for tooltips.
         public void AssignOwner(IPlayer player)
         {
+            // A newly placed or transferred scarecrow starts without inherited grants.
+            WatchedAttributes.RemoveAttribute(SharedAccessAttribute);
+            WatchedAttributes.MarkPathDirty(SharedAccessAttribute);
             WatchedAttributes.SetString("ownerUid", player.PlayerUID);
             if (!string.IsNullOrEmpty(player.PlayerName))
                 WatchedAttributes.SetString(OwnerNameAttribute, player.PlayerName);
@@ -102,10 +105,16 @@ namespace Scarecrow
             => CheckManagementAccess(player, true);
 
         private bool CheckManagementAccess(IPlayer player, bool reportFailure)
+            => CheckManagementAccess(player, reportFailure, false);
+
+        internal bool TryPickup(IPlayer player) => CheckManagementAccess(player, true, true);
+
+        private bool CheckManagementAccess(IPlayer player, bool reportFailure, bool pickup)
         {
             if (!Alive || player == null) return false;
             string ownerUid = WatchedAttributes.GetString("ownerUid");
-            string reason = !string.IsNullOrEmpty(ownerUid) && ownerUid != player.PlayerUID ? "owner"
+            string reason = !string.IsNullOrEmpty(ownerUid) && ownerUid != player.PlayerUID
+                && !HasSharedAccess(player.PlayerUID, pickup) ? (pickup ? "pickup-access" : "owner")
                 : !World.Claims.TryAccess(player, Pos.AsBlockPos, EnumBlockAccessFlags.Use) ? "claim" : null;
             if (reason == null) return true;
             if (reportFailure) InteractionFeedback.Show(player, reason);
@@ -305,7 +314,11 @@ namespace Scarecrow
         public override void OnInteract(EntityAgent byEntity, ItemSlot slot, Vec3d hitPosition, EnumInteractMode mode)
         {
             // A denied interaction must never reach attachment handling in the base class.
-            if (mode == EnumInteractMode.Interact && !TryManage((byEntity as EntityPlayer)?.Player)) return;
+            bool pickup = mode == EnumInteractMode.Interact && byEntity.Controls.CtrlKey
+                && byEntity.RightHandItemSlot?.Empty == true;
+            if (mode == EnumInteractMode.Interact && !(pickup
+                ? TryPickup((byEntity as EntityPlayer)?.Player)
+                : TryManage((byEntity as EntityPlayer)?.Player))) return;
 
             if (!Alive || World.Side == EnumAppSide.Client || mode != EnumInteractMode.Interact)
             {
@@ -313,7 +326,7 @@ namespace Scarecrow
                 return;
             }
 
-            if (byEntity.Controls.CtrlKey && byEntity.RightHandItemSlot.Empty)
+            if (pickup)
             {
                 Item item = byEntity.World.GetItem(new AssetLocation(pickupItemCode));
                 if (item == null)

@@ -39,7 +39,12 @@ namespace Scarecrow
                 return "<a href=\"handbook://" + GuiHandbookItemStackPage.PageCodeForStack(stack) + "\">" + label + "</a>";
             }
             return Lang.Get("scarecrow:guide-text", Link("scarecrow:scarecrow"),
-                Link("scarecrow:little-scarecrow"), Link("game:strawdummy"));
+                Link("scarecrow:little-scarecrow"), Link("game:strawdummy"))
+                + "\n\n" + Lang.Get("scarecrow:access-guide")
+                + "\n/scarecrow access add &lt;player&gt; equipment"
+                + "\n/scarecrow access add &lt;player&gt; full"
+                + "\n/scarecrow access remove &lt;player&gt;"
+                + "\n/scarecrow access list";
         }
 
         public void Dispose()

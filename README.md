@@ -126,12 +126,31 @@ errors distinguish unsuitable items from occupied attachment points. Ownership
 and claim failures also explain why access was denied. Holding the interaction
 key does not repeatedly flash the same failure; successful actions stay silent.
 
-A placed scarecrow records its owner. Only that owner can pick it up, attach
-equipment or remove attachments, and claim permissions must also allow access.
+A placed scarecrow records its owner. By default, only that owner can pick it up,
+attach equipment or remove attachments. The owner can grant access to individual
+players; claim permissions must also allow access.
 These checks run on the server, including attachment packets. Old scarecrows with
 no recorded owner remain accessible to players with claim permission; they are not
 automatically assigned to the first player who interacts with them. Damage and
 destruction still follow the game's existing rules.
+
+To share a scarecrow, look at it from within eight blocks and use:
+
+```text
+/scarecrow access add PlayerName equipment
+/scarecrow access add PlayerName full
+/scarecrow access remove PlayerName
+/scarecrow access list
+```
+
+`equipment` permits attaching and removing gear. `full` additionally permits
+targeted pickup. Repeating `add` changes an existing player's permission. Only the
+owner can change or list grants; invited players cannot pass their access on.
+Names can belong to online players or players already known to the server.
+Permissions are saved by player UID, so a name change does not revoke access.
+Pickup preserves equipment but not grants: the next placing player becomes the
+owner with an empty access list. The normal tooltip continues to show the owner;
+the access list appears only when requested with the command.
 
 Picking up a scarecrow packs its equipment into the returned item. Placing it again
 restores each attachment to its previous slot, including its durability and other

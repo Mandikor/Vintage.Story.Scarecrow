@@ -5,6 +5,20 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ## Unreleased
 
+### Shared player access
+
+- Added owner-managed access per scarecrow through `/scarecrow access add`,
+  `remove` and `list`. `equipment` permits gear changes; `full` also permits
+  targeted pickup. Repeating `add` updates the permission.
+- Save grants by player UID and enforce them on the server alongside claim rights.
+  Only the owner may manage or list grants. Ownerless behavior remains claim-based.
+  Pickup keeps equipment but clears grants on the next placement.
+- Added command feedback and handbook guidance in all 33 languages. The normal
+  owner tooltip remains unchanged. Multiplayer game testing is pending.
+- Automated checks passed for permission levels, UID isolation, persistence,
+  revocation, claim checks, placement reset and command handling. The existing
+  equipment tooltip/handbook checks passed; the build has no warnings or errors.
+
 ### Equipment information and survival handbook
 
 - Append the optional equipment tooltip only after the complete item/mod
