@@ -3,101 +3,77 @@
     "enabled": true,
     "op": "addmerge",
     "file": "fantasycreatures:entities/land/surface_skeleton.json",
-    "path": "/server/behaviors/5/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 2.5,
-      "movespeed": 0.04,
-      "seekingRange": 12,
-      "cancelOnHurt": true,
-      "animationSpeed": 1.3,
-      "whenInEmotionState": "fleeondamage",
-      "animation": "run",
-      "retaliateAttacks": false,
-      "instafleeOnDamageChance": 0
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/surface_skeleton.json",
-    "path": "/server/behaviors/5/aitasks/-",
-    "value": {
-      "code": "meleeattack",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 2,
-      "damageByType": {
-        "normal": 1.5
+    "path": "/server/behaviors/5/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "priority": 2.5,
+        "movespeed": 0.04,
+        "seekingRange": 12,
+        "cancelOnHurt": true,
+        "animationSpeed": 1.3,
+        "whenInEmotionState": "fleeondamage",
+        "animation": "run",
+        "retaliateAttacks": false,
+        "instafleeOnDamageChance": 0
       },
-      "damageTierByType": {
-        "normal": 0
+      {
+        "code": "meleeattack",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "priority": 2,
+        "damageByType": {
+          "normal": 1.5
+        },
+        "damageTierByType": {
+          "normal": 0
+        },
+        "mincooldown": 500,
+        "maxcooldown": 1750,
+        "damagePlayerAtMs": 400,
+        "attackDurationMs": 1000,
+        "animation": "attack",
+        "animationSpeed": 1.5,
+        "retaliateAttacks": false
       },
-      "mincooldown": 500,
-      "maxcooldown": 1750,
-      "damagePlayerAtMs": 400,
-      "attackDurationMs": 1000,
-      "animation": "attack",
-      "animationSpeed": 1.5,
-      "retaliateAttacks": false
-    },
+      {
+        "code": "seekentity",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "priority": 1.5,
+        "mincooldown": 400,
+        "maxcooldown": 800,
+        "movespeed": 0.043,
+        "seekingRange": 24,
+        "animationSpeed": 1.3,
+        "animation": "run",
+        "sound": "creature/skeleton_rattle",
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "fantasycreatures:entities/land/surface_skeleton.json",
-    "path": "/server/behaviors/5/aitasks/-",
-    "value": {
-      "code": "seekentity",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 1.5,
-      "mincooldown": 400,
-      "maxcooldown": 800,
-      "movespeed": 0.043,
-      "seekingRange": 24,
-      "animationSpeed": 1.3,
-      "animation": "run",
-      "sound": "creature/skeleton_rattle",
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/surface_skeleton.json",
-    "path": "/server/behaviors/5/aitasks/4/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/surface_skeleton.json",
-    "path": "/server/behaviors/5/aitasks/4/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/surface_skeleton.json",
-    "path": "/server/behaviors/5/aitasks/4/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/5/aitasks/4/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   }
 ]

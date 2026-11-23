@@ -2,29 +2,21 @@
   {
     "enabled": true,
     "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "value": "censership:censerattachable-*-up",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
+    "value": [
+      "censership:censerattachable-*-up",
+      "censership:censercarryable-*-up"
+    ],
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes",
     "op": "addmerge"
   },
   {
     "enabled": true,
     "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "value": "censership:censerattachable-*-up",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
-    "op": "addmerge"
-  },
-  {
-    "enabled": true,
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "value": "censership:censercarryable-*-up",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "op": "addmerge"
-  },
-  {
-    "enabled": true,
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "value": "censership:censercarryable-*-up",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
+    "value": [
+      "censership:censerattachable-*-up",
+      "censership:censercarryable-*-up"
+    ],
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes",
     "op": "addmerge"
   }
 ]

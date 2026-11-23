@@ -3,139 +3,103 @@
     "enabled": true,
     "file": "feverstonewilds:entities/land/ostrich.json",
     "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "meleeattack",
-      "priority": 2,
-      "damage": 8,
-      "damageTier": 2,
-      "damageType": "SlashingAttack",
-      "slot": 1,
-      "mincooldown": 1500,
-      "maxcooldown": 1500,
-      "attackDurationMs": 900,
-      "damagePlayerAtMs": 300,
-      "animation": "Attack",
-      "animationSpeed": 2,
-      "whenInEmotionState": "aggressiveondamage",
-      "sound": "creature/ostrich/attack",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "ostrich-male": true,
-        "ostrich-female": true,
-        "*": false
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "meleeattack",
+        "priority": 2,
+        "damage": 8,
+        "damageTier": 2,
+        "damageType": "SlashingAttack",
+        "slot": 1,
+        "mincooldown": 1500,
+        "maxcooldown": 1500,
+        "attackDurationMs": 900,
+        "damagePlayerAtMs": 300,
+        "animation": "Attack",
+        "animationSpeed": 2,
+        "whenInEmotionState": "aggressiveondamage",
+        "sound": "creature/ostrich/attack",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "ostrich-male": true,
+          "ostrich-female": true,
+          "*": false
+        }
+      },
+      {
+        "code": "fleeentity",
+        "priority": 1.8,
+        "movespeed": 0.057,
+        "seekingRange": 12,
+        "animation": "Run",
+        "animationSpeed": 3,
+        "sound": "creature/ostrich/ostrichhurt",
+        "whenInEmotionState": "fleeondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "ostrich-male": true,
+          "ostrich-female": true,
+          "*": false
+        }
+      },
+      {
+        "code": "seekentity",
+        "priority": 1.7,
+        "mincooldown": 1000,
+        "maxcooldown": 1500,
+        "seekingRange": 20,
+        "movespeed": 0.05,
+        "animation": "Run",
+        "animationSpeed": 3,
+        "whenInEmotionState": "aggressiveondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "ostrich-male": true,
+          "ostrich-female": true,
+          "*": false
+        }
       }
-    },
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/ostrich.json",
     "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 1.8,
-      "movespeed": 0.057,
-      "seekingRange": 12,
-      "animation": "Run",
-      "animationSpeed": 3,
-      "sound": "creature/ostrich/ostrichhurt",
-      "whenInEmotionState": "fleeondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "ostrich-male": true,
-        "ostrich-female": true,
-        "*": false
-      }
-    },
+    "path": "/server/behaviors/10/aitasks/8/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/ostrich.json",
     "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "seekentity",
-      "priority": 1.7,
-      "mincooldown": 1000,
-      "maxcooldown": 1500,
-      "seekingRange": 20,
-      "movespeed": 0.05,
-      "animation": "Run",
-      "animationSpeed": 3,
-      "whenInEmotionState": "aggressiveondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "ostrich-male": true,
-        "ostrich-female": true,
-        "*": false
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/ostrich.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/8/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/ostrich.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/8/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/ostrich.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/8/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/ostrich.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/9/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/ostrich.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/9/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/ostrich.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/9/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/10/aitasks/9/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   }
 ]

@@ -3,249 +3,225 @@
     "enabled": true,
     "op": "addmerge",
     "file": "pantherinae:entities/animal/mammal/pantherinae-neofelis-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.42,
-      "priorityForCancel": 9.42,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "pantherinae-neofelis-adult-female-{species}-*",
-        "pantherinae-neofelis-adult-male-{species}-*",
-        "pantherinae-neofelis-baby-female-{species}-*",
-        "pantherinae-neofelis-baby-male-{species}-*"
-      ],
-      "movespeedByType": {
-        "*-female-diardi-*": 0.04,
-        "*-male-diardi-*": 0.045,
-        "*-female-nebulosa-*": 0.04,
-        "*-male-nebulosa-*": 0.045,
-        "*": 0.5
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.42,
+        "priorityForCancel": 9.42,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "pantherinae-neofelis-adult-female-{species}-*",
+          "pantherinae-neofelis-adult-male-{species}-*",
+          "pantherinae-neofelis-baby-female-{species}-*",
+          "pantherinae-neofelis-baby-male-{species}-*"
+        ],
+        "movespeedByType": {
+          "*-female-diardi-*": 0.04,
+          "*-male-diardi-*": 0.045,
+          "*-female-nebulosa-*": 0.04,
+          "*-male-nebulosa-*": 0.045,
+          "*": 0.5
+        },
+        "animationSpeed": 2.0,
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeed": 2.0,
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "pantherinae:entities/animal/mammal/pantherinae-neofelis-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.42,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "pantherinae-neofelis-adult-female-{species}-*",
-        "pantherinae-neofelis-adult-male-{species}-*",
-        "pantherinae-neofelis-baby-female-{species}-*",
-        "pantherinae-neofelis-baby-male-{species}-*"
-      ],
-      "movespeedByType": {
-        "*": 0.02
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.42,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "pantherinae-neofelis-adult-female-{species}-*",
+          "pantherinae-neofelis-adult-male-{species}-*",
+          "pantherinae-neofelis-baby-female-{species}-*",
+          "pantherinae-neofelis-baby-male-{species}-*"
+        ],
+        "movespeedByType": {
+          "*": 0.02
+        },
+        "animationSpeed": 1,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeed": 1,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "pantherinae:entities/animal/mammal/pantherinae-neofelis-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.41,
-      "animation": "Walk",
-      "skipEntityCodes": [
-        "pantherinae-neofelis-adult-female-{species}-*",
-        "pantherinae-neofelis-adult-male-{species}-*",
-        "pantherinae-neofelis-baby-female-{species}-*",
-        "pantherinae-neofelis-baby-male-{species}-*"
-      ],
-      "movespeedByType": {
-        "*-female-diardi-*": 0.0032,
-        "*-male-diardi-*": 0.0035,
-        "*-female-nebulosa-*": 0.0032,
-        "*-male-nebulosa-*": 0.0035,
-        "*": 0.005
-      },
-      "animationSpeed": 0.95,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.41,
+        "animation": "Walk",
+        "skipEntityCodes": [
+          "pantherinae-neofelis-adult-female-{species}-*",
+          "pantherinae-neofelis-adult-male-{species}-*",
+          "pantherinae-neofelis-baby-female-{species}-*",
+          "pantherinae-neofelis-baby-male-{species}-*"
+        ],
+        "movespeedByType": {
+          "*-female-diardi-*": 0.0032,
+          "*-male-diardi-*": 0.0035,
+          "*-female-nebulosa-*": 0.0032,
+          "*-male-nebulosa-*": 0.0035,
+          "*": 0.005
+        },
+        "animationSpeed": 0.95,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "pantherinae:entities/animal/mammal/pantherinae-neofelis-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.42,
-      "priorityForCancel": 9.42,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "pantherinae-neofelis-adult-female-{species}-*",
-        "pantherinae-neofelis-adult-male-{species}-*",
-        "pantherinae-neofelis-baby-female-{species}-*",
-        "pantherinae-neofelis-baby-male-{species}-*"
-      ],
-      "movespeedByType": {
-        "*": 0.0176
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.42,
+        "priorityForCancel": 9.42,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "pantherinae-neofelis-adult-female-{species}-*",
+          "pantherinae-neofelis-adult-male-{species}-*",
+          "pantherinae-neofelis-baby-female-{species}-*",
+          "pantherinae-neofelis-baby-male-{species}-*"
+        ],
+        "movespeedByType": {
+          "*": 0.0176
+        },
+        "animationSpeed": 2.2,
+        "seekingRange": 10,
+        "fleeingDistance": 40,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "threatening",
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeed": 2.2,
-      "seekingRange": 10,
-      "fleeingDistance": 40,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "threatening",
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "pantherinae:entities/animal/mammal/pantherinae-neofelis-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.42,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "pantherinae-neofelis-adult-female-{species}-*",
-        "pantherinae-neofelis-adult-male-{species}-*",
-        "pantherinae-neofelis-baby-female-{species}-*",
-        "pantherinae-neofelis-baby-male-{species}-*"
-      ],
-      "movespeedByType": {
-        "movespeed": 0.01
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.42,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "pantherinae-neofelis-adult-female-{species}-*",
+          "pantherinae-neofelis-adult-male-{species}-*",
+          "pantherinae-neofelis-baby-female-{species}-*",
+          "pantherinae-neofelis-baby-male-{species}-*"
+        ],
+        "movespeedByType": {
+          "movespeed": 0.01
+        },
+        "animationSpeed": 1.5,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeed": 1.5,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "pantherinae:entities/animal/mammal/pantherinae-neofelis-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.41,
-      "animation": "Walk",
-      "skipEntityCodes": [
-        "pantherinae-neofelis-adult-female-{species}-*",
-        "pantherinae-neofelis-adult-male-{species}-*",
-        "pantherinae-neofelis-baby-female-{species}-*",
-        "pantherinae-neofelis-baby-male-{species}-*"
-      ],
-      "movespeedByType": {
-        "*": 0.0016
-      },
-      "animationSpeed": 1.05,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.41,
+        "animation": "Walk",
+        "skipEntityCodes": [
+          "pantherinae-neofelis-adult-female-{species}-*",
+          "pantherinae-neofelis-adult-male-{species}-*",
+          "pantherinae-neofelis-baby-female-{species}-*",
+          "pantherinae-neofelis-baby-male-{species}-*"
+        ],
+        "movespeedByType": {
+          "*": 0.0016
+        },
+        "animationSpeed": 1.05,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   }
 ]

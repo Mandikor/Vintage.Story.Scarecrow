@@ -3,223 +3,183 @@
     "enabled": true,
     "file": "feverstonewilds:entities/land/griffon.json",
     "op": "addmerge",
-    "path": "/server/behaviors/21/aitasks/-",
-    "value": {
-      "code": "flightmeleeattack",
-      "slot": 1,
-      "priority": 3.5,
-      "attackRange": 2.5,
-      "damage": 7.5,
-      "damageTier": 2,
-      "damageType": "SlashingAttack",
-      "mincooldown": 750,
-      "maxcooldown": 1500,
-      "attackDurationMs": 800,
-      "damageAtMs": 500,
-      "animation": "airattack",
-      "animationSpeed": 1.0,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "griffon-wild-male": true,
-        "griffon-wild-female": true,
-        "griffon-tamed-male": false,
-        "griffon-tamed-female": false,
-        "*": false
+    "path": "/server/behaviors/21/aitasks",
+    "value": [
+      {
+        "code": "flightmeleeattack",
+        "slot": 1,
+        "priority": 3.5,
+        "attackRange": 2.5,
+        "damage": 7.5,
+        "damageTier": 2,
+        "damageType": "SlashingAttack",
+        "mincooldown": 750,
+        "maxcooldown": 1500,
+        "attackDurationMs": 800,
+        "damageAtMs": 500,
+        "animation": "airattack",
+        "animationSpeed": 1.0,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "griffon-wild-male": true,
+          "griffon-wild-female": true,
+          "griffon-tamed-male": false,
+          "griffon-tamed-female": false,
+          "*": false
+        }
+      },
+      {
+        "code": "flightseekentity",
+        "slot": 0,
+        "priority": 2.0,
+        "seekingRange": 12,
+        "preferredAltitude": 3,
+        "animation": "speedfly",
+        "animationSpeed": 1.0,
+        "whenNotInEmotionState": "saturated",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "griffon-wild-male": true,
+          "griffon-wild-female": true,
+          "griffon-tamed-male": false,
+          "griffon-tamed-female": false,
+          "*": false
+        }
+      },
+      {
+        "code": "meleeattack",
+        "priority": 3,
+        "damage": 9.5,
+        "damageTier": 2,
+        "damageType": "SlashingAttack",
+        "slot": 1,
+        "mincooldown": 750,
+        "maxcooldown": 1500,
+        "attackDurationMs": 800,
+        "damagePlayerAtMs": 500,
+        "animation": "Attack",
+        "animationSpeed": 1.5,
+        "sound": " ",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "griffon-wild-male": true,
+          "griffon-wild-female": true,
+          "griffon-tamed-male": false,
+          "griffon-tamed-female": false,
+          "*": false
+        }
+      },
+      {
+        "code": "fleeentity",
+        "priority": 1.6,
+        "movespeed": 0.052,
+        "seekingRange": 20,
+        "animation": "Run",
+        "animationSpeed": 1.1,
+        "whenInEmotionState": "fleeondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "griffon-wild-male": true,
+          "griffon-wild-female": true,
+          "griffon-tamed-male": false,
+          "griffon-tamed-female": false,
+          "*": false
+        }
+      },
+      {
+        "code": "seekentity",
+        "priority": 1.51,
+        "movespeed": 0.052,
+        "seekingRange": 9,
+        "belowTempSeekingRange": 25,
+        "belowTempThreshold": -5,
+        "animation": "Run",
+        "animationSpeed": 1.1,
+        "sound": " ",
+        "whenNotInEmotionState": "saturated",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "griffon-wild-male": true,
+          "griffon-wild-female": true,
+          "griffon-tamed-male": false,
+          "griffon-tamed-female": false,
+          "*": false
+        }
+      },
+      {
+        "code": "seekentity",
+        "priority": 1.5,
+        "movespeed": 0.045,
+        "seekingRange": 15,
+        "belowTempSeekingRange": 25,
+        "belowTempThreshold": -5,
+        "animation": "trot",
+        "animationSpeed": 1,
+        "sound": " ",
+        "whenNotInEmotionState": "saturated",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "griffon-wild-male": true,
+          "griffon-wild-female": true,
+          "griffon-tamed-male": false,
+          "griffon-tamed-female": false,
+          "*": false
+        }
+      },
+      {
+        "code": "seekentity",
+        "priority": 1.49,
+        "movespeed": 0.052,
+        "seekingRange": 18,
+        "animation": "Run",
+        "animationSpeed": 1,
+        "sound": " ",
+        "whenInEmotionState": "aggressiveondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "griffon-wild-male": true,
+          "griffon-wild-female": true,
+          "griffon-tamed-male": false,
+          "griffon-tamed-female": false,
+          "*": false
+        }
       }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/griffon.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/21/aitasks/-",
-    "value": {
-      "code": "flightseekentity",
-      "slot": 0,
-      "priority": 2.0,
-      "seekingRange": 12,
-      "preferredAltitude": 3,
-      "animation": "speedfly",
-      "animationSpeed": 1.0,
-      "whenNotInEmotionState": "saturated",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "griffon-wild-male": true,
-        "griffon-wild-female": true,
-        "griffon-tamed-male": false,
-        "griffon-tamed-female": false,
-        "*": false
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/griffon.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/21/aitasks/-",
-    "value": {
-      "code": "meleeattack",
-      "priority": 3,
-      "damage": 9.5,
-      "damageTier": 2,
-      "damageType": "SlashingAttack",
-      "slot": 1,
-      "mincooldown": 750,
-      "maxcooldown": 1500,
-      "attackDurationMs": 800,
-      "damagePlayerAtMs": 500,
-      "animation": "Attack",
-      "animationSpeed": 1.5,
-      "sound": " ",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "griffon-wild-male": true,
-        "griffon-wild-female": true,
-        "griffon-tamed-male": false,
-        "griffon-tamed-female": false,
-        "*": false
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/griffon.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/21/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 1.6,
-      "movespeed": 0.052,
-      "seekingRange": 20,
-      "animation": "Run",
-      "animationSpeed": 1.1,
-      "whenInEmotionState": "fleeondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "griffon-wild-male": true,
-        "griffon-wild-female": true,
-        "griffon-tamed-male": false,
-        "griffon-tamed-female": false,
-        "*": false
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/griffon.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/21/aitasks/-",
-    "value": {
-      "code": "seekentity",
-      "priority": 1.51,
-      "movespeed": 0.052,
-      "seekingRange": 9,
-      "belowTempSeekingRange": 25,
-      "belowTempThreshold": -5,
-      "animation": "Run",
-      "animationSpeed": 1.1,
-      "sound": " ",
-      "whenNotInEmotionState": "saturated",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "griffon-wild-male": true,
-        "griffon-wild-female": true,
-        "griffon-tamed-male": false,
-        "griffon-tamed-female": false,
-        "*": false
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/griffon.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/21/aitasks/-",
-    "value": {
-      "code": "seekentity",
-      "priority": 1.5,
-      "movespeed": 0.045,
-      "seekingRange": 15,
-      "belowTempSeekingRange": 25,
-      "belowTempThreshold": -5,
-      "animation": "trot",
-      "animationSpeed": 1,
-      "sound": " ",
-      "whenNotInEmotionState": "saturated",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "griffon-wild-male": true,
-        "griffon-wild-female": true,
-        "griffon-tamed-male": false,
-        "griffon-tamed-female": false,
-        "*": false
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/griffon.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/21/aitasks/-",
-    "value": {
-      "code": "seekentity",
-      "priority": 1.49,
-      "movespeed": 0.052,
-      "seekingRange": 18,
-      "animation": "Run",
-      "animationSpeed": 1,
-      "sound": " ",
-      "whenInEmotionState": "aggressiveondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "griffon-wild-male": true,
-        "griffon-wild-female": true,
-        "griffon-tamed-male": false,
-        "griffon-tamed-female": false,
-        "*": false
-      }
-    },
+    ],
     "side": "server"
   },
   {

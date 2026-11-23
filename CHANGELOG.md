@@ -5,6 +5,30 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ## Unreleased
 
+### Server-side attachment shape warnings
+
+- Keep separately rendered arm equipment out of the server's combined body
+  shape as well as the client's. Recognize the configured Scarecrow attachment
+  renderer on servers, where no client renderer instance exists.
+- Prevent duplicate `flame` attachment points from paired gas walking sticks
+  and missing `GlassSouthL` step-parent warnings from More Lanterns metal models.
+  Preserve body selection points, static neck/foot equipment and custom-renderer
+  fallback. Wind-chime sound availability checks remain independent.
+
+### Consolidated JSON patches
+
+- Consolidate compatible operations sharing the same asset target and load
+  conditions. Merge object additions at a common object path and batch appended
+  task/code lists, reducing 1,407 operations to 583 across the same 215 patch files.
+  Updated 166 files without moving optional integrations between mod directories.
+- Preserve client/server scope, enablement, array-index boundaries and the order
+  of dependent remove/replace/addeach operations. Different scopes or operations
+  that cannot safely share one merge remain separate.
+- Verify 436 server/client applications with the game's actual patch library:
+  old and consolidated patches produce identical target JSON, including property
+  and array order, on the compatible local source versions. Record a pre-existing
+  Crows 0.2.8 path mismatch for separate review; its 0.2.7 baseline is unchanged.
+
 ### Primitive Survival lights on the little scarecrow's neck
 
 - Allow 13 wooden lanterns and seven filled Firefly Jar types in the little

@@ -3,278 +3,254 @@
     "enabled": true,
     "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/apterygidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "apterygidae-adult-female-{type}",
-        "apterygidae-adult-male-{type}",
-        "apterygidae-baby-female-{type}",
-        "apterygidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-adult-female-apteryxhaastii": 0.0375,
-        "*-adult-male-apteryxhaastii": 0.0354,
-        "*-adult-female-apteryxaustralis": 0.0344,
-        "*-adult-male-apteryxaustralis": 0.0323,
-        "*-adult-female-apteryxmantelli": 0.0323,
-        "*-adult-male-apteryxmantelli": 0.0302,
-        "*-adult-female-apteryxrowi": 0.0323,
-        "*-adult-male-apteryxrowi": 0.0302,
-        "*-adult-female-apteryxowenii": 0.0281,
-        "*-adult-male-apteryxowenii": 0.026
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "apterygidae-adult-female-{type}",
+          "apterygidae-adult-male-{type}",
+          "apterygidae-baby-female-{type}",
+          "apterygidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-adult-female-apteryxhaastii": 0.0375,
+          "*-adult-male-apteryxhaastii": 0.0354,
+          "*-adult-female-apteryxaustralis": 0.0344,
+          "*-adult-male-apteryxaustralis": 0.0323,
+          "*-adult-female-apteryxmantelli": 0.0323,
+          "*-adult-male-apteryxmantelli": 0.0302,
+          "*-adult-female-apteryxrowi": 0.0323,
+          "*-adult-male-apteryxrowi": 0.0302,
+          "*-adult-female-apteryxowenii": 0.0281,
+          "*-adult-male-apteryxowenii": 0.026
+        },
+        "animationSpeedByType": {
+          "*-adult-female-apteryxhaastii": 5.63,
+          "*-adult-male-apteryxhaastii": 5.9,
+          "*-adult-female-apteryxaustralis": 5.73,
+          "*-adult-male-apteryxaustralis": 5.81,
+          "*-adult-female-apteryxmantelli": 10.77,
+          "*-adult-male-apteryxmantelli": 11.07,
+          "*-adult-female-apteryxrowi": 5.38,
+          "*-adult-male-apteryxrowi": 5.44,
+          "*-adult-female-apteryxowenii": 9.37,
+          "*-adult-male-apteryxowenii": 9.53
+        },
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeedByType": {
-        "*-adult-female-apteryxhaastii": 5.63,
-        "*-adult-male-apteryxhaastii": 5.9,
-        "*-adult-female-apteryxaustralis": 5.73,
-        "*-adult-male-apteryxaustralis": 5.81,
-        "*-adult-female-apteryxmantelli": 10.77,
-        "*-adult-male-apteryxmantelli": 11.07,
-        "*-adult-female-apteryxrowi": 5.38,
-        "*-adult-male-apteryxrowi": 5.44,
-        "*-adult-female-apteryxowenii": 9.37,
-        "*-adult-male-apteryxowenii": 9.53
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "apterygidae-adult-female-{type}",
+          "apterygidae-adult-male-{type}",
+          "apterygidae-baby-female-{type}",
+          "apterygidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "apterygidae-adult-*": 0.02,
+          "*": 0.025
+        },
+        "animationSpeedByType": {
+          "apterygidae-adult-*": 2
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "dinornithidae:entities/animal/bird/apterygidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "apterygidae-adult-female-{type}",
-        "apterygidae-adult-male-{type}",
-        "apterygidae-baby-female-{type}",
-        "apterygidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "apterygidae-adult-*": 0.02,
-        "*": 0.025
-      },
-      "animationSpeedByType": {
-        "apterygidae-adult-*": 2
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "dinornithidae:entities/animal/bird/apterygidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.41,
-      "animation": "Walk",
-      "skipEntityCodes": [
-        "apterygidae-adult-female-{type}",
-        "apterygidae-adult-male-{type}",
-        "apterygidae-baby-female-{type}",
-        "apterygidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "apterygidae-adult-*": 0.004
-      },
-      "animationSpeedByType": {
-        "*-adult-female-apteryxaustralis": 1.25,
-        "*-adult-male-apteryxaustralis": 1.35,
-        "*-adult-female-apteryxhaastii": 1.125,
-        "*-adult-male-apteryxhaastii": 1.25,
-        "*-adult-female-apteryxmantelli": 2.5,
-        "*-adult-male-apteryxmantelli": 2.75,
-        "*-adult-female-apteryxowenii": 2.5,
-        "*-adult-male-apteryxowenii": 2.75,
-        "*-adult-female-apteryxrowi": 1.75,
-        "*-adult-male-apteryxrowi": 1.35
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "threatening",
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.41,
+        "animation": "Walk",
+        "skipEntityCodes": [
+          "apterygidae-adult-female-{type}",
+          "apterygidae-adult-male-{type}",
+          "apterygidae-baby-female-{type}",
+          "apterygidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "apterygidae-adult-*": 0.004
+        },
+        "animationSpeedByType": {
+          "*-adult-female-apteryxaustralis": 1.25,
+          "*-adult-male-apteryxaustralis": 1.35,
+          "*-adult-female-apteryxhaastii": 1.125,
+          "*-adult-male-apteryxhaastii": 1.25,
+          "*-adult-female-apteryxmantelli": 2.5,
+          "*-adult-male-apteryxmantelli": 2.75,
+          "*-adult-female-apteryxowenii": 2.5,
+          "*-adult-male-apteryxowenii": 2.75,
+          "*-adult-female-apteryxrowi": 1.75,
+          "*-adult-male-apteryxrowi": 1.35
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "threatening",
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/apterygidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "apterygidae-adult-female-{type}",
-        "apterygidae-adult-male-{type}",
-        "apterygidae-baby-female-{type}",
-        "apterygidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "apterygidae-baby-*": 0.015
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "apterygidae-adult-female-{type}",
+          "apterygidae-adult-male-{type}",
+          "apterygidae-baby-female-{type}",
+          "apterygidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "apterygidae-baby-*": 0.015
+        },
+        "animationSpeedByType": {
+          "*-baby-*": 10.0
+        },
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeedByType": {
-        "*-baby-*": 10.0
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "apterygidae-adult-female-{type}",
+          "apterygidae-adult-male-{type}",
+          "apterygidae-baby-female-{type}",
+          "apterygidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "apterygidae-baby-*": 0.01
+        },
+        "animationSpeedByType": {
+          "*-baby-*": 2
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "dinornithidae:entities/animal/bird/apterygidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "apterygidae-adult-female-{type}",
-        "apterygidae-adult-male-{type}",
-        "apterygidae-baby-female-{type}",
-        "apterygidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "apterygidae-baby-*": 0.01
-      },
-      "animationSpeedByType": {
-        "*-baby-*": 2
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "dinornithidae:entities/animal/bird/apterygidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.41,
-      "animation": "Walk",
-      "skipEntityCodes": [
-        "apterygidae-adult-female-{type}",
-        "apterygidae-adult-male-{type}",
-        "apterygidae-baby-female-{type}",
-        "apterygidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "apterygidae-baby-*": 0.004
-      },
-      "animationSpeedByType": {
-        "*-baby-*": 2.5
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "threatening",
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.41,
+        "animation": "Walk",
+        "skipEntityCodes": [
+          "apterygidae-adult-female-{type}",
+          "apterygidae-adult-male-{type}",
+          "apterygidae-baby-female-{type}",
+          "apterygidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "apterygidae-baby-*": 0.004
+        },
+        "animationSpeedByType": {
+          "*-baby-*": 2.5
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "threatening",
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   }
 ]

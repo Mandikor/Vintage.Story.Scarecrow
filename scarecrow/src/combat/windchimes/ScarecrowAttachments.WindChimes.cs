@@ -61,9 +61,9 @@ namespace Scarecrow
             // The container calls us with "default"; EntityBehaviorAttachable resolves the slot
             // name only inside base.addGearToShape. Inspect the actual inventory slot here so
             // separately rendered arm lights/tools are not also inserted into the body mesh.
-            if (entity.Properties?.Client?.Renderer is WindChimeScarecrowRenderer
-                && ((windChimesEnabled && gearslot.Itemstack?.ItemAttributes?["scarecrowWindChime"].AsBool(false) == true)
-                    || (IsArmInventorySlot(gearslot) && AnimatedArmLantern.Matches(gearslot.Itemstack))))
+            if (UsesSeparateArmRenderer() && IsArmInventorySlot(gearslot)
+                && (ScarecrowPendulum.IsWindChime(gearslot.Itemstack)
+                    || AnimatedArmLantern.Matches(gearslot.Itemstack)))
                 return entityShape;
             string armCode = GetArmSlotCode(gearslot);
             ModelTransform neckTransform = IsNeckInventorySlot(gearslot)
@@ -82,6 +82,19 @@ namespace Scarecrow
         }
 
         private bool IsArmInventorySlot(ItemSlot slot) => GetArmSlotCode(slot) != null;
+
+        private bool UsesSeparateArmRenderer()
+        {
+            var client = entity.Properties?.Client;
+            if (client?.Renderer is WindChimeScarecrowRenderer) return true;
+            // The server also assembles the body shape, but never creates a client renderer.
+            // Keep private arm meshes out there too: merging source models can duplicate
+            // attachment codes or resolve their internal step parents against the body.
+            // Body selection points and the little scarecrow's static neck gear stay intact.
+            return entity.World?.Side == EnumAppSide.Server
+                && (client?.RendererName == "ScarecrowAttachmentShape"
+                    || client?.RendererName == "ScarecrowWindChimeShape");
+        }
 
         private bool IsNeckInventorySlot(ItemSlot slot)
         {

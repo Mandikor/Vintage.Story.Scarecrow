@@ -142,6 +142,33 @@ and assets `arcticwolves`. In your own mod, use its normal patch folder and an
 appropriate Scarecrow dependency/conditional-loading arrangement. Avoid applying
 patches to absent target assets. Install the integration on server and clients.
 
+### Group operations by target
+
+Keep additions to the same asset and object together in one `addmerge` operation,
+as in the complete `/attributes` example above. Batch additions to an existing
+array by targeting the array itself with an array value:
+
+```json
+[
+  {
+    "file": "scarecrow:entities/nonliving/scarecrow.json",
+    "op": "addmerge",
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes",
+    "value": ["mymod:gardencharm", "mymod:othertool-*"]
+  }
+]
+```
+
+Use the parent array path when appending several entries this way. Keeping `/-`
+while supplying an array would append that entire array as one nested element.
+Task lists use the same parent-array pattern, with task objects as array entries.
+Existing entries and the order of the new entries must remain intact.
+
+Do not force every change into a single operation: client/server sides and other
+conditions must agree. Updates to distinct existing array indices cannot be
+represented as object keys in a merged value. Keep dependent removals/replacements
+in order and retain the optional compatibility folder of each manifest mod ID.
+
 ## Models, textures and variants
 
 `attachedShapeBySlotCode` maps stable slot codes to shape references. `base` is a

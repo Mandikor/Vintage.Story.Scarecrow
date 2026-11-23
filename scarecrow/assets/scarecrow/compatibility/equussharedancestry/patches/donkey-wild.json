@@ -3,231 +3,157 @@
     "enabled": true,
     "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
-    "path": "/behaviorConfigs/taskai/aitasks/-",
-    "value": {
-      "code": "meleeattack",
-      "animation": "Attack",
-      "priority": 3,
-      "slot": 1,
-      "damageByType": {
-        "*-adult-*-donkey": 7
+    "path": "/behaviorConfigs/taskai/aitasks",
+    "value": [
+      {
+        "code": "meleeattack",
+        "animation": "Attack",
+        "priority": 3,
+        "slot": 1,
+        "damageByType": {
+          "*-adult-*-donkey": 7
+        },
+        "knockbackStrengthByType": {
+          "*": 2
+        },
+        "damageTierByType": {
+          "*": 3
+        },
+        "mincooldown": 500,
+        "maxcooldown": 1000,
+        "attackDurationMs": 500,
+        "damagePlayerAtMs": 250,
+        "animationSpeed": 1,
+        "whenInEmotionState": "aggressiveondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "*-adult-*": true,
+          "*": false
+        }
       },
-      "knockbackStrengthByType": {
-        "*": 2
+      {
+        "code": "fleeentity",
+        "whenInEmotionState": "fleeondamage",
+        "priority": 1.8,
+        "movespeed": 0.115,
+        "seekingRange": 12,
+        "animation": "Gallop",
+        "animationSpeed": 4.5,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "damageTierByType": {
-        "*": 3
+      {
+        "code": "fleeentity",
+        "enabledByType": {
+          "wildhorse*": true,
+          "*": false
+        },
+        "priority": 1.72,
+        "movespeed": 0.115,
+        "seekingRange": 10,
+        "animation": "Gallop",
+        "animationSpeed": 4.5,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "mincooldown": 500,
-      "maxcooldown": 1000,
-      "attackDurationMs": 500,
-      "damagePlayerAtMs": 250,
-      "animationSpeed": 1,
-      "whenInEmotionState": "aggressiveondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "*-adult-*": true,
-        "*": false
+      {
+        "code": "fleeentity",
+        "enabledByType": {
+          "wildhorse*": true,
+          "*": false
+        },
+        "priority": 1.71,
+        "movespeed": 0.06,
+        "seekingRange": 20,
+        "animation": "canter",
+        "animationSpeed": 3.8,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      },
+      {
+        "code": "fleeentity",
+        "enabledByType": {
+          "wildhorse*": true,
+          "*": false
+        },
+        "priority": 1.7,
+        "movespeed": 0.03,
+        "seekingRange": 30,
+        "animation": "trot",
+        "animationSpeed": 3.1,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       }
-    },
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
-    "path": "/behaviorConfigs/taskai/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "whenInEmotionState": "fleeondamage",
-      "priority": 1.8,
-      "movespeed": 0.115,
-      "seekingRange": 12,
-      "animation": "Gallop",
-      "animationSpeed": 4.5,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+    "path": "/behaviorConfigs/taskai/aitasks/6/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
-    "path": "/behaviorConfigs/taskai/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "enabledByType": {
-        "wildhorse*": true,
-        "*": false
-      },
-      "priority": 1.72,
-      "movespeed": 0.115,
-      "seekingRange": 10,
-      "animation": "Gallop",
-      "animationSpeed": 4.5,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+    "path": "/behaviorConfigs/taskai/aitasks/7/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
-    "path": "/behaviorConfigs/taskai/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "enabledByType": {
-        "wildhorse*": true,
-        "*": false
-      },
-      "priority": 1.71,
-      "movespeed": 0.06,
-      "seekingRange": 20,
-      "animation": "canter",
-      "animationSpeed": 3.8,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+    "path": "/behaviorConfigs/taskai/aitasks/8/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "equussharedancestry:entities/donkey/donkey-wild.json",
-    "path": "/behaviorConfigs/taskai/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "enabledByType": {
-        "wildhorse*": true,
-        "*": false
-      },
-      "priority": 1.7,
-      "movespeed": 0.03,
-      "seekingRange": 30,
-      "animation": "trot",
-      "animationSpeed": 3.1,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "equussharedancestry:entities/donkey/donkey-wild.json",
-    "path": "/behaviorConfigs/taskai/aitasks/6/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "equussharedancestry:entities/donkey/donkey-wild.json",
-    "path": "/behaviorConfigs/taskai/aitasks/6/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "equussharedancestry:entities/donkey/donkey-wild.json",
-    "path": "/behaviorConfigs/taskai/aitasks/6/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "equussharedancestry:entities/donkey/donkey-wild.json",
-    "path": "/behaviorConfigs/taskai/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "equussharedancestry:entities/donkey/donkey-wild.json",
-    "path": "/behaviorConfigs/taskai/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "equussharedancestry:entities/donkey/donkey-wild.json",
-    "path": "/behaviorConfigs/taskai/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "equussharedancestry:entities/donkey/donkey-wild.json",
-    "path": "/behaviorConfigs/taskai/aitasks/8/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "equussharedancestry:entities/donkey/donkey-wild.json",
-    "path": "/behaviorConfigs/taskai/aitasks/8/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "equussharedancestry:entities/donkey/donkey-wild.json",
-    "path": "/behaviorConfigs/taskai/aitasks/8/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "equussharedancestry:entities/donkey/donkey-wild.json",
-    "path": "/behaviorConfigs/taskai/aitasks/11/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "equussharedancestry:entities/donkey/donkey-wild.json",
-    "path": "/behaviorConfigs/taskai/aitasks/11/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "equussharedancestry:entities/donkey/donkey-wild.json",
-    "path": "/behaviorConfigs/taskai/aitasks/11/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/behaviorConfigs/taskai/aitasks/11/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   }
 ]

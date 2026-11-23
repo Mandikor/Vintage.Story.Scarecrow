@@ -3,79 +3,67 @@
     "enabled": true,
     "op": "addmerge",
     "file": "fantasycreatures:entities/land/lonehuntergoblin.json",
-    "path": "/server/behaviors/6/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 2.5,
-      "movespeed": 0.035,
-      "seekingRange": 12,
-      "cancelOnHurt": true,
-      "animationSpeed": 1.3,
-      "whenInEmotionState": "fleeondamage",
-      "animation": "standrun",
-      "retaliateAttacks": false,
-      "instafleeOnDamageChance": 0
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/lonehuntergoblin.json",
-    "path": "/server/behaviors/6/aitasks/-",
-    "value": {
-      "code": "meleeattack",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 2,
-      "damageByType": {
-        "lonehuntergoblin-normal": 8,
-        "lonehuntergoblin-pelted": 8
+    "path": "/server/behaviors/6/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "priority": 2.5,
+        "movespeed": 0.035,
+        "seekingRange": 12,
+        "cancelOnHurt": true,
+        "animationSpeed": 1.3,
+        "whenInEmotionState": "fleeondamage",
+        "animation": "standrun",
+        "retaliateAttacks": false,
+        "instafleeOnDamageChance": 0
       },
-      "damageTierByType": {
-        "lonehuntergoblin-normal": 1,
-        "lonehuntergoblin-pelted": 1
+      {
+        "code": "meleeattack",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "priority": 2,
+        "damageByType": {
+          "lonehuntergoblin-normal": 8,
+          "lonehuntergoblin-pelted": 8
+        },
+        "damageTierByType": {
+          "lonehuntergoblin-normal": 1,
+          "lonehuntergoblin-pelted": 1
+        },
+        "mincooldown": 500,
+        "maxcooldown": 750,
+        "damagePlayerAtMs": 400,
+        "attackDurationMs": 750,
+        "animation": "standattack",
+        "animationSpeed": 1.5,
+        "retaliateAttacks": false
       },
-      "mincooldown": 500,
-      "maxcooldown": 750,
-      "damagePlayerAtMs": 400,
-      "attackDurationMs": 750,
-      "animation": "standattack",
-      "animationSpeed": 1.5,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/lonehuntergoblin.json",
-    "path": "/server/behaviors/6/aitasks/-",
-    "value": {
-      "code": "seekentity",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 1.5,
-      "mincooldown": 400,
-      "maxcooldown": 800,
-      "movespeed": 0.047,
-      "seekingRange": 25,
-      "animationSpeed": 1.3,
-      "animation": "standrun",
-      "sound": "fantasycreatures:creature/goblin_idle1",
-      "retaliateAttacks": false
-    },
+      {
+        "code": "seekentity",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "priority": 1.5,
+        "mincooldown": 400,
+        "maxcooldown": 800,
+        "movespeed": 0.047,
+        "seekingRange": 25,
+        "animationSpeed": 1.3,
+        "animation": "standrun",
+        "sound": "fantasycreatures:creature/goblin_idle1",
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   }
 ]

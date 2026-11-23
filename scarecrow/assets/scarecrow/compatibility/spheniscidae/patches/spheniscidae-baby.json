@@ -3,174 +3,162 @@
     "enabled": true,
     "op": "addmerge",
     "file": "spheniscidae:entities/animal/bird/spheniscidae-baby.json",
-    "path": "/server/behaviors/9/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "spheniscidae-*"
-      ],
-      "movespeedByType": {
-        "spheniscidae-baby-*": 0.0025
+    "path": "/server/behaviors/9/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "spheniscidae-*"
+        ],
+        "movespeedByType": {
+          "spheniscidae-baby-*": 0.0025
+        },
+        "animationSpeedByType": {
+          "spheniscidae-baby-*-aptenodytesforsteri": 2,
+          "spheniscidae-baby-*-aptenodytespatagonicus": 1,
+          "spheniscidae-baby-*-eudypteschrysocome": 2.66,
+          "spheniscidae-baby-*-eudypteschrysolophus": 2.66,
+          "spheniscidae-baby-*-eudyptesmoseleyi": 2.66,
+          "spheniscidae-baby-*-eudyptespachyrhynchus": 2.66,
+          "spheniscidae-baby-*-eudyptesrobustus": 2.66,
+          "spheniscidae-baby-*-eudyptessclateri": 2.66,
+          "spheniscidae-baby-*-eudyptesschlegeli": 2.66,
+          "spheniscidae-baby-*-eudypteswarhami": 2.66,
+          "spheniscidae-baby-*-eudyptulaminor": 4,
+          "spheniscidae-baby-*-eudyptulanovaehollandiae": 4,
+          "spheniscidae-baby-*-megadyptesantipodes": 2,
+          "spheniscidae-baby-*-pygoscelisadeliae": 2,
+          "spheniscidae-baby-*-pygoscelisantarcticus": 2,
+          "spheniscidae-baby-*-pygoscelispapua": 1.6,
+          "spheniscidae-baby-*-spheniscusdemersus": 2,
+          "spheniscidae-baby-*-spheniscushumboldti": 2,
+          "spheniscidae-baby-*-spheniscusmagellanicus": 2,
+          "spheniscidae-baby-*-spheniscusmendiculus": 2
+        },
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeedByType": {
-        "spheniscidae-baby-*-aptenodytesforsteri": 2,
-        "spheniscidae-baby-*-aptenodytespatagonicus": 1,
-        "spheniscidae-baby-*-eudypteschrysocome": 2.66,
-        "spheniscidae-baby-*-eudypteschrysolophus": 2.66,
-        "spheniscidae-baby-*-eudyptesmoseleyi": 2.66,
-        "spheniscidae-baby-*-eudyptespachyrhynchus": 2.66,
-        "spheniscidae-baby-*-eudyptesrobustus": 2.66,
-        "spheniscidae-baby-*-eudyptessclateri": 2.66,
-        "spheniscidae-baby-*-eudyptesschlegeli": 2.66,
-        "spheniscidae-baby-*-eudypteswarhami": 2.66,
-        "spheniscidae-baby-*-eudyptulaminor": 4,
-        "spheniscidae-baby-*-eudyptulanovaehollandiae": 4,
-        "spheniscidae-baby-*-megadyptesantipodes": 2,
-        "spheniscidae-baby-*-pygoscelisadeliae": 2,
-        "spheniscidae-baby-*-pygoscelisantarcticus": 2,
-        "spheniscidae-baby-*-pygoscelispapua": 1.6,
-        "spheniscidae-baby-*-spheniscusdemersus": 2,
-        "spheniscidae-baby-*-spheniscushumboldti": 2,
-        "spheniscidae-baby-*-spheniscusmagellanicus": 2,
-        "spheniscidae-baby-*-spheniscusmendiculus": 2
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "spheniscidae-*"
+        ],
+        "movespeedByType": {
+          "spheniscidae-baby-*": 0.01
+        },
+        "animationSpeedByType": {
+          "spheniscidae-baby-*-aptenodytesforsteri": 2,
+          "spheniscidae-baby-*-aptenodytespatagonicus": 1,
+          "spheniscidae-baby-*-eudypteschrysocome": 2.66,
+          "spheniscidae-baby-*-eudypteschrysolophus": 2.66,
+          "spheniscidae-baby-*-eudyptesmoseleyi": 2.66,
+          "spheniscidae-baby-*-eudyptespachyrhynchus": 2.66,
+          "spheniscidae-baby-*-eudyptesrobustus": 2.66,
+          "spheniscidae-baby-*-eudyptessclateri": 2.66,
+          "spheniscidae-baby-*-eudyptesschlegeli": 2.66,
+          "spheniscidae-baby-*-eudypteswarhami": 2.66,
+          "spheniscidae-baby-*-eudyptulaminor": 4,
+          "spheniscidae-baby-*-eudyptulanovaehollandiae": 4,
+          "spheniscidae-baby-*-megadyptesantipodes": 2,
+          "spheniscidae-baby-*-pygoscelisadeliae": 2,
+          "spheniscidae-baby-*-pygoscelisantarcticus": 2,
+          "spheniscidae-baby-*-pygoscelispapua": 1.6,
+          "spheniscidae-baby-*-spheniscusdemersus": 2,
+          "spheniscidae-baby-*-spheniscushumboldti": 2,
+          "spheniscidae-baby-*-spheniscusmagellanicus": 2,
+          "spheniscidae-baby-*-spheniscusmendiculus": 2
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "spheniscidae:entities/animal/bird/spheniscidae-baby.json",
-    "path": "/server/behaviors/9/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "spheniscidae-*"
-      ],
-      "movespeedByType": {
-        "spheniscidae-baby-*": 0.01
-      },
-      "animationSpeedByType": {
-        "spheniscidae-baby-*-aptenodytesforsteri": 2,
-        "spheniscidae-baby-*-aptenodytespatagonicus": 1,
-        "spheniscidae-baby-*-eudypteschrysocome": 2.66,
-        "spheniscidae-baby-*-eudypteschrysolophus": 2.66,
-        "spheniscidae-baby-*-eudyptesmoseleyi": 2.66,
-        "spheniscidae-baby-*-eudyptespachyrhynchus": 2.66,
-        "spheniscidae-baby-*-eudyptesrobustus": 2.66,
-        "spheniscidae-baby-*-eudyptessclateri": 2.66,
-        "spheniscidae-baby-*-eudyptesschlegeli": 2.66,
-        "spheniscidae-baby-*-eudypteswarhami": 2.66,
-        "spheniscidae-baby-*-eudyptulaminor": 4,
-        "spheniscidae-baby-*-eudyptulanovaehollandiae": 4,
-        "spheniscidae-baby-*-megadyptesantipodes": 2,
-        "spheniscidae-baby-*-pygoscelisadeliae": 2,
-        "spheniscidae-baby-*-pygoscelisantarcticus": 2,
-        "spheniscidae-baby-*-pygoscelispapua": 1.6,
-        "spheniscidae-baby-*-spheniscusdemersus": 2,
-        "spheniscidae-baby-*-spheniscushumboldti": 2,
-        "spheniscidae-baby-*-spheniscusmagellanicus": 2,
-        "spheniscidae-baby-*-spheniscusmendiculus": 2
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "spheniscidae:entities/animal/bird/spheniscidae-baby.json",
-    "path": "/server/behaviors/9/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.41,
-      "animation": "Walk",
-      "skipEntityCodes": [
-        "spheniscidae-*"
-      ],
-      "movespeedByType": {
-        "spheniscidae-baby-*": 0.00125
-      },
-      "animationSpeedByType": {
-        "spheniscidae-baby-*-aptenodytesforsteri": 2,
-        "spheniscidae-baby-*-aptenodytespatagonicus": 1,
-        "spheniscidae-baby-*-eudypteschrysocome": 2.66,
-        "spheniscidae-baby-*-eudypteschrysolophus": 2.66,
-        "spheniscidae-baby-*-eudyptesmoseleyi": 2.66,
-        "spheniscidae-baby-*-eudyptespachyrhynchus": 2.66,
-        "spheniscidae-baby-*-eudyptesrobustus": 2.66,
-        "spheniscidae-baby-*-eudyptessclateri": 2.66,
-        "spheniscidae-baby-*-eudyptesschlegeli": 2.66,
-        "spheniscidae-baby-*-eudypteswarhami": 2.66,
-        "spheniscidae-baby-*-eudyptulaminor": 4,
-        "spheniscidae-baby-*-eudyptulanovaehollandiae": 4,
-        "spheniscidae-baby-*-megadyptesantipodes": 2,
-        "spheniscidae-baby-*-pygoscelisadeliae": 2,
-        "spheniscidae-baby-*-pygoscelisantarcticus": 2,
-        "spheniscidae-baby-*-pygoscelispapua": 1.6,
-        "spheniscidae-baby-*-spheniscusdemersus": 2,
-        "spheniscidae-baby-*-spheniscushumboldti": 2,
-        "spheniscidae-baby-*-spheniscusmagellanicus": 2,
-        "spheniscidae-baby-*-spheniscusmendiculus": 2,
-        "*": 2
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "threatening",
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.41,
+        "animation": "Walk",
+        "skipEntityCodes": [
+          "spheniscidae-*"
+        ],
+        "movespeedByType": {
+          "spheniscidae-baby-*": 0.00125
+        },
+        "animationSpeedByType": {
+          "spheniscidae-baby-*-aptenodytesforsteri": 2,
+          "spheniscidae-baby-*-aptenodytespatagonicus": 1,
+          "spheniscidae-baby-*-eudypteschrysocome": 2.66,
+          "spheniscidae-baby-*-eudypteschrysolophus": 2.66,
+          "spheniscidae-baby-*-eudyptesmoseleyi": 2.66,
+          "spheniscidae-baby-*-eudyptespachyrhynchus": 2.66,
+          "spheniscidae-baby-*-eudyptesrobustus": 2.66,
+          "spheniscidae-baby-*-eudyptessclateri": 2.66,
+          "spheniscidae-baby-*-eudyptesschlegeli": 2.66,
+          "spheniscidae-baby-*-eudypteswarhami": 2.66,
+          "spheniscidae-baby-*-eudyptulaminor": 4,
+          "spheniscidae-baby-*-eudyptulanovaehollandiae": 4,
+          "spheniscidae-baby-*-megadyptesantipodes": 2,
+          "spheniscidae-baby-*-pygoscelisadeliae": 2,
+          "spheniscidae-baby-*-pygoscelisantarcticus": 2,
+          "spheniscidae-baby-*-pygoscelispapua": 1.6,
+          "spheniscidae-baby-*-spheniscusdemersus": 2,
+          "spheniscidae-baby-*-spheniscushumboldti": 2,
+          "spheniscidae-baby-*-spheniscusmagellanicus": 2,
+          "spheniscidae-baby-*-spheniscusmendiculus": 2,
+          "*": 2
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "threatening",
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   }
 ]

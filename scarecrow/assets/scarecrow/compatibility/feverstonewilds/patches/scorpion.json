@@ -3,103 +3,74 @@
     "enabled": true,
     "file": "feverstonewilds:entities/land/scorpion.json",
     "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/-",
-    "value": {
-      "code": "meleeattack",
-      "priority": 1,
-      "damage": 1,
-      "damageType": "SlashingAttack",
-      "slot": 1,
-      "mincooldown": 1500,
-      "maxcooldown": 2500,
-      "attackDurationMs": 0,
-      "damagePlayerAtMs": 0,
-      "animation": "attack",
-      "animationSpeed": 2.5,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "scorpion": true,
-        "*": false
+    "path": "/server/behaviors/9/aitasks",
+    "value": [
+      {
+        "code": "meleeattack",
+        "priority": 1,
+        "damage": 1,
+        "damageType": "SlashingAttack",
+        "slot": 1,
+        "mincooldown": 1500,
+        "maxcooldown": 2500,
+        "attackDurationMs": 0,
+        "damagePlayerAtMs": 0,
+        "animation": "attack",
+        "animationSpeed": 2.5,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "scorpion": true,
+          "*": false
+        }
+      },
+      {
+        "code": "fleeentity",
+        "priority": 2,
+        "movespeed": 0.01,
+        "seekingRange": 14,
+        "animation": "run",
+        "animationSpeed": 2.5,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "scorpion": true,
+          "*": false
+        }
       }
-    },
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/scorpion.json",
     "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 2,
-      "movespeed": 0.01,
-      "seekingRange": 14,
-      "animation": "run",
-      "animationSpeed": 2.5,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "scorpion": true,
-        "*": false
-      }
-    },
+    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/scorpion.json",
     "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/scorpion.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/scorpion.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/scorpion.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/scorpion.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/scorpion.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   }
 ]

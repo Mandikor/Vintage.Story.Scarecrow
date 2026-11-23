@@ -25,24 +25,12 @@
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/bird/duck/mallard/mallard-duck-male.json",
-    "path": "/server/behaviors/8/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/bird/duck/mallard/mallard-duck-male.json",
-    "path": "/server/behaviors/8/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/bird/duck/mallard/mallard-duck-male.json",
-    "path": "/server/behaviors/8/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/8/aitasks/3/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {

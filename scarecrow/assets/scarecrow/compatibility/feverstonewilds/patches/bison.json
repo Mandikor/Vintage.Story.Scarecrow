@@ -3,96 +3,84 @@
     "enabled": true,
     "file": "feverstonewilds:entities/land/bison.json",
     "op": "addmerge",
-    "path": "/server/behaviors/15/aitasks/-",
-    "value": {
-      "code": "meleeattack",
-      "knockbackStrength": 5.65,
-      "priority": 4,
-      "slot": 1,
-      "damage": 7.5,
-      "damageTier": 2,
-      "mincooldown": 1500,
-      "maxcooldown": 2500,
-      "attackDurationMs": 1250,
-      "damagePlayerAtMs": 800,
-      "animation": "Attack",
-      "animationSpeed": 2,
-      "whenInEmotionState": "aggressiveondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "bison-wild-male": true,
-        "bison-wild-female": true,
-        "bison-tamed-male": false,
-        "bison-tamed-female": false,
-        "*": false
+    "path": "/server/behaviors/15/aitasks",
+    "value": [
+      {
+        "code": "meleeattack",
+        "knockbackStrength": 5.65,
+        "priority": 4,
+        "slot": 1,
+        "damage": 7.5,
+        "damageTier": 2,
+        "mincooldown": 1500,
+        "maxcooldown": 2500,
+        "attackDurationMs": 1250,
+        "damagePlayerAtMs": 800,
+        "animation": "Attack",
+        "animationSpeed": 2,
+        "whenInEmotionState": "aggressiveondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "bison-wild-male": true,
+          "bison-wild-female": true,
+          "bison-tamed-male": false,
+          "bison-tamed-female": false,
+          "*": false
+        }
+      },
+      {
+        "code": "seekentity",
+        "priority": 1.55,
+        "mincooldown": 1000,
+        "maxcooldown": 1500,
+        "seekingRange": 25,
+        "movespeed": 0.05,
+        "animation": "Run",
+        "animationSpeed": 2.5,
+        "whenInEmotionState": "aggressiveondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "bison-wild-male": true,
+          "bison-wild-female": true,
+          "bison-tamed-male": false,
+          "bison-tamed-female": false,
+          "*": false
+        }
+      },
+      {
+        "code": "fleeentity",
+        "priority": 1.75,
+        "movespeed": 0.052,
+        "seekingRange": 12,
+        "animation": "Run",
+        "animationSpeed": 3.5,
+        "sound": "bison/bisonhurt",
+        "whenInEmotionState": "fleeondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "bison-wild-male": true,
+          "bison-wild-female": true,
+          "bison-tamed-male": false,
+          "bison-tamed-female": false,
+          "*": false
+        }
       }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/bison.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/15/aitasks/-",
-    "value": {
-      "code": "seekentity",
-      "priority": 1.55,
-      "mincooldown": 1000,
-      "maxcooldown": 1500,
-      "seekingRange": 25,
-      "movespeed": 0.05,
-      "animation": "Run",
-      "animationSpeed": 2.5,
-      "whenInEmotionState": "aggressiveondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "bison-wild-male": true,
-        "bison-wild-female": true,
-        "bison-tamed-male": false,
-        "bison-tamed-female": false,
-        "*": false
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/bison.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/15/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 1.75,
-      "movespeed": 0.052,
-      "seekingRange": 12,
-      "animation": "Run",
-      "animationSpeed": 3.5,
-      "sound": "bison/bisonhurt",
-      "whenInEmotionState": "fleeondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "bison-wild-male": true,
-        "bison-wild-female": true,
-        "bison-tamed-male": false,
-        "bison-tamed-female": false,
-        "*": false
-      }
-    },
+    ],
     "side": "server"
   },
   {

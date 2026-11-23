@@ -3,313 +3,277 @@
     "enabled": true,
     "op": "addmerge",
     "file": "elephantidae:entities/animal/mammal/elephantidae-adult.json",
-    "path": "/server/behaviors/11/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.42,
-      "animation": "Run",
-      "movespeedByType": {
-        "*-adult-*-elephasmaximus": 0.0521,
-        "*-adult-*-elephasmaximusborneensis": 0.0417,
-        "*-adult-*-loxodontaafricana": 0.0833,
-        "*-adult-*-loxodontacyclotis": 0.05,
-        "*-adult-*-mammuthuscolumbi": 0.0875,
-        "*-adult-*-mammuthusexilis": 0.0417,
-        "*-adult-*-mammuthusprimigenius": 0.0521,
-        "*-adult-*-palaeoloxodoncypriotes": 0.0313
+    "path": "/server/behaviors/11/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.42,
+        "animation": "Run",
+        "movespeedByType": {
+          "*-adult-*-elephasmaximus": 0.0521,
+          "*-adult-*-elephasmaximusborneensis": 0.0417,
+          "*-adult-*-loxodontaafricana": 0.0833,
+          "*-adult-*-loxodontacyclotis": 0.05,
+          "*-adult-*-mammuthuscolumbi": 0.0875,
+          "*-adult-*-mammuthusexilis": 0.0417,
+          "*-adult-*-mammuthusprimigenius": 0.0521,
+          "*-adult-*-palaeoloxodoncypriotes": 0.0313
+        },
+        "animationSpeedByType": {
+          "*-adult-female-elephasmaximus": 4.47,
+          "*-adult-male-elephasmaximus": 3.72,
+          "*-adult-female-elephasmaximusborneensis": 4.04,
+          "*-adult-male-elephasmaximusborneensis": 3.53,
+          "*-adult-female-loxodontaafricana": 6.42,
+          "*-adult-male-loxodontaafricana": 5.07,
+          "*-adult-female-loxodontacyclotis": 6.0,
+          "*-adult-male-loxodontacyclotis": 5.25,
+          "*-adult-female-mammuthuscolumbi": 5.69,
+          "*-adult-male-mammuthuscolumbi": 5.03,
+          "*-adult-female-mammuthusexilis": 5.07,
+          "*-adult-male-mammuthusexilis": 4.66,
+          "*-adult-female-mammuthusprimigenius": 4.54,
+          "*-adult-male-mammuthusprimigenius": 3.8,
+          "*-adult-female-palaeoloxodoncypriotes": 10.43,
+          "*-adult-male-palaeoloxodoncypriotes": 8.35,
+          "*": 6.5
+        },
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "fleeDurationMs": 20000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeedByType": {
-        "*-adult-female-elephasmaximus": 4.47,
-        "*-adult-male-elephasmaximus": 3.72,
-        "*-adult-female-elephasmaximusborneensis": 4.04,
-        "*-adult-male-elephasmaximusborneensis": 3.53,
-        "*-adult-female-loxodontaafricana": 6.42,
-        "*-adult-male-loxodontaafricana": 5.07,
-        "*-adult-female-loxodontacyclotis": 6.0,
-        "*-adult-male-loxodontacyclotis": 5.25,
-        "*-adult-female-mammuthuscolumbi": 5.69,
-        "*-adult-male-mammuthuscolumbi": 5.03,
-        "*-adult-female-mammuthusexilis": 5.07,
-        "*-adult-male-mammuthusexilis": 4.66,
-        "*-adult-female-mammuthusprimigenius": 4.54,
-        "*-adult-male-mammuthusprimigenius": 3.8,
-        "*-adult-female-palaeoloxodoncypriotes": 10.43,
-        "*-adult-male-palaeoloxodoncypriotes": 8.35,
-        "*": 6.5
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.42,
+        "animation": "Swim",
+        "movespeedByType": {
+          "*-adult-*-elephasmaximus": 0.014,
+          "*-adult-*-elephasmaximusborneensis": 0.014,
+          "*-adult-*-loxodontaafricana": 0.0154,
+          "*-adult-*-loxodontacyclotis": 0.012,
+          "*-adult-*-mammuthuscolumbi": 0.016,
+          "*-adult-*-mammuthusexilis": 0.012,
+          "*-adult-*-mammuthusprimigenius": 0.014,
+          "*-adult-*-palaeoloxodoncypriotes": 0.006
+        },
+        "animationSpeed": 1.0,
+        "seekingRange": 60,
+        "fleeingDistance": 120,
+        "fleeDurationMs": 60000,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "fleeDurationMs": 20000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "elephantidae:entities/animal/mammal/elephantidae-adult.json",
-    "path": "/server/behaviors/11/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.42,
-      "animation": "Swim",
-      "movespeedByType": {
-        "*-adult-*-elephasmaximus": 0.014,
-        "*-adult-*-elephasmaximusborneensis": 0.014,
-        "*-adult-*-loxodontaafricana": 0.0154,
-        "*-adult-*-loxodontacyclotis": 0.012,
-        "*-adult-*-mammuthuscolumbi": 0.016,
-        "*-adult-*-mammuthusexilis": 0.012,
-        "*-adult-*-mammuthusprimigenius": 0.014,
-        "*-adult-*-palaeoloxodoncypriotes": 0.006
-      },
-      "animationSpeed": 1.0,
-      "seekingRange": 60,
-      "fleeingDistance": 120,
-      "fleeDurationMs": 60000,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "elephantidae:entities/animal/mammal/elephantidae-adult.json",
-    "path": "/server/behaviors/11/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.41,
-      "animation": "Walk",
-      "movespeedByType": {
-        "*-adult-*-elephasmaximus": 0.014,
-        "*-adult-*-elephasmaximusborneensis": 0.013,
-        "*-adult-*-loxodontaafricana": 0.0148,
-        "*-adult-*-loxodontacyclotis": 0.012,
-        "*-adult-*-mammuthuscolumbi": 0.016,
-        "*-adult-*-mammuthusexilis": 0.012,
-        "*-adult-*-mammuthusprimigenius": 0.014,
-        "*-adult-*-palaeoloxodoncypriotes": 0.006
-      },
-      "animationSpeedByType": {
-        "*-adult-female-elephasmaximus": 1.2,
-        "*-adult-male-elephasmaximus": 1.0,
-        "*-adult-female-elephasmaximusborneensis": 1.26,
-        "*-adult-male-elephasmaximusborneensis": 1.1,
-        "*-adult-female-loxodontaafricana": 1.14,
-        "*-adult-male-loxodontaafricana": 0.9,
-        "*-adult-female-loxodontacyclotis": 1.44,
-        "*-adult-male-loxodontacyclotis": 1.26,
-        "*-adult-female-mammuthuscolumbi": 1.04,
-        "*-adult-male-mammuthuscolumbi": 0.92,
-        "*-adult-female-mammuthusexilis": 1.46,
-        "*-adult-male-mammuthusexilis": 1.34,
-        "*-adult-female-mammuthusprimigenius": 1.22,
-        "*-adult-male-mammuthusprimigenius": 1.02,
-        "*-adult-female-palaeoloxodoncypriotes": 2.0,
-        "*-adult-male-palaeoloxodoncypriotes": 1.6,
-        "*": 1.5
-      },
-      "seekingRange": 60,
-      "fleeingDistance": 120,
-      "fleeDurationMs": 60000,
-      "whenSwimming": false,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.41,
+        "animation": "Walk",
+        "movespeedByType": {
+          "*-adult-*-elephasmaximus": 0.014,
+          "*-adult-*-elephasmaximusborneensis": 0.013,
+          "*-adult-*-loxodontaafricana": 0.0148,
+          "*-adult-*-loxodontacyclotis": 0.012,
+          "*-adult-*-mammuthuscolumbi": 0.016,
+          "*-adult-*-mammuthusexilis": 0.012,
+          "*-adult-*-mammuthusprimigenius": 0.014,
+          "*-adult-*-palaeoloxodoncypriotes": 0.006
+        },
+        "animationSpeedByType": {
+          "*-adult-female-elephasmaximus": 1.2,
+          "*-adult-male-elephasmaximus": 1.0,
+          "*-adult-female-elephasmaximusborneensis": 1.26,
+          "*-adult-male-elephasmaximusborneensis": 1.1,
+          "*-adult-female-loxodontaafricana": 1.14,
+          "*-adult-male-loxodontaafricana": 0.9,
+          "*-adult-female-loxodontacyclotis": 1.44,
+          "*-adult-male-loxodontacyclotis": 1.26,
+          "*-adult-female-mammuthuscolumbi": 1.04,
+          "*-adult-male-mammuthuscolumbi": 0.92,
+          "*-adult-female-mammuthusexilis": 1.46,
+          "*-adult-male-mammuthusexilis": 1.34,
+          "*-adult-female-mammuthusprimigenius": 1.22,
+          "*-adult-male-mammuthusprimigenius": 1.02,
+          "*-adult-female-palaeoloxodoncypriotes": 2.0,
+          "*-adult-male-palaeoloxodoncypriotes": 1.6,
+          "*": 1.5
+        },
+        "seekingRange": 60,
+        "fleeingDistance": 120,
+        "fleeDurationMs": 60000,
+        "whenSwimming": false,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "elephantidae:entities/animal/mammal/elephantidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.42,
-      "animation": "Run",
-      "movespeedByType": {
-        "*-baby-*-elephasmaximus": 0.038,
-        "*-baby-*-elephasmaximusborneensis": 0.036,
-        "*-baby-*-loxodontaafricana": 0.038,
-        "*-baby-*-loxodontacyclotis": 0.032,
-        "*-baby-*-mammuthuscolumbi": 0.04,
-        "*-baby-*-mammuthusexilis": 0.032,
-        "*-baby-*-mammuthusprimigenius": 0.038,
-        "*-baby-*-palaeoloxodoncypriotes": 0.0144
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.42,
+        "animation": "Run",
+        "movespeedByType": {
+          "*-baby-*-elephasmaximus": 0.038,
+          "*-baby-*-elephasmaximusborneensis": 0.036,
+          "*-baby-*-loxodontaafricana": 0.038,
+          "*-baby-*-loxodontacyclotis": 0.032,
+          "*-baby-*-mammuthuscolumbi": 0.04,
+          "*-baby-*-mammuthusexilis": 0.032,
+          "*-baby-*-mammuthusprimigenius": 0.038,
+          "*-baby-*-palaeoloxodoncypriotes": 0.0144
+        },
+        "animationSpeedByType": {
+          "*-baby-*": 8,
+          "*": 6
+        },
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "fleeDurationMs": 20000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeedByType": {
-        "*-baby-*": 8,
-        "*": 6
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.42,
+        "animation": "Swim",
+        "movespeedByType": {
+          "*-baby-*-elephasmaximus": 0.0095,
+          "*-baby-*-elephasmaximusborneensis": 0.009,
+          "*-baby-*-loxodontaafricana": 0.0095,
+          "*-baby-*-loxodontacyclotis": 0.008,
+          "*-baby-*-mammuthuscolumbi": 0.01,
+          "*-baby-*-mammuthusexilis": 0.008,
+          "*-baby-*-mammuthusprimigenius": 0.0095,
+          "*-baby-*-palaeoloxodoncypriotes": 0.0036
+        },
+        "animationSpeed": 1.0,
+        "seekingRange": 60,
+        "fleeingDistance": 120,
+        "fleeDurationMs": 60000,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "fleeDurationMs": 20000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.41,
+        "animation": "Walk",
+        "movespeedByType": {
+          "*-baby-*-elephasmaximus": 0.0095,
+          "*-baby-*-elephasmaximusborneensis": 0.009,
+          "*-baby-*-loxodontaafricana": 0.0095,
+          "*-baby-*-loxodontacyclotis": 0.008,
+          "*-baby-*-mammuthuscolumbi": 0.01,
+          "*-baby-*-mammuthusexilis": 0.008,
+          "*-baby-*-mammuthusprimigenius": 0.0095,
+          "*-baby-*-palaeoloxodoncypriotes": 0.0036
+        },
+        "animationSpeedByType": {
+          "*-baby-*": 2
+        },
+        "seekingRange": 30,
+        "fleeingDistance": 120,
+        "fleeDurationMs": 60000,
+        "whenSwimming": false,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "elephantidae:entities/animal/mammal/elephantidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.42,
-      "animation": "Swim",
-      "movespeedByType": {
-        "*-baby-*-elephasmaximus": 0.0095,
-        "*-baby-*-elephasmaximusborneensis": 0.009,
-        "*-baby-*-loxodontaafricana": 0.0095,
-        "*-baby-*-loxodontacyclotis": 0.008,
-        "*-baby-*-mammuthuscolumbi": 0.01,
-        "*-baby-*-mammuthusexilis": 0.008,
-        "*-baby-*-mammuthusprimigenius": 0.0095,
-        "*-baby-*-palaeoloxodoncypriotes": 0.0036
-      },
-      "animationSpeed": 1.0,
-      "seekingRange": 60,
-      "fleeingDistance": 120,
-      "fleeDurationMs": 60000,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "elephantidae:entities/animal/mammal/elephantidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.41,
-      "animation": "Walk",
-      "movespeedByType": {
-        "*-baby-*-elephasmaximus": 0.0095,
-        "*-baby-*-elephasmaximusborneensis": 0.009,
-        "*-baby-*-loxodontaafricana": 0.0095,
-        "*-baby-*-loxodontacyclotis": 0.008,
-        "*-baby-*-mammuthuscolumbi": 0.01,
-        "*-baby-*-mammuthusexilis": 0.008,
-        "*-baby-*-mammuthusprimigenius": 0.0095,
-        "*-baby-*-palaeoloxodoncypriotes": 0.0036
-      },
-      "animationSpeedByType": {
-        "*-baby-*": 2
-      },
-      "seekingRange": 30,
-      "fleeingDistance": 120,
-      "fleeDurationMs": 60000,
-      "whenSwimming": false,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "elephantidae:entities/animal/mammal/elephantidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/14/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "elephantidae:entities/animal/mammal/elephantidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/14/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "elephantidae:entities/animal/mammal/elephantidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/14/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/10/aitasks/14/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   }
 ]

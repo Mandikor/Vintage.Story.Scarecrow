@@ -24,38 +24,28 @@
       "scarecrowCenserSmokeByType": {
         "*-up": true,
         "*": false
-      }
+      },
+      "onScarecrowTransform": {
+        "translation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 1
+      },
+      "scarecrowPendulum": true
     },
     "path": "/attributes",
     "op": "addmerge"
-  },
-  {
-    "file": "censership:blocktypes/censercarryable.json",
-    "op": "addmerge",
-    "path": "/attributes/onScarecrowTransform",
-    "value": {
-      "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "origin": {
-        "x": 0.5,
-        "y": 0.5,
-        "z": 0.5
-      },
-      "scale": 1
-    }
-  },
-  {
-    "file": "censership:blocktypes/censercarryable.json",
-    "op": "addmerge",
-    "path": "/attributes/scarecrowPendulum",
-    "value": true
   }
 ]

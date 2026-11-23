@@ -125,6 +125,11 @@ snapshot of 81 IDs and does not describe the cleaned current library.
 
 ### Updates newly present in the cleaned library
 
+- [ ] **P1 — Crows 0.2.8:** the supplied newer package shifts task-AI locations;
+  the existing 0.2.7 wake-list path reaches a harvestable behavior in 0.2.8.
+  Review the new native tasks and update compatibility separately. Found while
+  comparing original/consolidated patches; the consolidation preserves 0.2.7 behavior.
+
 - [ ] **P1 — Giant Scorpion 1.0.3:** compare native player-target tasks and patch
   paths with the implemented/tested 1.0.2 integration; validate any required changes.
 - [ ] **P2 — Leaf Litter 1.6.1:** compare rake definitions, attachment geometry and

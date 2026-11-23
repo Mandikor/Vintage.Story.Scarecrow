@@ -27,6 +27,32 @@
       "scarecrowArmLanternByType": {
         "*-up": true,
         "*": false
+      },
+      "onScarecrowTransform": {
+        "translation": {
+          "x": 0.06,
+          "y": -0.03,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": -4,
+          "z": 0
+        }
+      },
+      "scarecrowPendulum": true,
+      "onScarecrowNeckTransform": {
+        "translation": {
+          "x": -0.13,
+          "y": 0,
+          "z": -0.13
+        },
+        "origin": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": 0.5
       }
     },
     "path": "/attributes"
@@ -160,6 +186,38 @@
         "*-candle-straight": true,
         "*-marshimp-straight": true,
         "*": false
+      },
+      "onScarecrowTransform": {
+        "translation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 1
+      },
+      "scarecrowPendulum": true,
+      "onScarecrowNeckTransform": {
+        "translation": {
+          "x": -0.475,
+          "y": 0,
+          "z": -0.5
+        },
+        "origin": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": 1.2
       }
     },
     "path": "/attributes"
@@ -167,239 +225,46 @@
   {
     "file": "scarecrow:entities/nonliving/scarecrow.json",
     "op": "addmerge",
-    "value": "primitivesurvival:woodlantern-*-up",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-"
+    "value": [
+      "primitivesurvival:woodlantern-*-up",
+      "primitivesurvival:fireflies-treetop-straight",
+      "primitivesurvival:fireflies-mysticlantern-straight",
+      "primitivesurvival:fireflies-blueghost-straight",
+      "primitivesurvival:fireflies-rover-straight",
+      "primitivesurvival:fireflies-fairyring-straight",
+      "primitivesurvival:fireflies-candle-straight",
+      "primitivesurvival:fireflies-marshimp-straight"
+    ],
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes"
   },
   {
     "file": "scarecrow:entities/nonliving/scarecrow.json",
     "op": "addmerge",
-    "value": "primitivesurvival:woodlantern-*-up",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "value": "primitivesurvival:fireflies-treetop-straight",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "value": "primitivesurvival:fireflies-treetop-straight",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "value": "primitivesurvival:fireflies-mysticlantern-straight",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "value": "primitivesurvival:fireflies-mysticlantern-straight",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "value": "primitivesurvival:fireflies-blueghost-straight",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "value": "primitivesurvival:fireflies-blueghost-straight",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "value": "primitivesurvival:fireflies-rover-straight",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "value": "primitivesurvival:fireflies-rover-straight",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "value": "primitivesurvival:fireflies-fairyring-straight",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "value": "primitivesurvival:fireflies-fairyring-straight",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "value": "primitivesurvival:fireflies-candle-straight",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "value": "primitivesurvival:fireflies-candle-straight",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "value": "primitivesurvival:fireflies-marshimp-straight",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "value": "primitivesurvival:fireflies-marshimp-straight",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-"
-  },
-  {
-    "file": "primitivesurvival:blocktypes/glass/fireflies.json",
-    "op": "addmerge",
-    "path": "/attributes/onScarecrowTransform",
-    "value": {
-      "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "origin": {
-        "x": 0.5,
-        "y": 0.5,
-        "z": 0.5
-      },
-      "scale": 1
-    }
-  },
-  {
-    "file": "primitivesurvival:blocktypes/wood/woodlantern.json",
-    "op": "addmerge",
-    "path": "/attributes/onScarecrowTransform",
-    "value": {
-      "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "origin": {
-        "x": 0.5,
-        "y": 0.5,
-        "z": 0.5
-      },
-      "scale": 1
-    }
-  },
-  {
-    "file": "primitivesurvival:blocktypes/glass/fireflies.json",
-    "op": "addmerge",
-    "path": "/attributes/scarecrowPendulum",
-    "value": true
-  },
-  {
-    "file": "primitivesurvival:blocktypes/wood/woodlantern.json",
-    "op": "addmerge",
-    "path": "/attributes/scarecrowPendulum",
-    "value": true
+    "value": [
+      "primitivesurvival:woodlantern-*-up",
+      "primitivesurvival:fireflies-treetop-straight",
+      "primitivesurvival:fireflies-mysticlantern-straight",
+      "primitivesurvival:fireflies-blueghost-straight",
+      "primitivesurvival:fireflies-rover-straight",
+      "primitivesurvival:fireflies-fairyring-straight",
+      "primitivesurvival:fireflies-candle-straight",
+      "primitivesurvival:fireflies-marshimp-straight"
+    ],
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes"
   },
   {
     "file": "scarecrow:entities/nonliving/little-scarecrow.json",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "primitivesurvival:woodlantern-*-up",
-    "op": "addmerge"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/little-scarecrow.json",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "primitivesurvival:fireflies-treetop-straight",
-    "op": "addmerge"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/little-scarecrow.json",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "primitivesurvival:fireflies-mysticlantern-straight",
-    "op": "addmerge"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/little-scarecrow.json",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "primitivesurvival:fireflies-blueghost-straight",
-    "op": "addmerge"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/little-scarecrow.json",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "primitivesurvival:fireflies-rover-straight",
-    "op": "addmerge"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/little-scarecrow.json",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "primitivesurvival:fireflies-fairyring-straight",
-    "op": "addmerge"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/little-scarecrow.json",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "primitivesurvival:fireflies-candle-straight",
-    "op": "addmerge"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/little-scarecrow.json",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "primitivesurvival:fireflies-marshimp-straight",
-    "op": "addmerge"
-  },
-  {
-    "file": "primitivesurvival:blocktypes/wood/woodlantern.json",
-    "path": "/attributes/onScarecrowNeckTransform",
-    "value": {
-      "translation": {
-        "x": -0.13,
-        "y": 0,
-        "z": -0.13
-      },
-      "origin": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "scale": 0.5
-    },
-    "op": "addmerge"
-  },
-  {
-    "file": "primitivesurvival:blocktypes/glass/fireflies.json",
-    "path": "/attributes/onScarecrowNeckTransform",
-    "value": {
-      "translation": {
-        "x": -0.475,
-        "y": 0,
-        "z": -0.5
-      },
-      "origin": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "scale": 1.2
-    },
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes",
+    "value": [
+      "primitivesurvival:woodlantern-*-up",
+      "primitivesurvival:fireflies-treetop-straight",
+      "primitivesurvival:fireflies-mysticlantern-straight",
+      "primitivesurvival:fireflies-blueghost-straight",
+      "primitivesurvival:fireflies-rover-straight",
+      "primitivesurvival:fireflies-fairyring-straight",
+      "primitivesurvival:fireflies-candle-straight",
+      "primitivesurvival:fireflies-marshimp-straight"
+    ],
     "op": "addmerge"
   }
 ]

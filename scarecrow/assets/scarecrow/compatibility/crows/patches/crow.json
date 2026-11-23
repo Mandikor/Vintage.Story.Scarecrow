@@ -3,57 +3,33 @@
     "enabled": true,
     "op": "addmerge",
     "file": "crows:entities/crow.json",
-    "path": "/attributes/otherScarecrows/scarecrow:scarecrow",
+    "path": "/attributes/otherScarecrows",
+    "value": {
+      "scarecrow:scarecrow": [
+        16,
+        18
+      ],
+      "scarecrow:little-scarecrow": [
+        12,
+        16
+      ],
+      "game:strawdummy": [
+        8,
+        12
+      ]
+    },
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "addmerge",
+    "file": "crows:entities/crow.json",
+    "path": "/server/behaviors/12/aitasks/12/stopOnNearbyEntityCodes",
     "value": [
-      16,
-      18
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
     ],
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "crows:entities/crow.json",
-    "path": "/attributes/otherScarecrows/scarecrow:little-scarecrow",
-    "value": [
-      12,
-      16
-    ],
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "crows:entities/crow.json",
-    "path": "/attributes/otherScarecrows/game:strawdummy",
-    "value": [
-      8,
-      12
-    ],
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "crows:entities/crow.json",
-    "path": "/server/behaviors/12/aitasks/12/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "crows:entities/crow.json",
-    "path": "/server/behaviors/12/aitasks/12/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "crows:entities/crow.json",
-    "path": "/server/behaviors/12/aitasks/12/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
     "side": "server"
   }
 ]

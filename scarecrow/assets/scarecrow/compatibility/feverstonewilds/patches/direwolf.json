@@ -3,238 +3,181 @@
     "enabled": true,
     "file": "feverstonewilds:entities/land/direwolf.json",
     "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "meleeattack",
-      "priority": 3,
-      "damage": 9.5,
-      "damageTier": 2,
-      "damageType": "SlashingAttack",
-      "slot": 1,
-      "mincooldown": 750,
-      "maxcooldown": 1500,
-      "attackDurationMs": 800,
-      "damagePlayerAtMs": 500,
-      "animation": "Attack",
-      "animationSpeed": 1.5,
-      "sound": "game:creature/wolf/attack",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "direwolf-male": true,
-        "direwolf-female": true,
-        "*": false
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "meleeattack",
+        "priority": 3,
+        "damage": 9.5,
+        "damageTier": 2,
+        "damageType": "SlashingAttack",
+        "slot": 1,
+        "mincooldown": 750,
+        "maxcooldown": 1500,
+        "attackDurationMs": 800,
+        "damagePlayerAtMs": 500,
+        "animation": "Attack",
+        "animationSpeed": 1.5,
+        "sound": "game:creature/wolf/attack",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "direwolf-male": true,
+          "direwolf-female": true,
+          "*": false
+        }
+      },
+      {
+        "code": "meleeattack",
+        "priority": 2.5,
+        "damage": 9.5,
+        "damageTier": 2,
+        "damageType": "SlashingAttack",
+        "slot": 1,
+        "mincooldown": 750,
+        "maxcooldown": 1500,
+        "attackDurationMs": 800,
+        "damagePlayerAtMs": 500,
+        "animation": "Attack-Low",
+        "animationSpeed": 1.5,
+        "sound": "game:creature/wolf/attack",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "direwolf-male": true,
+          "direwolf-female": true,
+          "*": false
+        }
+      },
+      {
+        "code": "meleeattack",
+        "priority": 2,
+        "damage": 9.5,
+        "damageTier": 2,
+        "damageType": "SlashingAttack",
+        "slot": 1,
+        "mincooldown": 7500,
+        "maxcooldown": 10500,
+        "attackDurationMs": 800,
+        "damagePlayerAtMs": 500,
+        "animation": "Attack-High",
+        "retaliateAttacks": false,
+        "animationSpeed": 1.5,
+        "sound": "game:creature/wolf/attack",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "enabledByType": {
+          "direwolf-male": true,
+          "direwolf-female": true,
+          "*": false
+        }
+      },
+      {
+        "code": "fleeentity",
+        "priority": 1.6,
+        "movespeed": 0.052,
+        "seekingRange": 20,
+        "animation": "Run",
+        "animationSpeed": 1.1,
+        "whenInEmotionState": "fleeondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "direwolf-male": true,
+          "direwolf-female": true,
+          "*": false
+        }
+      },
+      {
+        "code": "seekentity",
+        "priority": 1.51,
+        "movespeed": 0.052,
+        "seekingRange": 9,
+        "belowTempSeekingRange": 25,
+        "belowTempThreshold": -5,
+        "animation": "Run",
+        "leapAtTarget": true,
+        "leapAnimation": null,
+        "animationSpeed": 1.1,
+        "leapChance": 0.01,
+        "sound": "direwolf/direwolf-growl",
+        "whenNotInEmotionState": "saturated",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "direwolf-male": true,
+          "direwolf-female": true,
+          "*": false
+        }
+      },
+      {
+        "code": "seekentity",
+        "priority": 1.49,
+        "movespeed": 0.052,
+        "seekingRange": 20,
+        "animation": "Run",
+        "leapAtTarget": true,
+        "leapAnimation": null,
+        "animationSpeed": 1.1,
+        "leapChance": 0.01,
+        "sound": "direwolf/direwolf-growl",
+        "whenInEmotionState": "aggressiveondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "direwolf-male": true,
+          "direwolf-female": true,
+          "*": false
+        }
       }
-    },
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/direwolf.json",
     "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "meleeattack",
-      "priority": 2.5,
-      "damage": 9.5,
-      "damageTier": 2,
-      "damageType": "SlashingAttack",
-      "slot": 1,
-      "mincooldown": 750,
-      "maxcooldown": 1500,
-      "attackDurationMs": 800,
-      "damagePlayerAtMs": 500,
-      "animation": "Attack-Low",
-      "animationSpeed": 1.5,
-      "sound": "game:creature/wolf/attack",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "direwolf-male": true,
-        "direwolf-female": true,
-        "*": false
-      }
-    },
+    "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/direwolf.json",
     "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "meleeattack",
-      "priority": 2,
-      "damage": 9.5,
-      "damageTier": 2,
-      "damageType": "SlashingAttack",
-      "slot": 1,
-      "mincooldown": 7500,
-      "maxcooldown": 10500,
-      "attackDurationMs": 800,
-      "damagePlayerAtMs": 500,
-      "animation": "Attack-High",
-      "retaliateAttacks": false,
-      "animationSpeed": 1.5,
-      "sound": "game:creature/wolf/attack",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "enabledByType": {
-        "direwolf-male": true,
-        "direwolf-female": true,
-        "*": false
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 1.6,
-      "movespeed": 0.052,
-      "seekingRange": 20,
-      "animation": "Run",
-      "animationSpeed": 1.1,
-      "whenInEmotionState": "fleeondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "direwolf-male": true,
-        "direwolf-female": true,
-        "*": false
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "seekentity",
-      "priority": 1.51,
-      "movespeed": 0.052,
-      "seekingRange": 9,
-      "belowTempSeekingRange": 25,
-      "belowTempThreshold": -5,
-      "animation": "Run",
-      "leapAtTarget": true,
-      "leapAnimation": null,
-      "animationSpeed": 1.1,
-      "leapChance": 0.01,
-      "sound": "direwolf/direwolf-growl",
-      "whenNotInEmotionState": "saturated",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "direwolf-male": true,
-        "direwolf-female": true,
-        "*": false
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "seekentity",
-      "priority": 1.49,
-      "movespeed": 0.052,
-      "seekingRange": 20,
-      "animation": "Run",
-      "leapAtTarget": true,
-      "leapAnimation": null,
-      "animationSpeed": 1.1,
-      "leapChance": 0.01,
-      "sound": "direwolf/direwolf-growl",
-      "whenInEmotionState": "aggressiveondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "direwolf-male": true,
-        "direwolf-female": true,
-        "*": false
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/13/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/13/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/direwolf.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/13/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/10/aitasks/13/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   }
 ]

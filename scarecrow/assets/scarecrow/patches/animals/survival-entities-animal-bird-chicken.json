@@ -2,70 +2,58 @@
   {
     "enabled": true,
     "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/-",
+    "path": "/server/behaviors/11/aitasks",
     "file": "game:entities/animal/bird/chicken-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.037,
-      "animation": "Run",
-      "animationSpeed": 2,
-      "sound": "creature/chicken/hurt",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 2.1,
-      "priorityForCancel": 2.1,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/-",
-    "file": "game:entities/animal/bird/chicken-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.037,
-      "animation": "Run",
-      "animationSpeed": 2,
-      "sound": "creature/chicken/hurt",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 2.1,
-      "priorityForCancel": 2.1,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/-",
-    "file": "game:entities/animal/bird/chicken-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.037,
-      "animation": "Run",
-      "animationSpeed": 2,
-      "sound": "creature/chicken/hurt",
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 2.1,
-      "priorityForCancel": 2.1,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
+    "value": [
+      {
+        "code": "fleeentity",
+        "movespeed": 0.037,
+        "animation": "Run",
+        "animationSpeed": 2,
+        "sound": "creature/chicken/hurt",
+        "entityCodes": [
+          "scarecrow"
+        ],
+        "priority": 2.1,
+        "priorityForCancel": 2.1,
+        "seekingRange": 16,
+        "fleeingDistance": 20,
+        "whenSwimming": false,
+        "retaliateAttacks": false
+      },
+      {
+        "code": "fleeentity",
+        "movespeed": 0.037,
+        "animation": "Run",
+        "animationSpeed": 2,
+        "sound": "creature/chicken/hurt",
+        "entityCodes": [
+          "little-scarecrow"
+        ],
+        "priority": 2.1,
+        "priorityForCancel": 2.1,
+        "seekingRange": 12,
+        "fleeingDistance": 16,
+        "whenSwimming": false,
+        "retaliateAttacks": false
+      },
+      {
+        "code": "fleeentity",
+        "movespeed": 0.037,
+        "animation": "Run",
+        "animationSpeed": 2,
+        "sound": "creature/chicken/hurt",
+        "entityCodes": [
+          "strawdummy"
+        ],
+        "priority": 2.1,
+        "priorityForCancel": 2.1,
+        "seekingRange": 8,
+        "fleeingDistance": 12,
+        "whenSwimming": false,
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
@@ -94,24 +82,12 @@
     "enabled": true,
     "op": "addmerge",
     "file": "game:entities/animal/bird/chicken-baby.json",
-    "path": "/server/behaviors/10/aitasks/8/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "game:entities/animal/bird/chicken-baby.json",
-    "path": "/server/behaviors/10/aitasks/8/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "game:entities/animal/bird/chicken-baby.json",
-    "path": "/server/behaviors/10/aitasks/8/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/10/aitasks/8/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   }
 ]

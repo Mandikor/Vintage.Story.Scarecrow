@@ -3,433 +3,409 @@
     "enabled": true,
     "op": "addmerge",
     "file": "capreolinae:entities/animal/mammal/hooved/odocoileini-adult.json",
-    "path": "/server/behaviors/11/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "cervidae-capreolini-adult-female-{type}",
-        "cervidae-capreolini-baby-female-{type}",
-        "cervidae-capreolini-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-female-antiferultra": 0.097,
-        "*-male-antiferultra": 0.127,
-        "*-female-blastocerusdichotomus": 0.09,
-        "*-male-blastocerusdichotomus": 0.12,
-        "*-female-bretzianebrascensis": 0.08,
-        "*-male-bretzianebrascensis": 0.09,
-        "*-female-hippocamelusantisensis": 0.0675,
-        "*-male-hippocamelusantisensis": 0.077,
-        "*-female-hippocamelusbisulcus": 0.077,
-        "*-male-hippocamelusbisulcus": 0.08,
-        "*-female-mazamaamericana": 0.0675,
-        "*-male-mazamaamericana": 0.077,
-        "*-female-mazamabricenii": 0.045,
-        "*-male-mazamabricenii": 0.048,
-        "*-female-mazamajucunda": 0.0375,
-        "*-male-mazamajucunda": 0.042,
-        "*-female-mazamanana": 0.045,
-        "*-male-mazamanana": 0.047,
-        "*-female-mazamarufa": 0.065,
-        "*-male-mazamarufa": 0.075,
-        "*-female-mazamarufina": 0.039,
-        "*-male-mazamarufina": 0.043,
-        "*-female-mazamatemama": 0.064,
-        "*-male-mazamatemama": 0.065,
-        "*-female-mazamatienhoveni": 0.045,
-        "*-male-mazamatienhoveni": 0.047,
-        "*-female-odocoileushemionus": 0.075,
-        "*-male-odocoileushemionus": 0.09,
-        "*-female-odocoileuslucasi": 0.09,
-        "*-male-odocoileuslucasi": 0.12,
-        "*-female-odocoileuspandora": 0.06,
-        "*-male-odocoileuspandora": 0.065,
-        "*-female-odocoileusvirginianus": 0.08,
-        "*-male-odocoileusvirginianus": 0.1,
-        "*-female-ozotocerosbezoarticus": 0.06,
-        "*-male-ozotocerosbezoarticus": 0.065,
-        "*-female-passalitesnemorivaga": 0.045,
-        "*-male-passalitesnemorivaga": 0.047,
-        "*-female-pudellacarlae": 0.035,
-        "*-male-pudellacarlae": 0.045,
-        "*-female-pudellamephistophiles": 0.003,
-        "*-male-pudellamephistophiles": 0.035,
-        "*-female-pudupuda": 0.0425,
-        "*-male-pudupuda": 0.053,
-        "*-female-rangiferarcticus": 0.08,
-        "*-male-rangiferarcticus": 0.1,
-        "*-female-rangifercaribou": 0.09,
-        "*-male-rangifercaribou": 0.11,
-        "*-female-rangiferfennicus": 0.09,
-        "*-male-rangiferfennicus": 0.11,
-        "*-female-rangifergroenlandicus": 0.08,
-        "*-male-rangifergroenlandicus": 0.09,
-        "*-female-rangiferplatyrhynchus": 0.06,
-        "*-male-rangiferplatyrhynchus": 0.08,
-        "*-female-rangifertarandus": 0.07,
-        "*-male-rangifertarandus": 0.09,
-        "*-female-subulochunyi": 0.032,
-        "*-male-subulochunyi": 0.035,
-        "*-female-subulogouazoubira": 0.05,
-        "*-male-subulogouazoubira": 0.05,
-        "*-female-torontoceroshypnogeos": 0.072,
-        "*-male-torontoceroshypnogeos": 0.08,
-        "*": 0.005
+    "path": "/server/behaviors/11/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "cervidae-capreolini-adult-female-{type}",
+          "cervidae-capreolini-baby-female-{type}",
+          "cervidae-capreolini-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-female-antiferultra": 0.097,
+          "*-male-antiferultra": 0.127,
+          "*-female-blastocerusdichotomus": 0.09,
+          "*-male-blastocerusdichotomus": 0.12,
+          "*-female-bretzianebrascensis": 0.08,
+          "*-male-bretzianebrascensis": 0.09,
+          "*-female-hippocamelusantisensis": 0.0675,
+          "*-male-hippocamelusantisensis": 0.077,
+          "*-female-hippocamelusbisulcus": 0.077,
+          "*-male-hippocamelusbisulcus": 0.08,
+          "*-female-mazamaamericana": 0.0675,
+          "*-male-mazamaamericana": 0.077,
+          "*-female-mazamabricenii": 0.045,
+          "*-male-mazamabricenii": 0.048,
+          "*-female-mazamajucunda": 0.0375,
+          "*-male-mazamajucunda": 0.042,
+          "*-female-mazamanana": 0.045,
+          "*-male-mazamanana": 0.047,
+          "*-female-mazamarufa": 0.065,
+          "*-male-mazamarufa": 0.075,
+          "*-female-mazamarufina": 0.039,
+          "*-male-mazamarufina": 0.043,
+          "*-female-mazamatemama": 0.064,
+          "*-male-mazamatemama": 0.065,
+          "*-female-mazamatienhoveni": 0.045,
+          "*-male-mazamatienhoveni": 0.047,
+          "*-female-odocoileushemionus": 0.075,
+          "*-male-odocoileushemionus": 0.09,
+          "*-female-odocoileuslucasi": 0.09,
+          "*-male-odocoileuslucasi": 0.12,
+          "*-female-odocoileuspandora": 0.06,
+          "*-male-odocoileuspandora": 0.065,
+          "*-female-odocoileusvirginianus": 0.08,
+          "*-male-odocoileusvirginianus": 0.1,
+          "*-female-ozotocerosbezoarticus": 0.06,
+          "*-male-ozotocerosbezoarticus": 0.065,
+          "*-female-passalitesnemorivaga": 0.045,
+          "*-male-passalitesnemorivaga": 0.047,
+          "*-female-pudellacarlae": 0.035,
+          "*-male-pudellacarlae": 0.045,
+          "*-female-pudellamephistophiles": 0.003,
+          "*-male-pudellamephistophiles": 0.035,
+          "*-female-pudupuda": 0.0425,
+          "*-male-pudupuda": 0.053,
+          "*-female-rangiferarcticus": 0.08,
+          "*-male-rangiferarcticus": 0.1,
+          "*-female-rangifercaribou": 0.09,
+          "*-male-rangifercaribou": 0.11,
+          "*-female-rangiferfennicus": 0.09,
+          "*-male-rangiferfennicus": 0.11,
+          "*-female-rangifergroenlandicus": 0.08,
+          "*-male-rangifergroenlandicus": 0.09,
+          "*-female-rangiferplatyrhynchus": 0.06,
+          "*-male-rangiferplatyrhynchus": 0.08,
+          "*-female-rangifertarandus": 0.07,
+          "*-male-rangifertarandus": 0.09,
+          "*-female-subulochunyi": 0.032,
+          "*-male-subulochunyi": 0.035,
+          "*-female-subulogouazoubira": 0.05,
+          "*-male-subulogouazoubira": 0.05,
+          "*-female-torontoceroshypnogeos": 0.072,
+          "*-male-torontoceroshypnogeos": 0.08,
+          "*": 0.005
+        },
+        "animationSpeedByType": {
+          "*": 2
+        },
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "fleeDurationMs": 20000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeedByType": {
-        "*": 2
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "cervidae-capreolini-adult-female-{type}",
+          "cervidae-capreolini-baby-female-{type}",
+          "cervidae-capreolini-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-blastocerusdichotomus": 0.05,
+          "*-mazama*": 0.02,
+          "*-pudella*": 0.02,
+          "*-pudupuda": 0.02,
+          "*-subulo*": 0.02,
+          "*": 0.04
+        },
+        "animationSpeed": 1,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "fleeDurationMs": 20000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "capreolinae:entities/animal/mammal/hooved/odocoileini-adult.json",
-    "path": "/server/behaviors/11/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "cervidae-capreolini-adult-female-{type}",
-        "cervidae-capreolini-baby-female-{type}",
-        "cervidae-capreolini-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-blastocerusdichotomus": 0.05,
-        "*-mazama*": 0.02,
-        "*-pudella*": 0.02,
-        "*-pudupuda": 0.02,
-        "*-subulo*": 0.02,
-        "*": 0.04
-      },
-      "animationSpeed": 1,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "capreolinae:entities/animal/mammal/hooved/odocoileini-adult.json",
-    "path": "/server/behaviors/11/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Canter",
-      "skipEntityCodes": [
-        "cervidae-capreolini-adult-female-{type}",
-        "cervidae-capreolini-baby-female-{type}",
-        "cervidae-capreolini-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-female-antiferultra": 0.039,
-        "*-male-antiferultra": 0.051,
-        "*-female-blastocerusdichotomus": 0.036,
-        "*-male-blastocerusdichotomus": 0.048,
-        "*-female-bretzianebrascensis": 0.032,
-        "*-male-bretzianebrascensis": 0.036,
-        "*-female-hippocamelusantisensis": 0.027,
-        "*-male-hippocamelusantisensis": 0.03,
-        "*-female-hippocamelusbisulcus": 0.03,
-        "*-male-hippocamelusbisulcus": 0.032,
-        "*-female-mazamaamericana": 0.027,
-        "*-male-mazamaamericana": 0.03,
-        "*-female-mazamabricenii": 0.008,
-        "*-male-mazamabricenii": 0.019,
-        "*-female-mazamajucunda": 0.015,
-        "*-male-mazamajucunda": 0.0168,
-        "*-female-mazamanana": 0.008,
-        "*-male-mazamanana": 0.019,
-        "*-female-mazamarufa": 0.026,
-        "*-male-mazamarufa": 0.03,
-        "*-female-mazamarufina": 0.0159,
-        "*-male-mazamarufina": 0.0174,
-        "*-female-mazamatemama": 0.025,
-        "*-male-mazamatemama": 0.026,
-        "*-female-mazamatienhoveni": 0.008,
-        "*-male-mazamatienhoveni": 0.019,
-        "*-female-odocoileushemionus": 0.03,
-        "*-male-odocoileushemionus": 0.036,
-        "*-female-odocoileuslucasi": 0.036,
-        "*-male-odocoileuslucasi": 0.048,
-        "*-female-odocoileuspandora": 0.024,
-        "*-male-odocoileuspandora": 0.026,
-        "*-female-odocoileusvirginianus": 0.032,
-        "*-male-odocoileusvirginianus": 0.04,
-        "*-female-ozotocerosbezoarticus": 0.024,
-        "*-male-ozotocerosbezoarticus": 0.026,
-        "*-female-passalitesnemorivaga": 0.018,
-        "*-male-passalitesnemorivaga": 0.019,
-        "*-female-pudellacarlae": 0.0168,
-        "*-male-pudellacarlae": 0.0216,
-        "*-female-pudellamephistophiles": 0.0154,
-        "*-male-pudellamephistophiles": 0.0168,
-        "*-female-pudupuda": 0.0204,
-        "*-male-pudupuda": 0.0255,
-        "*-female-rangiferarcticus": 0.024,
-        "*-male-rangiferarcticus": 0.03,
-        "*-female-rangifercaribou": 0.027,
-        "*-male-rangifercaribou": 0.033,
-        "*-female-rangiferfennicus": 0.027,
-        "*-male-rangiferfennicus": 0.033,
-        "*-female-rangifergroenlandicus": 0.024,
-        "*-male-rangifergroenlandicus": 0.027,
-        "*-female-rangiferplatyrhynchus": 0.0162,
-        "*-male-rangiferplatyrhynchus": 0.024,
-        "*-female-rangifertarandus": 0.021,
-        "*-male-rangifertarandus": 0.027,
-        "*-female-subulochunyi": 0.013,
-        "*-male-subulochunyi": 0.014,
-        "*-female-subulogouazoubira": 0.02,
-        "*-male-subulogouazoubira": 0.02,
-        "*-female-torontoceroshypnogeos": 0.036,
-        "*-male-torontoceroshypnogeos": 0.04,
-        "*": 0.005
-      },
-      "animationSpeedByType": {
-        "*-pudella*": 2.4,
-        "*-pudu*": 2.4,
-        "*": 1.5
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Canter",
+        "skipEntityCodes": [
+          "cervidae-capreolini-adult-female-{type}",
+          "cervidae-capreolini-baby-female-{type}",
+          "cervidae-capreolini-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-female-antiferultra": 0.039,
+          "*-male-antiferultra": 0.051,
+          "*-female-blastocerusdichotomus": 0.036,
+          "*-male-blastocerusdichotomus": 0.048,
+          "*-female-bretzianebrascensis": 0.032,
+          "*-male-bretzianebrascensis": 0.036,
+          "*-female-hippocamelusantisensis": 0.027,
+          "*-male-hippocamelusantisensis": 0.03,
+          "*-female-hippocamelusbisulcus": 0.03,
+          "*-male-hippocamelusbisulcus": 0.032,
+          "*-female-mazamaamericana": 0.027,
+          "*-male-mazamaamericana": 0.03,
+          "*-female-mazamabricenii": 0.008,
+          "*-male-mazamabricenii": 0.019,
+          "*-female-mazamajucunda": 0.015,
+          "*-male-mazamajucunda": 0.0168,
+          "*-female-mazamanana": 0.008,
+          "*-male-mazamanana": 0.019,
+          "*-female-mazamarufa": 0.026,
+          "*-male-mazamarufa": 0.03,
+          "*-female-mazamarufina": 0.0159,
+          "*-male-mazamarufina": 0.0174,
+          "*-female-mazamatemama": 0.025,
+          "*-male-mazamatemama": 0.026,
+          "*-female-mazamatienhoveni": 0.008,
+          "*-male-mazamatienhoveni": 0.019,
+          "*-female-odocoileushemionus": 0.03,
+          "*-male-odocoileushemionus": 0.036,
+          "*-female-odocoileuslucasi": 0.036,
+          "*-male-odocoileuslucasi": 0.048,
+          "*-female-odocoileuspandora": 0.024,
+          "*-male-odocoileuspandora": 0.026,
+          "*-female-odocoileusvirginianus": 0.032,
+          "*-male-odocoileusvirginianus": 0.04,
+          "*-female-ozotocerosbezoarticus": 0.024,
+          "*-male-ozotocerosbezoarticus": 0.026,
+          "*-female-passalitesnemorivaga": 0.018,
+          "*-male-passalitesnemorivaga": 0.019,
+          "*-female-pudellacarlae": 0.0168,
+          "*-male-pudellacarlae": 0.0216,
+          "*-female-pudellamephistophiles": 0.0154,
+          "*-male-pudellamephistophiles": 0.0168,
+          "*-female-pudupuda": 0.0204,
+          "*-male-pudupuda": 0.0255,
+          "*-female-rangiferarcticus": 0.024,
+          "*-male-rangiferarcticus": 0.03,
+          "*-female-rangifercaribou": 0.027,
+          "*-male-rangifercaribou": 0.033,
+          "*-female-rangiferfennicus": 0.027,
+          "*-male-rangiferfennicus": 0.033,
+          "*-female-rangifergroenlandicus": 0.024,
+          "*-male-rangifergroenlandicus": 0.027,
+          "*-female-rangiferplatyrhynchus": 0.0162,
+          "*-male-rangiferplatyrhynchus": 0.024,
+          "*-female-rangifertarandus": 0.021,
+          "*-male-rangifertarandus": 0.027,
+          "*-female-subulochunyi": 0.013,
+          "*-male-subulochunyi": 0.014,
+          "*-female-subulogouazoubira": 0.02,
+          "*-male-subulogouazoubira": 0.02,
+          "*-female-torontoceroshypnogeos": 0.036,
+          "*-male-torontoceroshypnogeos": 0.04,
+          "*": 0.005
+        },
+        "animationSpeedByType": {
+          "*-pudella*": 2.4,
+          "*-pudu*": 2.4,
+          "*": 1.5
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "capreolinae:entities/animal/mammal/hooved/odocoileini-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "cervidae-capreolini-adult-female-{type}",
-        "cervidae-capreolini-adult-male-{type}",
-        "cervidae-capreolini-baby-female-{type}",
-        "cervidae-capreolini-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-antiferultra": 0.072,
-        "*-blastocerusdichotomus": 0.072,
-        "*-bretzianebrascensis": 0.068,
-        "*-hippocamelusantisensis": 0.034,
-        "*-hippocamelusbisulcus": 0.04,
-        "*-mazamaamericana": 0.037,
-        "*-mazamabricenii": 0.026,
-        "*-mazamajucunda": 0.023,
-        "*-mazamanana": 0.023,
-        "*-mazamarufa": 0.037,
-        "*-mazamarufina": 0.023,
-        "*-mazamatemama": 0.037,
-        "*-mazamatienhoveni": 0.026,
-        "*-odocoileushemionus": 0.068,
-        "*-odocoileuslucasi": 0.08,
-        "*-odocoileuspandora": 0.04,
-        "*-odocoileusvirginianus": 0.072,
-        "*-ozotocerosbezoarticus": 0.05,
-        "*-passalitesnemorivaga": 0.026,
-        "*-pudellacarlae": 0.029,
-        "*-pudellamephistophiles": 0.0266,
-        "*-pudupuda": 0.032,
-        "*-rangifercaribou": 0.09,
-        "*-rangiferfennicus": 0.09,
-        "*-rangiferplatyrhynchus": 0.065,
-        "*-rangifer*": 0.08,
-        "*-subulochunyi": 0.02,
-        "*-subulogouazoubira": 0.037,
-        "*-torontoceroshypnogeos": 0.08,
-        "*": 0.005
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "cervidae-capreolini-adult-female-{type}",
+          "cervidae-capreolini-adult-male-{type}",
+          "cervidae-capreolini-baby-female-{type}",
+          "cervidae-capreolini-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-antiferultra": 0.072,
+          "*-blastocerusdichotomus": 0.072,
+          "*-bretzianebrascensis": 0.068,
+          "*-hippocamelusantisensis": 0.034,
+          "*-hippocamelusbisulcus": 0.04,
+          "*-mazamaamericana": 0.037,
+          "*-mazamabricenii": 0.026,
+          "*-mazamajucunda": 0.023,
+          "*-mazamanana": 0.023,
+          "*-mazamarufa": 0.037,
+          "*-mazamarufina": 0.023,
+          "*-mazamatemama": 0.037,
+          "*-mazamatienhoveni": 0.026,
+          "*-odocoileushemionus": 0.068,
+          "*-odocoileuslucasi": 0.08,
+          "*-odocoileuspandora": 0.04,
+          "*-odocoileusvirginianus": 0.072,
+          "*-ozotocerosbezoarticus": 0.05,
+          "*-passalitesnemorivaga": 0.026,
+          "*-pudellacarlae": 0.029,
+          "*-pudellamephistophiles": 0.0266,
+          "*-pudupuda": 0.032,
+          "*-rangifercaribou": 0.09,
+          "*-rangiferfennicus": 0.09,
+          "*-rangiferplatyrhynchus": 0.065,
+          "*-rangifer*": 0.08,
+          "*-subulochunyi": 0.02,
+          "*-subulogouazoubira": 0.037,
+          "*-torontoceroshypnogeos": 0.08,
+          "*": 0.005
+        },
+        "animationSpeed": 2.5,
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "fleeDurationMs": 20000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeed": 2.5,
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "fleeDurationMs": 20000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "capreolinae:entities/animal/mammal/hooved/odocoileini-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "cervidae-capreolini-adult-female-{type}",
-        "cervidae-capreolini-adult-male-{type}",
-        "cervidae-capreolini-baby-female-{type}",
-        "cervidae-capreolini-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-blastocerusdichotomus": 0.04,
-        "*": 0.02
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "cervidae-capreolini-adult-female-{type}",
+          "cervidae-capreolini-adult-male-{type}",
+          "cervidae-capreolini-baby-female-{type}",
+          "cervidae-capreolini-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-blastocerusdichotomus": 0.04,
+          "*": 0.02
+        },
+        "animationSpeed": 2,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeed": 2,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "capreolinae:entities/animal/mammal/hooved/odocoileini-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "cervidae-capreolini-adult-female-{type}",
-        "cervidae-capreolini-adult-male-{type}",
-        "cervidae-capreolini-baby-female-{type}",
-        "cervidae-capreolini-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-antiferultra": 0.072,
-        "*-blastocerusdichotomus": 0.072,
-        "*-bretzianebrascensis": 0.068,
-        "*-hippocamelusantisensis": 0.034,
-        "*-hippocamelusbisulcus": 0.04,
-        "*-mazamaamericana": 0.037,
-        "*-mazamabricenii": 0.026,
-        "*-mazamajucunda": 0.023,
-        "*-mazamanana": 0.023,
-        "*-mazamarufa": 0.037,
-        "*-mazamarufina": 0.023,
-        "*-mazamatemama": 0.037,
-        "*-mazamatienhoveni": 0.026,
-        "*-odocoileushemionus": 0.068,
-        "*-odocoileuslucasi": 0.08,
-        "*-odocoileuspandora": 0.04,
-        "*-odocoileusvirginianus": 0.072,
-        "*-ozotocerosbezoarticus": 0.05,
-        "*-passalitesnemorivaga": 0.026,
-        "*-pudellacarlae": 0.029,
-        "*-pudellamephistophiles": 0.0266,
-        "*-pudupuda": 0.032,
-        "*-rangifercaribou": 0.09,
-        "*-rangiferfennicus": 0.09,
-        "*-rangiferplatyrhynchus": 0.065,
-        "*-rangifer*": 0.08,
-        "*-subulochunyi": 0.02,
-        "*-subulogouazoubira": 0.037,
-        "*-torontoceroshypnogeos": 0.08,
-        "*": 0.005
-      },
-      "animationSpeed": 2.5,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "cervidae-capreolini-adult-female-{type}",
+          "cervidae-capreolini-adult-male-{type}",
+          "cervidae-capreolini-baby-female-{type}",
+          "cervidae-capreolini-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-antiferultra": 0.072,
+          "*-blastocerusdichotomus": 0.072,
+          "*-bretzianebrascensis": 0.068,
+          "*-hippocamelusantisensis": 0.034,
+          "*-hippocamelusbisulcus": 0.04,
+          "*-mazamaamericana": 0.037,
+          "*-mazamabricenii": 0.026,
+          "*-mazamajucunda": 0.023,
+          "*-mazamanana": 0.023,
+          "*-mazamarufa": 0.037,
+          "*-mazamarufina": 0.023,
+          "*-mazamatemama": 0.037,
+          "*-mazamatienhoveni": 0.026,
+          "*-odocoileushemionus": 0.068,
+          "*-odocoileuslucasi": 0.08,
+          "*-odocoileuspandora": 0.04,
+          "*-odocoileusvirginianus": 0.072,
+          "*-ozotocerosbezoarticus": 0.05,
+          "*-passalitesnemorivaga": 0.026,
+          "*-pudellacarlae": 0.029,
+          "*-pudellamephistophiles": 0.0266,
+          "*-pudupuda": 0.032,
+          "*-rangifercaribou": 0.09,
+          "*-rangiferfennicus": 0.09,
+          "*-rangiferplatyrhynchus": 0.065,
+          "*-rangifer*": 0.08,
+          "*-subulochunyi": 0.02,
+          "*-subulogouazoubira": 0.037,
+          "*-torontoceroshypnogeos": 0.08,
+          "*": 0.005
+        },
+        "animationSpeed": 2.5,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   }
 ]

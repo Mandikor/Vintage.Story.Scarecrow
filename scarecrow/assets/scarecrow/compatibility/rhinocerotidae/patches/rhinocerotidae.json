@@ -3,270 +3,246 @@
     "enabled": true,
     "op": "addmerge",
     "file": "rhinocerotidae:entities/animal/mammal/hooved/rhinocerotidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.42,
-      "animation": "Gallop",
-      "movespeedByType": {
-        "*-adult-*-ceratotheriumsimum": 0.1042,
-        "*-adult-*-coelodontaantiquitatis": 0.0938,
-        "*-adult-*-dicerorhinussumatrensis": 0.0833,
-        "*-adult-*-dicerosbicornis": 0.1146,
-        "*-adult-*-rhinocerossondaicus": 0.1,
-        "*-adult-*-rhinocerosunicornis": 0.1146
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.42,
+        "animation": "Gallop",
+        "movespeedByType": {
+          "*-adult-*-ceratotheriumsimum": 0.1042,
+          "*-adult-*-coelodontaantiquitatis": 0.0938,
+          "*-adult-*-dicerorhinussumatrensis": 0.0833,
+          "*-adult-*-dicerosbicornis": 0.1146,
+          "*-adult-*-rhinocerossondaicus": 0.1,
+          "*-adult-*-rhinocerosunicornis": 0.1146
+        },
+        "animationSpeedByType": {
+          "*-female-*-ceratotheriumsimum": 7.64,
+          "*-adult-*-ceratotheriumsimum": 6.94,
+          "*-female-*-coelodontaantiquitatis": 6.88,
+          "*-adult-*-coelodontaantiquitatis": 6.25,
+          "*-female-*-dicerorhinussumatrensis": 6.11,
+          "*-adult-*-dicerorhinussumatrensis": 5.56,
+          "*-female-*-dicerosbicornis": 8.4,
+          "*-adult-*-dicerosbicornis": 7.64,
+          "*-female-*-rhinocerossondaicus": 7.33,
+          "*-adult-*-rhinocerossondaicus": 6.67,
+          "*-female-*-rhinocerosunicornis": 8.4,
+          "*-adult-*-rhinocerosunicornis": 7.64
+        },
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "fleeDurationMs": 20000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeedByType": {
-        "*-female-*-ceratotheriumsimum": 7.64,
-        "*-adult-*-ceratotheriumsimum": 6.94,
-        "*-female-*-coelodontaantiquitatis": 6.88,
-        "*-adult-*-coelodontaantiquitatis": 6.25,
-        "*-female-*-dicerorhinussumatrensis": 6.11,
-        "*-adult-*-dicerorhinussumatrensis": 5.56,
-        "*-female-*-dicerosbicornis": 8.4,
-        "*-adult-*-dicerosbicornis": 7.64,
-        "*-female-*-rhinocerossondaicus": 7.33,
-        "*-adult-*-rhinocerossondaicus": 6.67,
-        "*-female-*-rhinocerosunicornis": 8.4,
-        "*-adult-*-rhinocerosunicornis": 7.64
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.42,
+        "animation": "Swim",
+        "movespeedByType": {
+          "*-adult-*-ceratotheriumsimum": 0.045,
+          "*-adult-*-coelodontaantiquitatis": 0.04,
+          "*-adult-*-dicerorhinussumatrensis": 0.04,
+          "*-adult-*-dicerosbicornis": 0.04,
+          "*-adult-*-rhinocerossondaicus": 0.04,
+          "*-adult-*-rhinocerosunicornis": 0.045
+        },
+        "animationSpeed": 1.5,
+        "seekingRange": 60,
+        "fleeingDistance": 120,
+        "fleeDurationMs": 60000,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "fleeDurationMs": 20000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "rhinocerotidae:entities/animal/mammal/hooved/rhinocerotidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.42,
-      "animation": "Swim",
-      "movespeedByType": {
-        "*-adult-*-ceratotheriumsimum": 0.045,
-        "*-adult-*-coelodontaantiquitatis": 0.04,
-        "*-adult-*-dicerorhinussumatrensis": 0.04,
-        "*-adult-*-dicerosbicornis": 0.04,
-        "*-adult-*-rhinocerossondaicus": 0.04,
-        "*-adult-*-rhinocerosunicornis": 0.045
-      },
-      "animationSpeed": 1.5,
-      "seekingRange": 60,
-      "fleeingDistance": 120,
-      "fleeDurationMs": 60000,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "rhinocerotidae:entities/animal/mammal/hooved/rhinocerotidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.41,
-      "animation": "Trot",
-      "movespeedByType": {
-        "*-adult-*-ceratotheriumsimum": 0.0825,
-        "*-adult-*-coelodontaantiquitatis": 0.0715,
-        "*-adult-*-dicerorhinussumatrensis": 0.066,
-        "*-adult-*-dicerosbicornis": 0.0715,
-        "*-adult-*-rhinocerossondaicus": 0.0715,
-        "*-adult-*-rhinocerosunicornis": 0.0825
-      },
-      "animationSpeedByType": {
-        "*-female-*": 5.5,
-        "*": 5.0
-      },
-      "seekingRange": 60,
-      "fleeingDistance": 120,
-      "fleeDurationMs": 60000,
-      "whenSwimming": false,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.41,
+        "animation": "Trot",
+        "movespeedByType": {
+          "*-adult-*-ceratotheriumsimum": 0.0825,
+          "*-adult-*-coelodontaantiquitatis": 0.0715,
+          "*-adult-*-dicerorhinussumatrensis": 0.066,
+          "*-adult-*-dicerosbicornis": 0.0715,
+          "*-adult-*-rhinocerossondaicus": 0.0715,
+          "*-adult-*-rhinocerosunicornis": 0.0825
+        },
+        "animationSpeedByType": {
+          "*-female-*": 5.5,
+          "*": 5.0
+        },
+        "seekingRange": 60,
+        "fleeingDistance": 120,
+        "fleeDurationMs": 60000,
+        "whenSwimming": false,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "rhinocerotidae:entities/animal/mammal/hooved/rhinocerotidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Gallop",
-      "skipEntityCodes": [
-        "rhinocerotidae-adult-female-{type}",
-        "rhinocerotidae-adult-male-{type}",
-        "rhinocerotidae-baby-female-{type}",
-        "rhinocerotidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-baby-*-ceratotheriumsimum": 0.077,
-        "*-baby-*-coelodontaantiquitatis": 0.065,
-        "*-baby-*-dicerorhinussumatrensis": 0.06,
-        "*-baby-*-dicerosbicornis": 0.065,
-        "*-baby-*-rhinocerossondaicus": 0.065,
-        "*-baby-*-rhinocerosunicornis": 0.077
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Gallop",
+        "skipEntityCodes": [
+          "rhinocerotidae-adult-female-{type}",
+          "rhinocerotidae-adult-male-{type}",
+          "rhinocerotidae-baby-female-{type}",
+          "rhinocerotidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-baby-*-ceratotheriumsimum": 0.077,
+          "*-baby-*-coelodontaantiquitatis": 0.065,
+          "*-baby-*-dicerorhinussumatrensis": 0.06,
+          "*-baby-*-dicerosbicornis": 0.065,
+          "*-baby-*-rhinocerossondaicus": 0.065,
+          "*-baby-*-rhinocerosunicornis": 0.077
+        },
+        "animationSpeed": 5,
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "fleeDurationMs": 20000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeed": 5,
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "fleeDurationMs": 20000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "rhinocerotidae:entities/animal/mammal/hooved/rhinocerotidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "rhinocerotidae-adult-female-{type}",
-        "rhinocerotidae-adult-male-{type}",
-        "rhinocerotidae-baby-female-{type}",
-        "rhinocerotidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-baby-*-ceratotheriumsimum": 0.0225,
-        "*-baby-*-coelodontaantiquitatis": 0.02,
-        "*-baby-*-dicerorhinussumatrensis": 0.02,
-        "*-baby-*-dicerosbicornis": 0.02,
-        "*-baby-*-rhinocerossondaicus": 0.02,
-        "*-baby-*-rhinocerosunicornis": 0.0225
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "rhinocerotidae-adult-female-{type}",
+          "rhinocerotidae-adult-male-{type}",
+          "rhinocerotidae-baby-female-{type}",
+          "rhinocerotidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-baby-*-ceratotheriumsimum": 0.0225,
+          "*-baby-*-coelodontaantiquitatis": 0.02,
+          "*-baby-*-dicerorhinussumatrensis": 0.02,
+          "*-baby-*-dicerosbicornis": 0.02,
+          "*-baby-*-rhinocerossondaicus": 0.02,
+          "*-baby-*-rhinocerosunicornis": 0.0225
+        },
+        "animationSpeed": 1.5,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeed": 1.5,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "rhinocerotidae:entities/animal/mammal/hooved/rhinocerotidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Trot",
-      "skipEntityCodes": [
-        "rhinocerotidae-adult-female-{type}",
-        "rhinocerotidae-adult-male-{type}",
-        "rhinocerotidae-baby-female-{type}",
-        "rhinocerotidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-baby-*-ceratotheriumsimum": 0.0385,
-        "*-baby-*-coelodontaantiquitatis": 0.0325,
-        "*-baby-*-dicerorhinussumatrensis": 0.03,
-        "*-baby-*-dicerosbicornis": 0.0325,
-        "*-baby-*-rhinocerossondaicus": 0.0325,
-        "*-baby-*-rhinocerosunicornis": 0.0385
-      },
-      "animationSpeed": 5,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Trot",
+        "skipEntityCodes": [
+          "rhinocerotidae-adult-female-{type}",
+          "rhinocerotidae-adult-male-{type}",
+          "rhinocerotidae-baby-female-{type}",
+          "rhinocerotidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-baby-*-ceratotheriumsimum": 0.0385,
+          "*-baby-*-coelodontaantiquitatis": 0.0325,
+          "*-baby-*-dicerorhinussumatrensis": 0.03,
+          "*-baby-*-dicerosbicornis": 0.0325,
+          "*-baby-*-rhinocerossondaicus": 0.0325,
+          "*-baby-*-rhinocerosunicornis": 0.0385
+        },
+        "animationSpeed": 5,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   }
 ]

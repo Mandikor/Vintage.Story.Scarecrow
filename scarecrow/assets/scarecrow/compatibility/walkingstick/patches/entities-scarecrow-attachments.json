@@ -2,193 +2,47 @@
   {
     "file": "scarecrow:entities/nonliving/scarecrow.json",
     "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "walkingstick:walkingstick-architect"
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes",
+    "value": [
+      "walkingstick:walkingstick-architect",
+      "walkingstick:walkingstick-blackthorn",
+      "walkingstick:walkingstick-cowskull",
+      "walkingstick:walkingstick-crude",
+      "walkingstick:walkingstick-fine",
+      "walkingstick:walkingstick-gas",
+      "walkingstick:walkingstick-gun-sheathed",
+      "walkingstick:walkingstick-jonas",
+      "walkingstick:walkingstick-lantern-*",
+      "walkingstick:walkingstick-pathfinder",
+      "walkingstick:walkingstick-reinforced",
+      "walkingstick:walkingstick-sheathed",
+      "walkingstick:walkingstick-shepherds",
+      "walkingstick:walkingstick-sling",
+      "walkingstick:walkingstick-witch",
+      "walkingstick:walkingstick"
+    ]
   },
   {
     "file": "scarecrow:entities/nonliving/scarecrow.json",
     "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
-    "value": "walkingstick:walkingstick-architect"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "walkingstick:walkingstick-blackthorn"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
-    "value": "walkingstick:walkingstick-blackthorn"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "walkingstick:walkingstick-cowskull"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
-    "value": "walkingstick:walkingstick-cowskull"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "walkingstick:walkingstick-crude"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
-    "value": "walkingstick:walkingstick-crude"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "walkingstick:walkingstick-fine"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
-    "value": "walkingstick:walkingstick-fine"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "walkingstick:walkingstick-gas"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
-    "value": "walkingstick:walkingstick-gas"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "walkingstick:walkingstick-gun-sheathed"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
-    "value": "walkingstick:walkingstick-gun-sheathed"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "walkingstick:walkingstick-jonas"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
-    "value": "walkingstick:walkingstick-jonas"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "walkingstick:walkingstick-lantern-*"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
-    "value": "walkingstick:walkingstick-lantern-*"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "walkingstick:walkingstick-pathfinder"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
-    "value": "walkingstick:walkingstick-pathfinder"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "walkingstick:walkingstick-reinforced"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
-    "value": "walkingstick:walkingstick-reinforced"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "walkingstick:walkingstick-sheathed"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
-    "value": "walkingstick:walkingstick-sheathed"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "walkingstick:walkingstick-shepherds"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
-    "value": "walkingstick:walkingstick-shepherds"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "walkingstick:walkingstick-sling"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
-    "value": "walkingstick:walkingstick-sling"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "walkingstick:walkingstick-witch"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
-    "value": "walkingstick:walkingstick-witch"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "walkingstick:walkingstick"
-  },
-  {
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
-    "value": "walkingstick:walkingstick"
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes",
+    "value": [
+      "walkingstick:walkingstick-architect",
+      "walkingstick:walkingstick-blackthorn",
+      "walkingstick:walkingstick-cowskull",
+      "walkingstick:walkingstick-crude",
+      "walkingstick:walkingstick-fine",
+      "walkingstick:walkingstick-gas",
+      "walkingstick:walkingstick-gun-sheathed",
+      "walkingstick:walkingstick-jonas",
+      "walkingstick:walkingstick-lantern-*",
+      "walkingstick:walkingstick-pathfinder",
+      "walkingstick:walkingstick-reinforced",
+      "walkingstick:walkingstick-sheathed",
+      "walkingstick:walkingstick-shepherds",
+      "walkingstick:walkingstick-sling",
+      "walkingstick:walkingstick-witch",
+      "walkingstick:walkingstick"
+    ]
   }
 ]

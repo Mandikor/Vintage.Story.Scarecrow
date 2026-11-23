@@ -3,98 +3,74 @@
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-female.json",
-    "path": "/server/behaviors/11/aitasks/-",
-    "value": {
-      "code": "meleeattack",
-      "knockbackStrength": 2.05,
-      "priority": 2,
-      "damage": 7,
-      "damageTier": 2,
-      "slot": 1,
-      "mincooldown": 1500,
-      "maxcooldown": 2500,
-      "attackDurationMs": 1250,
-      "damagePlayerAtMs": 900,
-      "animation": "Attack",
-      "animationSpeed": 2,
-      "whenInEmotionState": "aggressiveondamage|aggressivearoundentities",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+    "path": "/server/behaviors/11/aitasks",
+    "value": [
+      {
+        "code": "meleeattack",
+        "knockbackStrength": 2.05,
+        "priority": 2,
+        "damage": 7,
+        "damageTier": 2,
+        "slot": 1,
+        "mincooldown": 1500,
+        "maxcooldown": 2500,
+        "attackDurationMs": 1250,
+        "damagePlayerAtMs": 900,
+        "animation": "Attack",
+        "animationSpeed": 2,
+        "whenInEmotionState": "aggressiveondamage|aggressivearoundentities",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      },
+      {
+        "code": "seekentity",
+        "priority": 1.5,
+        "mincooldown": 1000,
+        "maxcooldown": 1500,
+        "movespeed": 0.028,
+        "seekingRange": 15,
+        "animation": "Run",
+        "animationSpeed": 1.8,
+        "whenInEmotionState": "aggressiveondamage|aggressivearoundentities",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      },
+      {
+        "code": "fleeentity",
+        "priority": 1.5,
+        "movespeed": 0.028,
+        "seekingRange": 12,
+        "animation": "Run",
+        "animationSpeed": 1.8,
+        "whenInEmotionState": "fleeondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-female.json",
-    "path": "/server/behaviors/11/aitasks/-",
-    "value": {
-      "code": "seekentity",
-      "priority": 1.5,
-      "mincooldown": 1000,
-      "maxcooldown": 1500,
-      "movespeed": 0.028,
-      "seekingRange": 15,
-      "animation": "Run",
-      "animationSpeed": 1.8,
-      "whenInEmotionState": "aggressiveondamage|aggressivearoundentities",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-female.json",
-    "path": "/server/behaviors/11/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 1.5,
-      "movespeed": 0.028,
-      "seekingRange": 12,
-      "animation": "Run",
-      "animationSpeed": 1.8,
-      "whenInEmotionState": "fleeondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-female.json",
-    "path": "/server/behaviors/11/aitasks/4/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-female.json",
-    "path": "/server/behaviors/11/aitasks/4/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hooved/yak/yak-female.json",
-    "path": "/server/behaviors/11/aitasks/4/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/11/aitasks/4/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   }
 ]

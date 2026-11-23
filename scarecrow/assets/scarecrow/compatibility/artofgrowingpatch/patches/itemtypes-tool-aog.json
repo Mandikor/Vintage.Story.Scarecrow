@@ -30,38 +30,35 @@
   {
     "file": "artofgrowing:itemtypes/tool/hayfork.json",
     "op": "addmerge",
-    "path": "/attributes/onScarecrowTransformByType",
+    "path": "/attributes",
     "value": {
-      "hayfork-wooden": {
-        "translation": {
-          "x": -0.53,
-          "y": -0.8,
-          "z": -0.04
+      "onScarecrowTransformByType": {
+        "hayfork-wooden": {
+          "translation": {
+            "x": -0.53,
+            "y": -0.8,
+            "z": -0.04
+          },
+          "rotation": {
+            "x": 7,
+            "y": 60,
+            "z": 82
+          }
         },
-        "rotation": {
-          "x": 7,
-          "y": 60,
-          "z": 82
+        "*": {
+          "translation": {
+            "x": -0.53,
+            "y": -0.79,
+            "z": -0.04
+          },
+          "rotation": {
+            "x": 7,
+            "y": 60,
+            "z": 82
+          }
         }
       },
-      "*": {
-        "translation": {
-          "x": -0.53,
-          "y": -0.79,
-          "z": -0.04
-        },
-        "rotation": {
-          "x": 7,
-          "y": 60,
-          "z": 82
-        }
-      }
+      "scarecrowPendulum": false
     }
-  },
-  {
-    "file": "artofgrowing:itemtypes/tool/hayfork.json",
-    "op": "addmerge",
-    "path": "/attributes/scarecrowPendulum",
-    "value": false
   }
 ]

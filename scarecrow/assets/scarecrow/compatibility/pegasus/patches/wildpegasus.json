@@ -3,95 +3,83 @@
     "enabled": true,
     "op": "addmerge",
     "file": "pegasus:entities/wildpegasus.json",
-    "path": "/behaviorConfigs/taskai/aitasks/-",
+    "path": "/behaviorConfigs/taskai/aitasks",
     "side": "server",
-    "value": {
-      "code": "meleeattack",
-      "animation": "Attack",
-      "enabledByType": {
-        "wildpegasus-adult-*": true,
-        "*": false
+    "value": [
+      {
+        "code": "meleeattack",
+        "animation": "Attack",
+        "enabledByType": {
+          "wildpegasus-adult-*": true,
+          "*": false
+        },
+        "priority": 3,
+        "slot": 1,
+        "damageByType": {
+          "*-adult-*-caelestis*": 7
+        },
+        "knockbackStrengthByType": {
+          "*": 2
+        },
+        "damageTierByType": {
+          "*": 3
+        },
+        "mincooldown": 500,
+        "maxcooldown": 1000,
+        "attackDurationMs": 500,
+        "damagePlayerAtMs": 250,
+        "animationSpeed": 1,
+        "whenInEmotionState": "aggressiveondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "priority": 3,
-      "slot": 1,
-      "damageByType": {
-        "*-adult-*-caelestis*": 7
+      {
+        "code": "seekentity",
+        "priority": 2.5,
+        "mincooldown": 1000,
+        "maxcooldown": 1500,
+        "seekingRange": 20,
+        "movespeed": 0.037,
+        "animation": "Charge",
+        "animationSpeed": 1,
+        "sound": "game:creature/hooved/generic/sniff*",
+        "whenInEmotionState": "aggressiveondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "wildpegasus-adult-*": true,
+          "*": false
+        }
       },
-      "knockbackStrengthByType": {
-        "*": 2
-      },
-      "damageTierByType": {
-        "*": 3
-      },
-      "mincooldown": 500,
-      "maxcooldown": 1000,
-      "attackDurationMs": 500,
-      "damagePlayerAtMs": 250,
-      "animationSpeed": 1,
-      "whenInEmotionState": "aggressiveondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    }
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "pegasus:entities/wildpegasus.json",
-    "path": "/behaviorConfigs/taskai/aitasks/-",
-    "side": "server",
-    "value": {
-      "code": "seekentity",
-      "priority": 2.5,
-      "mincooldown": 1000,
-      "maxcooldown": 1500,
-      "seekingRange": 20,
-      "movespeed": 0.037,
-      "animation": "Charge",
-      "animationSpeed": 1,
-      "sound": "game:creature/hooved/generic/sniff*",
-      "whenInEmotionState": "aggressiveondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "wildpegasus-adult-*": true,
-        "*": false
+      {
+        "code": "fleeentity",
+        "whenInEmotionState": "fleeondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "priority": 1.8,
+        "movespeed": 0.05,
+        "seekingRange": 12,
+        "animation": "Gallop",
+        "animationSpeed": 2,
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "wildpegasus-*": true,
+          "*": false
+        },
+        "instafleeOnDamageChance": 0
       }
-    }
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "pegasus:entities/wildpegasus.json",
-    "path": "/behaviorConfigs/taskai/aitasks/-",
-    "side": "server",
-    "value": {
-      "code": "fleeentity",
-      "whenInEmotionState": "fleeondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 1.8,
-      "movespeed": 0.05,
-      "seekingRange": 12,
-      "animation": "Gallop",
-      "animationSpeed": 2,
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "wildpegasus-*": true,
-        "*": false
-      },
-      "instafleeOnDamageChance": 0
-    }
+    ]
   },
   {
     "enabled": true,

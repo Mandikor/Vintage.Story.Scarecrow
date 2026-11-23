@@ -3,73 +3,56 @@
     "enabled": true,
     "op": "addmerge",
     "file": "fantasycreatures:entities/land/skeletonblkgrd.json",
-    "path": "/server/behaviors/5/aitasks/-",
-    "value": {
-      "code": "meleeattack",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 2,
-      "damage": 8,
-      "damageTier": 2,
-      "mincooldown": 350,
-      "maxcooldown": 550,
-      "damagePlayerAtMs": 500,
-      "attackDurationMs": 850,
-      "animation": "attack",
-      "animationSpeed": 1.5,
-      "retaliateAttacks": false
-    },
+    "path": "/server/behaviors/5/aitasks",
+    "value": [
+      {
+        "code": "meleeattack",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "priority": 2,
+        "damage": 8,
+        "damageTier": 2,
+        "mincooldown": 350,
+        "maxcooldown": 550,
+        "damagePlayerAtMs": 500,
+        "attackDurationMs": 850,
+        "animation": "attack",
+        "animationSpeed": 1.5,
+        "retaliateAttacks": false
+      },
+      {
+        "code": "seekentity",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "priority": 1.5,
+        "mincooldown": 400,
+        "maxcooldown": 800,
+        "movespeed": 0.045,
+        "seekingRange": 27,
+        "animationSpeed": 1.3,
+        "animation": "run",
+        "sound": "creature/skeleton_rattle",
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "fantasycreatures:entities/land/skeletonblkgrd.json",
-    "path": "/server/behaviors/5/aitasks/-",
-    "value": {
-      "code": "seekentity",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 1.5,
-      "mincooldown": 400,
-      "maxcooldown": 800,
-      "movespeed": 0.045,
-      "seekingRange": 27,
-      "animationSpeed": 1.3,
-      "animation": "run",
-      "sound": "creature/skeleton_rattle",
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/skeletonblkgrd.json",
-    "path": "/server/behaviors/5/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/skeletonblkgrd.json",
-    "path": "/server/behaviors/5/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/skeletonblkgrd.json",
-    "path": "/server/behaviors/5/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/5/aitasks/3/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   }
 ]

@@ -3,29 +3,21 @@
     "enabled": true,
     "file": "scarecrow:entities/nonliving/little-scarecrow.json",
     "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "apelanterns:apemetallantern-*-up"
-  },
-  {
-    "enabled": true,
-    "file": "scarecrow:entities/nonliving/little-scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "apelanterns:apepaperlantern-*-up"
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes",
+    "value": [
+      "apelanterns:apemetallantern-*-up",
+      "apelanterns:apepaperlantern-*-up"
+    ]
   },
   {
     "enabled": true,
     "file": "scarecrow:entities/nonliving/scarecrow.json",
     "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "apelanterns:apemetallantern-*-up"
-  },
-  {
-    "enabled": true,
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes/-",
-    "value": "apelanterns:apepaperlantern-*-up"
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/0/allowedCodes",
+    "value": [
+      "apelanterns:apemetallantern-*-up",
+      "apelanterns:apepaperlantern-*-up"
+    ]
   },
   {
     "enabled": true,
@@ -45,15 +37,11 @@
     "enabled": true,
     "file": "scarecrow:entities/nonliving/scarecrow.json",
     "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
-    "value": "apelanterns:apemetallantern-*-up"
-  },
-  {
-    "enabled": true,
-    "file": "scarecrow:entities/nonliving/scarecrow.json",
-    "op": "addmerge",
-    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes/-",
-    "value": "apelanterns:apepaperlantern-*-up"
+    "path": "/behaviorConfigs/scarecrowattachments/wearableSlots/1/allowedCodes",
+    "value": [
+      "apelanterns:apemetallantern-*-up",
+      "apelanterns:apepaperlantern-*-up"
+    ]
   },
   {
     "enabled": true,

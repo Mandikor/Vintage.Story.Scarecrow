@@ -2,219 +2,181 @@
   {
     "enabled": true,
     "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/-",
+    "path": "/server/behaviors/11/aitasks",
     "file": "game:entities/animal/mammal/hooved/moose-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeed": 0.02,
-      "animationSpeed": 2,
-      "sound": "creature/hooved/generic/sniff*",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/-",
-    "file": "game:entities/animal/mammal/hooved/moose-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeed": 0.02,
-      "animationSpeed": 2,
-      "sound": "creature/hooved/generic/sniff*",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/-",
-    "file": "game:entities/animal/mammal/hooved/moose-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeed": 0.02,
-      "animationSpeed": 2,
-      "sound": "creature/hooved/generic/sniff*",
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "game:entities/animal/mammal/hooved/moose-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeed": 0.05,
-      "animationSpeed": 1.8,
-      "sound": "creature/hooved/generic/sniff*",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 3.1,
-      "priorityForCancel": 3.1,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "game:entities/animal/mammal/hooved/moose-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeed": 0.05,
-      "animationSpeed": 1.8,
-      "sound": "creature/hooved/generic/sniff*",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 3.1,
-      "priorityForCancel": 3.1,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "game:entities/animal/mammal/hooved/moose-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "animation": "Run",
-      "movespeed": 0.05,
-      "animationSpeed": 1.8,
-      "sound": "creature/hooved/generic/sniff*",
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 3.1,
-      "priorityForCancel": 3.1,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "game:entities/animal/mammal/hooved/moose-adult.json",
-    "value": {
-      "code": "seekentity",
-      "animation": "Charge",
-      "movespeed": 0.036,
-      "animationSpeed": 1,
-      "sound": "creature/hooved/generic/sniff*",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 3.2,
-      "priorityForCancel": 3.2,
-      "slot": 0,
-      "seekingRange": 16,
-      "minCooldownMs": 600,
-      "maxCooldownMs": 650,
-      "maxFollowTime": 15,
-      "whenSwimming": false,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
-      ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "game:entities/animal/mammal/hooved/moose-adult.json",
-    "value": {
-      "code": "meleeattack",
-      "animation": "Attack",
-      "damageByType": {
-        "*-male": 12,
-        "*-female": 9
+    "value": [
+      {
+        "code": "fleeentity",
+        "animation": "Run",
+        "movespeed": 0.02,
+        "animationSpeed": 2,
+        "sound": "creature/hooved/generic/sniff*",
+        "entityCodes": [
+          "scarecrow"
+        ],
+        "priority": 1.6,
+        "priorityForCancel": 1.6,
+        "seekingRange": 16,
+        "fleeingDistance": 20,
+        "whenSwimming": false,
+        "retaliateAttacks": false
       },
-      "damageTier": 2,
-      "damageType": "SlashingAttack",
-      "attackDurationMs": 1250,
-      "damagePlayerAtMs": 500,
-      "animationSpeed": 2.5,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 3.3,
-      "priorityForCancel": 3.3,
-      "slot": 1,
-      "minCooldownMs": 1500,
-      "maxCooldownMs": 2500,
-      "whenNotInEmotionStates": [
-        "fleeondamage"
-      ],
-      "whenInEmotionStates": [
-        "aggressiveondamage"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "animation": "Run",
+        "movespeed": 0.02,
+        "animationSpeed": 2,
+        "sound": "creature/hooved/generic/sniff*",
+        "entityCodes": [
+          "little-scarecrow"
+        ],
+        "priority": 1.6,
+        "priorityForCancel": 1.6,
+        "seekingRange": 12,
+        "fleeingDistance": 16,
+        "whenSwimming": false,
+        "retaliateAttacks": false
+      },
+      {
+        "code": "fleeentity",
+        "animation": "Run",
+        "movespeed": 0.02,
+        "animationSpeed": 2,
+        "sound": "creature/hooved/generic/sniff*",
+        "entityCodes": [
+          "strawdummy"
+        ],
+        "priority": 1.6,
+        "priorityForCancel": 1.6,
+        "seekingRange": 8,
+        "fleeingDistance": 12,
+        "whenSwimming": false,
+        "retaliateAttacks": false
+      }
+    ],
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "addmerge",
+    "path": "/server/behaviors/10/aitasks",
+    "file": "game:entities/animal/mammal/hooved/moose-adult.json",
+    "value": [
+      {
+        "code": "fleeentity",
+        "animation": "Run",
+        "movespeed": 0.05,
+        "animationSpeed": 1.8,
+        "sound": "creature/hooved/generic/sniff*",
+        "entityCodes": [
+          "scarecrow"
+        ],
+        "priority": 3.1,
+        "priorityForCancel": 3.1,
+        "seekingRange": 16,
+        "fleeingDistance": 20,
+        "whenSwimming": false,
+        "whenNotInEmotionStates": [
+          "aggressiveondamage"
+        ],
+        "retaliateAttacks": false
+      },
+      {
+        "code": "fleeentity",
+        "animation": "Run",
+        "movespeed": 0.05,
+        "animationSpeed": 1.8,
+        "sound": "creature/hooved/generic/sniff*",
+        "entityCodes": [
+          "little-scarecrow"
+        ],
+        "priority": 3.1,
+        "priorityForCancel": 3.1,
+        "seekingRange": 12,
+        "fleeingDistance": 16,
+        "whenSwimming": false,
+        "whenNotInEmotionStates": [
+          "aggressiveondamage"
+        ],
+        "retaliateAttacks": false
+      },
+      {
+        "code": "fleeentity",
+        "animation": "Run",
+        "movespeed": 0.05,
+        "animationSpeed": 1.8,
+        "sound": "creature/hooved/generic/sniff*",
+        "entityCodes": [
+          "strawdummy"
+        ],
+        "priority": 3.1,
+        "priorityForCancel": 3.1,
+        "seekingRange": 8,
+        "fleeingDistance": 12,
+        "whenSwimming": false,
+        "whenNotInEmotionStates": [
+          "aggressiveondamage"
+        ],
+        "retaliateAttacks": false
+      },
+      {
+        "code": "seekentity",
+        "animation": "Charge",
+        "movespeed": 0.036,
+        "animationSpeed": 1,
+        "sound": "creature/hooved/generic/sniff*",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "priority": 3.2,
+        "priorityForCancel": 3.2,
+        "slot": 0,
+        "seekingRange": 16,
+        "minCooldownMs": 600,
+        "maxCooldownMs": 650,
+        "maxFollowTime": 15,
+        "whenSwimming": false,
+        "whenNotInEmotionStates": [
+          "fleeondamage"
+        ],
+        "whenInEmotionStates": [
+          "aggressiveondamage"
+        ],
+        "retaliateAttacks": false
+      },
+      {
+        "code": "meleeattack",
+        "animation": "Attack",
+        "damageByType": {
+          "*-male": 12,
+          "*-female": 9
+        },
+        "damageTier": 2,
+        "damageType": "SlashingAttack",
+        "attackDurationMs": 1250,
+        "damagePlayerAtMs": 500,
+        "animationSpeed": 2.5,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "priority": 3.3,
+        "priorityForCancel": 3.3,
+        "slot": 1,
+        "minCooldownMs": 1500,
+        "maxCooldownMs": 2500,
+        "whenNotInEmotionStates": [
+          "fleeondamage"
+        ],
+        "whenInEmotionStates": [
+          "aggressiveondamage"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   }
 ]

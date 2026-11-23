@@ -3,111 +3,87 @@
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-male.json",
-    "path": "/server/behaviors/8/aitasks/-",
-    "value": {
-      "code": "seekentity",
-      "enabledByType": {
-        "*-adult": true,
-        "*": false
+    "path": "/server/behaviors/8/aitasks",
+    "value": [
+      {
+        "code": "seekentity",
+        "enabledByType": {
+          "*-adult": true,
+          "*": false
+        },
+        "priority": 2.4,
+        "movespeed": 0.0,
+        "seekingRange": 5,
+        "animation": "idle",
+        "animationSpeed": 1.5,
+        "sound": "creature/swan/swan-hiss",
+        "whenInEmotionState": "aggressivearoundentities",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "priority": 2.4,
-      "movespeed": 0.0,
-      "seekingRange": 5,
-      "animation": "idle",
-      "animationSpeed": 1.5,
-      "sound": "creature/swan/swan-hiss",
-      "whenInEmotionState": "aggressivearoundentities",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-male.json",
-    "path": "/server/behaviors/8/aitasks/-",
-    "value": {
-      "code": "meleeattack",
-      "enabledByType": {
-        "*-adult": true,
-        "*": false
+      {
+        "code": "meleeattack",
+        "enabledByType": {
+          "*-adult": true,
+          "*": false
+        },
+        "animation": "attack",
+        "priority": 3,
+        "damage": 2.1,
+        "minDist": 2.7,
+        "damageType": "PiercingAttack",
+        "slot": 1,
+        "mincooldown": 1500,
+        "maxcooldown": 1500,
+        "attackDurationMs": 800,
+        "damagePlayerAtMs": 500,
+        "whenInEmotionState": "aggressiveondamage|aggressivearoundentities",
+        "sound": "creature/swan/swan-hiss",
+        "animationSpeed": 0.8,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animation": "attack",
-      "priority": 3,
-      "damage": 2.1,
-      "minDist": 2.7,
-      "damageType": "PiercingAttack",
-      "slot": 1,
-      "mincooldown": 1500,
-      "maxcooldown": 1500,
-      "attackDurationMs": 800,
-      "damagePlayerAtMs": 500,
-      "whenInEmotionState": "aggressiveondamage|aggressivearoundentities",
-      "sound": "creature/swan/swan-hiss",
-      "animationSpeed": 0.8,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "seekentity",
+        "enabledByType": {
+          "*-adult": true,
+          "*": false
+        },
+        "priority": 2.5,
+        "movespeed": 0.03,
+        "seekingRange": 3,
+        "animation": "Run",
+        "animationSpeed": 1.5,
+        "sound": "creature/swan/swan-hiss",
+        "whenInEmotionState": "aggressiveondamage|aggressivearoundentities",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-male.json",
-    "path": "/server/behaviors/8/aitasks/-",
-    "value": {
-      "code": "seekentity",
-      "enabledByType": {
-        "*-adult": true,
-        "*": false
-      },
-      "priority": 2.5,
-      "movespeed": 0.03,
-      "seekingRange": 3,
-      "animation": "Run",
-      "animationSpeed": 1.5,
-      "sound": "creature/swan/swan-hiss",
-      "whenInEmotionState": "aggressiveondamage|aggressivearoundentities",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-male.json",
-    "path": "/server/behaviors/8/aitasks/4/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-male.json",
-    "path": "/server/behaviors/8/aitasks/4/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/bird/swan/black/black-swan-male.json",
-    "path": "/server/behaviors/8/aitasks/4/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/8/aitasks/4/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   }
 ]

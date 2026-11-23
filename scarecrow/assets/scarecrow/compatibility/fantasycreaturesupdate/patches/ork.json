@@ -3,73 +3,61 @@
     "enabled": true,
     "op": "addmerge",
     "file": "fantasycreatures:entities/land/ork.json",
-    "path": "/server/behaviors/6/aitasksByType/ork-*/-",
-    "value": {
-      "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 2.5,
-      "movespeed": 0.06,
-      "seekingRange": 12,
-      "cancelOnHurt": true,
-      "animationSpeed": 1.3,
-      "whenInEmotionState": "fleeondamage",
-      "animation": "standrun",
-      "retaliateAttacks": false,
-      "instafleeOnDamageChance": 0
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/ork.json",
-    "path": "/server/behaviors/6/aitasksByType/ork-*/-",
-    "value": {
-      "code": "meleeattack",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 2,
-      "damage": 7,
-      "damageTier": 1,
-      "mincooldown": 500,
-      "maxcooldown": 1750,
-      "damagePlayerAtMs": 400,
-      "attackDurationMs": 1000,
-      "animation": "standattack",
-      "animationSpeed": 1.5,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/ork.json",
-    "path": "/server/behaviors/6/aitasksByType/ork-*/-",
-    "value": {
-      "code": "seekentity",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 1.5,
-      "mincooldown": 400,
-      "maxcooldown": 800,
-      "movespeed": 0.043,
-      "seekingRange": 30,
-      "animationSpeed": 1.3,
-      "animation": "standrun",
-      "sound": "game:creature/pig/piglet-hurt",
-      "retaliateAttacks": false
-    },
+    "path": "/server/behaviors/6/aitasksByType/ork-*",
+    "value": [
+      {
+        "code": "fleeentity",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "priority": 2.5,
+        "movespeed": 0.06,
+        "seekingRange": 12,
+        "cancelOnHurt": true,
+        "animationSpeed": 1.3,
+        "whenInEmotionState": "fleeondamage",
+        "animation": "standrun",
+        "retaliateAttacks": false,
+        "instafleeOnDamageChance": 0
+      },
+      {
+        "code": "meleeattack",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "priority": 2,
+        "damage": 7,
+        "damageTier": 1,
+        "mincooldown": 500,
+        "maxcooldown": 1750,
+        "damagePlayerAtMs": 400,
+        "attackDurationMs": 1000,
+        "animation": "standattack",
+        "animationSpeed": 1.5,
+        "retaliateAttacks": false
+      },
+      {
+        "code": "seekentity",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "priority": 1.5,
+        "mincooldown": 400,
+        "maxcooldown": 800,
+        "movespeed": 0.043,
+        "seekingRange": 30,
+        "animationSpeed": 1.3,
+        "animation": "standrun",
+        "sound": "game:creature/pig/piglet-hurt",
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   }
 ]

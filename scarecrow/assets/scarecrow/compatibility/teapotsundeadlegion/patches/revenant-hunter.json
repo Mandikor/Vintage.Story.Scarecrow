@@ -3,120 +3,60 @@
     "enabled": true,
     "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/revenant-hunter.json",
-    "path": "/server/behaviors/6/aitasks/2/entityCodes/-",
-    "value": "scarecrow",
+    "path": "/server/behaviors/6/aitasks/2/entityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/revenant-hunter.json",
-    "path": "/server/behaviors/6/aitasks/2/entityCodes/-",
-    "value": "little-scarecrow",
+    "path": "/server/behaviors/6/aitasks/3/entityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/revenant-hunter.json",
-    "path": "/server/behaviors/6/aitasks/2/entityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/6/aitasks/5/entityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/revenant-hunter.json",
-    "path": "/server/behaviors/6/aitasks/3/entityCodes/-",
-    "value": "scarecrow",
+    "path": "/server/behaviors/6/aitasks/7/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "teapotsundeadlegion:entities/land/revenant-hunter.json",
-    "path": "/server/behaviors/6/aitasks/3/entityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "teapotsundeadlegion:entities/land/revenant-hunter.json",
-    "path": "/server/behaviors/6/aitasks/3/entityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "teapotsundeadlegion:entities/land/revenant-hunter.json",
-    "path": "/server/behaviors/6/aitasks/5/entityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "teapotsundeadlegion:entities/land/revenant-hunter.json",
-    "path": "/server/behaviors/6/aitasks/5/entityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "teapotsundeadlegion:entities/land/revenant-hunter.json",
-    "path": "/server/behaviors/6/aitasks/5/entityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "teapotsundeadlegion:entities/land/revenant-hunter.json",
-    "path": "/server/behaviors/6/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "teapotsundeadlegion:entities/land/revenant-hunter.json",
-    "path": "/server/behaviors/6/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "teapotsundeadlegion:entities/land/revenant-hunter.json",
-    "path": "/server/behaviors/6/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "teapotsundeadlegion:entities/land/revenant-hunter.json",
-    "path": "/server/behaviors/6/aitasks/15/entityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "teapotsundeadlegion:entities/land/revenant-hunter.json",
-    "path": "/server/behaviors/6/aitasks/15/entityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "teapotsundeadlegion:entities/land/revenant-hunter.json",
-    "path": "/server/behaviors/6/aitasks/15/entityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/6/aitasks/15/entityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   }
 ]

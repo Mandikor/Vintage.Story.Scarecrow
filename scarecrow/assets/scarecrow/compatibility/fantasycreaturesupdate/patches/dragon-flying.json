@@ -3,47 +3,46 @@
     "enabled": true,
     "op": "addmerge",
     "file": "fantasycreatures:entities/land/dragon-flying.json",
-    "path": "/server/behaviors/4/aitasksByType/dragon-flying-red/-",
+    "path": "/server/behaviors/4/aitasksByType",
     "value": {
-      "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
+      "dragon-flying-red": [
+        {
+          "code": "fleeentity",
+          "entityCodes": [
+            "scarecrow",
+            "little-scarecrow",
+            "strawdummy"
+          ],
+          "priority": 2.5,
+          "movespeed": 0.035,
+          "seekingRange": 32,
+          "cancelOnHurt": false,
+          "animationSpeed": 1.3,
+          "animation": "flying",
+          "sound": "creature/dragon_flying",
+          "retaliateAttacks": false,
+          "instafleeOnDamageChance": 0
+        }
       ],
-      "priority": 2.5,
-      "movespeed": 0.035,
-      "seekingRange": 32,
-      "cancelOnHurt": false,
-      "animationSpeed": 1.3,
-      "animation": "flying",
-      "sound": "creature/dragon_flying",
-      "retaliateAttacks": false,
-      "instafleeOnDamageChance": 0
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/dragon-flying.json",
-    "path": "/server/behaviors/4/aitasksByType/dragon-flying-scorched/-",
-    "value": {
-      "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 2.5,
-      "movespeed": 0.05,
-      "seekingRange": 40,
-      "cancelOnHurt": false,
-      "animationSpeed": 1.3,
-      "animation": "flying",
-      "sound": "creature/dragon_flying",
-      "retaliateAttacks": false,
-      "instafleeOnDamageChance": 0
+      "dragon-flying-scorched": [
+        {
+          "code": "fleeentity",
+          "entityCodes": [
+            "scarecrow",
+            "little-scarecrow",
+            "strawdummy"
+          ],
+          "priority": 2.5,
+          "movespeed": 0.05,
+          "seekingRange": 40,
+          "cancelOnHurt": false,
+          "animationSpeed": 1.3,
+          "animation": "flying",
+          "sound": "creature/dragon_flying",
+          "retaliateAttacks": false,
+          "instafleeOnDamageChance": 0
+        }
+      ]
     },
     "side": "server"
   }

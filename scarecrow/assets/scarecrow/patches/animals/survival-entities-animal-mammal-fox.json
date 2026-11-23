@@ -2,133 +2,109 @@
   {
     "enabled": true,
     "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/-",
+    "path": "/server/behaviors/11/aitasks",
     "file": "game:entities/animal/mammal/fox-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.03,
-      "animation": "Run",
-      "animationSpeed": 2.5,
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
+    "value": [
+      {
+        "code": "fleeentity",
+        "movespeed": 0.03,
+        "animation": "Run",
+        "animationSpeed": 2.5,
+        "entityCodes": [
+          "scarecrow"
+        ],
+        "priority": 1.6,
+        "priorityForCancel": 1.6,
+        "seekingRange": 16,
+        "fleeingDistance": 20,
+        "whenSwimming": false,
+        "retaliateAttacks": false
+      },
+      {
+        "code": "fleeentity",
+        "movespeed": 0.03,
+        "animation": "Run",
+        "animationSpeed": 2.5,
+        "entityCodes": [
+          "little-scarecrow"
+        ],
+        "priority": 1.6,
+        "priorityForCancel": 1.6,
+        "seekingRange": 12,
+        "fleeingDistance": 16,
+        "whenSwimming": false,
+        "retaliateAttacks": false
+      },
+      {
+        "code": "fleeentity",
+        "movespeed": 0.03,
+        "animation": "Run",
+        "animationSpeed": 2.5,
+        "entityCodes": [
+          "strawdummy"
+        ],
+        "priority": 1.6,
+        "priorityForCancel": 1.6,
+        "seekingRange": 8,
+        "fleeingDistance": 12,
+        "whenSwimming": false,
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/-",
-    "file": "game:entities/animal/mammal/fox-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.03,
-      "animation": "Run",
-      "animationSpeed": 2.5,
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/-",
-    "file": "game:entities/animal/mammal/fox-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.03,
-      "animation": "Run",
-      "animationSpeed": 2.5,
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/-",
+    "path": "/server/behaviors/11/aitasks",
     "file": "game:entities/animal/mammal/fox-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.045,
-      "animation": "Run",
-      "animationSpeed": 2.5,
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 3.1,
-      "priorityForCancel": 3.1,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/-",
-    "file": "game:entities/animal/mammal/fox-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.045,
-      "animation": "Run",
-      "animationSpeed": 2.5,
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 3.1,
-      "priorityForCancel": 3.1,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/server/behaviors/11/aitasks/-",
-    "file": "game:entities/animal/mammal/fox-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.045,
-      "animation": "Run",
-      "animationSpeed": 2.5,
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 3.1,
-      "priorityForCancel": 3.1,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
+    "value": [
+      {
+        "code": "fleeentity",
+        "movespeed": 0.045,
+        "animation": "Run",
+        "animationSpeed": 2.5,
+        "entityCodes": [
+          "scarecrow"
+        ],
+        "priority": 3.1,
+        "priorityForCancel": 3.1,
+        "seekingRange": 16,
+        "fleeingDistance": 20,
+        "whenSwimming": false,
+        "retaliateAttacks": false
+      },
+      {
+        "code": "fleeentity",
+        "movespeed": 0.045,
+        "animation": "Run",
+        "animationSpeed": 2.5,
+        "entityCodes": [
+          "little-scarecrow"
+        ],
+        "priority": 3.1,
+        "priorityForCancel": 3.1,
+        "seekingRange": 12,
+        "fleeingDistance": 16,
+        "whenSwimming": false,
+        "retaliateAttacks": false
+      },
+      {
+        "code": "fleeentity",
+        "movespeed": 0.045,
+        "animation": "Run",
+        "animationSpeed": 2.5,
+        "entityCodes": [
+          "strawdummy"
+        ],
+        "priority": 3.1,
+        "priorityForCancel": 3.1,
+        "seekingRange": 8,
+        "fleeingDistance": 12,
+        "whenSwimming": false,
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   }
 ]

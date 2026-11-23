@@ -3,139 +3,127 @@
     "enabled": true,
     "op": "addmerge",
     "file": "felinae:entities/animal/mammal/felinae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.42,
-      "priorityForCancel": 9.42,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "felinae-adult-female-{type}",
-        "felinae-adult-male-{type}",
-        "felinae-baby-female-{type}",
-        "felinae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-baby-*-caracalcaracal": 0.06,
-        "*-baby-*-lynxcanadensis": 0.06,
-        "*-baby-*-lynxlynx": 0.06,
-        "*-baby-*-lynxpardinus": 0.06
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.42,
+        "priorityForCancel": 9.42,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "felinae-adult-female-{type}",
+          "felinae-adult-male-{type}",
+          "felinae-baby-female-{type}",
+          "felinae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-baby-*-caracalcaracal": 0.06,
+          "*-baby-*-lynxcanadensis": 0.06,
+          "*-baby-*-lynxlynx": 0.06,
+          "*-baby-*-lynxpardinus": 0.06
+        },
+        "animationSpeedByType": {
+          "*-baby-*-caracalcaracal": 2.5,
+          "*-baby-*-lynxcanadensis": 2.0,
+          "*-baby-*-lynxlynx": 2.0,
+          "*-baby-*-lynxpardinus": 2.0,
+          "*": 1
+        },
+        "seekingRange": 20,
+        "fleeingDistance": 40,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "threatening",
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeedByType": {
-        "*-baby-*-caracalcaracal": 2.5,
-        "*-baby-*-lynxcanadensis": 2.0,
-        "*-baby-*-lynxlynx": 2.0,
-        "*-baby-*-lynxpardinus": 2.0,
-        "*": 1
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.42,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "felinae-adult-female-{type}",
+          "felinae-adult-male-{type}",
+          "felinae-baby-female-{type}",
+          "felinae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-baby-*": 0.02
+        },
+        "animationSpeed": 1.5,
+        "seekingRange": 30,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "seekingRange": 20,
-      "fleeingDistance": 40,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "threatening",
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "felinae:entities/animal/mammal/felinae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.42,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "felinae-adult-female-{type}",
-        "felinae-adult-male-{type}",
-        "felinae-baby-female-{type}",
-        "felinae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-baby-*": 0.02
-      },
-      "animationSpeed": 1.5,
-      "seekingRange": 30,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "felinae:entities/animal/mammal/felinae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.41,
-      "animation": "Walk",
-      "skipEntityCodes": [
-        "felinae-adult-female-{type}",
-        "felinae-adult-male-{type}",
-        "felinae-baby-female-{type}",
-        "felinae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-baby-*-caracalcaracal": 0.004,
-        "*-baby-*-lynxcanadensis": 0.004,
-        "*-baby-*-lynxlynx": 0.004,
-        "*-baby-*-lynxpardinus": 0.004
-      },
-      "animationSpeedByType": {
-        "*-baby-*-caracalcaracal": 1.25,
-        "*-baby-*-lynxcanadensis": 1.15,
-        "*-baby-*-lynxlynx": 1.15,
-        "*-baby-*-lynxpardinus": 1.15,
-        "*": 1
-      },
-      "seekingRange": 30,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.41,
+        "animation": "Walk",
+        "skipEntityCodes": [
+          "felinae-adult-female-{type}",
+          "felinae-adult-male-{type}",
+          "felinae-baby-female-{type}",
+          "felinae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-baby-*-caracalcaracal": 0.004,
+          "*-baby-*-lynxcanadensis": 0.004,
+          "*-baby-*-lynxlynx": 0.004,
+          "*-baby-*-lynxpardinus": 0.004
+        },
+        "animationSpeedByType": {
+          "*-baby-*-caracalcaracal": 1.25,
+          "*-baby-*-lynxcanadensis": 1.15,
+          "*-baby-*-lynxlynx": 1.15,
+          "*-baby-*-lynxpardinus": 1.15,
+          "*": 1
+        },
+        "seekingRange": 30,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   }
 ]

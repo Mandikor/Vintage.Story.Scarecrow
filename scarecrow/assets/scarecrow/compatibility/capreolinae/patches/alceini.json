@@ -3,236 +3,212 @@
     "enabled": true,
     "op": "addmerge",
     "file": "capreolinae:entities/animal/mammal/hooved/alceini-adult.json",
-    "path": "/server/behaviors/11/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.42,
-      "animation": "Run",
-      "movespeedByType": {
-        "*-female-alcesalces": 0.128,
-        "*-male-alcesalces": 0.15,
-        "*-female-cervalcesscotti": 0.116,
-        "*-male-cervalcesscotti": 0.135,
-        "*": 0.005
+    "path": "/server/behaviors/11/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.42,
+        "animation": "Run",
+        "movespeedByType": {
+          "*-female-alcesalces": 0.128,
+          "*-male-alcesalces": 0.15,
+          "*-female-cervalcesscotti": 0.116,
+          "*-male-cervalcesscotti": 0.135,
+          "*": 0.005
+        },
+        "animationSpeed": 2,
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "fleeDurationMs": 20000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeed": 2,
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "fleeDurationMs": 20000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "capreolinae:entities/animal/mammal/hooved/alceini-adult.json",
-    "path": "/server/behaviors/11/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.42,
-      "animation": "Swim",
-      "movespeedByType": {
-        "*": 0.06
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.42,
+        "animation": "Swim",
+        "movespeedByType": {
+          "*": 0.06
+        },
+        "animationSpeed": 1,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeed": 1,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "capreolinae:entities/animal/mammal/hooved/alceini-adult.json",
-    "path": "/server/behaviors/11/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.41,
-      "animation": "Canter",
-      "movespeedByType": {
-        "*-female-alcesalces": 0.052,
-        "*-male-alcesalces": 0.06,
-        "*-female-cervalcesscotti": 0.048,
-        "*-male-cervalcesscotti": 0.055,
-        "*": 0.005
-      },
-      "animationSpeed": 1.5,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenSwimming": false,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.41,
+        "animation": "Canter",
+        "movespeedByType": {
+          "*-female-alcesalces": 0.052,
+          "*-male-alcesalces": 0.06,
+          "*-female-cervalcesscotti": 0.048,
+          "*-male-cervalcesscotti": 0.055,
+          "*": 0.005
+        },
+        "animationSpeed": 1.5,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenSwimming": false,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "capreolinae:entities/animal/mammal/hooved/alceini-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "cervidae-alceini-adult-female-{type}",
-        "cervidae-alceini-adult-male-{type}",
-        "cervidae-alceini-baby-female-{type}",
-        "cervidae-alceini-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-alcesalces": 0.06,
-        "*-cervalcesscotti": 0.065,
-        "*": 0.005
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "cervidae-alceini-adult-female-{type}",
+          "cervidae-alceini-adult-male-{type}",
+          "cervidae-alceini-baby-female-{type}",
+          "cervidae-alceini-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-alcesalces": 0.06,
+          "*-cervalcesscotti": 0.065,
+          "*": 0.005
+        },
+        "animationSpeed": 2.5,
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "fleeDurationMs": 20000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeed": 2.5,
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "fleeDurationMs": 20000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "capreolinae:entities/animal/mammal/hooved/alceini-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "cervidae-alceini-adult-female-{type}",
-        "cervidae-alceini-adult-male-{type}",
-        "cervidae-alceini-baby-female-{type}",
-        "cervidae-alceini-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*": 0.02
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "cervidae-alceini-adult-female-{type}",
+          "cervidae-alceini-adult-male-{type}",
+          "cervidae-alceini-baby-female-{type}",
+          "cervidae-alceini-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*": 0.02
+        },
+        "animationSpeed": 2,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeed": 2,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "capreolinae:entities/animal/mammal/hooved/alceini-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Canter",
-      "skipEntityCodes": [
-        "cervidae-alceini-adult-female-{type}",
-        "cervidae-alceini-adult-male-{type}",
-        "cervidae-alceini-baby-female-{type}",
-        "cervidae-alceini-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-alcesalces": 0.024,
-        "*-cervalcesscotti": 0.026,
-        "*": 0.005
-      },
-      "animationSpeed": 2.5,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Canter",
+        "skipEntityCodes": [
+          "cervidae-alceini-adult-female-{type}",
+          "cervidae-alceini-adult-male-{type}",
+          "cervidae-alceini-baby-female-{type}",
+          "cervidae-alceini-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-alcesalces": 0.024,
+          "*-cervalcesscotti": 0.026,
+          "*": 0.005
+        },
+        "animationSpeed": 2.5,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   }
 ]

@@ -3,107 +3,78 @@
     "enabled": true,
     "file": "feverstonewilds:entities/land/spider.json",
     "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/-",
-    "value": {
-      "code": "meleeattack",
-      "priority": 3,
-      "damage": 1,
-      "damageType": "SlashingAttack",
-      "slot": 1,
-      "mincooldown": 1500,
-      "maxcooldown": 1500,
-      "attackDurationMs": 800,
-      "damagePlayerAtMs": 500,
-      "animation": "leap",
-      "animationSpeed": 2.5,
-      "sound": "",
-      "whenInEmotionState": "aggressiveondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "spider": true,
-        "*": false
+    "path": "/server/behaviors/9/aitasks",
+    "value": [
+      {
+        "code": "meleeattack",
+        "priority": 3,
+        "damage": 1,
+        "damageType": "SlashingAttack",
+        "slot": 1,
+        "mincooldown": 1500,
+        "maxcooldown": 1500,
+        "attackDurationMs": 800,
+        "damagePlayerAtMs": 500,
+        "animation": "leap",
+        "animationSpeed": 2.5,
+        "sound": "",
+        "whenInEmotionState": "aggressiveondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "spider": true,
+          "*": false
+        }
+      },
+      {
+        "code": "seekentity",
+        "priority": 2.5,
+        "movespeed": 0.03,
+        "seekingRange": 20,
+        "animation": "skitter",
+        "animationSpeed": 1.5,
+        "sound": "",
+        "whenInEmotionState": "aggressiveondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "spider": true,
+          "*": false
+        }
       }
-    },
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/spider.json",
     "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/-",
-    "value": {
-      "code": "seekentity",
-      "priority": 2.5,
-      "movespeed": 0.03,
-      "seekingRange": 20,
-      "animation": "skitter",
-      "animationSpeed": 1.5,
-      "sound": "",
-      "whenInEmotionState": "aggressiveondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "spider": true,
-        "*": false
-      }
-    },
+    "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/spider.json",
     "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/spider.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/spider.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/spider.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/spider.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/spider.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/9/aitasks/7/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   }
 ]

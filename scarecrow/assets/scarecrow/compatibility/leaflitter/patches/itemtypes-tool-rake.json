@@ -22,24 +22,21 @@
   {
     "file": "leaflitter:itemtypes/rake.json",
     "op": "addmerge",
-    "path": "/attributes/onScarecrowTransform",
+    "path": "/attributes",
     "value": {
-      "translation": {
-        "x": 0.05,
-        "y": -0.85,
-        "z": -0.72
+      "onScarecrowTransform": {
+        "translation": {
+          "x": 0.05,
+          "y": -0.85,
+          "z": -0.72
+        },
+        "rotation": {
+          "x": 4,
+          "y": -140,
+          "z": 96
+        }
       },
-      "rotation": {
-        "x": 4,
-        "y": -140,
-        "z": 96
-      }
+      "scarecrowPendulum": false
     }
-  },
-  {
-    "file": "leaflitter:itemtypes/rake.json",
-    "op": "addmerge",
-    "path": "/attributes/scarecrowPendulum",
-    "value": false
   }
 ]

@@ -3,270 +3,246 @@
     "enabled": true,
     "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/emeidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "emeidae-*"
-      ],
-      "movespeedByType": {
-        "emeidae-adult-*-anomalopteryxdidiformis": 0.04,
-        "emeidae-adult-*-emeuscrassus": 0.045,
-        "emeidae-adult-*-euryapteryxcurtus": 0.038,
-        "emeidae-adult-*-pachyornisaustralis": 0.038,
-        "emeidae-adult-*-pachyorniselephantopus": 0.03,
-        "emeidae-adult-*-pachyornisgeranoides": 0.048
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "emeidae-*"
+        ],
+        "movespeedByType": {
+          "emeidae-adult-*-anomalopteryxdidiformis": 0.04,
+          "emeidae-adult-*-emeuscrassus": 0.045,
+          "emeidae-adult-*-euryapteryxcurtus": 0.038,
+          "emeidae-adult-*-pachyornisaustralis": 0.038,
+          "emeidae-adult-*-pachyorniselephantopus": 0.03,
+          "emeidae-adult-*-pachyornisgeranoides": 0.048
+        },
+        "animationSpeedByType": {
+          "emeidae-adult-female-anomalopteryxdidiformis": 3.0,
+          "emeidae-adult-male-anomalopteryxdidiformis": 4.0,
+          "emeidae-adult-female-emeuscrassus": 2.7,
+          "emeidae-adult-male-emeuscrassus": 3.6,
+          "emeidae-adult-female-euryapteryxcurtus": 2.28,
+          "emeidae-adult-male-euryapteryxcurtus": 3.04,
+          "emeidae-adult-female-pachyornisaustralis": 2.28,
+          "emeidae-adult-male-pachyornisaustralis": 3.04,
+          "emeidae-adult-female-pachyorniselephantopus": 1.5,
+          "emeidae-adult-male-pachyorniselephantopus": 2.0,
+          "emeidae-adult-female-pachyornisgeranoides": 3.6,
+          "emeidae-adult-male-pachyornisgeranoides": 4.8
+        },
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeedByType": {
-        "emeidae-adult-female-anomalopteryxdidiformis": 3.0,
-        "emeidae-adult-male-anomalopteryxdidiformis": 4.0,
-        "emeidae-adult-female-emeuscrassus": 2.7,
-        "emeidae-adult-male-emeuscrassus": 3.6,
-        "emeidae-adult-female-euryapteryxcurtus": 2.28,
-        "emeidae-adult-male-euryapteryxcurtus": 3.04,
-        "emeidae-adult-female-pachyornisaustralis": 2.28,
-        "emeidae-adult-male-pachyornisaustralis": 3.04,
-        "emeidae-adult-female-pachyorniselephantopus": 1.5,
-        "emeidae-adult-male-pachyorniselephantopus": 2.0,
-        "emeidae-adult-female-pachyornisgeranoides": 3.6,
-        "emeidae-adult-male-pachyornisgeranoides": 4.8
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "emeidae-*"
+        ],
+        "movespeedByType": {
+          "dinornithidae-adult-*-dinornisnovaezealandiae": 0.01,
+          "dinornithidae-adult-*-dinornisrobustus": 0.01,
+          "*": 0.045
+        },
+        "animationSpeedByType": {
+          "dinornithidae-adult-female-dinornisnovaezealandiae": 0.75,
+          "dinornithidae-adult-female-dinornisrobustus": 1.0
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "dinornithidae:entities/animal/bird/emeidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "emeidae-*"
-      ],
-      "movespeedByType": {
-        "dinornithidae-adult-*-dinornisnovaezealandiae": 0.01,
-        "dinornithidae-adult-*-dinornisrobustus": 0.01,
-        "*": 0.045
-      },
-      "animationSpeedByType": {
-        "dinornithidae-adult-female-dinornisnovaezealandiae": 0.75,
-        "dinornithidae-adult-female-dinornisrobustus": 1.0
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "dinornithidae:entities/animal/bird/emeidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.41,
-      "animation": "Walk",
-      "skipEntityCodes": [
-        "emeidae-*"
-      ],
-      "movespeedByType": {
-        "*-adult-*-anomalopteryxdidiformis": 0.0032,
-        "*-adult-*-pachyorniselephantopus": 0.004,
-        "*-adult-*-pachyornisgeranoides": 0.0032,
-        "*-adult-*": 0.00375
-      },
-      "animationSpeedByType": {
-        "emeidae-adult-female-*": 0.75,
-        "emeidae-adult-male-*": 1
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "threatening",
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.41,
+        "animation": "Walk",
+        "skipEntityCodes": [
+          "emeidae-*"
+        ],
+        "movespeedByType": {
+          "*-adult-*-anomalopteryxdidiformis": 0.0032,
+          "*-adult-*-pachyorniselephantopus": 0.004,
+          "*-adult-*-pachyornisgeranoides": 0.0032,
+          "*-adult-*": 0.00375
+        },
+        "animationSpeedByType": {
+          "emeidae-adult-female-*": 0.75,
+          "emeidae-adult-male-*": 1
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "threatening",
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/emeidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "emeidae-adult-female-{type}",
-        "emeidae-adult-male-{type}",
-        "emeidae-baby-female-{type}",
-        "emeidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "emeidae-baby-*": 0.0225
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "emeidae-adult-female-{type}",
+          "emeidae-adult-male-{type}",
+          "emeidae-baby-female-{type}",
+          "emeidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "emeidae-baby-*": 0.0225
+        },
+        "animationSpeedByType": {
+          "*-baby-*": 7.2
+        },
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeedByType": {
-        "*-baby-*": 7.2
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "emeidae-adult-female-{type}",
+          "emeidae-adult-male-{type}",
+          "emeidae-baby-female-{type}",
+          "emeidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "emeidae-baby-*-anomalopteryxdidiformis": 0.0017,
+          "emeidae-baby-*-pachyorniselephantopus": 0.0025,
+          "emeidae-baby-*-pachyornisgeranoides": 0.0017,
+          "emeidae-baby-*": 0.021
+        },
+        "animationSpeedByType": {
+          "*-baby-*": 1.5
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "dinornithidae:entities/animal/bird/emeidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "emeidae-adult-female-{type}",
-        "emeidae-adult-male-{type}",
-        "emeidae-baby-female-{type}",
-        "emeidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "emeidae-baby-*-anomalopteryxdidiformis": 0.0017,
-        "emeidae-baby-*-pachyorniselephantopus": 0.0025,
-        "emeidae-baby-*-pachyornisgeranoides": 0.0017,
-        "emeidae-baby-*": 0.021
-      },
-      "animationSpeedByType": {
-        "*-baby-*": 1.5
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "dinornithidae:entities/animal/bird/emeidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.41,
-      "animation": "Walk",
-      "skipEntityCodes": [
-        "emeidae-adult-female-{type}",
-        "emeidae-adult-male-{type}",
-        "emeidae-baby-female-{type}",
-        "emeidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-baby-*-anomalopteryxdidiformis": 0.0012,
-        "*-baby-*-pachyorniselephantopus": 0.0022,
-        "*-baby-*-pachyornisgeranoides": 0.0012,
-        "emeidae-baby-*": 0.021
-      },
-      "animationSpeedByType": {
-        "*-baby-*": 1.5
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "threatening",
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.41,
+        "animation": "Walk",
+        "skipEntityCodes": [
+          "emeidae-adult-female-{type}",
+          "emeidae-adult-male-{type}",
+          "emeidae-baby-female-{type}",
+          "emeidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-baby-*-anomalopteryxdidiformis": 0.0012,
+          "*-baby-*-pachyorniselephantopus": 0.0022,
+          "*-baby-*-pachyornisgeranoides": 0.0012,
+          "emeidae-baby-*": 0.021
+        },
+        "animationSpeedByType": {
+          "*-baby-*": 1.5
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "threatening",
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   }
 ]

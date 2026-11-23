@@ -3,353 +3,282 @@
     "enabled": true,
     "op": "addmerge",
     "file": "fantasycreatures:entities/land/dragon.json",
-    "path": "/server/behaviors/7/aitasksByType/dragon-red/-",
+    "path": "/server/behaviors/7/aitasksByType",
     "value": {
-      "code": "meleeattack",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
+      "dragon-red": [
+        {
+          "code": "meleeattack",
+          "entityCodes": [
+            "scarecrow",
+            "little-scarecrow",
+            "strawdummy"
+          ],
+          "priority": 2.15,
+          "minDist": 3.0,
+          "minVerDist": 4.0,
+          "damage": 16,
+          "damageTierByType": {
+            "dragon-scorched": 4,
+            "dragon-red": 3
+          },
+          "damageType": "SlashingAttack",
+          "mincooldown": 600,
+          "maxcooldown": 1100,
+          "damagePlayerAtMs": 350,
+          "attackDurationMs": 1000,
+          "animation": "claw",
+          "animationSpeed": 1.0,
+          "sound": "creature/dragon_claw",
+          "priorityForCancel": 9,
+          "retaliateAttacks": false
+        },
+        {
+          "code": "meleeattack",
+          "entityCodes": [
+            "scarecrow",
+            "little-scarecrow",
+            "strawdummy"
+          ],
+          "priority": 2.1,
+          "minDist": 4.4,
+          "minVerDist": 4.0,
+          "damage": 15,
+          "damageType": "Fire",
+          "damageTierByType": {
+            "dragon-scorched": 4,
+            "dragon-red": 3
+          },
+          "mincooldown": 1100,
+          "maxcooldown": 2200,
+          "damagePlayerAtMs": 800,
+          "attackDurationMs": 1700,
+          "animation": "bite",
+          "animationSpeed": 0.75,
+          "sound": "creature/dragon_bite",
+          "priorityForCancel": 9,
+          "retaliateAttacks": false
+        },
+        {
+          "code": "meleeattack",
+          "entityCodes": [
+            "scarecrow",
+            "little-scarecrow",
+            "strawdummy"
+          ],
+          "priority": 2.05,
+          "minDist": 6.0,
+          "minVerDist": 8.0,
+          "damage": 12,
+          "damageTier": 3,
+          "damageType": "BluntAttack",
+          "attackAngleRangeDeg": 360,
+          "knockbackStrength": 6.0,
+          "mincooldown": 3500,
+          "maxcooldown": 6500,
+          "damagePlayerAtMs": 800,
+          "attackDurationMs": 1500,
+          "animation": "airwhip",
+          "animationSpeed": 1.0,
+          "sound": "creature/dragon_wingflap",
+          "soundStartMs": 0,
+          "soundRange": 40,
+          "priorityForCancel": 9,
+          "retaliateAttacks": false
+        },
+        {
+          "code": "seekentity",
+          "entityCodes": [
+            "scarecrow",
+            "little-scarecrow",
+            "strawdummy"
+          ],
+          "priority": 1.45,
+          "seekingRangeByType": {
+            "dragon-scorched": 64,
+            "dragon-red": 64
+          },
+          "animation": "walk",
+          "leapAtTarget": true,
+          "leapChance": 0.01,
+          "sound": "creature/dragon_aggro",
+          "whenInEmotionState": "aggressiveondamage",
+          "animationSpeed": 1.5,
+          "movespeed": 0.07,
+          "retaliateAttacks": false
+        },
+        {
+          "code": "seekentity",
+          "entityCodes": [
+            "scarecrow",
+            "little-scarecrow",
+            "strawdummy"
+          ],
+          "priority": 1.5,
+          "mincooldown": 1000,
+          "maxcooldown": 2000,
+          "movespeed": 0.07,
+          "seekingRange": 30,
+          "animationSpeed": 1.3,
+          "animation": "walk",
+          "sound": "creature/dragon_aggro",
+          "retaliateAttacks": false
+        },
+        {
+          "code": "seekentity",
+          "entityCodes": [
+            "scarecrow",
+            "little-scarecrow",
+            "strawdummy"
+          ],
+          "priority": 1.5,
+          "priorityForCancel": 1.51,
+          "mincooldown": 600,
+          "maxcooldown": 1600,
+          "movespeed": 0.077,
+          "seekingRange": 38,
+          "animationSpeed": 1.15,
+          "animation": "groundsprint",
+          "sound": "creature/dragon_flying",
+          "retaliateAttacks": false
+        }
       ],
-      "priority": 2.15,
-      "minDist": 3.0,
-      "minVerDist": 4.0,
-      "damage": 16,
-      "damageTierByType": {
-        "dragon-scorched": 4,
-        "dragon-red": 3
-      },
-      "damageType": "SlashingAttack",
-      "mincooldown": 600,
-      "maxcooldown": 1100,
-      "damagePlayerAtMs": 350,
-      "attackDurationMs": 1000,
-      "animation": "claw",
-      "animationSpeed": 1.0,
-      "sound": "creature/dragon_claw",
-      "priorityForCancel": 9,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/dragon.json",
-    "path": "/server/behaviors/7/aitasksByType/dragon-red/-",
-    "value": {
-      "code": "meleeattack",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 2.1,
-      "minDist": 4.4,
-      "minVerDist": 4.0,
-      "damage": 15,
-      "damageType": "Fire",
-      "damageTierByType": {
-        "dragon-scorched": 4,
-        "dragon-red": 3
-      },
-      "mincooldown": 1100,
-      "maxcooldown": 2200,
-      "damagePlayerAtMs": 800,
-      "attackDurationMs": 1700,
-      "animation": "bite",
-      "animationSpeed": 0.75,
-      "sound": "creature/dragon_bite",
-      "priorityForCancel": 9,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/dragon.json",
-    "path": "/server/behaviors/7/aitasksByType/dragon-red/-",
-    "value": {
-      "code": "meleeattack",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 2.05,
-      "minDist": 6.0,
-      "minVerDist": 8.0,
-      "damage": 12,
-      "damageTier": 3,
-      "damageType": "BluntAttack",
-      "attackAngleRangeDeg": 360,
-      "knockbackStrength": 6.0,
-      "mincooldown": 3500,
-      "maxcooldown": 6500,
-      "damagePlayerAtMs": 800,
-      "attackDurationMs": 1500,
-      "animation": "airwhip",
-      "animationSpeed": 1.0,
-      "sound": "creature/dragon_wingflap",
-      "soundStartMs": 0,
-      "soundRange": 40,
-      "priorityForCancel": 9,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/dragon.json",
-    "path": "/server/behaviors/7/aitasksByType/dragon-red/-",
-    "value": {
-      "code": "seekentity",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 1.45,
-      "seekingRangeByType": {
-        "dragon-scorched": 64,
-        "dragon-red": 64
-      },
-      "animation": "walk",
-      "leapAtTarget": true,
-      "leapChance": 0.01,
-      "sound": "creature/dragon_aggro",
-      "whenInEmotionState": "aggressiveondamage",
-      "animationSpeed": 1.5,
-      "movespeed": 0.07,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/dragon.json",
-    "path": "/server/behaviors/7/aitasksByType/dragon-red/-",
-    "value": {
-      "code": "seekentity",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 1.5,
-      "mincooldown": 1000,
-      "maxcooldown": 2000,
-      "movespeed": 0.07,
-      "seekingRange": 30,
-      "animationSpeed": 1.3,
-      "animation": "walk",
-      "sound": "creature/dragon_aggro",
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/dragon.json",
-    "path": "/server/behaviors/7/aitasksByType/dragon-red/-",
-    "value": {
-      "code": "seekentity",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 1.5,
-      "priorityForCancel": 1.51,
-      "mincooldown": 600,
-      "maxcooldown": 1600,
-      "movespeed": 0.077,
-      "seekingRange": 38,
-      "animationSpeed": 1.15,
-      "animation": "groundsprint",
-      "sound": "creature/dragon_flying",
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/dragon.json",
-    "path": "/server/behaviors/7/aitasksByType/dragon-scorched/-",
-    "value": {
-      "code": "meleeattack",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 2.15,
-      "minDist": 3.0,
-      "minVerDist": 4.0,
-      "damage": 16,
-      "damageTierByType": {
-        "dragon-scorched": 4,
-        "dragon-red": 3
-      },
-      "damageType": "SlashingAttack",
-      "mincooldown": 600,
-      "maxcooldown": 1100,
-      "damagePlayerAtMs": 350,
-      "attackDurationMs": 1000,
-      "animation": "claw",
-      "animationSpeed": 1.0,
-      "sound": "creature/dragon_claw",
-      "priorityForCancel": 9,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/dragon.json",
-    "path": "/server/behaviors/7/aitasksByType/dragon-scorched/-",
-    "value": {
-      "code": "meleeattack",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 2.1,
-      "minDist": 4.4,
-      "minVerDist": 4.0,
-      "damage": 15,
-      "damageType": "Fire",
-      "damageTierByType": {
-        "dragon-scorched": 4,
-        "dragon-red": 3
-      },
-      "mincooldown": 1100,
-      "maxcooldown": 2200,
-      "damagePlayerAtMs": 800,
-      "attackDurationMs": 1700,
-      "animation": "bite",
-      "animationSpeed": 0.75,
-      "sound": "creature/dragon_bite",
-      "priorityForCancel": 9,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/dragon.json",
-    "path": "/server/behaviors/7/aitasksByType/dragon-scorched/-",
-    "value": {
-      "code": "meleeattack",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 2.05,
-      "minDist": 6.0,
-      "minVerDist": 8.0,
-      "damage": 12,
-      "damageTier": 4,
-      "damageType": "BluntAttack",
-      "attackAngleRangeDeg": 360,
-      "knockbackStrength": 6.0,
-      "mincooldown": 3500,
-      "maxcooldown": 6500,
-      "damagePlayerAtMs": 800,
-      "attackDurationMs": 1500,
-      "animation": "airwhip",
-      "animationSpeed": 1.0,
-      "sound": "creature/dragon_wingflap",
-      "soundStartMs": 0,
-      "soundRange": 40,
-      "priorityForCancel": 9,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/dragon.json",
-    "path": "/server/behaviors/7/aitasksByType/dragon-scorched/-",
-    "value": {
-      "code": "seekentity",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 1.45,
-      "seekingRangeByType": {
-        "dragon-scorched": 64,
-        "dragon-red": 64
-      },
-      "animation": "walk",
-      "leapAtTarget": true,
-      "leapChance": 0.01,
-      "sound": "creature/dragon_aggro",
-      "whenInEmotionState": "aggressiveondamage",
-      "animationSpeed": 1.5,
-      "movespeed": 0.04,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/dragon.json",
-    "path": "/server/behaviors/7/aitasksByType/dragon-scorched/-",
-    "value": {
-      "code": "seekentity",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 1.5,
-      "mincooldown": 1000,
-      "maxcooldown": 2000,
-      "movespeed": 0.07,
-      "seekingRange": 30,
-      "animationSpeed": 1.3,
-      "animation": "walk",
-      "sound": "creature/dragon_aggro",
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "fantasycreatures:entities/land/dragon.json",
-    "path": "/server/behaviors/7/aitasksByType/dragon-scorched/-",
-    "value": {
-      "code": "seekentity",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 1.5,
-      "priorityForCancel": 1.51,
-      "mincooldown": 600,
-      "maxcooldown": 1600,
-      "movespeed": 0.077,
-      "seekingRange": 38,
-      "animationSpeed": 1.15,
-      "animation": "groundsprint",
-      "sound": "creature/dragon_flying",
-      "retaliateAttacks": false
+      "dragon-scorched": [
+        {
+          "code": "meleeattack",
+          "entityCodes": [
+            "scarecrow",
+            "little-scarecrow",
+            "strawdummy"
+          ],
+          "priority": 2.15,
+          "minDist": 3.0,
+          "minVerDist": 4.0,
+          "damage": 16,
+          "damageTierByType": {
+            "dragon-scorched": 4,
+            "dragon-red": 3
+          },
+          "damageType": "SlashingAttack",
+          "mincooldown": 600,
+          "maxcooldown": 1100,
+          "damagePlayerAtMs": 350,
+          "attackDurationMs": 1000,
+          "animation": "claw",
+          "animationSpeed": 1.0,
+          "sound": "creature/dragon_claw",
+          "priorityForCancel": 9,
+          "retaliateAttacks": false
+        },
+        {
+          "code": "meleeattack",
+          "entityCodes": [
+            "scarecrow",
+            "little-scarecrow",
+            "strawdummy"
+          ],
+          "priority": 2.1,
+          "minDist": 4.4,
+          "minVerDist": 4.0,
+          "damage": 15,
+          "damageType": "Fire",
+          "damageTierByType": {
+            "dragon-scorched": 4,
+            "dragon-red": 3
+          },
+          "mincooldown": 1100,
+          "maxcooldown": 2200,
+          "damagePlayerAtMs": 800,
+          "attackDurationMs": 1700,
+          "animation": "bite",
+          "animationSpeed": 0.75,
+          "sound": "creature/dragon_bite",
+          "priorityForCancel": 9,
+          "retaliateAttacks": false
+        },
+        {
+          "code": "meleeattack",
+          "entityCodes": [
+            "scarecrow",
+            "little-scarecrow",
+            "strawdummy"
+          ],
+          "priority": 2.05,
+          "minDist": 6.0,
+          "minVerDist": 8.0,
+          "damage": 12,
+          "damageTier": 4,
+          "damageType": "BluntAttack",
+          "attackAngleRangeDeg": 360,
+          "knockbackStrength": 6.0,
+          "mincooldown": 3500,
+          "maxcooldown": 6500,
+          "damagePlayerAtMs": 800,
+          "attackDurationMs": 1500,
+          "animation": "airwhip",
+          "animationSpeed": 1.0,
+          "sound": "creature/dragon_wingflap",
+          "soundStartMs": 0,
+          "soundRange": 40,
+          "priorityForCancel": 9,
+          "retaliateAttacks": false
+        },
+        {
+          "code": "seekentity",
+          "entityCodes": [
+            "scarecrow",
+            "little-scarecrow",
+            "strawdummy"
+          ],
+          "priority": 1.45,
+          "seekingRangeByType": {
+            "dragon-scorched": 64,
+            "dragon-red": 64
+          },
+          "animation": "walk",
+          "leapAtTarget": true,
+          "leapChance": 0.01,
+          "sound": "creature/dragon_aggro",
+          "whenInEmotionState": "aggressiveondamage",
+          "animationSpeed": 1.5,
+          "movespeed": 0.04,
+          "retaliateAttacks": false
+        },
+        {
+          "code": "seekentity",
+          "entityCodes": [
+            "scarecrow",
+            "little-scarecrow",
+            "strawdummy"
+          ],
+          "priority": 1.5,
+          "mincooldown": 1000,
+          "maxcooldown": 2000,
+          "movespeed": 0.07,
+          "seekingRange": 30,
+          "animationSpeed": 1.3,
+          "animation": "walk",
+          "sound": "creature/dragon_aggro",
+          "retaliateAttacks": false
+        },
+        {
+          "code": "seekentity",
+          "entityCodes": [
+            "scarecrow",
+            "little-scarecrow",
+            "strawdummy"
+          ],
+          "priority": 1.5,
+          "priorityForCancel": 1.51,
+          "mincooldown": 600,
+          "maxcooldown": 1600,
+          "movespeed": 0.077,
+          "seekingRange": 38,
+          "animationSpeed": 1.15,
+          "animation": "groundsprint",
+          "sound": "creature/dragon_flying",
+          "retaliateAttacks": false
+        }
+      ]
     },
     "side": "server"
   }

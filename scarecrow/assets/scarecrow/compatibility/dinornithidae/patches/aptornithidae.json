@@ -3,250 +3,226 @@
     "enabled": true,
     "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/aptornithidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "aptornithidae-*"
-      ],
-      "movespeedByType": {
-        "aptornithidae-adult-*-aptornisdefossor": 0.0417,
-        "aptornithidae-adult-*-aptornisotidiformis": 0.05
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "aptornithidae-*"
+        ],
+        "movespeedByType": {
+          "aptornithidae-adult-*-aptornisdefossor": 0.0417,
+          "aptornithidae-adult-*-aptornisotidiformis": 0.05
+        },
+        "animationSpeedByType": {
+          "*-adult-*-aptornisdefossor": 5.56,
+          "*-adult-*-aptornisotidiformis": 8.33
+        },
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeedByType": {
-        "*-adult-*-aptornisdefossor": 5.56,
-        "*-adult-*-aptornisotidiformis": 8.33
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "aptornithidae-*"
+        ],
+        "movespeedByType": {
+          "aptornithidae-adult-*-aptornisdefossor": 0.02,
+          "aptornithidae-adult-*-aptornisotidiformis": 0.02,
+          "*": 0.045
+        },
+        "animationSpeedByType": {
+          "aptornithidae-adult-*-aptornisdefossor": 1,
+          "aptornithidae-adult-*-aptornisotidiformis": 1.25
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "dinornithidae:entities/animal/bird/aptornithidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "aptornithidae-*"
-      ],
-      "movespeedByType": {
-        "aptornithidae-adult-*-aptornisdefossor": 0.02,
-        "aptornithidae-adult-*-aptornisotidiformis": 0.02,
-        "*": 0.045
-      },
-      "animationSpeedByType": {
-        "aptornithidae-adult-*-aptornisdefossor": 1,
-        "aptornithidae-adult-*-aptornisotidiformis": 1.25
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "dinornithidae:entities/animal/bird/aptornithidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.41,
-      "animation": "Walk",
-      "skipEntityCodes": [
-        "aptornithidae-*"
-      ],
-      "movespeedByType": {
-        "aptornithidae-adult-*": 0.003
-      },
-      "animationSpeedByType": {
-        "aptornithidae-adult-*-aptornisdefossor": 1,
-        "aptornithidae-adult-*-aptornisotidiformis": 1.25
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "threatening",
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.41,
+        "animation": "Walk",
+        "skipEntityCodes": [
+          "aptornithidae-*"
+        ],
+        "movespeedByType": {
+          "aptornithidae-adult-*": 0.003
+        },
+        "animationSpeedByType": {
+          "aptornithidae-adult-*-aptornisdefossor": 1,
+          "aptornithidae-adult-*-aptornisotidiformis": 1.25
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "threatening",
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/aptornithidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "aptornithidae-adult-female-{type}",
-        "aptornithidae-adult-male-{type}",
-        "aptornithidae-baby-female-{type}",
-        "aptornithidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "aptornithidae-baby-*-aptornisdefossor": 0.015,
-        "aptornithidae-baby-*-aptornisotidiformis": 0.015
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "aptornithidae-adult-female-{type}",
+          "aptornithidae-adult-male-{type}",
+          "aptornithidae-baby-female-{type}",
+          "aptornithidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "aptornithidae-baby-*-aptornisdefossor": 0.015,
+          "aptornithidae-baby-*-aptornisotidiformis": 0.015
+        },
+        "animationSpeedByType": {
+          "*-baby-*": 4.0
+        },
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeedByType": {
-        "*-baby-*": 4.0
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "aptornithidae-adult-female-{type}",
+          "aptornithidae-adult-male-{type}",
+          "aptornithidae-baby-female-{type}",
+          "aptornithidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "aptornithidae-baby-*-aptornisdefossor": 0.01,
+          "aptornithidae-baby-*-aptornisotidiformis": 0.01,
+          "*": 0.045
+        },
+        "animationSpeedByType": {
+          "*-baby-*": 2
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "dinornithidae:entities/animal/bird/aptornithidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "aptornithidae-adult-female-{type}",
-        "aptornithidae-adult-male-{type}",
-        "aptornithidae-baby-female-{type}",
-        "aptornithidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "aptornithidae-baby-*-aptornisdefossor": 0.01,
-        "aptornithidae-baby-*-aptornisotidiformis": 0.01,
-        "*": 0.045
-      },
-      "animationSpeedByType": {
-        "*-baby-*": 2
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "dinornithidae:entities/animal/bird/aptornithidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.41,
-      "animation": "Walk",
-      "skipEntityCodes": [
-        "aptornithidae-adult-female-{type}",
-        "aptornithidae-adult-male-{type}",
-        "aptornithidae-baby-female-{type}",
-        "aptornithidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "aptornithidae-baby-*": 0.003
-      },
-      "animationSpeedByType": {
-        "*-baby-*": 2
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "threatening",
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.41,
+        "animation": "Walk",
+        "skipEntityCodes": [
+          "aptornithidae-adult-female-{type}",
+          "aptornithidae-adult-male-{type}",
+          "aptornithidae-baby-female-{type}",
+          "aptornithidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "aptornithidae-baby-*": 0.003
+        },
+        "animationSpeedByType": {
+          "*-baby-*": 2
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "threatening",
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   }
 ]

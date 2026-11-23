@@ -24,24 +24,12 @@
     "enabled": true,
     "op": "addmerge",
     "file": "moreanimals:entities/goldenpheasant-chick.json",
-    "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "moreanimals:entities/goldenpheasant-chick.json",
-    "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "moreanimals:entities/goldenpheasant-chick.json",
-    "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   }
 ]

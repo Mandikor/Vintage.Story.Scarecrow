@@ -3,64 +3,59 @@
     "enabled": true,
     "op": "addmerge",
     "file": "feverstonehorses:entities/land/horse-jaunt.json",
-    "path": "/server/behaviors/15/aitasks/-",
-    "value": {
-      "code": "meleeattack",
-      "priority": 2,
-      "slot": 1,
-      "damageByType": {
-        "*-percheron": 4,
-        "*-shire": 3.6,
-        "*-quarter": 2.8,
-        "*-arabian": 2.5,
-        "*-donkey": 2.0
+    "path": "/server/behaviors/15/aitasks",
+    "value": [
+      {
+        "code": "meleeattack",
+        "priority": 2,
+        "slot": 1,
+        "damageByType": {
+          "*-percheron": 4,
+          "*-shire": 3.6,
+          "*-quarter": 2.8,
+          "*-arabian": 2.5,
+          "*-donkey": 2.0
+        },
+        "damageTier": 2,
+        "mincooldown": 1500,
+        "maxcooldown": 2500,
+        "attackDurationMs": 750,
+        "damagePlayerAtMs": 500,
+        "animation": "attackFront",
+        "animationSpeed": 1.4,
+        "whenInEmotionState": "aggressiveondamage",
+        "sound": "horse/horseattack",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "*-tamed-*": false,
+          "*": true
+        }
       },
-      "damageTier": 2,
-      "mincooldown": 1500,
-      "maxcooldown": 2500,
-      "attackDurationMs": 750,
-      "damagePlayerAtMs": 500,
-      "animation": "attackFront",
-      "animationSpeed": 1.4,
-      "whenInEmotionState": "aggressiveondamage",
-      "sound": "horse/horseattack",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "*-tamed-*": false,
-        "*": true
+      {
+        "code": "fleeentity",
+        "priority": 1.8,
+        "movespeed": 0.058,
+        "seekingRange": 24,
+        "animation": "gallop",
+        "animationSpeed": 2.2,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "instafleeOnDamageChance": 0,
+        "enabledByType": {
+          "*-tamed-*": false,
+          "*": true
+        }
       }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "feverstonehorses:entities/land/horse-jaunt.json",
-    "path": "/server/behaviors/15/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 1.8,
-      "movespeed": 0.058,
-      "seekingRange": 24,
-      "animation": "gallop",
-      "animationSpeed": 2.2,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "instafleeOnDamageChance": 0,
-      "enabledByType": {
-        "*-tamed-*": false,
-        "*": true
-      }
-    },
+    ],
     "side": "server"
   },
   {

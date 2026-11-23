@@ -3,124 +3,112 @@
     "enabled": true,
     "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/aegothelidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "aegothelidae-adult-female-{type}",
-        "aegothelidae-adult-male-{type}",
-        "aegothelidae-baby-female-{type}",
-        "aegothelidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-adult-*-aegothelesnovaezealandiae": 0.096
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "aegothelidae-adult-female-{type}",
+          "aegothelidae-adult-male-{type}",
+          "aegothelidae-baby-female-{type}",
+          "aegothelidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-adult-*-aegothelesnovaezealandiae": 0.096
+        },
+        "animationSpeedByType": {
+          "*-adult-*": 4.0
+        },
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeedByType": {
-        "*-adult-*": 4.0
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "aegothelidae-adult-female-{type}",
+          "aegothelidae-adult-male-{type}",
+          "aegothelidae-baby-female-{type}",
+          "aegothelidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "aegothelidae-adult-*-aegothelesnovaezealandiae": 0.01,
+          "*": 0.045
+        },
+        "animationSpeed": 1,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "dinornithidae:entities/animal/bird/aegothelidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "aegothelidae-adult-female-{type}",
-        "aegothelidae-adult-male-{type}",
-        "aegothelidae-baby-female-{type}",
-        "aegothelidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "aegothelidae-adult-*-aegothelesnovaezealandiae": 0.01,
-        "*": 0.045
-      },
-      "animationSpeed": 1,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "dinornithidae:entities/animal/bird/aegothelidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.41,
-      "animation": "Walk",
-      "skipEntityCodes": [
-        "aegothelidae-adult-female-{type}",
-        "aegothelidae-adult-male-{type}",
-        "aegothelidae-baby-female-{type}",
-        "aegothelidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-adult-*-aegothelesnovaezealandiae": 0.0015
-      },
-      "animationSpeedByType": {
-        "*-adult-*": 1.1
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "threatening",
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.41,
+        "animation": "Walk",
+        "skipEntityCodes": [
+          "aegothelidae-adult-female-{type}",
+          "aegothelidae-adult-male-{type}",
+          "aegothelidae-baby-female-{type}",
+          "aegothelidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-adult-*-aegothelesnovaezealandiae": 0.0015
+        },
+        "animationSpeedByType": {
+          "*-adult-*": 1.1
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "threatening",
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   }
 ]

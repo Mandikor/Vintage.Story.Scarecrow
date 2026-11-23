@@ -3,255 +3,231 @@
     "enabled": true,
     "op": "addmerge",
     "file": "vombatidae:entities/animal/mammal/diprotodontidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "diprotodontidae-adult-female-{type}",
-        "diprotodontidae-adult-male-{type}",
-        "diprotodontidae-baby-female-{type}",
-        "diprotodontidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-adult-male-zygomaturustrilobus": 0.052,
-        "*-adult-female-zygomaturustrilobus": 0.048
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "diprotodontidae-adult-female-{type}",
+          "diprotodontidae-adult-male-{type}",
+          "diprotodontidae-baby-female-{type}",
+          "diprotodontidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-adult-male-zygomaturustrilobus": 0.052,
+          "*-adult-female-zygomaturustrilobus": 0.048
+        },
+        "animationSpeedByType": {
+          "*-adult-male-zygomaturustrilobus": 2.0,
+          "*-adult-female-zygomaturustrilobus": 1.85
+        },
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "fleeDurationMs": 20000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeedByType": {
-        "*-adult-male-zygomaturustrilobus": 2.0,
-        "*-adult-female-zygomaturustrilobus": 1.85
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "diprotodontidae-adult-female-{type}",
+          "diprotodontidae-adult-male-{type}",
+          "diprotodontidae-baby-female-{type}",
+          "diprotodontidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-adult-*": 0.012
+        },
+        "animationSpeed": 1.0,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "fleeDurationMs": 20000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "vombatidae:entities/animal/mammal/diprotodontidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "diprotodontidae-adult-female-{type}",
-        "diprotodontidae-adult-male-{type}",
-        "diprotodontidae-baby-female-{type}",
-        "diprotodontidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-adult-*": 0.012
-      },
-      "animationSpeed": 1.0,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "vombatidae:entities/animal/mammal/diprotodontidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Walk",
-      "skipEntityCodes": [
-        "diprotodontidae-adult-female-{type}",
-        "diprotodontidae-adult-male-{type}",
-        "diprotodontidae-baby-female-{type}",
-        "diprotodontidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-adult-male-zygomaturustrilobus": 0.0065,
-        "*-adult-female-zygomaturustrilobus": 0.006
-      },
-      "animationSpeedByType": {
-        "*-adult-*-zygomaturustrilobus": 0.5,
-        "*": 1
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Walk",
+        "skipEntityCodes": [
+          "diprotodontidae-adult-female-{type}",
+          "diprotodontidae-adult-male-{type}",
+          "diprotodontidae-baby-female-{type}",
+          "diprotodontidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-adult-male-zygomaturustrilobus": 0.0065,
+          "*-adult-female-zygomaturustrilobus": 0.006
+        },
+        "animationSpeedByType": {
+          "*-adult-*-zygomaturustrilobus": 0.5,
+          "*": 1
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "vombatidae:entities/animal/mammal/diprotodontidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "diprotodontidae-adult-female-{type}",
-        "diprotodontidae-adult-male-{type}",
-        "diprotodontidae-baby-female-{type}",
-        "diprotodontidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-baby-*-zygomaturustrilobus": 0.031,
-        "*-baby-*": 0.018
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "diprotodontidae-adult-female-{type}",
+          "diprotodontidae-adult-male-{type}",
+          "diprotodontidae-baby-female-{type}",
+          "diprotodontidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-baby-*-zygomaturustrilobus": 0.031,
+          "*-baby-*": 0.018
+        },
+        "animationSpeedByType": {
+          "*": 2.4
+        },
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "fleeDurationMs": 20000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeedByType": {
-        "*": 2.4
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "diprotodontidae-adult-female-{type}",
+          "diprotodontidae-adult-male-{type}",
+          "diprotodontidae-baby-female-{type}",
+          "diprotodontidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-baby-*": 0.009
+        },
+        "animationSpeed": 1.0,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "fleeDurationMs": 20000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "vombatidae:entities/animal/mammal/diprotodontidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "diprotodontidae-adult-female-{type}",
-        "diprotodontidae-adult-male-{type}",
-        "diprotodontidae-baby-female-{type}",
-        "diprotodontidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-baby-*": 0.009
-      },
-      "animationSpeed": 1.0,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "vombatidae:entities/animal/mammal/diprotodontidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Walk",
-      "skipEntityCodes": [
-        "diprotodontidae-adult-female-{type}",
-        "diprotodontidae-adult-male-{type}",
-        "diprotodontidae-baby-female-{type}",
-        "diprotodontidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-baby-*-zygomaturustrilobus": 0.006
-      },
-      "animationSpeedByType": {
-        "*-baby-*-zygomaturustrilobus": 0.8
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Walk",
+        "skipEntityCodes": [
+          "diprotodontidae-adult-female-{type}",
+          "diprotodontidae-adult-male-{type}",
+          "diprotodontidae-baby-female-{type}",
+          "diprotodontidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-baby-*-zygomaturustrilobus": 0.006
+        },
+        "animationSpeedByType": {
+          "*-baby-*-zygomaturustrilobus": 0.8
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   }
 ]

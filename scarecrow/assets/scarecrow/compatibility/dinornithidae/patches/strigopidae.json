@@ -3,125 +3,113 @@
     "enabled": true,
     "op": "addmerge",
     "file": "dinornithidae:entities/animal/bird/strigopidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "strigopidae-adult-female-{type}",
-        "strigopidae-adult-male-{type}",
-        "strigopidae-baby-female-{type}",
-        "strigopidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "strigopidae-adult-*-strigopshabroptila": 0.012
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "strigopidae-adult-female-{type}",
+          "strigopidae-adult-male-{type}",
+          "strigopidae-baby-female-{type}",
+          "strigopidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "strigopidae-adult-*-strigopshabroptila": 0.012
+        },
+        "animationSpeedByType": {
+          "*-adult-*": 2.0
+        },
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeedByType": {
-        "*-adult-*": 2.0
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "strigopidae-adult-female-{type}",
+          "strigopidae-adult-male-{type}",
+          "strigopidae-baby-female-{type}",
+          "strigopidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "strigopidae-adult-*-strigopshabroptila": 0.01,
+          "*": 0.045
+        },
+        "animationSpeed": 1,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "dinornithidae:entities/animal/bird/strigopidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "strigopidae-adult-female-{type}",
-        "strigopidae-adult-male-{type}",
-        "strigopidae-baby-female-{type}",
-        "strigopidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "strigopidae-adult-*-strigopshabroptila": 0.01,
-        "*": 0.045
-      },
-      "animationSpeed": 1,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "dinornithidae:entities/animal/bird/strigopidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.41,
-      "animation": "Walk",
-      "skipEntityCodes": [
-        "strigopidae-adult-female-{type}",
-        "strigopidae-adult-male-{type}",
-        "strigopidae-baby-female-{type}",
-        "strigopidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "strigopidae-adult-*-strigopshabroptila": 0.001
-      },
-      "animationSpeedByType": {
-        "strigopidae-adult-male-strigopshabroptila": 0.5,
-        "strigopidae-adult-female-strigopshabroptila": 0.55
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "threatening",
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.41,
+        "animation": "Walk",
+        "skipEntityCodes": [
+          "strigopidae-adult-female-{type}",
+          "strigopidae-adult-male-{type}",
+          "strigopidae-baby-female-{type}",
+          "strigopidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "strigopidae-adult-*-strigopshabroptila": 0.001
+        },
+        "animationSpeedByType": {
+          "strigopidae-adult-male-strigopshabroptila": 0.5,
+          "strigopidae-adult-female-strigopshabroptila": 0.55
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "threatening",
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   }
 ]

@@ -2,133 +2,109 @@
   {
     "enabled": true,
     "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
+    "path": "/server/behaviors/10/aitasks",
     "file": "game:entities/animal/mammal/raccoon-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.02,
-      "animationSpeed": 2.2,
-      "animation": "Run",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
+    "value": [
+      {
+        "code": "fleeentity",
+        "movespeed": 0.02,
+        "animationSpeed": 2.2,
+        "animation": "Run",
+        "entityCodes": [
+          "scarecrow"
+        ],
+        "priority": 1.6,
+        "priorityForCancel": 1.6,
+        "seekingRange": 16,
+        "fleeingDistance": 20,
+        "whenSwimming": false,
+        "retaliateAttacks": false
+      },
+      {
+        "code": "fleeentity",
+        "movespeed": 0.02,
+        "animationSpeed": 2.2,
+        "animation": "Run",
+        "entityCodes": [
+          "little-scarecrow"
+        ],
+        "priority": 1.6,
+        "priorityForCancel": 1.6,
+        "seekingRange": 12,
+        "fleeingDistance": 16,
+        "whenSwimming": false,
+        "retaliateAttacks": false
+      },
+      {
+        "code": "fleeentity",
+        "movespeed": 0.02,
+        "animationSpeed": 2.2,
+        "animation": "Run",
+        "entityCodes": [
+          "strawdummy"
+        ],
+        "priority": 1.6,
+        "priorityForCancel": 1.6,
+        "seekingRange": 8,
+        "fleeingDistance": 12,
+        "whenSwimming": false,
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "game:entities/animal/mammal/raccoon-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.02,
-      "animationSpeed": 2.2,
-      "animation": "Run",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "game:entities/animal/mammal/raccoon-baby.json",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.02,
-      "animationSpeed": 2.2,
-      "animation": "Run",
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 1.6,
-      "priorityForCancel": 1.6,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
+    "path": "/server/behaviors/10/aitasks",
     "file": "game:entities/animal/mammal/raccoon-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.035,
-      "animationSpeed": 3.5,
-      "animation": "Run",
-      "entityCodes": [
-        "scarecrow"
-      ],
-      "priority": 3.1,
-      "priorityForCancel": 3.1,
-      "seekingRange": 16,
-      "fleeingDistance": 20,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "game:entities/animal/mammal/raccoon-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.035,
-      "animationSpeed": 3.5,
-      "animation": "Run",
-      "entityCodes": [
-        "little-scarecrow"
-      ],
-      "priority": 3.1,
-      "priorityForCancel": 3.1,
-      "seekingRange": 12,
-      "fleeingDistance": 16,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "path": "/server/behaviors/10/aitasks/-",
-    "file": "game:entities/animal/mammal/raccoon-adult.json",
-    "value": {
-      "code": "fleeentity",
-      "movespeed": 0.035,
-      "animationSpeed": 3.5,
-      "animation": "Run",
-      "entityCodes": [
-        "strawdummy"
-      ],
-      "priority": 3.1,
-      "priorityForCancel": 3.1,
-      "seekingRange": 8,
-      "fleeingDistance": 12,
-      "whenSwimming": false,
-      "retaliateAttacks": false
-    },
+    "value": [
+      {
+        "code": "fleeentity",
+        "movespeed": 0.035,
+        "animationSpeed": 3.5,
+        "animation": "Run",
+        "entityCodes": [
+          "scarecrow"
+        ],
+        "priority": 3.1,
+        "priorityForCancel": 3.1,
+        "seekingRange": 16,
+        "fleeingDistance": 20,
+        "whenSwimming": false,
+        "retaliateAttacks": false
+      },
+      {
+        "code": "fleeentity",
+        "movespeed": 0.035,
+        "animationSpeed": 3.5,
+        "animation": "Run",
+        "entityCodes": [
+          "little-scarecrow"
+        ],
+        "priority": 3.1,
+        "priorityForCancel": 3.1,
+        "seekingRange": 12,
+        "fleeingDistance": 16,
+        "whenSwimming": false,
+        "retaliateAttacks": false
+      },
+      {
+        "code": "fleeentity",
+        "movespeed": 0.035,
+        "animationSpeed": 3.5,
+        "animation": "Run",
+        "entityCodes": [
+          "strawdummy"
+        ],
+        "priority": 3.1,
+        "priorityForCancel": 3.1,
+        "seekingRange": 8,
+        "fleeingDistance": 12,
+        "whenSwimming": false,
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   }
 ]

@@ -3,255 +3,231 @@
     "enabled": true,
     "op": "addmerge",
     "file": "vombatidae:entities/animal/mammal/thylacoleonidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.42,
-      "priorityForCancel": 9.42,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "thylacoleonidae-adult-female-{type}",
-        "thylacoleonidae-adult-male-{type}",
-        "thylacoleonidae-baby-female-{type}",
-        "thylacoleonidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-adult-*-thylacoleocarnifex": 0.0938
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.42,
+        "priorityForCancel": 9.42,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "thylacoleonidae-adult-female-{type}",
+          "thylacoleonidae-adult-male-{type}",
+          "thylacoleonidae-baby-female-{type}",
+          "thylacoleonidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-adult-*-thylacoleocarnifex": 0.0938
+        },
+        "animationSpeedByType": {
+          "*-adult-male-thylacoleocarnifex": 3.35,
+          "*-adult-female-thylacoleocarnifex": 3.7,
+          "*": 1
+        },
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeedByType": {
-        "*-adult-male-thylacoleocarnifex": 3.35,
-        "*-adult-female-thylacoleocarnifex": 3.7,
-        "*": 1
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.42,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "thylacoleonidae-adult-female-{type}",
+          "thylacoleonidae-adult-male-{type}",
+          "thylacoleonidae-baby-female-{type}",
+          "thylacoleonidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-adult-*": 0.04
+        },
+        "animationSpeed": 1.5,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "vombatidae:entities/animal/mammal/thylacoleonidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.42,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "thylacoleonidae-adult-female-{type}",
-        "thylacoleonidae-adult-male-{type}",
-        "thylacoleonidae-baby-female-{type}",
-        "thylacoleonidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-adult-*": 0.04
-      },
-      "animationSpeed": 1.5,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "vombatidae:entities/animal/mammal/thylacoleonidae-adult.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.41,
-      "animation": "Walk",
-      "skipEntityCodes": [
-        "thylacoleonidae-adult-female-{type}",
-        "thylacoleonidae-adult-male-{type}",
-        "thylacoleonidae-baby-female-{type}",
-        "thylacoleonidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-adult-*-thylacoleocarnifex": 0.0036
-      },
-      "animationSpeedByType": {
-        "*-adult-female-thylacoleocarnifex": 0.55,
-        "*-adult-male-thylacoleocarnifex": 0.5,
-        "*": 1
-      },
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.41,
+        "animation": "Walk",
+        "skipEntityCodes": [
+          "thylacoleonidae-adult-female-{type}",
+          "thylacoleonidae-adult-male-{type}",
+          "thylacoleonidae-baby-female-{type}",
+          "thylacoleonidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-adult-*-thylacoleocarnifex": 0.0036
+        },
+        "animationSpeedByType": {
+          "*-adult-female-thylacoleocarnifex": 0.55,
+          "*-adult-male-thylacoleocarnifex": 0.5,
+          "*": 1
+        },
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "vombatidae:entities/animal/mammal/thylacoleonidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.42,
-      "priorityForCancel": 9.42,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "thylacoleonidae-adult-female-{type}",
-        "thylacoleonidae-adult-male-{type}",
-        "thylacoleonidae-baby-female-{type}",
-        "thylacoleonidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-baby-*-thylacoleocarnifex": 0.04
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.42,
+        "priorityForCancel": 9.42,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "thylacoleonidae-adult-female-{type}",
+          "thylacoleonidae-adult-male-{type}",
+          "thylacoleonidae-baby-female-{type}",
+          "thylacoleonidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-baby-*-thylacoleocarnifex": 0.04
+        },
+        "animationSpeedByType": {
+          "*-baby-*": 4.5,
+          "*": 1
+        },
+        "seekingRange": 20,
+        "fleeingDistance": 40,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "threatening",
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeedByType": {
-        "*-baby-*": 4.5,
-        "*": 1
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.42,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "thylacoleonidae-adult-female-{type}",
+          "thylacoleonidae-adult-male-{type}",
+          "thylacoleonidae-baby-female-{type}",
+          "thylacoleonidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-baby-*": 0.02
+        },
+        "animationSpeed": 1.5,
+        "seekingRange": 30,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "seekingRange": 20,
-      "fleeingDistance": 40,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "threatening",
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "vombatidae:entities/animal/mammal/thylacoleonidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.42,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "thylacoleonidae-adult-female-{type}",
-        "thylacoleonidae-adult-male-{type}",
-        "thylacoleonidae-baby-female-{type}",
-        "thylacoleonidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-baby-*": 0.02
-      },
-      "animationSpeed": 1.5,
-      "seekingRange": 30,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "vombatidae:entities/animal/mammal/thylacoleonidae-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.41,
-      "animation": "Walk",
-      "skipEntityCodes": [
-        "thylacoleonidae-adult-female-{type}",
-        "thylacoleonidae-adult-male-{type}",
-        "thylacoleonidae-baby-female-{type}",
-        "thylacoleonidae-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-baby-*-thylacoleocarnifex": 0.004
-      },
-      "animationSpeedByType": {
-        "*-baby-*-thylacoleocarnifex": 1.1,
-        "*": 1
-      },
-      "seekingRange": 30,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.41,
+        "animation": "Walk",
+        "skipEntityCodes": [
+          "thylacoleonidae-adult-female-{type}",
+          "thylacoleonidae-adult-male-{type}",
+          "thylacoleonidae-baby-female-{type}",
+          "thylacoleonidae-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-baby-*-thylacoleocarnifex": 0.004
+        },
+        "animationSpeedByType": {
+          "*-baby-*-thylacoleocarnifex": 1.1,
+          "*": 1
+        },
+        "seekingRange": 30,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   }
 ]

@@ -28,16 +28,11 @@
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/bird/crow/crow-baby.json",
-    "path": "/server/behaviors/8/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/bird/crow/crow-baby.json",
-    "path": "/server/behaviors/8/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
+    "path": "/server/behaviors/8/aitasks/3/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow"
+    ],
     "side": "server"
   }
 ]

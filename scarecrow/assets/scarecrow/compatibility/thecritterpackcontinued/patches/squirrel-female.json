@@ -3,189 +3,112 @@
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 2,
-      "movespeed": 0.04,
-      "animationSpeed": 1.9,
-      "seekingRange": 8,
-      "animation": "Walk",
-      "whenNotInEmotionState": "fleeondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "instafleeOnDamageChance": 0
-    },
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 2,
+        "movespeed": 0.04,
+        "animationSpeed": 1.9,
+        "seekingRange": 8,
+        "animation": "Walk",
+        "whenNotInEmotionState": "fleeondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "instafleeOnDamageChance": 0
+      },
+      {
+        "code": "fleeentity",
+        "priority": 2,
+        "movespeed": 0.04,
+        "animationSpeed": 1.9,
+        "seekingRange": 8,
+        "animation": "Walk",
+        "whenInEmotionState": "fleeondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 2,
-      "movespeed": 0.04,
-      "animationSpeed": 1.9,
-      "seekingRange": 8,
-      "animation": "Walk",
-      "whenInEmotionState": "fleeondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+    "path": "/server/behaviors/10/aitasks/3/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
+    "path": "/server/behaviors/10/aitasks/4/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
+    "path": "/server/behaviors/10/aitasks/5/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/10/aitasks/6/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/4/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
+    "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/4/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/4/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/5/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/5/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/5/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/6/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/6/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/6/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/8/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/8/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/squirrel/squirrel-female.json",
-    "path": "/server/behaviors/10/aitasks/8/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/10/aitasks/8/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   }
 ]

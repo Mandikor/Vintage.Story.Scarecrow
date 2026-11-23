@@ -2,33 +2,33 @@
   {
     "file": "game:blocktypes/metal/lantern.json",
     "op": "addmerge",
-    "path": "/attributesByType/*-up/attachableToEntityByType/lantern-small-*/attachedShapeBySlotCode",
+    "path": "/attributesByType/*-up/attachableToEntityByType",
     "value": {
-      "sc-neck": {
-        "base": "scarecrow:item/wearable/vanilla/lantern-small"
+      "lantern-small-*": {
+        "attachedShapeBySlotCode": {
+          "sc-neck": {
+            "base": "scarecrow:item/wearable/vanilla/lantern-small"
+          },
+          "sc-leftarm": {
+            "base": "game:block/metal/lantern/small/ceiling"
+          },
+          "sc-rightarm": {
+            "base": "game:block/metal/lantern/small/ceiling"
+          }
+        }
       },
-      "sc-leftarm": {
-        "base": "game:block/metal/lantern/small/ceiling"
-      },
-      "sc-rightarm": {
-        "base": "game:block/metal/lantern/small/ceiling"
-      }
-    },
-    "side": "server"
-  },
-  {
-    "file": "game:blocktypes/metal/lantern.json",
-    "op": "addmerge",
-    "path": "/attributesByType/*-up/attachableToEntityByType/lantern-large-*/attachedShapeBySlotCode",
-    "value": {
-      "sc-neck": {
-        "base": "scarecrow:item/wearable/vanilla/lantern-large"
-      },
-      "sc-leftarm": {
-        "base": "game:block/metal/lantern/large/ceiling"
-      },
-      "sc-rightarm": {
-        "base": "game:block/metal/lantern/large/ceiling"
+      "lantern-large-*": {
+        "attachedShapeBySlotCode": {
+          "sc-neck": {
+            "base": "scarecrow:item/wearable/vanilla/lantern-large"
+          },
+          "sc-leftarm": {
+            "base": "game:block/metal/lantern/large/ceiling"
+          },
+          "sc-rightarm": {
+            "base": "game:block/metal/lantern/large/ceiling"
+          }
+        }
       }
     },
     "side": "server"
@@ -45,24 +45,21 @@
   {
     "file": "game:blocktypes/metal/lantern.json",
     "op": "addmerge",
-    "path": "/attributes/onScarecrowTransform",
+    "path": "/attributes",
     "value": {
-      "translation": {
-        "x": 0.05,
-        "y": 0,
-        "z": 0
+      "onScarecrowTransform": {
+        "translation": {
+          "x": 0.05,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": -4,
+          "z": 0
+        }
       },
-      "rotation": {
-        "x": 0,
-        "y": -4,
-        "z": 0
-      }
+      "scarecrowPendulum": true
     }
-  },
-  {
-    "file": "game:blocktypes/metal/lantern.json",
-    "op": "addmerge",
-    "path": "/attributes/scarecrowPendulum",
-    "value": true
   }
 ]

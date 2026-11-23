@@ -15,49 +15,34 @@
           }
         },
         "texturePrefixCode": "scarecrow-dreamcatchers"
+      },
+      "onScarecrowTransform": {
+        "translation": {
+          "x": 0.01,
+          "y": 0.26,
+          "z": 0.29
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scaleXYZ": {
+          "x": 0.6,
+          "y": 0.6,
+          "z": 0.6
+        }
+      },
+      "scarecrowPendulum": false,
+      "scarecrowPendulumAttachmentPoints": {
+        "sc-leftarm": "ScarecrowLanternLeftAP",
+        "sc-rightarm": "ScarecrowLanternRightAP"
       }
-    }
-  },
-  {
-    "file": "dreamcatchers:blocktypes/dreamcatcher.json",
-    "op": "addmerge",
-    "path": "/attributes/onScarecrowTransform",
-    "value": {
-      "translation": {
-        "x": 0.01,
-        "y": 0.26,
-        "z": 0.29
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "origin": {
-        "x": 0.5,
-        "y": 0.5,
-        "z": 0.5
-      },
-      "scaleXYZ": {
-        "x": 0.6,
-        "y": 0.6,
-        "z": 0.6
-      }
-    }
-  },
-  {
-    "file": "dreamcatchers:blocktypes/dreamcatcher.json",
-    "op": "addmerge",
-    "path": "/attributes/scarecrowPendulum",
-    "value": false
-  },
-  {
-    "file": "dreamcatchers:blocktypes/dreamcatcher.json",
-    "op": "addmerge",
-    "path": "/attributes/scarecrowPendulumAttachmentPoints",
-    "value": {
-      "sc-leftarm": "ScarecrowLanternLeftAP",
-      "sc-rightarm": "ScarecrowLanternRightAP"
     }
   }
 ]

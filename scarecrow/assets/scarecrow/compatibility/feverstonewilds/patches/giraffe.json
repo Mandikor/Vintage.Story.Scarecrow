@@ -3,138 +3,102 @@
     "enabled": true,
     "file": "feverstonewilds:entities/land/giraffe.json",
     "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/-",
-    "value": {
-      "code": "seekentity",
-      "priority": 1.5,
-      "mincooldown": 1000,
-      "maxcooldown": 1500,
-      "seekingRange": 25,
-      "movespeed": 0.05,
-      "animation": "Run",
-      "animationSpeed": 2.5,
-      "whenInEmotionState": "aggressiveondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "giraffe-male-adult": true,
-        "giraffe-male-calf": false,
-        "giraffe-female-adult": true,
-        "giraffe-female-calf": false,
-        "*": false
+    "path": "/server/behaviors/9/aitasks",
+    "value": [
+      {
+        "code": "seekentity",
+        "priority": 1.5,
+        "mincooldown": 1000,
+        "maxcooldown": 1500,
+        "seekingRange": 25,
+        "movespeed": 0.05,
+        "animation": "Run",
+        "animationSpeed": 2.5,
+        "whenInEmotionState": "aggressiveondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "giraffe-male-adult": true,
+          "giraffe-male-calf": false,
+          "giraffe-female-adult": true,
+          "giraffe-female-calf": false,
+          "*": false
+        }
+      },
+      {
+        "code": "fleeentity",
+        "priority": 1.5,
+        "movespeed": 0.052,
+        "seekingRange": 12,
+        "animation": "Run",
+        "animationSpeed": 3.5,
+        "sound": "game:creature/sheep/hurt2",
+        "whenInEmotionState": "fleeondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "giraffe-male-adult": true,
+          "giraffe-male-calf": true,
+          "giraffe-female-adult": true,
+          "giraffe-female-calf": true,
+          "*": false
+        }
+      },
+      {
+        "code": "fleeentity",
+        "priority": 1.5,
+        "movespeed": 0.052,
+        "seekingRange": 12,
+        "animation": "Run",
+        "animationSpeed": 2.5,
+        "sound": "game:creature/sheep/hurt2",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "enabledByType": {
+          "giraffe-male-adult": false,
+          "giraffe-male-calf": true,
+          "giraffe-female-adult": false,
+          "giraffe-female-calf": true,
+          "*": false
+        }
       }
-    },
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/giraffe.json",
     "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 1.5,
-      "movespeed": 0.052,
-      "seekingRange": 12,
-      "animation": "Run",
-      "animationSpeed": 3.5,
-      "sound": "game:creature/sheep/hurt2",
-      "whenInEmotionState": "fleeondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "giraffe-male-adult": true,
-        "giraffe-male-calf": true,
-        "giraffe-female-adult": true,
-        "giraffe-female-calf": true,
-        "*": false
-      }
-    },
+    "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "file": "feverstonewilds:entities/land/giraffe.json",
     "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 1.5,
-      "movespeed": 0.052,
-      "seekingRange": 12,
-      "animation": "Run",
-      "animationSpeed": 2.5,
-      "sound": "game:creature/sheep/hurt2",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "enabledByType": {
-        "giraffe-male-adult": false,
-        "giraffe-male-calf": true,
-        "giraffe-female-adult": false,
-        "giraffe-female-calf": true,
-        "*": false
-      }
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/giraffe.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/giraffe.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/giraffe.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/giraffe.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/8/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/giraffe.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/8/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "file": "feverstonewilds:entities/land/giraffe.json",
-    "op": "addmerge",
-    "path": "/server/behaviors/9/aitasks/8/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/9/aitasks/8/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   }
 ]

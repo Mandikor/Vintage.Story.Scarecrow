@@ -17,6 +17,26 @@
     "side": "server"
   },
   {
+    "file": "game:itemtypes/tool/scythe.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "value": {
+      "onScarecrowTransform": {
+        "translation": {
+          "x": -0.04,
+          "y": -0.54,
+          "z": -0.81
+        },
+        "rotation": {
+          "x": 8,
+          "y": -120,
+          "z": 100
+        }
+      },
+      "scarecrowPendulum": false
+    }
+  },
+  {
     "file": "game:itemtypes/tool/hoe.json",
     "op": "addmerge",
     "path": "/attributes/attachableToEntity",
@@ -44,6 +64,40 @@
     "side": "server"
   },
   {
+    "file": "game:itemtypes/tool/hoe.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "value": {
+      "onScarecrowTransformByType": {
+        "@hoe-(copper|tinbronze|bismuthbronze|blackbronze|gold|silver|iron|meteoriciron|steel)": {
+          "translation": {
+            "x": 0.07,
+            "y": -0.53,
+            "z": -0.715
+          },
+          "rotation": {
+            "x": 3,
+            "y": -140,
+            "z": 97
+          }
+        },
+        "@hoe-(chert|granite|andesite|basalt|obsidian|peridotite|flint)": {
+          "translation": {
+            "x": 0.06,
+            "y": -0.65,
+            "z": -0.71
+          },
+          "rotation": {
+            "x": 3,
+            "y": -140,
+            "z": 97
+          }
+        }
+      },
+      "scarecrowPendulum": false
+    }
+  },
+  {
     "file": "game:itemtypes/tool/bugnet.json",
     "op": "addmerge",
     "path": "/attributes/attachableToEntity",
@@ -59,6 +113,26 @@
       "texturePrefixCode": "scarecrow-bugnet-{type}"
     },
     "side": "server"
+  },
+  {
+    "file": "game:itemtypes/tool/bugnet.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "value": {
+      "onScarecrowTransform": {
+        "translation": {
+          "x": -0.57,
+          "y": -0.98,
+          "z": 0.005
+        },
+        "rotation": {
+          "x": 8,
+          "y": 60,
+          "z": 82
+        }
+      },
+      "scarecrowPendulum": false
+    }
   },
   {
     "file": "game:itemtypes/tool/snowshovel.json",
@@ -80,109 +154,23 @@
     "side": "server"
   },
   {
-    "file": "game:itemtypes/tool/bugnet.json",
-    "op": "addmerge",
-    "path": "/attributes/onScarecrowTransform",
-    "value": {
-      "translation": {
-        "x": -0.57,
-        "y": -0.98,
-        "z": 0.005
-      },
-      "rotation": {
-        "x": 8,
-        "y": 60,
-        "z": 82
-      }
-    }
-  },
-  {
-    "file": "game:itemtypes/tool/hoe.json",
-    "op": "addmerge",
-    "path": "/attributes/onScarecrowTransformByType",
-    "value": {
-      "@hoe-(copper|tinbronze|bismuthbronze|blackbronze|gold|silver|iron|meteoriciron|steel)": {
-        "translation": {
-          "x": 0.07,
-          "y": -0.53,
-          "z": -0.715
-        },
-        "rotation": {
-          "x": 3,
-          "y": -140,
-          "z": 97
-        }
-      },
-      "@hoe-(chert|granite|andesite|basalt|obsidian|peridotite|flint)": {
-        "translation": {
-          "x": 0.06,
-          "y": -0.65,
-          "z": -0.71
-        },
-        "rotation": {
-          "x": 3,
-          "y": -140,
-          "z": 97
-        }
-      }
-    }
-  },
-  {
-    "file": "game:itemtypes/tool/scythe.json",
-    "op": "addmerge",
-    "path": "/attributes/onScarecrowTransform",
-    "value": {
-      "translation": {
-        "x": -0.04,
-        "y": -0.54,
-        "z": -0.81
-      },
-      "rotation": {
-        "x": 8,
-        "y": -120,
-        "z": 100
-      }
-    }
-  },
-  {
     "file": "game:itemtypes/tool/snowshovel.json",
     "op": "addmerge",
-    "path": "/attributes/onScarecrowTransform",
+    "path": "/attributes",
     "value": {
-      "translation": {
-        "x": -0.52,
-        "y": -0.93,
-        "z": -0.04
+      "onScarecrowTransform": {
+        "translation": {
+          "x": -0.52,
+          "y": -0.93,
+          "z": -0.04
+        },
+        "rotation": {
+          "x": 8,
+          "y": 60,
+          "z": 82
+        }
       },
-      "rotation": {
-        "x": 8,
-        "y": 60,
-        "z": 82
-      }
+      "scarecrowPendulum": false
     }
-  },
-  {
-    "file": "game:itemtypes/tool/bugnet.json",
-    "op": "addmerge",
-    "path": "/attributes/scarecrowPendulum",
-    "value": false
-  },
-  {
-    "file": "game:itemtypes/tool/hoe.json",
-    "op": "addmerge",
-    "path": "/attributes/scarecrowPendulum",
-    "value": false
-  },
-  {
-    "file": "game:itemtypes/tool/scythe.json",
-    "op": "addmerge",
-    "path": "/attributes/scarecrowPendulum",
-    "value": false
-  },
-  {
-    "file": "game:itemtypes/tool/snowshovel.json",
-    "op": "addmerge",
-    "path": "/attributes/scarecrowPendulum",
-    "value": false
   }
 ]

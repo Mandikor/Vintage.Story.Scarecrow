@@ -3,257 +3,233 @@
     "enabled": true,
     "op": "addmerge",
     "file": "capreolinae:entities/animal/mammal/hooved/capreolini-adult.json",
-    "path": "/server/behaviors/11/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "cervidae-capreolini-adult-female-{type}",
-        "cervidae-capreolini-baby-female-{type}",
-        "cervidae-capreolini-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-female-capreoluscapreolus": 0.0675,
-        "*-male-capreoluscapreolus": 0.077,
-        "*-female-capreoluspygargus": 0.077,
-        "*-male-capreoluspygargus": 0.08,
-        "*-female-hydropotesinermis": 0.05,
-        "*-male-hydropotesinermis": 0.05,
-        "*": 0.005
+    "path": "/server/behaviors/11/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "cervidae-capreolini-adult-female-{type}",
+          "cervidae-capreolini-baby-female-{type}",
+          "cervidae-capreolini-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-female-capreoluscapreolus": 0.0675,
+          "*-male-capreoluscapreolus": 0.077,
+          "*-female-capreoluspygargus": 0.077,
+          "*-male-capreoluspygargus": 0.08,
+          "*-female-hydropotesinermis": 0.05,
+          "*-male-hydropotesinermis": 0.05,
+          "*": 0.005
+        },
+        "animationSpeed": 2,
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "fleeDurationMs": 20000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeed": 2,
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "fleeDurationMs": 20000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "capreolinae:entities/animal/mammal/hooved/capreolini-adult.json",
-    "path": "/server/behaviors/11/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.41,
-      "priorityForCancel": 9.41,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "cervidae-capreolini-adult-female-{type}",
-        "cervidae-capreolini-baby-female-{type}",
-        "cervidae-capreolini-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*": 0.04
+      {
+        "code": "fleeentity",
+        "priority": 9.41,
+        "priorityForCancel": 9.41,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "cervidae-capreolini-adult-female-{type}",
+          "cervidae-capreolini-baby-female-{type}",
+          "cervidae-capreolini-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*": 0.04
+        },
+        "animationSpeed": 1,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeed": 1,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "capreolinae:entities/animal/mammal/hooved/capreolini-adult.json",
-    "path": "/server/behaviors/11/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Canter",
-      "skipEntityCodes": [
-        "cervidae-capreolini-adult-female-{type}",
-        "cervidae-capreolini-baby-female-{type}",
-        "cervidae-capreolini-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-female-capreoluscapreolus": 0.027,
-        "*-male-capreoluscapreolus": 0.03,
-        "*-female-capreoluspygargus": 0.03,
-        "*-male-capreoluspygargus": 0.032,
-        "*-female-hydropotesinermis": 0.02,
-        "*-male-hydropotesinermis": 0.02,
-        "*": 0.005
-      },
-      "animationSpeed": 1.5,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Canter",
+        "skipEntityCodes": [
+          "cervidae-capreolini-adult-female-{type}",
+          "cervidae-capreolini-baby-female-{type}",
+          "cervidae-capreolini-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-female-capreoluscapreolus": 0.027,
+          "*-male-capreoluscapreolus": 0.03,
+          "*-female-capreoluspygargus": 0.03,
+          "*-male-capreoluspygargus": 0.032,
+          "*-female-hydropotesinermis": 0.02,
+          "*-male-hydropotesinermis": 0.02,
+          "*": 0.005
+        },
+        "animationSpeed": 1.5,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "capreolinae:entities/animal/mammal/hooved/capreolini-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "cervidae-capreolini-adult-female-{type}",
-        "cervidae-capreolini-adult-male-{type}",
-        "cervidae-capreolini-baby-female-{type}",
-        "cervidae-capreolini-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-capreoluscapreolus": 0.037,
-        "*-capreoluspygargus": 0.04,
-        "*-hydropotesinermis": 0.034,
-        "*": 0.005
+    "path": "/server/behaviors/10/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "cervidae-capreolini-adult-female-{type}",
+          "cervidae-capreolini-adult-male-{type}",
+          "cervidae-capreolini-baby-female-{type}",
+          "cervidae-capreolini-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-capreoluscapreolus": 0.037,
+          "*-capreoluspygargus": 0.04,
+          "*-hydropotesinermis": 0.034,
+          "*": 0.005
+        },
+        "animationSpeed": 2.5,
+        "seekingRange": 20,
+        "fleeingDistance": 50,
+        "fleeDurationMs": 20000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeed": 2.5,
-      "seekingRange": 20,
-      "fleeingDistance": 50,
-      "fleeDurationMs": 20000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "capreolinae:entities/animal/mammal/hooved/capreolini-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Swim",
-      "skipEntityCodes": [
-        "cervidae-capreolini-adult-female-{type}",
-        "cervidae-capreolini-adult-male-{type}",
-        "cervidae-capreolini-baby-female-{type}",
-        "cervidae-capreolini-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*": 0.02
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Swim",
+        "skipEntityCodes": [
+          "cervidae-capreolini-adult-female-{type}",
+          "cervidae-capreolini-adult-male-{type}",
+          "cervidae-capreolini-baby-female-{type}",
+          "cervidae-capreolini-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*": 0.02
+        },
+        "animationSpeed": 2,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenSwimming": true,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-feet-in-liquid",
+          "state-moving",
+          "state-swimming"
+        ],
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
       },
-      "animationSpeed": 2,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenSwimming": true,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-feet-in-liquid",
-        "state-moving",
-        "state-swimming"
-      ],
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "capreolinae:entities/animal/mammal/hooved/capreolini-baby.json",
-    "path": "/server/behaviors/10/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 9.4,
-      "priorityForCancel": 9.4,
-      "animation": "Run",
-      "skipEntityCodes": [
-        "cervidae-capreolini-adult-female-{type}",
-        "cervidae-capreolini-adult-male-{type}",
-        "cervidae-capreolini-baby-female-{type}",
-        "cervidae-capreolini-baby-male-{type}"
-      ],
-      "movespeedByType": {
-        "*-capreoluscapreolus": 0.037,
-        "*-capreoluspygargus": 0.04,
-        "*-hydropotesinermis": 0.034,
-        "*": 0.005
-      },
-      "animationSpeed": 2.5,
-      "seekingRange": 120,
-      "fleeingDistance": 180,
-      "fleeDurationMs": 60000,
-      "whenInEmotionStates": [
-        "fleeondamage"
-      ],
-      "tagsAppliedToEntity": [
-        "state-moving",
-        "state-sprinting"
-      ],
-      "whenSwimming": false,
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+      {
+        "code": "fleeentity",
+        "priority": 9.4,
+        "priorityForCancel": 9.4,
+        "animation": "Run",
+        "skipEntityCodes": [
+          "cervidae-capreolini-adult-female-{type}",
+          "cervidae-capreolini-adult-male-{type}",
+          "cervidae-capreolini-baby-female-{type}",
+          "cervidae-capreolini-baby-male-{type}"
+        ],
+        "movespeedByType": {
+          "*-capreoluscapreolus": 0.037,
+          "*-capreoluspygargus": 0.04,
+          "*-hydropotesinermis": 0.034,
+          "*": 0.005
+        },
+        "animationSpeed": 2.5,
+        "seekingRange": 120,
+        "fleeingDistance": 180,
+        "fleeDurationMs": 60000,
+        "whenInEmotionStates": [
+          "fleeondamage"
+        ],
+        "tagsAppliedToEntity": [
+          "state-moving",
+          "state-sprinting"
+        ],
+        "whenSwimming": false,
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   }
 ]

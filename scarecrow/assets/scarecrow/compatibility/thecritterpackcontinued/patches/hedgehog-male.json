@@ -3,237 +3,136 @@
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 4.85,
-      "movespeed": 0,
-      "animationSpeed": 3.21,
-      "seekingRange": 4,
-      "animation": "Roll",
-      "whenInEmotionState": "fleeondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false,
-      "instafleeOnDamageChance": 0
-    },
+    "path": "/server/behaviors/9/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "priority": 4.85,
+        "movespeed": 0,
+        "animationSpeed": 3.21,
+        "seekingRange": 4,
+        "animation": "Roll",
+        "whenInEmotionState": "fleeondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false,
+        "instafleeOnDamageChance": 0
+      },
+      {
+        "code": "fleeentity",
+        "priority": 2.65,
+        "movespeed": 0.007,
+        "animationSpeed": 2.1,
+        "seekingRange": 12,
+        "animation": "Walk",
+        "whenNotInEmotionState": "fleeondamage",
+        "entityCodes": [
+          "scarecrow",
+          "little-scarecrow",
+          "strawdummy"
+        ],
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "priority": 2.65,
-      "movespeed": 0.007,
-      "animationSpeed": 2.1,
-      "seekingRange": 12,
-      "animation": "Walk",
-      "whenNotInEmotionState": "fleeondamage",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "retaliateAttacks": false
-    },
+    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
+    "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
+    "path": "/server/behaviors/9/aitasks/5/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
+    "path": "/server/behaviors/9/aitasks/7/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
+    "path": "/server/behaviors/9/aitasks/8/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/4/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/9/aitasks/9/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/5/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/5/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/5/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/7/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/8/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/8/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/8/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/9/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/9/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/9/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/10/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/10/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/10/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/9/aitasks/10/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
@@ -276,48 +175,24 @@
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/13/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
+    "path": "/server/behaviors/9/aitasks/13/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   },
   {
     "enabled": true,
     "op": "addmerge",
     "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/13/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/13/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/14/stopOnNearbyEntityCodes/-",
-    "value": "scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/14/stopOnNearbyEntityCodes/-",
-    "value": "little-scarecrow",
-    "side": "server"
-  },
-  {
-    "enabled": true,
-    "op": "addmerge",
-    "file": "thecritterpack:entities/animal/mammal/hedgehog/hedgehog-male.json",
-    "path": "/server/behaviors/9/aitasks/14/stopOnNearbyEntityCodes/-",
-    "value": "strawdummy",
+    "path": "/server/behaviors/9/aitasks/14/stopOnNearbyEntityCodes",
+    "value": [
+      "scarecrow",
+      "little-scarecrow",
+      "strawdummy"
+    ],
     "side": "server"
   }
 ]
