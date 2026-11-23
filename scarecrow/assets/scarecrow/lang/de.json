@@ -105,5 +105,9 @@
   "scarecrow:access-equipment": "Ausrüstung",
   "scarecrow:access-full": "Vollzugriff",
   "scarecrow:access-guide": "Nur der Eigentümer darf Zugriff erteilen oder entziehen. Ausrüstungszugriff erlaubt Anlegen und Abnehmen; Vollzugriff zusätzlich das Aufheben. Grundstücksrechte gelten weiterhin, auch bei eigentümerlosen Vogelscheuchen. Sieh eine Vogelscheuche an und nutze diese Befehle. Freigaben werden beim erneuten Platzieren nicht übernommen; der platzierende Spieler wird Eigentümer.",
-  "scarecrow:interaction-error-pickup-access": "Nur der Eigentümer oder ein Spieler mit Vollzugriff darf diese Vogelscheuche aufheben."
+  "scarecrow:interaction-error-pickup-access": "Nur der Eigentümer oder ein Spieler mit Vollzugriff darf diese Vogelscheuche aufheben.",
+  "scarecrow:reload-help": "Serverkonfiguration der Vogelscheuchen neu laden.",
+  "scarecrow:reload-failed": "scarecrow.json konnte nicht neu geladen werden. Die bisherigen Einstellungen bleiben aktiv; siehe Serverlog.",
+  "scarecrow:reload-success": "Konfiguration neu geladen. {0} geladene Vogelscheuchen aktualisiert.",
+  "scarecrow:guide-radius-defaults": "Die genannten Radien sind Standardwerte. Die Servereinstellungen können abweichen; der Tooltip der platzierten Vogelscheuche zeigt die aktuellen Werte."
 }

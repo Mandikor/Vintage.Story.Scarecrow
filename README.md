@@ -437,8 +437,11 @@ data directory. For a dedicated server, edit the file in the server's data direc
 
 ```json
 {
-  "ConfigVersion": 2,
+  "ConfigVersion": 3,
   "DebugOutput": false,
+  "ScarecrowRadius": 16,
+  "LittleScarecrowRadius": 12,
+  "StrawDummyRadius": 8,
   "ScaredAnimalPrefixes": [
     "hare",
     "raccoon"
@@ -448,8 +451,11 @@ data directory. For a dedicated server, edit the file in the server's data direc
 
 | Setting | Purpose |
 | --- | --- |
-| `ConfigVersion` | Configuration schema, independent of the mod version. Updated automatically; currently `2`. |
+| `ConfigVersion` | Configuration schema, independent of the mod version. Updated automatically; currently `3`. |
 | `DebugOutput` | Writes spawn-interception details to the server log when enabled. |
+| `ScarecrowRadius` | Large scarecrow base radius; default `16` blocks. |
+| `LittleScarecrowRadius` | Little scarecrow base radius; default `12` blocks. |
+| `StrawDummyRadius` | Vanilla straw dummy base radius; default `8` blocks. |
 | `ScaredAnimalPrefixes` | Natural-spawn filters. Plain entries retain case-insensitive path-prefix matching across mods; entries containing `:` match the full domain/path, with optional `*` wildcards in the path. |
 
 Both formats may be mixed in the same list:
@@ -467,17 +473,33 @@ Qualified filters match the whole path; use `*` explicitly to include variants.
 The domain must be an exact mod ID or the single wildcard `*`. Invalid qualified
 filters are ignored; regex expressions are not accepted. Unqualified entries
 remain literal prefixes, so use `*:hare-*` rather than `hare-*` for a wildcard
-across mods. Existing settings and configuration version `2` remain unchanged.
+across mods. Existing filter entries retain their meaning when upgrading the config.
 
-Restart the game or server after editing the file. An empty prefix list disables
-the configured natural-spawn blocking while leaving the animal flee patches active.
+Base radii must be whole numbers from `1` to `64` blocks. Equipment adds its
+strongest permitted bonus to that base. These settings change natural-spawn
+protection, not the flee or attack distances defined by entity JSON patches.
 
-If the JSON cannot be read, the mod logs the error and uses its defaults without
-overwriting the invalid file. Correct the file and restart.
+After saving the file, use `/scarecrow reload` in chat or `scarecrow reload` in
+the server console to apply it without restarting. The command requires the
+`controlserver` privilege. It reports how many loaded scarecrows were updated;
+scarecrows loaded or placed later use the new settings too. An empty prefix list
+disables the configured natural-spawn blocking while leaving the animal flee patches active.
+
+Reload updates base radii, natural-spawn filters, debug logging and synchronized
+protection tooltip data. It does not remove existing animals, change JSON-patched
+AI tasks or reload assets. The enabled radius overlay continues updating
+automatically and follows the server's new radius and equipment bonuses. The
+personal `scarecrow-client.json` is not reloaded by this command.
+
+If the JSON cannot be read at startup, the mod logs the error and uses its defaults
+without overwriting the invalid file. During reload, a missing or invalid file
+instead leaves the previous active settings unchanged. Correct the file and run
+the command again; details are recorded in the server log.
 
 Older configs without `ConfigVersion` are treated as schema 1 and upgraded to
-schema 2. Missing settings receive their defaults; existing values, empty animal
-lists and unknown properties are preserved. Before changing an existing file,
+schema 3. Schema 2 files also receive the new radius defaults. Missing settings
+receive their defaults; existing values, empty animal lists and unknown properties
+are preserved. Before changing an existing file,
 the mod saves its original settings to `ModConfig/scarecrow.json.bak`.
 
 Complete current files are not rewritten on startup. Newer schemas are read

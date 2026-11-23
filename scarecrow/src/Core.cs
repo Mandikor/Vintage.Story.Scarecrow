@@ -1,5 +1,6 @@
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
+using Vintagestory.API.Config;
 using Vintagestory.API.Server;
 
 namespace Scarecrow
@@ -59,8 +60,38 @@ namespace Scarecrow
         public override void StartServerSide(ICoreServerAPI api)
         {
             base.StartServerSide(api);
-            _ = new ScarecrowAccessCommands(api);
+            RegisterCommands(api);
             serverCompatibility = ModCompatibility.StartServer(api);
+        }
+
+        private void RegisterCommands(ICoreServerAPI api)
+        {
+            _ = new ScarecrowAccessCommands(api);
+            api.ChatCommands.GetOrCreate("scarecrow")
+                .BeginSubCommand("reload")
+                .WithDescription(Lang.Get("scarecrow:reload-help"))
+                .RequiresPrivilege(Privilege.controlserver)
+                .HandleWith(args => ReloadConfiguration(api, args))
+                .EndSubCommand();
+        }
+
+        private TextCommandResult ReloadConfiguration(ICoreServerAPI api, TextCommandCallingArgs args)
+        {
+            string language = (args.Caller?.Player as IServerPlayer)?.LanguageCode
+                ?? Lang.DefaultLocale;
+            if (!ScarecrowConfigLoader.TryReload(api, out ScarecrowConfig settings))
+                return TextCommandResult.Error(Lang.GetL(language, "scarecrow:reload-failed"));
+
+            Config = settings;
+            int count = 0;
+            foreach (var entity in api.World.LoadedEntities.Values)
+            {
+                if (entity is not EntityScarecrow crow) continue;
+                crow.ApplyConfiguration(settings);
+                count++;
+            }
+            api.Logger.Notification("[Scarecrow] Reloaded configuration; updated {0} loaded scarecrows.", count);
+            return TextCommandResult.Success(Lang.GetL(language, "scarecrow:reload-success", count));
         }
 
         public override void Dispose()

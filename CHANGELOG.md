@@ -5,6 +5,30 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ## Unreleased
 
+### Reload server configuration
+
+- Added server-configurable base radii: `ScarecrowRadius` (16),
+  `LittleScarecrowRadius` (12) and `StrawDummyRadius` (8), each accepting whole
+  numbers from 1 to 64 blocks. Schema 3 migration preserves existing settings
+  and adds missing defaults. Reload updates spawn protection, tooltips and
+  enabled radius outlines; the strongest equipment bonus remains additional.
+- Synchronize base radii from the server to clients. Handbook text identifies
+  its listed radii as defaults in all 33 languages. JSON-patched AI ranges stay
+  unchanged.
+
+- Added `/scarecrow reload` for players with `controlserver` and the server
+  console. Apply validated server settings to all loaded scarecrows and
+  synchronize protection tooltip data. Later entity loads use the new settings.
+- Retain active settings if the file is missing or invalid; report the failure
+  to the caller and log details. Keep existing migration/default/backup handling
+  for valid files. Personal client settings, assets, animal AI and existing
+  animals remain unchanged. I successfully tested configurable base radii and
+  applying them with the reload command in game.
+- Added command messages in all 33 languages. Automated checks cover console
+  use, permissions, live spawn-filter/tooltip updates, invalid-file retention,
+  configurable spawn boundaries, client radius synchronization, migrations and
+  backup failures; existing configuration, tooltip and handbook checks also passed.
+
 ### Terrain-aware radius outline
 
 - Project the outline onto nearby solid surfaces instead of a fixed horizontal

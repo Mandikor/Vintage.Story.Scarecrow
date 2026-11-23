@@ -109,5 +109,9 @@
   "scarecrow:access-equipment": "Equipamento",
   "scarecrow:access-full": "Acesso completo",
   "scarecrow:access-guide": "Só o dono pode conceder ou revogar acesso. O acesso de equipamento permite colocar e remover itens; o acesso completo também permite recolher o espantalho. Os direitos do terreno continuam valendo, inclusive sem dono. Mire no espantalho e use estes comandos. As permissões não passam para uma nova colocação; quem coloca se torna o dono.",
-  "scarecrow:interaction-error-pickup-access": "Só o dono ou um jogador com acesso completo pode recolher este espantalho."
+  "scarecrow:interaction-error-pickup-access": "Só o dono ou um jogador com acesso completo pode recolher este espantalho.",
+  "scarecrow:reload-help": "Recarregar a configuração de servidor dos espantalhos.",
+  "scarecrow:reload-failed": "Não foi possível recarregar scarecrow.json. As configurações anteriores continuam ativas; consulte o registro do servidor.",
+  "scarecrow:reload-success": "Configuração recarregada. Espantalhos carregados atualizados: {0}.",
+  "scarecrow:guide-radius-defaults": "Os raios indicados são valores padrão. As configurações do servidor podem ser diferentes; a descrição do espantalho colocado mostra os valores atuais."
 }

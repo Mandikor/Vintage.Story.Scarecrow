@@ -109,5 +109,9 @@
   "scarecrow:access-equipment": "Búnaður",
   "scarecrow:access-full": "Fullur aðgangur",
   "scarecrow:access-guide": "Aðeins eigandinn veitir eða afturkallar aðgang. Búnaðarheimild leyfir að setja á og taka af búnað; full heimild leyfir líka að taka hræðuna upp. Landréttindi gilda áfram, líka án eiganda. Horfðu á hræðuna og notaðu þessar skipanir. Heimildir flytjast ekki við nýja staðsetningu; sá sem setur niður verður eigandi.",
-  "scarecrow:interaction-error-pickup-access": "Aðeins eigandinn eða leikmaður með fullan aðgang má taka þessa fuglahræðu upp."
+  "scarecrow:interaction-error-pickup-access": "Aðeins eigandinn eða leikmaður með fullan aðgang má taka þessa fuglahræðu upp.",
+  "scarecrow:reload-help": "Endurhlaða netþjónsstillingum fuglahræðanna.",
+  "scarecrow:reload-failed": "Ekki tókst að endurhlaða scarecrow.json. Fyrri stillingar haldast virkar; skoðaðu annál netþjónsins.",
+  "scarecrow:reload-success": "Stillingar endurhlaðnar. Uppfærðar hlaðnar fuglahræður: {0}.",
+  "scarecrow:guide-radius-defaults": "Uppgefnir radíusar eru sjálfgefin gildi. Stillingar netþjónsins geta verið aðrar; upplýsingatexti uppsettrar fuglahræðu sýnir gildandi gildi."
 }

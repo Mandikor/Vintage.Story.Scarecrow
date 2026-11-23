@@ -109,5 +109,9 @@
   "scarecrow:access-equipment": "Ekipman",
   "scarecrow:access-full": "Tam erişim",
   "scarecrow:access-guide": "Yalnızca sahip erişim verebilir veya kaldırabilir. Ekipman erişimi eşya takıp çıkarmayı, tam erişim ayrıca korkuluğu toplamayı sağlar. Sahipsiz korkuluklarda da arazi hakları geçerlidir. Korkuluğa bakıp bu komutları kullanın. İzinler yeniden yerleştirmeye taşınmaz; yerleştiren oyuncu sahip olur.",
-  "scarecrow:interaction-error-pickup-access": "Yalnızca sahibi veya tam erişimli bir oyuncu bu korkuluğu toplayabilir."
+  "scarecrow:interaction-error-pickup-access": "Yalnızca sahibi veya tam erişimli bir oyuncu bu korkuluğu toplayabilir.",
+  "scarecrow:reload-help": "Korkuluk sunucu yapılandırmasını yeniden yükle.",
+  "scarecrow:reload-failed": "scarecrow.json yeniden yüklenemedi. Önceki ayarlar etkin kalır; sunucu günlüğünü kontrol edin.",
+  "scarecrow:reload-success": "Yapılandırma yeniden yüklendi. Yüklenmiş {0} korkuluk güncellendi.",
+  "scarecrow:guide-radius-defaults": "Belirtilen yarıçaplar varsayılan değerlerdir. Sunucu ayarları farklı olabilir; yerleştirilmiş korkuluğun bilgi metni güncel değerleri gösterir."
 }

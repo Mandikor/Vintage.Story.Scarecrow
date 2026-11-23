@@ -40,6 +40,7 @@ namespace Scarecrow
             }
             return Lang.Get("scarecrow:guide-text", Link("scarecrow:scarecrow"),
                 Link("scarecrow:little-scarecrow"), Link("game:strawdummy"))
+                + "\n\n" + Lang.Get("scarecrow:guide-radius-defaults")
                 + "\n\n" + Lang.Get("scarecrow:access-guide")
                 + "\n/scarecrow access add &lt;player&gt; equipment"
                 + "\n/scarecrow access add &lt;player&gt; full"

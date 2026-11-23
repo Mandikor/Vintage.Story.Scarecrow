@@ -109,5 +109,9 @@
   "scarecrow:access-equipment": "Udstyr",
   "scarecrow:access-full": "Fuld adgang",
   "scarecrow:access-guide": "Kun ejeren kan tildele eller fjerne adgang. Udstyrsadgang tillader påsætning og aftagning; fuld adgang tillader også opsamling. Grundrettigheder gælder stadig, også uden ejer. Se på fugleskræmslet og brug disse kommandoer. Tilladelser følger ikke med til en ny placering; den placerende spiller bliver ejer.",
-  "scarecrow:interaction-error-pickup-access": "Kun ejeren eller en spiller med fuld adgang må samle dette fugleskræmsel op."
+  "scarecrow:interaction-error-pickup-access": "Kun ejeren eller en spiller med fuld adgang må samle dette fugleskræmsel op.",
+  "scarecrow:reload-help": "Genindlæs fugleskræmslernes serverindstillinger.",
+  "scarecrow:reload-failed": "Kunne ikke genindlæse scarecrow.json. De nuværende indstillinger bevares; se serverloggen.",
+  "scarecrow:reload-success": "Indstillinger genindlæst. Opdaterede indlæste fugleskræmsler: {0}.",
+  "scarecrow:guide-radius-defaults": "De viste radier er standardværdier. Serverindstillingerne kan være anderledes; den placerede fugleskræmsels værktøjstip viser de aktuelle værdier."
 }

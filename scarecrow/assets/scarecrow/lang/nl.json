@@ -109,5 +109,9 @@
   "scarecrow:access-equipment": "Uitrusting",
   "scarecrow:access-full": "Volledige toegang",
   "scarecrow:access-guide": "Alleen de eigenaar mag toegang verlenen of intrekken. Uitrustingstoegang staat uitrusten en verwijderen toe; volledige toegang ook oppakken. Claimrechten blijven gelden, ook zonder eigenaar. Kijk naar een vogelverschrikker en gebruik deze opdrachten. Machtigingen gaan niet mee naar een nieuwe plaatsing; de plaatser wordt eigenaar.",
-  "scarecrow:interaction-error-pickup-access": "Alleen de eigenaar of een speler met volledige toegang mag deze vogelverschrikker oppakken."
+  "scarecrow:interaction-error-pickup-access": "Alleen de eigenaar of een speler met volledige toegang mag deze vogelverschrikker oppakken.",
+  "scarecrow:reload-help": "De serverconfiguratie van vogelverschrikkers opnieuw laden.",
+  "scarecrow:reload-failed": "scarecrow.json kon niet opnieuw worden geladen. De vorige instellingen blijven actief; bekijk het serverlogboek.",
+  "scarecrow:reload-success": "Configuratie opnieuw geladen. Geladen vogelverschrikkers bijgewerkt: {0}.",
+  "scarecrow:guide-radius-defaults": "De genoemde stralen zijn standaardwaarden. Serverinstellingen kunnen afwijken; de tooltip van de geplaatste vogelverschrikker toont de huidige waarden."
 }

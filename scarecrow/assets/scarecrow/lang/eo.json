@@ -109,5 +109,9 @@
   "scarecrow:access-equipment": "Ekipaĵo",
   "scarecrow:access-full": "Plena aliro",
   "scarecrow:access-guide": "Nur la posedanto povas doni aŭ nuligi aliron. Ekipaĵa aliro permesas surmeti kaj demeti objektojn; plena aliro ankaŭ permesas repreni la timigilon. Terrenrajtoj plu validas, ankaŭ sen posedanto. Rigardu la timigilon kaj uzu ĉi tiujn komandojn. Permesoj ne transiras al nova meto; la metanto fariĝas posedanto.",
-  "scarecrow:interaction-error-pickup-access": "Nur la posedanto aŭ ludanto kun plena aliro povas repreni ĉi tiun birdotimigilon."
+  "scarecrow:interaction-error-pickup-access": "Nur la posedanto aŭ ludanto kun plena aliro povas repreni ĉi tiun birdotimigilon.",
+  "scarecrow:reload-help": "Reŝargi la servilajn agordojn de birdotimigiloj.",
+  "scarecrow:reload-failed": "Ne eblis reŝargi scarecrow.json. La antaŭaj agordoj restas aktivaj; kontrolu la servilan protokolon.",
+  "scarecrow:reload-success": "Agordoj reŝargitaj. Ĝisdatigitaj ŝargitaj birdotimigiloj: {0}.",
+  "scarecrow:guide-radius-defaults": "La indikitaj radiusoj estas defaŭltaj valoroj. Servilaj agordoj povas malsami; la ŝpruchelpilo de la metita birdotimigilo montras la aktualajn valorojn."
 }

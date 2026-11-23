@@ -109,5 +109,9 @@
   "scarecrow:access-equipment": "Equipo",
   "scarecrow:access-full": "Acceso completo",
   "scarecrow:access-guide": "Solo el propietario puede conceder o revocar permisos. El permiso de equipo permite poner y quitar objetos; el acceso completo también permite recoger el espantapájaros. Siguen vigentes los derechos del terreno, incluso sin propietario. Mira al espantapájaros y usa estos comandos. Los permisos no se conservan al colocarlo de nuevo; quien lo coloca pasa a ser propietario.",
-  "scarecrow:interaction-error-pickup-access": "Solo el propietario o un jugador con acceso completo puede recoger este espantapájaros."
+  "scarecrow:interaction-error-pickup-access": "Solo el propietario o un jugador con acceso completo puede recoger este espantapájaros.",
+  "scarecrow:reload-help": "Volver a cargar la configuración del servidor para los espantapájaros.",
+  "scarecrow:reload-failed": "No se pudo volver a cargar scarecrow.json. Se conserva la configuración anterior; consulta el registro del servidor.",
+  "scarecrow:reload-success": "Configuración recargada. Espantapájaros cargados actualizados: {0}.",
+  "scarecrow:guide-radius-defaults": "Los radios indicados son valores predeterminados. La configuración del servidor puede variar; la descripción del espantapájaros colocado muestra los valores actuales."
 }

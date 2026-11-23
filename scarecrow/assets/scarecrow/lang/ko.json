@@ -109,5 +109,9 @@
   "scarecrow:access-equipment": "장비",
   "scarecrow:access-full": "전체 권한",
   "scarecrow:access-guide": "소유자만 접근 권한을 주거나 철회할 수 있습니다. 장비 권한은 아이템 장착과 해제, 전체 권한은 허수아비 회수도 허용합니다. 소유자가 없는 허수아비에도 토지 권한은 적용됩니다. 허수아비를 보며 아래 명령을 사용하세요. 권한은 재설치 시 이어지지 않으며 설치한 플레이어가 소유자가 됩니다.",
-  "scarecrow:interaction-error-pickup-access": "소유자나 전체 권한을 가진 플레이어만 이 허수아비를 회수할 수 있습니다."
+  "scarecrow:interaction-error-pickup-access": "소유자나 전체 권한을 가진 플레이어만 이 허수아비를 회수할 수 있습니다.",
+  "scarecrow:reload-help": "허수아비 서버 설정을 다시 불러옵니다.",
+  "scarecrow:reload-failed": "scarecrow.json을 다시 불러올 수 없습니다. 기존 설정이 유지됩니다. 서버 로그를 확인하세요.",
+  "scarecrow:reload-success": "설정을 다시 불러왔습니다. 불러온 허수아비 {0}개를 갱신했습니다.",
+  "scarecrow:guide-radius-defaults": "표시된 반경은 기본값입니다. 서버 설정에 따라 달라질 수 있으며, 설치한 허수아비의 툴팁에 현재 값이 표시됩니다."
 }

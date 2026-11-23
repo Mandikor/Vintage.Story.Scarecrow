@@ -111,5 +111,9 @@
   "scarecrow:access-equipment": "装備",
   "scarecrow:access-full": "完全アクセス",
   "scarecrow:access-guide": "アクセス権を付与・取り消せるのは所有者だけです。装備権限ではアイテムの着脱、完全権限ではかかしの回収もできます。所有者のいないかかしにも土地権限が適用されます。かかしを見て次のコマンドを使います。権限は再設置時に引き継がれず、設置したプレイヤーが所有者になります。",
-  "scarecrow:interaction-error-pickup-access": "このかかしを回収できるのは所有者または完全アクセス権を持つプレイヤーだけです。"
+  "scarecrow:interaction-error-pickup-access": "このかかしを回収できるのは所有者または完全アクセス権を持つプレイヤーだけです。",
+  "scarecrow:reload-help": "かかしのサーバー設定を再読み込みします。",
+  "scarecrow:reload-failed": "scarecrow.jsonを再読み込みできませんでした。以前の設定は引き続き有効です。サーバーログを確認してください。",
+  "scarecrow:reload-success": "設定を再読み込みしました。読み込み済みのかかし{0}体を更新しました。",
+  "scarecrow:guide-radius-defaults": "記載の半径は初期値です。サーバー設定により異なる場合があります。現在の値は設置したかかしのツールチップに表示されます。"
 }

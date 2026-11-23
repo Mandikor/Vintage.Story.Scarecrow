@@ -563,6 +563,13 @@ in the patches are starting points to retain when extending these integrations.
 
 ## Interaction and persistence
 
+The server configuration can override the three built-in base protection radii
+through `ScarecrowRadius`, `LittleScarecrowRadius` and `StrawDummyRadius`.
+`/scarecrow reload` applies them to existing entities and synchronizes client
+tooltips and outlines. Equipment bonuses are added afterward. These settings
+do not change JSON-patched AI distances. Other entity codes reusing
+`EntityScarecrow` retain their asset-defined `scareRadius`.
+
 One item occupies each slot. Shift + right-click equips a permitted held item;
 Shift + empty hand removes individual equipment. Owner-UID and claim checks apply
 to attaching, removing and targeted pickup, including server packet handling.

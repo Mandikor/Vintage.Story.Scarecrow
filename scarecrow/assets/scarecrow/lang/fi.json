@@ -109,5 +109,9 @@
   "scarecrow:access-equipment": "Varusteet",
   "scarecrow:access-full": "Täydet oikeudet",
   "scarecrow:access-guide": "Vain omistaja voi myöntää tai perua oikeuksia. Varusteoikeus sallii varusteiden lisäyksen ja poiston; täydet oikeudet myös pelättimen nostamisen. Alueoikeudet pätevät yhä, myös omistajattomiin. Katso pelätintä ja käytä näitä komentoja. Oikeudet eivät siirry uuteen sijoitukseen; sijoittajasta tulee omistaja.",
-  "scarecrow:interaction-error-pickup-access": "Vain omistaja tai täydet oikeudet saanut pelaaja saa nostaa tämän linnunpelättimen."
+  "scarecrow:interaction-error-pickup-access": "Vain omistaja tai täydet oikeudet saanut pelaaja saa nostaa tämän linnunpelättimen.",
+  "scarecrow:reload-help": "Lataa linnunpelättimien palvelinasetukset uudelleen.",
+  "scarecrow:reload-failed": "Tiedostoa scarecrow.json ei voitu ladata uudelleen. Aiemmat asetukset pysyvät käytössä; tarkista palvelimen loki.",
+  "scarecrow:reload-success": "Asetukset ladattu uudelleen. Päivitettyjä ladattuja linnunpelättimiä: {0}.",
+  "scarecrow:guide-radius-defaults": "Luetellut säteet ovat oletusarvoja. Palvelinasetukset voivat poiketa niistä; asetetun linnunpelättimen työkaluvihje näyttää nykyiset arvot."
 }

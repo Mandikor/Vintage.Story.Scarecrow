@@ -109,5 +109,9 @@
   "scarecrow:access-equipment": "Utstyr",
   "scarecrow:access-full": "Full tilgang",
   "scarecrow:access-guide": "Bare eieren kan gi eller trekke tilbake tilgang. Utstyrstilgang tillater å feste og fjerne utstyr; full tilgang tillater også å plukke opp. Grunnrettigheter gjelder fortsatt, også uten eier. Se på fugleskremselet og bruk disse kommandoene. Tillatelser overføres ikke ved ny plassering; den som plasserer blir eier.",
-  "scarecrow:interaction-error-pickup-access": "Bare eieren eller en spiller med full tilgang kan plukke opp dette fugleskremselet."
+  "scarecrow:interaction-error-pickup-access": "Bare eieren eller en spiller med full tilgang kan plukke opp dette fugleskremselet.",
+  "scarecrow:reload-help": "Last inn fugleskremslenes serverinnstillinger på nytt.",
+  "scarecrow:reload-failed": "Kunne ikke laste inn scarecrow.json på nytt. Tidligere innstillinger beholdes; se serverloggen.",
+  "scarecrow:reload-success": "Innstillingene er lastet inn på nytt. Oppdaterte innlastede fugleskremsler: {0}.",
+  "scarecrow:guide-radius-defaults": "De oppgitte radiene er standardverdier. Serverinnstillingene kan være annerledes; verktøytipset til det plasserte fugleskremselet viser gjeldende verdier."
 }

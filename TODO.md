@@ -15,6 +15,13 @@ compatibility follow-up test is currently open.
 
 ## Feature checklist
 
+- [x] **Reload server configuration:** `/scarecrow reload` for `controlserver`
+  users and the server console. Updates loaded scarecrows, configurable base
+  radii (16/12/8 defaults), tooltip data and enabled radius outlines;
+  invalid or missing files leave active settings unchanged.
+- [x] **Configuration reload game test:** I successfully tested configurable
+  base radii and applying them with the reload command in game.
+
 - [x] **Terrain-aware radius outline:** a consistent horizontal circle draped over
   nearby ground and water surfaces; Ctrl+H and automatic updates are retained. Actual spawn
   protection remains spherical.

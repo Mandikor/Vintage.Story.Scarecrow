@@ -109,5 +109,9 @@
   "scarecrow:access-equipment": "装备权限",
   "scarecrow:access-full": "完整权限",
   "scarecrow:access-guide": "只有所有者可以授予或撤销权限。装备权限允许安装和取下物品，完整权限还允许收起稻草人。领地权限仍然适用，无所有者的稻草人也不例外。看向稻草人并使用以下命令。重新放置时不保留共享权限；放置的玩家成为所有者。",
-  "scarecrow:interaction-error-pickup-access": "只有所有者或拥有完整权限的玩家可以收起此稻草人。"
+  "scarecrow:interaction-error-pickup-access": "只有所有者或拥有完整权限的玩家可以收起此稻草人。",
+  "scarecrow:reload-help": "重新加载稻草人的服务器配置。",
+  "scarecrow:reload-failed": "无法重新加载 scarecrow.json。原有设置仍然生效；请检查服务器日志。",
+  "scarecrow:reload-success": "配置已重新加载。已更新 {0} 个已加载的稻草人。",
+  "scarecrow:guide-radius-defaults": "所列半径为默认值。服务器设置可能有所不同；已放置稻草人的提示会显示当前值。"
 }

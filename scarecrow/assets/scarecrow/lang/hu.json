@@ -109,5 +109,9 @@
   "scarecrow:access-equipment": "Felszerelés",
   "scarecrow:access-full": "Teljes hozzáférés",
   "scarecrow:access-guide": "Csak a tulajdonos adhat vagy vonhat vissza hozzáférést. A felszerelési jog fel- és leszerelést, a teljes jog felvételt is enged. A telekjogok mindig érvényesek, gazdátlan ijesztőknél is. Nézz az ijesztőre, és használd e parancsokat. Újbóli elhelyezéskor a megosztás megszűnik; az elhelyező lesz a tulajdonos.",
-  "scarecrow:interaction-error-pickup-access": "Csak a tulajdonos vagy teljes hozzáférésű játékos veheti fel ezt a madárijesztőt."
+  "scarecrow:interaction-error-pickup-access": "Csak a tulajdonos vagy teljes hozzáférésű játékos veheti fel ezt a madárijesztőt.",
+  "scarecrow:reload-help": "A madárijesztők szerverbeállításainak újratöltése.",
+  "scarecrow:reload-failed": "A scarecrow.json nem tölthető újra. A korábbi beállítások maradnak érvényben; ellenőrizd a szerver naplóját.",
+  "scarecrow:reload-success": "Beállítások újratöltve. Frissített betöltött madárijesztők: {0}.",
+  "scarecrow:guide-radius-defaults": "A megadott sugarak alapértékek. A szerver beállításai eltérhetnek; az elhelyezett madárijesztő leírása mutatja az aktuális értékeket."
 }

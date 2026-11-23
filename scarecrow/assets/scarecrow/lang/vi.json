@@ -109,5 +109,9 @@
   "scarecrow:access-equipment": "Trang bị",
   "scarecrow:access-full": "Toàn quyền",
   "scarecrow:access-guide": "Chỉ chủ sở hữu được cấp hoặc thu hồi quyền. Quyền trang bị cho phép gắn và tháo đồ; toàn quyền còn cho phép nhặt bù nhìn. Quyền đất vẫn áp dụng, kể cả bù nhìn vô chủ. Nhìn vào bù nhìn và dùng các lệnh dưới đây. Quyền không chuyển sang lần đặt tiếp theo; người đặt trở thành chủ sở hữu.",
-  "scarecrow:interaction-error-pickup-access": "Chỉ chủ sở hữu hoặc người chơi có toàn quyền mới được nhặt bù nhìn này."
+  "scarecrow:interaction-error-pickup-access": "Chỉ chủ sở hữu hoặc người chơi có toàn quyền mới được nhặt bù nhìn này.",
+  "scarecrow:reload-help": "Tải lại cấu hình máy chủ của bù nhìn.",
+  "scarecrow:reload-failed": "Không thể tải lại scarecrow.json. Thiết lập trước đó vẫn có hiệu lực; hãy kiểm tra nhật ký máy chủ.",
+  "scarecrow:reload-success": "Đã tải lại cấu hình. Đã cập nhật {0} bù nhìn đang được tải.",
+  "scarecrow:guide-radius-defaults": "Các bán kính được liệt kê là giá trị mặc định. Thiết lập máy chủ có thể khác; chú thích của bù nhìn đã đặt hiển thị giá trị hiện tại."
 }

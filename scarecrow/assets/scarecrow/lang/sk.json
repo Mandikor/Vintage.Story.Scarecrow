@@ -109,5 +109,9 @@
   "scarecrow:access-equipment": "Výbava",
   "scarecrow:access-full": "Plný prístup",
   "scarecrow:access-guide": "Len vlastník môže udeliť alebo odobrať prístup. Prístup k výbave povoľuje nasadzovať a skladať predmety; plný prístup aj zdvihnúť strašiaka. Práva pozemku platia vždy, aj bez vlastníka. Zamerajte strašiaka a použite tieto príkazy. Oprávnenia sa pri novom umiestnení neprenášajú; umiestňujúci hráč sa stáva vlastníkom.",
-  "scarecrow:interaction-error-pickup-access": "Len vlastník alebo hráč s plným prístupom môže zdvihnúť tohto strašiaka."
+  "scarecrow:interaction-error-pickup-access": "Len vlastník alebo hráč s plným prístupom môže zdvihnúť tohto strašiaka.",
+  "scarecrow:reload-help": "Znova načítať serverové nastavenia strašiakov.",
+  "scarecrow:reload-failed": "Súbor scarecrow.json sa nepodarilo znova načítať. Doterajšie nastavenia zostávajú aktívne; skontrolujte protokol servera.",
+  "scarecrow:reload-success": "Nastavenia znova načítané. Aktualizované načítané strašiaky: {0}.",
+  "scarecrow:guide-radius-defaults": "Uvedené polomery sú predvolené hodnoty. Nastavenia servera sa môžu líšiť; aktuálne hodnoty zobrazuje popis umiestneného strašiaka."
 }

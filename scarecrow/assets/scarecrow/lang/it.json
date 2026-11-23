@@ -109,5 +109,9 @@
   "scarecrow:access-equipment": "Equipaggiamento",
   "scarecrow:access-full": "Accesso completo",
   "scarecrow:access-guide": "Solo il proprietario può concedere o revocare l’accesso. Il permesso equipaggiamento consente di aggiungere e rimuovere oggetti; quello completo anche di raccogliere lo spaventapasseri. Restano validi i diritti del terreno, anche senza proprietario. Guarda lo spaventapasseri e usa questi comandi. I permessi non si conservano dopo una nuova posa; chi lo posa diventa proprietario.",
-  "scarecrow:interaction-error-pickup-access": "Solo il proprietario o un giocatore con accesso completo può raccogliere questo spaventapasseri."
+  "scarecrow:interaction-error-pickup-access": "Solo il proprietario o un giocatore con accesso completo può raccogliere questo spaventapasseri.",
+  "scarecrow:reload-help": "Ricarica la configurazione server degli spaventapasseri.",
+  "scarecrow:reload-failed": "Impossibile ricaricare scarecrow.json. Le impostazioni precedenti restano attive; controlla il registro del server.",
+  "scarecrow:reload-success": "Configurazione ricaricata. Spaventapasseri caricati aggiornati: {0}.",
+  "scarecrow:guide-radius-defaults": "I raggi indicati sono i valori predefiniti. Le impostazioni del server possono variare; la descrizione dello spaventapasseri posizionato mostra i valori attuali."
 }

@@ -109,5 +109,9 @@
   "scarecrow:access-equipment": "Équipement",
   "scarecrow:access-full": "Accès complet",
   "scarecrow:access-guide": "Seul le propriétaire peut accorder ou retirer l’accès. L’accès équipement permet d’équiper et de retirer les objets ; l’accès complet permet aussi de ramasser l’épouvantail. Les droits du terrain restent applicables, même sans propriétaire. Visez l’épouvantail et utilisez ces commandes. Les accès ne sont pas conservés lors d’une nouvelle pose ; le joueur qui pose devient propriétaire.",
-  "scarecrow:interaction-error-pickup-access": "Seul le propriétaire ou un joueur disposant de l’accès complet peut ramasser cet épouvantail."
+  "scarecrow:interaction-error-pickup-access": "Seul le propriétaire ou un joueur disposant de l’accès complet peut ramasser cet épouvantail.",
+  "scarecrow:reload-help": "Recharger la configuration serveur des épouvantails.",
+  "scarecrow:reload-failed": "Impossible de recharger scarecrow.json. Les paramètres précédents restent actifs ; consultez le journal du serveur.",
+  "scarecrow:reload-success": "Configuration rechargée. Épouvantails chargés mis à jour : {0}.",
+  "scarecrow:guide-radius-defaults": "Les rayons indiqués sont les valeurs par défaut. Les paramètres du serveur peuvent différer ; l’infobulle de l’épouvantail placé affiche les valeurs actuelles."
 }

@@ -109,5 +109,9 @@
   "scarecrow:access-equipment": "Utrustning",
   "scarecrow:access-full": "Full åtkomst",
   "scarecrow:access-guide": "Bara ägaren kan ge eller återkalla åtkomst. Utrustningsåtkomst tillåter att sätta på och ta av föremål; full åtkomst tillåter även upptagning. Markrättigheter gäller fortfarande, även utan ägare. Titta på skrämman och använd dessa kommandon. Behörigheter följer inte med till nästa placering; placeraren blir ägare.",
-  "scarecrow:interaction-error-pickup-access": "Bara ägaren eller en spelare med full åtkomst får plocka upp denna fågelskrämma."
+  "scarecrow:interaction-error-pickup-access": "Bara ägaren eller en spelare med full åtkomst får plocka upp denna fågelskrämma.",
+  "scarecrow:reload-help": "Läs in fågelskrämmornas serverinställningar igen.",
+  "scarecrow:reload-failed": "Kunde inte läsa in scarecrow.json igen. Tidigare inställningar behålls; se serverloggen.",
+  "scarecrow:reload-success": "Inställningarna har lästs in igen. Uppdaterade inlästa fågelskrämmor: {0}.",
+  "scarecrow:guide-radius-defaults": "De angivna radierna är standardvärden. Serverinställningarna kan skilja sig; den placerade fågelskrämmans verktygstips visar aktuella värden."
 }

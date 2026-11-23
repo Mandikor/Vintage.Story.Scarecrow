@@ -109,5 +109,9 @@
   "scarecrow:access-equipment": "Wyposażenie",
   "scarecrow:access-full": "Pełny dostęp",
   "scarecrow:access-guide": "Tylko właściciel nadaje lub odbiera dostęp. Dostęp do wyposażenia pozwala zakładać i zdejmować przedmioty; pełny dostęp także podnosić stracha. Prawa działki nadal obowiązują, również bez właściciela. Spójrz na stracha i użyj tych poleceń. Uprawnienia nie przechodzą na ponowne ustawienie; ustawiający zostaje właścicielem.",
-  "scarecrow:interaction-error-pickup-access": "Tylko właściciel lub gracz z pełnym dostępem może podnieść tego stracha."
+  "scarecrow:interaction-error-pickup-access": "Tylko właściciel lub gracz z pełnym dostępem może podnieść tego stracha.",
+  "scarecrow:reload-help": "Wczytaj ponownie konfigurację serwera dla strachów na wróble.",
+  "scarecrow:reload-failed": "Nie udało się ponownie wczytać scarecrow.json. Poprzednie ustawienia pozostają aktywne; sprawdź dziennik serwera.",
+  "scarecrow:reload-success": "Konfiguracja wczytana ponownie. Zaktualizowane wczytane strachy na wróble: {0}.",
+  "scarecrow:guide-radius-defaults": "Podane promienie są wartościami domyślnymi. Ustawienia serwera mogą się różnić; opis postawionego stracha na wróble pokazuje aktualne wartości."
 }

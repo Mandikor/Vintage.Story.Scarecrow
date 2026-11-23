@@ -13,7 +13,23 @@ namespace Scarecrow
 
         public static ScarecrowClientConfig LoadClient(ICoreClientAPI api) => LoadFile<ScarecrowClientConfig>(api, "scarecrow-client.json", ScarecrowClientConfig.CurrentConfigVersion);
 
-        private static T LoadFile<T>(ICoreAPI api, string fileName, int currentVersion) where T : new()
+        // Reload must never silently substitute defaults for an unreadable live configuration.
+        internal static bool TryReload(ICoreAPI api, out ScarecrowConfig config)
+        {
+            try
+            {
+                config = LoadFile<ScarecrowConfig>(api, "scarecrow.json", ScarecrowConfig.CurrentConfigVersion, true);
+                return true;
+            }
+            catch (Exception exception)
+            {
+                config = null;
+                api.Logger.Error("[Scarecrow] Reload rejected; active settings were retained. Error: {0}", exception.Message);
+                return false;
+            }
+        }
+
+        private static T LoadFile<T>(ICoreAPI api, string fileName, int currentVersion, bool reload = false) where T : new()
         {
             T config;
             JObject original = null;
@@ -25,6 +41,7 @@ namespace Scarecrow
                 JsonObject loaded = api.LoadModConfig(fileName);
                 if (loaded == null)
                 {
+                    if (reload) throw new InvalidOperationException("ModConfig/scarecrow.json was not found.");
                     config = new T();
                     updated = JObject.FromObject(config);
                     save = true;
@@ -33,6 +50,7 @@ namespace Scarecrow
                 {
                     original = loaded.Token as JObject
                         ?? throw new InvalidOperationException("The config must contain a JSON object.");
+                    if (typeof(T) == typeof(ScarecrowConfig)) ValidateRadii(original);
                     JProperty versionProperty = original.Property("ConfigVersion", StringComparison.OrdinalIgnoreCase);
                     int version = 1;
                     if (versionProperty != null)
@@ -72,6 +90,7 @@ namespace Scarecrow
             }
             catch (Exception exception)
             {
+                if (reload) throw;
                 api.Logger.Error("[Scarecrow] Could not read ModConfig/{0}, using defaults without modifying the file. Fix the file and restart. Error: {1}", fileName, exception.Message);
                 return new T();
             }
@@ -95,6 +114,18 @@ namespace Scarecrow
                 }
             }
             return config;
+        }
+
+        private static void ValidateRadii(JObject document)
+        {
+            foreach (string key in new[] { "ScarecrowRadius", "LittleScarecrowRadius", "StrawDummyRadius" })
+            {
+                var property = document.Property(key, StringComparison.OrdinalIgnoreCase);
+                if (property == null) continue;
+                if (property.Value.Type != JTokenType.Integer
+                    || !int.TryParse(property.Value.ToString(), out int radius) || radius < 1 || radius > 64)
+                    throw new InvalidOperationException(key + " must be an integer between 1 and 64 blocks.");
+            }
         }
     }
 }

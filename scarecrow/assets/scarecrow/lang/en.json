@@ -107,5 +107,9 @@
   "scarecrow:access-equipment": "Equipment",
   "scarecrow:access-full": "Full access",
   "scarecrow:access-guide": "Only the owner can grant or revoke access. Equipment access permits attaching and removing gear; full access also permits pickup. Land-claim rights still apply, including for ownerless scarecrows. Aim at a scarecrow and use these commands. Pickup does not carry grants to the next placement; the placing player becomes the owner.",
-  "scarecrow:interaction-error-pickup-access": "Only the owner or a player with full access may pick up this scarecrow."
+  "scarecrow:interaction-error-pickup-access": "Only the owner or a player with full access may pick up this scarecrow.",
+  "scarecrow:reload-help": "Reload the scarecrow server configuration.",
+  "scarecrow:reload-failed": "Could not reload scarecrow.json. Previous settings remain active; check the server log.",
+  "scarecrow:reload-success": "Configuration reloaded. Updated {0} loaded scarecrows.",
+  "scarecrow:guide-radius-defaults": "The listed radii are defaults. Server settings may differ; the placed scarecrow's tooltip shows current values."
 }

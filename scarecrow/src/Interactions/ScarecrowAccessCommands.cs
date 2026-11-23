@@ -15,8 +15,8 @@ namespace Scarecrow
             this.api = api;
             var parsers = api.ChatCommands.Parsers;
             api.ChatCommands.Create("scarecrow")
-                .WithDescription(Lang.Get("scarecrow:access-help")).RequiresPrivilege(Privilege.chat).RequiresPlayer()
-                .BeginSubCommand("access").WithDescription(Lang.Get("scarecrow:access-help"))
+                .WithDescription(Lang.Get("scarecrow:access-help")).RequiresPrivilege(Privilege.chat)
+                .BeginSubCommand("access").WithDescription(Lang.Get("scarecrow:access-help")).RequiresPlayer()
                     .BeginSubCommand("add").WithDescription(Lang.Get("scarecrow:access-help"))
                         .WithArgs(parsers.Word("player"), parsers.Word("permission"))
                         .HandleWith(args => Execute(args, "add")).EndSubCommand()

@@ -17,14 +17,15 @@ namespace Scarecrow
 {
     /// <summary>
     /// Scarecrow-like entity, used for the scarecrow, the little scarecrow and the vanilla straw dummy.
-    /// The differences between them are data driven through the entity attributes
-    /// "scareRadius" (blocks) and "pickupItemCode" (item returned when picked up).
+    /// Built-in base radii come from server settings; "scareRadius" remains the
+    /// asset fallback for other entity codes. "pickupItemCode" selects the returned item.
     /// </summary>
     public partial class EntityScarecrow : EntityHumanoid
     {
         private const int DefaultScareRadius = 8;
         private const string DefaultPickupItemCode = "game:strawdummy";
         private const string SpawnPrefixesAttribute = "scarecrowSpawnPrefixes";
+        private const string BaseRadiusAttribute = "scarecrowBaseRadius";
         private const string OwnerNameAttribute = "scarecrowOwnerName";
 
         private ICoreServerAPI sapi;
@@ -35,8 +36,10 @@ namespace Scarecrow
         private readonly Dictionary<string, string> animalGroupNames = new();
         private readonly Dictionary<string, AnimalSpawnRule> animalSpawnRules = new();
 
+        // Clients always prefer the synchronized server value over their own asset defaults.
+        private int BaseScareRadius => WatchedAttributes.GetInt(BaseRadiusAttribute, scareRadius);
         /// <summary>Natural-spawn protection, including the strongest attached equipment bonus.</summary>
-        public int ScareRadius => scareRadius + (GetBehavior<ScarecrowAttachments>()?.EquipmentRadiusBonus ?? 0);
+        public int ScareRadius => BaseScareRadius + (GetBehavior<ScarecrowAttachments>()?.EquipmentRadiusBonus ?? 0);
 
         // Lifecycle: load data-driven settings and subscribe only while protection is active.
         public override void Initialize(EntityProperties properties, ICoreAPI api, long InChunkIndex3d)
@@ -51,7 +54,7 @@ namespace Scarecrow
             {
                 sapi = api as ICoreServerAPI;
                 SynchronizeOwnerName();
-                SynchronizeProtectionSettings();
+                ApplyConfiguration(config);
                 if (Alive) AttachSpawnHooks();
             }
         }
@@ -72,6 +75,27 @@ namespace Scarecrow
         {
             WatchedAttributes.SetStringArray(SpawnPrefixesAttribute,
                 config?.ScaredAnimalPrefixes ?? Array.Empty<string>());
+            WatchedAttributes.MarkPathDirty(SpawnPrefixesAttribute);
+            WatchedAttributes.SetInt(BaseRadiusAttribute, scareRadius);
+            WatchedAttributes.MarkPathDirty(BaseRadiusAttribute);
+        }
+
+        // Called on the server thread after a successful configuration reload. Existing spawn
+        // subscriptions read this field, so no removal/resubscription or animal scan is needed.
+        internal void ApplyConfiguration(ScarecrowConfig settings)
+        {
+            config = settings;
+            // Known entities use server settings. Third-party entities reusing this class
+            // retain their asset-defined radius unless they use one of these entity codes.
+            scareRadius = Code?.ToString() switch
+            {
+                "scarecrow:scarecrow" => settings.ScarecrowRadius,
+                "scarecrow:little-scarecrow" => settings.LittleScarecrowRadius,
+                "game:strawdummy" => settings.StrawDummyRadius,
+                _ => Properties?.Attributes?["scareRadius"]?.AsInt(DefaultScareRadius) ?? DefaultScareRadius
+            };
+            animalSpawnRules.Clear();
+            SynchronizeProtectionSettings();
         }
 
         // Ownership is persisted by UID; display names are synchronized separately for tooltips.
@@ -156,10 +180,10 @@ namespace Scarecrow
             try { culture = CultureInfo.GetCultureInfo(Lang.CurrentLocale); }
             catch (CultureNotFoundException) { culture = CultureInfo.InvariantCulture; }
 
-            text.AppendLine(FormatProtectionLine("scarecrow:tooltip-spawn-radius", (scareRadius + bonus).ToString("N0", culture)));
+            text.AppendLine(FormatProtectionLine("scarecrow:tooltip-spawn-radius", (BaseScareRadius + bonus).ToString("N0", culture)));
             // The vanilla straw dummy has no attachment inventory or equipment bonus.
             if (attachments != null)
-                text.AppendLine(FormatProtectionLine("scarecrow:tooltip-radius-breakdown", scareRadius.ToString("N0", culture),
+                text.AppendLine(FormatProtectionLine("scarecrow:tooltip-radius-breakdown", BaseScareRadius.ToString("N0", culture),
                     FormatProtectionLine("scarecrow:tooltip-equipment"),
                     bonus.ToString("N0", culture)));
             text.AppendLine(FormatProtectionLine("scarecrow:tooltip-affected-animals",
