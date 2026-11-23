@@ -5,6 +5,15 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ## Unreleased
 
+### Symmetric arm lantern placement
+
+- Align the right lantern mount with the mirrored left placement in both
+  full-size scarecrow shapes, correcting a small sideways and depth offset.
+  Keep the upright orientation and existing equipment transforms.
+- Refine equipment placement for vanilla lanterns and oil lamps, More Lanterns,
+  Censership and Dreamcatchers, with separate placement for small and large
+  vanilla lanterns. My in-game test confirmed the corrected hanging symmetry.
+
 ### Server-side attachment shape warnings
 
 - Keep separately rendered arm equipment out of the server's combined body

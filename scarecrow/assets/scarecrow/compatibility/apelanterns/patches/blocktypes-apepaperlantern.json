@@ -37,16 +37,16 @@
         },
         "onScarecrowTransform": {
           "translation": {
-            "x": 0.05,
-            "y": 0.04,
-            "z": 0.01
+            "x": 0.06,
+            "y": 0.1,
+            "z": 0.016
           },
           "rotation": {
             "x": 0,
             "y": -4,
             "z": 0
           },
-          "scale": 0.9
+          "scale": 0.8
         },
         "scarecrowUseCeilingTextures": true,
         "scarecrowPendulum": true

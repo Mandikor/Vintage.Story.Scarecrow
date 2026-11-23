@@ -33,9 +33,9 @@
         "scarecrowArmLanternScale": 1,
         "onScarecrowTransform": {
           "translation": {
-            "x": 0.06,
-            "y": 0.05,
-            "z": 0.01
+            "x": 0.05,
+            "y": 0.04,
+            "z": 0.02
           },
           "rotation": {
             "x": 0,

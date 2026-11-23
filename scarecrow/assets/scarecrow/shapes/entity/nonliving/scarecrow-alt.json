@@ -565,14 +565,14 @@
 														{
 															"name": "ScarecrowLanternRightMount",
 															"from": [
-																-5,
+																-5.03,
 																-15,
-																-7
+																-7.4
 															],
 															"to": [
-																-5,
+																-5.03,
 																-15,
-																-7
+																-7.4
 															],
 															"rotationOrigin": [
 																3,
