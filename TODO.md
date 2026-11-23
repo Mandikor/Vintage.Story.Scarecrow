@@ -15,6 +15,12 @@ compatibility follow-up test is currently open.
 
 ## Feature checklist
 
+- [x] **Terrain-aware radius outline:** a consistent horizontal circle draped over
+  nearby ground and water surfaces; Ctrl+H and automatic updates are retained. Actual spawn
+  protection remains spherical.
+- [x] **Terrain outline game test:** I confirmed that the ring follows the terrain
+  and water surfaces with the intended consistent circular footprint.
+
 - [x] **Shared player access:** owner-managed per-scarecrow UID grants for
   equipment changes or full access including pickup; claim rights still apply.
   Commands and handbook guidance are included in all 33 languages.

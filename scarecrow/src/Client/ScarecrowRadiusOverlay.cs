@@ -14,8 +14,8 @@ namespace Scarecrow
     /// Client side overlay that shows the area a scarecrow keeps animals away from.
     /// <para>
     /// The spawn check uses the 3d distance, so the protected area is a sphere. Drawing the whole
-    /// sphere is noisy and expensive, and animals spawn on the ground anyway, so this outlines the
-    /// ring of blocks at the scarecrow's feet instead.
+    /// sphere is noisy and expensive, so this drapes a horizontal radius circle over nearby ground
+    /// and water surfaces. It is an orientation guide, not the exact sphere/terrain intersection.
     /// </para>
     /// <para>
     /// The blocks are handed to the vanilla block highlight system, which drops every face that has
@@ -129,57 +129,13 @@ namespace Scarecrow
 
             foreach (EntityScarecrow entity in scarecrows)
             {
-                AddRing(ring, entity.Pos.X, entity.Pos.Y, entity.Pos.Z, entity.ScareRadius);
+                if (entity.Pos.Dimension != capi.World.Player.Entity.Pos.Dimension) continue;
+                ScarecrowTerrainOutline.Add(ring, capi.World.BlockAccessor,
+                    entity.Pos.X, entity.Pos.Y, entity.Pos.Z, entity.ScareRadius, entity.Pos.Dimension);
             }
 
             return ring;
         }
 
-        /// <summary>
-        /// Adds the perimeter blocks of the horizontal footprint around the given position. A block
-        /// belongs to the footprint when its centre is within the radius, which is how the spawn
-        /// check measures distance in the horizontal plane.
-        /// </summary>
-        private static void AddRing(HashSet<BlockPos> ring, double posX, double posY, double posZ, int radius)
-        {
-            // The entity stands on top of the ground block, so its y is usually exactly on a block
-            // boundary. The epsilon keeps the ring one block above the ground instead of inside it
-            // when floating point rounding lands just below the boundary.
-            int y = (int)Math.Floor(posY + 0.01);
-
-            double radiusSquared = radius * radius;
-            int minX = (int)Math.Floor(posX - radius);
-            int maxX = (int)Math.Floor(posX + radius);
-            int minZ = (int)Math.Floor(posZ - radius);
-            int maxZ = (int)Math.Floor(posZ + radius);
-
-            for (int x = minX; x <= maxX; x++)
-            {
-                for (int z = minZ; z <= maxZ; z++)
-                {
-                    if (!IsInside(x, z, posX, posZ, radiusSquared)) continue;
-
-                    // Only the perimeter: a block with all four neighbours inside is not on the ring.
-                    if (IsInside(x + 1, z, posX, posZ, radiusSquared)
-                        && IsInside(x - 1, z, posX, posZ, radiusSquared)
-                        && IsInside(x, z + 1, posX, posZ, radiusSquared)
-                        && IsInside(x, z - 1, posX, posZ, radiusSquared)) continue;
-
-                    ring.Add(new BlockPos(x, y, z));
-                }
-            }
-        }
-
-        /// <summary>
-        /// True when the centre of the block at the given coordinates lies within the radius around
-        /// the position, measured in the horizontal plane.
-        /// </summary>
-        private static bool IsInside(int x, int z, double posX, double posZ, double radiusSquared)
-        {
-            double dx = x + 0.5 - posX;
-            double dz = z + 0.5 - posZ;
-
-            return dx * dx + dz * dz <= radiusSquared;
-        }
     }
 }

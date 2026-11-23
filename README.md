@@ -176,12 +176,21 @@ as in Survival. Creative placement keeps the item as usual.
 
 The overlay shows ground outlines for loaded scarecrows and straw dummies within
 64 blocks horizontally and vertically of the player. Each outline follows the
-block grid at the entity's feet. It is a horizontal guide to the protection radius,
-not a visualization of the entire sphere or every animal's AI behavior.
+block grid on nearby solid surfaces, including slopes and built terraces. Its
+horizontal circle keeps the same radius regardless of terrain height. This is an
+orientation guide: actual spawn protection remains spherical, so its horizontal
+reach decreases on higher or lower ground.
+
+The display selects the nearest clear surface to the scarecrow's height in each
+column. It does not draw every floor of a multilevel building or the entire sphere,
+and does not show animal AI ranges. The ring also follows water surfaces.
+Unloaded ground and unsupported surfaces are omitted; partial blocks such as slabs
+are not modeled exactly.
 
 While enabled, the overlay checks nearby scarecrows every half second and updates
-when they are placed, moved, removed or loaded as you travel. It remains enabled
-when no scarecrow is nearby, so newly encountered scarecrows appear automatically.
+when they are placed, moved, removed or loaded as you travel, and when the ground
+changes. It remains enabled when no scarecrow is nearby, so newly encountered
+scarecrows appear automatically.
 Press **Ctrl + H** again to turn it off.
 
 ### Protection tooltip

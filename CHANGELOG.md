@@ -5,6 +5,20 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ## Unreleased
 
+### Terrain-aware radius outline
+
+- Project the outline onto nearby solid surfaces instead of a fixed horizontal
+  plane. Keep a consistent horizontal circle while adapting marker heights to
+  hills and terraces. The ring is an orientation guide; actual spawn protection
+  remains spherical and has less horizontal reach at different elevations.
+- Retain Ctrl+H, automatic updates and equipment bonuses. Include water surfaces
+  and skip unloaded surfaces. Select one nearby surface per column; the display
+  does not represent every floor or exact partial-block geometry. I confirmed the
+  terrain and water display in game.
+- Automated checks passed for terraces, raised terrain, the circular footprint,
+  unloaded ground, equipment bonus updates and the Ctrl+H lifecycle. The build
+  completed without warnings or errors.
+
 ### Shared player access
 
 - Added owner-managed access per scarecrow through `/scarecrow access add`,
