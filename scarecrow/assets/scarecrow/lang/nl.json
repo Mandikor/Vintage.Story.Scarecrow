@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "Je hebt geen toegangsrechten voor dit gebied.",
 	"scarecrow:transform-botharms": "Vogelverschrikker – beide armen",
 	"scarecrow:transform-neck": "Vogelverschrikker – Hals",
-	"scarecrow:tooltip-animal-all": "Dieren"
+	"scarecrow:tooltip-animal-all": "Dieren",
+
+  "scarecrow:equipment-heading": "Vogelverschrikkeruitrusting",
+  "scarecrow:equipment-placement": "Bevestiging: {0}",
+  "scarecrow:equipment-arms": "beide armen",
+  "scarecrow:equipment-left": "linkerarm",
+  "scarecrow:equipment-right": "rechterarm",
+  "scarecrow:equipment-neck": "hals",
+  "scarecrow:equipment-foot": "voet",
+  "scarecrow:equipment-bonus": "Bonus voor spawnradius: {0} blokken",
+  "scarecrow:equipment-strongest": "Alleen de hoogste uitrustingsbonus telt.",
+  "scarecrow:equipment-wind": "Windbeweging: {0}",
+  "scarecrow:equipment-wind-arms": "aan de armen",
+  "scarecrow:equipment-wind-none": "geen",
+  "scarecrow:guide-title": "Vogelverschrikkers — gids",
+  "scarecrow:guide-text": "Recepten: {0}, {1}, {2}. Plaats op vrije, stevige grond. Basisstralen: groot 16, klein 12, stropop 8 blokken.\n\nGroot: armen en voet. Klein: hals en voet. Stropop: geen uitrusting. Shift + rechtsklik rust uit; verwijder met een lege hand. Modvoorwerpen vereisen hun mod.\n\nAlleen de hoogste bonus vergroot de blokkering van natuurlijke spawns, niet het AI-bereik. Standaard worden natuurlijke hazen en wasberen geblokkeerd; geplaatste, pasgeboren en vrijgelaten dieren blijven. Dieren kunnen vluchten of aanvallen; tamme dieren behouden hun gedrag.\n\nCtrl+H schakelt de automatisch bijgewerkte radiusweergave. Ctrl + rechtsklik met lege hand pakt de vogelverschrikker met uitrusting op. Uitgeruste exemplaren stapelen niet. Vernietiging laat de uitrusting vallen. Alleen de eigenaar mag beheren, met toestemming van de landclaim; zonder eigenaar gelden claimrechten.\n\nExtra tooltips staan standaard uit. Zet ShowEquipmentTooltips op true in ModConfig/scarecrow-client.json en herstart de client. Handboekinformatie blijft beschikbaar.",
+  "scarecrow:equipment-bonus-one": "Bonus voor spawnradius: {0} blok"
 }

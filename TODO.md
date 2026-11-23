@@ -6,13 +6,21 @@ implementing them. I have removed tool bonuses from the plan.
 ## Current status — updated 2026-11-23
 
 I have completed the planned compatibility reviews and the recorded game tests.
-No active implementation task remains. Visual customization (item 4) and aging/
-repair (item 5) remain deliberately deferred.
+The equipment handbook/tooltip extension and its game test are complete.
+Visual customization (item 4) and aging/repair (item 5) remain deliberately deferred.
 
 The Animal Cages occupied-cage save/reload test also passed. No additional
 compatibility follow-up test is currently open.
 
 ## Feature checklist
+
+- [x] **Equipment information and survival handbook:** guide with recipe links;
+  supported equipment pages show positions, radius bonuses and wind motion.
+  Optional personal inventory section uses `ShowEquipmentTooltips` (default off)
+  in versioned `scarecrow-client.json`; server settings remain independent.
+  All 33 languages extended; automated configuration and information checks passed.
+- [x] **Equipment information game test:** I confirmed that the guide, handbook
+  links and personal tooltip settings work in game.
 
 1. [x] **Show protection information in the placed scarecrow's tooltip when looking
    at it, without chat messages.** Display the

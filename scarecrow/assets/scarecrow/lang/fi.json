@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "Sinulla ei ole käyttöoikeutta tähän alueeseen.",
 	"scarecrow:transform-botharms": "Linnunpelätin – molemmat käsivarret",
 	"scarecrow:transform-neck": "Linnunpelätin – Kaula",
-	"scarecrow:tooltip-animal-all": "Eläimet"
+	"scarecrow:tooltip-animal-all": "Eläimet",
+
+  "scarecrow:equipment-heading": "Linnunpelättimen varusteet",
+  "scarecrow:equipment-placement": "Kiinnitys: {0}",
+  "scarecrow:equipment-arms": "molemmat kädet",
+  "scarecrow:equipment-left": "vasen käsi",
+  "scarecrow:equipment-right": "oikea käsi",
+  "scarecrow:equipment-neck": "kaula",
+  "scarecrow:equipment-foot": "jalka",
+  "scarecrow:equipment-bonus": "Luonnollisen ilmestymisen eston sädebonus: {0} lohkoa",
+  "scarecrow:equipment-strongest": "Vain suurin varustebonus lasketaan.",
+  "scarecrow:equipment-wind": "Tuuliliike: {0}",
+  "scarecrow:equipment-wind-arms": "käsissä",
+  "scarecrow:equipment-wind-none": "ei liikettä",
+  "scarecrow:guide-title": "Linnunpelättimet — opas",
+  "scarecrow:guide-text": "Reseptit: {0}, {1}, {2}. Aseta vapaalle, kiinteälle maalle. Perussäteet: suuri 16, pieni 12, olkinukke 8 lohkoa.\n\nSuuri: kädet ja jalka. Pieni: kaula ja jalka. Olkinukke: ei varusteita. Shift + oikea painike varustaa; tyhjä käsi poistaa. Modiesineet vaativat oman modinsa.\n\nVain suurin bonus laajentaa luonnollisen ilmestymisen estoa, ei tekoälyn kantamaa. Oletuksena estetään luonnolliset jänikset ja pesukarhut; asetetut, syntyneet ja vapautetut eläimet jäävät. Eläimet voivat paeta tai hyökätä; kesyt säilyttävät käytöksensä.\n\nCtrl+H vaihtaa automaattisesti päivittyvän sädekuvan. Ctrl + oikea painike tyhjällä kädellä nostaa pelättimen varusteineen. Varustetut eivät pinoudu. Tuho pudottaa varusteet. Vain omistaja hallitsee alueoikeuksien rajoissa; omistajattomiin sovelletaan alueoikeuksia.\n\nLisävihjeet ovat oletuksena pois. Aseta ShowEquipmentTooltips arvoksi true tiedostossa ModConfig/scarecrow-client.json ja käynnistä asiakas uudelleen. Opas pysyy saatavilla.",
+  "scarecrow:equipment-bonus-one": "Luonnollisen ilmestymisen eston sädebonus: {0} lohko"
 }

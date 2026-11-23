@@ -55,7 +55,7 @@ namespace Scarecrow
             return strongest;
         }
 
-        private static int GetEquipmentRadiusBonus(ItemStack stack)
+        internal static int GetEquipmentRadiusBonus(ItemStack stack)
         {
             AssetLocation code = stack.Collectible.Code;
             if (code.Domain == "game" && code.Path.EndsWith("-up", StringComparison.Ordinal))

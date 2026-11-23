@@ -1,6 +1,7 @@
 using System;
 using Newtonsoft.Json.Linq;
 using Vintagestory.API.Common;
+using Vintagestory.API.Client;
 using Vintagestory.API.Datastructures;
 
 namespace Scarecrow
@@ -8,21 +9,23 @@ namespace Scarecrow
     /// <summary>Migrates raw JSON defaults while retaining user values and backing up files before writes.</summary>
     internal static class ScarecrowConfigLoader
     {
-        private const string FileName = "scarecrow.json";
+        public static ScarecrowConfig Load(ICoreAPI api) => LoadFile<ScarecrowConfig>(api, "scarecrow.json", ScarecrowConfig.CurrentConfigVersion);
 
-        public static ScarecrowConfig Load(ICoreAPI api)
+        public static ScarecrowClientConfig LoadClient(ICoreClientAPI api) => LoadFile<ScarecrowClientConfig>(api, "scarecrow-client.json", ScarecrowClientConfig.CurrentConfigVersion);
+
+        private static T LoadFile<T>(ICoreAPI api, string fileName, int currentVersion) where T : new()
         {
-            ScarecrowConfig config;
+            T config;
             JObject original = null;
             JObject updated;
             bool save;
             try
             {
                 // The non-generic API rejects non-object JSON and distinguishes a missing file.
-                JsonObject loaded = api.LoadModConfig(FileName);
+                JsonObject loaded = api.LoadModConfig(fileName);
                 if (loaded == null)
                 {
-                    config = new ScarecrowConfig();
+                    config = new T();
                     updated = JObject.FromObject(config);
                     save = true;
                 }
@@ -38,17 +41,17 @@ namespace Scarecrow
                             || !int.TryParse(versionProperty.Value.ToString(), out version) || version < 1)
                             throw new InvalidOperationException("ConfigVersion must be a positive integer.");
                     }
-                    if (version > ScarecrowConfig.CurrentConfigVersion)
+                    if (version > currentVersion)
                     {
-                        config = original.ToObject<ScarecrowConfig>();
+                        config = original.ToObject<T>();
                         api.Logger.Warning("[Scarecrow] ConfigVersion {0} is newer than supported version {1}; loading known settings without rewriting the file.",
-                            version, ScarecrowConfig.CurrentConfigVersion);
+                            version, currentVersion);
                         return config;
                     }
 
                     updated = (JObject)original.DeepClone();
-                    save = versionProperty == null || version != ScarecrowConfig.CurrentConfigVersion;
-                    JObject defaults = JObject.FromObject(new ScarecrowConfig());
+                    save = versionProperty == null || version != currentVersion;
+                    JObject defaults = JObject.FromObject(new T());
                     foreach (JProperty property in defaults.Properties())
                     {
                         if (property.Name == nameof(ScarecrowConfig.ConfigVersion)) continue;
@@ -60,17 +63,17 @@ namespace Scarecrow
                     }
                     JProperty updatedVersion = updated.Property("ConfigVersion", StringComparison.OrdinalIgnoreCase);
                     if (updatedVersion == null)
-                        updated.AddFirst(new JProperty("ConfigVersion", ScarecrowConfig.CurrentConfigVersion));
-                    else updatedVersion.Value = ScarecrowConfig.CurrentConfigVersion;
+                        updated.AddFirst(new JProperty("ConfigVersion", currentVersion));
+                    else updatedVersion.Value = currentVersion;
 
                     // Validate before touching disk. Unknown properties stay in the raw document.
-                    config = updated.ToObject<ScarecrowConfig>();
+                    config = updated.ToObject<T>();
                 }
             }
             catch (Exception exception)
             {
-                api.Logger.Error("[Scarecrow] Could not read ModConfig/scarecrow.json, using defaults without modifying the file. Fix the file and restart. Error: {0}", exception.Message);
-                return new ScarecrowConfig();
+                api.Logger.Error("[Scarecrow] Could not read ModConfig/{0}, using defaults without modifying the file. Fix the file and restart. Error: {1}", fileName, exception.Message);
+                return new T();
             }
 
             if (save)
@@ -79,16 +82,16 @@ namespace Scarecrow
                 {
                     // Back up the original values before a migration, not merely the typed subset.
                     // A backup failure aborts the write; loaded settings remain active regardless.
-                    if (original != null) api.StoreModConfig(new JsonObject(original), FileName + ".bak");
-                    api.StoreModConfig(new JsonObject(updated), FileName);
+                    if (original != null) api.StoreModConfig(new JsonObject(original), fileName + ".bak");
+                    api.StoreModConfig(new JsonObject(updated), fileName);
                     api.Logger.Notification(original == null
-                        ? "[Scarecrow] Wrote default config to ModConfig/scarecrow.json"
-                        : "[Scarecrow] Updated ModConfig/scarecrow.json to ConfigVersion {0}; existing values were preserved and backed up to scarecrow.json.bak.",
-                        ScarecrowConfig.CurrentConfigVersion);
+                        ? "[Scarecrow] Wrote default config to ModConfig/{1}"
+                        : "[Scarecrow] Updated ModConfig/{1} to ConfigVersion {0}; existing values were preserved and backed up to {1}.bak.",
+                        currentVersion, fileName);
                 }
                 catch (Exception exception)
                 {
-                    api.Logger.Error("[Scarecrow] Could not save ModConfig/scarecrow.json; continuing with the loaded settings. Error: {0}", exception.Message);
+                    api.Logger.Error("[Scarecrow] Could not save ModConfig/{0}; continuing with the loaded settings. Error: {1}", fileName, exception.Message);
                 }
             }
             return config;

@@ -374,6 +374,35 @@ See the
 
 ## Configuration
 
+### Personal equipment information and handbook
+
+I provide a **Scarecrows — guide** page in the survival handbook. It links to the
+three scarecrow item pages for recipes and explains placement, protection,
+equipment, pickup and ownership. Supported equipment pages show their permitted
+attachment positions, any natural-spawn radius bonus and arm wind motion, with
+a link to the guide. The large scarecrow's alternative pumpkin model uses the
+same equipment rules.
+
+Extra inventory tooltips are optional and **off by default**. Each player has a
+separate `ModConfig/scarecrow-client.json` in their own Vintage Story data directory:
+
+```json
+{
+  "ConfigVersion": 1,
+  "ShowEquipmentTooltips": false
+}
+```
+
+Set `ShowEquipmentTooltips` to `true` and restart the client to show the additional
+equipment section in inventory tooltips. It starts with a blank line and a bold
+gold heading; details use normal text. Zero bonuses are omitted. The handbook
+information remains available with either preference, without repeating the
+equipment details twice. This local file is not synchronized by the server;
+existing placed-scarecrow tooltips and the server settings below are independent.
+All 33 existing languages include the new labels and guide.
+
+### Server protection settings
+
 On first startup, the mod creates `ModConfig/scarecrow.json` in the Vintage Story
 data directory. For a dedicated server, edit the file in the server's data directory.
 

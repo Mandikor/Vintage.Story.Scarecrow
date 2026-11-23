@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "Non hai il permesso di accedere a questa zona.",
 	"scarecrow:transform-botharms": "Spaventapasseri – entrambe le braccia",
 	"scarecrow:transform-neck": "Spaventapasseri – Collo",
-	"scarecrow:tooltip-animal-all": "Animali"
+	"scarecrow:tooltip-animal-all": "Animali",
+
+  "scarecrow:equipment-heading": "Equipaggiamento dello spaventapasseri",
+  "scarecrow:equipment-placement": "Attacco: {0}",
+  "scarecrow:equipment-arms": "entrambe le braccia",
+  "scarecrow:equipment-left": "braccio sinistro",
+  "scarecrow:equipment-right": "braccio destro",
+  "scarecrow:equipment-neck": "collo",
+  "scarecrow:equipment-foot": "piede",
+  "scarecrow:equipment-bonus": "Bonus al raggio di generazione: {0} blocchi",
+  "scarecrow:equipment-strongest": "Conta solo il bonus di equipaggiamento più alto.",
+  "scarecrow:equipment-wind": "Movimento al vento: {0}",
+  "scarecrow:equipment-wind-arms": "sulle braccia",
+  "scarecrow:equipment-wind-none": "nessuno",
+  "scarecrow:guide-title": "Spaventapasseri — guida",
+  "scarecrow:guide-text": "Ricette: {0}, {1}, {2}. Collocare su terreno solido e libero. Raggi base: grande 16, piccolo 12, fantoccio di paglia 8 blocchi.\n\nGrande: braccia e piede. Piccolo: collo e piede. Fantoccio: nessun equipaggiamento. Maiusc + clic destro equipaggia; con la mano vuota si rimuove. Gli oggetti delle mod richiedono la relativa mod.\n\nSolo il bonus maggiore amplia il blocco delle nascite naturali, non la portata dell’IA. Normalmente blocca lepri e procioni generati naturalmente; animali collocati, appena nati o liberati restano. Possono fuggire o attaccare; gli animali addomesticati mantengono il comportamento originale.\n\nCtrl+H alterna il raggio aggiornato automaticamente. Ctrl + clic destro a mano vuota raccoglie lo spaventapasseri equipaggiato. Gli esemplari equipaggiati non si impilano. La distruzione lascia cadere l’equipaggiamento. Gestione riservata al proprietario secondo i permessi del terreno; senza proprietario valgono tali permessi.\n\nInformazioni aggiuntive disattivate per impostazione predefinita. Impostare ShowEquipmentTooltips su true in ModConfig/scarecrow-client.json e riavviare il client. Il manuale resta disponibile.",
+  "scarecrow:equipment-bonus-one": "Bonus al raggio di generazione: {0} blocco"
 }

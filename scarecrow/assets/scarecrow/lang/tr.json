@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "Bu alana erişim iznin yok.",
 	"scarecrow:transform-botharms": "Korkuluk – iki kol",
 	"scarecrow:transform-neck": "Korkuluk – Boyun",
-	"scarecrow:tooltip-animal-all": "Hayvanlar"
+	"scarecrow:tooltip-animal-all": "Hayvanlar",
+
+  "scarecrow:equipment-heading": "Korkuluk ekipmanı",
+  "scarecrow:equipment-placement": "Bağlantı: {0}",
+  "scarecrow:equipment-arms": "iki kol",
+  "scarecrow:equipment-left": "sol kol",
+  "scarecrow:equipment-right": "sağ kol",
+  "scarecrow:equipment-neck": "boyun",
+  "scarecrow:equipment-foot": "ayak",
+  "scarecrow:equipment-bonus": "Doğal doğma engelleme yarıçapı bonusu: {0} blok",
+  "scarecrow:equipment-strongest": "Yalnızca en yüksek ekipman bonusu geçerlidir.",
+  "scarecrow:equipment-wind": "Rüzgâr hareketi: {0}",
+  "scarecrow:equipment-wind-arms": "kollarda",
+  "scarecrow:equipment-wind-none": "yok",
+  "scarecrow:guide-title": "Korkuluklar — rehber",
+  "scarecrow:guide-text": "Tarifler: {0}, {1}, {2}. Açık ve sağlam zemine yerleştirin. Temel yarıçaplar: büyük 16, küçük 12, saman kuklası 8 blok.\n\nBüyük: kollar ve ayak. Küçük: boyun ve ayak. Kukla: ekipman yok. Shift + sağ tık takar; boş el çıkarır. Mod eşyaları kendi modlarını gerektirir.\n\nYalnızca en yüksek bonus doğal doğma engelini artırır, yapay zekâ menzilini değil. Varsayılan olarak doğal tavşan ve rakunlar engellenir; yerleştirilen, doğan ve kafesten bırakılanlar kalır. Hayvanlar kaçabilir veya saldırabilir; evciller kendi davranışlarını korur.\n\nCtrl+H otomatik güncellenen yarıçap çizgisini açıp kapatır. Ctrl + sağ tık boş elle korkuluğu ekipmanıyla toplar. Ekipmanlılar istiflenmez. Yıkım ekipmanı düşürür. Yalnızca sahibi arazi haklarına göre yönetir; sahipsizlerde arazi hakları geçerlidir.\n\nEk ipuçları varsayılan olarak kapalıdır. ModConfig/scarecrow-client.json dosyasında ShowEquipmentTooltips değerini true yapıp istemciyi yeniden başlatın. Rehber bilgileri her zaman kullanılabilir.",
+  "scarecrow:equipment-bonus-one": "Doğal doğma engelleme yarıçapı bonusu: {0} blok"
 }

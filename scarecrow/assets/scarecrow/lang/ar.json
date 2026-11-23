@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "ليس لديك إذن بالوصول إلى هذه المنطقة.",
 	"scarecrow:transform-botharms": "الفزاعة – كلا الذراعين",
 	"scarecrow:transform-neck": "الفزاعة – الرقبة",
-	"scarecrow:tooltip-animal-all": "الحيوانات"
+	"scarecrow:tooltip-animal-all": "الحيوانات",
+
+  "scarecrow:equipment-heading": "معدات الفزاعة",
+  "scarecrow:equipment-placement": "موضع التثبيت: {0}",
+  "scarecrow:equipment-arms": "كلا الذراعين",
+  "scarecrow:equipment-left": "الذراع اليسرى",
+  "scarecrow:equipment-right": "الذراع اليمنى",
+  "scarecrow:equipment-neck": "العنق",
+  "scarecrow:equipment-foot": "القدم",
+  "scarecrow:equipment-bonus": "زيادة نطاق منع الظهور الطبيعي: {0} كتل",
+  "scarecrow:equipment-strongest": "تُحتسب أعلى زيادة من المعدات فقط.",
+  "scarecrow:equipment-wind": "الحركة بالرياح: {0}",
+  "scarecrow:equipment-wind-arms": "على الذراعين",
+  "scarecrow:equipment-wind-none": "لا توجد",
+  "scarecrow:guide-title": "الفزاعات — دليل",
+  "scarecrow:guide-text": "الوصفات: {0}، {1}، {2}. ضعها على أرض صلبة وخالية. النطاقات الأساسية: الكبيرة 16 والصغيرة 12 ودمية القش 8 كتل.\n\nالكبيرة: الذراعان والقدم. الصغيرة: العنق والقدم. دمية القش: بلا معدات. Shift مع النقر بالزر الأيمن للتجهيز، ويد فارغة للإزالة. تتطلب أغراض الإضافات إضافاتها.\n\nأعلى زيادة فقط توسّع منع الظهور الطبيعي، ولا تغيّر مدى الذكاء الاصطناعي. افتراضيًا تُمنع الأرانب والراكون التي تظهر طبيعيًا؛ وتبقى الحيوانات الموضوعة والمولودة والمحررة من الأقفاص. قد تهرب الحيوانات أو تهاجم، وتحتفظ الأليفة بسلوكها.\n\nCtrl+H يبدّل عرض النطاق المتجدد تلقائيًا. Ctrl مع النقر الأيمن بيد فارغة يلتقط الفزاعة بمعداتها. الفزاعات المجهزة لا تتكدس. التدمير يُسقط المعدات. الإدارة للمالك مع مراعاة حقوق الأرض، ولغير المملوكة تُطبق حقوق الأرض.\n\nالتلميحات الإضافية معطلة افتراضيًا. اضبط ShowEquipmentTooltips على true في ModConfig/scarecrow-client.json وأعد تشغيل العميل. تبقى معلومات الدليل متاحة.",
+  "scarecrow:equipment-bonus-one": "زيادة نطاق منع الظهور الطبيعي: {0} كتلة"
 }

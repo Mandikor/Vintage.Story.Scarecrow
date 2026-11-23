@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "Du har ikke tilladelse til at tilgå dette område.",
 	"scarecrow:transform-botharms": "Fugleskræmsel – begge arme",
 	"scarecrow:transform-neck": "Fugleskræmsel – Hals",
-	"scarecrow:tooltip-animal-all": "Dyr"
+	"scarecrow:tooltip-animal-all": "Dyr",
+
+  "scarecrow:equipment-heading": "Udstyr til fugleskræmsel",
+  "scarecrow:equipment-placement": "Fastgørelse: {0}",
+  "scarecrow:equipment-arms": "begge arme",
+  "scarecrow:equipment-left": "venstre arm",
+  "scarecrow:equipment-right": "højre arm",
+  "scarecrow:equipment-neck": "hals",
+  "scarecrow:equipment-foot": "fod",
+  "scarecrow:equipment-bonus": "Bonus til radius for naturlig fremkomst: {0} blokke",
+  "scarecrow:equipment-strongest": "Kun den højeste udstyrsbonus tæller.",
+  "scarecrow:equipment-wind": "Vindbevægelse: {0}",
+  "scarecrow:equipment-wind-arms": "på armene",
+  "scarecrow:equipment-wind-none": "ingen",
+  "scarecrow:guide-title": "Fugleskræmsler — vejledning",
+  "scarecrow:guide-text": "Opskrifter: {0}, {1}, {2}. Placér på fri, fast jord. Grundradier: stort 16, lille 12, strådukke 8 blokke.\n\nStort: arme og fod. Lille: hals og fod. Strådukke: intet udstyr. Shift + højreklik udstyrer; tom hånd fjerner. Modgenstande kræver deres mod.\n\nKun højeste bonus udvider blokering af naturlig fremkomst, ikke AI-rækkevidden. Som standard blokeres naturlige harer og vaskebjørne; placerede, nyfødte og frigivne dyr bliver. Dyr kan flygte eller angribe; tamme dyr beholder deres adfærd.\n\nCtrl+H skifter den automatisk opdaterede radiusvisning. Ctrl + højreklik med tom hånd samler fugleskræmslet med udstyr op. Udstyrede stables ikke. Ødelæggelse taber udstyret. Kun ejeren må administrere efter grundens rettigheder; uden ejer gælder grundrettighederne.\n\nEkstra værktøjstip er slået fra. Sæt ShowEquipmentTooltips til true i ModConfig/scarecrow-client.json og genstart klienten. Håndbogsoplysninger er altid tilgængelige.",
+  "scarecrow:equipment-bonus-one": "Bonus til radius for naturlig fremkomst: {0} blok"
 }

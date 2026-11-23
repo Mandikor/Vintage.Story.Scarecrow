@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "Neturite prieigos teisių šioje teritorijoje.",
 	"scarecrow:transform-botharms": "Kaliausė – abi rankos",
 	"scarecrow:transform-neck": "Kaliausė – Kaklas",
-	"scarecrow:tooltip-animal-all": "Gyvūnai"
+	"scarecrow:tooltip-animal-all": "Gyvūnai",
+
+  "scarecrow:equipment-heading": "Kaliausės įranga",
+  "scarecrow:equipment-placement": "Tvirtinimas: {0}",
+  "scarecrow:equipment-arms": "abi rankos",
+  "scarecrow:equipment-left": "kairė ranka",
+  "scarecrow:equipment-right": "dešinė ranka",
+  "scarecrow:equipment-neck": "kaklas",
+  "scarecrow:equipment-foot": "pėda",
+  "scarecrow:equipment-bonus": "Natūralaus atsiradimo blokavimo spindulio priedas: {0} blokų",
+  "scarecrow:equipment-strongest": "Skaičiuojamas tik didžiausias įrangos priedas.",
+  "scarecrow:equipment-wind": "Judėjimas vėjyje: {0}",
+  "scarecrow:equipment-wind-arms": "ant rankų",
+  "scarecrow:equipment-wind-none": "nėra",
+  "scarecrow:guide-title": "Kaliausės — vadovas",
+  "scarecrow:guide-text": "Receptai: {0}, {1}, {2}. Statykite ant laisvos, tvirtos žemės. Baziniai spinduliai: didelė 16, maža 12, šiaudinė lėlė 8 blokai.\n\nDidelė: rankos ir pėda. Maža: kaklas ir pėda. Lėlė: be įrangos. Shift + dešinysis mygtukas uždeda; tuščia ranka nuima. Modų daiktams būtinas atitinkamas modas.\n\nTik didžiausias priedas plečia natūralaus atsiradimo blokavimą, ne DI nuotolį. Pagal nutylėjimą blokuojami natūralūs kiškiai ir meškėnai; padėti, gimę ir paleisti gyvūnai lieka. Jie gali bėgti ar pulti; prijaukinti išlaiko savo elgesį.\n\nCtrl+H perjungia automatiškai atnaujinamą kontūrą. Ctrl + dešinysis mygtukas tuščia ranka paima kaliausę su įranga. Su įranga jos nesukraunamos. Sunaikinus įranga iškrenta. Tvarko savininkas pagal sklypo teises; be savininko galioja sklypo teisės.\n\nPapildomi patarimai išjungti. Nustatykite ShowEquipmentTooltips į true faile ModConfig/scarecrow-client.json ir paleiskite klientą iš naujo. Vadovas lieka prieinamas.",
+  "scarecrow:equipment-bonus-one": "Natūralaus atsiradimo blokavimo spindulio priedas: {0} blokas"
 }

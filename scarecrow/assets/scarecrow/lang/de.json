@@ -74,5 +74,21 @@
 	"scarecrow:interaction-error-claim": "Du hast hier keine Zugriffsberechtigung.",
 	"scarecrow:transform-botharms": "Vogelscheuche – beide Arme",
 	"scarecrow:transform-neck": "Vogelscheuche – Hals",
-	"scarecrow:tooltip-animal-all": "Tiere"
+	"scarecrow:tooltip-animal-all": "Tiere",
+
+  "scarecrow:equipment-heading": "Vogelscheuchen-Ausrüstung",
+  "scarecrow:equipment-placement": "Befestigung: {0}",
+  "scarecrow:equipment-arms": "beide Arme",
+  "scarecrow:equipment-left": "linker Arm",
+  "scarecrow:equipment-right": "rechter Arm",
+  "scarecrow:equipment-neck": "Hals",
+  "scarecrow:equipment-foot": "Fuß",
+  "scarecrow:equipment-bonus": "Spawnradius-Bonus: {0} Blöcke",
+  "scarecrow:equipment-strongest": "Nur der höchste Ausrüstungsbonus zählt.",
+  "scarecrow:equipment-wind": "Windbewegung: {0}",
+  "scarecrow:equipment-wind-arms": "an den Armen",
+  "scarecrow:equipment-wind-none": "keine",
+  "scarecrow:guide-title": "Vogelscheuchen — Anleitung",
+  "scarecrow:guide-text": "Rezepte: {0}, {1}, {2}. Auf freiem, festem Boden platzieren. Basisradien: groß 16, klein 12, Strohpuppe 8 Blöcke.\n\nGroße: Arme und Fuß. Kleine: Hals und Fuß. Strohpuppe: keine Ausrüstung. Shift + Rechtsklick legt Ausrüstung an; mit leerer Hand abnehmen. Mod-Gegenstände benötigen ihre jeweilige Mod.\n\nNur der höchste Ausrüstungsbonus erweitert die natürliche Spawn-Sperre, nicht die AI-Reichweiten. Standardmäßig werden natürlich spawnende Hasen und Waschbären blockiert; platzierte, geborene und aus Käfigen freigelassene Tiere bleiben. Tiere können fliehen oder angreifen; gezähmte Haustiere behalten ihr natives Verhalten.\n\nStrg+H schaltet die automatisch aktualisierte Radiusanzeige um. Strg + Rechtsklick mit leerer Hand hebt die Vogelscheuche samt Ausrüstung auf. Ausgerüstete Vogelscheuchen sind nicht stapelbar. Bei Zerstörung fällt die Ausrüstung zu Boden. Nur der Eigentümer darf sie ausrüsten oder aufheben, sofern das Grundstücksrecht es erlaubt; ohne Eigentümer gelten die Grundstücksrechte.\n\nDie persönliche Ausrüstungsanzeige ist standardmäßig aus. Zum Einschalten ShowEquipmentTooltips in ModConfig/scarecrow-client.json auf true setzen und den Client neu starten. Die Handbuchinformationen bleiben verfügbar.",
+  "scarecrow:equipment-bonus-one": "Spawnradius-Bonus: {0} Block"
 }

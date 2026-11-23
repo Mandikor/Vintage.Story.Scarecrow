@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "Nie masz uprawnień dostępu do tego obszaru.",
 	"scarecrow:transform-botharms": "Strach na wróble – oba ramiona",
 	"scarecrow:transform-neck": "Strach na wróble – Szyja",
-	"scarecrow:tooltip-animal-all": "Zwierzęta"
+	"scarecrow:tooltip-animal-all": "Zwierzęta",
+
+  "scarecrow:equipment-heading": "Wyposażenie stracha na wróble",
+  "scarecrow:equipment-placement": "Mocowanie: {0}",
+  "scarecrow:equipment-arms": "oba ramiona",
+  "scarecrow:equipment-left": "lewe ramię",
+  "scarecrow:equipment-right": "prawe ramię",
+  "scarecrow:equipment-neck": "szyja",
+  "scarecrow:equipment-foot": "stopa",
+  "scarecrow:equipment-bonus": "Premia do promienia odradzania: {0} bloków",
+  "scarecrow:equipment-strongest": "Liczy się tylko najwyższa premia wyposażenia.",
+  "scarecrow:equipment-wind": "Ruch na wietrze: {0}",
+  "scarecrow:equipment-wind-arms": "na ramionach",
+  "scarecrow:equipment-wind-none": "brak",
+  "scarecrow:guide-title": "Strachy na wróble — poradnik",
+  "scarecrow:guide-text": "Receptury: {0}, {1}, {2}. Ustaw na wolnym, twardym podłożu. Promienie podstawowe: duży 16, mały 12, kukła 8 bloków.\n\nDuży: ramiona i stopa. Mały: szyja i stopa. Kukła: bez wyposażenia. Shift + prawy przycisk wyposaża; pusta ręka zdejmuje. Przedmioty modów wymagają odpowiedniego moda.\n\nTylko najwyższa premia zwiększa blokadę naturalnego odradzania, nie zasięg AI. Domyślnie blokowane są naturalne zające i szopy; zwierzęta umieszczone, urodzone lub wypuszczone pozostają. Mogą uciekać lub atakować; oswojone zachowują swoje zachowanie.\n\nCtrl+H przełącza automatycznie aktualizowany obrys. Ctrl + prawy przycisk z pustą ręką podnosi stracha z wyposażeniem. Wyposażone nie tworzą stosów. Zniszczenie upuszcza wyposażenie. Zarządzać może właściciel zgodnie z prawami działki; bez właściciela obowiązują prawa działki.\n\nDodatkowe opisy są domyślnie wyłączone. Ustaw ShowEquipmentTooltips na true w ModConfig/scarecrow-client.json i uruchom klienta ponownie. Poradnik pozostaje dostępny.",
+  "scarecrow:equipment-bonus-one": "Premia do promienia odradzania: {0} blok"
 }

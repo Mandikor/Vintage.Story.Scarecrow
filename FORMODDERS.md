@@ -15,6 +15,7 @@ an older release ZIP may not include them.
 - [The in-game transform editor](#the-in-game-transform-editor)
 - [Pendulum motion](#pendulum-motion)
 - [Radius bonuses](#radius-bonuses)
+- [Equipment information and handbook](#equipment-information-and-handbook)
 - [Specialized integrations](#specialized-integrations)
 - [Interaction and persistence](#interaction-and-persistence)
 - [Validation and troubleshooting](#validation-and-troubleshooting)
@@ -465,6 +466,25 @@ Motion is independent: a stationary attachment may still grant a bonus. Existing
 integrations use paper/wood lanterns +2, metal/large lanterns +4, oil lamps/filled
 Firefly Jars +1 and Wind Chimes +6. Decorative Dreamcatchers, censers and Walking
 Sticks have no bonus. Add a bonus deliberately, not because a model is equippable.
+
+## Equipment information and handbook
+
+I derive the equipment description from the resolved `scarecrowattachments`
+slot `allowedCodes` and the collectible's native attachment category. It uses
+the same radius-bonus calculation as placed scarecrows and the existing
+`scarecrowPendulum` rules. An arm transform alone does not advertise an item as
+attachable. The large alternate pumpkin shape shares the large entity's slots.
+No separate tooltip patch or second item list is needed for a supported item.
+
+Only the client installs the description behavior and appends a section to the
+native handbook metadata, preserving existing sections and collectible behavior
+instances. The guide uses native `handbook://` item-page links. Itemstack
+attributes, source models, vanilla categories and server permissions are not
+modified. The optional inventory section is controlled by the personal
+`ShowEquipmentTooltips` setting in `ModConfig/scarecrow-client.json` (default
+`false`; restart after editing). Handbook equipment details remain available
+with either preference. All new labels and the guide are translated in the 33
+existing language files.
 
 ## Specialized integrations
 

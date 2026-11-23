@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "Bạn không có quyền truy cập khu vực này.",
 	"scarecrow:transform-botharms": "Bù nhìn – cả hai tay",
 	"scarecrow:transform-neck": "Bù nhìn – Cổ",
-	"scarecrow:tooltip-animal-all": "Động vật"
+	"scarecrow:tooltip-animal-all": "Động vật",
+
+  "scarecrow:equipment-heading": "Trang bị bù nhìn",
+  "scarecrow:equipment-placement": "Vị trí gắn: {0}",
+  "scarecrow:equipment-arms": "cả hai tay",
+  "scarecrow:equipment-left": "tay trái",
+  "scarecrow:equipment-right": "tay phải",
+  "scarecrow:equipment-neck": "cổ",
+  "scarecrow:equipment-foot": "chân",
+  "scarecrow:equipment-bonus": "Thưởng bán kính chặn sinh tự nhiên: {0} khối",
+  "scarecrow:equipment-strongest": "Chỉ tính mức thưởng trang bị cao nhất.",
+  "scarecrow:equipment-wind": "Chuyển động theo gió: {0}",
+  "scarecrow:equipment-wind-arms": "khi gắn ở tay",
+  "scarecrow:equipment-wind-none": "không",
+  "scarecrow:guide-title": "Bù nhìn — hướng dẫn",
+  "scarecrow:guide-text": "Công thức: {0}, {1}, {2}. Đặt trên nền chắc, trống. Bán kính cơ bản: lớn 16, nhỏ 12, hình nộm rơm 8 khối.\n\nLớn: tay và chân. Nhỏ: cổ và chân. Hình nộm: không trang bị. Shift + chuột phải để gắn; tay không để tháo. Vật phẩm mod cần mod tương ứng.\n\nChỉ thưởng cao nhất mở rộng vùng chặn sinh tự nhiên, không tăng tầm AI. Mặc định chặn thỏ rừng và gấu mèo sinh tự nhiên; động vật được đặt, mới sinh hoặc thả từ lồng vẫn ở lại. Chúng có thể chạy hoặc tấn công; thú thuần hóa giữ hành vi gốc.\n\nCtrl+H bật/tắt đường biên tự cập nhật. Ctrl + chuột phải bằng tay không nhặt bù nhìn cùng trang bị. Bù nhìn có trang bị không xếp chồng. Khi bị phá, trang bị rơi ra. Chỉ chủ sở hữu quản lý theo quyền đất; không có chủ thì áp dụng quyền đất.\n\nChú giải bổ sung mặc định tắt. Đặt ShowEquipmentTooltips thành true trong ModConfig/scarecrow-client.json rồi khởi động lại máy khách. Thông tin sổ tay luôn có sẵn.",
+  "scarecrow:equipment-bonus-one": "Thưởng bán kính chặn sinh tự nhiên: {0} khối"
 }

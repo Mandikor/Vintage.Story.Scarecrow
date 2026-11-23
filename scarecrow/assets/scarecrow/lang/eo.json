@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "Vi ne havas permeson aliri ĉi tiun teritorion.",
 	"scarecrow:transform-botharms": "Birdotimigilo – ambaŭ brakoj",
 	"scarecrow:transform-neck": "Birdotimigilo – Kolo",
-	"scarecrow:tooltip-animal-all": "Bestoj"
+	"scarecrow:tooltip-animal-all": "Bestoj",
+
+  "scarecrow:equipment-heading": "Birdotimigila ekipaĵo",
+  "scarecrow:equipment-placement": "Fiksado: {0}",
+  "scarecrow:equipment-arms": "ambaŭ brakoj",
+  "scarecrow:equipment-left": "maldekstra brako",
+  "scarecrow:equipment-right": "dekstra brako",
+  "scarecrow:equipment-neck": "kolo",
+  "scarecrow:equipment-foot": "piedo",
+  "scarecrow:equipment-bonus": "Bonuso al natura aperradiuso: {0} blokoj",
+  "scarecrow:equipment-strongest": "Nur la plej alta ekipaĵbonuso validas.",
+  "scarecrow:equipment-wind": "Ventomovo: {0}",
+  "scarecrow:equipment-wind-arms": "ĉe la brakoj",
+  "scarecrow:equipment-wind-none": "neniu",
+  "scarecrow:guide-title": "Birdotimigiloj — gvidilo",
+  "scarecrow:guide-text": "Receptoj: {0}, {1}, {2}. Metu sur liberan, firman grundon. Bazaj radiusoj: granda 16, malgranda 12, pajla pupo 8 blokoj.\n\nGranda: brakoj kaj piedo. Malgranda: kolo kaj piedo. Pupo: sen ekipaĵo. Shift + dekstra alklako ekipas; malplena mano forigas. Modaj objektoj bezonas sian modon.\n\nNur la plej alta bonuso vastigas la blokadon de natura apero, ne la AI-distancon. Defaŭlte naturaj leporoj kaj lavursoj estas blokataj; metitaj, naskitaj kaj liberigitaj bestoj restas. Bestoj povas fuĝi aŭ ataki; malsovaĝaj konservas sian konduton.\n\nCtrl+H ŝaltas la aŭtomate aktualigitan konturon. Ctrl + dekstra alklako per malplena mano prenas la timigilon kun ekipaĵo. Ekipitaj ne stakiĝas. Detruo faligas ekipaĵon. Nur la posedanto administras laŭ terrenrajtoj; sen posedanto validas terrenrajtoj.\n\nKromaj konsiletoj estas defaŭlte malŝaltitaj. Agordu ShowEquipmentTooltips al true en ModConfig/scarecrow-client.json kaj restartigu la klienton. La manlibro restas havebla.",
+  "scarecrow:equipment-bonus-one": "Bonuso al natura aperradiuso: {0} bloko"
 }

@@ -80,5 +80,21 @@
 	"scarecrow:interaction-error-claim": "この領域へのアクセス権限がありません。",
 	"scarecrow:transform-botharms": "かかし – 両腕",
 	"scarecrow:transform-neck": "かかし – 首",
-	"scarecrow:tooltip-animal-all": "動物"
+	"scarecrow:tooltip-animal-all": "動物",
+
+  "scarecrow:equipment-heading": "かかし用装備",
+  "scarecrow:equipment-placement": "取り付け位置: {0}",
+  "scarecrow:equipment-arms": "両腕",
+  "scarecrow:equipment-left": "左腕",
+  "scarecrow:equipment-right": "右腕",
+  "scarecrow:equipment-neck": "首",
+  "scarecrow:equipment-foot": "足元",
+  "scarecrow:equipment-bonus": "自然スポーン防止半径ボーナス: {0}ブロック",
+  "scarecrow:equipment-strongest": "装備ボーナスは最大のものだけが適用されます。",
+  "scarecrow:equipment-wind": "風による動き: {0}",
+  "scarecrow:equipment-wind-arms": "腕に装着した場合",
+  "scarecrow:equipment-wind-none": "なし",
+  "scarecrow:guide-title": "かかし — ガイド",
+  "scarecrow:guide-text": "レシピ: {0}、{1}、{2}。空いている硬い地面に設置します。基本半径は大16、小12、わら人形8ブロックです。\n\n大は腕と足元、小は首と足元に装備できます。わら人形には装備できません。Shift＋右クリックで装備し、空の手で外します。Modの装備には対応Modが必要です。\n\n最大のボーナスだけが自然スポーン防止範囲を広げ、動物AIの範囲は変えません。初期設定では自然発生のノウサギとアライグマを防ぎます。配置、誕生、ケージから解放された動物は残ります。動物は逃走または攻撃し、飼い慣らした動物は元の行動を保ちます。\n\nCtrl+Hで自動更新される範囲表示を切り替えます。空の手でCtrl＋右クリックすると装備ごと回収します。装備したかかしは重ねられません。破壊されると装備を落とします。土地権限の範囲内で所有者だけが管理でき、所有者がいない場合は土地権限に従います。\n\n追加ツールチップは初期設定で無効です。ModConfig/scarecrow-client.jsonのShowEquipmentTooltipsをtrueにしてクライアントを再起動すると有効になります。ハンドブックの情報は常に利用できます。",
+  "scarecrow:equipment-bonus-one": "自然スポーン防止半径ボーナス: {0}ブロック"
 }

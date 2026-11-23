@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "Vous ne disposez pas des droits nécessaires sur ce terrain.",
 	"scarecrow:transform-botharms": "Épouvantail – deux bras",
 	"scarecrow:transform-neck": "Épouvantail – Cou",
-	"scarecrow:tooltip-animal-all": "Animaux"
+	"scarecrow:tooltip-animal-all": "Animaux",
+
+  "scarecrow:equipment-heading": "Équipement d’épouvantail",
+  "scarecrow:equipment-placement": "Fixation : {0}",
+  "scarecrow:equipment-arms": "les deux bras",
+  "scarecrow:equipment-left": "bras gauche",
+  "scarecrow:equipment-right": "bras droit",
+  "scarecrow:equipment-neck": "cou",
+  "scarecrow:equipment-foot": "pied",
+  "scarecrow:equipment-bonus": "Bonus de rayon d’apparition : {0} blocs",
+  "scarecrow:equipment-strongest": "Seul le bonus d’équipement le plus élevé compte.",
+  "scarecrow:equipment-wind": "Mouvement au vent : {0}",
+  "scarecrow:equipment-wind-arms": "sur les bras",
+  "scarecrow:equipment-wind-none": "aucun",
+  "scarecrow:guide-title": "Épouvantails — guide",
+  "scarecrow:guide-text": "Recettes : {0}, {1}, {2}. Placer sur un sol solide et dégagé. Rayons de base : grand 16, petit 12, mannequin de paille 8 blocs.\n\nGrand : bras et pied. Petit : cou et pied. Mannequin : aucun équipement. Maj + clic droit équipe ; une main vide retire l’équipement. Les objets de mods nécessitent leur mod.\n\nSeul le meilleur bonus étend la protection contre les apparitions naturelles, pas la portée de l’IA. Par défaut, lièvres et ratons laveurs naturels sont bloqués ; les animaux placés, nouveau-nés ou libérés restent. Ils peuvent fuir ou attaquer ; les animaux apprivoisés gardent leur comportement.\n\nCtrl+H affiche le rayon actualisé automatiquement. Ctrl + clic droit, main vide, ramasse l’épouvantail équipé. Les exemplaires équipés ne s’empilent pas. La destruction laisse tomber l’équipement. Gestion réservée au propriétaire, selon les droits du terrain ; sans propriétaire, les droits du terrain s’appliquent.\n\nInfobulles désactivées par défaut. Mettre ShowEquipmentTooltips à true dans ModConfig/scarecrow-client.json, puis redémarrer le client. Les informations du manuel restent disponibles.",
+  "scarecrow:equipment-bonus-one": "Bonus de rayon d’apparition : {0} bloc"
 }

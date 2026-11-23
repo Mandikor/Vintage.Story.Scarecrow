@@ -76,5 +76,21 @@
 	"scarecrow:interaction-error-claim": "У вас немає прав доступу до цієї території.",
 	"scarecrow:transform-botharms": "Опудало – обидві руки",
 	"scarecrow:transform-neck": "Опудало – Шия",
-	"scarecrow:tooltip-animal-all": "Тварини"
+	"scarecrow:tooltip-animal-all": "Тварини",
+
+  "scarecrow:equipment-heading": "Спорядження опудала",
+  "scarecrow:equipment-placement": "Кріплення: {0}",
+  "scarecrow:equipment-arms": "обидві руки",
+  "scarecrow:equipment-left": "ліва рука",
+  "scarecrow:equipment-right": "права рука",
+  "scarecrow:equipment-neck": "шия",
+  "scarecrow:equipment-foot": "нога",
+  "scarecrow:equipment-bonus": "Бонус радіуса блокування появи: {0} блоків",
+  "scarecrow:equipment-strongest": "Враховується лише найбільший бонус спорядження.",
+  "scarecrow:equipment-wind": "Рух від вітру: {0}",
+  "scarecrow:equipment-wind-arms": "на руках",
+  "scarecrow:equipment-wind-none": "немає",
+  "scarecrow:guide-title": "Опудала — посібник",
+  "scarecrow:guide-text": "Рецепти: {0}, {1}, {2}. Ставте на вільну тверду землю. Базові радіуси: велике 16, мале 12, солом’яна лялька 8 блоків.\n\nВелике: руки й нога. Мале: шия й нога. Лялька: без спорядження. Shift + права кнопка споряджає; порожня рука знімає. Предмети модів потребують відповідних модів.\n\nЛише найбільший бонус розширює блокування природної появи, а не радіуси ШІ. Типово блокуються природні зайці й єноти; розміщені, народжені та випущені з кліток залишаються. Тварини можуть тікати чи нападати; приручені зберігають свою поведінку.\n\nCtrl+H перемикає автоматично оновлюваний контур. Ctrl + права кнопка порожньою рукою підбирає опудало зі спорядженням. Споряджені не складаються. Руйнування скидає спорядження. Керує власник з урахуванням прав ділянки; без власника діють права ділянки.\n\nДодаткові підказки спочатку вимкнено. Встановіть ShowEquipmentTooltips у true в ModConfig/scarecrow-client.json і перезапустіть клієнт. Посібник залишається доступним.",
+  "scarecrow:equipment-bonus-one": "Бонус радіуса блокування появи: {0} блок"
 }

@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "No tienes permiso para acceder a esta zona.",
 	"scarecrow:transform-botharms": "Espantapájaros – ambos brazos",
 	"scarecrow:transform-neck": "Espantapájaros – Cuello",
-	"scarecrow:tooltip-animal-all": "Animales"
+	"scarecrow:tooltip-animal-all": "Animales",
+
+  "scarecrow:equipment-heading": "Equipo para espantapájaros",
+  "scarecrow:equipment-placement": "Colocación: {0}",
+  "scarecrow:equipment-arms": "ambos brazos",
+  "scarecrow:equipment-left": "brazo izquierdo",
+  "scarecrow:equipment-right": "brazo derecho",
+  "scarecrow:equipment-neck": "cuello",
+  "scarecrow:equipment-foot": "pie",
+  "scarecrow:equipment-bonus": "Bonificación al radio de aparición: {0} bloques",
+  "scarecrow:equipment-strongest": "Solo cuenta la mayor bonificación de equipo.",
+  "scarecrow:equipment-wind": "Movimiento con el viento: {0}",
+  "scarecrow:equipment-wind-arms": "en los brazos",
+  "scarecrow:equipment-wind-none": "ninguno",
+  "scarecrow:guide-title": "Espantapájaros — guía",
+  "scarecrow:guide-text": "Recetas: {0}, {1}, {2}. Colocar sobre suelo firme y despejado. Radios básicos: grande 16, pequeño 12, muñeco de paja 8 bloques.\n\nGrande: brazos y pie. Pequeño: cuello y pie. Muñeco: sin equipo. Mayús + clic derecho equipa; una mano vacía retira el equipo. Los objetos de mods requieren su mod.\n\nSolo la mayor bonificación amplía el bloqueo de apariciones naturales, no el alcance de la IA. Por defecto bloquea liebres y mapaches naturales; los colocados, nacidos o liberados de jaulas permanecen. Los animales pueden huir o atacar; las mascotas conservan su comportamiento.\n\nCtrl+H alterna el radio actualizado automáticamente. Ctrl + clic derecho con la mano vacía recoge el espantapájaros con su equipo. Equipados no se apilan. Al destruirse sueltan el equipo. Solo el propietario puede gestionarlo, según los permisos del terreno; sin propietario rigen esos permisos.\n\nLa información adicional está desactivada por defecto. Activa ShowEquipmentTooltips con true en ModConfig/scarecrow-client.json y reinicia el cliente. La información del manual sigue disponible.",
+  "scarecrow:equipment-bonus-one": "Bonificación al radio de aparición: {0} bloque"
 }

@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "Du har ikke tilgangstillatelse til dette området.",
 	"scarecrow:transform-botharms": "Fugleskremsel – begge armer",
 	"scarecrow:transform-neck": "Fugleskremsel – Hals",
-	"scarecrow:tooltip-animal-all": "Dyr"
+	"scarecrow:tooltip-animal-all": "Dyr",
+
+  "scarecrow:equipment-heading": "Fugleskremselutstyr",
+  "scarecrow:equipment-placement": "Feste: {0}",
+  "scarecrow:equipment-arms": "begge armer",
+  "scarecrow:equipment-left": "venstre arm",
+  "scarecrow:equipment-right": "høyre arm",
+  "scarecrow:equipment-neck": "hals",
+  "scarecrow:equipment-foot": "fot",
+  "scarecrow:equipment-bonus": "Bonus til radius for naturlig gyting: {0} blokker",
+  "scarecrow:equipment-strongest": "Bare den høyeste utstyrsbonusen gjelder.",
+  "scarecrow:equipment-wind": "Vindbevegelse: {0}",
+  "scarecrow:equipment-wind-arms": "på armene",
+  "scarecrow:equipment-wind-none": "ingen",
+  "scarecrow:guide-title": "Fugleskremsler — veiledning",
+  "scarecrow:guide-text": "Oppskrifter: {0}, {1}, {2}. Plasser på fri, fast jord. Grunnradier: stort 16, lite 12, strådukke 8 blokker.\n\nStort: armer og fot. Lite: hals og fot. Strådukke: intet utstyr. Shift + høyreklikk utstyrer; tom hånd tar av. Modgjenstander krever sin mod.\n\nBare høyeste bonus utvider blokkering av naturlig gyting, ikke AI-rekkevidden. Som standard blokkeres naturlige harer og vaskebjørner; plasserte, nyfødte og frigitte dyr blir. Dyr kan flykte eller angripe; tamme dyr beholder atferden sin.\n\nCtrl+H veksler den automatisk oppdaterte radiusvisningen. Ctrl + høyreklikk med tom hånd plukker opp fugleskremselet med utstyret. Utstyrte kan ikke stables. Ødeleggelse slipper utstyret. Bare eieren kan administrere etter grunnrettighetene; eierløse følger grunnrettighetene.\n\nEkstra verktøytips er av som standard. Sett ShowEquipmentTooltips til true i ModConfig/scarecrow-client.json og start klienten på nytt. Håndboken er alltid tilgjengelig.",
+  "scarecrow:equipment-bonus-one": "Bonus til radius for naturlig gyting: {0} blokk"
 }

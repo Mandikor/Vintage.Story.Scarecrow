@@ -76,5 +76,21 @@
 	"scarecrow:interaction-error-claim": "You do not have permission to access this area.",
 	"scarecrow:transform-botharms": "Scarecrow – both arms",
 	"scarecrow:transform-neck": "Scarecrow – Neck",
-	"scarecrow:tooltip-animal-all": "Animals"
+	"scarecrow:tooltip-animal-all": "Animals",
+
+  "scarecrow:equipment-heading": "Scarecrow equipment",
+  "scarecrow:equipment-placement": "Attachment: {0}",
+  "scarecrow:equipment-arms": "both arms",
+  "scarecrow:equipment-left": "left arm",
+  "scarecrow:equipment-right": "right arm",
+  "scarecrow:equipment-neck": "neck",
+  "scarecrow:equipment-foot": "foot",
+  "scarecrow:equipment-bonus": "Spawn radius bonus: {0} blocks",
+  "scarecrow:equipment-strongest": "Only the highest equipment bonus counts.",
+  "scarecrow:equipment-wind": "Wind motion: {0}",
+  "scarecrow:equipment-wind-arms": "on the arms",
+  "scarecrow:equipment-wind-none": "none",
+  "scarecrow:guide-title": "Scarecrows — guide",
+  "scarecrow:guide-text": "Recipes: {0}, {1}, {2}. Place on clear, solid ground. Base radii: large 16, little 12, straw dummy 8 blocks.\n\nLarge: arms and foot. Little: neck and foot. Straw dummy: no equipment. Shift + right-click equips; use an empty hand to remove equipment. Optional mod items require their mod.\n\nOnly the highest equipment bonus extends natural-spawn protection, not animal AI ranges. By default, naturally spawning hares and raccoons are blocked; placed, newborn and cage-released animals remain. Animals may flee or attack; tamed pets keep native behavior.\n\nCtrl+H toggles the automatically updated radius outline. Ctrl + right-click with an empty hand picks up the scarecrow with its equipment. Equipped scarecrows do not stack. Destruction drops equipment. Only the owner may manage equipment or pick up the scarecrow, subject to land claims; ownerless scarecrows use claim access.\n\nPersonal equipment tooltips are off by default. Set ShowEquipmentTooltips to true in ModConfig/scarecrow-client.json and restart the client to enable them. Handbook information remains available.",
+  "scarecrow:equipment-bonus-one": "Spawn radius bonus: {0} block"
 }

@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "Þú hefur ekki aðgangsheimild að þessu svæði.",
 	"scarecrow:transform-botharms": "Fuglahræða – báðir handleggir",
 	"scarecrow:transform-neck": "Fuglahræða – Háls",
-	"scarecrow:tooltip-animal-all": "Dýr"
+	"scarecrow:tooltip-animal-all": "Dýr",
+
+  "scarecrow:equipment-heading": "Búnaður fuglahræðu",
+  "scarecrow:equipment-placement": "Festing: {0}",
+  "scarecrow:equipment-arms": "báðir handleggir",
+  "scarecrow:equipment-left": "vinstri handleggur",
+  "scarecrow:equipment-right": "hægri handleggur",
+  "scarecrow:equipment-neck": "háls",
+  "scarecrow:equipment-foot": "fótur",
+  "scarecrow:equipment-bonus": "Viðbót við radíus náttúrulegrar birtingar: {0} kubbar",
+  "scarecrow:equipment-strongest": "Aðeins hæsta búnaðarviðbótin gildir.",
+  "scarecrow:equipment-wind": "Hreyfing í vindi: {0}",
+  "scarecrow:equipment-wind-arms": "á handleggjum",
+  "scarecrow:equipment-wind-none": "engin",
+  "scarecrow:guide-title": "Fuglahræður — leiðbeiningar",
+  "scarecrow:guide-text": "Uppskriftir: {0}, {1}, {2}. Settu á lausa, fasta jörð. Grunnradíusar: stór 16, lítil 12, strádúkka 8 kubbar.\n\nStór: handleggir og fótur. Lítil: háls og fótur. Strádúkka: enginn búnaður. Shift + hægrismellur festir búnað; tóm hönd tekur hann af. Hlutir úr moddum þurfa viðkomandi modd.\n\nAðeins hæsta viðbótin eykur bann við náttúrulegri birtingu, ekki skynjun gervigreindar. Sjálfgefið eru náttúrulegir hérar og þvottabirnir stöðvaðir; sett, nýfædd og sleppt dýr verða áfram. Dýr geta flúið eða ráðist á; tamin dýr halda sinni hegðun.\n\nCtrl+H skiptir sjálfvirku radíusútlínunni. Ctrl + hægrismellur með tómri hönd tekur hræðuna með búnaði. Búnar hræður staflast ekki. Eyðilegging sleppir búnaðinum. Eigandinn stjórnar samkvæmt landréttindum; án eiganda gilda landréttindi.\n\nAukavísbendingar eru sjálfgefið af. Settu ShowEquipmentTooltips á true í ModConfig/scarecrow-client.json og endurræstu biðlarann. Handbókin er áfram aðgengileg.",
+  "scarecrow:equipment-bonus-one": "Viðbót við radíus náttúrulegrar birtingar: {0} kubbur"
 }

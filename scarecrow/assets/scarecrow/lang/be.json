@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "У вас няма дазволу на доступ да гэтай тэрыторыі.",
 	"scarecrow:transform-botharms": "Пудзіла – абедзве рукі",
 	"scarecrow:transform-neck": "Пудзіла – Шыя",
-	"scarecrow:tooltip-animal-all": "Жывёлы"
+	"scarecrow:tooltip-animal-all": "Жывёлы",
+
+  "scarecrow:equipment-heading": "Рыштунак пудзіла",
+  "scarecrow:equipment-placement": "Мацаванне: {0}",
+  "scarecrow:equipment-arms": "абедзве рукі",
+  "scarecrow:equipment-left": "левая рука",
+  "scarecrow:equipment-right": "правая рука",
+  "scarecrow:equipment-neck": "шыя",
+  "scarecrow:equipment-foot": "нага",
+  "scarecrow:equipment-bonus": "Бонус радыуса блакавання з’яўлення: {0} блокаў",
+  "scarecrow:equipment-strongest": "Улічваецца толькі найбольшы бонус рыштунку.",
+  "scarecrow:equipment-wind": "Рух ад ветру: {0}",
+  "scarecrow:equipment-wind-arms": "на руках",
+  "scarecrow:equipment-wind-none": "няма",
+  "scarecrow:guide-title": "Пудзілы — дапаможнік",
+  "scarecrow:guide-text": "Рэцэпты: {0}, {1}, {2}. Стаўце на вольную цвёрдую зямлю. Базавыя радыусы: вялікае 16, малое 12, саламяная лялька 8 блокаў.\n\nВялікае: рукі і нага. Малое: шыя і нага. Лялька: без рыштунку. Shift + правая кнопка экіпіруе; пустая рука здымае. Прадметы модаў патрабуюць адпаведных модаў.\n\nТолькі найбольшы бонус пашырае забарону натуральнага з’яўлення, а не радыусы ШІ. Стандартна блакуюцца натуральныя зайцы і яноты; пастаўленыя, народжаныя і выпушчаныя з клетак застаюцца. Жывёлы могуць уцякаць або нападаць; прыручаныя захоўваюць свае паводзіны.\n\nCtrl+H пераключае аўтаматычна абноўлены контур. Ctrl + правая кнопка пустой рукой падымае пудзіла з рыштункам. Экіпіраваныя не складаюцца. Разбурэнне скідае рыштунак. Кіруе ўладальнік паводле правоў участка; без уладальніка дзейнічаюць правы участка.\n\nДадатковыя падказкі спачатку выключаны. Задайце ShowEquipmentTooltips true ў ModConfig/scarecrow-client.json і перазапусціце кліент. Дапаможнік застаецца даступным.",
+  "scarecrow:equipment-bonus-one": "Бонус радыуса блакавання з’яўлення: {0} блок"
 }

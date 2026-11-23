@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "Nincs hozzáférési jogosultságod ehhez a területhez.",
 	"scarecrow:transform-botharms": "Madárijesztő – mindkét kar",
 	"scarecrow:transform-neck": "Madárijesztő – Nyak",
-	"scarecrow:tooltip-animal-all": "Állatok"
+	"scarecrow:tooltip-animal-all": "Állatok",
+
+  "scarecrow:equipment-heading": "Madárijesztő-felszerelés",
+  "scarecrow:equipment-placement": "Rögzítés: {0}",
+  "scarecrow:equipment-arms": "mindkét kar",
+  "scarecrow:equipment-left": "bal kar",
+  "scarecrow:equipment-right": "jobb kar",
+  "scarecrow:equipment-neck": "nyak",
+  "scarecrow:equipment-foot": "láb",
+  "scarecrow:equipment-bonus": "Bónusz az új állatok tiltási sugarához: {0} blokk",
+  "scarecrow:equipment-strongest": "Csak a legnagyobb felszerelésbónusz számít.",
+  "scarecrow:equipment-wind": "Szélmozgás: {0}",
+  "scarecrow:equipment-wind-arms": "a karokon",
+  "scarecrow:equipment-wind-none": "nincs",
+  "scarecrow:guide-title": "Madárijesztők — útmutató",
+  "scarecrow:guide-text": "Receptek: {0}, {1}, {2}. Szabad, szilárd talajra helyezd. Alapsugarak: nagy 16, kicsi 12, szalmabábu 8 blokk.\n\nNagy: karok és láb. Kicsi: nyak és láb. Bábu: nincs felszerelés. Shift + jobb kattintás felszerel; üres kézzel levehető. A modok tárgyaihoz szükséges az adott mod.\n\nCsak a legnagyobb bónusz növeli a természetes megjelenés tiltását, nem az AI hatótávját. Alapból a természetesen megjelenő nyulakat és mosómedvéket tiltja; a lerakott, született és ketrecből elengedett állatok maradnak. Menekülhetnek vagy támadhatnak; a szelíd állatok megtartják viselkedésüket.\n\nCtrl+H kapcsolja az automatikusan frissülő körvonalat. Ctrl + jobb kattintás üres kézzel felszereléssel együtt felveszi az ijesztőt. Felszerelve nem halmozható. Pusztuláskor a felszerelés kiesik. Csak a tulajdonos kezelheti a telekjogok szerint; gazdátlanul a telekjogok érvényesek.\n\nA plusz tippek alapból kikapcsoltak. A ModConfig/scarecrow-client.json fájlban állítsd a ShowEquipmentTooltips értékét true-ra, majd indítsd újra a klienst. Az útmutató továbbra is elérhető.",
+  "scarecrow:equipment-bonus-one": "Bónusz az új állatok tiltási sugarához: {0} blokk"
 }

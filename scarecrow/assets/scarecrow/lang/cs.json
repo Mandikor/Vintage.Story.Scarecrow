@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "Nemáte oprávnění k přístupu na toto území.",
 	"scarecrow:transform-botharms": "Strašák – obě paže",
 	"scarecrow:transform-neck": "Strašák – Krk",
-	"scarecrow:tooltip-animal-all": "Zvířata"
+	"scarecrow:tooltip-animal-all": "Zvířata",
+
+  "scarecrow:equipment-heading": "Výbava strašáka",
+  "scarecrow:equipment-placement": "Uchycení: {0}",
+  "scarecrow:equipment-arms": "obě paže",
+  "scarecrow:equipment-left": "levá paže",
+  "scarecrow:equipment-right": "pravá paže",
+  "scarecrow:equipment-neck": "krk",
+  "scarecrow:equipment-foot": "noha",
+  "scarecrow:equipment-bonus": "Bonus k dosahu blokování spawnu: {0} bloků",
+  "scarecrow:equipment-strongest": "Počítá se jen nejvyšší bonus výbavy.",
+  "scarecrow:equipment-wind": "Pohyb ve větru: {0}",
+  "scarecrow:equipment-wind-arms": "na pažích",
+  "scarecrow:equipment-wind-none": "žádný",
+  "scarecrow:guide-title": "Strašáci — příručka",
+  "scarecrow:guide-text": "Recepty: {0}, {1}, {2}. Umístěte na volnou pevnou zem. Základní dosahy: velký 16, malý 12, slaměná figurína 8 bloků.\n\nVelký: paže a noha. Malý: krk a noha. Figurína: bez výbavy. Shift + pravé tlačítko vybaví; prázdná ruka sundá výbavu. Předměty modů vyžadují příslušný mod.\n\nPouze nejvyšší bonus rozšiřuje blokování přirozeného spawnu, nikoli dosah AI. Výchozí nastavení blokuje přirozené zajíce a mývaly; umístěná, narozená a vypuštěná zvířata zůstávají. Mohou utíkat či útočit; ochočená si zachovají vlastní chování.\n\nCtrl+H přepíná automaticky aktualizovaný obrys. Ctrl + pravé tlačítko s prázdnou rukou sebere strašáka s výbavou. Vybavení strašáci se nestohují. Zničení upustí výbavu. Správa patří majiteli podle práv pozemku; bez majitele platí práva pozemku.\n\nDoplňkové popisky jsou výchozí vypnuté. Nastavte ShowEquipmentTooltips na true v ModConfig/scarecrow-client.json a restartujte klienta. Příručka zůstává dostupná.",
+  "scarecrow:equipment-bonus-one": "Bonus k dosahu blokování spawnu: {0} blok"
 }

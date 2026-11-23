@@ -5,6 +5,24 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ## Unreleased
 
+### Equipment information and survival handbook
+
+- Add a localized Scarecrow guide with recipe links for the large and little
+  scarecrows and the straw dummy. Explain placement, equipment, natural-spawn
+  blocking versus animal AI, strongest-only bonuses, Ctrl+H, pickup and ownership.
+- Show equipment positions, nonzero spawn-radius bonuses and arm wind motion in
+  supported item handbook pages, linking to the guide. Read the loaded slot
+  rules and existing attributes; preserve other handbook sections and behaviors.
+- Add personal `ModConfig/scarecrow-client.json` schema 1 with
+  `ShowEquipmentTooltips: false`. Players can enable a blank-separated inventory
+  section with a bold gold heading and normal details by editing the file and
+  restarting. The handbook remains available with either preference and avoids
+  duplicate detail sections. Server configuration schema 2 remains unchanged.
+- Extend all 33 language files. Validate client/server configuration handling,
+  resolved attachment rules, bonuses, motion, native handbook sections/links,
+  existing metadata and unchanged stack attributes. My game test confirmed the
+  guide, handbook links and personal tooltip settings.
+
 ### Wolf Taming compatibility review
 
 - Review Wolf Taming 5.0.1 with Pet AI 5.1.2. Wild wolves use the existing vanilla

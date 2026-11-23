@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "Немате дозволу за приступ овој територији.",
 	"scarecrow:transform-botharms": "Страшило – обе руке",
 	"scarecrow:transform-neck": "Страшило – Врат",
-	"scarecrow:tooltip-animal-all": "Животиње"
+	"scarecrow:tooltip-animal-all": "Животиње",
+
+  "scarecrow:equipment-heading": "Опрема страшила",
+  "scarecrow:equipment-placement": "Качење: {0}",
+  "scarecrow:equipment-arms": "обе руке",
+  "scarecrow:equipment-left": "лева рука",
+  "scarecrow:equipment-right": "десна рука",
+  "scarecrow:equipment-neck": "врат",
+  "scarecrow:equipment-foot": "стопало",
+  "scarecrow:equipment-bonus": "Бонус радијуса спречавања појаве: {0} блокова",
+  "scarecrow:equipment-strongest": "Важи само највећи бонус опреме.",
+  "scarecrow:equipment-wind": "Померање на ветру: {0}",
+  "scarecrow:equipment-wind-arms": "на рукама",
+  "scarecrow:equipment-wind-none": "нема",
+  "scarecrow:guide-title": "Страшила — водич",
+  "scarecrow:guide-text": "Рецепти: {0}, {1}, {2}. Поставите на слободно чврсто тло. Основни радијуси: велико 16, мало 12, сламната лутка 8 блокова.\n\nВелико: руке и стопало. Мало: врат и стопало. Лутка: без опреме. Shift + десни клик опрема; празна рука скида. Предмети модова захтевају свој мод.\n\nСамо највећи бонус проширује спречавање природне појаве, не домет вештачке интелигенције. Подразумевано спречава природне зечеве и ракуне; постављене, рођене и пуштене животиње остају. Могу бежати или нападати; припитомљене задржавају своје понашање.\n\nCtrl+H мења приказ аутоматски ажурираног круга. Ctrl + десни клик празном руком подиже страшило с опремом. Опремљена се не слажу. Уништење испушта опрему. Управља власник у складу с правима земљишта; без власника важе та права.\n\nДодатни описи су искључени. Поставите ShowEquipmentTooltips на true у ModConfig/scarecrow-client.json и поново покрените клијент. Водич је увек доступан.",
+  "scarecrow:equipment-bonus-one": "Бонус радијуса спречавања појаве: {0} блок"
 }

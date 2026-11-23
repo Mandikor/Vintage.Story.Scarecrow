@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "你沒有此區域的存取權限。",
 	"scarecrow:transform-botharms": "稻草人 – 雙臂",
 	"scarecrow:transform-neck": "稻草人 – 頸部",
-	"scarecrow:tooltip-animal-all": "動物"
+	"scarecrow:tooltip-animal-all": "動物",
+
+  "scarecrow:equipment-heading": "稻草人裝備",
+  "scarecrow:equipment-placement": "安裝位置：{0}",
+  "scarecrow:equipment-arms": "雙臂",
+  "scarecrow:equipment-left": "左臂",
+  "scarecrow:equipment-right": "右臂",
+  "scarecrow:equipment-neck": "頸部",
+  "scarecrow:equipment-foot": "腳部",
+  "scarecrow:equipment-bonus": "自然生成阻止半徑加成：{0}格",
+  "scarecrow:equipment-strongest": "僅最高裝備加成生效。",
+  "scarecrow:equipment-wind": "隨風擺動：{0}",
+  "scarecrow:equipment-wind-arms": "安裝在手臂時",
+  "scarecrow:equipment-wind-none": "無",
+  "scarecrow:guide-title": "稻草人指南",
+  "scarecrow:guide-text": "配方：{0}、{1}、{2}。放置在空曠的堅實地面上。基礎半徑：大型16、小型12、草人靶8格。\n\n大型可裝備雙臂和腳部，小型可裝備頸部和腳部；草人靶不能裝備。Shift+右鍵安裝，空手移除。模組裝備需要對應模組。\n\n僅最高加成擴大自然生成阻止範圍，不改變動物AI範圍。預設阻止自然生成的野兔和浣熊；放置、出生或從籠中釋放的動物會保留。動物可能逃跑或攻擊；馴服的寵物保持原有行為。\n\nCtrl+H切換自動更新的半徑輪廓。空手Ctrl+右鍵將稻草人連同裝備一起收起。帶裝備的稻草人不能堆疊。被摧毀時裝備掉落。只有擁有者可在領地權限允許下管理；無擁有者時遵循領地權限。\n\n額外提示預設關閉。在ModConfig/scarecrow-client.json中將ShowEquipmentTooltips設為true並重新啟動用戶端即可啟用。手冊資訊始終可用。",
+  "scarecrow:equipment-bonus-one": "自然生成阻止半徑加成：{0}格"
 }

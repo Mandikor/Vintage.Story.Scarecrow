@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "Não tens permissão para aceder a esta área.",
 	"scarecrow:transform-botharms": "Espantalho – ambos os braços",
 	"scarecrow:transform-neck": "Espantalho – Pescoço",
-	"scarecrow:tooltip-animal-all": "Animais"
+	"scarecrow:tooltip-animal-all": "Animais",
+
+  "scarecrow:equipment-heading": "Equipamento de espantalho",
+  "scarecrow:equipment-placement": "Fixação: {0}",
+  "scarecrow:equipment-arms": "ambos os braços",
+  "scarecrow:equipment-left": "braço esquerdo",
+  "scarecrow:equipment-right": "braço direito",
+  "scarecrow:equipment-neck": "pescoço",
+  "scarecrow:equipment-foot": "pé",
+  "scarecrow:equipment-bonus": "Bônus no raio de surgimento: {0} blocos",
+  "scarecrow:equipment-strongest": "Só conta o maior bônus de equipamento.",
+  "scarecrow:equipment-wind": "Movimento com o vento: {0}",
+  "scarecrow:equipment-wind-arms": "nos braços",
+  "scarecrow:equipment-wind-none": "nenhum",
+  "scarecrow:guide-title": "Espantalhos — guia",
+  "scarecrow:guide-text": "Receitas: {0}, {1}, {2}. Coloque em solo firme e livre. Raios básicos: grande 16, pequeno 12, boneco de palha 8 blocos.\n\nGrande: braços e pé. Pequeno: pescoço e pé. Boneco: sem equipamento. Shift + clique direito equipa; a mão vazia remove. Itens de mods exigem seus respectivos mods.\n\nSó o maior bônus amplia o bloqueio de surgimentos naturais, não o alcance da IA. Por padrão bloqueia lebres e guaxinins naturais; animais colocados, nascidos ou soltos de gaiolas permanecem. Podem fugir ou atacar; animais domesticados mantêm seu comportamento.\n\nCtrl+H alterna o raio atualizado automaticamente. Ctrl + clique direito com a mão vazia recolhe o espantalho equipado. Equipados não se empilham. A destruição solta o equipamento. Só o dono pode gerenciá-lo, conforme os direitos do terreno; sem dono, valem esses direitos.\n\nInformações extras desativadas por padrão. Defina ShowEquipmentTooltips como true em ModConfig/scarecrow-client.json e reinicie o cliente. O manual continua disponível.",
+  "scarecrow:equipment-bonus-one": "Bónus no raio de surgimento: {0} bloco"
 }

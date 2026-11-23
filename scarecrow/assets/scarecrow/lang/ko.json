@@ -78,5 +78,21 @@
 	"scarecrow:interaction-error-claim": "이 구역에 접근할 권한이 없습니다.",
 	"scarecrow:transform-botharms": "허수아비 – 양팔",
 	"scarecrow:transform-neck": "허수아비 – 목",
-	"scarecrow:tooltip-animal-all": "동물"
+	"scarecrow:tooltip-animal-all": "동물",
+
+  "scarecrow:equipment-heading": "허수아비 장비",
+  "scarecrow:equipment-placement": "부착 위치: {0}",
+  "scarecrow:equipment-arms": "양팔",
+  "scarecrow:equipment-left": "왼팔",
+  "scarecrow:equipment-right": "오른팔",
+  "scarecrow:equipment-neck": "목",
+  "scarecrow:equipment-foot": "발",
+  "scarecrow:equipment-bonus": "자연 생성 차단 반경 보너스: {0}블록",
+  "scarecrow:equipment-strongest": "가장 높은 장비 보너스만 적용됩니다.",
+  "scarecrow:equipment-wind": "바람에 따른 움직임: {0}",
+  "scarecrow:equipment-wind-arms": "팔에 부착 시",
+  "scarecrow:equipment-wind-none": "없음",
+  "scarecrow:guide-title": "허수아비 — 안내서",
+  "scarecrow:guide-text": "제작법: {0}, {1}, {2}. 비어 있는 단단한 땅에 설치하세요. 기본 반경은 큰 것 16, 작은 것 12, 짚 인형 8블록입니다.\n\n큰 것은 팔과 발, 작은 것은 목과 발에 장비할 수 있습니다. 짚 인형은 장비할 수 없습니다. Shift+오른쪽 클릭으로 장착하고 빈손으로 제거합니다. 모드 장비는 해당 모드가 필요합니다.\n\n가장 높은 보너스만 자연 생성 차단 범위를 늘리며 동물 AI 범위는 바꾸지 않습니다. 기본적으로 자연 생성되는 산토끼와 라쿤을 차단합니다. 배치되거나 태어나거나 우리에서 풀려난 동물은 남습니다. 동물은 도망가거나 공격하며 길들인 동물은 원래 행동을 유지합니다.\n\nCtrl+H로 자동 갱신되는 반경 표시를 전환합니다. 빈손으로 Ctrl+오른쪽 클릭하면 장비와 함께 회수합니다. 장비한 허수아비는 겹쳐지지 않습니다. 파괴되면 장비가 떨어집니다. 토지 권한 내에서 소유자만 관리하며 소유자가 없으면 토지 권한을 따릅니다.\n\n추가 툴팁은 기본적으로 꺼져 있습니다. ModConfig/scarecrow-client.json에서 ShowEquipmentTooltips를 true로 바꾸고 클라이언트를 다시 시작하세요. 안내서 정보는 항상 볼 수 있습니다.",
+  "scarecrow:equipment-bonus-one": "자연 생성 차단 반경 보너스: {0}블록"
 }
