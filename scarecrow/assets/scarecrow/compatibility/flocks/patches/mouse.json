@@ -3,22 +3,48 @@
     "enabled": true,
     "op": "addmerge",
     "file": "flocks:entities/mouse.json",
-    "path": "/server/behaviors/7/aitasks/-",
-    "value": {
-      "code": "fleeentity",
-      "entityCodes": [
-        "scarecrow",
-        "little-scarecrow",
-        "strawdummy"
-      ],
-      "priority": 2,
-      "movespeed": 0.04,
-      "seekingRange": 8,
-      "instafleeOnDamageChance": 0,
-      "animation": "run",
-      "animationSpeed": 2,
-      "retaliateAttacks": false
-    },
+    "path": "/server/behaviors/7/aitasks",
+    "value": [
+      {
+        "code": "fleeentity",
+        "entityCodes": [
+          "scarecrow"
+        ],
+        "priority": 2,
+        "movespeed": 0.04,
+        "seekingRange": 16,
+        "instafleeOnDamageChance": 0,
+        "animation": "run",
+        "animationSpeed": 2,
+        "retaliateAttacks": false
+      },
+      {
+        "code": "fleeentity",
+        "entityCodes": [
+          "little-scarecrow"
+        ],
+        "priority": 2,
+        "movespeed": 0.04,
+        "seekingRange": 12,
+        "instafleeOnDamageChance": 0,
+        "animation": "run",
+        "animationSpeed": 2,
+        "retaliateAttacks": false
+      },
+      {
+        "code": "fleeentity",
+        "entityCodes": [
+          "strawdummy"
+        ],
+        "priority": 2,
+        "movespeed": 0.04,
+        "seekingRange": 8,
+        "instafleeOnDamageChance": 0,
+        "animation": "run",
+        "animationSpeed": 2,
+        "retaliateAttacks": false
+      }
+    ],
     "side": "server"
   },
   {

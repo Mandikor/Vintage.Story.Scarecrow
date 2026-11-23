@@ -5,6 +5,28 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ## Unreleased
 
+### Flocks mouse detection ranges and update game tests
+
+- Split mouse scarecrow fleeing into three native tasks with detection ranges
+  of 16 blocks for the large scarecrow, 12 for the little one and 8 for the
+  straw dummy. These fixed AI ranges follow the base sizes; equipment bonuses
+  still affect natural-spawn protection separately. Preserve native player/
+  predator fleeing, movement settings, sleep wake behavior and bird protection.
+- My game tests passed for Crows 0.2.8, Giant Scorpion 1.0.3, Leaf Litter 1.6.1
+  and Flocks 0.22.2. My follow-up Flocks game test also confirmed different mouse
+  flee distances for each scarecrow type. Reviewed logs contain no patch errors; upstream
+  mouse/scorpion models report missing `Center` points for FloatUpWhenStuck.
+
+### Crows 0.2.8 compatibility
+
+- Move the idle wake-list patch to the new task-AI behavior index while retaining
+  the native player target and all other crow tasks. Crows 0.2.8 replaces the
+  0.2.7 compatibility baseline; the old indexed patch is no longer shipped.
+- Replace the two existing Scarecrow radius arrays explicitly instead of merging
+  them: `addmerge` appends arrays, and Crows only reads their first two values.
+  Use guard/avoid radii 16/18 for the large scarecrow, 12/16 for the little one
+  and 8/12 for the straw dummy. Preserve unrelated `otherScarecrows` entries.
+
 ### Symmetric arm lantern placement
 
 - Align the right lantern mount with the mirrored left placement in both

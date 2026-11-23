@@ -455,12 +455,12 @@ The repository includes compatibility assets for the following mods and families
 | Equus, Equus Ferus and Monoceros | Animal behavior patches |
 | Equus: Shared Ancestry and Equus: Expanded | Wild donkey reactions and inherited pony reactions |
 | Vara's Arctic Wolves | Native player-target AI adapted for scarecrows, including attacks, injury fear, pup fleeing and sleep interruption |
-| Crows 0.2.7 | Native flight/feeding/perch exclusion for all three scarecrow types; little scarecrow radius aligned to 12 blocks |
-| Flocks 0.22.1 | Built-in crow protection at Flocks' own radius; mouse flee/wake patches. Other birds retain native behavior |
+| Crows 0.2.8 | Native flight/feeding/perch exclusion for all three scarecrow types; guard/avoid radii 16/18 (large), 12/16 (little), 8/12 (straw dummy); updated idle wake path. Replaces the 0.2.7 patch baseline |
+| Flocks 0.22.2 | Built-in crow protection at Flocks' own radius; mouse detection ranges 16/12/8 blocks for large/little/straw scarecrows, plus wake patches. Fixed AI ranges exclude equipment bonuses. Other birds retain native behavior |
 | Fantasy Creatures Mod 0.8.3 | Native player-target combat/fear for goblins, orks, skeletons, slimes, tree creatures and dragons; hostile creatures can attack scarecrows |
 | Pegasus: Winged horses 1.1.0-rc.1 | Wild-only injury defense/fear and rest interruption; feral/tamed mounts and Jaunt flight controls unchanged |
 | Talonborne 1.2.0 | Adult/young grazing interruption only; no fleeing or attacks added to raised mounts. Commanded rest and flight unchanged |
-| Teapot's Giant Scorpion 1.0.2 | Surface/cave native sting, claws, charge and climbing pursuit; scorpions can attack scarecrows |
+| Teapot's Giant Scorpion 1.0.3 | Surface/cave native sting, claws, charge and climbing pursuit; scorpions can attack scarecrows |
 | Teapot's Undead Legion 2.2.2 | Hostile undead attack/pursue scarecrows using native melee, ranged and Lich combat; bound companions and player summons unchanged |
 | Feverstone's Horses | Wild land-animal reactions |
 | Feverstone Wilds 3.2.1 | Native player-target tasks for wild land animals, griffon flight attacks and all young griffon ages; tame variants excluded |

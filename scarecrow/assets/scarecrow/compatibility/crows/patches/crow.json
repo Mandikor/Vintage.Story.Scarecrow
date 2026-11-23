@@ -5,14 +5,6 @@
     "file": "crows:entities/crow.json",
     "path": "/attributes/otherScarecrows",
     "value": {
-      "scarecrow:scarecrow": [
-        16,
-        18
-      ],
-      "scarecrow:little-scarecrow": [
-        12,
-        16
-      ],
       "game:strawdummy": [
         8,
         12
@@ -22,9 +14,25 @@
   },
   {
     "enabled": true,
+    "op": "replace",
+    "file": "crows:entities/crow.json",
+    "path": "/attributes/otherScarecrows/scarecrow:scarecrow",
+    "value": [16, 18],
+    "side": "server"
+  },
+  {
+    "enabled": true,
+    "op": "replace",
+    "file": "crows:entities/crow.json",
+    "path": "/attributes/otherScarecrows/scarecrow:little-scarecrow",
+    "value": [12, 16],
+    "side": "server"
+  },
+  {
+    "enabled": true,
     "op": "addmerge",
     "file": "crows:entities/crow.json",
-    "path": "/server/behaviors/12/aitasks/12/stopOnNearbyEntityCodes",
+    "path": "/server/behaviors/13/aitasks/12/stopOnNearbyEntityCodes",
     "value": [
       "scarecrow",
       "little-scarecrow",

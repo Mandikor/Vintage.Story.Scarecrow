@@ -125,15 +125,34 @@ snapshot of 81 IDs and does not describe the cleaned current library.
 
 ### Updates newly present in the cleaned library
 
-- [ ] **P1 — Crows 0.2.8:** the supplied newer package shifts task-AI locations;
-  the existing 0.2.7 wake-list path reaches a harvestable behavior in 0.2.8.
-  Review the new native tasks and update compatibility separately. Found while
-  comparing original/consolidated patches; the consolidation preserves 0.2.7 behavior.
+- [x] **Flocks 0.22.2 source and patch review (2026-11-23):** all supplied assets
+  match 0.22.1. Code changes mainly guard player/entity and connection-state
+  access during login/logout. Native scarecrow recognition and its configuration
+  are unchanged. Existing mouse flee/wake patches apply and preserve all other
+  tasks. My 0.22.2 game test passed with the original shared mouse range.
+  I subsequently split mouse detection into fixed 16/12/8-block tasks for the
+  large/little/straw scarecrows; automated checks passed. My follow-up game test
+  confirmed different mouse flee distances for each type. Bird protection is unchanged.
 
-- [ ] **P1 — Giant Scorpion 1.0.3:** compare native player-target tasks and patch
-  paths with the implemented/tested 1.0.2 integration; validate any required changes.
-- [ ] **P2 — Leaf Litter 1.6.1:** compare rake definitions, attachment geometry and
-  relevant code with the reviewed 1.6.0 baseline. No new-version validation claimed.
+- [x] **P1 — Crows 0.2.8 patch update (2026-11-23):** move the idle wake list
+  from behavior 12 to 13 and retain its player target. Replace the existing
+  large/little radius arrays rather than appending with `addmerge`, giving
+  exact guard/avoid values of 16/18 and 12/16; register the straw dummy at 8/12
+  and retain unrelated native/mod entries. Version 0.2.8 replaces the indexed
+  0.2.7 baseline. Native crow behavior remains in use; my 0.2.8 game test passed.
+
+- [x] **P1 — Giant Scorpion 1.0.3 source and patch review (2026-11-23):** the
+  entity definition and the three relevant native AI classes match 1.0.2.
+  Existing patches apply; all five player-task copies retain native settings
+  across both resolved variants (ten configurations). No patch change needed.
+  My 1.0.3 game test confirmed the intended attacks.
+- [x] **P2 — Leaf Litter 1.6.1 source and patch review (2026-11-23):** the rake
+  definition only adds `miningspeed.soil = 1`; the decompiled `ItemRake` matches
+  the retained 1.6.0 source. Existing patches preserve that addition, both arm
+  model references resolve and the shared transform remains available. No patch
+  change identified. The older original shape is no longer in the local library,
+  so exact old/new geometry comparison remains unavailable. My 1.6.1 game test
+  confirmed correct attachment, removal, display and mirroring on both arms.
 
 ### New creature candidates
 
