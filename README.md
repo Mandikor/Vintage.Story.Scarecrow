@@ -445,6 +445,8 @@ The repository includes compatibility assets for the following mods and families
 | Plumpkins | Alternative pumpkin shape for the scarecrow and its item, retaining the standard equipment mounts and animated arm attachments |
 | Primitive Survival 5.1.4 | Wooden lanterns and filled Firefly Jars on full-size arms with wind motion or on the little scarecrow's neck; +2/+1 radius bonuses |
 | Animal Cages 5.0.1 | Cage releases remain outside natural-spawn blocking; optional server-side Harmony integration |
+| Wolf Taming 5.0.1 / Pet AI 5.1.2 | Wild wolves retain the existing vanilla scarecrow reactions and pup taming. Dogs keep native pet/owner behavior; no extra AI patch required. Combined game test passed: tamed pets do not flee from any scarecrow type |
+| Fox Taming 1.7.6, Cats 5.0.2, Pet Bunny 1.0.5 / Pet AI 5.1.2 | No extra scarecrow fear/combat tasks needed for these pets. Existing wild fox/hare reactions and taming coexist; kitten player-play tasks remain native. Combined game test passed: tamed pets do not flee from any scarecrow type |
 | Adventurer's Walking Stick 3.0.12 | Complete walking sticks on either full-size arm, original models and editable transforms |
 | Grass to Ropes | Alternative crafting recipes |
 | Leaf Litter | Rake attachment shapes |

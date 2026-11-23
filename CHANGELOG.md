@@ -5,6 +5,31 @@ match `scarecrow/modinfo.json`; dates refer to the release commits.
 
 ## Unreleased
 
+### Wolf Taming compatibility review
+
+- Review Wolf Taming 5.0.1 with Pet AI 5.1.2. Wild wolves use the existing vanilla
+  integration; dogs and pups have no autonomous player-target combat/fear tasks
+  to adapt. Keep native taming, ownership, pet commands and inventories rather
+  than introducing additional scarecrow targets. No extra runtime/JSON patch is
+  required from this review. My combined creature/library game test passed.
+- Validate 25 vanilla targets in both patch orders and 15 resolved dog variants
+  with 300 native task configurations. Wolf-pup taming, mouth inventories and
+  existing scarecrow flee tasks coexist in the resulting definitions.
+- Review Fox Taming 1.7.6, Cats 5.0.2 and Pet Bunny 1.0.5 with Pet AI 5.1.2.
+  Their 44 resolved pet variants have no player-target fear/combat tasks to
+  adapt; kittens retain native player-play behavior. Apply the four pet mods'
+  entity patches and Scarecrow's vanilla animal patches in all 120 batch-order
+  permutations: 29 targets, 13,320 successful applications, no path errors.
+  Wild fox/hare taming conversions remain intact. No additional AI patches
+  identified. My combined runtime game test passed: tamed pets do not flee from
+  any of the three scarecrow types. With Genelib and Jaunt present, wild Equus
+  horses flee while tamed/trained horses remain. No mutual interference observed.
+- Confirm both Animal Cages variants in game. The reviewed session logs contain
+  no errors/exceptions or Scarecrow warnings; all 748 server patches applied
+  without errors. Separate upstream warnings remain for missing textures/audio
+  and model `Center` points, including an absolute developer texture path in
+  Equus Destrier's original juvenile shape. The game shut down cleanly.
+
 ### Flocks mouse detection ranges and update game tests
 
 - Split mouse scarecrow fleeing into three native tasks with detection ranges

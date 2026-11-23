@@ -220,9 +220,32 @@ snapshot of 81 IDs and does not describe the cleaned current library.
   Build and actual-DLL checks passed; natural spawning remains blocked normally.
 - [x] **Animal Cages game test:** I captured naturally spawned hares and
   raccoons and released them beside a scarecrow. Both appeared successfully and
-  their normal flee AI activated. I have not recorded separate in-game tests for
-  both cage sizes or occupied-cage save/reload.
-- [ ] **P1 — Pet AI** (`petai`, 5.1.2): Verify custom pet combat, owner commands and inventory handling; infrastructure, not a new species.
+  their normal flee AI activated. My follow-up test also passed with both cage
+  variants. Occupied-cage save/reload is not separately recorded.
+- [x] **Wolf Taming 5.0.1 source compatibility review:** wild wolves reuse the
+  existing vanilla wolf definitions. The new dog adults/pups contain no normal
+  player-target combat/fear tasks to adapt. Retain native pet aggression,
+  ownership, commands, feeding, equipment and taming; no extra AI patch needed.
+  Automated checks cover 25 vanilla targets in both patch orders (154 patch
+  applications) and 15 resolved dog variants with 300 native task configurations.
+- [x] **Fox Taming 1.7.6, Cats 5.0.2 and Pet Bunny 1.0.5 source review:**
+  44 resolved pet variants / 820 task configurations contain no autonomous
+  player-target fear/combat to copy. Keep the four kittens' native player-play
+  tasks, owner commands, feeding and other pet behavior. No new AI patch needed.
+  Test all 120 batch-order permutations of these three mods, Wolf Taming and
+  Scarecrow: 29 vanilla targets, 13,320 successful patch applications, no path
+  errors. Wild fox/hare taming conversions remain present. These are server-side
+  data checks, not a full runtime test of the installed combination.
+- [x] **P1 — Pet AI / pet mods combined game test** (`petai`, 5.1.2;
+  `wolftaming`, 5.0.1; `foxtaming`, 1.7.6; `cats`, 5.0.2; `bunnypet`, 1.0.5):
+  test wild wolf/fox/hare reactions beside all scarecrow types; tame wolf/fox pups
+  and hares. Check adult/young pet following, staying, supported aggression/play
+  commands, feeding and inventories/equipment. Include the prepared creature
+  mods and their libraries. I completed the prepared test package successfully:
+  tamed animals do not flee from any of the three scarecrow types. The reviewed
+  2026-11-23 session logs contain no errors/exceptions or Scarecrow warnings;
+  all 748 server patches applied without errors. This confirms the observed
+  combination, not every possible command, variant or configuration.
 
 ### Equipment and decoration candidates
 
@@ -299,6 +322,14 @@ snapshot of 81 IDs and does not describe the cleaned current library.
 
 ### Libraries and general utility mods: assess need, do not promise a patch
 
-- [ ] **P2 — Genelib** (`genelib`, 3.2.1): Dependency used by creature generators; verify in the full creature-mod combination.
-- [ ] **P2 — Jaunt: Extended Riding System** (`jaunt`, 3.3.1): Riding-system dependency; review only where mounts interact with scarecrows.
-- [ ] **P2 — Core of Arts** (`coreofartspatch`, 1.2.2): Dependency of Art of Growing; check shared registration/recipes as a combination.
+- [x] **Combined library game test — Genelib** (`genelib`, 3.2.1): base library
+  used by the Equus creature mods; no separate integration currently identified.
+  My combined Equus test passed: wild horses flee, tamed/trained horses remain;
+  no interference with Scarecrow observed in the tested package.
+- [x] **Combined library game test — Jaunt: Extended Riding System** (`jaunt`,
+  3.3.1): base riding library used by the Equus mods. No separate integration
+  currently identified. My combined Equus test passed: wild horses flee,
+  tamed/trained horses remain; no interference with Scarecrow observed.
+- [x] **Core of Arts** (`coreofartspatch`, 1.2.2): base library for the Art of
+  mod family. It was loaded throughout my previous game tests without observed
+  problems. No separate Scarecrow integration is currently needed.
